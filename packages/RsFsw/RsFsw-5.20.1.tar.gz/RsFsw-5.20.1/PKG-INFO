@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: RsFsw
+Version: 5.20.1
+Summary: FSW Spectrum Analyzer Remote-control module
+Home-page: UNKNOWN
+Author: Rohde & Schwarz GmbH & Co. KG
+License: MIT
+Description: ==================================
+         RsFsw
+        ==================================
+        
+        .. image:: https://img.shields.io/pypi/v/RsFsw.svg
+           :target: https://pypi.org/project/ RsFsw/
+        
+        .. image:: https://readthedocs.org/projects/sphinx/badge/?version=master
+           :target: https://RsFsw.readthedocs.io/
+        
+        .. image:: https://img.shields.io/pypi/l/RsFsw.svg
+           :target: https://pypi.python.org/pypi/RsFsw/
+        
+        .. image:: https://img.shields.io/pypi/pyversions/pybadges.svg
+           :target: https://img.shields.io/pypi/pyversions/pybadges.svg
+        
+        .. image:: https://img.shields.io/pypi/dm/RsFsw.svg
+           :target: https://pypi.python.org/pypi/RsFsw/
+        
+        Rohde & Schwarz FSW Spectrum Analyzer RsFsw instrument driver.
+        
+        Basic Hello-World code:
+        
+        .. code-block:: python
+        
+            from RsFsw import *
+        
+            instr = RsFsw('TCPIP::192.168.2.101::hislip0')
+            idn = instr.query('*IDN?')
+            print('Hello, I am: ' + idn)
+        
+        Check out the full documentation on `Github <https://rohde-schwarz.github.io/RsFsw_PythonDocumentation/>`_.
+        
+        Supported instruments: FSW, FSVA3000
+        
+        The package is hosted here: https://pypi.org/project/RsFsw/
+        
+        Examples: https://github.com/Rohde-Schwarz/Examples/tree/main/SpectrumAnalyzers/Python/RsFsw_ScpiPackage
+        
+        
+        Version history
+        ----------------
+        
+        	Latest release notes summary: Updated IQ Analyzer Application commands
+        
+        	Version 5.20.1
+        		- Updated IQ Analyzer Application commands
+        
+        	Version 5.20.0
+        		- Fixed Documentation
+        
+        	Version 5.0.0
+        		- First released version
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
