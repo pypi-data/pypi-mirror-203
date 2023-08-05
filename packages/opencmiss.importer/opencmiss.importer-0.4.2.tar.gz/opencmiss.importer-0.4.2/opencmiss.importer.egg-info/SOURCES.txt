@@ -1,0 +1,8 @@
+LICENSE
+README.rst
+setup.py
+opencmiss.importer.egg-info/PKG-INFO
+opencmiss.importer.egg-info/SOURCES.txt
+opencmiss.importer.egg-info/dependency_links.txt
+opencmiss.importer.egg-info/requires.txt
+opencmiss.importer.egg-info/top_level.txt
