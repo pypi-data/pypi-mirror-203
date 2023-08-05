@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pytulip
+Version: 0.2.3
+Summary: Tulip was renamed to tulp, from now one you should install and use tulp: `pip install tulp`
+Home-page: https://github.com/fedenunez/tulip
+Author: Federico Nuñez (fedenunez)
+Author-email: fedenunez@gmail.com
+Project-URL: Source, https://github.com/fedenunez/tulip
+Classifier: Development Status :: 7 - Inactive
+Requires-Python: >=3.7.1
+License-File: LICENSE
+Requires-Dist: tulp
+
