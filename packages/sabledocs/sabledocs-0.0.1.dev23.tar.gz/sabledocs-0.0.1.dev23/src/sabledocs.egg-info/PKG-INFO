@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: sabledocs
+Version: 0.0.1.dev23
+Summary: Static documentation generator for Protobuf and gRPC
+Author-email: Mark Vincze <mrk.vincze@gmail.com>
+Project-URL: Homepage, https://github.com/markvincze/sabledocs
+Project-URL: Bug Tracker, https://github.com/markvincze/sabledocs/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sable-docs
+
+Generate Proto descriptor:
+
+```
+protoc .\google\datastore\v1\*.proto -o datastore.pb --include_source_info
+```
+
+Build the Python package:
+
+```
+python -m build
+```
+
+Publish with twine:
+
+```
+python -m twine upload --repository testpypi dist/*
+```
+
+Install from the local folder:
+
+```
+pip install ../sabledocs
+```
