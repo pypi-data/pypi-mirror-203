@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+shapfs/__init__.py
+shapfs/feature_selection.py
+shapfs_0.0.1.egg-info/PKG-INFO
+shapfs_0.0.1.egg-info/SOURCES.txt
+shapfs_0.0.1.egg-info/dependency_links.txt
+shapfs_0.0.1.egg-info/top_level.txt
