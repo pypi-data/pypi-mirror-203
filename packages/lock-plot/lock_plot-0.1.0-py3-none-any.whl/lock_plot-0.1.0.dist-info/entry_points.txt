@@ -1,0 +1,3 @@
+[console_scripts]
+lock-plot=plot.app:__main__
+

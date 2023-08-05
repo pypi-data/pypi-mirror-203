@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: lock-plot
+Version: 0.1.0
+Summary: 
+Author: Łukasz Bacik
+Author-email: mail@luka.sh
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pandas (>=1.5.3,<2.0.0)
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Requires-Dist: uniplot (>=0.10.0,<0.11.0)
+Description-Content-Type: text/markdown
+
+
+Usage:
+
+    lock-plot --help
+
+
+
