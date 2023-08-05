@@ -1,0 +1,9 @@
+chromat/__init__.py,sha256=8MecImn9F9cEE3qCmrHILrWzuIXg6i9CIVinFDLF5WI,60
+chromat/console.py,sha256=aZEvNUiuFl6uWkzTSD2mk5V4TMu2cdaLrCxo4H4HG_k,2405
+chromat/palettes.py,sha256=ut5uxVIFV31BnE6FfyvSndwsA2yZI9ivO6Mv8nTpZJU,146
+chromat/swatches.py,sha256=GX6_Y_q7Twh3j3MckrdN2SGPDlbCHUvdEELHcD9Auzk,10281
+chromat/utils.py,sha256=SVcVOO2l1iwIgSxC4VWXrnROi7eDYjroN_Z6MkQIOwQ,3004
+chromat-0.0.4.dist-info/COPYING,sha256=GzeCzK17hhQQDNow0_r0L8OfLpeTKQjFQwBQU7ZUymg,32473
+chromat-0.0.4.dist-info/METADATA,sha256=HGox9Wf3DvPGUtjDzDUMqbFnOKI7VRd-hqdxMJM_1bM,1116
+chromat-0.0.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+chromat-0.0.4.dist-info/RECORD,,
