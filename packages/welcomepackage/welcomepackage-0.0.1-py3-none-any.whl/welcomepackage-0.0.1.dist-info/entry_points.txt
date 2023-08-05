@@ -1,0 +1,3 @@
+[console_scripts]
+welcomepackage = welcomepackage.tui:invoke
+
