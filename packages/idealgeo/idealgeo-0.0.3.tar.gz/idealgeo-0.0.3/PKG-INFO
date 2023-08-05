@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: idealgeo
+Version: 0.0.3
+Summary: Client library for IdealSpot's Geodata API.
+Home-page: https://gitlab.com/idealspot/geodata/python-idealgeo
+Author: Josh Winters
+Author-email: josh@idealspot.com
+License: Apache-2.0
+Project-URL: Documentation, https://python-idealgeo.readthedocs.io/
+Project-URL: Changelog, https://python-idealgeo.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://gitlab.com/jbwinters/python-idealgeo/issues
+Keywords: demographics,geodata,geospatial,gis,idealgeo,idealspot,python-idealgeo,geometry,geography,labor,population,statistics,demographic,geographic,geographic data,geographic information,geographic information system,geographic information systems,geospatial analysis,geospatial data,geospatial information,geospatial information system,united states,us,usa,us census,us census bureau,us census data,us census geography,nation,country,state,county,city,town,village,census tract,block group,block,place,zip code,zip code tabulation area,zcta,census block,census block group,census tract,census tract block group,national,state,county,county subdivision,place,population,population density,population estimate,population estimate base,population estimate base year,population estimate year,population estimate year,points of interest,poi,point of interest,points of interest,vehicle,vehicles,vehicle count,vehicles count,vehicle counts,vehicles counts,vehicle traffic,vehicles traffic,vehicle traffic count,vehicles traffic count,aadt,average annual daily traffic,traffic,traffic count,traffic counts
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+========
+Overview
+========
+
+Client library for IdealSpot's Geodata API.
+
+* Free software: Apache Software License 2.0
+
+Installation
+============
+
+::
+
+    pip install idealgeo
+
+You can also install the in-development version with::
+
+    pip install https://gitlab.com/jbwinters/python-idealgeo/-/archive/main/python-idealgeo-main.zip
+
+
+Documentation
+=============
+
+
+https://python-idealgeo.readthedocs.io/
+
+
+Development
+===========
+
+To run all the tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+
+Changelog
+=========
+
+0.0.0 (2023-04-14)
+------------------
+
+* First release on PyPI.
