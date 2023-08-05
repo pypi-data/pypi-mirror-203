@@ -1,0 +1,6 @@
+users:
+    example_screen_name:
+        app: example_app_name
+
+apps:
+    example_app_name:

@@ -1,0 +1,13 @@
+__pycache__
+*.pyc
+build
+*.egg-info
+dist
+*.zip
+readme.rst
+.tox
+.eggs
+*.egg
+bots.yaml
+.envrc
+docs/_build
