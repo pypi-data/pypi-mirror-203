@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/streamlit_text_annotator.egg-info/PKG-INFO
+src/streamlit_text_annotator.egg-info/SOURCES.txt
+src/streamlit_text_annotator.egg-info/dependency_links.txt
+src/streamlit_text_annotator.egg-info/requires.txt
+src/streamlit_text_annotator.egg-info/top_level.txt
