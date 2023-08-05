@@ -1,0 +1,40 @@
+$ jlpm build:lib && jlpm build:labextension:dev
+$ tsc --sourceMap
+$ jupyter labextension build --development True .
+Building extension in .
+
+Compilation starting…
+
+
+Compilation finished
+
+assets by chunk 6.45 MiB (id hint: vendors)
+  asset vendors-node_modules_mermaid_dist_mermaid_core_mjs.f1ecd3a98599231c8777.js 3.32 MiB [emitted] [immutable] (id hint: vendors) 1 related asset
+  asset vendors-node_modules_mermaid_dist_flowchart-elk-definition-170a3958_js.acad147ef8a8a7f9df1f.js 1.48 MiB [emitted] [immutable] (id hint: vendors) 1 related asset
+  asset vendors-node_modules_mermaid_dist_mindmap-definition-44684416_js.4d34ed20a5d5a3bee971.js 1.16 MiB [emitted] [immutable] (id hint: vendors) 1 related asset
+  asset vendors-node_modules_markdown-it_index_js.441a9acdab854e8f5e31.js 208 KiB [emitted] [immutable] (id hint: vendors) 1 related asset
+  asset vendors-node_modules_js-yaml_dist_js-yaml_mjs.3c6d8dda6e87bd63f8fd.js 107 KiB [emitted] [immutable] (id hint: vendors) 1 related asset
+  + 6 assets
+asset lib_index_js.3e8361751aff357b997d.js 138 KiB [emitted] [immutable] 1 related asset
+asset remoteEntry.43a03e7e5520efc15951.js 40 KiB [emitted] [immutable] (name: jupyterlab-quarto) 1 related asset
+asset node_modules_css-loader_dist_cjs_js_style_base_css.e41702efb19623bed476.js 30 KiB [emitted] [immutable] 1 related asset
+asset node_modules_markdown-it-deflist_index_js.0e6b0ffcf597c54b059b.js 6.51 KiB [emitted] [immutable] 1 related asset
+asset node_modules_markdown-it-task-lists_index_js.63b640ba78c0f89e4ad7.js 3.53 KiB [emitted] [immutable] 1 related asset
+asset style_index_js.04d68d4fb5e2cadc4acc.js 2.23 KiB [emitted] [immutable] 1 related asset
+asset node_modules_markdown-it-sup_index_js.a6cc7c1dd25e9485619c.js 1.95 KiB [emitted] [immutable] 1 related asset
+asset node_modules_markdown-it-sub_index_js.1fff94f55b4e2916234e.js 1.95 KiB [emitted] [immutable] 1 related asset
+orphan modules 487 KiB [orphan] 491 modules
+runtime modules 29 KiB 15 modules
+modules by path ../../node_modules/ 5.31 MiB 1013 modules
+modules by path ./ 120 KiB
+  modules by path ./lib/ 90.8 KiB 50 modules
+  modules by path ./style/ 29.6 KiB 5 modules
+consume-shared-module modules 546 bytes
+  modules by path consume shared module (default) @jupyterlab/*.3 (singleton) 84 bytes 2 modules
+  + 11 modules
+provide-module modules 462 bytes
+  provide shared module (default) js-yaml@4.1.0 = ../../node_modules/js-yaml/dist/js-yaml.mjs 42 bytes [built] [code generated]
+  provide shared module (default) jupyterlab-quarto@0.1.41 = ./lib/index.js 42 bytes [built] [code generated]
+  + 9 modules
+container entry 42 bytes [built] [code generated]
+webpack 5.76.3 compiled successfully in 4013 ms
