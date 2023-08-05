@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: func-kit
+Version: 0.1.1
+Summary: A set of useful function kits.
+License: MIT
+Author: ranguiquan
+Author-email: ranguiquan@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+This is a package consists of some useful function kits.
+
