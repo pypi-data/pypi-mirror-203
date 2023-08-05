@@ -1,0 +1,9 @@
+dancesport_parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dancesport_parser/util.py,sha256=NmGkunoXtu_9l9GJt08VVRbY-DrMYSttVU8oWW4Rh2Q,205
+dancesport_parser/o2cm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dancesport_parser/o2cm/model.py,sha256=nQ_4EOvSLHbBeE6BboNm9khcOW-PDh-zHwFWkuh7-Xg,145
+dancesport_parser/o2cm/parser.py,sha256=TQmY0QDfUo4JGaHwzaaJA48Qvc0dAExExfxda6yg0gU,1889
+dancesport_parser-0.0.5.dist-info/METADATA,sha256=QOFdUm9gcm378fSJFqn7V3_cv0zvSUVNIO0ZgYEg_co,689
+dancesport_parser-0.0.5.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+dancesport_parser-0.0.5.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dancesport_parser-0.0.5.dist-info/RECORD,,
