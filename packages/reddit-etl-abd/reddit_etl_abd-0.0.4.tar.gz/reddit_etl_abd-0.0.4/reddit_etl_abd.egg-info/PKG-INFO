@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: reddit-etl-abd
+Version: 0.0.4
+Summary: Reddit ETL Scripts
+Author: Abdullah Durrani
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Reddit ETL Scripts
+
+Contains scripts for reddit ETL process.
