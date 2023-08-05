@@ -1,0 +1,13 @@
+MeowerBot/__init__.py,sha256=Ez7-GkUn9Nlt-ysEHZR60wl6a6l6gXT3EG0u5pcCjYc,154
+MeowerBot/_Commands.py,sha256=k7El9BNB3Wi9O9JEvtRM-ONMlCFYepWc-Zeg1LBkhNc,118
+MeowerBot/API.py,sha256=E4qGTiBuzdpnvjGY-aw1fpQ_zRDAma9sDOHSCoVfhus,1384
+MeowerBot/Bot.py,sha256=8Pzw84wzhtsYVvDWFyXmDfc8y7O89A52MbAUB7wFjxA,13566
+MeowerBot/cloudlink/__init__.py,sha256=_mObkyec-EFdcwPWToE3xju1rCiNAkkp6t0LpuePGBI,26
+MeowerBot/cloudlink/cloudlink.py,sha256=IrADMpRKzVQRFSQPjgm0NdOfLeaJWK2JBnPwIt8N1b4,8309
+MeowerBot/cog.py,sha256=hLJstLbHPdu5dkUzq3wyDhsST7Y-Pb_6dLLRjzH8I48,747
+MeowerBot/command.py,sha256=8SfTrEDEG-GdnmfEs1gkSh1Df85i1mH1zwnOWIPifEo,2084
+MeowerBot/context.py,sha256=XBoA6ByiGzURLRyaYuaIeQUq6u0lvODXq5qv7j_gKJ8,1507
+meowerbot-2.5.0.dist-info/LICENSE,sha256=zaIVbOueflfZpRei6vtGwd6Ws1rQ_v_jLm4W8vz3hvM,1093
+meowerbot-2.5.0.dist-info/METADATA,sha256=gMvGYnkvYi27AoZJhNK9c-vpd4jtspekJVMp2iXEi7I,981
+meowerbot-2.5.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+meowerbot-2.5.0.dist-info/RECORD,,
