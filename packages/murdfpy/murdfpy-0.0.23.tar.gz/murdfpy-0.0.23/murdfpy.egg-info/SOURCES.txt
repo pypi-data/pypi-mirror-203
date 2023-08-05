@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+murdfpy/__init__.py
+murdfpy/urdf.py
+murdfpy/utils.py
+murdfpy/version.py
+murdfpy.egg-info/PKG-INFO
+murdfpy.egg-info/SOURCES.txt
+murdfpy.egg-info/dependency_links.txt
+murdfpy.egg-info/requires.txt
+murdfpy.egg-info/top_level.txt
