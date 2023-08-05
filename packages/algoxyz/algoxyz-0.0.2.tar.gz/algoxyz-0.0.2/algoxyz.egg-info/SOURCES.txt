@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+algo/__init__.py
+algoxyz.egg-info/PKG-INFO
+algoxyz.egg-info/SOURCES.txt
+algoxyz.egg-info/dependency_links.txt
+algoxyz.egg-info/top_level.txt
