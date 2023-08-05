@@ -1,0 +1,7 @@
+setup.py
+slurm_mongo.egg-info/PKG-INFO
+slurm_mongo.egg-info/SOURCES.txt
+slurm_mongo.egg-info/dependency_links.txt
+slurm_mongo.egg-info/entry_points.txt
+slurm_mongo.egg-info/requires.txt
+slurm_mongo.egg-info/top_level.txt

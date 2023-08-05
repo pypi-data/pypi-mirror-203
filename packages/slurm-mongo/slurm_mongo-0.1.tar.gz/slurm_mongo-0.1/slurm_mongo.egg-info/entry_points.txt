@@ -1,0 +1,2 @@
+[console_scripts]
+slurm_mongo = slurm_usage_to_mongodb:main

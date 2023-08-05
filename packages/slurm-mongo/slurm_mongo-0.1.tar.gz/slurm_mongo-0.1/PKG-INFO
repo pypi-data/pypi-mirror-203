@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: slurm_mongo
+Version: 0.1
+Summary: A package to download slurm usage from a supercomputer and upload it to MongoDB
+Home-page: https://github.com/neelravi/slurm-mongo
+Author: Ravindra Shinde
+Author-email: r.l.shinde@utwente.nl
+Keywords: slurm usage uploader mongodb
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
