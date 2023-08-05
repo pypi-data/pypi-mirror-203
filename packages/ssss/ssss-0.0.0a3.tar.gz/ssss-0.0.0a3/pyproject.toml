@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ssss"
+version = "0.0.0a3"
+description = "ssss or super simple static site, a static site generator, use jinja and markdown as your template and content, and generate static html files."
+authors = ["Magnus Åberg <himself@magnusaberg.me>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+markdown = "^3.4.3"
+staticjinja = "^4.1.3"
+pyyaml = "^6.0"
+argparse = "^1.4.0"
+importlib-metadata = "^6.3.0"
+
+[tool.poetry.scripts]
+ssss = "ssss:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: ssss
+Version: 0.0.0a3
+Summary: ssss or super simple static site, a static site generator, use jinja and markdown as your template and content, and generate static html files.
+Author: Magnus Åberg
+Author-email: himself@magnusaberg.me
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: argparse (>=1.4.0,<2.0.0)
+Requires-Dist: importlib-metadata (>=6.3.0,<7.0.0)
+Requires-Dist: markdown (>=3.4.3,<4.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: staticjinja (>=4.1.3,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Super Simple Static Site
+
+ssss or super simple static site, a static site generator, use jinja and markdown as your template and content, and
+generate static html files.
+
+## Install
+
+```bash
+pip install ssss
+```
+
+## Usage
+
+Create a new project with ssss init command, and then you can use ssss build to build your site.
+
+```bash
+ssss --init
+```
+
+## Configuration
+
+You can configure your site in ssss.yml, and you can use the following variables in your template.
+
+```yaml
+site:
+  title: Super Simple Static Site
+  description: A static site generator, use jinja and markdown as your template and content, and generate static html files.
+
+
