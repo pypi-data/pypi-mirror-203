@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+gtfr/__init__.py
+gtfr/provider.py
+gtfr.egg-info/PKG-INFO
+gtfr.egg-info/SOURCES.txt
+gtfr.egg-info/dependency_links.txt
+gtfr.egg-info/entry_points.txt
+gtfr.egg-info/requires.txt
+gtfr.egg-info/top_level.txt
