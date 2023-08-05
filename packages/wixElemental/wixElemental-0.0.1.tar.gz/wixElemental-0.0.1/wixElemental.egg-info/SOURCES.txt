@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+auth/__init__.py
+get/__init__.py
+get/products.py
+wixElemental.egg-info/PKG-INFO
+wixElemental.egg-info/SOURCES.txt
+wixElemental.egg-info/dependency_links.txt
+wixElemental.egg-info/requires.txt
+wixElemental.egg-info/top_level.txt

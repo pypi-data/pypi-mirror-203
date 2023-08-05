@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: wixElemental
+Version: 0.0.1
+Summary: WIX API Request Module to Use with Elemental Apps in your Wix Store WebSite
+Author: Elemental (Tom Neto)
+Author-email: <info@elemental.run>
+Keywords: python,WIX,Store,API,Request
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A package that allows to request WIX API with ease, in order to use Elemental Apps in your WIX WebSite
