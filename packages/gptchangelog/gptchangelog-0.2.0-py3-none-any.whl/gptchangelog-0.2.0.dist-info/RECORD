@@ -1,0 +1,9 @@
+gptchangelog/__init__.py,sha256=YSHT9KQQV9u-XH4hXQD0w11dSJOejPwtXoCFdUNeSN0,3132
+gptchangelog/templates/changelog_prompt.txt,sha256=bDIPuI0R5s1_tnfwmHpmHzWNylJDqU5dtr28NODnN8w,317
+gptchangelog/templates/version_prompt.txt,sha256=jaM_qwiM-z-y8bZiwz7r1tfzoEFXSLmeT2Idao0JMpo,549
+gptchangelog-0.2.0.dist-info/LICENSE,sha256=Cw2iSu-Hh34OvP-uIq7ioCAx4IX-4n1pCMk880ND7EI,1089
+gptchangelog-0.2.0.dist-info/METADATA,sha256=2rlGf1BS6q48XcXM3hGwmN5b1cNVUXTj1fecRQLIpig,1936
+gptchangelog-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gptchangelog-0.2.0.dist-info/entry_points.txt,sha256=S8ltcdFvRVq33rDPfDNe4CgpZVXYgwDBXGdw_3VwrzY,52
+gptchangelog-0.2.0.dist-info/top_level.txt,sha256=Agto3UhVNWyWfy5Mkqc9_kJT3aDV4iMUR2g9Va9tvIk,13
+gptchangelog-0.2.0.dist-info/RECORD,,
