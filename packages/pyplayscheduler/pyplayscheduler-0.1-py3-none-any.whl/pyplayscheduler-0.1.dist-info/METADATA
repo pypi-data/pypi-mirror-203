@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pyplayscheduler
+Version: 0.1
+Summary: python library and webapp for scheduling pickleball games
+Author: Eric Truett
+Author-email: sansbacon@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyplayscheduler
+Handles play schedules with byes - minimizes duplicate partners and opponents
+
+# Usage
+
+```
+from pyplayscheduler import Scheduler
+
+player_names = ['Joe', 'Tom', 'Steve', 'Bill', 'Sharon', 'Jill', 'Betty', 'Birdie', 'Sheila']
+s = Scheduler(player_names=player_names, n_courts=2, n_rounds=5)
+s.optimize_schedule()
+```
