@@ -1,0 +1,192 @@
+Metadata-Version: 2.1
+Name: citoplasm
+Version: 0.0.5
+Summary: CITOplasm is a Python library for writing LLM code in a declarative way.
+Project-URL: Homepage, https://github.com/joshpoll/CITOplasm
+Project-URL: Bug Tracker, https://github.com/joshpoll/CITOplasm/issues
+Author-email: Joshua Maxwell Pollock <jopo@mit.edu>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: anyio==3.6.2
+Requires-Dist: attrs==22.2.0
+Requires-Dist: black==23.3.0
+Requires-Dist: certifi==2022.12.7
+Requires-Dist: charset-normalizer==3.1.0
+Requires-Dist: click==8.1.3
+Requires-Dist: contourpy==1.0.7
+Requires-Dist: cycler==0.11.0
+Requires-Dist: defopt==6.4.0
+Requires-Dist: docutils==0.19
+Requires-Dist: exceptiongroup==1.1.1
+Requires-Dist: executing==1.2.0
+Requires-Dist: faker==18.3.2
+Requires-Dist: fastapi==0.95.0
+Requires-Dist: filelock==3.10.7
+Requires-Dist: fonttools==4.39.3
+Requires-Dist: fvalues==0.0.3
+Requires-Dist: h11==0.14.0
+Requires-Dist: httpcore==0.16.3
+Requires-Dist: httpx==0.23.3
+Requires-Dist: huggingface-hub==0.13.3
+Requires-Dist: idna==3.4
+Requires-Dist: iniconfig==2.0.0
+Requires-Dist: joblib==1.2.0
+Requires-Dist: kiwisolver==1.4.4
+Requires-Dist: levenshtein==0.20.9
+Requires-Dist: markdown-it-py==2.2.0
+Requires-Dist: matplotlib==3.7.1
+Requires-Dist: mdurl==0.1.2
+Requires-Dist: merge-args==0.1.5
+Requires-Dist: more-itertools==9.1.0
+Requires-Dist: mypy-extensions==1.0.0
+Requires-Dist: nest-asyncio==1.5.6
+Requires-Dist: nltk==3.8.1
+Requires-Dist: numerizer==0.2.2
+Requires-Dist: numpy==1.24.2
+Requires-Dist: ought-ice==0.5.0
+Requires-Dist: packaging==23.0
+Requires-Dist: pandas==2.0.0
+Requires-Dist: pathspec==0.11.1
+Requires-Dist: pillow==9.5.0
+Requires-Dist: platformdirs==3.2.0
+Requires-Dist: pluggy==1.0.0
+Requires-Dist: pockets==0.9.1
+Requires-Dist: prompt-toolkit==3.0.38
+Requires-Dist: pydantic==1.10.7
+Requires-Dist: pygments==2.14.0
+Requires-Dist: pyparsing==3.0.9
+Requires-Dist: pytest-asyncio==0.21.0
+Requires-Dist: pytest==7.2.2
+Requires-Dist: python-dateutil==2.8.2
+Requires-Dist: python-dotenv==1.0.0
+Requires-Dist: python-levenshtein==0.20.9
+Requires-Dist: python-ulid==1.1.0
+Requires-Dist: pytz==2023.3
+Requires-Dist: pyyaml==6.0
+Requires-Dist: questionary==1.10.0
+Requires-Dist: rapidfuzz==2.15.0
+Requires-Dist: regex==2023.3.23
+Requires-Dist: requests==2.28.2
+Requires-Dist: rfc3986==1.5.0
+Requires-Dist: rich==13.3.3
+Requires-Dist: rouge-metric==1.0.1
+Requires-Dist: ruamel-yaml-clib==0.2.7
+Requires-Dist: ruamel-yaml==0.17.21
+Requires-Dist: scikit-learn==1.2.2
+Requires-Dist: scipy==1.10.1
+Requires-Dist: six==1.16.0
+Requires-Dist: sniffio==1.3.0
+Requires-Dist: sphinxcontrib-napoleon==0.7
+Requires-Dist: starlette==0.26.1
+Requires-Dist: structlog==22.3.0
+Requires-Dist: tenacity==8.2.2
+Requires-Dist: thefuzz==0.19.0
+Requires-Dist: threadpoolctl==3.1.0
+Requires-Dist: tokenizers==0.13.2
+Requires-Dist: tomli==2.0.1
+Requires-Dist: tqdm==4.65.0
+Requires-Dist: transformers==4.27.4
+Requires-Dist: typing-extensions==4.5.0
+Requires-Dist: tzdata==2023.3
+Requires-Dist: urllib3==1.26.15
+Requires-Dist: uvicorn==0.21.1
+Requires-Dist: wcwidth==0.2.6
+Requires-Dist: websockets==11.0
+Description-Content-Type: text/markdown
+
+# CITOplasm
+
+CITOplasm is a Python library for writing LLM code in a declarative way. Our aim is to eliminate the need to write complicated prompts, templates, and recipes. Instead, we enable people to write compositional programs using base calls to LLMs (CITOs) and normal Python loops, functions, and conditionals.
+
+At the heart of CITOplasm is `createCITO`, a function that creates a CITO prompt. CITO stands for `(context, input) -> (thought, output)`. (It's a variation of CQRA.) On top of base CITO, we have ready-to-use functions that are broadly useful. These currently include `ask`, `chain`, `compare`, and `verify`.
+
+Our future goals include:
+- JavaScript/TypeScript support
+- more functions
+- more robust CITO
+- transparent prompt engineering optimizations, perhaps using LMQL
+- fleshing out `agent` and `context` concepts
+
+## How to run
+
+To run:
+```
+python3.10 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+Run tests (call from top-level)
+```
+pytest
+```
+
+## How to publish
+
+https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+## Motivation and Inspiration
+
+This library builds on ICE: https://github.com/oughtinc/ice
+
+Have you ever wondered what it would be like to program with an LLM? Not like use an LLM to produce
+traditional code, but to actually program in a language that had LLM primitives? That's what this
+repo is exploring.
+
+Currently there are two approaches to this. First, we have very high-level tools like LangChain,
+which exposes monolithic chains that are hard to customize. We want to be able to easily create
+patterns like debate, amplify, verify, chain-of-thought, etc. from first principles so that we can
+explore and optimize these kinds of structures more easily. The second approach is adopted by ICE,
+which is to expose a very low-level API of prompt templates. This is expressive enough to get the
+job done, but writing string templates is really unstructured and mixes up prompt engineering
+concerns (*how* to write your prompt, i.e. prompt engineering) with domain-specific concerns (*what*
+to put in your prompt). LangChain also uses prompt templates for extensibility.
+
+Our approach is different. Instead of using prompt templates and recipes, we hide these away beneath
+a core set of primitives that abstract over single chat instances with an LLM. Our goal is for
+nearly all common LLM+tool patterns that exist today to be representable using a combination of our
+primitives and normal Python code without the need for writing prompts or recipes directly. Of
+course, we still want it to be possible for end-users to create their own primitives using prompts
+and recipes if they want, but we should be able to reduce the need for this.
+
+The primitives we
+have so far are:
+
+- **ask** Q&A format
+- **chat:** back-and-forth conversations (possibly multiple) with other agents and humans
+- **classify** to assign a category to a given input (match)
+- **approx-equal and approx-cmp** (uses classify)
+
+Some additional primitives we're thinking about or working on are:
+
+- **decompose** to break apart an input into smaller pieces (destructure)
+  - can this be used to implement CoT?
+- **enumerate** to list elements of a collection (generator)
+- **translate/transform**
+- **summarize/reduce**
+- **filter/extract/parse/regex**
+- **complete**
+
+We are experimenting with whether these primitives can be designed as drop-in replacements for
+typical programming constructs. For example, can classify replace match? can approx-equal replace
+equal? can summarize replace reduce?
+
+This might give us an easy way to translate rigid programs to flexible, approximate ones. Or even
+more precisely, might make it really easy to switch some parts of a program to be rigid and other
+parts to be flexible/approximate. It might
+help us better organize our primitives and search for missing ones. It might also help us figure out
+which LLM interactions present truly novel primitives and which ones are "merely" approximate
+versions of existing primitives.
+
+## Observations
+
+Context-Question -> Reasoning-Answer seems to be a robust pattern across Q&A, chat, classify,
+equality/comparison. It probably has a name. It's used in the selection-inference paper. CQRA?
+
+Decompose seems to overlap with the reasoning part of Q&A (thinking step by step is a form of decomposition). There are tradeoffs in terms of number of LLM calls (and
+maybe that also means tradeoffs in accuracy).
+
+tool selection, multiple choice QA, sub-agent calls can all be built on classify
