@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "json-codec"
+version = "0.1.5"
+description = ""
+authors = ["Lucas Silva <lucas76leonardo@gmail.com>"]
+readme = "README.md"
+packages = [{include = "json_codec"}]
+repository = "https://github.com/LuscasLeo/json_codec"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest-cov = "^4.0.0"
+mypy = "^0.991"
+black = "^22.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.setuptools_scm]
