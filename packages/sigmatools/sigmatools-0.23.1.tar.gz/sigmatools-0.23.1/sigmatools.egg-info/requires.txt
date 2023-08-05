@@ -1,0 +1,10 @@
+PyYAML
+pymisp
+progressbar2
+ruamel.yaml
+termcolor
+
+[test]
+coverage
+yamllint
+attackcti
