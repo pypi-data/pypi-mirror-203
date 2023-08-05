@@ -1,0 +1,8 @@
+LICENSE
+README.rst
+setup.py
+opencmiss.zincwidgets.egg-info/PKG-INFO
+opencmiss.zincwidgets.egg-info/SOURCES.txt
+opencmiss.zincwidgets.egg-info/dependency_links.txt
+opencmiss.zincwidgets.egg-info/requires.txt
+opencmiss.zincwidgets.egg-info/top_level.txt
