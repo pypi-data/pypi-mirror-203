@@ -1,0 +1,10 @@
+megabots/__init__.py,sha256=xIzf1YRnftY2W07ljnrxoSeJdrqp_Zz8e3IWr5xWWXs,5290
+megabots/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+megabots/tests/test_api.py,sha256=jlkwydXc8cmX9tJPcvo34pHSwNFOBdMWNH6hUhX01Uw,593
+megabots/tests/test_bots.py,sha256=lzH0QmGzH9HayxvXT20pMD7tk-5IuGV1OHlzH4LGcg0,1464
+megabots/tests/test_ui.py,sha256=rbteUjjVcr4eLNunHsk_tP0EcmZhaces6Xsg3BX6Cmw,596
+megabots-0.0.7.dist-info/LICENCE,sha256=8TV07j4FEdw8V3wO-dQC_WSX4CieccgA75XOspU7vy4,1075
+megabots-0.0.7.dist-info/METADATA,sha256=szsd4qfg9D1EktFCPankRHFcZr3HBPLa2SRorl1DSuQ,4583
+megabots-0.0.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+megabots-0.0.7.dist-info/top_level.txt,sha256=GTF3xo6nmgOzLJqu1Gu72mZZMx1ioj4CZUVaGZqjmUU,9
+megabots-0.0.7.dist-info/RECORD,,
