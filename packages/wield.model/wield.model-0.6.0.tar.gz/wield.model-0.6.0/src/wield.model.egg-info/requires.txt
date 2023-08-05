@@ -1,0 +1,8 @@
+setuptools_scm>=6.0.0
+wield.bunch>=0.9.1
+wield.declarative>=1.3.3
+wield.utilities>=0.9.1
+PyYAML
+numpy
+scipy
+matplotlib
