@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "seawolf"
+version = "0.1"
+authors = [
+    { name="Bayron Torres Gordillo", email="torres.bayron@gmail.com" },
+]
+description = "It is a library for the ease of plotting styles generated with matplotlib. Allows you to save time when giving the final style to the plots"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/bayrtxxx84/seawolf"
+"Bug Tracker" = "https://github.com/bayrtxxx84/seawolf/issues"
