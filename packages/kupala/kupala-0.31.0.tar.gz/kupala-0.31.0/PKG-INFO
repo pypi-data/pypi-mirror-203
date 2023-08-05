@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: kupala
+Version: 0.31.0
+Summary: A set of extensions for Starlette.
+Home-page: https://github.com/alex-oleshkevich/kupala
+License: MIT
+Author: Alex Oleshkevich
+Author-email: alex.oleshkevich@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Dist: Jinja2 (>=3.1,<4.0)
+Requires-Dist: itsdangerous (>=2.1,<3.0)
+Requires-Dist: python-multipart
+Requires-Dist: starlette (>=0.26,<0.27)
+Project-URL: Documentation, https://github.com/alex-oleshkevich/kupala
+Project-URL: Repository, https://github.com/alex-oleshkevich/kupala
+Description-Content-Type: text/markdown
+
+# Kupala Framework
+
+A set of extensions for Starlette for rapid application development.
+
+![PyPI](https://img.shields.io/pypi/v/kupala)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/alex-oleshkevich/kupala/Lint)
+![GitHub](https://img.shields.io/github/license/alex-oleshkevich/kupala)
+![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/pypi/kupala)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/kupala)
+![GitHub Release Date](https://img.shields.io/github/release-date/alex-oleshkevich/kupala)
+![Lines of code](https://img.shields.io/tokei/lines/github/alex-oleshkevich/kupala)
+
+## Installation
+
+Install `kupala` using PIP or poetry:
+
+```bash
+pip install kupala
+# or
+poetry add kupala
+```
+
+## Features
+
+- dependency injection
+- SQLAlchemy 2 intergration
+- wtforms integration
+- click integration
+- jinja integration
+- file storage abstraction (S3, local files, in memory)
+- mail delivery
+- authentication (multi-backend, remember me)
+- django-like choices enums
+- configuration secrets reader
+- chainable guards (function that control access to the endpoint)
+- pagination
+- decorator-style routing
+- composable routing
+
+## Quick start
+
+See example application in `examples/` directory of this repository.
+
