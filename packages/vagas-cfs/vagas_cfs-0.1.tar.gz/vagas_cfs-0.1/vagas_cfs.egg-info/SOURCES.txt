@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+vagas_cfs/__init__.py
+vagas_cfs/acompanhamento-vagas-cfs.py
+vagas_cfs.egg-info/PKG-INFO
+vagas_cfs.egg-info/SOURCES.txt
+vagas_cfs.egg-info/dependency_links.txt
+vagas_cfs.egg-info/top_level.txt
