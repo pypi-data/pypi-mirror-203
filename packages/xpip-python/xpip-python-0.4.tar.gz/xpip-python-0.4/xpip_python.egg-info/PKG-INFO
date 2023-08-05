@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: xpip-python
+Version: 0.4
+Summary: Python package. Build. Install.
+Home-page: https://github.com/zoumingzhe/xpip-python
+Author: mingzhe
+Author-email: zoumingzhe@qq.com
+License: MIT
+Project-URL: Source Code, https://github.com/zoumingzhe/xpip-python
+Project-URL: Bug Tracker, https://github.com/zoumingzhe/xpip-python/issues
+Project-URL: Documentation, https://github.com/zoumingzhe/xpip-python
+Description: xpip
+        ====
+        
+        Python package. Build. Install.
+        
+Keywords: python,pip
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

@@ -1,0 +1,4 @@
+[console_scripts]
+xpip = xpip.xpip_command:main
+xpip-mirror = xpip.xpip_mirror:main
+
