@@ -1,0 +1,3 @@
+[console_scripts]
+tbu=twitter_bot_utils.cli:main
+
