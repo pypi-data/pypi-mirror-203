@@ -1,0 +1,12 @@
+LICENSE.TXT
+MANIFEST.in
+README.txt
+setup.py
+algo/__init__.py
+algo900.egg-info/SOURCES.txt
+algo900.egg-info/dependency_links.txt
+algo900.egg-info/top_level.txt
+algoxyz.egg-info/PKG-INFO
+algoxyz.egg-info/SOURCES.txt
+algoxyz.egg-info/dependency_links.txt
+algoxyz.egg-info/top_level.txt
