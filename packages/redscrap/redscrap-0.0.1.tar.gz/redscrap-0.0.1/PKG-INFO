@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: redscrap
+Version: 0.0.1
+Summary: A brief synopsis of the project
+Home-page: https://github.com/martimdLima
+Author: Martim Lima
+Author-email: martim.d.lima@protonmail.com
+Keywords: development,setup,setuptools
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7, <4
+
+A much longer explanation of the project and helpful resources

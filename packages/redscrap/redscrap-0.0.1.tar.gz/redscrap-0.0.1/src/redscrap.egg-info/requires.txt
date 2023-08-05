@@ -1,0 +1,15 @@
+click
+beautifulsoup4
+loguru
+requests
+httpx
+aiohttp
+validators
+DateTime
+colorama
+tqdm
+Pillow
+pytest
+pytest-cov
+pytest-mock
+setuptools
