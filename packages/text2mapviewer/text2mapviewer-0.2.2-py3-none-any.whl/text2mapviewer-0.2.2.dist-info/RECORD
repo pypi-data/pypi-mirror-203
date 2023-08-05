@@ -1,0 +1,11 @@
+text2mapviewer/__init__.py,sha256=J655ZRXckmTIehnMfTKEG3R7UnKwO6jtaEmNxsVqIgM,76
+text2mapviewer/main.py,sha256=qWd5LF_fkbahspCsEGfZR7LWCH764Y9Y4MuOUQbcao4,1902
+text2mapviewer/examples/map_embedding.py,sha256=JgQ6ExrTYZABKFHAwWOVomU56VJX0ShqOjqba0JgvxQ,233
+text2mapviewer/examples/map_embedding_click.py,sha256=0iVzUEIFDQtPJuQlpzF-CoQdwZhptpde3Au-zw12v80,613
+text2mapviewer/examples/map_text_embedding.py,sha256=6IQOgkOs_bb_C86co31AlCMcN4-OlevAoey8SzzyRxc,2929
+text2mapviewer/fondamental/bases.py,sha256=tO0TKI71Et27hXmM1qYgsAlNa8sONFSWgXMPxom-uoY,2019
+text2mapviewer-0.2.2.dist-info/LICENSE,sha256=NVJzvNwvHewS4c4dCVqbJ8F96mjKdCZjIqSHa7gTt7g,1077
+text2mapviewer-0.2.2.dist-info/METADATA,sha256=sXdZQYdYoMGxJUhwGGHjQAUNa92dEozYt8EJ4WTUCZs,3286
+text2mapviewer-0.2.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+text2mapviewer-0.2.2.dist-info/top_level.txt,sha256=v7OSfcAMBTgiAPnj-ud0u9AvppTtbvQHv8ut2I1_wOQ,15
+text2mapviewer-0.2.2.dist-info/RECORD,,
