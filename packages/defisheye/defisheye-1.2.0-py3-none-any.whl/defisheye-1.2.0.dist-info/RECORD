@@ -1,0 +1,16 @@
+defisheye/__init__.py,sha256=f5tdDH6F0I4XrCcuRZEOHWJpVkAyoOUzZ-NsYy8h14s,774
+defisheye/__main__.py,sha256=cMAAJ_c3q97XrzKdpYsAVWLb0D1LSgqBQ9m-hnGYXLU,4730
+defisheye/defisheye.py,sha256=wy-idJ40j22tPNB2Ip0I0Qiy7s21WDU2hURQTzAPmTQ,5356
+defisheye/defisheyeapp.py,sha256=njoPK0WalCCkUVxeaKItrqKLRKhjM0FvCsUVtkZ3uFo,6772
+defisheye/gui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+defisheye/gui/camera.png,sha256=HgbzRKq40t8jxuZZSnKqUPXlgbMt5lkG6JxL7kCuogU,1027
+defisheye/gui/edit-image.png,sha256=b43UjZrDSxXbknnpoQip4qbVt6S11YARKfJT39DwIOQ,11094
+defisheye/gui/image.png,sha256=ckT65rluU3iSvqGOC9ieOZ92ohQN7Ku8Vqa5Po7-__Q,17271
+defisheye/gui/image200x200.png,sha256=PuevZuqCo59GyHnaVzDWFCaK9fhmi7J8vq4puaOHIvo,8421
+defisheye/gui/main.ui,sha256=m_-GLcQ5EfBIAm-38YjGx1lECEa_cJSNonq4ye6i16M,14302
+defisheye/gui/open-image.png,sha256=wTMzA55o-iJ85ZBCBlp1Rzw9coz1ON3gc--z7kixXEY,1038
+defisheye-1.2.0.dist-info/METADATA,sha256=qnML0QxuLj59SXUfpP63d0OfNzhrWGIxGe4-kye8HJY,6114
+defisheye-1.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+defisheye-1.2.0.dist-info/entry_points.txt,sha256=G4DmaEI_Em00qlLYAw5R3Ru--E2RyYtSEqKGhNANBG4,97
+defisheye-1.2.0.dist-info/top_level.txt,sha256=FM3X235L1UNnqoJcYs8kB6QHE0QceVxAvcUrIw4ggIc,10
+defisheye-1.2.0.dist-info/RECORD,,
