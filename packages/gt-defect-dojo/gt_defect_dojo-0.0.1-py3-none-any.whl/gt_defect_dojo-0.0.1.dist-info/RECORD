@@ -1,0 +1,7 @@
+examples/upload-defectdojo.py,sha256=tNXLG5y_SWlCZB93g_iIDAdnYIh2dym65__lr14f8G8,18487
+src/gt_defectdojo_api/__init__.py,sha256=QTklJ_7OFzIcPiVGJr4mE-aIwdfZCocuhiuuyC0ZYak,26
+src/gt_defectdojo_api/defectdojo_apiv2.py,sha256=ut1yuVx7Lzwc9g5kjzGl1RWyqJdtl5LEpxuKA9X29Wk,51285
+gt_defect_dojo-0.0.1.dist-info/METADATA,sha256=HK356xSLpt13sGCKlY7R_2NvBYfJLcvm-p7P56rmHSM,4440
+gt_defect_dojo-0.0.1.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+gt_defect_dojo-0.0.1.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+gt_defect_dojo-0.0.1.dist-info/RECORD,,
