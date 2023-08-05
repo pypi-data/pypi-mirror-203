@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+ywh_collab.egg-info/PKG-INFO
+ywh_collab.egg-info/SOURCES.txt
+ywh_collab.egg-info/dependency_links.txt
+ywh_collab.egg-info/requires.txt
+ywh_collab.egg-info/top_level.txt
