@@ -1,0 +1,13 @@
+LICENCE.txt
+README.md
+setup.py
+dr_sdk_lotr.egg-info/PKG-INFO
+dr_sdk_lotr.egg-info/SOURCES.txt
+dr_sdk_lotr.egg-info/dependency_links.txt
+dr_sdk_lotr.egg-info/requires.txt
+dr_sdk_lotr.egg-info/top_level.txt
+tests/test_books.unittest.py
+tests/test_chapters.unittest.py
+tests/test_characters.unittest.py
+tests/test_movies_unittest.py
+tests/test_quotes_unittest.py
