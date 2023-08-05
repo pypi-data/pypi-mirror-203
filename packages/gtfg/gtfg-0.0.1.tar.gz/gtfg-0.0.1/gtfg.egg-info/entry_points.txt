@@ -1,0 +1,2 @@
+[console_scripts]
+gtfg = gtfg.main:main

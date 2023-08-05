@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+gtfg.egg-info/PKG-INFO
+gtfg.egg-info/SOURCES.txt
+gtfg.egg-info/dependency_links.txt
+gtfg.egg-info/entry_points.txt
+gtfg.egg-info/requires.txt
+gtfg.egg-info/top_level.txt
