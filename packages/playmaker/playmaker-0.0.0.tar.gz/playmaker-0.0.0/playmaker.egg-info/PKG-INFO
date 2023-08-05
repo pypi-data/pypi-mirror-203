@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: playmaker
+Version: 0.0.0
+Summary: Generative models of NFL player gametime action.
+Author: Michael E. Vinyard
+Author-email: mvinyard.ai@gmail.com
+License: MIT
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >3.9.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# playmaker
+Generative models of in-game player actions built from NFL NextGenStats

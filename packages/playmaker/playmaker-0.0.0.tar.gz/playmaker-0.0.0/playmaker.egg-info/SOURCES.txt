@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+playmaker.egg-info/PKG-INFO
+playmaker.egg-info/SOURCES.txt
+playmaker.egg-info/dependency_links.txt
+playmaker.egg-info/requires.txt
+playmaker.egg-info/top_level.txt
