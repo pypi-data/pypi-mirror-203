@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "mechanical-bull"
+version = "0.0.2.1"
+description = "A framework to automate reacting to ActivityStreams events."
+authors = ["Helge <helge.krueger@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+packages = [{include = "mechanical_bull"}]
+repository = "https://codeberg.org/helge/mechanical_bull"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+tomli-w = "^1.0.0"
+bovine = "^0.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+pytest-asyncio = "^0.20.3"
+flake8 = "^6.0.0"
+black = "^23.1.0"
+flake8-black = "^0.3.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+asyncio_mode="auto"
+log_cli= 1
+log_cli_level="info"
