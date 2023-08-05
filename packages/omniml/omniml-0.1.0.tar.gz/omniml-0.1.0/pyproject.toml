@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "omniml"
+version = "0.1.0"
+description = "Vendor Agnostic Machine Learning Orchestration"
+authors = ["Your Name <you@example.com>"]
+license = "Apache 2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
