@@ -1,0 +1,11 @@
+sbom4files/__init__.py,sha256=UXoScW29szuUhsP-AvPIJLEPeX_U31M1gxYUSooemy8,76
+sbom4files/cli.py,sha256=2sUdqMki4i2ABxUuKd0Pr6f775Dlnp8G7BwsmP9Y8Tg,5579
+sbom4files/filescanner.py,sha256=sKkvDr0mWZO8ZmgQbW3JWlebXwov5hM7UsUwW4a6T1g,6782
+sbom4files/version.py,sha256=VP4uRSuHmuKjzwIqMLUYkkWD0y-Vmwjp3767t3k7EKE,100
+sbom4files/filetypes/filetypes.txt,sha256=mFdRDlJg_vIWslpGQcEixVr1xRU902jfnMR0dkz7U4g,217
+sbom4files-0.2.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sbom4files-0.2.2.dist-info/METADATA,sha256=QJRYSqLSujs9SRZwAR51G-KoREbiQpz7zPCFZfPovwI,5296
+sbom4files-0.2.2.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+sbom4files-0.2.2.dist-info/entry_points.txt,sha256=XlS7rP6kZ-HMnSqDDpYCWlEeYxMTU7O9uAsIGirYBcc,51
+sbom4files-0.2.2.dist-info/top_level.txt,sha256=S42h8aNeBI7n-q5AaLwoFesKPogNrCB2kQ9-XqbDa6w,11
+sbom4files-0.2.2.dist-info/RECORD,,
