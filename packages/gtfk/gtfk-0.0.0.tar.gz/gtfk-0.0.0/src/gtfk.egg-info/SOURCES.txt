@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/gtfk/__init__.py
+src/gtfk/provider.py
+src/gtfk.egg-info/PKG-INFO
+src/gtfk.egg-info/SOURCES.txt
+src/gtfk.egg-info/dependency_links.txt
+src/gtfk.egg-info/top_level.txt
