@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: bingx-headers-generator
+Version: 1.0.1
+Summary: BingX Headers Generator that allows to access most of the BingX API endpoints
+Author: niewiemczego
+License: MIT
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# THIS PROJECT IS FOR EDUCATIONAL PURPOSES ONLY!
+
+Please keep in mind that I do **NOT** encourage breaking any sort of security on websites. In addition, the project will not be updated in case of security changes by BingX
+
+# bingx-headers-generator
+
+BingX Headers Generator is an python library which generates for you all required headers to make requests to BingX API endpoints
+
+# Installation
+
+```
+pip install bingx-headers-generator
+```
+
+# Examples
+
+```python
+from bingx_headers_generator import BingXHeadersGenerator
+
+# custom headers are NOT necessary, but are just an additional option you can pass to request
+custom_headers = {
+    "cache-control": "no-cache, no-store, must-revalidate",
+    "pragma": "no-cache",
+    "expires": "0",
+}
+
+# btw as I recently checked generator works even with wrong app_version but I left that option in advance of BingX API changes
+bingx_headers_generator = BingXHeadersGenerator(
+    "4.58.39",
+    "1020975128917528579",
+    "1052672282142707717",
+)
+
+# you can only generate headers
+headers = bingx_headers_generator.generate_headers(custom_headers)
+
+# also you can generate just sign header
+sign = bingx_headers_generator.generate_sign()
+
+# or you can make full request
+res = bingx_headers_generator.make_request(
+    "GET",
+    "https://api-app.we-api.com/api/copytrade/v1/real/trader/positions",
+    custom_headers,
+)
+
+```
+
+# How did I find out how to generate headers?
+
+In one of their site files(**https://bin.bb-os.com/_nuxt/1491b29.js**) I found interesting function - `function wt(e)` Go check it and you follow other functions that are called in `wt()` and I'm sure you will start to understand the whole process of generating headers
+
+<img width="1134" alt="Screenshot 2023-04-04 at 23 12 48" src="https://user-images.githubusercontent.com/50675404/229923789-89571a8b-7372-4c1a-9386-6b9ceecd3fe3.png">
+
