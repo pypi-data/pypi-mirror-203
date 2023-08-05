@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+oai_tools/__init__.py
+oai_tools/cligpt.py
+oai_tools.egg-info/PKG-INFO
+oai_tools.egg-info/SOURCES.txt
+oai_tools.egg-info/dependency_links.txt
+oai_tools.egg-info/entry_points.txt
+oai_tools.egg-info/requires.txt
+oai_tools.egg-info/top_level.txt
