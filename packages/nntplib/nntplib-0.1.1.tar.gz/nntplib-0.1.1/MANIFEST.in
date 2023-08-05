@@ -1,0 +1,6 @@
+recursive-include tests *.py *.pem
+
+include README
+include CHANGES
+include LICENCE
+include nntplib.rst

@@ -1,0 +1,10 @@
+0.1.1 - 2023-04-14
+------------------
+
+- Add metadata for home page and bug reporting.
+
+0.1.0 - 2023-04-13
+------------------
+
+- Initial repackaging of the module from the standard library of
+  3.10.10.

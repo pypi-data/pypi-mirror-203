@@ -1,0 +1,33 @@
+[project]
+name = "nntplib"
+version = "0.1.1"
+description = "nntplib from Python 3 standard library as an independent module"
+keywords = ["nntp"]
+authors = [
+    { name = "Matěj Cepl", email = "mcepl@cepl.eu" }
+]
+dependencies = [
+    'importlib-metadata; python_version<"3.8"',
+]
+readme = "README.md"
+license = {text = "BSD-3-Clause"}
+classifiers = [
+    "Framework :: Django",
+    "License :: OSI Approved :: BSD License",
+    "Topic :: Internet",
+    "Topic :: Communications :: Usenet News",
+    "Topic :: Software Development :: Libraries",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 3 - Alpha",
+]
+
+[project.urls]
+"Homepage" = "https://sr.ht/~mcepl/nntplib/"
+"Bug Tracker" = "https://lists.sr.ht/~mcepl/devel"
+
+# [project.scripts]
+# my-script = "my_package.module:function"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

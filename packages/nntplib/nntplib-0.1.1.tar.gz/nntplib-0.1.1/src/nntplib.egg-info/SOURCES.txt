@@ -1,0 +1,16 @@
+CHANGES
+LICENSE
+MANIFEST.in
+README.md
+nntplib.rst
+pyproject.toml
+src/__init__.py
+src/nntplib.py
+src/nntplib.egg-info/PKG-INFO
+src/nntplib.egg-info/SOURCES.txt
+src/nntplib.egg-info/dependency_links.txt
+src/nntplib.egg-info/requires.txt
+src/nntplib.egg-info/top_level.txt
+tests/__init__.py
+tests/keycert3.pem
+tests/test_nntplib.py
