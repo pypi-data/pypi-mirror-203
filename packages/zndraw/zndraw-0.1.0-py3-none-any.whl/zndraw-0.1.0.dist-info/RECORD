@@ -1,0 +1,12 @@
+zndraw/__init__.py,sha256=BZflN0t8ABaQ1ST7ijXAwWRMGUlau4Z3G5PNygj6_rQ,46
+zndraw/app.py,sha256=D6H7_2hRGdTWFL54zK5vUwglRR9MhZteLp57_Vqayl4,2328
+zndraw/cli.py,sha256=hd_hend8InzAP7EsPtjx8-6dHmsG5IdZ0S3lNirgTtY,2616
+zndraw/globals.py,sha256=snndNSW9RubTFfB6Xn3kdtJuq-MDS8lihEHcqPh0Ggc,1204
+zndraw/io.py,sha256=QmFXt-MSutzVM3fiB4zAWE1F0QAA9bEPULW2q2M3OIM,1006
+zndraw/static/main.js,sha256=HLZP6ODUu2zXQBW0PusfHBJyg0ijBv36cEiVOtJ22pU,9189
+zndraw/templates/index.html,sha256=1d8pDDY7NgkyHBqpKxr7xK5qetaPRpACMAUe6YoxI5U,798
+zndraw-0.1.0.dist-info/LICENSE,sha256=FKf4VPZYbuyRVMVSrl6HO48bnw6ih8Uur5y-h_MJAcA,13576
+zndraw-0.1.0.dist-info/METADATA,sha256=Qur3pa_nL_lmlJQtqa8M7ga5BfrELPVX23eWB0HP8YQ,1329
+zndraw-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+zndraw-0.1.0.dist-info/entry_points.txt,sha256=HBWWBfOmtowZyYCv8Z_WZPOKG6mUt3xKk37dcXglnP0,41
+zndraw-0.1.0.dist-info/RECORD,,
