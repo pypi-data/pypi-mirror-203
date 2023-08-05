@@ -1,0 +1,33 @@
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "acadia"
+version = "0.1.1"
+authors = [
+  { name="Sergey Monakhov", email="monahovserg@gmail.com" },
+]
+description = "A tool to create accessible audio diagrams"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    ]
+keywords = [
+    "Accessibility", "Accessible", "Assistive",
+    "Blind", "Visually impaired", "Low vision",
+    "Screenreader",
+    ]
+dependencies = [
+    "numpy",
+    "sounddevice",
+    "soundfile",
+    ]
+[project.urls]
+homepage = "https://github.com/monaxov/acadia"
+repository = "https://github.com/monaxov/acadia.git"
