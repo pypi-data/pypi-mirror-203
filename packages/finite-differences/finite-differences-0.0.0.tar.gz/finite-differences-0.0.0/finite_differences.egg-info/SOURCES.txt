@@ -1,0 +1,7 @@
+README.md
+finite_differences.py
+pyproject.toml
+finite_differences.egg-info/PKG-INFO
+finite_differences.egg-info/SOURCES.txt
+finite_differences.egg-info/dependency_links.txt
+finite_differences.egg-info/top_level.txt
