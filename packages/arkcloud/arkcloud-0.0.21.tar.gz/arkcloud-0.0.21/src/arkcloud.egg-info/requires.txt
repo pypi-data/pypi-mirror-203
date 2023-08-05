@@ -1,0 +1,17 @@
+arklibrary==1.*
+arklibrary==1.*
+requests==2.*
+pytest==7.*
+selenium==4.*
+pytesseract==0.*
+Pillow==9.*
+beautifulsoup4==4.*
+opencv-python==4.*
+numpy==1.*
+
+[testing]
+pytest==7.*
+pytest-cov>=2.0
+mypy>=0.971
+flake8>=3.8
+tox>=3.24
