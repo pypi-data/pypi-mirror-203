@@ -1,0 +1,8 @@
+geode_mymodule/__init__.py,sha256=66t-do5NMhMVLZ32QBy0KHGKM0RcVMlIFeVcfMTcZM0,67
+geode_mymodule/mylib.py,sha256=ym7ffYTdSukGUN7fb2Cj0P-4qZLmK16oSEYZBhWhBk4,188
+geode_mymodule/lib64/geode_mymodule_py_mylib.cpython-38-x86_64-linux-gnu.so,sha256=tzPffd9vSrcBu5AfY4cA_UjYJIAwNllozQPifO8lCVs,122232
+geode_mymodule/lib64/libGeode-MyModule_mylib.so,sha256=ySGtWRuBliecJzG_duafTmGXe6XMxZ3_VPEHZnNNdbM,2731376
+Geode_MyModule-2.0.0.dist-info/METADATA,sha256=q75acohoXqSoVfqgzHYMV8RUlseTO4MKgoiq_s6fDlA,2030
+Geode_MyModule-2.0.0.dist-info/WHEEL,sha256=CAuuk_9zz9TklvSaKKuyDpVMPSzU9xWV6t1vK7KC7-A,103
+Geode_MyModule-2.0.0.dist-info/top_level.txt,sha256=H9dxZkfMVyAJL14vS6C4i-4TuyEHDxuF6VIpAXiwTJI,15
+Geode_MyModule-2.0.0.dist-info/RECORD,,
