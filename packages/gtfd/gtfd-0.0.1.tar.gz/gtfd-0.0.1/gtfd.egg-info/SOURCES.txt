@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+gtfd/__init__.py
+gtfd/provider.py
+gtfd.egg-info/PKG-INFO
+gtfd.egg-info/SOURCES.txt
+gtfd.egg-info/dependency_links.txt
+gtfd.egg-info/entry_points.txt
+gtfd.egg-info/requires.txt
+gtfd.egg-info/top_level.txt
