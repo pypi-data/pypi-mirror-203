@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "wellplate-image"
+version = "0.1.1"
+description = "A Python library for understanding of well-plate images."
+authors = ["Eugene Brevdo <ebrevdo@gmail.com>"]
+readme = "README.md"
+license = "Apache-2.0"
+repository = "https://github.com/ebrevdo/wellplate-image"
+keywords = ["wellplate-image", "image analysis", "96 well"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Topic :: Scientific/Engineering :: Image Processing",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+opencv-python = "^4.7.0.72"
+scikit-learn = "^1.2.2"
+jaxtyping = "^0.2.14"
+imutils = "^0.5.4"
+absl-py = "^1.4.0"
+matplotlib = "^3.7.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project.optional-dependencies]
+dev = ["pytype", "pytest"]
+
+[tool.pytype]
+inputs = ["wellplate-image"]

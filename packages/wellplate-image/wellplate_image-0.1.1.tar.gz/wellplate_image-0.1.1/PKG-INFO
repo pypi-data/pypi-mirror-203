@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: wellplate-image
+Version: 0.1.1
+Summary: A Python library for understanding of well-plate images.
+Home-page: https://github.com/ebrevdo/wellplate-image
+License: Apache-2.0
+Keywords: wellplate-image,image analysis,96 well
+Author: Eugene Brevdo
+Author-email: ebrevdo@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Dist: absl-py (>=1.4.0,<2.0.0)
+Requires-Dist: imutils (>=0.5.4,<0.6.0)
+Requires-Dist: jaxtyping (>=0.2.14,<0.3.0)
+Requires-Dist: matplotlib (>=3.7.1,<4.0.0)
+Requires-Dist: opencv-python (>=4.7.0.72,<5.0.0.0)
+Requires-Dist: scikit-learn (>=1.2.2,<2.0.0)
+Project-URL: Repository, https://github.com/ebrevdo/wellplate-image
+Description-Content-Type: text/markdown
+
+# wellplate-image
+A Python library for understanding of well-plate images.
+
+
