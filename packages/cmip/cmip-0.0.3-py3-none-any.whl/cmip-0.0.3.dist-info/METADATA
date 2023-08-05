@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: cmip
+Version: 0.0.3
+Summary: An efficient information processing program.
+Home-page: https://github.com/mikuh/cmip
+Author: geb
+Author-email: 853934146@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: nltk
+Requires-Dist: validators
+
+# cmip
+An efficient information processing program.
+
+## Install
+```shell
+pip install cmip
+```
+
+## Usage
