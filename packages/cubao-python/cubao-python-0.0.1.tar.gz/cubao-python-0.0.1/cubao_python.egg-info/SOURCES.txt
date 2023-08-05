@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+Makefile
+README.md
+pyproject.toml
+cubao_python/__init__.py
+cubao_python/__main__.py
+cubao_python/package_data.dat
+cubao_python/utils.py
+cubao_python.egg-info/PKG-INFO
+cubao_python.egg-info/SOURCES.txt
+cubao_python.egg-info/dependency_links.txt
+cubao_python.egg-info/requires.txt
+cubao_python.egg-info/top_level.txt
+tests/test_utils.py

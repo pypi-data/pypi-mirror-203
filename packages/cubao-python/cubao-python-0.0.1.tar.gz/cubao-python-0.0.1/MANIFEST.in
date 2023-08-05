@@ -1,0 +1,4 @@
+# https://packaging.python.org/en/latest/guides/using-manifest-in/
+exclude *.yaml
+exclude docs
+include Makefile
