@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: dramatiq-crontab
+Version: 1.0rc1
+Summary: Cron style scheduler for asynchronous Dramatiq tasks in Django.
+Keywords: Django,Dramatiq,tasks,scheduler
+Author-email: Rust Saiargaliev <fly.amureki@gmail.com>, Johannes Maron <johannes@maron.family>, Mostafa Mohamed <mostafa.anm91@gmail.com>, Jacqueline Kraus <jacquelinekraus1992@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Text Processing :: Markup :: Markdown
+Classifier: Topic :: Software Development
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.2
+Requires-Dist: dramatiq
+Requires-Dist: apscheduler
+Requires-Dist: django
+Requires-Dist: sentry-sdk ; extra == "sentry"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: pytest-django ; extra == "test"
+Requires-Dist: dramatiq[redis] ; extra == "test"
+Requires-Dist: backports.zoneinfo ; extra == "test" and (python_version<'3.9')
+Project-URL: Changelog, https://github.com/voiio/dramatiq-crontab/releases
+Project-URL: Project-URL, https://github.com/voiio/dramatiq-crontab
+Provides-Extra: sentry
+Provides-Extra: test
+
+# Dramatiq Crontab
+
+![dramtiq-crontab logo: person in front of a schedule](https://raw.githubusercontent.com/voiio/dramatiq-crontab/main/dramatiq-crontab.png)
+
+Cron style scheduler for asynchronous Dramatiq tasks in Django.
+
+* setup recurring tasks via crontab syntax
+* lightweight helpers build on robust tools like [Dramatiq][dramatiq] and [APScheduler][apscheduler]
+* [Sentry][sentry] monitor support
+
+[dramatiq]: https://dramatiq.io/
+[apscheduler]: https://apscheduler.readthedocs.io/en/stable/
+[sentry]: https://sentry.io/
+
+
+[![PyPi Version](https://img.shields.io/pypi/v/dramatiq-crontab.svg)](https://pypi.python.org/pypi/dramatiq-crontab/)
+[![Test Coverage](https://codecov.io/gh/voiio/dramatiq-crontab/branch/main/graph/badge.svg)](https://codecov.io/gh/voiio/dramatiq-crontab)
+[![GitHub License](https://img.shields.io/github/license/voiio/dramatiq-crontab)](https://raw.githubusercontent.com/voiio/dramatiq-crontab/master/LICENSE)
+
+## Setup
+
+```ShellSession
+python3 -m pip install dramatiq-crontab
+# or
+python3 -m pip install dramatiq-crontab[django]  # with django support
+# or
+python3 -m pip install dramatiq-crontab[sentry]  # with sentry support
+```
+
+If you use Django:
+
+```python
+# settings.py
+INSTALLED_APPS = [
+    'dramatiq_crontab',
+    # ...
+]
+```
+
+## Usage
+
+```python
+# tasks.py
+import dramatiq
+from dramatiq_crontab import cron
+
+
+@cron("*/5 * * * *")  # every 5 minutes
+@dramatiq.actor
+def my_task():
+    my_task.logger.info("Hello World")
+```
+
