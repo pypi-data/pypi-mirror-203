@@ -1,0 +1,10 @@
+ghid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ghid/_ghid.cpython-311-x86_64-linux-gnu.so,sha256=INQRbrC3ZYl5fb2hPItZvkjNhAqQZAJosSXukT1HKfU,3829128
+ghid/build.py,sha256=3l9yHfIdBCVCS_zOlJflFNPt0R351UBmSRoyaVi2axk,43293
+ghid/go.py,sha256=EvbEQMY3HF7OdsLe-koRogttZd2afo8GTV4i87HjrdU,58249
+ghid/ghid.py,sha256=7Uv1RzFlDofOtQIrELbAGyWgcWhBzwCtqMI6SqX2cdM,116064
+ghid-0.0.2.dist-info/WHEEL,sha256=F1oQvLbNpJgpQUFgfs7J3LecLpEHx1b-bVOt21vSTIk,187
+ghid-0.0.2.dist-info/LICENSE,sha256=9nlEUL-CyZOiAwYkhPJ9WpdcJXymCKI2riH4_lqvBps,1516
+ghid-0.0.2.dist-info/RECORD,,
+ghid-0.0.2.dist-info/METADATA,sha256=hnB9Y9b1lcp3oOHuvpfTkLd8DtWEBUWU3RPtboxMgKs,540
+ghid-0.0.2.dist-info/top_level.txt,sha256=cVSNI-uNy3ECplFtHEwK2b-K-ftJVidlFf0FIQrEado,5
