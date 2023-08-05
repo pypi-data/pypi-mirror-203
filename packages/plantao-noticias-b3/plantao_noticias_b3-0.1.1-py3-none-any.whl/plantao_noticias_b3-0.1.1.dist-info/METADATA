@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: plantao-noticias-b3
+Version: 0.1.1
+Summary: Wrapper básico e prático para ler notícias do plantão de notícias da B3
+Home-page: https://github.com/renanmoretto/plantao_noticias_b3
+License: MIT
+Keywords: b3,plantao,noticias,bolsa,plantao de noticias
+Author: renanmoretto
+Author-email: himynameisrenan@outlook.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Project-URL: Repository, https://github.com/renanmoretto/plantao_noticias_b3
+Description-Content-Type: text/markdown
+
+
