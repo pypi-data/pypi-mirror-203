@@ -1,0 +1,2 @@
+[console_scripts]
+bbterm = bbterm.main:main

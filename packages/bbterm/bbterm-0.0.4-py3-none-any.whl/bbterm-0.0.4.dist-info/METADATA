@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bbterm
+Version: 0.0.4
+Summary: BBS Terminal
+Project-URL: Homepage, https://github.com/amirgeva/bbterm
+Project-URL: Bug Tracker, https://github.com/amirgeva/bbterm/issues
+Author-email: Amir Geva <amirgeva@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: argh
+Requires-Dist: numpy
+Requires-Dist: pyqt5
+Description-Content-Type: text/markdown
+
+# bbterm
+BBS Terminal
