@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+bot_lens/Tracker.py
+bot_lens/__init__.py
+bot_lens.egg-info/PKG-INFO
+bot_lens.egg-info/SOURCES.txt
+bot_lens.egg-info/dependency_links.txt
+bot_lens.egg-info/top_level.txt
+test/test.py
