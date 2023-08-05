@@ -1,0 +1,2 @@
+[console_scripts]
+merged = merged.cli.main:main
