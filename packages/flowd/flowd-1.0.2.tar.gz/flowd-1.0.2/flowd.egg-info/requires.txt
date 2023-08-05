@@ -1,0 +1,5 @@
+psutil
+requests
+pyroute2
+prometheus_client
+bcc
