@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "Coca-tools"
+version = "0.1.0"
+description = ""
+authors = ["NhanDD <hp.duongducnhan@gmail.com>"]
+readme = "README.md"
+packages = [{include = "cocatools"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4.0"
+django = "^4.2"
+djangorestframework = "^3.14.0"
+celery = "^5.2.7"
+fastapi = "^0.95.1"
+uvloop = "^0.17.0"
+pydantic = {extras = ["dotenv"], version = "^1.10.7"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
