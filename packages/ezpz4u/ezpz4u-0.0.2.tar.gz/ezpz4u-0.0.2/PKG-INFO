@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ezpz4u
+Version: 0.0.2
+Summary: An ez to use pz management api
+Author-email: Charles Warren <ciwarren@mtu.edu>
+Project-URL: repository, https://github.com/ciwarren/ezpz4u.git
+Requires-Python: >=3.11
+Description-Content-Type: text/x-rst
