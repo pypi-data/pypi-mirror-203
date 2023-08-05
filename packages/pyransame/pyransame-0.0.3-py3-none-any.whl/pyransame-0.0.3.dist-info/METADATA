@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pyransame
+Version: 0.0.3
+Summary: My package description
+Author-email: Matthew Flamm <matthewhflamm0@gmail.com>
+License: MIT License
+Keywords: one,two
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyvista
+Requires-Dist: numpy
+
+# pyransame
+PYthon RAndom SAmpling for MEshes
+
+Utilites for choosing random samples of points within cells of [PyVista](https://github.com/pyvista/pyvista) meshes.
+
+Random samples of mesh points or cells is supported direclty in vtk, `vtkMaskPoints` for example.
+Random samples of points within cells is not well supported in vtk, which is what this package provides.
