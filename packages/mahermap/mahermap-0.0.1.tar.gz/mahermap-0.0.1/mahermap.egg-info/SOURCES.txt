@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+mahermap/__init__.py
+mahermap/mahermap.py
+mahermap.egg-info/PKG-INFO
+mahermap.egg-info/SOURCES.txt
+mahermap.egg-info/dependency_links.txt
+mahermap.egg-info/not-zip-safe
+mahermap.egg-info/top_level.txt
