@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+retico_chatgpt/__init__.py
+retico_chatgpt/chatgpt.py
+retico_chatgpt/version.py
+retico_chatgpt.egg-info/PKG-INFO
+retico_chatgpt.egg-info/SOURCES.txt
+retico_chatgpt.egg-info/dependency_links.txt
+retico_chatgpt.egg-info/requires.txt
+retico_chatgpt.egg-info/top_level.txt
