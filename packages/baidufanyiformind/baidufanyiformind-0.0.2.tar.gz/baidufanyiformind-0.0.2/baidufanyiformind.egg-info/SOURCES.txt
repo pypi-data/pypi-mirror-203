@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+baidufanyiformind/__init__.py
+baidufanyiformind.egg-info/PKG-INFO
+baidufanyiformind.egg-info/SOURCES.txt
+baidufanyiformind.egg-info/dependency_links.txt
+baidufanyiformind.egg-info/top_level.txt
