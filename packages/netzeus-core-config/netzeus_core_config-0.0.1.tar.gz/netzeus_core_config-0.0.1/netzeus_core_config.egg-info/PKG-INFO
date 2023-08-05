@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: netzeus-core-config
+Version: 0.0.1
+Summary: NetZeus Core Config module for managing configuration data across all microservices/plugins
+Author: Brandon Spendlove
+Author-email: brandon.spendlove@netzeus.io
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# netzeus-core-config
+NetZeus Core Config Module
+
+This module is intended to be installed for any core modules and plugins. Common configuration should be shared within each container using a local env file `~/.netzeus_env`.
