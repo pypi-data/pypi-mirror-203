@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+hujdgzx.egg-info/PKG-INFO
+hujdgzx.egg-info/SOURCES.txt
+hujdgzx.egg-info/dependency_links.txt
+hujdgzx.egg-info/entry_points.txt
+hujdgzx.egg-info/requires.txt
+hujdgzx.egg-info/top_level.txt

@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: hujdgzx
+Version: 0.0.1
+Summary: A free and open-source SMS,Call & Mail bombing application
+Home-page: https://github.com/TheSpeedX/gtfr
+Download-URL: https://github.com/TheSpeedX/gtfr/archive/pypi.zip
+Author: TheSpeedX
+Author-email: ggspeedx29@gmail.com
+License: GPL
+Keywords: android,spam,sms,mail,gtfr,call,bomb,termux,bomber,spammer
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A free and open-source SMS,Call & Mail bombing application
