@@ -1,0 +1,12 @@
+lintilla/__init__.py,sha256=beU-QBWduHLi5aCQCcdvuhskWDFkgdbvWmhExPviByc,1344
+lintilla/lintilla.py,sha256=VWyXqHAjL4M-gRZMI4d2DpA0_sZ3wdcFAtZARwb--2U,2574
+lintilla/lintilla_cli.py,sha256=3JhSsLFWkLtyJ73lrayEomq9Af_LlnFMModJ4xovyYY,598
+lintilla/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lintilla/resources/config.toml,sha256=6lyx5QXlqQJ3EydJTK4DnFamAMjARLEGkilVJyO87Qg,166
+lintilla-0.2.0.dist-info/AUTHORS.md,sha256=LsQBsZYRtmdLPMLSSGSaYZD96PPhdCqYKWgC8nu5I-I,167
+lintilla-0.2.0.dist-info/LICENSE,sha256=U47StCfprktDqqFj2ER0FHQyyWE46e-9oIkbGZsx_dc,1074
+lintilla-0.2.0.dist-info/METADATA,sha256=ascRTPdRt_y4slUqBpO5TA33wXE6jTatlXiOK4hvxbQ,7477
+lintilla-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lintilla-0.2.0.dist-info/entry_points.txt,sha256=2g01LzrMReNY_jSYKicGcILhppmbKwxlPRbSzO74weY,55
+lintilla-0.2.0.dist-info/top_level.txt,sha256=nriU6J7N6k7r4U0rHhAFFbF7SbGw24_TtmGF72GQV6Y,9
+lintilla-0.2.0.dist-info/RECORD,,
