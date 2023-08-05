@@ -1,0 +1,14 @@
+ExtensionClass
+Products.GenericSetup
+Products.PortalTransforms
+Zope
+setuptools
+plone.base
+z3c.relationfield
+
+[test]
+zope.component
+plone.app.testing
+plone.namedfile
+plone.app.contenttypes[test]
+zope.intid
