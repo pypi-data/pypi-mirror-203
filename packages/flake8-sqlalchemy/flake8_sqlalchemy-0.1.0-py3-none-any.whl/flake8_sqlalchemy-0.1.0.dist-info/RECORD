@@ -1,0 +1,15 @@
+LICENSE.md,sha256=JuH0nm_V6quNhw1N_c5eG4_tCarubpJ2Ya1ungw6C7I,1071
+README.md,sha256=ByBElM9exxt7C0coJDO0iPyTI1Wkpn45DULizgaHJbk,1986
+flake8_sqlalchemy/__init__.py,sha256=caIxzwzMw1FUD6VbW9mcBVIlVE0GdTs5Dwjo-IVxMQs,72
+flake8_sqlalchemy/checkers/__init__.py,sha256=ioTFAGPXvm2x_EKj1yB98qpresQ8j6gO1E4TiLau2Q0,163
+flake8_sqlalchemy/checkers/_base.py,sha256=nISbBdUZIQ2zgwWXBoYCSMBFcnwN_6SrGk4tBlWvy6k,574
+flake8_sqlalchemy/checkers/column_comment.py,sha256=KWtXWNIXgZI35ENbQcHiI4MCYiDOojPHTg0OgSbY7J4,1094
+flake8_sqlalchemy/checkers/import_alias.py,sha256=93eqCGrQghuYAgeGfSMXu_HCOj2Q2kNrtEtnLb3ovVk,723
+flake8_sqlalchemy/issue.py,sha256=xD7Quch-iiPqy0ouBBbIbB-bR1EiAhvt3mPMihLYsc0,181
+flake8_sqlalchemy/plugin.py,sha256=QccAThYeX7Y8EVdBIR8Z35zE1CPNaQCf_hU3vk_6XLs,1334
+flake8_sqlalchemy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flake8_sqlalchemy-0.1.0.dist-info/LICENSE.md,sha256=JuH0nm_V6quNhw1N_c5eG4_tCarubpJ2Ya1ungw6C7I,1071
+flake8_sqlalchemy-0.1.0.dist-info/METADATA,sha256=yVmE1nmnb_GO6XBmaOS1q5-gxQ_lQiXtCGIvnKc1lHI,3413
+flake8_sqlalchemy-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+flake8_sqlalchemy-0.1.0.dist-info/entry_points.txt,sha256=Puv8UAo-OyNfw2ZenIjOjWTaKc_cAGOWHCrJZ1y_48E,49
+flake8_sqlalchemy-0.1.0.dist-info/RECORD,,
