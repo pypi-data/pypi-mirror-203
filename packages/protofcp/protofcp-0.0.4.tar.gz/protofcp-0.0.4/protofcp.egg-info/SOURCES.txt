@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+protofcp/FCPSocket.py
+protofcp/__init__.py
+protofcp/assemblr.py
+protofcp/consts.py
+protofcp/disassemblr.py
+protofcp.egg-info/PKG-INFO
+protofcp.egg-info/SOURCES.txt
+protofcp.egg-info/dependency_links.txt
+protofcp.egg-info/requires.txt
+protofcp.egg-info/top_level.txt
