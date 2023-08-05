@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: kevlar-system-inspector
+Version: 1.0.0rc8
+Summary: A security scanner for Linux systems
+Home-page: https://www.starlab.io/explore-kevlar-system-inspector
+Author: Star Lab
+Author-email: info@starlab.io
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: pytest (>=6.2)
+Requires-Dist: rich
+Requires-Dist: docutils
+Requires-Dist: jinja2 (>=2.11)
+Requires-Dist: pyelftools
+Provides-Extra: test
+Requires-Dist: black (>=22.0) ; extra == 'test'
+Requires-Dist: flake8 (>=5.0) ; extra == 'test'
+Requires-Dist: mypy (==1.0) ; extra == 'test'
+Requires-Dist: pytest-cov (>=4.0) ; extra == 'test'
+
+.. image:: https://inspector.starlab.io/kevlar-system-inspector-logo.svg
+   :align: center
+   :width: 75%
+
+======================================================================
+Star Lab Kevlar System Inspector: A Security Scanner for Linux Systems
+======================================================================
+
+Kevlar System Inspector is an embedded security test suite that grew out of
+`Star Lab's`_ extensive experience assessing and protecting mission-critical
+systems for the U.S. Government.  These test have been made available for
+public use to help identify security issues in a variety of Linux systems.  The
+set of tests present in Kevlar System Inspector will be expanded as adversary
+techniques and tactics change, and as we continue development of `KES`_.
+
+These tests are generally more aggressive than other security scanning tools: We
+prefer to probe behavior rather than check configurations values. However, we
+do not include any actual exploit code or include any tests that could
+destabilize the system. (And of course, we check configuration values too.)
+
+.. _Star Lab's: https://www.starlab.io
+.. _KES: https://www.starlab.io/kevlar-embedded-security
+
+
+System Requirements
+===================
+
+Kevlar System Inspector requires Python 3.8 or higher. Our emphasis is on
+embedded Linux distros (Yocto-based), but Kevlar System Inspector is a pure
+Python project that should run on most modern Linux distros.
+
+
+Installation
+============
+
+We provide several methods for installation:
+
+
+Install from PyPI
+-----------------
+
+If your system is capable of installing packages from PyPI, Kevlar System
+Inspector may be installed using ``pip``.
+
+Because Kevlar System Inspector should be run as root, we suggest using ``pip``
+to install to a virtual environment:
+
+.. code-block:: console
+
+   $ python3 -m venv kevlar-venv
+   $ ./kevlar-venv/bin/pip install kevlar-system-inspector
+   $ sudo ./kevlar-venv/bin/kevlar-system-inspector
+
+You can also install Kevlar System Inspector system wide:
+
+.. code-block:: console
+
+   $ sudo python3 -m pip install kevlar-system-inspector
+   $ sudo kevlar-system-inspector
+
+
+Standalone Tarball
+------------------
+
+For systems that cannot easily install from PyPI, we provide a `standalone
+tarball`_ with all dependencies bundled into a single package. Once you have
+copied this tarball to your device, you can simply extract and run:
+
+.. code-block:: console
+
+   $ tar xf ./kevlar-system-inspector-standalone.tar.gz
+   $ sudo ./kevlar-system-inspector-standalone/kevlar-system-inspector
+
+.. _standalone tarball: https://inspector.starlab.io/kevlar-system-inspector-standalone-v1.0.0rc8.tar.gz
