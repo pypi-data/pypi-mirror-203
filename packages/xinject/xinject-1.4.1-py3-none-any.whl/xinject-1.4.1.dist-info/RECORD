@@ -1,0 +1,13 @@
+xinject/__init__.py,sha256=w9CKeKH9DOMPNJ96b3kba3hvEHr1vVym50gFNkb90og,211
+xinject/_private/__init__.py,sha256=t-VjM9A-8cKPK88zduV_NpdACoxLlnSauNtdpVMrFTI,390
+xinject/_private/classproperty.py,sha256=Ds8-eKE5Ur4s1DBug6D0wYwRHvfu90Cn_cy9YaZUoFI,377
+xinject/context.py,sha256=_Xt7CwOfgBSVkW9SXuQ7gwhc0U2ozmfPMIDQgyFkWZk,61555
+xinject/dependency.py,sha256=clcU97NX0sCmIokputW8YTo6-ChBzXUJtwbJaoN-kUY,31037
+xinject/errors.py,sha256=YJ5TlTDrhMDt_k449oPe8gNdJWyQranjgB-roWliAMI,41
+xinject/proxy.py,sha256=JXfkmPP-5Qs2O-YF4nNl8IvnYbL82WkwJztQ8RRyCR0,5956
+xinject/pytest_plugin.py,sha256=_K-WiMvh2WHcSqUikNv01QeF4TLcsf3NT-Woz1tf2D0,2559
+xinject-1.4.1.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+xinject-1.4.1.dist-info/METADATA,sha256=iEo4SrCpnc1j_XCQGGxo8pOsyDu8TEHfBV0nhMnI9D8,3213
+xinject-1.4.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+xinject-1.4.1.dist-info/entry_points.txt,sha256=8YbzYm3-fibNu8f0boANVRV0ZJ-nDA1EHz6bHvrqfH0,56
+xinject-1.4.1.dist-info/RECORD,,
