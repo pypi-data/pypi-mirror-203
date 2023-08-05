@@ -1,0 +1,15 @@
+xmodel_rest/__init__.py,sha256=VEPKD3PzTd0C6XZpofPn_wpckOGRwENWr1aOiHFVJRQ,506
+xmodel_rest/api.py,sha256=JPCKIUryZDSi-Zn_HyrbyHzY0VPlVBJzsBz9fNMJdv4,8247
+xmodel_rest/auth.py,sha256=Hnu2S8V3mb46ghx_CbsS_gem6AgHaLTpPxQ-t9aU1m0,2996
+xmodel_rest/client.py,sha256=68MWgLZuAqKyqYzE9tfSsNbHextvOyP1_J4nZcuLMMw,98796
+xmodel_rest/default_model_urls.py,sha256=IcTV2O9RFyBl-DgRfbAUC0zkNLUlYbJSSdy3cKpHbeI,625
+xmodel_rest/errors.py,sha256=XlvThXTha8q33hINju149ZN3GYwzEOH4zEhP7yvzN5s,165
+xmodel_rest/meta.json,sha256=ppI0bYnceBdiW8slPLexPYJiphiY6yTjPUJyKIWPMcA,25
+xmodel_rest/model.py,sha256=OxjHI0ZlzZweTsQxQK9glJF37cGKMmGOi-0aXPFLAB8,1476
+xmodel_rest/session.py,sha256=voB4gJrrp9gZU9ZfmG6mlfHcBrj1V-LlgA1Ljzai0KI,1746
+xmodel_rest/settings.py,sha256=cum5ioYtIWbe8nfqj1quvXPB_gMn4EOtwPJsgXX25PU,5706
+xmodel_rest/structure.py,sha256=lD38awKjohKCjowplW5HGplBbMR8AGfcgw3ni5TNV-c,6500
+xmodel_rest-0.1.0.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+xmodel_rest-0.1.0.dist-info/METADATA,sha256=nVQ6ejLgID6FzwkwnAuWxcvr3aXGrGs7HOMufKwBeR4,1496
+xmodel_rest-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+xmodel_rest-0.1.0.dist-info/RECORD,,
