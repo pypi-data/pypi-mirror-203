@@ -1,0 +1,64 @@
+[tool.pdm.dev-dependencies]
+dev = [
+    "ruff>=0.0.261",
+    "deptry>=0.8.0",
+    "refurb>=1.15.0",
+    "black>=23.3.0",
+    "mypy>=1.2.0",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.isort]
+split-on-trailing-comma = true
+force-wrap-aliases = true
+combine-as-imports = true
+force-sort-within-sections = true
+
+[tool.ruff.mccabe]
+max-complexity = 10
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.black]
+target-version = [
+    "py311",
+]
+
+[tool.mypy]
+strict = true
+
+[tool.deptry]
+
+[tool.refurb]
+
+[project]
+name = "acb"
+version = "0.1.0"
+description = "Asynchronus Code Base"
+authors = [
+    { name = "lesleslie", email = "les@wedgwoodwebworks.com" },
+]
+dependencies = [
+    "pydantic>=1.10.7",
+    "itsdangerous>=2.1.2",
+    "msgspec>=0.14.1",
+    "addict>=2.4.0",
+    "aiopath>=0.6.11",
+    "arrow>=1.2.3",
+    "google-crc32c>=1.5.0",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+
+[project.license]
+text = "BSD-3-Clause"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
