@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: BlaApi
+Version: 1.1.1
+Summary: A wrapper for the beacon light api.
+Home-page: https://github.com/me/myproject
+Author: Omer-Farooqui
+Author-email: deaddogfuneral@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx
+Requires-Dist: fake-useragent
+
+
+# BLA-Api-Wrapper
+A wrapper for the beacon light api. (https://beaconlightacademy.edu.pk/app/)
