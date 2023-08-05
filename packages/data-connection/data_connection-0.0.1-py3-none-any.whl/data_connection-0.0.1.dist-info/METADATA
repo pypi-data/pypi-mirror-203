@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: data-connection
+Version: 0.0.1
+Summary: 
+Author: Konstantin.Dudersky
+Author-email: konstantin.dudersky@gmail.com
+Requires-Python: >=3.11.0,<3.12.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: async_state_machine (==0.0.4)
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
+Requires-Dist: pydantic (>=1.10.7,<2.0.0)
+Requires-Dist: redis (>=4.5.4,<5.0.0)
+Description-Content-Type: text/markdown
+
+## Тестирование
+
+Перед запуском тестов запустить docker:
+
+```bash
+do -i {docker start redis-stack} ; docker run -d --rm --name redis-stack -p 6379:6379 -p 8010:8001 redis/redis-stack:latest
+```
+
