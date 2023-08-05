@@ -1,0 +1,17 @@
+laegr/__init__.py,sha256=r2dLkpbCFSjAJqjRhXMIKlUbFngpPXvtEbnVHXpqe44,225
+laegr/featurization/Dataset.py,sha256=EkRAz48dTgmsFb2eVTsQc4K1FpZ48NS2vtf67uaEeHs,4506
+laegr/featurization/Dump2Features.py,sha256=AkGdNLwfPkqM6KyFpvnL8DLvBPhQD-DklI10nkYLp88,1469
+laegr/featurization/GraphFeatures.py,sha256=EqO1WXjx2eEkG4OruADXjEE4mYyKzaEVicKNf45C8qY,4636
+laegr/featurization/__init__.py,sha256=8T_3GzoU99lDufL_5RaI2WY7pDzsDVBiL27DIjuzLw4,50
+laegr/model/__init__.py,sha256=tLy_Wbg5DvURBdGdhzL_M83Z6q0kjTZiAmABeeY4YAY,83
+laegr/model/gnn/Layer.py,sha256=kzBz4-yzs4gMdE04TujkUMaNHZF31HLmuKfct8HbZho,3051
+laegr/model/gnn/LoadData.py,sha256=ZX6mOiOq1N2m_DQoDBb_h52u1EumWpWny25O1jNPqxk,1812
+laegr/model/gnn/Model.py,sha256=jdgy1Fd3juZAn5weRh9uZ2_YmZZuMcx01R70vwuJMmE,4500
+laegr/model/gnn/TrainingValidation.py,sha256=59rumjTwbYSIQjgN8XnFhywro-ckxQOjjoGKx3voIg0,2680
+laegr/model/gnn/__init__.py,sha256=gTzebr3URLjDklXWvz1TMgs9fOxnRxGqVOkZDKAHnQ4,125
+laegr/model/gnn/main.py,sha256=EgsaTC3EceIVO8HwLjD2Fw90HIa5EG-nBFvbSt0KkRg,6093
+laegr-1.0.dist-info/LICENSE,sha256=GPH4P_NEhIUp2cfJqaV2nkm5lstXX8B7WxrGl6wcI8s,1090
+laegr-1.0.dist-info/METADATA,sha256=kwb7_Crg3M8kMt-w8uVO8hG1LYuEzs2iQJW6LN3kkVY,877
+laegr-1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+laegr-1.0.dist-info/top_level.txt,sha256=JNL_V9BjmvqMLgPtcOM6Qlz_LOb7QW-gYR8WGEnv9lM,6
+laegr-1.0.dist-info/RECORD,,
