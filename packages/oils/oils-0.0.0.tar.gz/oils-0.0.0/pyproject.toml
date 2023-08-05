@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "oils"
+version = "0.0.0"
+description = "Build numerical simulation with ease"
+authors = ["altar31 <damien.sicard31@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pygmsh = "^7.1.17"
+matplotlib = "^3.7.1"
+pytest = "^7.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
