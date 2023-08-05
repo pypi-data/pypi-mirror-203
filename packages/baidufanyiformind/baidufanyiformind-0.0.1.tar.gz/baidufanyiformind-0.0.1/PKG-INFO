@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: baidufanyiformind
+Version: 0.0.1
+Summary: A package for baidufanyi
+Home-page: https://gitee.com/liliang9693/baidufanyiformind
+Author: liliang
+Author-email: liang.li@dfrobot.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+
+# baidufanyiformind
+
+baidufanyiformind
+
+
+## History
+
+- 2023.4 - Version 0.0.1 released.
+
+## Credits
+
+Written by ll 2023.
