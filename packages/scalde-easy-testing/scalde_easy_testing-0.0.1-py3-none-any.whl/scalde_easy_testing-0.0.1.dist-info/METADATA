@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: scalde-easy-testing
+Version: 0.0.1
+Summary: Testing tools for data science
+Author-email: Thomas Marquis <thomas.marquis.dev@gmail.com>
+Keywords: testing,datascience,tdd,pytest,unittest
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (>=1.0.0)
+
+# scalde-easy-testing
