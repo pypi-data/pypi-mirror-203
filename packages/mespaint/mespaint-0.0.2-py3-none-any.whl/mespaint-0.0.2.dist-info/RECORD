@@ -1,0 +1,16 @@
+src/__init__.py,sha256=YAEMCt3J_nsIrebTMMlOk-qoEyLg3i-7-d5zWuSWDZ0,237
+src/aboutdialog.py,sha256=z8_43nNFlIc51MrfRrk0ZOrk3bCsObMbrOrn2uz9_B0,3047
+src/canvas.py,sha256=DdAuXbQiGwzlVvsL_g9QeYNZHPwQK9gryt_YZ1C-0ug,5999
+src/inittab.py,sha256=wGr72k0aWrHMC-ZuqdmlsRQGrPx3h13IFuOR3HswcC0,1366
+src/main.py,sha256=YvkXFJO_0CKEH_5c0wKzLMsRQnPTQ-fNrbXsLMoQTIE,374
+src/mainwindow.py,sha256=wYUHEerjX9x0ejGrpt8u3NgSchZuQJCCH5uA2r93szs,6832
+src/menubar.py,sha256=gLObS7pay75FP9_c9XVrcSYj4qnxwwp2Dew3rxL9cDs,3467
+src/palette.py,sha256=a1VQWgzx1jVts254FWSohQPmGbGEQqHJcaoG2ehVTNg,2385
+src/palettebutton.py,sha256=iBt_cjqChY1wERUTAPXT0uM0TUVWQXPVcdcz15W_F80,6576
+src/utils.py,sha256=3zkZCvB1lxH_E__OE80jjctH0h5x93ecBfL0x87R2Y8,1093
+mespaint-0.0.2.dist-info/LICENSE,sha256=ZTzrvd_S-bI2jaNc3pzGOAI4Z_nOjYAsDke0GWaIUUE,1067
+mespaint-0.0.2.dist-info/METADATA,sha256=7Sf95cAulF1fWyI-ny-0IULYM7_rXWI8cckYWIHuDds,718
+mespaint-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mespaint-0.0.2.dist-info/entry_points.txt,sha256=WqCwfHaMiJFJ_BFYrJ-aW3rngrvc1BgtdCepzspWOqU,43
+mespaint-0.0.2.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+mespaint-0.0.2.dist-info/RECORD,,
