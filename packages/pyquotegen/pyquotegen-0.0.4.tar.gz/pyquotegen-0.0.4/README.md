@@ -1,0 +1,60 @@
+# pyquotegen
+
+[![PyPI version](https://badge.fury.io/py/pyquotegen.svg)](https://badge.fury.io/py/pyquotegen)
+[![Downloads](https://pepy.tech/badge/pyquotegen)](https://pepy.tech/project/pyquotegen)
+[![GitHub license](https://img.shields.io/github/license/Armanidrisi/pyquotegen)](https://github.com/Armanidrisi/pyquotegen/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/Armanidrisi/pyquotegen)](https://github.com/Armanidrisi/pyquotegen/issues)
+
+
+`pyquotegen` is a Python package that provides a simple way to generate random quotes. 
+
+## Installation
+
+To install `pyquotegen`, simply run: 
+
+```bash
+pip install pyquotegen
+```
+
+## Usage
+To use `pyquotegen`, import the package and call the `get_quote` function: 
+
+```python
+import pyquotegen
+
+# get a random quote
+quote = pyquotegen.get_quote()
+print(quote)
+
+# get a quote by specific category
+quote_by_category = pyquotegen.get_quote("inspirational")
+print(quote_by_category)
+```
+
+Note: The default category is "motivation" if you don't provide any category. 
+
+## List Of Some Basic Categories
+- motivational
+- friendship
+- technology
+- inspirational
+- funny
+- nature
+- duccess
+- attitude
+- coding
+
+## Feature
+- Generates random quotes
+- Provides quotes by specific category
+- Supports multiple categories
+- Lightweight and easy to use
+
+## Contributing
+Contributions are welcome! To contribute, please fork the repository and submit a pull request.
+
+## Credits
+This package was created by Arman Idrisi.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
