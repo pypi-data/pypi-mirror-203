@@ -1,0 +1,149 @@
+﻿diff --git a/comfy/model_management.py b/comfy/model_management.py
+index 8303cb4..c7e047a 100644
+--- a/comfy/model_management.py
++++ b/comfy/model_management.py
+@@ -1,6 +1,7 @@
+ import psutil
+ from enum import Enum
+ from cli_args import args
++import threading
+ 
+ class VRAMState(Enum):
+     CPU = 0
+@@ -118,6 +119,7 @@ current_gpu_controlnets = []
+ 
+ model_accelerated = False
+ 
++mutex = threading.RLock()
+ 
+ def unload_model():
+     global current_loaded_model
+@@ -136,11 +138,11 @@ def unload_model():
+         current_loaded_model.unpatch_model()
+         current_loaded_model = None
+ 
+-    if vram_state != VRAMState.HIGH_VRAM:
+-        if len(current_gpu_controlnets) > 0:
+-            for n in current_gpu_controlnets:
+-                n.cpu()
+-            current_gpu_controlnets = []
++    # if vram_state != VRAMState.HIGH_VRAM:
++    #     if len(current_gpu_controlnets) > 0:
++    #         for n in current_gpu_controlnets:
++    #             n.cpu()
++    #         current_gpu_controlnets = []
+ 
+ 
+ def load_model_gpu(model):
+@@ -150,7 +152,8 @@ def load_model_gpu(model):
+ 
+     if model is current_loaded_model:
+         return
+-    unload_model()
++    if model:
++        unload_model()
+     try:
+         real_model = model.patch_model()
+     except Exception as e:
+diff --git a/comfy/sd.py b/comfy/sd.py
+index 2d7ff5a..37e02ae 100644
+--- a/comfy/sd.py
++++ b/comfy/sd.py
+@@ -409,7 +409,6 @@ class VAE:
+         return output
+ 
+     def decode(self, samples_in):
+-        model_management.unload_model()
+         self.first_stage_model = self.first_stage_model.to(self.device)
+         try:
+             free_memory = model_management.get_free_memory(self.device)
+@@ -429,14 +428,12 @@ class VAE:
+         return pixel_samples
+ 
+     def decode_tiled(self, samples, tile_x=64, tile_y=64, overlap = 16):
+-        model_management.unload_model()
+         self.first_stage_model = self.first_stage_model.to(self.device)
+         output = self.decode_tiled_(samples, tile_x, tile_y, overlap)
+         self.first_stage_model = self.first_stage_model.cpu()
+         return output.movedim(1,-1)
+ 
+     def encode(self, pixel_samples):
+-        model_management.unload_model()
+         self.first_stage_model = self.first_stage_model.to(self.device)
+         pixel_samples = pixel_samples.movedim(-1,1).to(self.device)
+         samples = self.first_stage_model.encode(2. * pixel_samples - 1.).sample() * self.scale_factor
+@@ -445,7 +442,6 @@ class VAE:
+         return samples
+ 
+     def encode_tiled(self, pixel_samples, tile_x=512, tile_y=512, overlap = 64):
+-        model_management.unload_model()
+         self.first_stage_model = self.first_stage_model.to(self.device)
+         pixel_samples = pixel_samples.movedim(-1,1).to(self.device)
+         samples = utils.tiled_scale(pixel_samples, lambda a: self.first_stage_model.encode(2. * a - 1.).sample() * self.scale_factor, tile_x, tile_y, overlap, upscale_amount = (1/8), out_channels=4)
+diff --git a/execution.py b/execution.py
+index 79c9a3a..fec1ff1 100644
+--- a/execution.py
++++ b/execution.py
+@@ -289,6 +289,8 @@ def validate_prompt(prompt):
+         errors_list = "\n".join(set(map(lambda a: "{}".format(a[1]), errors)))
+         return (False, "Prompt has no properly connected outputs\n {}".format(errors_list))
+ 
++    with open("../comfy-prompt.json", "wt", encoding="utf-8") as f:
++        f.write(json.dumps(prompt, indent=4))
+     return (True, "")
+ 
+ 
+diff --git a/main.py b/main.py
+index 9c0a3d8..1e786bf 100644
+--- a/main.py
++++ b/main.py
+@@ -25,7 +25,7 @@ import yaml
+ import execution
+ import folder_paths
+ import server
+-from nodes import init_custom_nodes
++from nodes import init_custom_nodes, load_custom_nodes
+ 
+ 
+ def prompt_worker(q, server):
+@@ -82,6 +82,7 @@ if __name__ == "__main__":
+     q = execution.PromptQueue(server)
+ 
+     init_custom_nodes()
++    load_custom_nodes(os.getenv("AIWORKER_CUSTOM_NODES"))
+     server.add_routes()
+     hijack_progress(server)
+ 
+diff --git a/nodes.py b/nodes.py
+index 14a73bc..6c81538 100644
+--- a/nodes.py
++++ b/nodes.py
+@@ -678,6 +678,7 @@ class SetLatentNoiseMask:
+ 
+ 
+ def common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent, denoise=1.0, disable_noise=False, start_step=None, last_step=None, force_full_denoise=False):
++    model_management.mutex.acquire()
+     latent_image = latent["samples"]
+     noise_mask = None
+     device = model_management.get_torch_device()
+@@ -741,6 +742,7 @@ def common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive,
+ 
+     out = latent.copy()
+     out["samples"] = samples
++    model_management.mutex.release()
+     return (out, )
+ 
+ class KSampler:
+@@ -1175,8 +1177,10 @@ def load_custom_node(module_path):
+         print(traceback.format_exc())
+         print(f"Cannot import {module_path} module for custom nodes:", e)
+ 
+-def load_custom_nodes():
+-    CUSTOM_NODE_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "custom_nodes")
++def load_custom_nodes(path=os.path.join(os.path.dirname(os.path.realpath(__file__)), "custom_nodes")):
++    if not path:
++        return
++    CUSTOM_NODE_PATH = path
+     possible_modules = os.listdir(CUSTOM_NODE_PATH)
+     if "__pycache__" in possible_modules:
+         possible_modules.remove("__pycache__")
