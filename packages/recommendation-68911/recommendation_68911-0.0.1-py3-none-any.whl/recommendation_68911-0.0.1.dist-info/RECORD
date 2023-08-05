@@ -1,0 +1,12 @@
+recommendation_68911/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recommendation_68911/apps.py,sha256=s-gN5nNzorXdlO6chv3TINpof3Hk0oGa5JTm7UB30mQ,546
+recommendation_68911/exceptions.py,sha256=ekDhdTQ7JIaaiTl_QQ78j0hB6TxXorbF_k4OSr_G644,50
+recommendation_68911/managers.py,sha256=EbsOmd_Upi8SbxoRDx7i055-_QAQ3ROM05S3bv42a8s,246
+recommendation_68911/models.py,sha256=yCLZPwy_dgfAhGz3bzE_bjshLVqbyVnZyO3TiLLT9PA,889
+recommendation_68911/services.py,sha256=ESUYgt2pLTJGHjd4PxzH6P5muQC37pktPkjUtrImdio,1560
+recommendation_68911/settings.py,sha256=Fyxkjff0X-59xGYa0cvn9xIjHxVye-Tv60XNKzXDZ28,312
+recommendation_68911-0.0.1.dist-info/LICENSE,sha256=LqJu9cr11rxfc5lPFEVhTXAJKUa6kpwv63tILTCmVgY,1071
+recommendation_68911-0.0.1.dist-info/METADATA,sha256=3V-jQvnNmKzo2CwGq50R9BQ5M8FlVTUeQUPMX8sQkac,4550
+recommendation_68911-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+recommendation_68911-0.0.1.dist-info/top_level.txt,sha256=L2PkgRHkVa6t3EJ9RzY90oJY8gpc0TIi2e-Smtp3JzM,21
+recommendation_68911-0.0.1.dist-info/RECORD,,
