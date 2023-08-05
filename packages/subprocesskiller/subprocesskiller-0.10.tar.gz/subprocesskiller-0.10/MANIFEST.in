@@ -1,0 +1,4 @@
+include subprocesskiller/requirements.txt
+include subprocesskiller/thirdparty.json
+include subprocesskiller/README.md
+include subprocesskiller/LICENSE
