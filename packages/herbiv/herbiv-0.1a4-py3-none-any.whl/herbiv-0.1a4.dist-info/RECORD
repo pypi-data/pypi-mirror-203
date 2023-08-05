@@ -1,0 +1,9 @@
+setup.py,sha256=e-G7HaiSEJ0PvJdngNIjsRowZyBrzstVZzRayJJa2nQ,1792
+src/herbiv/analysis.py,sha256=i0xDnQCD47kqEKpbMHwcK6940-BJHOZaFjUOCahh6OA,4701
+src/herbiv/compute.py,sha256=oWln0gX62Un-AhtJuaV-ey3XTuFjWr-Ab56C4KNGirw,2327
+src/herbiv/get.py,sha256=lsVH0NkVyuToKeGxo6EHFT0HjDl6mH6ZqNb_eVSCCXo,5802
+src/herbiv/output.py,sha256=CXaMVTXHHQOgnuBaF119kKkM3GcYMU5OO9ChHKMmu3c,3959
+herbiv-0.1a4.dist-info/METADATA,sha256=ET0A_oWLBT91w7YZPkC_DqZnlqn3-sdGAMOu8d2gef0,8107
+herbiv-0.1a4.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+herbiv-0.1a4.dist-info/licenses/LICENSE,sha256=Kd5w3TojwALttCWqc-UW8YW2KYOOmg76I0F41PPu1A0,1105
+herbiv-0.1a4.dist-info/RECORD,,
