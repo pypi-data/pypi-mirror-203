@@ -1,0 +1,8 @@
+LICENSE
+README.rst
+setup.py
+opencmiss.argon.egg-info/PKG-INFO
+opencmiss.argon.egg-info/SOURCES.txt
+opencmiss.argon.egg-info/dependency_links.txt
+opencmiss.argon.egg-info/requires.txt
+opencmiss.argon.egg-info/top_level.txt

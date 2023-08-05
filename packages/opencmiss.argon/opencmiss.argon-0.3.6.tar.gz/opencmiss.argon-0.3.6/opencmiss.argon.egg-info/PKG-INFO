@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: opencmiss.argon
+Version: 0.3.6
+Summary: OpenCMISS-Argon visualisation descriptions.
+Home-page: UNKNOWN
+License: Apache Software License
+Description: 
+        
+        ===============
+        OpenCMISS-Argon
+        ===============
+        
+        This package has been renamed. Use :code:`pip install cmlibs.argon` instead.
+        New package: https://pypi.org/project/cmlibs.argon/
+        
+        See `OpenCMISS2CMLibs rename tool <https://pypi.org/project/opencmiss2cmlibs/>`_ for help with renaming your own code.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/x-rst
