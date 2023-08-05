@@ -1,0 +1,10 @@
+pyproject.toml
+setup.py
+file_lines_counter.egg-info/PKG-INFO
+file_lines_counter.egg-info/SOURCES.txt
+file_lines_counter.egg-info/dependency_links.txt
+file_lines_counter.egg-info/entry_points.txt
+file_lines_counter.egg-info/requires.txt
+file_lines_counter.egg-info/top_level.txt
+src/__init__.py
+src/wc_util.py
