@@ -1,0 +1,42 @@
+{% for import_name in module.imports() %}
+import {{ import_name }}
+{% endfor %}
+import psql2py_core as core
+import dataclasses
+
+
+{% for statement in module.statements -%}
+class _{{statement.name}}:
+    _STATEMENT = r"""
+{{statement.sql}}
+"""
+    @dataclasses.dataclass
+    class Row:
+        {%- if statement.args|length == 0 %}
+        pass
+        {%- endif -%}
+        {%- for return_ in statement.returns %}
+        {{return_.name()}}: {{return_.type_hint()}}
+        {%- endfor %}
+
+
+    def __call__(
+        self,
+        {%- if statement.args|length > 0 %}
+        *,
+        {%- endif -%}
+        {%- for arg in statement.args %}
+        {{arg.name()}}: {{arg.type_hint()}},
+        {%- endfor %}
+    ) -> list[Row]:
+        """{{statement.docstring|indent(4)}}"""
+        params = {
+            {%- for arg in statement.args %}
+            "{{arg.name()}}": {{arg.name()}},
+            {%- endfor %}
+        }
+        return [self.Row(*row) for row in core.execute(self._STATEMENT, params)]
+
+{{statement.name}} = _{{statement.name}}()
+
+{% endfor -%}
