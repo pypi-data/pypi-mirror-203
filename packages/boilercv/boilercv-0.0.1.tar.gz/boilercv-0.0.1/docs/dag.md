@@ -1,0 +1,21 @@
+```{mermaid}
+flowchart TD
+ node1["schema"]
+ node2["binarized_preview"]
+ node3["contours"]
+ node4["data\rois.dvc"]
+ node5["data\sources.dvc"]
+ node6["fill"]
+ node7["filled_preview"]
+ node8["gray_preview"]
+ node3-->node6
+ node4-->node2
+ node5-->node2
+ node5-->node3
+ node5-->node6
+ node5-->node7
+ node5-->node8
+ node6-->node7
+ node9["data\examples.dvc"]
+ node10["data\samples.dvc"]
+```

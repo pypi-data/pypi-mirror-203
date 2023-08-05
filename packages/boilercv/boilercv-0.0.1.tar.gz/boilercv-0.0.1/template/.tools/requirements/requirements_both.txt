@@ -1,0 +1,25 @@
+# * -------------------------------------------------------------------------------- * #
+# * Changes below should persist in significant template updates.
+
+# * -------------------------------------------------------------------------------- * #
+# * Changes below may be lost in significant template updates.
+
+# Bump
+copier
+toml
+
+# Build
+flit
+
+# Type checking
+pyright
+
+# Lint
+ruff
+
+# Test
+pytest
+pytest-cov
+
+# Document
+-r requirements_docs.txt
