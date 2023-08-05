@@ -1,0 +1,13 @@
+pydantic>=1.9.2
+environs>=9.5.0
+psutil>=5.9.4
+
+[:python_version < "3.11"]
+tomli
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest

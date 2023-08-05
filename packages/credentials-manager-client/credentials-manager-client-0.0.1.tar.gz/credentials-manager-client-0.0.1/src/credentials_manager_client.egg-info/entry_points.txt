@@ -1,0 +1,2 @@
+[console_scripts]
+realpython = credentials_manager_client.main:execute
