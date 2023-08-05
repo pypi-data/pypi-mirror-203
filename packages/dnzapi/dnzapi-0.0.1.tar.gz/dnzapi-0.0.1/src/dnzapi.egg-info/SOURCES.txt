@@ -1,0 +1,15 @@
+CHANGES
+COPYING
+COPYING.LESSER
+MANIFEST.in
+README.rst
+pyproject.toml
+tox.ini
+src/dnz_client/__init__.py
+src/dnz_client/client.py
+src/dnzapi.egg-info/PKG-INFO
+src/dnzapi.egg-info/SOURCES.txt
+src/dnzapi.egg-info/dependency_links.txt
+src/dnzapi.egg-info/requires.txt
+src/dnzapi.egg-info/top_level.txt
+tests/test_client.py
