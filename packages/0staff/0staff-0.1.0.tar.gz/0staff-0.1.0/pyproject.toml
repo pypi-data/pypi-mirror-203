@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "0staff"
+version = "0.1.0"
+description = "Managed list of digital artist and musicians for your next visual novel."
+authors = ["Josiah Kaviani <proofit404@gmail.com>"]
+license = "BSD-2-Clause"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
