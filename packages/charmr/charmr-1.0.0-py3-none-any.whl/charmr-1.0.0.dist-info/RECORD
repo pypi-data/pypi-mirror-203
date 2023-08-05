@@ -1,0 +1,10 @@
+charmr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+charmr/ai.py,sha256=F6yGplL4dwblohxPsIvnrT1ObZYofqmOykL2HAhsPeU,1145
+charmr/alias_manager.py,sha256=zUTdDH6dkEQ_v2Pm3AmgAh_Xb_9q820-94Es5xR2fWM,1096
+charmr/load_code.py,sha256=r51s3ZdpJHHjDvD5ekRoF9fHfIwa-97XMUk77huQvfo,548
+charmr/main.py,sha256=__UksbJvP-3NX42IKMqxTr7a_a7_OMf6zNyhVwfXBVM,1838
+charmr-1.0.0.dist-info/METADATA,sha256=BR-qp2ivDBj74k1HYKFQvpJiQRPjzghCy_XgA_UA-SQ,2882
+charmr-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+charmr-1.0.0.dist-info/entry_points.txt,sha256=jGUIjBpEXJ_NWVGMdOR8rgZZdNtHvajbEXCV65lpZYs,44
+charmr-1.0.0.dist-info/top_level.txt,sha256=wacfN8ozhZ-kJEOVLqVTSnCre9O5R0221XRZML9EeF4,7
+charmr-1.0.0.dist-info/RECORD,,
