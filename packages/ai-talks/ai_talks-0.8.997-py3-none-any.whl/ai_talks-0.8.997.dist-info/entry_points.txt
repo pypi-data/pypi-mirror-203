@@ -1,0 +1,2 @@
+[console_scripts]
+ai-talks = ai_talks.chat:run_agi
