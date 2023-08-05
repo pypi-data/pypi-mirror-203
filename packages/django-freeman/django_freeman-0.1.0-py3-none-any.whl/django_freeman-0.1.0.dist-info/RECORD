@@ -1,0 +1,17 @@
+freeman/__init__.py,sha256=cmrxuPoX3OMM6Muk2gcL0cMSklyvS49zsQM0nMi1Ttc,114
+freeman/middlewares/errorhandling.py,sha256=VmIdVji_833SKVb0WZiw7yJnLaMjg7mH14aSCDWWRl0,865
+freeman/middlewares/picking.py,sha256=IvjrR5yglrnaBS4Qk_d7FCnuesatMmX3nEnTeVcFf4k,2051
+freeman/models/abstract.py,sha256=OBD52TRIfZjNwLt6_H_96fKoIEwMTx0w6ZCra66XL-c,7673
+freeman/models/types.py,sha256=7B8bKLxV2e1N3Yh4zrenBYJRaIRwsUFvY2Wyt510QGw,135
+freeman/utils/dsa.py,sha256=QkmnI94HyaxV-vQ9_fxJsQuNnUzGzJGCx3Jc5KfGn-Q,614
+freeman/utils/dto.py,sha256=S3eAX_2a7ld0YDtGkHONZIfIbn-fzmE5OJfvYDpGU7c,24527
+freeman/utils/exceptions.py,sha256=musCY5wudwroFWUhOG6IfqZTBWIxy5XE1taFXJpWrTI,1487
+freeman/utils/models.py,sha256=9CfJiVn-l8tcDy3qOTH0MqCy4RKJ9MerHRhp7P1Clys,983
+freeman/utils/picking.py,sha256=BVh1vCvFRMSbhP6II1byHhMiYyzW8lTNvju4SDxcItg,1740
+freeman/utils/query.py,sha256=mJhAsALTSmBZHDZpeoyau9FjUY6v_xqYgOEfQNltkeA,5251
+freeman/utils/strings.py,sha256=ADjFUBWDTFtCgM0WXq15ZcsXsOOgTIDeMPhSAWPJV7I,2778
+freeman/utils/typecheck.py,sha256=HvQZelSLcnbyFCgeGPSvGnautLyZEdJQ1M0SziQtYfo,211
+django_freeman-0.1.0.dist-info/LICENSE,sha256=6MUChNpvZdjSHwc-dF9kpB5GdgyIjegClPUmrsCD2dQ,1080
+django_freeman-0.1.0.dist-info/METADATA,sha256=cl0er3DBdMfl3T0jsv2k-bS3zNzYtx-BgUh7mhrIdF8,561
+django_freeman-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+django_freeman-0.1.0.dist-info/RECORD,,
