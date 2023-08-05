@@ -1,0 +1,1 @@
+print("Ini adalah sub-paket 2 dari mylibrary")
