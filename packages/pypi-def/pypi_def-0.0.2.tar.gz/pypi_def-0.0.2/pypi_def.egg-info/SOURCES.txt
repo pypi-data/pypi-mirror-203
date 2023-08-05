@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+pypi_def/__init__.py
+pypi_def/module1.py
+pypi_def/module2.py
+pypi_def.egg-info/PKG-INFO
+pypi_def.egg-info/SOURCES.txt
+pypi_def.egg-info/dependency_links.txt
+pypi_def.egg-info/top_level.txt
+pypi_def/subpackage1/__init__.py
+pypi_def/subpackage1/module3.py
+pypi_def/subpackage1/module4.py
+pypi_def/subpackage2/__init__.py
+pypi_def/subpackage2/module5.py
