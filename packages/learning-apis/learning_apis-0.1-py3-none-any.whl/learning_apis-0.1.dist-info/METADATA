@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: learning-apis
+Version: 0.1
+Provides-Extra: utils
+Requires-Dist: my-utils ; extra == 'utils'
+
