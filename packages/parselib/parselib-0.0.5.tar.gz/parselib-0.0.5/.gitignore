@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+tests
+dist
+wiki.html
+test.py
+__pycache__
+.mypy_cache
+ama.html
