@@ -1,0 +1,10 @@
+sherbystats/__init__.py,sha256=mRLIs6n0EyHwJXEcQrNSiA9t_uelHHRzfdlefhihflA,173
+sherbystats/anova.py,sha256=7OJzYYVi63WECVCbSEL7lY4rzub2xM35khggDU8w6K8,4755
+sherbystats/doe.py,sha256=Q7RdQUldaS-81ubtygzgSYwMfajZAejpNOVpDU4nPDk,12256
+sherbystats/mlr.py,sha256=5_R_rTvboYho9GB986qxxTy91dcv6Cezw9bjLyzpElY,993
+sherbystats/normplot.py,sha256=lUd0gH1Ry7PQMIpC6tFlQ8z_0YQyoidNGjpAN60dZqM,1839
+sherbystats/xlsread.py,sha256=uDdMIp0K6Mkhpk4q5kske0LRPLR3I9Uy3vkxWIiekys,700
+sherbystats-0.0.6.dist-info/METADATA,sha256=VgzgacLHhg8UNjsUW-bXIwOz0cHFweHtlbYJZ9MuZrQ,508
+sherbystats-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sherbystats-0.0.6.dist-info/top_level.txt,sha256=oac2em_2GxphI9_1Cf4nYr9H273cQOXTK8Q5W0g4vVc,12
+sherbystats-0.0.6.dist-info/RECORD,,
