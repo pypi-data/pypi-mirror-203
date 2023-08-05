@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: meroua
+Version: 1.2
+Summary: A module that defines a constant type in Python using Jython
+Author: Sahraoui Tarek Ziad
+Author-email: tziad2027@gmail.com
+License-File: LICENCE.TXT
