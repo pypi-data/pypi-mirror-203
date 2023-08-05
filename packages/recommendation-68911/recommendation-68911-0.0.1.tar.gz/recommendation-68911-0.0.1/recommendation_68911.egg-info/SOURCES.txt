@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+recommendation_68911/__init__.py
+recommendation_68911/apps.py
+recommendation_68911/exceptions.py
+recommendation_68911/managers.py
+recommendation_68911/models.py
+recommendation_68911/services.py
+recommendation_68911/settings.py
+recommendation_68911.egg-info/PKG-INFO
+recommendation_68911.egg-info/SOURCES.txt
+recommendation_68911.egg-info/dependency_links.txt
+recommendation_68911.egg-info/requires.txt
+recommendation_68911.egg-info/top_level.txt
