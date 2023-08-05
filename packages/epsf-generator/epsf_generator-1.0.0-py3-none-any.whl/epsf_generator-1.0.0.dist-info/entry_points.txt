@@ -1,0 +1,2 @@
+[console_scripts]
+epsf_generator = epsf_generator.main:main
