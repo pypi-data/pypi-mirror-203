@@ -1,0 +1,2 @@
+Here we provide the functions available. Each function itself has a help argument that is
+set to False by default. When set to True, it returns possible arguments and their defaults.
