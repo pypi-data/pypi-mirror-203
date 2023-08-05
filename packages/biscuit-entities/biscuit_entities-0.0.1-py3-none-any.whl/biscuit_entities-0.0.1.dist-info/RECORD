@@ -1,0 +1,8 @@
+biscuit_entities/__init__.py,sha256=vaO0JTO3qehREXGetmFtyMV_80vvzqSclLLY5DxD61E,90
+biscuit_entities/entity.py,sha256=8-gDQ3UZ4l1pUFigUcLTgV9iVo3i2hPiUmgRShy-mNM,2970
+biscuit_entities/property.py,sha256=F4zpBWMNR_7g31pIMBMgq9H1EGi6BZVJ_-Ya9b1RiuA,646
+biscuit_entities/singleton.py,sha256=FFxb3Wnd-xni-icOy1GvvlpJUpgE6MjrIW5QkEnRYwM,591
+biscuit_entities-0.0.1.dist-info/METADATA,sha256=QY3k3gjd1PrMvWAlWUUW0kQmLP-Yg43dqHlBOokMWa4,569
+biscuit_entities-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+biscuit_entities-0.0.1.dist-info/top_level.txt,sha256=9WWOperTTVwgl8_XHDf-Co1Kqq5zY0iXvVb28eAfIfk,17
+biscuit_entities-0.0.1.dist-info/RECORD,,

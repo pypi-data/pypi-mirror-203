@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: biscuit-entities
+Version: 0.0.1
+Summary: An library for defining structured entities in Python.
+Home-page: UNKNOWN
+Author: Jacob Paisley
+Author-email: jacobpaisley97@gmail.com
+License: MIT
+Keywords: conversion
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+An entity/property library that allows consumers to define classes with mandatory traits and out-of-the-box serialization.
+
+
