@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: live-transcribe
+Version: 0.1.2
+Summary: Real-time audio transcription. Runs OpenAI's Whisper locally.
+License: MIT
+Author: Tomasz Łakota
+Author-email: tomasz.lakota@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy (>=1.23,<2.0,!=1.24.0,!=1.24.1,!=1.24.2)
+Requires-Dist: openai-whisper (>=20230314,<20230315)
+Requires-Dist: pasimple (>=0.0.1,<0.0.2)
+Requires-Dist: pulsectl (>=22.3.2,<23.0.0)
+Description-Content-Type: text/markdown
+
+Live Transcribe
+
+Live Transcribe is a Python package that provides live, real-time transcription based on OpenAI's Whisper. Works
+offline.
+
+Currently, Live Transcribe supports only PulseAudio as an audio backend.
+
+# Installation
+
+1. **optional but highly recommended for low latency** Refer to the [Pytorch documentation guide](https://pytorch.org/)
+   to install Pytorch **with CUDA support**.
+1. `pip install live-transcribe`
+
+# Usage
+
+Just run:
+
+    python -m live_transcribe
+
+or
+
+    live_transcribe
+
+If you want to transcribe from another audio device, than the default, use the `--device` option, e.g.:
+
+    live_transcribe --list-devices
+    live_transcribe --device "alsa_input.usb-046d_HD_Pro_Webcam_C920_8C0B5B0F-02.analog-stereo
+
+On the first usage, the OpenAI's Whisper model will be downloaded and cached.
+
+See `live_transcribe --help` for options.
+
+# Dependencies
+
+Live Transcribe has the following dependencies:
+
+    Python 3.8 or higher
+    OpenAI-Whisper
+    PulseAudio
+
