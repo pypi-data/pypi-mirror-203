@@ -1,0 +1,3 @@
+[console_scripts]
+pyroscope_gridtools = pyroscope_gridtools.gtools:main
+
