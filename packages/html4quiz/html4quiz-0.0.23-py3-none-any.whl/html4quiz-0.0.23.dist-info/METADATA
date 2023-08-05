@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: html4quiz
+Version: 0.0.23
+Summary: A package that generates questionnaires as HTML files to be distributed over the network and scores answers in text files submitted by students.
+Project-URL: Homepage, https://github.com/generateNscore/html4quiz
+Project-URL: Bug Tracker, https://github.com/generateNscore/html4quiz/issues
+Project-URL: Documentation, https://github.com/generateNscore/html4quiz/wiki
+Project-URL: Source, https://github.com/generateNscore/html4quiz
+Author-email: Sukmock Lee <smlee@inha.ac.kr>
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Education :: Testing
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# html4quiz
+
+## What is it?
+
+html4quiz is a package that helps you generates question sheets with as many HTML files as you want and allows you to grade answers from text files submitted by students.
+
+## Description
+<ul>
+<li><a href="https://github.com/generateNscore/html4quiz/blob/main/README.md">READMe</a></li>
+</ul>
+
+
+## Help
+<ul>
+<li><a href="https://github.com/generateNscore/html4quiz/wiki">Documentation</a></li>
+</ul>
