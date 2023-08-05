@@ -1,0 +1,11 @@
+byebyelogger/__init__.py,sha256=ccm5XrVEGED3BWvEyjhlmSKLqOfdjOgtjBkciMvceJw,496
+byebyelogger/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+byebyelogger/core/datascience.py,sha256=Y99oO8mliksPeIZ-NxtLuE6qY93gniZ2ffCS09Qc4uw,1692
+byebyelogger/core/repository.py,sha256=HDcie9VXy7E2tmbs2nzMgG3Spo-SgoMNvbMz4lvMQEo,1898
+byebyelogger/style/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+byebyelogger/style/colorizer.py,sha256=JTzD8LmSVfzIVvPeEu8RvJ_7dGxUSTPrCngeG2T3G3E,1058
+byebyelogger/style/constants.py,sha256=A-3NfmUwqMVeK8KrJzd0PlOqBrNg3cb8goC5WwjsqsQ,500
+ByeByeLogger-2.1.5.dist-info/METADATA,sha256=7wR6Jg3_AvaKGZd7Xqhas-xC7VZa270pY_HydYTFOEY,1013
+ByeByeLogger-2.1.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ByeByeLogger-2.1.5.dist-info/top_level.txt,sha256=LOEi6ZdHDnZZK03r-KnK5SqNU83a0wwaYB6H27cGFcU,13
+ByeByeLogger-2.1.5.dist-info/RECORD,,
