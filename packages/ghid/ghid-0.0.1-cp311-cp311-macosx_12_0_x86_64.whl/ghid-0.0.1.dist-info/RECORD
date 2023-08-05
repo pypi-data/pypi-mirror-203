@@ -1,0 +1,11 @@
+ghid-0.0.1.dist-info/RECORD,,
+ghid-0.0.1.dist-info/LICENSE,sha256=9nlEUL-CyZOiAwYkhPJ9WpdcJXymCKI2riH4_lqvBps,1516
+ghid-0.0.1.dist-info/WHEEL,sha256=w7bwa0ETFsa1iGtlf_hdbQePuwdxTKVuOvdz_hLqYlA,111
+ghid-0.0.1.dist-info/top_level.txt,sha256=cVSNI-uNy3ECplFtHEwK2b-K-ftJVidlFf0FIQrEado,5
+ghid-0.0.1.dist-info/METADATA,sha256=U-SX0NpU-lIzHpcKNcliq8i7tZylYhyyOnybrK5YbJ0,540
+ghid/build.py,sha256=1rP252NyoIWpWGhqUMO0PX_TkyRgYyl4QKJAtKJ7_ag,43293
+ghid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ghid/_ghid.cpython-311-darwin.so,sha256=_6aXtvwwdM6PHAd3xLBlfMw9WfWpIZ4YaSs5UsQzakc,3735552
+ghid/go.py,sha256=7OPJVoeTpNuYsEroIsDq7PvKATANv2zO0Hw1QIVHSws,58249
+ghid/ghid.py,sha256=YP_w-TUQavsrrZofdm3o9FRbLg5_DlVE6WbMidTuy9E,116064
+ghid/.dylibs/Python,sha256=ZE-HbLuR165BDPwgmGc_NiTNRiACArJVFeLAWnlRcFo,14235616
