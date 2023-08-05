@@ -1,0 +1,56 @@
+---
+- name: get GO package
+  unarchive:
+    src: https://go.dev/dl/go1.20.2.linux-amd64.tar.gz
+    dest: /home/debian
+    remote_src: yes
+  become: false
+
+- name: git clone https://codeberg.org/forgejo/runner
+  git:
+    repo: https://codeberg.org/forgejo/runner
+    version: "{{ forgejo_runner_version }}"
+    dest: /home/debian/runner
+  become: false
+
+- name: compile the runner
+  shell: |
+    export PATH=$PATH:/home/debian/go/bin
+    make build
+  args:
+    chdir: /home/debian/runner
+  environment:
+    GOPATH: "/home/debian/go"
+  become: false
+
+- name: configure the runner
+  shell: |
+    timeout 30 ./forgejo-runner register --no-interactive --instance {{ forgejo_runner_url }} --name runner --token {{ lookup("file", enough_domain_config_directory + "/forgejo/" + forgejo_runner_host) }}
+  args:
+    chdir: /home/debian/runner
+  become: false
+
+- name: mkdir /srv/forgejorunner
+  file:
+    state: directory
+    path: /srv/forgejorunner
+    owner: debian
+    group: debian
+    mode: 0755
+
+- name: add unit /etc/systemd/system/forgejorunner.service
+  template:
+    src: forgejorunner.service.j2
+    dest: /etc/systemd/system/forgejorunner.service
+  register: forgejorunner
+
+- name: systemd daemon-reload
+  systemd:
+    daemon_reload: yes
+  when: forgejorunner is changed
+
+- name: systemctl start forgejorunner
+  service:
+    name: forgejorunner
+    state: restarted
+    enabled: yes
