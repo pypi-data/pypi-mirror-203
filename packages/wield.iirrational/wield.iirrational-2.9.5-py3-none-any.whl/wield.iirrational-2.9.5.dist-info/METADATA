@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: wield.iirrational
+Version: 2.9.5
+Summary: SISO System Identification tool
+Home-page: https://github.com/wieldphysics/wield-iirrational
+Author: Lee McCuller
+Author-email: mcculler@caltech.edu
+License: Apache-2.0
+Project-URL: Bug Tracker, https://github.com/wieldphysics/wield-iirrational/issues
+Project-URL: Source Code, https://github.com/wieldphysics/wield-iirrational
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/markdown
+License-File: LICENSES/Apache-2.0.txt
+License-File: LICENSES/CC0-1.0.txt
+License-File: NOTICE
+Requires-Dist: setuptools-scm (>=6.0.0)
+Requires-Dist: wield.bunch
+Requires-Dist: wield.utilities
+
+Python Wield IIIrational transfer function fitting
+---------------------------------------------------------
+
+This
+
