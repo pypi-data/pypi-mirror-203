@@ -1,0 +1,15 @@
+setuptools
+sphinx
+sphinx_rtd_theme
+SimpleITK
+numpy
+argparse
+opencv-python
+pytest
+PyQt6
+qimage2ndarray
+screeninfo
+black
+pre-commit
+build
+twine
