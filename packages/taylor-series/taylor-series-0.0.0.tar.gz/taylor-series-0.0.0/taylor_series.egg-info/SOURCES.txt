@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+taylor_series.egg-info/PKG-INFO
+taylor_series.egg-info/SOURCES.txt
+taylor_series.egg-info/dependency_links.txt
+taylor_series.egg-info/top_level.txt
