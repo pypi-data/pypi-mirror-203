@@ -1,0 +1,4 @@
+include cooodecooo/requirements.txt
+include cooodecooo/thirdparty.json
+include cooodecooo/README.md
+include cooodecooo/LICENSE

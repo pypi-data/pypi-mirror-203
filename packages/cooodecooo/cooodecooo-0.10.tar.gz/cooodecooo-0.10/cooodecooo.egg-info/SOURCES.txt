@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+cooodecooo/LICENSE
+cooodecooo/README.md
+cooodecooo/__init__.py
+cooodecooo/requirements.txt
+cooodecooo/thirdparty.json
+cooodecooo.egg-info/PKG-INFO
+cooodecooo.egg-info/SOURCES.txt
+cooodecooo.egg-info/dependency_links.txt
+cooodecooo.egg-info/requires.txt
+cooodecooo.egg-info/top_level.txt
