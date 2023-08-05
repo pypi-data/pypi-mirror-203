@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: flasking
+Version: 0.0.0
+Summary: A enhanced way of using flask.
+Author: ANDREI12333
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+
