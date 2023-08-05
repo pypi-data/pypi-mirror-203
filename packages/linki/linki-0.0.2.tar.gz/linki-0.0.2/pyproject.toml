@@ -1,0 +1,9 @@
+[project]
+name = "linki"
+version = '0.0.2'
+description = 'Distributed wiki tools'
+authors = [
+    {name = 'Zone Booth', email = 'kinostl@gmail.com' }
+]
+readme = "README.md"
+dependencies=["typer==0.7.0", "typing_extensions==4.5.0"]
