@@ -1,0 +1,15 @@
+unvtray/__main__.py,sha256=FGEj2fnqwWsWUEcxSyI2FuBemydsMwuPWkc6QwTTs7E,1927
+unvtray/common.py,sha256=pSuKlYmhPVv2gEJyOdOmFzu9F5CS2nUUJbzo3eylHqE,1031
+unvtray/launch.py,sha256=LFH52jIcbiddkXfngHZ2_L8OsB_lz-gTEwoHZZMwkhE,1657
+unvtray/ping.py,sha256=3OWDh3jaWbkhppkZ4SHqtHwyUCntA1ev5OAbEWb2rIg,2729
+unvtray/server.py,sha256=oYZVDdbCmStXnsnpZGRQy_3xxnOYja0mme58hK2U7zc,9941
+unvtray/servers.py,sha256=HQUQ4gJFyfkSrGRPUPs_BBMGCJdlafp7HmX_Ntvr1-4,7354
+unvtray/tray.py,sha256=lz0P9P4IAALx4B5-OZ74bZjZS7zCUI_MoUpbV0SvlmU,3966
+unvtray/assets/FreeMonoBold.otf,sha256=80NlTGar2Ufe0pq6sJn3nlXtuTon_4jnpnsdbafYAX4,203376
+unvtray/assets/unvanquished.png,sha256=1Jtu20mRf3qHSXEp6Occ45YCc2EBb6wBwJP7VWT33uE,218008
+unvtray-0.2.0.dist-info/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+unvtray-0.2.0.dist-info/METADATA,sha256=oJrIOgIKLZqfKD2Du_99Mb6VwNBHKhuayM5w_9VT_ig,4492
+unvtray-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+unvtray-0.2.0.dist-info/entry_points.txt,sha256=b5FW-Jn58ZbWPYF5On79IJAyohWyMv3rWyQQ-yIG3ns,49
+unvtray-0.2.0.dist-info/top_level.txt,sha256=0FEgvg-pmIk7vWNgMakQXrqNnWn0dz11bS-Hb5jf55o,8
+unvtray-0.2.0.dist-info/RECORD,,
