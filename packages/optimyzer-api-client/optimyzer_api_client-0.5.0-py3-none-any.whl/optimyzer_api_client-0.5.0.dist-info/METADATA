@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: optimyzer-api-client
+Version: 0.5.0
+Summary: An API Client for Optimyzer
+Home-page: https://gitlab.com/gauss-ml-open/optimyzer-api-client
+Author: Gauss Machine Learning GmbH
+Author-email: info@gauss-ml.com
+License: UNKNOWN
+Keywords: parameter optimization,machine learning,artificial intelligence,neural networks
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.5, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: rope ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: flaky ; extra == 'test'
+Requires-Dist: micro-ci ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+# Optimyzer API Client
+
+This is the Python API Client for Optimyzer. Use it to conveniently run optimizations from Python.
+
+To get access to the API you will need an Optimyzer account.
+
+If you have any kind of issue or suggestion, please
+drop us a line: [info@gauss-ml.com](mailto:info@gauss-ml.com).
+
+## Getting started
+
+Installing the `Optimyzer API Client` is very easy, just run `pip install optimyzer_api_client`
+in your favorite Python environment and you're done. If you like it, you might want to add
+`optimyzer_api_client` to your project's dependencies.
+
+## Optimyzer Usage
+
+`Optimyzer` has been built to be included in any kind of workflow as easily as possible. 
+
+First you have to import it:
+
+```python
+from optimyzer_api_client import Optimyzer
+```
+
+Then you need to create an instance using your `Optimyzer` username and password.
+
+```python
+oac = Optimyzer(username="your@email.com", password="AVery$ecureP@ssw0rd!")
+```
+
+You can also use a credentials file.
+
+```python
+oac = Optimyzer.from_credentials("/path/to/credentials_file.json")
+```
+
+Once you have an `Optimyzer API Client` instance, you can start creating machines, optimizations,
+and runing them.
+Check out the `notebooks` on this repository for examples on how to get started.
+
+
