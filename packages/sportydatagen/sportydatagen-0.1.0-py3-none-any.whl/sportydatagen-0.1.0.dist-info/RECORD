@@ -1,0 +1,14 @@
+sportydatagen/__init__.py,sha256=2hVuIuibUQIpQXkgezvWiBK05yv1hYS65P2XiuP7_os,188
+sportydatagen/activity.py,sha256=bIuZArD5Yvg-MucgYAbn3iyZ8gCN2cZ7GiPNctiSBdI,3261
+sportydatagen/csv_utils.py,sha256=V9U4dNIcVIFaby--oohQX_-kfEgWrBobWgQmS2uq70E,1276
+sportydatagen/gpx_convert_to_csv.py,sha256=Uc46ehvc-05XBtH_5BiMYXZfg4TVl64h0pXpyZbiLaI,2492
+sportydatagen/return_random_data.py,sha256=DfRmozQzy13dB_tjZN8hMUXy28kg_zuqibeGw6sYs8c,7148
+sportydatagen/saf_tcx_extract_data_to_csv.py,sha256=d112aDf8bs64Nok8AhJcdRD0-uQfp3EXlV1MyPhUlYU,2581
+sportydatagen/tcx_convert_to_csv.py,sha256=18TmNBntCzLBdwgptO13WRmvQ_8i9yocrm7Kcquh-74,3891
+sportydatagen/tcx_feature_extraction_utils.py,sha256=tfoeTLxtppts9HLvvtZRiAy3t0qcqPHg9DsXPP8YP3c,4504
+sportydatagen/tcx_utils.py,sha256=l4xLL28O5uxv7OB5TYql_lCwQvbQUH-CMSTgE58GAaU,3773
+sportydatagen/utils.py,sha256=UiEb223kn_ayPkFt1C5hXv3PIaem_Uav2XIoJkygT4E,1934
+sportydatagen-0.1.0.dist-info/LICENSE,sha256=vel2WZFy_1qPEcRD9yLKYUwnqLB3JoZMkpdFf9ARcVw,1073
+sportydatagen-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+sportydatagen-0.1.0.dist-info/METADATA,sha256=McgNQis2n45TiCd6xoLzMMxJEjKCMv5wxVUsbDFwQnQ,2299
+sportydatagen-0.1.0.dist-info/RECORD,,
