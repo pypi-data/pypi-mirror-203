@@ -1,0 +1,6 @@
+a_pandas_ex_less_memory_more_speed
+a_pandas_ex_plode_tool
+cprinter
+flatten_everything
+numpy
+pandas
