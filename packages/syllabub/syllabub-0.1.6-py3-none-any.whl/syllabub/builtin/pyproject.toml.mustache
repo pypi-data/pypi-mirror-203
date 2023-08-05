@@ -1,0 +1,41 @@
+# SPDX-License-Identifier: {{ spdx_identifier }}
+# SPDX-FileCopyrightText: {{ copyright }}
+
+[project]
+name = "{{ short_name }}"
+description = "{{ description }}"
+authors = [
+]
+dependencies = [
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = { text = "{{ spdx_identifier }}" }
+dynamic = ["version"]
+
+[project.optional-dependencies]
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project.scripts]
+{{ short_name }} = "{{ short_name }}.cli:invoke"
+
+[project.urls]
+"Source" = "{{ url_source }}"
+"Project" = "{{ url_project }}"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "carmine>=0.0.3",
+]
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.syllabub.project]
+conduct = "{{ conduct_shortcode }}"
+copyright = "{{ copyright }}"
+origin = "{{ origin_shortcode }}"
+title = "{{ full_title }}"
