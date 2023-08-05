@@ -1,0 +1,4 @@
+rich
+GitPython
+pytest
+tree_sitter
