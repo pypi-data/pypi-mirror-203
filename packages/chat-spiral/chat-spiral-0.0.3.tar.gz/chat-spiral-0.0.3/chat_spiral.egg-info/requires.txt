@@ -1,0 +1,5 @@
+regex
+openai
+pandas
+tiktoken
+faiss
