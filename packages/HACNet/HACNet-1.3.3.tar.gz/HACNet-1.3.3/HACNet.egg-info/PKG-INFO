@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: HACNet
+Version: 1.3.3
+Summary: Python package
+Home-page: https://github.com/gregory-kyro/HAC-Net/tree/main/HACNet
+Download-URL: https://github.com/gregory-kyro/HAC-Net/archive/refs/tags/v1.3.2.tar.gz
+Author: Gregory W. Kyro
+Author-email: gregory.kyro@yale.edu
+License-File: LICENSE
