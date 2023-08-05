@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyautogui_simplified_edition"
+version = "1.0a2"
+authors = [
+  { name="Жужелица" }
+]
+description = "A simplified edition of the PyAutoGUI library"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/immacool/pyautogui-simplified-edition"
+"Bug Tracker" = "https://github.com/immacool/pyautogui-simplified-edition/issues"
