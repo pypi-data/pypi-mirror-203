@@ -1,0 +1,2 @@
+[console_scripts]
+pr-review-bot = pr_review_bot:app
