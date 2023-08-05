@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: tinote
+Version: 0.1.0
+Summary: A command-line note-taking tool
+Home-page: https://github.com/yourusername/tinote
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Tinote
+
+Tinote is a lightweight command-line note-taking tool, designed for quick and easy note management. Keep track of your thoughts, ideas, or reminders directly from the terminal.
+
+## Installation
+
+Install Tinote using pip:
+
+```bash
+pip install tinote
+```
+
+## Usage
+
+Create a new note:
+
+```bash
+ti "a note to remember" -c <optional category> -i <optional importance>
+```
+
+List all notes:
+
+```bash
+ti list
+```
+
+List notes with filters (category or importance):
+
+```bash
+ti list -c <category> -i <importance>
+```
+
+Mark a note as checked/unchecked:
+
+```bash
+ti mark <note_id>
+```
+
+Delete a note:
+
+```bash
+ti delete <note_id>
+```
+
+## Features
+
+- Create and manage notes with optional categories and importance levels
+- List notes, with optional filters for categories and importance
+- Easily mark notes as checked/unchecked
+- Delete notes using their ID
+- Automatically saves notes to a local JSON file for persistence
+
+## License
+
+MIT License
