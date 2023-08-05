@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+gtfj.egg-info/PKG-INFO
+gtfj.egg-info/SOURCES.txt
+gtfj.egg-info/dependency_links.txt
+gtfj.egg-info/entry_points.txt
+gtfj.egg-info/requires.txt
+gtfj.egg-info/top_level.txt
