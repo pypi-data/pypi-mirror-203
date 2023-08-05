@@ -1,0 +1,10 @@
+osm_annotation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+osm_annotation/geofabrik_database.py,sha256=yPb33FVeZ0mw31crqoUBBcMUbjO0dfjup4M1RrGp4EU,20724
+osm_annotation/semantic_annotation.py,sha256=VWltCd86grl1sE3OSU51nb0A9zzIgHIg-txMgjmSvCg,13816
+osm_annotation/label_map/osm_label_hierarchy.csv,sha256=sU0sDWoKTVOpcf8AdkI13xjxYD_M-Xto9oz-1SOD6bw,6646
+osm_annotation/label_map/osm_label_hierarchy_clean.csv,sha256=gD1OIdMCNlmLR_TARRkxGTtJ8age8nqZjxoY4057OI4,6570
+osm_annotation-0.1.10.dist-info/LICENSE,sha256=WD8C24Jeal51SJM1UFxeZtmUCmkAepGDT0iDOEq9SnA,1083
+osm_annotation-0.1.10.dist-info/METADATA,sha256=U-6gTEF_JFgC43TSZBWQRmUs-6zgm_D8jhr5jn9WKMw,7489
+osm_annotation-0.1.10.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+osm_annotation-0.1.10.dist-info/top_level.txt,sha256=I0hj4AIZqs4hP3Vsrt-BOa9oWS77MOwrKrCepA1YsZg,15
+osm_annotation-0.1.10.dist-info/RECORD,,
