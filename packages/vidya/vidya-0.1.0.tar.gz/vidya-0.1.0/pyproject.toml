@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "vidya"
+version = "0.1.0"
+description = ""
+authors = ["suusojeat <suusojeat@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+vidya = "vidya.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "^0.7.0"}
+cssutils = "^2.6.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
