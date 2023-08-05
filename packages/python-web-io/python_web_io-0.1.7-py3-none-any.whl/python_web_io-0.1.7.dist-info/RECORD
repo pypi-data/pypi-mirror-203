@@ -1,0 +1,12 @@
+python_web_io/__main__.py,sha256=JzmLGisi0BAQE1v_w0cFqJAOO-tGEX_T5bR8WjXXmys,45
+python_web_io/cache.py,sha256=2tBeJbikprAPM-tIeSKpvNM8CNL6OfK_84fxXeavt3Q,689
+python_web_io/main.py,sha256=-a_1xKtPFGpv6mskgzIqgUizyU3TsKrDlqUVUXBmOZg,1385
+python_web_io/override.py,sha256=eJ-WUEgNHKV-XlLvDRk5xBbRA7hwHN3jyfI7E1Pr1uE,2265
+python_web_io/server.py,sha256=6O88pOv_R6yfOvXxLnF9gDsRJip1b553koI6AWntwY4,2783
+python_web_io/templates/500.html,sha256=a8FylcrI8QlOHsasC4PXwMCTWJeqYpAIXSxkH4ovt4c,491
+python_web_io/templates/base.html,sha256=N4camm6MHsO73ZceTnxUHliWap9hjVevVxs2IGjRfxc,794
+python_web_io/templates/index.html,sha256=OE_waDCkZlWFKS8UD0Nkj1cTpXH_EEkeFf9TnZ4C3yU,592
+python_web_io-0.1.7.dist-info/entry_points.txt,sha256=hu5UM1UpseunIuwHBKO5BEzM4fgDWGBMQTbb6mQLwW4,58
+python_web_io-0.1.7.dist-info/METADATA,sha256=gWq8w983mbAUycyBuHg8R9rdCT3fffkpdhUkKul7KgI,471
+python_web_io-0.1.7.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+python_web_io-0.1.7.dist-info/RECORD,,
