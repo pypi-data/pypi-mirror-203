@@ -1,0 +1,2 @@
+[console_scripts]
+ezpz4u = pz.main:start_server
