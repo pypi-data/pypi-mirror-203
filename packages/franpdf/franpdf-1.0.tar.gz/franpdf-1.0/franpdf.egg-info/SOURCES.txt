@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+franpdf.egg-info/PKG-INFO
+franpdf.egg-info/SOURCES.txt
+franpdf.egg-info/dependency_links.txt
+franpdf.egg-info/top_level.txt
