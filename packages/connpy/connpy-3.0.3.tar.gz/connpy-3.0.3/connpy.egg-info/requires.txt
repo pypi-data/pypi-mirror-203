@@ -1,0 +1,8 @@
+inquirer
+pexpect
+pycryptodome
+Flask
+waitress
+
+[fuzzysearch]
+pyfzf
