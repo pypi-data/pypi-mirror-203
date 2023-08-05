@@ -1,0 +1,6 @@
+README.rst
+setup.py
+exthon.egg-info/PKG-INFO
+exthon.egg-info/SOURCES.txt
+exthon.egg-info/dependency_links.txt
+exthon.egg-info/top_level.txt
