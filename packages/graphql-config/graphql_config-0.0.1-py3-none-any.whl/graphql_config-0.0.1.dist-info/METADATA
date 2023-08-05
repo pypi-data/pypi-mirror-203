@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: graphql-config
+Version: 0.0.1
+Summary: One configuration for all your Python GraphQL tools.
+Author-email: iyanging <iyanging@163.com>
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+
+# graphql-config
+
+One configuration for all your Python GraphQL tools
+
