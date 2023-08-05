@@ -1,0 +1,5 @@
+setup.py
+istec_p4.ls.egg-info/PKG-INFO
+istec_p4.ls.egg-info/SOURCES.txt
+istec_p4.ls.egg-info/dependency_links.txt
+istec_p4.ls.egg-info/top_level.txt
