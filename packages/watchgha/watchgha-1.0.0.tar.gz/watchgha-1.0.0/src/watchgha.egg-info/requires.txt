@@ -1,0 +1,5 @@
+click
+exceptiongroup
+httpx
+rich
+trio
