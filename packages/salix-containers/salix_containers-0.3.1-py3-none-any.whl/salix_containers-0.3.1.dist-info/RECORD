@@ -1,0 +1,8 @@
+salix_containers/__init__.py,sha256=srGSDILQ3JbATBtO5jXk_oTI4WRPEO0qxS5SOcpwtqs,153
+salix_containers/caselessmapping.py,sha256=rzNE0eHBstCXQK_qS2tpuyxvvDFeH-dPQwcz99uut3U,1039
+salix_containers/casttypes.py,sha256=X-I_4D18az2mNn1G2wm2OI5MGwIiYcpiPsmc5Z9L2yA,1617
+salix_containers/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+salix_containers/tests/test_caselessmappings.py,sha256=4omo2UuKiTap7fFcpmF_zpmZkBYLX5cweQEG_kbxwK4,3537
+salix_containers-0.3.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+salix_containers-0.3.1.dist-info/METADATA,sha256=JtWEtYR6st6wQXkNvmQRsXSs8BgUDcvp9yT-dHw_fSI,489
+salix_containers-0.3.1.dist-info/RECORD,,
