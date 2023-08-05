@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: casmarine
+Version: 1.1.0
+Summary: Extendable communication library with support for various protocols for the use of CASMarine ROV team
+Home-page: https://github.com/CASMarine/Communication
+Author: Furkan Kırlangıç, Begüm İpek
+Author-email: kirlangicfurkan01@gmail.com
+Project-URL: Bug Tracker, https://github.com/CASMarine/Communication/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.
