@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+ascicolor/__init__.py
+ascicolor.egg-info/PKG-INFO
+ascicolor.egg-info/SOURCES.txt
+ascicolor.egg-info/dependency_links.txt
+ascicolor.egg-info/top_level.txt
