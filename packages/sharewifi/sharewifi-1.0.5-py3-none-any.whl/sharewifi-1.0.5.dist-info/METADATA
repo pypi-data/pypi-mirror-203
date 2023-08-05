@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: sharewifi
+Version: 1.0.5
+Summary: A package to generate QR codes for WiFi networks
+Home-page: https://github.com/4NK1T/sharewifi
+Author: Ankit Pandey
+Author-email: ashuankitpandey@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Utilities
+Requires-Dist: cffi
+Requires-Dist: click
+Requires-Dist: pycparser
+Requires-Dist: pynacl
+Requires-Dist: qrcode
+
+UNKNOWN
+
