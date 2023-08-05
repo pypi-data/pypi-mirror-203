@@ -1,0 +1,2 @@
+[console_scripts]
+run_chat = run_chat:main
