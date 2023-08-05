@@ -1,0 +1,2210 @@
+typedef enum DittoCrdtType {
+    DITTO_CRDT_TYPE_COUNTER,
+    DITTO_CRDT_TYPE_REGISTER,
+    DITTO_CRDT_TYPE_ATTACHMENT,
+    DITTO_CRDT_TYPE_RGA,
+    DITTO_CRDT_TYPE_R_W_MAP,
+    DITTO_CRDT_TYPE_ST_COUNTER,
+    DITTO_CRDT_TYPE_A_W_SET,
+} DittoCrdtType_t;
+
+/** \brief
+ *  A short-lived FFI object to let an SDK handle an authentication request
+ *  in an async manner.
+ */
+typedef struct CAuthServerAuthRequest CAuthServerAuthRequest_t;
+
+void
+auth_server_auth_submit_with_error (
+    CAuthServerAuthRequest_t * req,
+    uint32_t _error_code);
+
+typedef struct slice_ref_uint8 {
+    uint8_t const * ptr;
+
+    size_t len;
+} slice_ref_uint8_t;
+
+void
+auth_server_auth_submit_with_success (
+    CAuthServerAuthRequest_t * req,
+    slice_ref_uint8_t success_cbor);
+
+/** <No documentation available> */
+typedef struct CAuthServerRefreshRequest CAuthServerRefreshRequest_t;
+
+void
+auth_server_refresh_submit_with_error (
+    CAuthServerRefreshRequest_t * req,
+    uint32_t _error_code);
+
+void
+auth_server_refresh_submit_with_success (
+    CAuthServerRefreshRequest_t * req,
+    slice_ref_uint8_t success_cbor);
+
+/** \brief
+ *  An opaque handle for each installed transport, heap-allocated and owned by
+ *  the SDK.
+ *
+ *  A pointer to this handle is used to send platform events over FFI. In the
+ *  future this handle will be the SDK's only point of control over the
+ *  transport once created. In particular, a transport will be removed by
+ *  freeing the handle. The concept of online and offline will be eliminated.
+ *  (i.e., if you don't want a transport, remove it.)
+ *
+ *  For now, the `Peer` object holds the transports and provides an API based on
+ *  a numeric id assigned to each transport instance. Until that is removed, the
+ *  id still exists and the SDK can request it from the opaque handle over FFI.
+ *
+ *  For each transport type, define an `extern "C"` function to free that
+ *  specific monomorphisation of the `TransportHandle` using `Box::from_raw`,
+ *  plus a function to retrieve the transport id, which will be removed later.
+ *
+ *  Safety: The SDK owns the `TransportHandle`. It is responsible for ensuring
+ *  that it does not use the pointer to the `TransportHandle` after freeing it
+ *  with its respective function. In Rust we will assume it is okay to unsafely
+ *  dereference a handle.
+ *
+ *  The C interface of `TransportHandle` is thread-safe (`Send + Sync`).
+ */
+typedef struct TransportHandle_AwdlClientPlatformEvent TransportHandle_AwdlClientPlatformEvent_t;
+
+typedef enum ConnectState {
+    CONNECT_STATE_DISCONNECTED,
+    CONNECT_STATE_CONNECTED,
+    CONNECT_STATE_CONNECTING,
+    CONNECT_STATE_DISCONNECTING,
+} ConnectState_t;
+
+void
+awdl_client_connect_state_changed (
+    TransportHandle_AwdlClientPlatformEvent_t const * handle,
+    char const * announce,
+    ConnectState_t state);
+
+void
+awdl_client_data_available (
+    TransportHandle_AwdlClientPlatformEvent_t const * handle,
+    char const * announce);
+
+void
+awdl_client_free_handle (
+    TransportHandle_AwdlClientPlatformEvent_t * handle);
+
+void
+awdl_client_platform_peer_appeared (
+    TransportHandle_AwdlClientPlatformEvent_t const * handle,
+    char const * announce);
+
+void
+awdl_client_platform_peer_disappeared (
+    TransportHandle_AwdlClientPlatformEvent_t const * handle,
+    char const * announce);
+
+void
+awdl_client_ready_to_send (
+    TransportHandle_AwdlClientPlatformEvent_t const * handle,
+    char const * announce);
+
+typedef enum OnlineState {
+    ONLINE_STATE_OFFLINE,
+    ONLINE_STATE_ONLINE,
+    ONLINE_STATE_GOING_ONLINE,
+    ONLINE_STATE_GOING_OFFLINE,
+} OnlineState_t;
+
+typedef enum TransportCondition {
+    TRANSPORT_CONDITION_UNKNOWN,
+    TRANSPORT_CONDITION_OK,
+    TRANSPORT_CONDITION_GENERIC_FAILURE,
+    TRANSPORT_CONDITION_APP_IN_BACKGROUND,
+    TRANSPORT_CONDITION_MDNS_FAILURE,
+    TRANSPORT_CONDITION_TCP_LISTEN_FAILURE,
+    TRANSPORT_CONDITION_NO_BLE_CENTRAL_PERMISSION,
+    TRANSPORT_CONDITION_NO_BLE_PERIPHERAL_PERMISSION,
+    TRANSPORT_CONDITION_CANNOT_ESTABLISH_CONNECTION,
+    TRANSPORT_CONDITION_BLE_DISABLED,
+    TRANSPORT_CONDITION_NO_BLE_HARDWARE,
+    TRANSPORT_CONDITION_WIFI_DISABLED,
+    TRANSPORT_CONDITION_TEMPORARILY_UNAVAILABLE,
+} TransportCondition_t;
+
+void
+awdl_client_scanning_state_changed (
+    TransportHandle_AwdlClientPlatformEvent_t const * handle,
+    OnlineState_t state,
+    TransportCondition_t condition);
+
+/** \brief
+ *  An opaque handle for each installed transport, heap-allocated and owned by
+ *  the SDK.
+ *
+ *  A pointer to this handle is used to send platform events over FFI. In the
+ *  future this handle will be the SDK's only point of control over the
+ *  transport once created. In particular, a transport will be removed by
+ *  freeing the handle. The concept of online and offline will be eliminated.
+ *  (i.e., if you don't want a transport, remove it.)
+ *
+ *  For now, the `Peer` object holds the transports and provides an API based on
+ *  a numeric id assigned to each transport instance. Until that is removed, the
+ *  id still exists and the SDK can request it from the opaque handle over FFI.
+ *
+ *  For each transport type, define an `extern "C"` function to free that
+ *  specific monomorphisation of the `TransportHandle` using `Box::from_raw`,
+ *  plus a function to retrieve the transport id, which will be removed later.
+ *
+ *  Safety: The SDK owns the `TransportHandle`. It is responsible for ensuring
+ *  that it does not use the pointer to the `TransportHandle` after freeing it
+ *  with its respective function. In Rust we will assume it is okay to unsafely
+ *  dereference a handle.
+ *
+ *  The C interface of `TransportHandle` is thread-safe (`Send + Sync`).
+ */
+typedef struct TransportHandle_AwdlServerPlatformEvent TransportHandle_AwdlServerPlatformEvent_t;
+
+void
+awdl_server_advertising_state_changed (
+    TransportHandle_AwdlServerPlatformEvent_t const * handle,
+    OnlineState_t state,
+    TransportCondition_t condition);
+
+void
+awdl_server_connect_state_changed (
+    TransportHandle_AwdlServerPlatformEvent_t const * handle,
+    int64_t platform_id,
+    ConnectState_t state);
+
+void
+awdl_server_data_available (
+    TransportHandle_AwdlServerPlatformEvent_t const * handle,
+    int64_t platform_id);
+
+void
+awdl_server_free_handle (
+    TransportHandle_AwdlServerPlatformEvent_t * handle);
+
+void
+awdl_server_platform_peer_appeared (
+    TransportHandle_AwdlServerPlatformEvent_t const * handle,
+    int64_t platform_id);
+
+void
+awdl_server_platform_peer_disappeared (
+    TransportHandle_AwdlServerPlatformEvent_t const * handle,
+    int64_t platform_id);
+
+void
+awdl_server_ready_to_send (
+    TransportHandle_AwdlServerPlatformEvent_t const * handle,
+    int64_t platform_id);
+
+/** \brief
+ *  An opaque handle for each installed transport, heap-allocated and owned by
+ *  the SDK.
+ *
+ *  A pointer to this handle is used to send platform events over FFI. In the
+ *  future this handle will be the SDK's only point of control over the
+ *  transport once created. In particular, a transport will be removed by
+ *  freeing the handle. The concept of online and offline will be eliminated.
+ *  (i.e., if you don't want a transport, remove it.)
+ *
+ *  For now, the `Peer` object holds the transports and provides an API based on
+ *  a numeric id assigned to each transport instance. Until that is removed, the
+ *  id still exists and the SDK can request it from the opaque handle over FFI.
+ *
+ *  For each transport type, define an `extern "C"` function to free that
+ *  specific monomorphisation of the `TransportHandle` using `Box::from_raw`,
+ *  plus a function to retrieve the transport id, which will be removed later.
+ *
+ *  Safety: The SDK owns the `TransportHandle`. It is responsible for ensuring
+ *  that it does not use the pointer to the `TransportHandle` after freeing it
+ *  with its respective function. In Rust we will assume it is okay to unsafely
+ *  dereference a handle.
+ *
+ *  The C interface of `TransportHandle` is thread-safe (`Send + Sync`).
+ */
+typedef struct TransportHandle_BleClientPlatformEvent TransportHandle_BleClientPlatformEvent_t;
+
+typedef struct {
+    uint8_t idx[16];
+} uint8_16_array_t;
+
+void
+ble_advertisement_heard (
+    TransportHandle_BleClientPlatformEvent_t const * handle,
+    uint8_16_array_t const * peripheral_uuid,
+    slice_ref_uint8_t local_name,
+    float rssi);
+
+/** \brief
+ *  An opaque handle for each installed transport, heap-allocated and owned by
+ *  the SDK.
+ *
+ *  A pointer to this handle is used to send platform events over FFI. In the
+ *  future this handle will be the SDK's only point of control over the
+ *  transport once created. In particular, a transport will be removed by
+ *  freeing the handle. The concept of online and offline will be eliminated.
+ *  (i.e., if you don't want a transport, remove it.)
+ *
+ *  For now, the `Peer` object holds the transports and provides an API based on
+ *  a numeric id assigned to each transport instance. Until that is removed, the
+ *  id still exists and the SDK can request it from the opaque handle over FFI.
+ *
+ *  For each transport type, define an `extern "C"` function to free that
+ *  specific monomorphisation of the `TransportHandle` using `Box::from_raw`,
+ *  plus a function to retrieve the transport id, which will be removed later.
+ *
+ *  Safety: The SDK owns the `TransportHandle`. It is responsible for ensuring
+ *  that it does not use the pointer to the `TransportHandle` after freeing it
+ *  with its respective function. In Rust we will assume it is okay to unsafely
+ *  dereference a handle.
+ *
+ *  The C interface of `TransportHandle` is thread-safe (`Send + Sync`).
+ */
+typedef struct TransportHandle_BleServerPlatformEvent TransportHandle_BleServerPlatformEvent_t;
+
+void
+ble_advertising_state_changed (
+    TransportHandle_BleServerPlatformEvent_t const * handle,
+    OnlineState_t state,
+    TransportCondition_t result);
+
+void
+ble_central_finished_connecting (
+    TransportHandle_BleServerPlatformEvent_t const * handle,
+    uint8_16_array_t const * uuid,
+    slice_ref_uint8_t announce,
+    int32_t l2cap_available,
+    uint32_t mtu);
+
+void
+ble_central_l2cap_data_available (
+    TransportHandle_BleServerPlatformEvent_t const * handle,
+    uint8_16_array_t const * uuid);
+
+void
+ble_central_l2cap_ready_to_send (
+    TransportHandle_BleServerPlatformEvent_t const * handle,
+    uint8_16_array_t const * uuid);
+
+void
+ble_central_mtu_updated (
+    TransportHandle_BleServerPlatformEvent_t const * handle,
+    uint8_16_array_t const * uuid,
+    uint32_t mtu);
+
+void
+ble_central_ready_to_send (
+    TransportHandle_BleServerPlatformEvent_t const * handle,
+    uint8_16_array_t const * uuid);
+
+void
+ble_central_unsubscribed (
+    TransportHandle_BleServerPlatformEvent_t const * handle,
+    uint8_16_array_t const * central_uuid);
+
+void
+ble_client_free_handle (
+    TransportHandle_BleClientPlatformEvent_t * handle);
+
+void
+ble_connection_state_changed (
+    TransportHandle_BleClientPlatformEvent_t const * handle,
+    uint8_16_array_t const * peripheral_uuid,
+    ConnectState_t state,
+    int32_t l2cap_available,
+    uint32_t mtu);
+
+void
+ble_peripheral_l2cap_data_available (
+    TransportHandle_BleClientPlatformEvent_t const * handle,
+    uint8_16_array_t const * uuid);
+
+void
+ble_peripheral_l2cap_ready_to_send (
+    TransportHandle_BleClientPlatformEvent_t const * handle,
+    uint8_16_array_t const * uuid);
+
+void
+ble_peripheral_mtu_updated (
+    TransportHandle_BleClientPlatformEvent_t const * handle,
+    uint8_16_array_t const * uuid,
+    uint32_t mtu);
+
+void
+ble_peripheral_ready_to_send (
+    TransportHandle_BleClientPlatformEvent_t const * handle,
+    uint8_16_array_t const * uuid);
+
+typedef enum BleDataType {
+    BLE_DATA_TYPE_ANNOUNCE,
+    BLE_DATA_TYPE_MESH_DATA,
+    BLE_DATA_TYPE_CONTROL,
+} BleDataType_t;
+
+void
+ble_received_from_central (
+    TransportHandle_BleServerPlatformEvent_t const * handle,
+    uint8_16_array_t const * central_uuid,
+    BleDataType_t data_type,
+    slice_ref_uint8_t data);
+
+void
+ble_received_from_peripheral (
+    TransportHandle_BleClientPlatformEvent_t const * handle,
+    uint8_16_array_t const * peripheral_uuid,
+    BleDataType_t data_type,
+    slice_ref_uint8_t data);
+
+void
+ble_scanning_state_changed (
+    TransportHandle_BleClientPlatformEvent_t const * handle,
+    OnlineState_t state,
+    TransportCondition_t result);
+
+void
+ble_server_free_handle (
+    TransportHandle_BleServerPlatformEvent_t * handle);
+
+/** <No documentation available> */
+typedef struct CDitto CDitto_t;
+
+/** \brief
+ *  `&'lt mut [T]` but with a guaranteed `#[repr(C)]` layout.
+ *
+ *  # C layout (for some given type T)
+ *
+ *  ```c
+ *  typedef struct {
+ *  // Cannot be NULL
+ *  T * ptr;
+ *  size_t len;
+ *  } slice_T;
+ *  ```
+ *
+ *  # Nullable pointer?
+ *
+ *  If you want to support the above typedef, but where the `ptr` field is
+ *  allowed to be `NULL` (with the contents of `len` then being undefined)
+ *  use the `Option< slice_ptr<_> >` type.
+ */
+typedef struct slice_mut_uint8 {
+    /** \brief
+     *  Pointer to the first element (if any).
+     */
+    uint8_t * ptr;
+
+    /** \brief
+     *  Element count
+     */
+    size_t len;
+} slice_mut_uint8_t;
+
+typedef struct AwdlClientCallbacks {
+    void (*start_searching)(void *, char const *, char const *);
+
+    void (*stop_searching)(void *);
+
+    void (*request_connect)(void *, char const *);
+
+    void (*request_disconnect)(void *, char const *);
+
+    int32_t (*send_data)(void *, char const *, slice_ref_uint8_t);
+
+    int32_t (*read_data)(void *, char const *, slice_mut_uint8_t);
+} AwdlClientCallbacks_t;
+
+TransportHandle_AwdlClientPlatformEvent_t *
+ditto_add_awdl_client_transport (
+    CDitto_t * ditto,
+    AwdlClientCallbacks_t callbacks,
+    void * ctx,
+    void (*retain)(void *),
+    void (*release)(void *));
+
+typedef struct AwdlServerCallbacks {
+    void (*start_advertising)(void *, char const *, char const *);
+
+    void (*stop_advertising)(void *);
+
+    void (*request_disconnect)(void *, int64_t);
+
+    int32_t (*send_data)(void *, int64_t, slice_ref_uint8_t);
+
+    int32_t (*read_data)(void *, int64_t, slice_mut_uint8_t);
+} AwdlServerCallbacks_t;
+
+TransportHandle_AwdlServerPlatformEvent_t *
+ditto_add_awdl_server_transport (
+    CDitto_t * ditto,
+    AwdlServerCallbacks_t callbacks,
+    void * ctx,
+    void (*retain)(void *),
+    void (*release)(void *));
+
+
+/** \brief
+ *  Rust-level representation of the result of a send operation, converted from
+ *  a bitfield
+ */
+typedef struct SendResult {
+    /** <No documentation available> */
+    bool accepted;
+
+    /** <No documentation available> */
+    bool wait_for_ready;
+} SendResult_t;
+
+typedef struct BleClientCallbacks {
+    void (*start_scanning)(void *, uint8_16_array_t const *, slice_ref_uint8_t);
+
+    void (*stop_scanning)(void *);
+
+    OnlineState_t (*scanning_state)(void *);
+
+    void (*connect_peripheral)(void *, uint8_16_array_t const *);
+
+    void (*disconnect_peripheral)(void *, uint8_16_array_t const *);
+
+    SendResult_t (*write_to_peripheral)(void *, BleDataType_t, uint8_16_array_t const *, slice_ref_uint8_t);
+
+    bool (*app_is_in_foreground)(void *);
+
+    int32_t (*read_l2cap_from_peripheral)(void *, uint8_16_array_t const *, slice_mut_uint8_t);
+
+    int32_t (*send_l2cap_to_peripheral)(void *, uint8_16_array_t const *, slice_ref_uint8_t);
+} BleClientCallbacks_t;
+
+TransportHandle_BleClientPlatformEvent_t *
+ditto_add_ble_client_transport (
+    CDitto_t * ditto,
+    BleClientCallbacks_t callbacks,
+    void * ctx,
+    void (*retain)(void *),
+    void (*release)(void *));
+
+typedef struct BleServerCallbacks {
+    void (*start_advertising)(void *, uint8_16_array_t const *, slice_ref_uint8_t);
+
+    void (*stop_advertising)(void *);
+
+    OnlineState_t (*advertising_state)(void *);
+
+    SendResult_t (*notify_to_central)(void *, BleDataType_t, uint8_16_array_t const *, slice_ref_uint8_t);
+
+    bool (*app_is_in_foreground)(void *);
+
+    int32_t (*read_l2cap_from_central)(void *, uint8_16_array_t const *, slice_mut_uint8_t);
+
+    int32_t (*send_l2cap_to_central)(void *, uint8_16_array_t const *, slice_ref_uint8_t);
+} BleServerCallbacks_t;
+
+TransportHandle_BleServerPlatformEvent_t *
+ditto_add_ble_server_transport (
+    CDitto_t * ditto,
+    BleServerCallbacks_t callbacks,
+    void * ctx,
+    void (*retain)(void *),
+    void (*release)(void *));
+
+/** \brief
+ *  Requested reliability level for a message to be transmitted to another peer.
+ *
+ *  Related to Link's
+ *  [`StreamReliability`](`::ditto_link::protocol::StreamReliability`).
+ */
+typedef enum ReliabilityMode {
+    /** \brief
+     *  No guarantees of successful delivery, ordering, or once-only delivery
+     */
+    RELIABILITY_MODE_UNRELIABLE,
+    /** \brief
+     *  Messages will be delivered at most once, in the same order that they are sent,
+     *  but there may be gaps.
+     */
+    RELIABILITY_MODE_UNRELIABLE_SEQUENCED,
+    /** \brief
+     *  Every message will be delivered in order or else the connection fails
+     */
+    RELIABILITY_MODE_RELIABLE,
+} ReliabilityMode_t;
+
+/** \brief
+ *  FFI version of CompletionReason
+ */
+typedef enum BusCompletionReason {
+    /** <No documentation available> */
+    BUS_COMPLETION_REASON_CLOSED_BY_REMOTE,
+    /** <No documentation available> */
+    BUS_COMPLETION_REASON_CLOSED_BY_LOCAL,
+} BusCompletionReason_t;
+
+/** \brief
+ *  FFI mapping of SingleSendError results
+ */
+typedef enum BusSingleSendResult {
+    /** <No documentation available> */
+    BUS_SINGLE_SEND_RESULT_OK,
+    /** <No documentation available> */
+    BUS_SINGLE_SEND_RESULT_PAYLOAD_TOO_LARGE,
+    /** <No documentation available> */
+    BUS_SINGLE_SEND_RESULT_QUEUE_FULL,
+    /** <No documentation available> */
+    BUS_SINGLE_SEND_RESULT_STREAM_FAILED,
+} BusSingleSendResult_t;
+
+typedef struct BusCallbacks {
+    void (*new_incoming_stream)(void *, uint64_t, slice_ref_uint8_t, ReliabilityMode_t, uint64_t);
+
+    void (*stream_open_succeeded)(void *, uint64_t, ReliabilityMode_t, uint64_t);
+
+    void (*stream_open_failed)(void *, uint64_t);
+
+    void (*stream_send_completed)(void *, uint64_t, uint32_t, uint64_t);
+
+    void (*stream_closed)(void *, uint64_t, BusCompletionReason_t);
+
+    void (*stream_incoming_message)(void *, uint64_t, slice_ref_uint8_t);
+
+    void (*stream_remote_ack)(void *, uint64_t, uint64_t);
+
+    void (*single_message_received)(void *, uint64_t, slice_ref_uint8_t, slice_ref_uint8_t);
+
+    void (*finished_sending_single_message)(void *, uint64_t, ReliabilityMode_t, BusSingleSendResult_t);
+} BusCallbacks_t;
+
+void
+ditto_add_bus (
+    CDitto_t const * ditto,
+    BusCallbacks_t callbacks,
+    void * ctx,
+    void (*retain)(void *),
+    void (*release)(void *));
+
+TransportHandle_BleClientPlatformEvent_t *
+ditto_add_internal_ble_client_transport (
+    CDitto_t * ditto);
+
+TransportHandle_BleServerPlatformEvent_t *
+ditto_add_internal_ble_server_transport (
+    CDitto_t * ditto);
+
+/** \brief
+ *  An opaque handle for each installed transport, heap-allocated and owned by
+ *  the SDK.
+ *
+ *  A pointer to this handle is used to send platform events over FFI. In the
+ *  future this handle will be the SDK's only point of control over the
+ *  transport once created. In particular, a transport will be removed by
+ *  freeing the handle. The concept of online and offline will be eliminated.
+ *  (i.e., if you don't want a transport, remove it.)
+ *
+ *  For now, the `Peer` object holds the transports and provides an API based on
+ *  a numeric id assigned to each transport instance. Until that is removed, the
+ *  id still exists and the SDK can request it from the opaque handle over FFI.
+ *
+ *  For each transport type, define an `extern "C"` function to free that
+ *  specific monomorphisation of the `TransportHandle` using `Box::from_raw`,
+ *  plus a function to retrieve the transport id, which will be removed later.
+ *
+ *  Safety: The SDK owns the `TransportHandle`. It is responsible for ensuring
+ *  that it does not use the pointer to the `TransportHandle` after freeing it
+ *  with its respective function. In Rust we will assume it is okay to unsafely
+ *  dereference a handle.
+ *
+ *  The C interface of `TransportHandle` is thread-safe (`Send + Sync`).
+ */
+typedef struct TransportHandle_MdnsServerPlatformEvent TransportHandle_MdnsServerPlatformEvent_t;
+
+/** \brief
+ *  An opaque handle for each installed transport, heap-allocated and owned by
+ *  the SDK.
+ *
+ *  A pointer to this handle is used to send platform events over FFI. In the
+ *  future this handle will be the SDK's only point of control over the
+ *  transport once created. In particular, a transport will be removed by
+ *  freeing the handle. The concept of online and offline will be eliminated.
+ *  (i.e., if you don't want a transport, remove it.)
+ *
+ *  For now, the `Peer` object holds the transports and provides an API based on
+ *  a numeric id assigned to each transport instance. Until that is removed, the
+ *  id still exists and the SDK can request it from the opaque handle over FFI.
+ *
+ *  For each transport type, define an `extern "C"` function to free that
+ *  specific monomorphisation of the `TransportHandle` using `Box::from_raw`,
+ *  plus a function to retrieve the transport id, which will be removed later.
+ *
+ *  Safety: The SDK owns the `TransportHandle`. It is responsible for ensuring
+ *  that it does not use the pointer to the `TransportHandle` after freeing it
+ *  with its respective function. In Rust we will assume it is okay to unsafely
+ *  dereference a handle.
+ *
+ *  The C interface of `TransportHandle` is thread-safe (`Send + Sync`).
+ */
+typedef struct TransportHandle_MdnsClientPlatformEvent TransportHandle_MdnsClientPlatformEvent_t;
+
+TransportHandle_MdnsClientPlatformEvent_t * ditto_add_internal_mdns_client_transport (
+    CDitto_t * ditto);
+
+/** <No documentation available> */
+TransportHandle_MdnsServerPlatformEvent_t * ditto_add_internal_mdns_server_transport (
+    CDitto_t * ditto);
+
+
+typedef struct MdnsServerCallbacks {
+    void (*start_advertising)(void *, char const *, char const *, uint16_t);
+
+    void (*stop_advertising)(void *);
+} MdnsServerCallbacks_t;
+
+typedef struct MdnsClientCallbacks {
+    void (*start_searching)(void *, char const *);
+
+    void (*stop_searching)(void *);
+
+    void (*resolve_service)(void *, slice_ref_uint8_t);
+} MdnsClientCallbacks_t;
+
+void
+ditto_add_multicast_transport (
+    CDitto_t * ditto);
+
+/** \brief
+ *  An opaque handle for each installed transport, heap-allocated and owned by
+ *  the SDK.
+ *
+ *  A pointer to this handle is used to send platform events over FFI. In the
+ *  future this handle will be the SDK's only point of control over the
+ *  transport once created. In particular, a transport will be removed by
+ *  freeing the handle. The concept of online and offline will be eliminated.
+ *  (i.e., if you don't want a transport, remove it.)
+ *
+ *  For now, the `Peer` object holds the transports and provides an API based on
+ *  a numeric id assigned to each transport instance. Until that is removed, the
+ *  id still exists and the SDK can request it from the opaque handle over FFI.
+ *
+ *  For each transport type, define an `extern "C"` function to free that
+ *  specific monomorphisation of the `TransportHandle` using `Box::from_raw`,
+ *  plus a function to retrieve the transport id, which will be removed later.
+ *
+ *  Safety: The SDK owns the `TransportHandle`. It is responsible for ensuring
+ *  that it does not use the pointer to the `TransportHandle` after freeing it
+ *  with its respective function. In Rust we will assume it is okay to unsafely
+ *  dereference a handle.
+ *
+ *  The C interface of `TransportHandle` is thread-safe (`Send + Sync`).
+ */
+typedef struct TransportHandle_StaticTcpClientPlatformEvent TransportHandle_StaticTcpClientPlatformEvent_t;
+
+TransportHandle_StaticTcpClientPlatformEvent_t *
+ditto_add_static_tcp_client (
+    CDitto_t const * ditto,
+    char const * address);
+
+/** <No documentation available> */
+typedef enum QuerySortDirection {
+    /** <No documentation available> */
+    QUERY_SORT_DIRECTION_ASCENDING = 1,
+    /** <No documentation available> */
+    QUERY_SORT_DIRECTION_DESCENDING,
+} QuerySortDirection_t;
+
+/** \brief
+ *  OrderBy Parameter
+ */
+typedef struct COrderByParam {
+    /** <No documentation available> */
+    char const * query_c_str;
+
+    /** <No documentation available> */
+    QuerySortDirection_t direction;
+} COrderByParam_t;
+
+typedef struct slice_ref_COrderByParam {
+    COrderByParam_t const * ptr;
+
+    size_t len;
+} slice_ref_COrderByParam_t;
+
+int32_t
+ditto_add_subscription (
+    CDitto_t const * ditto,
+    char const * collection,
+    char const * query,
+    slice_ref_uint8_t query_args_cbor,
+    slice_ref_COrderByParam_t order_by,
+    int32_t limit,
+    uint32_t offset);
+
+/** \brief
+ *  An opaque handle for each installed transport, heap-allocated and owned by
+ *  the SDK.
+ *
+ *  A pointer to this handle is used to send platform events over FFI. In the
+ *  future this handle will be the SDK's only point of control over the
+ *  transport once created. In particular, a transport will be removed by
+ *  freeing the handle. The concept of online and offline will be eliminated.
+ *  (i.e., if you don't want a transport, remove it.)
+ *
+ *  For now, the `Peer` object holds the transports and provides an API based on
+ *  a numeric id assigned to each transport instance. Until that is removed, the
+ *  id still exists and the SDK can request it from the opaque handle over FFI.
+ *
+ *  For each transport type, define an `extern "C"` function to free that
+ *  specific monomorphisation of the `TransportHandle` using `Box::from_raw`,
+ *  plus a function to retrieve the transport id, which will be removed later.
+ *
+ *  Safety: The SDK owns the `TransportHandle`. It is responsible for ensuring
+ *  that it does not use the pointer to the `TransportHandle` after freeing it
+ *  with its respective function. In Rust we will assume it is okay to unsafely
+ *  dereference a handle.
+ *
+ *  The C interface of `TransportHandle` is thread-safe (`Send + Sync`).
+ */
+typedef struct TransportHandle_WebsocketClientPlatformEvent TransportHandle_WebsocketClientPlatformEvent_t;
+
+TransportHandle_WebsocketClientPlatformEvent_t *
+ditto_add_websocket_client (
+    CDitto_t const * ditto,
+    char const * address,
+    uint32_t routing_hint);
+
+typedef struct WifiAwareClientCallbacks {
+    void (*start_searching)(void *, char const *);
+
+    void (*stop_searching)(void *);
+
+    void (*create_network)(void *, char const *);
+} WifiAwareClientCallbacks_t;
+
+/** \brief
+ *  An opaque handle for each installed transport, heap-allocated and owned by
+ *  the SDK.
+ *
+ *  A pointer to this handle is used to send platform events over FFI. In the
+ *  future this handle will be the SDK's only point of control over the
+ *  transport once created. In particular, a transport will be removed by
+ *  freeing the handle. The concept of online and offline will be eliminated.
+ *  (i.e., if you don't want a transport, remove it.)
+ *
+ *  For now, the `Peer` object holds the transports and provides an API based on
+ *  a numeric id assigned to each transport instance. Until that is removed, the
+ *  id still exists and the SDK can request it from the opaque handle over FFI.
+ *
+ *  For each transport type, define an `extern "C"` function to free that
+ *  specific monomorphisation of the `TransportHandle` using `Box::from_raw`,
+ *  plus a function to retrieve the transport id, which will be removed later.
+ *
+ *  Safety: The SDK owns the `TransportHandle`. It is responsible for ensuring
+ *  that it does not use the pointer to the `TransportHandle` after freeing it
+ *  with its respective function. In Rust we will assume it is okay to unsafely
+ *  dereference a handle.
+ *
+ *  The C interface of `TransportHandle` is thread-safe (`Send + Sync`).
+ */
+typedef struct TransportHandle_WifiAwareClientPlatformEvent TransportHandle_WifiAwareClientPlatformEvent_t;
+
+TransportHandle_WifiAwareClientPlatformEvent_t *
+ditto_add_wifi_aware_client_transport (
+    CDitto_t * ditto,
+    WifiAwareClientCallbacks_t callbacks,
+    void * ctx,
+    void (*retain)(void *),
+    void (*release)(void *));
+
+typedef struct WifiAwareServerCallbacks {
+    void (*start_advertising)(void *, char const *, char const *, uint16_t);
+
+    void (*stop_advertising)(void *);
+} WifiAwareServerCallbacks_t;
+
+/** \brief
+ *  An opaque handle for each installed transport, heap-allocated and owned by
+ *  the SDK.
+ *
+ *  A pointer to this handle is used to send platform events over FFI. In the
+ *  future this handle will be the SDK's only point of control over the
+ *  transport once created. In particular, a transport will be removed by
+ *  freeing the handle. The concept of online and offline will be eliminated.
+ *  (i.e., if you don't want a transport, remove it.)
+ *
+ *  For now, the `Peer` object holds the transports and provides an API based on
+ *  a numeric id assigned to each transport instance. Until that is removed, the
+ *  id still exists and the SDK can request it from the opaque handle over FFI.
+ *
+ *  For each transport type, define an `extern "C"` function to free that
+ *  specific monomorphisation of the `TransportHandle` using `Box::from_raw`,
+ *  plus a function to retrieve the transport id, which will be removed later.
+ *
+ *  Safety: The SDK owns the `TransportHandle`. It is responsible for ensuring
+ *  that it does not use the pointer to the `TransportHandle` after freeing it
+ *  with its respective function. In Rust we will assume it is okay to unsafely
+ *  dereference a handle.
+ *
+ *  The C interface of `TransportHandle` is thread-safe (`Send + Sync`).
+ */
+typedef struct TransportHandle_WifiAwareServerPlatformEvent TransportHandle_WifiAwareServerPlatformEvent_t;
+
+TransportHandle_WifiAwareServerPlatformEvent_t *
+ditto_add_wifi_aware_server_advertiser (
+    CDitto_t * ditto,
+    WifiAwareServerCallbacks_t callbacks,
+    void * ctx,
+    void (*retain)(void *),
+    void (*release)(void *));
+
+/** <No documentation available> */
+typedef struct CAuthClient CAuthClient_t;
+
+void
+ditto_auth_client_free (
+    CAuthClient_t * auth_client);
+
+char *
+ditto_auth_client_get_app_id (
+    CAuthClient_t const * auth_client);
+
+uint64_t
+ditto_auth_client_get_site_id (
+    CAuthClient_t const * auth_client);
+
+int32_t
+ditto_auth_client_is_web_valid (
+    CAuthClient_t const * auth_client);
+
+int32_t
+ditto_auth_client_is_x509_valid (
+    CAuthClient_t const * auth_client);
+
+int32_t
+ditto_auth_client_login_with_credentials (
+    CAuthClient_t const * auth_client,
+    char const * username,
+    char const * password,
+    char const * provider);
+
+int32_t
+ditto_auth_client_login_with_token (
+    CAuthClient_t const * auth_client,
+    char const * token,
+    char const * provider);
+
+typedef struct Vec_uint8 {
+    uint8_t * ptr;
+
+    size_t len;
+
+    size_t cap;
+} Vec_uint8_t;
+
+typedef struct AuthenticationResult {
+    int32_t return_code;
+
+    Vec_uint8_t client_info;
+} AuthenticationResult_t;
+
+AuthenticationResult_t
+ditto_auth_client_login_with_token_and_feedback (
+    CAuthClient_t const * auth_client,
+    char const * token,
+    char const * provider);
+
+int32_t
+ditto_auth_client_logout (
+    CAuthClient_t const * auth_client);
+
+typedef struct AuthClientResult {
+    int32_t status_code;
+
+    CAuthClient_t * auth_client;
+} AuthClientResult_t;
+
+AuthClientResult_t
+ditto_auth_client_make_anonymous_client (
+    char const * working_dir,
+    char const * app_id,
+    char const * shared_token,
+    char const * base_url);
+
+typedef struct Erased Erased_t;
+
+typedef enum PollFuture{
+    POLL_FUTURE_COMPLETED,
+    POLL_FUTURE_PENDING
+} PollFuture_t;
+
+typedef struct Opaque_Context Opaque_Context_t;
+
+/** <No documentation available> */
+typedef struct FfiFutureVTable {
+    /** <No documentation available> */
+    void (*release_vptr)(Erased_t *);
+
+    /** <No documentation available> */
+    PollFuture_t (*dyn_poll)(Erased_t *, Opaque_Context_t *);
+} FfiFutureVTable_t;
+
+/** <No documentation available> */
+typedef struct VirtualPtr__Erased_ptr_FfiFutureVTable {
+    /** <No documentation available> */
+    Erased_t * ptr;
+
+    /** <No documentation available> */
+    FfiFutureVTable_t vtable;
+} VirtualPtr__Erased_ptr_FfiFutureVTable_t;
+
+/** \brief
+ *  `Box<dyn 'static + Send + FnMut() -> Ret>`
+ */
+typedef struct BoxDynFnMut0_void {
+    /** <No documentation available> */
+    void * env_ptr;
+
+    /** <No documentation available> */
+    void (*call)(void *);
+
+    /** <No documentation available> */
+    void (*free)(void *);
+} BoxDynFnMut0_void_t;
+typedef struct DropGlueVTable {
+    void (*release_vptr)(Erased_t *);
+} DropGlueVTable_t;
+
+typedef struct VirtualPtr__Erased_ptr_DropGlueVTable {
+    Erased_t * ptr;
+
+    DropGlueVTable_t vtable;
+} VirtualPtr__Erased_ptr_DropGlueVTable_t;
+
+typedef struct FfiFutureExecutorVTable {
+    void (*release_vptr)(Erased_t *);
+
+    Erased_t * (*retain_vptr)(Erased_t const *);
+
+    VirtualPtr__Erased_ptr_FfiFutureVTable_t (*dyn_spawn)(Erased_t const *, VirtualPtr__Erased_ptr_FfiFutureVTable_t);
+
+    VirtualPtr__Erased_ptr_FfiFutureVTable_t (*dyn_spawn_blocking)(Erased_t const *, BoxDynFnMut0_void_t);
+
+    void (*dyn_block_on)(Erased_t const *, VirtualPtr__Erased_ptr_FfiFutureVTable_t);
+
+    VirtualPtr__Erased_ptr_DropGlueVTable_t (*dyn_enter)(Erased_t const *);
+} FfiFutureExecutorVTable_t;
+
+typedef struct VirtualPtr__Erased_ptr_FfiFutureExecutorVTable {
+    Erased_t * ptr;
+
+    FfiFutureExecutorVTable_t vtable;
+} VirtualPtr__Erased_ptr_FfiFutureExecutorVTable_t;
+
+typedef struct StaticDropGlueVTable {
+    void (*release_vptr)(Erased_t *);
+
+    Erased_t * (*retain_vptr)(Erased_t const *);
+} StaticDropGlueVTable_t;
+
+typedef struct VirtualPtr__Erased_ptr_StaticDropGlueVTable {
+    Erased_t * ptr;
+
+    StaticDropGlueVTable_t vtable;
+} VirtualPtr__Erased_ptr_StaticDropGlueVTable_t;
+
+typedef struct DyExecutor {
+    VirtualPtr__Erased_ptr_FfiFutureExecutorVTable_t handle;
+    VirtualPtr__Erased_ptr_StaticDropGlueVTable_t _runtime;
+} DynExecutor_t;
+
+AuthClientResult_t
+ditto_auth_client_make_anonymous_client_with_executor (
+    char const * working_dir,
+    char const * app_id,
+    char const * shared_token,
+    char const * base_url,
+    DynExecutor_t executor);
+
+AuthClientResult_t
+ditto_auth_client_make_for_development (
+    char const * working_dir,
+    char const * app_id,
+    uint64_t site_id);
+
+AuthClientResult_t
+ditto_auth_client_make_for_development_with_executor (
+    char const * working_dir,
+    char const * app_id,
+    uint64_t site_id,
+    DynExecutor_t executor);
+
+/** \brief
+ *  An `SdkLoginProvider` that sends the notifications over FFI
+ */
+typedef struct CLoginProvider CLoginProvider_t;
+
+CLoginProvider_t *
+ditto_auth_client_make_login_provider (
+    void * ctx,
+    void (*retain)(void *),
+    void (*release)(void *),
+    void (*expiring_cb)(void *, uint32_t));
+
+AuthClientResult_t
+ditto_auth_client_make_with_shared_key (
+    char const * working_dir,
+    char const * app_id,
+    char const * key_der_b64,
+    uint64_t site_id);
+
+AuthClientResult_t
+ditto_auth_client_make_with_shared_key_with_executor (
+    char const * working_dir,
+    char const * app_id,
+    char const * key_der_b64,
+    uint64_t site_id,
+    DynExecutor_t executor);
+
+AuthClientResult_t
+ditto_auth_client_make_with_static_x509 (
+    char const * config_cbor_b64);
+
+AuthClientResult_t
+ditto_auth_client_make_with_static_x509_with_executor (
+    char const * config_cbor_b64,
+    DynExecutor_t executor);
+
+AuthClientResult_t
+ditto_auth_client_make_with_web (
+    char const * working_dir,
+    char const * app_id,
+    char const * base_url,
+    CLoginProvider_t * login_provider);
+
+AuthClientResult_t
+ditto_auth_client_make_with_web_with_executor (
+    char const * working_dir,
+    char const * app_id,
+    char const * base_url,
+    CLoginProvider_t * login_provider,
+    DynExecutor_t executor);
+
+void
+ditto_auth_client_set_validity_listener (
+    CAuthClient_t const * auth_client,
+    void * ctx,
+    void (*retain)(void *),
+    void (*release)(void *),
+    void (*validity_update_cb)(void *, int32_t, int32_t));
+
+char *
+ditto_auth_client_user_id (
+    CAuthClient_t const * auth_client);
+
+DynExecutor_t
+ditto_auth_extract_executor (
+    CAuthClient_t const * auth_client);
+
+void
+ditto_auth_login_provider_free (
+    CLoginProvider_t * login_provider);
+
+void
+ditto_bus_close_stream (
+    CDitto_t const * ditto,
+    uint64_t stream_id);
+
+void
+ditto_bus_enqueue_stream_message (
+    CDitto_t const * ditto,
+    uint64_t stream_id,
+    slice_ref_uint8_t message);
+
+typedef enum BusStreamEnqueueReadiness {
+    BUS_STREAM_ENQUEUE_READINESS_READY,
+    BUS_STREAM_ENQUEUE_READINESS_NOT_READY,
+    BUS_STREAM_ENQUEUE_READINESS_ERROR,
+} BusStreamEnqueueReadiness_t;
+
+BusStreamEnqueueReadiness_t
+ditto_bus_is_stream_ready_to_enqueue (
+    CDitto_t const * ditto,
+    uint64_t stream_id);
+
+void
+ditto_bus_open_stream (
+    CDitto_t const * ditto,
+    slice_ref_uint8_t destination,
+    ReliabilityMode_t reliability_mode,
+    uint64_t open_ctx);
+
+void
+ditto_bus_send_single_message (
+    CDitto_t const * ditto,
+    slice_ref_uint8_t destination,
+    uint64_t send_ctx,
+    ReliabilityMode_t reliability_mode,
+    slice_ref_uint8_t message);
+
+typedef struct slice_boxed_uint8 {
+    uint8_t * ptr;
+
+    size_t len;
+} slice_boxed_uint8_t;
+
+void
+ditto_c_bytes_free (
+    slice_boxed_uint8_t bytes);
+
+void
+ditto_c_string_free (
+    char * s);
+
+void
+ditto_callback_err_nop (
+    int32_t _code,
+    char const * _err,
+    void * _data);
+
+void
+ditto_callback_nop (
+    void const * _data);
+
+uint32_t
+ditto_cancel_resolve_attachment (
+    CDitto_t const * ditto,
+    slice_ref_uint8_t id,
+    uint64_t cancel_token);
+
+typedef enum PathAccessorType {
+    PATH_ACCESSOR_TYPE_STRING,
+    PATH_ACCESSOR_TYPE_NUMBER,
+    PATH_ACCESSOR_TYPE_INT,
+    PATH_ACCESSOR_TYPE_U_INT,
+    PATH_ACCESSOR_TYPE_FLOAT,
+    PATH_ACCESSOR_TYPE_DOUBLE,
+    PATH_ACCESSOR_TYPE_BOOL,
+    PATH_ACCESSOR_TYPE_NULL,
+    PATH_ACCESSOR_TYPE_OBJECT,
+    PATH_ACCESSOR_TYPE_ARRAY,
+    PATH_ACCESSOR_TYPE_ANY,
+    PATH_ACCESSOR_TYPE_COUNTER,
+    PATH_ACCESSOR_TYPE_REGISTER,
+    PATH_ACCESSOR_TYPE_ATTACHMENT,
+    PATH_ACCESSOR_TYPE_R_W_MAP,
+} PathAccessorType_t;
+
+typedef struct CBORPathResult {
+    int32_t status_code;
+
+    slice_boxed_uint8_t cbor;
+} CBORPathResult_t;
+
+CBORPathResult_t
+ditto_cbor_get_cbor_with_path_type (
+    slice_ref_uint8_t cbor,
+    char const * path,
+    PathAccessorType_t path_type);
+
+void
+ditto_clear_presence_callback (
+    CDitto_t * ditto);
+
+void
+ditto_clear_presence_v1_callback (
+    CDitto_t * ditto);
+
+void
+ditto_clear_presence_v2_callback (
+    CDitto_t * ditto);
+
+void
+ditto_clear_presence_v3_callback (
+    CDitto_t * ditto);
+
+int32_t
+ditto_collection (
+    CDitto_t const * ditto,
+    char const * name);
+
+/** \brief
+ *  Write transaction synchronous API.
+ */
+typedef struct CWriteTransaction CWriteTransaction_t;
+
+typedef struct BoolResult {
+    int32_t status_code;
+
+    bool bool_value;
+} BoolResult_t;
+
+BoolResult_t
+ditto_collection_evict (
+    CDitto_t const * ditto,
+    char const * coll_name,
+    CWriteTransaction_t * transaction,
+    slice_ref_uint8_t id);
+
+typedef struct Vec_slice_boxed_uint8 {
+    slice_boxed_uint8_t * ptr;
+
+    size_t len;
+
+    size_t cap;
+} Vec_slice_boxed_uint8_t;
+
+typedef struct DocIdsResult {
+    int32_t status_code;
+
+    Vec_slice_boxed_uint8_t ids;
+} DocIdsResult_t;
+
+DocIdsResult_t
+ditto_collection_evict_query_str (
+    CDitto_t const * ditto,
+    char const * coll_name,
+    CWriteTransaction_t * transaction,
+    char const * query,
+    slice_ref_uint8_t query_args_cbor,
+    slice_ref_COrderByParam_t order_by_params,
+    int32_t limit,
+    uint32_t offset);
+
+/** \brief
+ *  Database document consisting of an associate `DocumentId` and
+ *  `ditto_crdt::Document` pair. Within the `store` crate the association of
+ *  these two elements are maintained together within this single structure,
+ *  while these elements may be stored separately in upstream or downstream
+ *  crates. This type corresponds to the `Record` type in the `replication`
+ *  crate, rather than a literal document.
+ */
+typedef struct CDocument CDocument_t;
+
+typedef struct Vec_CDocument_ptr {
+    CDocument_t * * ptr;
+
+    size_t len;
+
+    size_t cap;
+} Vec_CDocument_ptr_t;
+
+typedef struct DocumentsResult {
+    int32_t status_code;
+
+    Vec_CDocument_ptr_t documents;
+} DocumentsResult_t;
+
+DocumentsResult_t
+ditto_collection_exec_query_str (
+    CDitto_t const * ditto,
+    char const * coll_name,
+    CWriteTransaction_t * txn,
+    char const * query,
+    slice_ref_uint8_t query_args_cbor,
+    slice_ref_COrderByParam_t order_by_params,
+    int32_t limit,
+    uint32_t offset);
+
+/** \brief
+ *  Read transaction synchronous API.
+ */
+typedef struct CReadTransaction CReadTransaction_t;
+
+typedef struct DocumentResult {
+    int32_t status_code;
+
+    CDocument_t * document;
+} DocumentResult_t;
+
+DocumentResult_t
+ditto_collection_get (
+    CDitto_t const * ditto,
+    char const * coll_name,
+    slice_ref_uint8_t id,
+    CReadTransaction_t * transaction);
+
+typedef enum WriteStrategyRs {
+    WRITE_STRATEGY_RS_MERGE,
+    WRITE_STRATEGY_RS_INSERT_IF_ABSENT,
+    WRITE_STRATEGY_RS_INSERT_DEFAULT_IF_ABSENT,
+} WriteStrategyRs_t;
+
+typedef struct DocIdResult {
+    int32_t status_code;
+
+    slice_boxed_uint8_t id;
+} DocIdResult_t;
+
+DocIdResult_t
+ditto_collection_insert_value (
+    CDitto_t const * ditto,
+    char const * coll_name,
+    slice_ref_uint8_t doc_cbor,
+    slice_ref_uint8_t doc_id,
+    WriteStrategyRs_t write_strategy,
+    char const * log_hint,
+    CWriteTransaction_t * txn);
+
+BoolResult_t
+ditto_collection_remove (
+    CDitto_t const * ditto,
+    char const * coll_name,
+    CWriteTransaction_t * transaction,
+    slice_ref_uint8_t id);
+
+DocIdsResult_t
+ditto_collection_remove_query_str (
+    CDitto_t const * ditto,
+    char const * coll_name,
+    CWriteTransaction_t * transaction,
+    char const * query,
+    slice_ref_uint8_t query_args_cbor,
+    slice_ref_COrderByParam_t order_by_params,
+    int32_t limit,
+    uint32_t offset);
+
+int32_t
+ditto_collection_update (
+    CDitto_t const * ditto,
+    char const * coll_name,
+    CWriteTransaction_t * transaction,
+    CDocument_t * document);
+
+int32_t
+ditto_collection_update_multiple (
+    CDitto_t const * ditto,
+    char const * coll_name,
+    CWriteTransaction_t * transaction,
+    Vec_CDocument_ptr_t documents);
+
+int32_t
+ditto_disable_sync_with_v3 (
+    CDitto_t * ditto);
+
+typedef enum FsComponent {
+    FS_COMPONENT_ROOT,
+    FS_COMPONENT_STORE,
+    FS_COMPONENT_AUTH,
+    FS_COMPONENT_REPLICATION,
+    FS_COMPONENT_ATTACHMENT,
+} FsComponent_t;
+
+slice_boxed_uint8_t
+ditto_disk_usage (
+    CDitto_t * ditto,
+    FsComponent_t path);
+
+slice_boxed_uint8_t
+ditto_document_cbor (
+    CDocument_t const * document);
+
+slice_boxed_uint8_t
+ditto_document_cds (
+    CDocument_t const * document);
+
+void
+ditto_document_free (
+    CDocument_t * document);
+
+CBORPathResult_t
+ditto_document_get_cbor_with_path_type (
+    CDocument_t const * document,
+    char const * pointer,
+    PathAccessorType_t path_type);
+
+slice_boxed_uint8_t
+ditto_document_id (
+    CDocument_t const * document);
+
+typedef enum StringPrimitiveFormat {
+    STRING_PRIMITIVE_FORMAT_WITH_QUOTES,
+    STRING_PRIMITIVE_FORMAT_WITHOUT_QUOTES,
+} StringPrimitiveFormat_t;
+
+char *
+ditto_document_id_query_compatible (
+    slice_ref_uint8_t id,
+    StringPrimitiveFormat_t string_primitive_format);
+
+int32_t
+ditto_document_increment_counter (
+    CDocument_t * document,
+    char const * pointer,
+    double amount);
+
+int32_t
+ditto_document_remove (
+    CDocument_t * document,
+    char const * pointer);
+
+int32_t
+ditto_document_set_cbor (
+    CDocument_t * document,
+    char const * pointer,
+    slice_ref_uint8_t cbor);
+
+int32_t
+ditto_document_set_cbor_with_timestamp (
+    CDocument_t * document,
+    char const * pointer,
+    slice_ref_uint8_t cbor,
+    uint32_t _timestamp);
+
+int32_t
+ditto_document_update (
+    CDocument_t * document,
+    slice_ref_uint8_t cbor);
+
+typedef struct slice_ref_CDocument_ptr {
+    CDocument_t * const * ptr;
+
+    size_t len;
+} slice_ref_CDocument_ptr_t;
+
+typedef struct U64Result {
+    int32_t status_code;
+
+    uint64_t u64;
+} U64Result_t;
+
+U64Result_t
+ditto_documents_hash (
+    slice_ref_CDocument_ptr_t documents);
+
+typedef struct BoxedCharPtrResult {
+    int32_t status_code;
+
+    char * c_string;
+} BoxedCharPtrResult_t;
+
+BoxedCharPtrResult_t
+ditto_documents_hash_mnemonic (
+    slice_ref_CDocument_ptr_t documents);
+
+void
+ditto_drop (
+    CDitto_t * ditto);
+
+char *
+ditto_error_message (void);
+
+char *
+ditto_error_message_peek (void);
+
+void
+ditto_free (
+    CDitto_t * ditto);
+
+/** \brief
+ *  A shared read-only reference to an existing Attachment.
+ */
+typedef struct AttachmentHandle AttachmentHandle_t;
+
+void
+ditto_free_attachment_handle (
+    AttachmentHandle_t * handle);
+
+void
+ditto_free_documents (
+    Vec_CDocument_ptr_t documents);
+
+typedef struct slice_boxed_size {
+    size_t * ptr;
+
+    size_t len;
+} slice_boxed_size_t;
+
+void
+ditto_free_indices (
+    slice_boxed_size_t indices);
+
+typedef struct AttachmentHandleResult {
+    int32_t status_code;
+
+    AttachmentHandle_t * handle;
+} AttachmentHandleResult_t;
+
+AttachmentHandleResult_t
+ditto_get_attachment_status (
+    CDitto_t * ditto,
+    slice_ref_uint8_t id);
+
+typedef struct Vec_char_ptr {
+    char * * ptr;
+
+    size_t len;
+
+    size_t cap;
+} Vec_char_ptr_t;
+
+typedef struct CollectionNamesResult {
+    int32_t status_code;
+
+    Vec_char_ptr_t names;
+} CollectionNamesResult_t;
+
+CollectionNamesResult_t
+ditto_get_collection_names (
+    CDitto_t const * ditto);
+
+typedef struct AttachmentDataResult {
+    int8_t status;
+
+    slice_boxed_uint8_t data;
+} AttachmentDataResult_t;
+
+AttachmentDataResult_t
+ditto_get_complete_attachment_data (
+    CDitto_t const * ditto,
+    AttachmentHandle_t const * handle);
+
+char *
+ditto_get_complete_attachment_path (
+    CDitto_t const * ditto,
+    AttachmentHandle_t const * handle);
+
+char *
+ditto_get_sdk_version (void);
+
+typedef enum Platform {
+    PLATFORM_WINDOWS,
+    PLATFORM_MAC,
+    PLATFORM_IOS,
+    PLATFORM_ANDROID,
+    PLATFORM_LINUX,
+    PLATFORM_WEB,
+    PLATFORM_UNKNOWN,
+} Platform_t;
+
+typedef enum Language {
+    LANGUAGE_SWIFT,
+    LANGUAGE_OBJECTIVE_C,
+    LANGUAGE_C_PLUS_PLUS,
+    LANGUAGE_C_SHARP,
+    LANGUAGE_JAVA_SCRIPT,
+    LANGUAGE_UNKNOWN,
+    LANGUAGE_RUST,
+} Language_t;
+
+void
+ditto_init_sdk_version (
+    Platform_t platform,
+    Language_t language,
+    char const * sdk_semver);
+
+typedef struct {
+    uint8_t idx[8];
+} uint8_8_array_t;
+
+int32_t
+ditto_insert_timeseries_event (
+    CDitto_t const * ditto,
+    uint8_8_array_t timestamp,
+    uint32_t nanos,
+    char const * ts_name,
+    slice_ref_uint8_t cbor,
+    CWriteTransaction_t * txn);
+
+void
+ditto_invalidate_tcp_listeners (
+    CDitto_t const * ditto);
+
+typedef enum LiveQueryAvailability {
+    LIVE_QUERY_AVAILABILITY_ALWAYS,
+    LIVE_QUERY_AVAILABILITY_WHEN_SIGNALLED,
+} LiveQueryAvailability_t;
+
+/** <No documentation available> */
+typedef struct c_cb_params {
+    /** \brief
+     *  Must be freed with `ditto_free_documents`.
+     */
+    Vec_CDocument_ptr_t documents;
+
+    /** <No documentation available> */
+    bool is_initial;
+
+    /** \brief
+     *  Must be freed with `ditto_free_documents`.
+     */
+    Vec_CDocument_ptr_t old_documents;
+
+    /** \brief
+     *  Must be freed using `ditto_free_indices`.
+     */
+    slice_boxed_size_t insertions;
+
+    /** \brief
+     *  Must be freed using `ditto_free_indices`.
+     */
+    slice_boxed_size_t deletions;
+
+    /** \brief
+     *  Must be freed using `ditto_free_indices`.
+     */
+    slice_boxed_size_t updates;
+
+    /** \brief
+     *  Must be freed using `ditto_free_indices`.
+     */
+    slice_boxed_size_t moves;
+} c_cb_params_t;
+
+typedef struct I64Result {
+    int32_t status_code;
+
+    int64_t i64;
+} I64Result_t;
+
+I64Result_t
+ditto_live_query_register_str (
+    CDitto_t const * ditto,
+    char const * coll_name,
+    char const * query,
+    slice_ref_uint8_t query_args_cbor,
+    slice_ref_COrderByParam_t order_by,
+    int32_t limit,
+    uint32_t offset,
+    LiveQueryAvailability_t lq_availability,
+    void * ctx,
+    void (*retain)(void *),
+    void (*release)(void *),
+    void (*c_cb)(void *, c_cb_params_t));
+
+void
+ditto_live_query_signal_available_next (
+    CDitto_t const * ditto,
+    int64_t id);
+
+int32_t
+ditto_live_query_start (
+    CDitto_t const * ditto,
+    int64_t id);
+
+void
+ditto_live_query_stop (
+    CDitto_t const * ditto,
+    int64_t id);
+
+int32_t
+ditto_live_query_webhook_generate_new_api_secret (
+    CDitto_t const * ditto);
+
+DocIdResult_t
+ditto_live_query_webhook_register_str (
+    CDitto_t const * ditto,
+    char const * coll_name,
+    char const * query,
+    slice_ref_COrderByParam_t order_by,
+    int32_t limit,
+    uint32_t offset,
+    char const * url);
+
+int32_t
+ditto_live_query_webhook_start_all (
+    CDitto_t const * ditto);
+
+int32_t
+ditto_live_query_webhook_start_by_id (
+    CDitto_t const * ditto,
+    slice_ref_uint8_t id);
+
+typedef enum CLogLevel {
+    C_LOG_LEVEL_ERROR,
+    C_LOG_LEVEL_WARNING,
+    C_LOG_LEVEL_INFO,
+    C_LOG_LEVEL_DEBUG,
+    C_LOG_LEVEL_VERBOSE,
+} CLogLevel_t;
+
+void
+ditto_log (
+    CLogLevel_t level,
+    char const * msg);
+
+void
+ditto_logger_emoji_headings_enabled (
+    bool enabled);
+
+bool
+ditto_logger_emoji_headings_enabled_get (void);
+
+void
+ditto_logger_enabled (
+    bool enabled);
+
+bool
+ditto_logger_enabled_get (void);
+
+void
+ditto_logger_init (void);
+
+void
+ditto_logger_minimum_log_level (
+    CLogLevel_t log_level);
+
+CLogLevel_t
+ditto_logger_minimum_log_level_get (void);
+
+void
+ditto_logger_set_custom_log_cb (
+    void (*custom_log_cb)(CLogLevel_t, char const *));
+
+int8_t
+ditto_logger_set_log_file (
+    char const * log_file);
+
+/** <No documentation available> */
+typedef struct UninitializedDitto UninitializedDitto_t;
+
+typedef enum HistoryTracking {
+    HISTORY_TRACKING_ENABLED,
+    HISTORY_TRACKING_DISABLED,
+} HistoryTracking_t;
+
+CDitto_t *
+ditto_make (
+    UninitializedDitto_t * uninit_ditto,
+    CAuthClient_t const * auth_client,
+    HistoryTracking_t history_tracking);
+
+/** <No documentation available> */
+typedef struct CAttachment {
+    /** <No documentation available> */
+    slice_boxed_uint8_t id;
+
+    /** <No documentation available> */
+    uint64_t len;
+
+    /** <No documentation available> */
+    AttachmentHandle_t * handle;
+} CAttachment_t;
+
+uint32_t
+ditto_new_attachment_from_bytes (
+    CDitto_t const * ditto,
+    slice_ref_uint8_t bytes,
+    CAttachment_t * out_attachment);
+
+typedef enum AttachmentFileOperation {
+    ATTACHMENT_FILE_OPERATION_COPY,
+    ATTACHMENT_FILE_OPERATION_MOVE,
+} AttachmentFileOperation_t;
+
+uint32_t
+ditto_new_attachment_from_file (
+    CDitto_t const * ditto,
+    char const * source_path,
+    AttachmentFileOperation_t file_operation,
+    CAttachment_t * out_attachment);
+
+void
+ditto_only_vec_documents_free (
+    Vec_CDocument_ptr_t docs);
+
+char *
+ditto_presence_v1 (
+    CDitto_t * ditto);
+
+char *
+ditto_presence_v2 (
+    CDitto_t * ditto);
+
+char *
+ditto_presence_v3 (
+    CDitto_t * ditto);
+
+typedef struct slice_ref_char_const_ptr {
+    char const * const * ptr;
+
+    size_t len;
+} slice_ref_char_const_ptr_t;
+
+U64Result_t
+ditto_queries_hash (
+    CDitto_t const * ditto,
+    slice_ref_char_const_ptr_t coll_names,
+    slice_ref_char_const_ptr_t queries);
+
+BoxedCharPtrResult_t
+ditto_queries_hash_mnemonic (
+    CDitto_t const * ditto,
+    slice_ref_char_const_ptr_t coll_names,
+    slice_ref_char_const_ptr_t queries);
+
+typedef struct CReadTransactionResult {
+    int32_t status_code;
+
+    CReadTransaction_t * txn;
+} CReadTransactionResult_t;
+
+CReadTransactionResult_t
+ditto_read_transaction (
+    CDitto_t const * ditto);
+
+void
+ditto_read_transaction_free (
+    CReadTransaction_t * transaction);
+
+/** \brief
+ *  Holder of the disk usage callback
+ *  Drop this to stop the callback
+ */
+typedef struct DiskUsageObserver DiskUsageObserver_t;
+
+DiskUsageObserver_t *
+ditto_register_disk_usage_callback (
+    CDitto_t * ditto,
+    FsComponent_t component,
+    void * ctx,
+    void (*retain)(void *),
+    void (*release)(void *),
+    void (*c_cb)(void *, slice_ref_uint8_t));
+
+int32_t
+ditto_register_local_auth_server (
+    CDitto_t * ditto,
+    char const * signing_key_pem,
+    slice_ref_char_const_ptr_t verifying_keys_pem,
+    char const * ca_key_pem,
+    void * ctx,
+    void (*retain)(void *),
+    void (*release)(void *),
+    void (*auth_cb)(void *, CAuthServerAuthRequest_t *, slice_ref_uint8_t),
+    void (*refresh_cb)(void *, CAuthServerRefreshRequest_t *, slice_ref_uint8_t));
+
+void
+ditto_register_presence_callback_v3 (
+    CDitto_t * ditto,
+    void * ctx,
+    void (*retain)(void *),
+    void (*release)(void *),
+    void (*c_cb)(void *, char const *));
+
+void
+ditto_register_presence_v1_callback (
+    CDitto_t * ditto,
+    void * ctx,
+    void (*retain)(void *),
+    void (*release)(void *),
+    void (*c_cb)(void *, char const *));
+
+void
+ditto_register_presence_v2_callback (
+    CDitto_t * ditto,
+    void * ctx,
+    void (*retain)(void *),
+    void (*release)(void *),
+    void (*c_cb)(void *, char const *));
+
+/** \brief
+ *  User-friendly categories describing where condition events arose
+ */
+typedef enum ConditionSource {
+    /** <No documentation available> */
+    CONDITION_SOURCE_BLUETOOTH,
+    /** <No documentation available> */
+    CONDITION_SOURCE_TCP,
+    /** <No documentation available> */
+    CONDITION_SOURCE_AWDL,
+    /** <No documentation available> */
+    CONDITION_SOURCE_MDNS,
+    /** <No documentation available> */
+    CONDITION_SOURCE_WIFI_AWARE,
+} ConditionSource_t;
+
+void
+ditto_register_transport_condition_changed_callback (
+    CDitto_t * ditto,
+    void * ctx,
+    void (*retain)(void *),
+    void (*release)(void *),
+    void (*c_cb)(void *, ConditionSource_t, TransportCondition_t));
+
+void
+ditto_release_disk_usage_callback (
+    DiskUsageObserver_t * _handle);
+
+void
+ditto_remove_multicast_transport (
+    CDitto_t * ditto);
+
+int32_t
+ditto_remove_subscription (
+    CDitto_t const * ditto,
+    char const * collection,
+    char const * query,
+    slice_ref_uint8_t query_args_cbor,
+    slice_ref_COrderByParam_t order_by,
+    int32_t limit,
+    uint32_t offset);
+
+typedef struct CancelTokenResult {
+    int32_t status_code;
+
+    int64_t cancel_token;
+} CancelTokenResult_t;
+
+CancelTokenResult_t
+ditto_resolve_attachment (
+    CDitto_t const * ditto,
+    slice_ref_uint8_t id,
+    void * ctx,
+    void (*retain)(void *),
+    void (*release)(void *),
+    void (*on_complete_cb)(void *, AttachmentHandle_t *),
+    void (*on_progress_cb)(void *, uint64_t, uint64_t),
+    void (*on_deleted_cb)(void *));
+
+uint32_t
+ditto_run_garbage_collection (
+    CDitto_t * ditto);
+
+void
+ditto_set_connect_retry_interval (
+    CDitto_t const * ditto,
+    uint32_t retry_interval_millis);
+
+void
+ditto_set_device_name (
+    CDitto_t * ditto,
+    char const * device_name);
+
+void
+ditto_set_max_outgoing_ble_peers (
+    uint32_t count);
+
+uint32_t
+ditto_set_priority_for_query_overlap_group (
+    CDitto_t * ditto,
+    uint8_t prio,
+    uint8_t query_overlap_group);
+
+uint32_t
+ditto_set_query_overlap_group (
+    CDitto_t * ditto,
+    uint8_t query_overlap_group);
+
+void
+ditto_set_sync_group (
+    CDitto_t * ditto,
+    uint32_t sync_group);
+
+void
+ditto_shutdown (
+    CDitto_t const * ditto);
+
+typedef enum WebSocketMode {
+    WEB_SOCKET_MODE_ENABLED,
+    WEB_SOCKET_MODE_DISABLED,
+} WebSocketMode_t;
+
+int32_t
+ditto_start_http_server (
+    CDitto_t const * ditto,
+    char const * bind,
+    char const * static_path,
+    WebSocketMode_t enable_websocket,
+    char const * tls_cert_path,
+    char const * tls_key_path);
+
+int32_t
+ditto_start_tcp_server (
+    CDitto_t const * ditto,
+    char const * bind);
+
+void
+ditto_stop_all_live_queries (
+    CDitto_t const * ditto);
+
+int32_t
+ditto_stop_http_server (
+    CDitto_t const * ditto);
+
+int32_t
+ditto_stop_tcp_server (
+    CDitto_t const * ditto);
+
+char *
+ditto_tcp_server_listen_addr (
+    CDitto_t * ditto);
+
+char *
+ditto_transports_diagnostics (
+    CDitto_t * ditto);
+
+void
+ditto_unregister_local_auth_server (
+    CDitto_t * ditto);
+
+uint32_t
+ditto_validate_document_id (
+    slice_ref_uint8_t cbor,
+    slice_boxed_uint8_t * out_cbor);
+
+void
+ditto_vec_char_ptr_free (
+    Vec_char_ptr_t char_p);
+
+void
+ditto_vec_slice_boxed_uint8_t_free (
+    Vec_slice_boxed_uint8_t slice_boxed);
+
+typedef struct Vec_size {
+    size_t * ptr;
+
+    size_t len;
+
+    size_t cap;
+} Vec_size_t;
+
+void
+ditto_vec_usizes_free (
+    Vec_size_t usizes);
+
+void
+ditto_wifi_aware_client_free_handle (
+    TransportHandle_WifiAwareClientPlatformEvent_t * handle);
+
+void
+ditto_wifi_aware_client_network_did_create (
+    TransportHandle_WifiAwareClientPlatformEvent_t const * handle,
+    char const * announce_string,
+    char const * hostname,
+    uint16_t port);
+
+void
+ditto_wifi_aware_client_peer_appeared (
+    TransportHandle_WifiAwareClientPlatformEvent_t const * handle,
+    char const * announce_string);
+
+void
+ditto_wifi_aware_client_peer_did_not_connect (
+    TransportHandle_WifiAwareClientPlatformEvent_t const * handle,
+    char const * announce_string);
+
+void
+ditto_wifi_aware_client_peer_disappeared (
+    TransportHandle_WifiAwareClientPlatformEvent_t const * handle,
+    char const * announce_string);
+
+void
+ditto_wifi_aware_client_scanning_state_changed (
+    TransportHandle_WifiAwareClientPlatformEvent_t const * handle,
+    OnlineState_t state,
+    TransportCondition_t condition);
+
+void
+ditto_wifi_aware_server_advertising_state_changed (
+    TransportHandle_WifiAwareServerPlatformEvent_t const * handle,
+    OnlineState_t state,
+    TransportCondition_t condition);
+
+void
+ditto_wifi_aware_server_free_handle (
+    TransportHandle_WifiAwareServerPlatformEvent_t * handle);
+
+typedef struct CWriteTransactionResult {
+    int32_t status_code;
+
+    CWriteTransaction_t * txn;
+} CWriteTransactionResult_t;
+
+CWriteTransactionResult_t
+ditto_write_transaction (
+    CDitto_t const * ditto,
+    char const * log_hint);
+
+int32_t
+ditto_write_transaction_add_metadata (
+    CWriteTransaction_t * transaction,
+    slice_ref_uint8_t metadata_cbor);
+
+int32_t
+ditto_write_transaction_commit (
+    CDitto_t const * ditto,
+    CWriteTransaction_t * transaction);
+
+void
+ditto_write_transaction_free (
+    CWriteTransaction_t * transaction);
+
+int32_t
+ditto_write_transaction_rollback (
+    CDitto_t const * _ditto,
+    CWriteTransaction_t * transaction);
+
+void
+free_c_string_vec (
+    Vec_char_ptr_t * strings);
+
+void
+mdns_advertising_state_changed (
+    TransportHandle_MdnsServerPlatformEvent_t const * handle,
+    OnlineState_t state,
+    TransportCondition_t condition);
+
+void
+mdns_client_free_handle (
+    TransportHandle_MdnsClientPlatformEvent_t * handle);
+
+void
+mdns_platform_peer_appeared (
+    TransportHandle_MdnsClientPlatformEvent_t const * handle,
+    char const * announce_string);
+
+void
+mdns_platform_peer_disappeared (
+    TransportHandle_MdnsClientPlatformEvent_t const * handle,
+    char const * announce_string);
+
+void
+mdns_scanning_state_changed (
+    TransportHandle_MdnsClientPlatformEvent_t const * handle,
+    OnlineState_t state,
+    TransportCondition_t condition);
+
+void
+mdns_server_free_handle (
+    TransportHandle_MdnsServerPlatformEvent_t * handle);
+
+void
+mdns_service_did_not_resolve (
+    TransportHandle_MdnsClientPlatformEvent_t const * handle,
+    char const * announce_string);
+
+void
+mdns_service_did_resolve (
+    TransportHandle_MdnsClientPlatformEvent_t const * handle,
+    char const * announce_string,
+    char const * hostname,
+    uint16_t port);
+
+Vec_char_ptr_t *
+new_c_string_vec (void);
+
+void
+static_tcp_client_free_handle (
+    TransportHandle_StaticTcpClientPlatformEvent_t * handle);
+
+UninitializedDitto_t *
+uninitialized_ditto_make (
+    char const * working_dir);
+
+UninitializedDitto_t *
+uninitialized_ditto_make_with_executor (
+    char const * working_dir,
+    DynExecutor_t executor);
+
+typedef enum LicenseVerificationResult {
+    LICENSE_VERIFICATION_RESULT_LICENSE_OK,
+    LICENSE_VERIFICATION_RESULT_VERIFICATION_FAILED,
+    LICENSE_VERIFICATION_RESULT_LICENSE_EXPIRED,
+    LICENSE_VERIFICATION_RESULT_UNSUPPORTED_FUTURE_VERSION,
+} LicenseVerificationResult_t;
+
+LicenseVerificationResult_t
+verify_license (
+    char const * license,
+    char * * out_err_msg);
+
+void
+websocket_client_free_handle (
+    TransportHandle_WebsocketClientPlatformEvent_t * handle);
