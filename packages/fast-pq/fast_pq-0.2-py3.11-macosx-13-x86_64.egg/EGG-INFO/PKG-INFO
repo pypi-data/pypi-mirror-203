@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fast-pq
+Version: 0.2
+Summary: Approximate Nearest Neighbors in Python.
+Home-page: https://github.com/thomasahle/fast_pq/
+Author: Thomas Dybdahl Ahle
+Author-email: lobais@gmail.com
+License: GNU Affero General Public License v3.0
+Keywords: nns,approximate nearest neighbor search
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
