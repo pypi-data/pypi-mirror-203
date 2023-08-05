@@ -1,0 +1,12 @@
+pypi_class/__init__.py,sha256=IrjagGttEtgMYpKG1E9rwH-QiOTqdsHMZhljmy8CH-M,132
+pypi_class/module1.py,sha256=0wgseYqN0i6O9z3GjjyODJE9JWqtIxGkpLgQgIjWVyo,136
+pypi_class/module2.py,sha256=LTtOeUKowmpZwMaDK886u4qRmSOzdKv2eGfLS7IwOYM,136
+pypi_class/subpackage1/__init__.py,sha256=Q9BryxdU5jqvckU8oW9q-kv8dUgQ_J0cKOzg1FmIDqU,57
+pypi_class/subpackage1/module3.py,sha256=jthKFpNoBpUGBG9-vGb3f8Trb4BPUpZnsa4Y2gvSzrQ,136
+pypi_class/subpackage1/module4.py,sha256=64OQ-tdwArIzm43eDWqZ9zrKVtvdAvrrvydX2FPWMKA,136
+pypi_class/subpackage2/__init__.py,sha256=Svb6a-W3Fl3MoagmOJA0JgFKECMF6lrUGjdpAlGOIm0,28
+pypi_class/subpackage2/module5.py,sha256=QCuV4BDiAgHepx65LugLiQqLoT7rJBn4vrOivhZarWs,136
+pypi_class-0.0.1.dist-info/METADATA,sha256=h8ivGfi9SAdgqXe0RGXFLMGOyoCbnNBsNNQQppIAgdU,2512
+pypi_class-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pypi_class-0.0.1.dist-info/top_level.txt,sha256=2Y-WTLTJeQTK3CuVSr7XBOEblFMMmw2opPzarV2h1YA,11
+pypi_class-0.0.1.dist-info/RECORD,,
