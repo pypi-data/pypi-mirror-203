@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+subprocesskiller/LICENSE
+subprocesskiller/README.md
+subprocesskiller/__init__.py
+subprocesskiller/requirements.txt
+subprocesskiller/thirdparty.json
+subprocesskiller.egg-info/PKG-INFO
+subprocesskiller.egg-info/SOURCES.txt
+subprocesskiller.egg-info/dependency_links.txt
+subprocesskiller.egg-info/requires.txt
+subprocesskiller.egg-info/top_level.txt
