@@ -1,0 +1,7 @@
+README.md
+dquotient.py
+pyproject.toml
+dquotient.egg-info/PKG-INFO
+dquotient.egg-info/SOURCES.txt
+dquotient.egg-info/dependency_links.txt
+dquotient.egg-info/top_level.txt
