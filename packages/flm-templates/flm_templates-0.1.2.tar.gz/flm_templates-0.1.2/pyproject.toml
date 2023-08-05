@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "flm-templates"
+version = "0.1.2"
+description = "Better templates for LLM output, especially for HTML"
+authors = ["Philippe Faist"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "flm_templates"}]
+include = ["flm_templates/templates/**/*"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Jinja2 = "^3.1.2"
+flm-core = ">=0.3.0a10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
