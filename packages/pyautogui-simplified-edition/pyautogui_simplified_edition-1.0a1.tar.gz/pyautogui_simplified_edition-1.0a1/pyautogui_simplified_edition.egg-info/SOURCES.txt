@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+pyautogui_simplified_edition/__init__.py
+pyautogui_simplified_edition/screen.py
+pyautogui_simplified_edition.egg-info/PKG-INFO
+pyautogui_simplified_edition.egg-info/SOURCES.txt
+pyautogui_simplified_edition.egg-info/dependency_links.txt
+pyautogui_simplified_edition.egg-info/top_level.txt
