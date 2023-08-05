@@ -1,0 +1,15 @@
+numpy
+scipy
+
+[all]
+einsumt
+h5py
+matplotlib
+meshio
+tensortrax
+
+[test]
+h5py
+matplotlib
+meshio
+tensortrax
