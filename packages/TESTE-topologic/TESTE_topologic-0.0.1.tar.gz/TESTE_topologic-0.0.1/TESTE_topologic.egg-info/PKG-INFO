@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: TESTE-topologic
+Version: 0.0.1
+Summary: ...
+Home-page: https://github.com/ncfrey/pytopomat
+Keywords: VASP,topology,topological,materials,science,DFT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+![pytopomat](https://github.com/ncfrey/pytopomat/workflows/pytopomat/badge.svg)
+[![Python 3.7](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release/python-370/)
+[![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
+[![Python 3.6](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
+
+# <img alt="pytopomat" src="pytopomat_logo.png" width="250">
+
+Python Topological Materials (pytopomat) is a code for easy, high-throughput analysis of topological materials.
+
+### Using pytopomat
+
+See the example jupyter notebook provided for how to use pytopomat.
