@@ -1,0 +1,10 @@
+setup.py
+ylin_distributions/Binomialdistribution.py
+ylin_distributions/Gaussiandistribution.py
+ylin_distributions/Generaldistribution.py
+ylin_distributions/__init__.py
+ylin_distributions.egg-info/PKG-INFO
+ylin_distributions.egg-info/SOURCES.txt
+ylin_distributions.egg-info/dependency_links.txt
+ylin_distributions.egg-info/not-zip-safe
+ylin_distributions.egg-info/top_level.txt
