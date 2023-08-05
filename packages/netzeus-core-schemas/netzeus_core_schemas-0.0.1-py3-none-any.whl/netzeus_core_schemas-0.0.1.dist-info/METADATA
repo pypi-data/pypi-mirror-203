@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: netzeus-core-schemas
+Version: 0.0.1
+Summary: NetZeus Core Schemas module for managing shared pydantic schemas across all microservices/plugins
+Author: Brandon Spendlove
+Author-email: brandon.spendlove@netzeus.io
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic (>=1.10.2)
+
+# netzeus-core-schemas
+NetZeus Core Schemas
+
+This module is used as the base schemas used in the netzeus.io API

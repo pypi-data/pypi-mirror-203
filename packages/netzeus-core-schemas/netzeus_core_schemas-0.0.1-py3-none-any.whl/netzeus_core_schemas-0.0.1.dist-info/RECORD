@@ -1,0 +1,11 @@
+netzeus_core_schemas/__init__.py,sha256=C2xGTYHlHgQxLpw11qX86qwFUYyO7_ZuHVR-VpwL7fk,561
+netzeus_core_schemas/access_token.py,sha256=HUGjOoGW-r6qyBSYceg45dgg_KAUyUNDOBCVjv7Vccw,105
+netzeus_core_schemas/api_key.py,sha256=BeP6yQFgT1whBCl1rP6dPFaCUvRa3gzTuZqqnidP4rI,780
+netzeus_core_schemas/device.py,sha256=l-aO_tcFZEPgucILEI8iB3bOYbg77z05ORbxevsV50I,886
+netzeus_core_schemas/enums.py,sha256=OgOVLrcJt3rAOF0pioeuyFtPIQe-RKAocF7rr_tQBns,313
+netzeus_core_schemas/network_driver.py,sha256=cb-qW2wGUp4Os_GM8ZdkmgOxjWobdIBOeKMnYCeJ0gs,1175
+netzeus_core_schemas/user.py,sha256=noCgX5ikUFfw9lJwpfXaqF0trnbF2xKtZbF2WSBLQH8,1024
+netzeus_core_schemas-0.0.1.dist-info/METADATA,sha256=OAXQM2px6YQTZ0-RA4LqitcP-RLMJH_Wt6Jf1G6j_k0,428
+netzeus_core_schemas-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+netzeus_core_schemas-0.0.1.dist-info/top_level.txt,sha256=fouNSUOQ08If2jD0IDj4CePbQpAASRiQQsjKUy8ZSzA,21
+netzeus_core_schemas-0.0.1.dist-info/RECORD,,
