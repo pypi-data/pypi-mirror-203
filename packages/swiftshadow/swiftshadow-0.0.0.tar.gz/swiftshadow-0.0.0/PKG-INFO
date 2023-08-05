@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: swiftshadow
+Version: 0.0.0
+Summary: Free IP Proxy rotator for python
+Home-page: https://github.com/Chicken1Geek/swiftshadow
+Author: Sachin Sankar
+Author-email: mail.sachinsankar@gmail.com
+Classifier: Development Status :: 2 - Pre-Alpha
+License-File: LICENSE
+
+Swiftshadow is a proxy rotator that sources proxies for free and provides elegant pythonic API to manage proxies. Build for speed and performance in mind.
