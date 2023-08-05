@@ -1,0 +1,9 @@
+GenshinUID/__init__.py,sha256=GjM-E0Fx-tewqrqYrNLbC5Z_xg2DWdVIXNdD05sDXfI,14731
+GenshinUID/auto_install.py,sha256=IsNck4tsM0ukmOHFNEY5bQFNrxGVBxYXfkYqIEviYxo,1227
+GenshinUID/client.py,sha256=n8i47u4lSwOqZh-Y5JCy0hJAU5BICoA1ojpEJco7uUA,23262
+GenshinUID/models.py,sha256=OmOCGv1AGYIK8mJHYERSWgCk4Riw2zP7CiQlxSrGThU,1004
+GenshinUID/path.py,sha256=i6QZv8ckpPamY5wCqWbIDS2V_DJpildADjpP1mX4Ehc,336
+nonebot_plugin_genshinuid-4.0.3.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+nonebot_plugin_genshinuid-4.0.3.dist-info/METADATA,sha256=6NdX73QrPIUeDRag2f90MiFh8KHJk32qfL8n-3Dpgfc,4482
+nonebot_plugin_genshinuid-4.0.3.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+nonebot_plugin_genshinuid-4.0.3.dist-info/RECORD,,
