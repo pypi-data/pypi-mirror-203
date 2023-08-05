@@ -1,0 +1,3 @@
+[console_scripts]
+add-border=py_image_border.add_border:main
+
