@@ -1,0 +1,9 @@
+README.txt
+license.txt
+setup.cfg
+setup.py
+planetaryguides.egg-info/PKG-INFO
+planetaryguides.egg-info/SOURCES.txt
+planetaryguides.egg-info/dependency_links.txt
+planetaryguides.egg-info/not-zip-safe
+planetaryguides.egg-info/top_level.txt
