@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+st_text_annotator.egg-info/PKG-INFO
+st_text_annotator.egg-info/SOURCES.txt
+st_text_annotator.egg-info/dependency_links.txt
+st_text_annotator.egg-info/requires.txt
+st_text_annotator.egg-info/top_level.txt
