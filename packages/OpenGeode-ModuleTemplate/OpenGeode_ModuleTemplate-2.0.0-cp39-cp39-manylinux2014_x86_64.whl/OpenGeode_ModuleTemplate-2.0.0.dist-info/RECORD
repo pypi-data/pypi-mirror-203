@@ -1,0 +1,8 @@
+opengeode_mymodule/__init__.py,sha256=66t-do5NMhMVLZ32QBy0KHGKM0RcVMlIFeVcfMTcZM0,67
+opengeode_mymodule/mylib.py,sha256=jwifq5OfUbKlB42pum1Hj14KK55xAl9i8pYNoLYsLoQ,172
+opengeode_mymodule/lib64/libOpenGeode-MyModule_mylib.so,sha256=17v5oeO9JVL-e896NDdDF_4MB7QRC5Q9SVLnYuvbWu4,22112
+opengeode_mymodule/lib64/opengeode_mymodule_py_mylib.cpython-39-x86_64-linux-gnu.so,sha256=KfwFpHUBZ7oidnLKVakWkLo0Ug_e8DUlJAxZAZ0DGZA,188280
+OpenGeode_ModuleTemplate-2.0.0.dist-info/METADATA,sha256=fpKBty5BvN8QOs-Cy2s10ChebKjrn3EpWuNpYoWJvzg,3025
+OpenGeode_ModuleTemplate-2.0.0.dist-info/WHEEL,sha256=3oXbtF4vYwmQyf0LQIagKtl0VO3gP86556qKiLb0bDc,103
+OpenGeode_ModuleTemplate-2.0.0.dist-info/top_level.txt,sha256=PZJU5PxWy8eYU2CSRl7CC7RGcywX88ARuaEcpdU4LMI,19
+OpenGeode_ModuleTemplate-2.0.0.dist-info/RECORD,,
