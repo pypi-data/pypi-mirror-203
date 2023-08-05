@@ -1,0 +1,29 @@
+# qiskit_sabre_mapper
+
+## Description
+A quantum program mapping and routing algorithm based on the open source code of the SABRE algorithm of Qiskit.
+
+## Installation
+```bash
+pip install sabreMapper
+```
+
+## Usage
+```python
+from sabreMapper.sabre_mapper import SabreMapper
+
+mapper = SabreMapper()
+success = mapper.map_schedule(origin_qasm_fn, chip_info_fn, mapped_qasm_fn, qubit_mapping_fn)
+```
+
+## Interface Description
+### Input parameters
+- **origin_qasm_fn**: This is a file path name, which corresponds to the quantum program file (such as Oenqasm 2.0 format file) before mapping  and routing.
+- **chip_info_fn**: This is a file path name, which corresponds to a configuration file that describes the information of the quantum chip (such as a configuration file in JSON format).
+- **mapped_qasm_fn**:This is a file path name, and the file corresponding to the path is the quantum program file after mapping and routing.
+- **qubit_mapping_fn**: This is a file path name, and the file corresponding to the path stores information such as the result of the qubit mapping information.
+ 
+### Output parameters
+- **success**: The parameter type is 'bool'. If this parameter is true, it means that the quantum program has successfully completed the mapping and is dispatched, and if it is false or null, it means that the mapping and routing of quantum program failed.
+
+
