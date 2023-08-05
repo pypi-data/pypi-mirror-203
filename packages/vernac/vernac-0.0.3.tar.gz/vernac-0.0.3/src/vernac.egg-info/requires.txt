@@ -1,0 +1,11 @@
+requests
+openai
+shiv
+tomli_w
+rich
+
+[dev]
+ipython
+pip-tools
+build
+twine
