@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: tonconnect
+Version: 0.0.2
+Summary: TON Connect - Python library for using TON Connect 2.
+Author: Vlad100
+Requires-Dist: pynacl
+Requires-Dist: requests
+Requires-Dist: tonsdk
+Project-URL: Documentation, https://github.com/ClickoTON-Foundation/tonconnect
+Project-URL: Homepage, https://github.com/ClickoTON-Foundation/tonconnect
+Project-URL: Repository, https://github.com/ClickoTON-Foundation/tonconnect/
