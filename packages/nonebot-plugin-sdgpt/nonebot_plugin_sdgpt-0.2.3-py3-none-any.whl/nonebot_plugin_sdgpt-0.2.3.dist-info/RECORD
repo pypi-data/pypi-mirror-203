@@ -1,0 +1,14 @@
+nonebot_plugin_SDGPT/__init__.py,sha256=WVX2Nbv6_K1K0uXxtbdhqzp2wyQx1jY_4kBN6rAHrpc,9356
+nonebot_plugin_SDGPT/bot.py,sha256=f0sdJh3OxkUa7eTPEqc3lZ-VAPFUoMMpSjLt3a_rZAM,6337
+nonebot_plugin_SDGPT/config.py,sha256=JQXPZOarQ0JPQZMvgaHOZx6da9Bix7mnKVmQvTcTzhg,6542
+nonebot_plugin_SDGPT/configspec.ini,sha256=2nkffP1wkO-nbqPYu4NmvSE-lULE6UYxvyia5c9vE2s,5386
+nonebot_plugin_SDGPT/lib/base.py,sha256=HMgPw8UgV8_6hE9Gs-hXM3pQBq9e_NlYy6eGASUzofI,242
+nonebot_plugin_SDGPT/lib/check.py,sha256=A41Gw5CNp6FO0ewVeNfOi6iINMt2F3gBki8yZR9TZrc,3028
+nonebot_plugin_SDGPT/lib/cons.py,sha256=eX-JZN6EETvofNIsrUuCNCgEKqneKgZO9IZ_-VnF3tM,487
+nonebot_plugin_SDGPT/lib/logger.py,sha256=DdeD0LZFvbQg00x7pIx20unZhA1o1IWhZynEKmETtXQ,2003
+nonebot_plugin_SDGPT/lib/test.py,sha256=GL6_FltdnWX446OhnGrr8GosHjCr7Q3nY7Z8LpMHOXA,125
+nonebot_plugin_SDGPT/lib/utils.py,sha256=4UpRUEloQy5wRHgnwbboE_rbxTJg_MeU8APw-lnHwpc,2389
+nonebot_plugin_sdgpt-0.2.3.dist-info/LICENSE,sha256=JxmGpJJIwLjACmMXw9Kfsgh9HvS3CUsv0EEvVC8R7Es,1062
+nonebot_plugin_sdgpt-0.2.3.dist-info/METADATA,sha256=uQrmrmJcgmYOgACdKNFHldJHJcbm9uVNpk3eos38hn4,2360
+nonebot_plugin_sdgpt-0.2.3.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+nonebot_plugin_sdgpt-0.2.3.dist-info/RECORD,,
