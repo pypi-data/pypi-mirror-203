@@ -1,0 +1,13 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/_dittoffi/__init__.py
+src/_dittoffi/_ffi_build.py
+src/_dittoffi/dittoffi.cffi
+src/_dittoffi/dittoffi.h
+src/dittoffi.egg-info/PKG-INFO
+src/dittoffi.egg-info/SOURCES.txt
+src/dittoffi.egg-info/dependency_links.txt
+src/dittoffi.egg-info/top_level.txt

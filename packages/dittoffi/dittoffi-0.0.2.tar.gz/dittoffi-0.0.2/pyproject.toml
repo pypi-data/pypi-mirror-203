@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=45",  "setuptools_scm>=6.2", "wheel", "cffi>=1.15.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dittoffi"
+version = "0.0.2"
+readme = "README.md"
+description = "Ditto FFI bindings for Python."
+keywords = ["database", "P2P", "CRDT", "FFI"]
+authors = [{name="Ditto Engineering Team", email="engineering@ditto.live"}]
+[project.license]
+type = "Proprietary"
+file = "LICENSE.md"
+
+dependencies = ['cffi >=1.15.1']
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["_dittoffi"]
