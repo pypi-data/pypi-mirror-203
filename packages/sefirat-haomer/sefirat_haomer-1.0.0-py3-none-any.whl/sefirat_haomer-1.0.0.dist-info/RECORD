@@ -1,0 +1,14 @@
+sefirat_haomer/__init__.py,sha256=sHEgUxAjOMSYD9HYm3Octo90mvoq22UTCOFP-fuPrQw,285
+sefirat_haomer/omer_calendar.py,sha256=tAsaYuYBlqxRdZwsfpRAewP3SSYSW1_B_N1rxqJoSz0,2333
+sefirat_haomer/omer_date.py,sha256=giXU2sGZiksbkzrY89W8Wew80bBQQJHav-gQH4O_wsA,3195
+sefirat_haomer/omer_day.py,sha256=A5ZZagogzgdLu8QIr3HasVQkdRDwj-mHqYEZG9g9DT8,1697
+sefirat_haomer/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sefirat_haomer/texts/__init__.py,sha256=kFB5eHQK1L6Q3tpbfe9PVnqyQtdABIZTDlISTC_0mzI,190
+sefirat_haomer/texts/english_text.py,sha256=P6ROx48QzNwl7w_Of9LxQxN7-60LD9cN45n74rfXvoo,3304
+sefirat_haomer/texts/hebrew_text.py,sha256=bbbA2LJ41-z31WtUbxUN6HemlR8_oe7-xv4ebItOE_0,7647
+sefirat_haomer/texts/phonetic_hebrew_text.py,sha256=JeQki9i0DPPCSq4JOwMxO5kA4Lu5bejLotqmhGPUvGg,3372
+sefirat_haomer/texts/text.py,sha256=hlWE6TddlVWmNdggJ4DITPcupDadgdC9qKIN3IBsqio,1727
+sefirat_haomer-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+sefirat_haomer-1.0.0.dist-info/METADATA,sha256=Hv7mXjWkhcknOCATbzRHFR4MshSlujwMNCQXIDrPOF0,5833
+sefirat_haomer-1.0.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+sefirat_haomer-1.0.0.dist-info/RECORD,,
