@@ -1,0 +1,8 @@
+LICENCE.TXT
+setup.py
+meroua.egg-info/PKG-INFO
+meroua.egg-info/SOURCES.txt
+meroua.egg-info/dependency_links.txt
+meroua.egg-info/top_level.txt
+my_codes/__init__.py
+my_codes/mymod.py
