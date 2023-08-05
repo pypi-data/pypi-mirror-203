@@ -1,0 +1,11 @@
+archytas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+archytas/agent.py,sha256=6_ee69J6fLApKV0hFI_bpDT-ZMkULLCIvrnKZToxW6k,3118
+archytas/auth.py,sha256=i9Zsz05RA48m5VChnvGlshrBrko8GiFpc2oHAQKqsl4,513
+archytas/prompt.py,sha256=m5FRi8ud60McFrmx9-b3HAvqLjWdAajdwIYJBnHRZP0,2651
+archytas/react.py,sha256=LCdEHjDb3laAio7eO4spDv8-mavQ5WtcCYp27splkro,4906
+archytas/repl.py,sha256=bfBWQCs2aUkRXUyWWGE87YRNgm6OUIFM2cL9TB3uC94,939
+archytas/tools.py,sha256=UzaFSTV5r1J2FLl9NQo20GkEBNwLiCub53f5VbLlxqc,12059
+archytas-0.1.0.dist-info/METADATA,sha256=cuYjhra1rhnpa5Rv2-zMOXaTEIfy9BjVjzvNGgFGaSk,1013
+archytas-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+archytas-0.1.0.dist-info/entry_points.txt,sha256=_BRJGECOFwOnihfCfrSiCWWeczLH9Ez-M6sqryY-VYE,54
+archytas-0.1.0.dist-info/RECORD,,
