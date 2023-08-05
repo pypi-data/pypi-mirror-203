@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: tortuemobile
+Version: 0.5
+Summary: Un module pour les tortues dans les cahiers Jupyter.
+Home-page: https://github.com/callysto/tortuemobile
+Author: David Hay
+Author-email: misterhay@gmail.com
+Classifier: Framework :: IPython
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Education
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: IPython
+Requires-Dist: ipywidgets (>=7.0.0)
+
+# TortueMobile
+
+Ceci est un module pour les tortues dans les cahiers Jupyter. C'est une traduction franÃ§aise de [mobilechelonian](https://github.com/takluyver/mobilechelonian) de [Thomas Kluyver](https://github.com/takluyver).
+
+## Installation
+
+`pip install tortuemobile`
+
+## Utilisation
+
+```python
+import tortuemobile
+t = tortuemobile.Tortue()
+```
+
+|Commande|Description|Exemple|
+|-|-|-|
+|`t.vitesse(entier)`|la vitesse de votre tortue, de 1 Ã  10|`t.vitesse(10)`|
+|`t.droite(degrÃ©s)`|tourner votre tortue vers la droite d'un certain nombre de degrÃ©s|`t.droite(90)`|
+|`t.gauche(degrÃ©s)`|tourner la tortue vers la gauche d'un certain nombre de degrÃ©s|`t.gauche(45)`|
+|`t.avant(pixels)`|faire avancer la tortue d'un certain nombre de pixels|`t.avant(100)`|
+|`t.recule(pixels)`|faire reculer la tortue d'un certain nombre de pixels|`t.retraite(20)`|
+|`t.cercle(rayon, degrÃ©s)`|faire dessiner Ã  la tortue un morceau de cercle de rayon Ã©gal Ã  un certain nombre de degrÃ©s|`t.cercle(40, 360)`|
+|`t.styloenhaut()`|ta tortue peut maintenant se dÃ©placer sans tracer des lignes|`t.styloenhaut()`|
+|`t.styloenbas()`|ta tortue trace Ã  nouveau des lignes|`t.styloenbas()`|
+|`t.couleurstylo('color')`|couleur de la ligne de votre tortue en utilisant un [nom de couleur](https://www.w3schools.com/colors/colors_names.asp)|`t.couleurstylo('blue')`|
+|`t.couleurstylo('rgb(R, V, B)')`|couleur de la ligne de votre tortue en utilisant valeurs de rouge, vert, et bleu de 0 Ã  255|`t.pencolor('rgb(0, 255, 100)')`|
+|`t.origine()`|remettre la tortue au centre de l'Ã©cran|`t.origine()`|
+|`t.position(x, y)`|dÃ©placer la tortue Ã  une position spÃ©cifique, (0,0) est en haut Ã  gauche et (400, 400) est en bas Ã  droite|`t.position(100, 250)`|
+|`t.cap(degrÃ©s)`|fixer le cap de la tortue Ã  un certain nombre de degrÃ©s|`t.cap(90)`|
