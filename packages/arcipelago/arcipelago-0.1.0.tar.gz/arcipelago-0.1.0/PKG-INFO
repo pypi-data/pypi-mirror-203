@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: arcipelago
+Version: 0.1.0
+Summary: A moderated event platform for Telegram.
+Author: Flavio
+Author-email: flavio.petruzzellis@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: python-telegram-bot (>=13.14,<14.0)
+Description-Content-Type: text/markdown
+
+# Arcipelago
+A moderated event platform for Telegram.
+
+## Installation
+
+## How it works
+
+## License
+
+
