@@ -1,0 +1,23 @@
+#!/usr/bin/env python
+
+import asyncio
+from pprint import pprint
+
+from httpx import HTTPStatusError
+
+from fmn.backends import FASJSONProxy
+
+fasjson = FASJSONProxy("http://fasjson.tinystage.test/fasjson")
+
+try:
+    # result = asyncio.run(fasjson.get_user(username="maryking"))
+    # result = asyncio.run(fasjson.search_users(params={"givenname": "Mary"}))
+    result = asyncio.run(fasjson.search_users(params={"username": "mar"}))
+    # result = asyncio.run(fasjson.get("/users/", params={"page_size": 10}))
+except HTTPStatusError as e:
+    print(e)
+    print(e.response)
+    print(e.response.json())
+else:
+    pprint(result)
+    print(len(result))
