@@ -1,0 +1,2 @@
+[console_scripts]
+ai4sqlite3 = ai4sqlite3:main
