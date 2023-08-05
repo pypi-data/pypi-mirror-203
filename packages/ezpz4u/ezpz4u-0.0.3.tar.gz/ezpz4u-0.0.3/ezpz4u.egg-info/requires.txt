@@ -1,0 +1,9 @@
+requests
+fastapi
+typing
+pydantic
+python-dotenv
+uvicorn
+
+[:python_version < "3.11"]
+importlib-metadata

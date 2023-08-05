@@ -1,0 +1,23 @@
+[project]
+name = "ezpz4u"
+authors = [
+    {name = "Charles Warren", email = "ciwarren@mtu.edu"},
+]
+description = "An ez to use pz management api"
+readme = "README.rst"
+requires-python = ">=3.11"
+version = "0.0.3"
+dependencies = [
+    "requests",
+    "fastapi",
+    "typing",
+    "pydantic",
+    "python-dotenv",
+    "uvicorn",
+    'importlib-metadata; python_version<"3.11"',
+]
+[project.scripts]
+ezpz4u = "pz.main:start_server"
+
+[project.urls]
+repository = "https://github.com/ciwarren/ezpz4u.git"
