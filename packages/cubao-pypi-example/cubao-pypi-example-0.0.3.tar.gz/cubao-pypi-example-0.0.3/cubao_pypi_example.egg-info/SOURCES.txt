@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+Makefile
+README.md
+pyproject.toml
+cubao_pypi_example/__init__.py
+cubao_pypi_example/__main__.py
+cubao_pypi_example/package_data.dat
+cubao_pypi_example/simple.py
+cubao_pypi_example.egg-info/PKG-INFO
+cubao_pypi_example.egg-info/SOURCES.txt
+cubao_pypi_example.egg-info/dependency_links.txt
+cubao_pypi_example.egg-info/requires.txt
+cubao_pypi_example.egg-info/top_level.txt
+tests/test_simple.py
