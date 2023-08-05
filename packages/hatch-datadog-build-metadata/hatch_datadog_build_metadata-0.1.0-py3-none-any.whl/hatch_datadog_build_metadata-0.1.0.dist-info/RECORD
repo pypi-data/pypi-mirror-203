@@ -1,0 +1,10 @@
+hatch_datadog_build_metadata/__about__.py,sha256=y0b_UpYFiXbdFATBZhtiLkby64AeH58dqKDm-LVBmLg,128
+hatch_datadog_build_metadata/__init__.py,sha256=80ayPPb3Kuan2GX4tqjA7zUjU03uQXVmkZH_cac2Kxc,106
+hatch_datadog_build_metadata/hooks.py,sha256=9fYL3xyToMpIBbd0wcNLt59AFhcvF9NIyrXB34RYOno,309
+hatch_datadog_build_metadata/metadata_hook.py,sha256=VtSPqVeEG67hcpQ_nAgnX0ZPnLoeZxCaCRnKjm4HI0k,2230
+hatch_datadog_build_metadata/vcs_utils.py,sha256=ebSQ3FUgd0kOYBFqL5u9p9SAtHH6MK5V2KUNbn5-Jxk,2113
+hatch_datadog_build_metadata-0.1.0.dist-info/METADATA,sha256=5s5PSL2UhXfSKHeq8XGmWYblXlpEb9WzYP35q8Tmxmo,4652
+hatch_datadog_build_metadata-0.1.0.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+hatch_datadog_build_metadata-0.1.0.dist-info/entry_points.txt,sha256=C7iFB9ZeqLgW3J3z7nOlMSke65qIoNjul83B2vrMWZI,68
+hatch_datadog_build_metadata-0.1.0.dist-info/licenses/LICENSE.txt,sha256=DwiV9FniiEpCQKGHN04ARWc1GJApk_gnyY5Ux4Z7Pqw,1098
+hatch_datadog_build_metadata-0.1.0.dist-info/RECORD,,

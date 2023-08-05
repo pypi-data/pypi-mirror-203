@@ -1,0 +1,2 @@
+[hatch]
+datadog-build-metadata = hatch_datadog_build_metadata.hooks
