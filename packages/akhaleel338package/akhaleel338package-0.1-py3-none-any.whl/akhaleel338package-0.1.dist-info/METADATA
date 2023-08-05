@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: akhaleel338package
+Version: 0.1
+Summary: python library which includes linear, nodes, and trees. 
+Home-page: UNKNOWN
+Author: arsalan_khaleel
+Author-email: arsalan.khaleel@ucalgary.ca
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+UNKNOWN
+
