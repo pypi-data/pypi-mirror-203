@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: UnMythwareTool
+Version: 0.0.1
+Summary: A Kill Mythware Program.
+Author: SmallWaterSnake
+Author-email: SmallWaterSnake <hzk201312@163.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires: psutil
+Requires: setuptools
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# UnMythwareTool
+
+### 使用最快的方式关掉极域
+* kill() 函数 
+* judge() 函数 判断极域是否在运行
+* init() 初始化
+* 仅支持 Windows 7 以上
