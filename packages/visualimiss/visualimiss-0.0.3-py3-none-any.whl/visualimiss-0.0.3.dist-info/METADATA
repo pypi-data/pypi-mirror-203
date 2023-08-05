@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: visualimiss
+Version: 0.0.3
+Summary: A missingno clone, use to visualize missing data
+Author-email: ngntrgduc <trungducnguyen1511@gmail.com>
+Project-URL: Homepage, https://github.com/ngntrgduc/visualimiss
+Project-URL: Bug Tracker, https://github.com/ngntrgduc/visualimiss/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# visualimiss
+"**visuali**ze **miss**ing data". A simple [missingno](https://github.com/ResidentMario/missingno)
+clone. Some features were removed from the original and some were added.
+
+# Features
+Some features differ from the original one:
+- Simpler and faster
+- Maybe more readable?
