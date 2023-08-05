@@ -1,0 +1,11 @@
+tsdownsample-0.1.2a1.dist-info/METADATA,sha256=GyiBSvxKc2RMJI7g0EbyeNm9wPmIDF8SuAvw20QCteE,7072
+tsdownsample-0.1.2a1.dist-info/WHEEL,sha256=AnBiw1HqI1cEmqZe7uv9-3FVnQbAwERtJW_PC-t8DDw,93
+tsdownsample-0.1.2a1.dist-info/license_files/LICENSE,sha256=NSbA8Qo_STXZvdmASn5697OCOsYtH2XwH5TNhODIKV8,1099
+tsdownsample/downsamplers.py,sha256=KLNO_gigu0XAVoLVXQYrlL-CwLnOgscM2TVqH8FN8I8,2187
+tsdownsample/downsampling_interface.py,sha256=tuUzElVwImjEZVzGenIkGekjFjwRw5pmVX_cWUBzQ9E,13363
+tsdownsample/_python/downsamplers.py,sha256=8quzulRD5HU15RRN4EAcXWyIPaU8QOMr2QRrMMWLHQQ,6551
+tsdownsample/_python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsdownsample/_rust/__init__.py,sha256=J-7Wu5IPVJQOxeypg3Ta9Mu8Sx2vtw7vehjKEFKFugQ,59
+tsdownsample/__init__.py,sha256=Q_ii12Gfbw1W-kKQNCcbkoHYHThPf9M2gUMiuZ9gRz8,457
+tsdownsample/_rust/_tsdownsample_rs.cp310-win32.pyd,sha256=5awhBx4Oks0-rVBURL3mJDFypY_8cHaPxp7KkdjTdqk,4866560
+tsdownsample-0.1.2a1.dist-info/RECORD,,
