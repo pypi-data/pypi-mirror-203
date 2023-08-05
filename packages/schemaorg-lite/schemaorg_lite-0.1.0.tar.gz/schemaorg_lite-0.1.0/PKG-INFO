@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: schemaorg-lite
+Version: 0.1.0
+Summary: Python functions for applied use of schema.org
+Keywords: openschemas schema.org
+Author-Email: Vanessa Sochat <vsoch@users.noreply.github.com>, lesleslie <les@wedgwoodwebworks.com>
+Maintainer-Email: lesleslie <les@wedgwoodwebworks.com>, Vanessa Sochat <vsoch@users.noreply.github.com>
+License: BSD-3-Clause
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Project-URL: Homepage, https://github.com/lesleslie/schemaorg-lite
+Project-URL: Documentation, https://github.com/lesleslie/schemaorg-lite
+Project-URL: Repository, https://github.com/lesleslie/crackerjack
+Requires-Python: >=3.11
+Requires-Dist: msgspec>=0.13.1
+Requires-Dist: loguru>=0.6.0
+Description-Content-Type: text/markdown
+
+# schemaorg-lite
+
+This module will serve functions for researchers and users to apply schema.org
+definitions to their datasets, software, and other worldly things. For 
+development functions with Python along with the web interface that
+serves the published specifications, please see [https://www.github.com/schemaorg/schemaorg](https://www.github.com/schemaorg/schemaorg).
+We provide schema.org 15.0 and later. For older versions of schemaorg, use versions prior
+to 15.0.
+
+## What is this not?
+
+This library is not intended to provide advanced functions around querying the ontology,
+but rather accessing the definitions and tagging content with them.
+
+## What is this for?
+
+Please reference the [development](https://openschemas.github.io/schemaorg/) documentation
+to read about the intended use cases that we are working on.
+
+## Organization
+
+Generally, we are extracting metadata from datasets and software, and then shoving
+that metadata into a specification from schema.org. The final thing that we produce
+is likely to be some form of json (e.g., json-ld) that can be embedded in a web 
+page or similar, intended to power search.  Since the specific needs of a particular
+webby place may vary, along with a data type we are extracting, the module provides
+"templates" in the [templates](schemaorg/templates) directory. Specifically:
+
+ - The subfolders represent different use cases. For example, [templates/google](schemaorg/templates/google) has a simple html template, and a requirements file (called a recipe) to produce a Dataset and SoftwareSourceCode.
+ - Each subfolder, in an optional `__init__.py` file, also contains helper functions toward this goal. For example, the same google subfolder has such a file with a `make_person` function that users can quickly use to generate a person object.
+ - For each corresponding subfolder, there is generally an example in the [examples](examples) folder that also helps to see how it works.
