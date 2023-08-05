@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: toolkit-lennart
+Version: 0.0.1
+Summary: Toolkit for data analysis
+Home-page: https://pypi.org/project/toolkit-lennart/0.0.1/
+Author: Lennart Rooden
+Author-email: Lennart Rooden <lennart.rs@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Data Analysis Toolkit
+
+Personal package for data analysis tools. See
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
