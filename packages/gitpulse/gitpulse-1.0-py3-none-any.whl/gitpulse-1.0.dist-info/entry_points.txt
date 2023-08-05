@@ -1,0 +1,2 @@
+[console_scripts]
+gitpulse = gitpulse.gitpulse_cli:main
