@@ -1,0 +1,9 @@
+rsrch/__about__.py,sha256=Pru0BlFBASFCFo7McHdohtKkUtgMPDwbGfyUZlE2_Vw,21
+rsrch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rsrch/_src/cli.py,sha256=3VxzWM-SO4Tus60BurTRP09wNce4dfHKSgnf46h-vjA,299
+rsrch/_src/rsrch.py,sha256=7sdb7UIYfgZ_ZidxcWkk1VrZRKvQwDexLWnFyXQziEM,3671
+rsrch/_src/utils.py,sha256=M8fl-pyiDXdLEM9ZAEQyF23ifON6vt34uuga6bAvhDI,726
+rsrch-0.1.0.dist-info/METADATA,sha256=sFgk-1poj2iQgiaA-M2tv24vxzaxGNt5CtVGf-eeKZ4,4231
+rsrch-0.1.0.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+rsrch-0.1.0.dist-info/licenses/LICENSE,sha256=cstYAw7et-7alAEA8pSL0mzdGHfoLe-du-x7-A8fM2o,1067
+rsrch-0.1.0.dist-info/RECORD,,
