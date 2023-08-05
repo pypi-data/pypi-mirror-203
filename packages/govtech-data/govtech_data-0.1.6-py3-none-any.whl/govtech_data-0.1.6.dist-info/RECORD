@@ -1,0 +1,15 @@
+govtech_data/__init__.py,sha256=sj8dmgdARAix8OJWTI7Hkcc3U4AUfUNFVdUI2wcDUVU,34
+govtech_data/client.py,sha256=fC1NJjjdE-OXori2LJR54CC6pVTQbqy3MsmEwMQdw88,4773
+govtech_data/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+govtech_data/models/api.py,sha256=5GZhTV83TLBDeH8ceagefFnTv6PJBiTc0NXMfWqtDP0,1046
+govtech_data/models/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+govtech_data/models/resources/datastore_search.py,sha256=NwiUWYp3kdgCYSrt9S5XwliPvaKmyOJ5GLWkog5wwSE,1541
+govtech_data/models/resources/package_list.py,sha256=iizFT4MGalGqQBnJUWmGXJC8_cYsoyTkulrzq9Qni-E,407
+govtech_data/models/resources/package_show.py,sha256=bWbKuRSSN-z7CNTFWKVMFxpwMRtmSHFglu7wBrQ00Wg,4441
+govtech_data/models/resources/resource_show.py,sha256=Fe3Ya7lVxz8ru-uVXFdHrrECbsVH8w1typ_2K9qHVtA,1994
+govtech_data/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+govtech_data/utils/content.py,sha256=Rd74C8JS0CSzfrL1QDq_3JIkxr_Qk0UwsOvzYlrIrUU,497
+govtech_data-0.1.6.dist-info/METADATA,sha256=82KRW-P5iAdYtVO5giLkAUqvC7V1npY0HwuT_DfTWus,864
+govtech_data-0.1.6.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+govtech_data-0.1.6.dist-info/entry_points.txt,sha256=RI92ns5fHlkcf1y3WL-WAJjh4IMbhV7-u7s1ImMcx4g,64
+govtech_data-0.1.6.dist-info/RECORD,,
