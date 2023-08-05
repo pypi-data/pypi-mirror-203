@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/insights4ci/client/__init__.py
+src/insights4ci/client/api.py
+src/python_insights4ci_client.egg-info/PKG-INFO
+src/python_insights4ci_client.egg-info/SOURCES.txt
+src/python_insights4ci_client.egg-info/dependency_links.txt
+src/python_insights4ci_client.egg-info/requires.txt
+src/python_insights4ci_client.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+
+[devel]
+coverage>=6.1.0
+flake8>=3.6.0
+isort>=5.1.2
+pylint>=2.8.0
+tox>=3.18.0
