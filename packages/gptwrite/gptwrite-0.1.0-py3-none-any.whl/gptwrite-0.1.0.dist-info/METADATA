@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: gptwrite
+Version: 0.1.0
+Summary: CLI for Automated article writing
+Home-page: https://github.com/otakumesi/gpt-write
+License: MIT
+Keywords: gpt,openai,cli,article,writing
+Author: otakumesi
+Author-email: bakednt@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click
+Requires-Dist: iso639-lang
+Requires-Dist: openai
+Requires-Dist: python-i18n[yaml]
+Requires-Dist: questionary (>=1.10.0,<2.0.0)
+Project-URL: Repository, https://github.com/otakumesi/gpt-write
+Description-Content-Type: text/markdown
+
+# GPT-Write✍️
+
+GPT make writing an article brazing fast🔥.  
+---
+
+## What's this tool?
+
+GPT-Write is the CLI tool for Intractive Automated Article Writing.  
+You can create articles, just answer the questions.   
+Since the language is specified in the prompt and GPT is allowed to generate the text, it could theoretically be used in a variety of languages.  
+
+## Installation
+```sh
+pip install gptwrite
+```
+
+## Usage
+
+```sh
+# Set Environment "OPENAI_API_KEY"
+export OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxx
+
+# Run
+gptwrite
+? Language? <Select Language>
+# ...(Lots of questions come in to the interactive.)
+```
