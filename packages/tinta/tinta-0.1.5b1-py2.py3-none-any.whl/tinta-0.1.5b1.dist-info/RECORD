@@ -1,0 +1,9 @@
+tinta/__init__.py,sha256=jgyOp0Q55WDHWvlkiGbqYrdbV9rpu7rXAajEOkfeHnA,1045
+tinta/__main__.py,sha256=GhJ0cJTY9_FStNRDZFN8lYPSWOc8UXixiCvASgb8BMM,922
+tinta/colors.ini,sha256=Anoae4tJUdcuiiP2awYzuRzvuHzhZAWxPP3JZrD9HDA,329
+tinta/discover.py,sha256=26QUCfsqqDaiWxuOTqeygHzbgP2oWdPOD6mChNGvG-k,7532
+tinta/tinta.py,sha256=m9I721LI_bvpugGnsriKDRbGoiEmGyYT5SqVVygZmcE,14170
+tinta-0.1.5b1.dist-info/METADATA,sha256=7vV1qDIUdu6kIWBmuGkC45wijeEf1GbXMt99J9eWLVU,10590
+tinta-0.1.5b1.dist-info/WHEEL,sha256=3jNpu59JHbFdu1Yeq_fYJQsnHZ21dBRf7JjglSW4K9A,105
+tinta-0.1.5b1.dist-info/licenses/LICENSE,sha256=rwJVwstXjltqPx47-foDPZsgKQNmIh2w2vlDI2Kq-5Q,1081
+tinta-0.1.5b1.dist-info/RECORD,,
