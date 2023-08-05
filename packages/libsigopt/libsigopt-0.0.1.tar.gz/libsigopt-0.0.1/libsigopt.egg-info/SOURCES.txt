@@ -1,0 +1,5 @@
+setup.py
+libsigopt.egg-info/PKG-INFO
+libsigopt.egg-info/SOURCES.txt
+libsigopt.egg-info/dependency_links.txt
+libsigopt.egg-info/top_level.txt
