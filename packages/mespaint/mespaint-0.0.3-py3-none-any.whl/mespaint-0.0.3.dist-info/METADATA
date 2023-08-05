@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: mespaint
+Version: 0.0.3
+Summary: custom palette changer for indexed PNGs
+Home-page: https://github.com/menga-team/MESpaint
+Author: 0.0.3
+Author-email: menga.team@yandex.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyQt5
+Requires-Dist: PyQt5-Qt5
+Requires-Dist: PyQt5-sip
+
+# MES-Paint
+Application for editing indexed PNGs palettes. Mainly used for the creation of MES textures.
+
+## Install
+`$ pip install mespaint`
+
+## Usage
+`$ mespaint`
+
+- 8-color palettes
+- any image to indxed png converter
+- import and export palettes and images
+
+## Schreenshot
+
+![screenshot1](./screenshot1.png)
+## Features:
+
+## License
+
+[MIT](https://mit-license.org/)
