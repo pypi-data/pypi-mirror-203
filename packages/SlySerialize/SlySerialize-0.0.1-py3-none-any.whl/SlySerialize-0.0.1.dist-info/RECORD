@@ -1,0 +1,10 @@
+SlySerialize/__init__.py,sha256=d5y3feMSIZL5zQgWlN12NQkEdytLXrQ8xvjfUftgboc,530
+SlySerialize/_type_vars.py,sha256=55E-1jHRr447eXVA-X0Xew6yYoVjX4d6HRBcezT5sDo,365
+SlySerialize/abc.py,sha256=XHnYwdywZceG1sWGSCCp_9q1CkJbSZGTA5v_nbgeH7g,2694
+SlySerialize/converters.py,sha256=YBlH3abHIFz2tgsS4b4Ah4NG5oJ_YeTeZ-dIS2pUi14,14047
+SlySerialize/top_level.py,sha256=Xb82xUv4cWZgZIjJyFs3nTTXtTtfQR3FW18QKunNK04,3045
+SlySerialize-0.0.1.dist-info/LICENSE,sha256=5QXe0qWGr3B5_aQkkRKrlrxQ9erb_crzhdTe7Bp-JZA,1088
+SlySerialize-0.0.1.dist-info/METADATA,sha256=e9pOy8NCbn1qzdunuZQBNemKtyKpa7gyGQz-H-h7LMk,9007
+SlySerialize-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+SlySerialize-0.0.1.dist-info/top_level.txt,sha256=LCakdY0Tz8CC1JPlKqe8-agbbdshoHWndIs7VFQYxpw,13
+SlySerialize-0.0.1.dist-info/RECORD,,
