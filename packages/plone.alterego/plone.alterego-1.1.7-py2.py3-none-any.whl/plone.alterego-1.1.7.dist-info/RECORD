@@ -1,0 +1,11 @@
+plone.alterego-1.1.7-py3.11-nspkg.pth,sha256=A-p3CbMuHePaPWt53bhXUnHzJhSeZf4O2eZeA-vKGms,534
+plone/alterego/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plone/alterego/alterego.txt,sha256=bn4beI8O1Kw9CZ8wX0DoQPFmR6Db1aj1rZa3kv5Xggw,4955
+plone/alterego/dynamic.py,sha256=qOrB7NgaUmEI9uQqnQLfMKBexpNSbQgmrNwX0M53A8k,1199
+plone/alterego/interfaces.py,sha256=tAl8co241Lj00zzsxvpaQu5jhQYkQ8ux1FZRZYtcMKU,1058
+plone/alterego/tests.py,sha256=ZRpw_-ByUx1SeYkx8Miuk9YwaeaDfAFoHQ4BuGjCZUo,806
+plone.alterego-1.1.7.dist-info/METADATA,sha256=sM54p7LuE7OkPB-RUMpsgdurdic4qcHObdekwwCMOqI,5572
+plone.alterego-1.1.7.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+plone.alterego-1.1.7.dist-info/namespace_packages.txt,sha256=56bqrkG-vurYD0l15D71FPiDL7L3QqkfRWkYkdyS7WM,6
+plone.alterego-1.1.7.dist-info/top_level.txt,sha256=56bqrkG-vurYD0l15D71FPiDL7L3QqkfRWkYkdyS7WM,6
+plone.alterego-1.1.7.dist-info/RECORD,,
