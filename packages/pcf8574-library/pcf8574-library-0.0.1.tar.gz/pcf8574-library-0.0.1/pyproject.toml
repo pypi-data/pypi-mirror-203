@@ -1,0 +1,31 @@
+[project]
+name = "pcf8574-library"
+version = "0.0.1"
+authors = [
+  { name="Renzo Mischianti", email="renzo@mischianti.org" },
+]
+maintainers = [
+  { name="Renzo Mischianti", email="renzo@mischianti.org" },
+]
+keywords = ["micropython", "digital", "i2c", "encoder", "expander", "pcf8574", "pcf8574a", "esp32", "esp8266", "stm32", "SAMD", "Arduino", "wire", "rp2040", "Raspberry"]
+license = {file = "LICENSE.md"}
+description = "Most starred PCF8574 library. i2c digital expander for Arduino, Raspberry Pi Pico and rp2040 boards, esp32, SMT32 and ESP8266. Can read write digital values with only 2 wire. Very simple to use"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+        "Development Status :: 5 - Production/Stable",
+        "Programming Language :: Python :: Implementation :: MicroPython",
+        "License :: OSI Approved :: MIT License",
+    ]
+
+[project.urls]
+homepage = "https://www.mischianti.org"
+"Documentation" = "https://www.mischianti.org/category/my-libraries/pcf8574/"
+"Documentazione" = "https://www.mischianti.org/it/category/le-mie-librerie/pcf8574-it/"
+"Repository" = "https://github.com/xreef/PCF8574_micropython_library"
+"Bug Tracker" = "https://github.com/xreef/PCF8574_micropython_library/issues"
+"Examples" = "https://github.com/xreef/PCF8574_micropython_library/tree/master/examples"
+# pyproject.toml file specified at the root of the directory
+[build-system]
+requires = ["setuptools>=42", "wheel"]   # PEP 508 specifications.
+build-backend = "setuptools.build_meta"
