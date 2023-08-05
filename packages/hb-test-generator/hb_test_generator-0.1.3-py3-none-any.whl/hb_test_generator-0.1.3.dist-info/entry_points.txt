@@ -1,0 +1,3 @@
+[console_scripts]
+hb-generate-tests = generate_tests:main
+
