@@ -1,0 +1,168 @@
+Metadata-Version: 2.1
+Name: pcf8574-library
+Version: 0.0.1
+Summary: Most starred PCF8574 library. i2c digital expander for Arduino, Raspberry Pi Pico and rp2040 boards, esp32, SMT32 and ESP8266. Can read write digital values with only 2 wire. Very simple to use
+Home-page: https://github.com/xreef/PCF8574_micropython_library
+Author: Renzo Mischianti
+Author-email: Renzo Mischianti <renzo@mischianti.org>
+Maintainer: Renzo Mischianti
+Maintainer-email: Renzo Mischianti <renzo@mischianti.org>
+License: The MIT License (MIT)
+        
+        Copyright (c) 2017 Renzo Mischianti www.mischianti.org All right reserved.
+        
+        You may copy, alter and reuse this code in any way you like, but please leave
+        reference to www.mischianti.org in your comments if you redistribute this code.
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in
+        all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+        THE SOFTWARE.
+        
+Project-URL: homepage, https://www.mischianti.org
+Project-URL: Documentation, https://www.mischianti.org/category/my-libraries/pcf8574/
+Project-URL: Documentazione, https://www.mischianti.org/it/category/le-mie-librerie/pcf8574-it/
+Project-URL: Repository, https://github.com/xreef/PCF8574_micropython_library
+Project-URL: Bug Tracker, https://github.com/xreef/PCF8574_micropython_library/issues
+Project-URL: Examples, https://github.com/xreef/PCF8574_micropython_library/tree/master/examples
+Keywords: micropython,digital,i2c,encoder,expander,pcf8574,pcf8574a,esp32,esp8266,stm32,SAMD,Arduino,wire,rp2040,Raspberry
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: Implementation :: MicroPython
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+<div>
+<a href="https://www.mischianti.org/forums/forum/mischiantis-libraries/pcf8574-i2c-digital-i-o-expander/"><img
+  src="https://github.com/xreef/LoRa_E32_Series_Library/raw/master/resources/buttonSupportForumEnglish.png" alt="Support forum pcf8574 English"
+   align="right"></a>
+</div>
+<div>
+<a href="https://www.mischianti.org/it/forums/forum/le-librerie-di-mischianti/pcf8574-expander-digitale-i-o-i2c/"><img
+  src="https://github.com/xreef/LoRa_E32_Series_Library/raw/master/resources/buttonSupportForumItaliano.png" alt="Forum supporto pcf8574 italiano"
+  align="right"></a>
+</div>
+
+#
+#### www.mischianti.org
+
+# PCF8574 PCF8574AP digital input and output expander with i2c bus.
+
+## Changelog
+ - 14/04/2023: v0.0.1 Initial commit of stable version.
+
+I try to simplify the use of this IC, with a minimal set of operations.
+
+Tested with esp8266, esp32, Arduino, Arduino SAMD (Nano 33 IoT, MKR etc.), STM32 and rp2040 (Raspberry Pi Pico and similar)
+
+PCF8574P address map 0x20-0x27 
+PCF8574AP address map 0x38-0x3f 
+
+### Installation
+To install the library execute the following command:
+
+```bash
+pip install pcf8574-library
+```
+
+**Constructor:**
+Pass the address of I2C 
+```python
+    from PCF8574 import PCF8574, P0, P7, P6, P1, P2, P3, P5, P4
+    
+    pcf = PCF8574(0x38, sda=21, scl=22)
+```
+To use interrupt you must pass the interrupt pin and the function to call when interrupt raised from PCF8574
+```python
+    from PCF8574 import PCF8574, P0, P7, P6, P1, P2, P3, P5, P4
+    
+    def keyPressedOnPCF8574(pin):
+        # Interrupt called (No Serial no read no wire in this function, and DEBUG disabled on PCF library)
+        keyPressed = True
+    
+    pcf = PCF8574(0x38, sda=21, scl=22, interrupt_callback=keyPressedOnPCF8574, interrupt_pin=18)
+```
+
+You must set input/output mode:
+```python
+    from machine import Pin
+    from PCF8574 import PCF8574, P0, P7, P6, P1, P2, P3, P5, P4
+
+    pcf.Pin(P0, Pin.IN)
+    pcf.Pin(P1, Pin.IN, Pin.PULL_UP)
+    pcf.Pin(P2, Pin.IN)
+    pcf.Pin(P3, Pin.IN)
+    
+    pcf.Pin(P7, Pin.OUT)
+    pcf.Pin(P6, Pin.OUT, 1)
+    pcf.Pin(P5, Pin.OUT, 0)
+    pcf.Pin(P4, Pin.OUT, 0)
+```
+
+then IC as you can see in the image has 8 digital input/output ports:
+
+![PCF8574 schema](https://github.com/xreef/PCF8574_library/raw/master/resources/PCF8574-pins.gif)
+
+To read all analog input in one trasmission you can do (even if I use a 10millis debounce time to prevent too much read from i2c):
+```python
+    digital_input = pcf.digital_read_all()
+    
+    print(digital_input.p0)
+    print(digital_input.p1)
+    print(digital_input.p2)
+    print(digital_input.p3)
+    print(digital_input.p4)
+    print(digital_input.p5)
+    print(digital_input.p6)
+    print(digital_input.p7)
+    
+    array_input = pcf.digital_read_all_array()
+    print(array_input)
+    
+    byte_input = pcf.digital_read_all_byte()
+    print(bin(byte_input))
+```
+
+If you want to read a single input:
+```python
+    digital_input = pcf.digital_read(P1)
+    print(digital_input)
+```
+
+If you want to write a digital value:
+```python
+    pcf.digital_write(P1, 1)
+```
+
+You can also use an interrupt pin:
+You must initialize the pin and the function to call when interrupt raised from PCF8574
+```python
+    def callback(pin):
+        now = utime.ticks_ms()
+        global count
+        count += 1
+        print("Time: {} {}".format(now, count))
+    
+    
+    pcf.attach_interrupt(18, callback)
+```
+
+For the examples I use this wire schema on breadboard:
+![Breadboard](https://www.mischianti.org/wp-content/uploads/2021/04/WeMos-D1-esp8266-pcf8574-IC-wiring-schema-8-leds.jpg)
+![Breadboard](https://www.mischianti.org/wp-content/uploads/2021/04/esp32-pcf8574-IC-wiring-schema-8-leds.jpg)
+![Breadboard](https://www.mischianti.org/wp-content/uploads/2022/08/stm32_pcf8574_wiring_4_Led_4_Buttons_bb.jpg)
+
