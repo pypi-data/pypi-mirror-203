@@ -1,0 +1,13 @@
+COPYING.txt
+LICENSE.md
+README.md
+setup.py
+s3synchrony/__init__.py
+s3synchrony/s3synchrony.py
+s3synchrony/DataPlatforms/__init__.py
+s3synchrony/DataPlatforms/baseconn.py
+s3synchrony/DataPlatforms/s3conn.py
+synchrony.egg-info/PKG-INFO
+synchrony.egg-info/SOURCES.txt
+synchrony.egg-info/dependency_links.txt
+synchrony.egg-info/top_level.txt
