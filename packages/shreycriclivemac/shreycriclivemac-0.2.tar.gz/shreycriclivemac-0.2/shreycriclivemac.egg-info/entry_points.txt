@@ -1,0 +1,2 @@
+[console_scripts]
+shreycriclivemac = shreycriclivemac_run:main
