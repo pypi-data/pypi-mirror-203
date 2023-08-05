@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.py
+src/cmlibs/__init__.py
+src/cmlibs.merger.egg-info/PKG-INFO
+src/cmlibs.merger.egg-info/SOURCES.txt
+src/cmlibs.merger.egg-info/dependency_links.txt
+src/cmlibs.merger.egg-info/not-zip-safe
+src/cmlibs.merger.egg-info/requires.txt
+src/cmlibs.merger.egg-info/top_level.txt
+src/cmlibs/merger/__init__.py
+src/cmlibs/merger/errors.py
+src/cmlibs/merger/points.py
