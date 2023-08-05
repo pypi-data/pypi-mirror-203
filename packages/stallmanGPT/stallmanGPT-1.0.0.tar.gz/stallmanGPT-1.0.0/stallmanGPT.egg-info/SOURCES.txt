@@ -1,0 +1,8 @@
+README.md
+setup.py
+stallmanGPT.egg-info/PKG-INFO
+stallmanGPT.egg-info/SOURCES.txt
+stallmanGPT.egg-info/dependency_links.txt
+stallmanGPT.egg-info/requires.txt
+stallmanGPT.egg-info/top_level.txt
+stallmangpt/__init__.py
