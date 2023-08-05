@@ -1,0 +1,11 @@
+googlesearch-python>=1.2.3
+requests_html>=0.10.0
+bs4>=0.0.1
+urllib3>=1.26.5
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest

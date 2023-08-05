@@ -1,0 +1,10 @@
+LICENSE
+README.md
+main.py
+pyproject.toml
+companyhunter.egg-info/PKG-INFO
+companyhunter.egg-info/SOURCES.txt
+companyhunter.egg-info/dependency_links.txt
+companyhunter.egg-info/entry_points.txt
+companyhunter.egg-info/requires.txt
+companyhunter.egg-info/top_level.txt
