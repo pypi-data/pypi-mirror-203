@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pytest-frappe
+Version: 0.0.1
+Summary: Pytest Frappe Plugin - A set of pytest fixtures to test Frappe applications
+Author-email: 0xsirsaif <sirsaif99@gmail.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet :: WWW/HTTP :: Session
+Requires-Dist: pytest>=7.0.0
+Requires-Dist: frappe>=0.0.1
+Requires-Dist: flake8 ; extra == "dev"
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: isort ; extra == "dev"
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: mypy ; extra == "dev"
+Requires-Dist: flit ; extra == "dev"
+Project-URL: Documentation, https://github.com/0xsirsaif/pytest-frappe
+Provides-Extra: dev
+
+# pytest-frappe
+A set of pytest fixtures to test Frappe applications
+
