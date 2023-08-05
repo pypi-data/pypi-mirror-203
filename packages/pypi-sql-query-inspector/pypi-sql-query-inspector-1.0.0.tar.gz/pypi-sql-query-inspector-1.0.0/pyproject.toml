@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=67.4.0", "wheel"] # packaging into *.whl
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pypi-sql-query-inspector"
+version = "1.0.0"
+description = "A django middleware package to print out connection queries in terminal when DEBUGing"
+readme = "README.md"
+license = { file = "MIT"}
+authors = [
+    { name = "peacefulseeker" }
+]
+
+dependencies = [
+    "Pygments<=2.14.0",
+    "sqlparse>=0.4.3",
+]
+
+requires-python = ">=3.7"
+
+[tool.setuptools.packages.find]
+include = ["pypi-sql-query-inspector"]
+
+[project.urls]
+Homepage = "https://pypi.org/project/pypi-sql-query-inspector/"
