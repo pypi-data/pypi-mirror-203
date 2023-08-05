@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+Makefile
+README.md
+pyproject.toml
+requirements.txt
+src/remin/__init__.py
+src/remin/domain.py
+src/remin/solver.py
+src/remin.egg-info/PKG-INFO
+src/remin.egg-info/SOURCES.txt
+src/remin.egg-info/dependency_links.txt
+src/remin.egg-info/requires.txt
+src/remin.egg-info/top_level.txt
