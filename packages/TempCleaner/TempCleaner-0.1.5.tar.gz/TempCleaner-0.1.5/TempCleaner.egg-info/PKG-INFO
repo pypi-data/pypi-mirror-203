@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: TempCleaner
+Version: 0.1.5
+Summary: The "TempCleaner" application provides a simple and user-friendly interface that allows users to quickly scan their computer for temporary files and folders.
+Author: Kartikey Baghel
+Author-email: kartikeybaghel@hotmail.com
+Keywords: clean temp,TempCleaner,Temp Clean,Temp Cleaner,temp,clean,temporary,temporary files clean,windows,window,clean temporary file,clean temporary file for windows
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+
+"TempCleaner" is an application designed to help users efficiently clean up temporary files and folders from their computer. Temporary files are created by various applications and processes on a computer and are intended to be used for a short period of time. However, these files can accumulate over time, taking up valuable disk space and slowing down the computer's performance.

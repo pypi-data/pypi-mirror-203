@@ -1,0 +1,7 @@
+setup.py
+CleanTemp/CleanTemp.py
+CleanTemp/__init__.py
+TempCleaner.egg-info/PKG-INFO
+TempCleaner.egg-info/SOURCES.txt
+TempCleaner.egg-info/dependency_links.txt
+TempCleaner.egg-info/top_level.txt
