@@ -1,0 +1,7 @@
+README.md
+setup.py
+libcoveweb2/__init__.py
+libcoveweb2.egg-info/PKG-INFO
+libcoveweb2.egg-info/SOURCES.txt
+libcoveweb2.egg-info/dependency_links.txt
+libcoveweb2.egg-info/top_level.txt
