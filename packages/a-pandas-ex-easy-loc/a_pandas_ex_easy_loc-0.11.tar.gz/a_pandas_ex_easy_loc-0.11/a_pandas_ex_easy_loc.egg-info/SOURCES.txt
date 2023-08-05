@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+a_pandas_ex_easy_loc/README.MD
+a_pandas_ex_easy_loc/__init__.py
+a_pandas_ex_easy_loc/requirements.txt
+a_pandas_ex_easy_loc/thirdparty.json
+a_pandas_ex_easy_loc.egg-info/PKG-INFO
+a_pandas_ex_easy_loc.egg-info/SOURCES.txt
+a_pandas_ex_easy_loc.egg-info/dependency_links.txt
+a_pandas_ex_easy_loc.egg-info/requires.txt
+a_pandas_ex_easy_loc.egg-info/top_level.txt
