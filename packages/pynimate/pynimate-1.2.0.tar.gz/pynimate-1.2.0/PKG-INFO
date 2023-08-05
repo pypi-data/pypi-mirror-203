@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: pynimate
+Version: 1.2.0
+Summary: Python package for statistical data animations
+Author-email: julkar9 <julkar9dev@gmail.com>
+License: MIT License (MIT)
+Project-URL: Homepage, https://github.com/julkaar9/pynimate
+Project-URL: Documentation, https://julkaar9.github.io/pynimate/
+Keywords: animations,framework,data,plots
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+![](https://github.com/julkaar9/pynimate/blob/gh-pages/assets/pynimate_logo2.png)
+
+# Pynimate
+
+[![PyPI](https://img.shields.io/pypi/v/pynimate?color=orange)](https://pypi.org/project/pynimate/)
+[![Downloads](https://static.pepy.tech/personalized-badge/pynimate?period=total&units=international_system&left_color=grey&right_color=red&left_text=Downloads)](https://pepy.tech/project/pynimate) 
+![Tests](https://github.com/julkaar9/pynimate/actions/workflows/tests.yml/badge.svg)
+[![License](https://img.shields.io/pypi/l/pynimate?color=green)](https://github.com/julkaar9/pynimate/blob/main/LICENSE)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)  
+
+Python package for statistical data animations.
+![](https://github.com/julkaar9/pynimate/blob/main/docs/assets/example3.gif)
+
+## Installation
+### with pip
+Pynimate is avaialbe at [pypi](https://pypi.org/project/pynimate/)
+``` sh
+pip install pynimate
+```
+
+## How to use
+Pynimate expects pandas dataframe formatted in this manner:  
+Where the time column is set to index.
+```python
+time, col1, col2, col3
+2012   1     2     1
+2013   1     1     2
+2014   2     1.5   3
+2015   2.5   2     3.5
+```
+## Bar Chart Example
+```python
+import pandas as pd
+from matplotlib import pyplot as plt
+
+import pynimate as nim
+
+df = pd.DataFrame(
+    {
+        "time": ["1960-01-01", "1961-01-01", "1962-01-01"],
+        "Afghanistan": [1, 2, 3],
+        "Angola": [2, 3, 4],
+        "Albania": [1, 2, 5],
+        "USA": [5, 3, 4],
+        "Argentina": [1, 4, 5],
+    }
+).set_index("time")
+
+cnv = nim.Canvas()
+bar = nim.Barhplot.from_df(df, "%Y-%m-%d", "2d")
+bar.set_time(callback=lambda i, datafier: datafier.data.index[i].year)
+cnv.add_plot(bar)
+cnv.animate()
+plt.show()
+``` 
+## Documentation
+The official documentation : https://julkaar9.github.io/pynimate/
+
+## License
+[MIT License (MIT)](LICENSE)

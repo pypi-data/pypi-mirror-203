@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+seaborn
+
+[dev]
+black
+isort
+mkdocs-material
+pip-tools
+pytest
+mkdocstrings[python]
