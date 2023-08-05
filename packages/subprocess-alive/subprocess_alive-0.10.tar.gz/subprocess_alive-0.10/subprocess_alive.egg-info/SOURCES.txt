@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+subprocess_alive/LICENSE
+subprocess_alive/README.md
+subprocess_alive/__init__.py
+subprocess_alive/requirements.txt
+subprocess_alive/thirdparty.json
+subprocess_alive.egg-info/PKG-INFO
+subprocess_alive.egg-info/SOURCES.txt
+subprocess_alive.egg-info/dependency_links.txt
+subprocess_alive.egg-info/requires.txt
+subprocess_alive.egg-info/top_level.txt

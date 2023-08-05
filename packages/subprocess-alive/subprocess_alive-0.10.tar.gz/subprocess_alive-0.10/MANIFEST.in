@@ -1,0 +1,4 @@
+include subprocess_alive/requirements.txt
+include subprocess_alive/thirdparty.json
+include subprocess_alive/README.md
+include subprocess_alive/LICENSE
