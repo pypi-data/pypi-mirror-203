@@ -1,0 +1,9 @@
+README
+setup.py
+hello_world/__init__.py
+hello_world/main.py
+hello_world_example.egg-info/PKG-INFO
+hello_world_example.egg-info/SOURCES.txt
+hello_world_example.egg-info/dependency_links.txt
+hello_world_example.egg-info/requires.txt
+hello_world_example.egg-info/top_level.txt
