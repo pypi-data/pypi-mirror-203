@@ -1,0 +1,16 @@
+.pre-commit-config.yaml
+LICENSE.txt
+MANIFEST.in
+Makefile
+README.md
+pyproject.toml
+src/cubao_pypi_example.egg-info/PKG-INFO
+src/cubao_pypi_example.egg-info/SOURCES.txt
+src/cubao_pypi_example.egg-info/dependency_links.txt
+src/cubao_pypi_example.egg-info/entry_points.txt
+src/cubao_pypi_example.egg-info/requires.txt
+src/cubao_pypi_example.egg-info/top_level.txt
+src/sample/__init__.py
+src/sample/package_data.dat
+src/sample/simple.py
+tests/test_simple.py
