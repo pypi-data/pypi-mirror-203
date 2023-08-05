@@ -1,0 +1,122 @@
+from ......Internal.Core import Core
+from ......Internal.CommandsGroup import CommandsGroup
+from ......Internal.RepeatedCapability import RepeatedCapability
+from ...... import repcap
+
+
+# noinspection PyPep8Naming,PyAttributeOutsideInit,SpellCheckingInspection
+class EspectrumCls:
+	"""Espectrum commands group definition. 56 total commands, 11 Subgroups, 0 group commands
+	Repeated Capability: SubBlock, default value after init: SubBlock.Nr1"""
+
+	def __init__(self, core: Core, parent):
+		self._core = core
+		self._cmd_group = CommandsGroup("espectrum", core, parent)
+		self._cmd_group.rep_cap = RepeatedCapability(self._cmd_group.group_name, 'repcap_subBlock_get', 'repcap_subBlock_set', repcap.SubBlock.Nr1)
+
+	def repcap_subBlock_set(self, subBlock: repcap.SubBlock) -> None:
+		"""Repeated Capability default value numeric suffix.
+		This value is used, if you do not explicitely set it in the child set/get methods, or if you leave it to SubBlock.Default
+		Default value after init: SubBlock.Nr1"""
+		self._cmd_group.set_repcap_enum_value(subBlock)
+
+	def repcap_subBlock_get(self) -> repcap.SubBlock:
+		"""Returns the current default repeated capability for the child set/get methods"""
+		# noinspection PyTypeChecker
+		return self._cmd_group.get_repcap_enum_value()
+
+	@property
+	def bwid(self):
+		"""bwid commands group. 0 Sub-classes, 1 commands."""
+		if not hasattr(self, '_bwid'):
+			from .Bwid import BwidCls
+			self._bwid = BwidCls(self._core, self._cmd_group)
+		return self._bwid
+
+	@property
+	def capture(self):
+		"""capture commands group. 2 Sub-classes, 0 commands."""
+		if not hasattr(self, '_capture'):
+			from .Capture import CaptureCls
+			self._capture = CaptureCls(self._core, self._cmd_group)
+		return self._capture
+
+	@property
+	def filterPy(self):
+		"""filterPy commands group. 1 Sub-classes, 1 commands."""
+		if not hasattr(self, '_filterPy'):
+			from .FilterPy import FilterPyCls
+			self._filterPy = FilterPyCls(self._core, self._cmd_group)
+		return self._filterPy
+
+	@property
+	def hspeed(self):
+		"""hspeed commands group. 0 Sub-classes, 1 commands."""
+		if not hasattr(self, '_hspeed'):
+			from .Hspeed import HspeedCls
+			self._hspeed = HspeedCls(self._core, self._cmd_group)
+		return self._hspeed
+
+	@property
+	def msr(self):
+		"""msr commands group. 8 Sub-classes, 0 commands."""
+		if not hasattr(self, '_msr'):
+			from .Msr import MsrCls
+			self._msr = MsrCls(self._core, self._cmd_group)
+		return self._msr
+
+	@property
+	def preset(self):
+		"""preset commands group. 3 Sub-classes, 1 commands."""
+		if not hasattr(self, '_preset'):
+			from .Preset import PresetCls
+			self._preset = PresetCls(self._core, self._cmd_group)
+		return self._preset
+
+	@property
+	def range(self):
+		"""range commands group. 12 Sub-classes, 1 commands."""
+		if not hasattr(self, '_range'):
+			from .Range import RangeCls
+			self._range = RangeCls(self._core, self._cmd_group)
+		return self._range
+
+	@property
+	def rrange(self):
+		"""rrange commands group. 0 Sub-classes, 1 commands."""
+		if not hasattr(self, '_rrange'):
+			from .Rrange import RrangeCls
+			self._rrange = RrangeCls(self._core, self._cmd_group)
+		return self._rrange
+
+	@property
+	def rtype(self):
+		"""rtype commands group. 0 Sub-classes, 1 commands."""
+		if not hasattr(self, '_rtype'):
+			from .Rtype import RtypeCls
+			self._rtype = RtypeCls(self._core, self._cmd_group)
+		return self._rtype
+
+	@property
+	def sbcount(self):
+		"""sbcount commands group. 0 Sub-classes, 1 commands."""
+		if not hasattr(self, '_sbcount'):
+			from .Sbcount import SbcountCls
+			self._sbcount = SbcountCls(self._core, self._cmd_group)
+		return self._sbcount
+
+	@property
+	def sbCenter(self):
+		"""sbCenter commands group. 0 Sub-classes, 1 commands."""
+		if not hasattr(self, '_sbCenter'):
+			from .SbCenter import SbCenterCls
+			self._sbCenter = SbCenterCls(self._core, self._cmd_group)
+		return self._sbCenter
+
+	def clone(self) -> 'EspectrumCls':
+		"""Clones the group by creating new object from it and its whole existing subgroups
+		Also copies all the existing default Repeated Capabilities setting,
+		which you can change independently without affecting the original group"""
+		new_group = EspectrumCls(self._core, self._cmd_group.parent)
+		self._cmd_group.synchronize_repcaps(new_group)
+		return new_group
