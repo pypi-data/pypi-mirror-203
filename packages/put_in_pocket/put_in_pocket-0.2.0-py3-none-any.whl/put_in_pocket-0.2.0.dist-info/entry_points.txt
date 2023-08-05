@@ -1,0 +1,3 @@
+[console_scripts]
+put_in_pocket=put_in_pocket:main
+
