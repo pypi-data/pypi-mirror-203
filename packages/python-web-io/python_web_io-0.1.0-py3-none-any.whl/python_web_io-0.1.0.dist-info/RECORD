@@ -1,0 +1,15 @@
+python_web_io/.env,sha256=62ICOcb-1wkzuERe1gPiws9rOypHAq1WJRxSU1fdq08,25
+python_web_io/.env.example,sha256=dMctmcL-hhOYf1u4u54kfhBnAr80V311K-b89uXucHo,26
+python_web_io/main.py,sha256=E_pddONSV1TDP6FtYBS6Ukj334wSqJOGGQ-P4hEaPKc,1384
+python_web_io/python_web_io/__init__.py,sha256=b2SBBfJM259UN0XVNQtowZvDknM4RtdeJholS0px5fE,108
+python_web_io/python_web_io/cache.py,sha256=2tBeJbikprAPM-tIeSKpvNM8CNL6OfK_84fxXeavt3Q,689
+python_web_io/python_web_io/override.py,sha256=eJ-WUEgNHKV-XlLvDRk5xBbRA7hwHN3jyfI7E1Pr1uE,2265
+python_web_io/python_web_io/server.py,sha256=0RjrJsAD9C922uZ6CEp5r8od_3pWM_kdcoPDUBYmung,2757
+python_web_io/python_web_io/templates/500.html,sha256=a8FylcrI8QlOHsasC4PXwMCTWJeqYpAIXSxkH4ovt4c,491
+python_web_io/python_web_io/templates/base.html,sha256=N4camm6MHsO73ZceTnxUHliWap9hjVevVxs2IGjRfxc,794
+python_web_io/python_web_io/templates/index.html,sha256=OE_waDCkZlWFKS8UD0Nkj1cTpXH_EEkeFf9TnZ4C3yU,592
+python_web_io-0.1.0.dist-info/entry_points.txt,sha256=RiobYI2XEYBc_KDu3wD9rM2i0pmjoywQ95fmzsIyOEk,57
+python_web_io-0.1.0.dist-info/LICENSE,sha256=FIR60hxFQu0tFmS5AKbP4UiSlS-TmZLIBgWGztTwRKM,1090
+python_web_io-0.1.0.dist-info/METADATA,sha256=8husWTgmImdldZ1jpUGIKZS9ukCTJOfD808l3wiypas,471
+python_web_io-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+python_web_io-0.1.0.dist-info/RECORD,,
