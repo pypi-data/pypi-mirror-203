@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+tastytrade_api/__init__.py
+tastytrade_api/authentication.py
+tastytrade_api.egg-info/PKG-INFO
+tastytrade_api.egg-info/SOURCES.txt
+tastytrade_api.egg-info/dependency_links.txt
+tastytrade_api.egg-info/requires.txt
+tastytrade_api.egg-info/top_level.txt
+tests/__init__.py
+tests/test_authentication.py
