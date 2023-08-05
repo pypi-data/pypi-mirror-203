@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: geotran
+Version: 0.0.2
+Summary: Geo Python library
+Home-page: https://gitlab.com/codasteroid/basicpkg
+Author: Thai Tran
+Author-email: tnmthai@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://gitlab.com/codasteroid/basicpkg/-/issues
+Project-URL: repository, https://gitlab.com/codasteroid/basicpkg
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+The Python Geospatial Library, Geotran, is a comprehensive toolkit for geospatial data preprocessing, analysis, and modeling. It provides a variety of functions for transforming and manipulating geospatial data, including data normalization, resampling, filtering, and feature selection. It also offers a range of analytical techniques, such as spatial clustering, classification, and regression, as well as machine learning algorithms for predictive modeling. 
+Geotran is designed to work with a variety of geospatial data formats, including shapefiles, GeoJSON, and raster data. It also supports integration with popular geospatial tools and platforms, such as QGIS, GDAL, and ArcGIS. 
+Geotran is widely used in the geospatial industry, research, and open-source communities for developing geospatial applications, performing spatial analysis, and modeling complex geospatial phenomena.
+MIT License
+
+Copyright (c) [year] [fullname]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
