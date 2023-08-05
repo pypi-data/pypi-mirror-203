@@ -1,0 +1,11 @@
+psql2py/__main__.py,sha256=Y2DxRBA8lKT1etYa9pvLRy08gQrfbu51NZJL7GBxJzU,1981
+psql2py/common.py,sha256=TGMSkftLMkMRv3NmSl0-TOMc_1d5a9_zojwncNxw7WM,756
+psql2py/generate.py,sha256=VxHtOA1feZBw8PSu7VCJmM5z2JFPG4X4sjzPXK68lYY,1996
+psql2py/inspect.py,sha256=pL2O2tSxENwyLoOpfdtCo_jCc2f1FfGv867OVo2KG9E,3241
+psql2py/load.py,sha256=WcUMSKEv_pL8ReCEKnnaF0sUVguL4VmgIvBuqcCmQb4,4519
+psql2py/render.py,sha256=-uIdKJIy1ATbXk-p_GbKCnJcYOl1aQJpzbdWE1pTbjs,3595
+psql2py/templates/module.py.jinja,sha256=37MZOl3Ek1aSjO1y_993jlGhu9-fSeZM38FcIxp1G6g,1059
+psql2py/types.py,sha256=Wi36PAGiJhbdt_RanocgG_0Bwr8BmxW9xiGD79dsZm4,1911
+psql2py-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+psql2py-0.2.0.dist-info/METADATA,sha256=OY-ldSOWy2UYKvcQQ5QVb_JfmEbkKvgRkUVlZ7T29dA,594
+psql2py-0.2.0.dist-info/RECORD,,
