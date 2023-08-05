@@ -1,0 +1,8 @@
+setup.py
+sharewifi.py
+sharewifi.egg-info/PKG-INFO
+sharewifi.egg-info/SOURCES.txt
+sharewifi.egg-info/dependency_links.txt
+sharewifi.egg-info/entry_points.txt
+sharewifi.egg-info/requires.txt
+sharewifi.egg-info/top_level.txt
