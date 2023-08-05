@@ -1,0 +1,3 @@
+[console_scripts]
+dir2kilu = kilu:main_dir2kilu
+kilu = kilu:main_kilu
