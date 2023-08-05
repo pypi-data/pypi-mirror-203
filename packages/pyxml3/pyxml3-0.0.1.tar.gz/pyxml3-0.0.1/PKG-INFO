@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: pyxml3
+Version: 0.0.1
+Summary: Pure python3 Alternative to stdlib xml.etree with HTML support
+Home-page: https://github.com/imgurbot12/pyxml
+Author: Andrew Scott
+Author-email: imgurbot12@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+PyXml
+------
+Pure python3 Alternative to stdlib xml.etree with HTML support
+
+### Install
+
+```
+pip install pyxml3
+```
+
+### Advantages
+
+The primary advantage of this library over stdlib or lxml is the completeness
+of it's XPATH implementation. Additional functions and features are supported
+allowing for more complex queries and simplifying parsing efforts.
+
+### Examples
+
+Standard Usage:
+
+```python
+import pyxml
+
+etree = pyxml.fromstring(b'<p>Hello World!</p>')
+for element in etree.iter():
+  print(element)
+
+with open('example.xml', 'rb') as f:
+  etree = pyxml.fromstring(f)
+  print(etree)
+```
+
+Monkey Patch:
+
+```python
+import pyxml
+pyxml.compat.monkey_patch()
+
+from xml.etree import ElementTree as ET
+
+etree = ET.fromstring('<div><p class="hello world">Hello World!</p></div>')
+for element in etree.iter():
+  print(element)
+
+print(etree.find('//p[starts-with(@class, "hello")]'))
+```
