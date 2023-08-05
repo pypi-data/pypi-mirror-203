@@ -1,0 +1,11 @@
+pytest
+wield.bunch
+wield.pytest
+wield.declarative
+pcaspy
+pytoml
+python-vxi11
+gpstime
+
+[devel]
+pytest-watch
