@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: create_docker_compose
+Version: 0.2
+Description-Content-Type: text/markdown
+
+## Index
+- 1 [Description](#1-description)
+- 2 [Version History](#2-version-history)
+- 3 [How to install](#3-how-to-install)
+- 4 [How it works](#4-how-it-works)
+    - 4.1 [How to create a docker-compose.yml file](#41-how-to-create-a-docker-composeyml-file)
+    - 4.2 [How to create a .env file](#42-how-to-create-a-env-file)
+- 5 [How to update this package](#5-how-to-update-this-package)
+- 6 [Example Files](#6-example-files)
+    - 6.1 [docker-config.yml example](#61-docker-configyml-example)
+    - 6.2 [env_config.json example](#62-env_configjson-example)
+
+## 1. Description
+This package creates a docker-compose.yml and a .env file by combining multiple application's docker services and environment variables.
+
+## 2. Version History
+
+Latest Version: 0.3
+
+## 3. How to install
+Run the following command in your terminal:
+
+    pip install create-docker-compose==0.1
+
+## 4. How it works
+
+### 4.1 How to create a docker-compose.yml file
+For each application that you want to include in your docker-compose.yml file, you need to create a file called
+docker-config.yml with the relevant services required for that app. You directory structure would look something
+like this:
+
+![Directory Structure](./readme_images/directory_structure.png "Directory Structure" )
+
+An example of a docker-config.yml file can be found at the [end of the readme at](#5-example-files)
+
+Once all your docker-config.yml files have been created, run the following command at your projects root directory:
+
+    create_docker_compose
+
+It will then compile all the services in all your docker-config.myl files into a single docker-compose.yml file as highlighted
+in the directory structure above.
+
+### 4.2 How to create a .env file
+
+For each application that you want to include in your .env file, you need to create a file called
+env_config.json with the relevant environment variables required for that app. You can refer to the previous directory structure again.
+
+An example of a env_config.json file can be found at the [end of the readme at](#5-example-files)
+
+Once all your docker-config.yml files have been created, run the following command at your projects root directory:
+
+    create_env_file
+
+It will then compile all the environment variables in all your env_config.json files into a single .env file as highlighted
+in the directory structure above.
+
+## 5. How to update this package
+To update your package on PyPI, youâ€™ll need to make the desired changes to your package (e.g. update the code, add new files, etc.), update the version number in your setup.py file, and then rebuild and re-upload your package using the same commands as before:
+
+    python setup.py sdist bdist_wheel
+    twine upload dist/*
+
+Make sure to increment the version number in your setup.py file before uploading the new version of your package. This will allow users to distinguish between different versions of your package and upgrade to the latest version using pip install --upgrade hello.
+
+## 6. Example Files
+### 6.1 docker-config.yml example
+
+    your-project-frontend:
+    build:
+        context: ./Your Project/Frontend
+    container_name: your-project-frontend 
+    stdin_open: true
+    environment:
+        - CHOKIDAR_USEPOLLING=true
+        - WDS_SOCKET_PORT=0
+        - PORT=3002
+
+    volumes:
+        - ./Your Project/Frontend:/code
+        - '/code/node_modules'
+    ports:
+        - 3000:3000
+    networks:
+        - docker-network
+
+### 6.2 env_config.json example
+
+    {
+        "DJANGO_ALLOWED_HOSTS": [
+            "192.34.0.78",
+            "localhost",
+            "neura-dbms-backend"
+        ],
+        "DJANGO_ALLOWED_ORIGINS": [
+            "http://localhost:7003",
+            "http://localhost:3003"
+        ],
+        "SECRET_KEY_DBMS": "'!>&xW28tExZjhfjkknmnfslkl67jkhbgYE6H]wsX>VvC1a5ZKg'",
+        "JWT_KEY": "'21F81E7C253C4856103AD7CDB8D12D1E20D408AAA640ECCD4F9F6FC8A9983D64'"
+    }
