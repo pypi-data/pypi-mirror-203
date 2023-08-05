@@ -1,0 +1,5 @@
+cffi
+click
+pycparser
+pynacl
+qrcode
