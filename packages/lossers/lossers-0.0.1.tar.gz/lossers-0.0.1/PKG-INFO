@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: lossers
+Version: 0.0.1
+Summary: ML Loss Function
+Home-page: https://github.com/JiauZhang/lossers
+Author: JiauZhang
+Author-email: jiauzhang@163.com
+License: MIT
+Keywords: artificial intelligence,loss function,deep learning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
