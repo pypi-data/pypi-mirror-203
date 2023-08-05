@@ -1,0 +1,5 @@
+six
+farasapy
+tqdm
+requests
+regex
