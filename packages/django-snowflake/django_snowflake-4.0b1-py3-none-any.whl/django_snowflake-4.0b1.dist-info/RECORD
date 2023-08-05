@@ -1,0 +1,17 @@
+django_snowflake/__init__.py,sha256=q8oGRaoZYxUUdMZM3Dqw2ePooAfj_3S3izpogoqZ5Lc,349
+django_snowflake/base.py,sha256=rFaBWqXJHvFsj_j6Tv1Ko_VFfs5ugjcDTMdd_tDff3Q,6751
+django_snowflake/client.py,sha256=aNmDT7QCpt5957ZcDURRmTDOilMILvySNPCeSzU-uEk,2495
+django_snowflake/compiler.py,sha256=ChoE1lq5vGmPgEv9Z8BNZR43LJndVpinfde8kC3L9Jw,4166
+django_snowflake/creation.py,sha256=P3fcwkJqWqWT9rce545lA0yRiQIUkQHHP4fn9Y3liq4,2150
+django_snowflake/features.py,sha256=uUG_ZB1RjEeN4t8XXhJUQTM7BaYwFVDKRddxeDzD0yg,18918
+django_snowflake/functions.py,sha256=xyEFpMgHHjxWUZ6sTdqPmd42ng21qZ7fGSlOC3NuQ5g,1891
+django_snowflake/introspection.py,sha256=MSBTynZfX9hcLY-AJ-CD0q4aR4AVXSUWE7hlJ_-Tfuk,8107
+django_snowflake/lookups.py,sha256=r8qsBvIbUTCVnfWR2RZGsD8kOB6WlKmlVATDW9R5MDk,2690
+django_snowflake/operations.py,sha256=aYogl7a_oDcmVjw_H2NvOgdcKeVakeevWnZ0S4IY4tY,8076
+django_snowflake/schema.py,sha256=Ke9GM-0ijU36tCxUdQ41-EOpSWYwLy3MMQbzgScpNgs,6067
+django_snowflake/utils.py,sha256=zBOQxYeBIFQYGR7_AsXRvsryccR3iC5msDFJB-CCrOs,766
+django_snowflake-4.0b1.dist-info/LICENSE,sha256=FTJCjQUVxsVxA3y_UrxZx8CmIVURzexbMFjeM1ZYDwc,1058
+django_snowflake-4.0b1.dist-info/METADATA,sha256=jQrYOxk3T6_oOdliLWtfhphPQtxlJjTBpuWjH-L-V0o,5724
+django_snowflake-4.0b1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_snowflake-4.0b1.dist-info/top_level.txt,sha256=E6x7JaHVfaNsh9_zEn8AZd6__XkxqenLOgoENlQd0Kg,17
+django_snowflake-4.0b1.dist-info/RECORD,,
