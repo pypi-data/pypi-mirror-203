@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cbstorage
+Version: 0.1.6
+Summary: The code is a Python package for managing file storage on either AWS S3 or a local machine. It provides methods for listing, searching, and storing files. The package includes two classes, Aws and Local, which implement the same set of methods for accessing and manipulating files in S3 and a local directory.
+Author: germangerken
+Author-email: germangerken@yandex.ru
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: boto3 (>=1.26.113,<2.0.0)
