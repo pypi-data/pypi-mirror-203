@@ -1,0 +1,11 @@
+django_forbid/__init__.py,sha256=S7u1lbuWmM3A3ajykBialmPoJUK6Jg-WmNqM-9OZFdk,22
+django_forbid/access.py,sha256=Px4XJcPkwLjW-L_eZEGE4aerYA7yyhStgmzEWLh2DSI,2936
+django_forbid/apps.py,sha256=c-Q5oTepcZUWhlz0uUhIsUP1RMEO0j7AW6ofJwJxhv4,94
+django_forbid/config.py,sha256=8i3OZYWHhy921i8YBIgJp33Tu8EC6Uubb0HfdDTUWtc,624
+django_forbid/detect.py,sha256=ErdOTj3JSzjyIUCZiE48wQ0vfkLxKT5htPHu4PTZM-U,2360
+django_forbid/middleware.py,sha256=1l-8-aQznxHWUTEBgD0xn4lOxZB5WACFNFCjWAeMNNo,1512
+django_forbid-0.0.5.dist-info/LICENSE,sha256=QYf8kAs_zfwaYbq6Qj7yv6GEHXkohOQEarOmCr05xsI,1071
+django_forbid-0.0.5.dist-info/METADATA,sha256=RhCRX36L0xOVlLsd7CUt_cOkYY4LEN89ZvhdZ_oGdsQ,4818
+django_forbid-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_forbid-0.0.5.dist-info/top_level.txt,sha256=sIOnkrPwNeRsoaLa9YoLIoO5bu0jdwMknVu2J5waZlI,14
+django_forbid-0.0.5.dist-info/RECORD,,
