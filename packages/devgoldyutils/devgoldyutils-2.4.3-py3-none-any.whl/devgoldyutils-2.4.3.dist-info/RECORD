@@ -1,0 +1,14 @@
+devgoldyutils/__init__.py,sha256=OcqMkUHv5Pc0xbHBobCn2mwUV7gGh3YHH4xWcQ6KBPw,442
+devgoldyutils/colours.py,sha256=CnDu8A-Lq4kpI2tupd33sfmQrf5NRBFhdlTQAO-pjvA,1564
+devgoldyutils/dataclasses.py,sha256=prWAn5k1XQVV4rbvcal9Rwo5-ILlMCeewirYIZ31KD8,2761
+devgoldyutils/errors.py,sha256=gA2ebtp3ghd-YK__5qvtNEhd5BLvByU2hCK71V0Zbjc,394
+devgoldyutils/file_configs.py,sha256=RqoKgRF_FV3ckJkVKJ4IQ8XpnTdubWpZ2Jyjp0EZ-bQ,1616
+devgoldyutils/logging.py,sha256=fzLrUngllY42xg_V5UU-clKVGePOIp4sWrb4NgxbEkg,1760
+devgoldyutils/console/__init__.py,sha256=5MgBVQyJKP-TFI6QSGM-_AjMalP-PHNWhGaZz6SdPf8,350
+devgoldyutils/console/colours.py,sha256=RxEUjLJxGvVW0WaQcRvQEyaiBPI3gqHIW2MsswLcky8,330
+devgoldyutils/console/legacy_colours.py,sha256=A_1UYpmqmRk6-U7hditHKNEs4YAvh-9QZua0H8kt6nM,1338
+devgoldyutils-2.4.3.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+devgoldyutils-2.4.3.dist-info/METADATA,sha256=etgGiw8KkmEzcp7PQal2rVZEjtzJs1wXShnbCUGHOUg,42735
+devgoldyutils-2.4.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+devgoldyutils-2.4.3.dist-info/top_level.txt,sha256=LDoZnNocTbQben5lslNwAqcYnXWmP5cierprnvkBu0s,14
+devgoldyutils-2.4.3.dist-info/RECORD,,
