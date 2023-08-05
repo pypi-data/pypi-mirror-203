@@ -1,0 +1,7 @@
+clipboard
+
+[dev]
+jedi>=0.18.1
+pylint>=2.13.9
+pytest>=7.0.0
+yapf>=0.32.0
