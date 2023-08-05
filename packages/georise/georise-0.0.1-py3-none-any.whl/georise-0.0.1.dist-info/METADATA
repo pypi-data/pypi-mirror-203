@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: georise
+Version: 0.0.1
+Summary: A Python Library Built on GDAL for Visualization of Geospatial Maps
+Home-page: https://github.com/quothbonney/georise
+Author: Jack David Carson
+Author-email: jackdavidcarson@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Requires-Dist: PyQt5 (==5.15.9)
+Requires-Dist: PyQt5-sip (==12.11.1)
+Requires-Dist: geopy (==2.3.0)
+Requires-Dist: matplotlib (==3.4.3)
+Requires-Dist: numpy (==1.17.4)
+Requires-Dist: numpy (==1.24.2)
+Requires-Dist: osgeo (==0.0.1)
+Requires-Dist: pyqtgraph (==0.13.1)
+Requires-Dist: pytest (==7.3.0)
+Requires-Dist: rasterio (==1.3.6)
+Requires-Dist: setuptools (==44.0.0)
+Requires-Dist: setuptools (==45.2.0)
+
+UNKNOWN
+
+
