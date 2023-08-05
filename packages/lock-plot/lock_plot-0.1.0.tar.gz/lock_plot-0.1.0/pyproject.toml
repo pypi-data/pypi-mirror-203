@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "lock-plot"
+version = "0.1.0"
+description = ""
+authors = ["Łukasz Bacik <mail@luka.sh>"]
+readme = "README.md"
+packages = [
+    { include = "plot" },
+]
+
+[tool.poetry.scripts]
+lock-plot = "plot.app:__main__"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+uniplot = "^0.10.0"
+pandas = "^1.5.3"
+requests = "^2.28.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

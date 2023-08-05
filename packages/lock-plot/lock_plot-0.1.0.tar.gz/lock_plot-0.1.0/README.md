@@ -1,0 +1,6 @@
+
+Usage:
+
+    lock-plot --help
+
+
