@@ -1,0 +1,4 @@
+[
+  "test/test_o2cm_parser.py::test_o2cm_parser_dom",
+  "test/test_o2cm_parser.py::test_o2cm_parser_raw"
+]
