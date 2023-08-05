@@ -1,0 +1,15 @@
+rx
+pydantic
+GitPython
+colorama
+
+[test]
+rx
+pydantic
+GitPython
+colorama
+pytest
+pytest-asyncio
+coverage
+black
+mypy
