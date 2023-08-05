@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: python-library-30153653
+Version: 1.5.0
+Summary: python library which includes linear, nodes, and trees. Made by Arsalan Khaleel 30153653 
+Home-page: UNKNOWN
+Author: arsalan_khaleel
+Author-email: arsalan.khaleel@ucalgary.ca
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+UNKNOWN
+
