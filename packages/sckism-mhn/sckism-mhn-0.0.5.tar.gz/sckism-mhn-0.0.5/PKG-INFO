@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sckism-mhn
+Version: 0.0.5
+Summary: Minimalist Hierarchical Notation (MHN) library
+Home-page: https://github.com/Sckism/mhn
+Author: Peter Wicks
+Author-email: peter@wicks.ninja
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+
+Minimalist Hierarchical Notation (MHN) library provides a cross between CSV and JSON allowing for hierarchal data structures and arrays in a flat text based format.
