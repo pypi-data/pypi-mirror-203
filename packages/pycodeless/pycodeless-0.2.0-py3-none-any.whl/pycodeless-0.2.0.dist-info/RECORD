@@ -1,0 +1,11 @@
+pycodeless/__init__.py,sha256=iw2JgbZObQ7IiYHCpzX52348AapuAGYwivbSmyU6lnc,62
+pycodeless/_api.py,sha256=G1EZosz84nPlzPHGj4nMJn2J37ahsvbBr1R6zp8tS4I,665
+pycodeless/_generate.py,sha256=PiIy-owrdLjHHBkhS0_EML2cYDWDxiMVs2YQrFnpvWo,5142
+pycodeless/_llm.py,sha256=5Cs4QYhjgSg-IOXd9tBA0m2J12Nt_Hzim0TuJfqRSuk,920
+pycodeless/_load.py,sha256=d2dcm8BEQoyUuR7Y0oRzCBBadGMIWDN6Vjrgi94pgJs,436
+pycodeless/_openai_llm.py,sha256=NJBEo0SkdIG_1DFdf6shtWWiXT2VhzyGaboX92jEr2E,970
+pycodeless/_parse.py,sha256=4Au4eda75TWZcnfGhZ7nQGuVnkKSwVOAZEZe_qf-mZw,4491
+pycodeless-0.2.0.dist-info/LICENSE,sha256=UwCs9IY7U3R9x083Vj7BrN2YCFRkg8Eij1BAduYmWsk,1075
+pycodeless-0.2.0.dist-info/METADATA,sha256=2vCBz7LNuc7lWr_ZgN7-ECGyCAc5hV8rYI218YnrzKM,595
+pycodeless-0.2.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+pycodeless-0.2.0.dist-info/RECORD,,
