@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: square_artkov1
+Version: 1.0.0
+Summary: Square function
+Author-email: Artem Kovalenkor <artkov@ttu.ee>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Square function package
+
+This is package for Advanced Python course
+
+**artkov@ttu.ee**
