@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: wield.control
+Version: 0.6.0
+Summary: Toolkits linear algebra and control systems for signals, physics, and interferometer designs
+Home-page: https://github.com/wieldphysics/wield-control
+Author: Lee McCuller
+Author-email: mcculler@caltech.edu
+License: Apache-2.0
+Project-URL: Bug Tracker, https://github.com/wieldphysics/wield-control/issues
+Project-URL: Source Code, https://github.com/wieldphysics/wield-control
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/markdown
+License-File: LICENSES/Apache-2.0.txt
+License-File: LICENSES/BSD-3-Clause.txt
+License-File: LICENSES/CC0-1.0.txt
+License-File: NOTICE
+
+wield.control
+=====================
+[![REUSE status](https://api.reuse.software/badge/git.fsfe.org/reuse/api)](https://api.reuse.software/info/git.fsfe.org/reuse/api)
+
+This is a collection of tools for linear algebra and control systems design
