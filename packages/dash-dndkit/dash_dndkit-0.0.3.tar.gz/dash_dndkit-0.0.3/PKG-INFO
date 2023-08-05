@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dash_dndkit
+Version: 0.0.3
+Summary: Plotly Dash drag and drop support based on dnd-kit
+Home-page: https://github.com/LuanAdemi/dash-dndkit
+Author: Luan Ademi <luan.ademi@student.kit.edu>
+Author-email: luan.ademi@student.kit.edu
+License: MIT
+Classifier: Framework :: Dash
+Classifier: Framework :: Flask
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dash-dndkit
+Drag and Drop support for the dash framework using react-dndkit
