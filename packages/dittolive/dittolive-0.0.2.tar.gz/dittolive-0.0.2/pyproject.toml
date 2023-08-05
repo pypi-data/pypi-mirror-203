@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "setuptools_scm[toml]>=3.5.0", "cffi>=1.0.1", "ruff"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dittolive"
+version = "0.0.2"
+readme = "README.md"
+description = "Ditto Python SDK."
+authors = [{name="Ditto Engineering Team", email="engineering@ditto.live"}]
+#CHECKME
+keywords = ["database", "P2P", "CRDT"]
+# dependencies
+dependencies = [
+    "dittoffi == 0.0.2",
+    "cbor2 == 5.4.6",
+]
+
+[project.license]
+type = "Proprietary"
+file = "LICENSE.md"
+
+[project.urls]
+Documentation = "https://docs.ditto.live"
+Changelog = "https://docs.ditto.live/changelog"
+
+[tool.ruff]
+line-length = 88
+update-check = false
+target-version = "py38"
+
+select = [
+    # pyflakes
+    "F",
+    # pycodestyle
+    "E",
+    "W",
+    # flake8-2020
+    "YTT",
+    # flake8-bugbear
+    "B",
+    # flake8-quotes
+    "Q",
+    # pylint
+    "PLE", "PLR", "PLW",
+    # misc lints
+    "PIE",
+    # tidy imports
+    "TID",
+    # document
+    "D",
+]
+
+[tool.ruff.pydocstyle]
+# Use Google-style docstrings
+convention = "google"
