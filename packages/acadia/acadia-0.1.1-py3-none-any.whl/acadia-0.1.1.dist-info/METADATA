@@ -1,0 +1,205 @@
+Metadata-Version: 2.1
+Name: acadia
+Version: 0.1.1
+Summary: A tool to create accessible audio diagrams
+Author-email: Sergey Monakhov <monahovserg@gmail.com>
+Project-URL: homepage, https://github.com/monaxov/acadia
+Project-URL: repository, https://github.com/monaxov/acadia.git
+Keywords: Accessibility,Accessible,Assistive,Blind,Visually impaired,Low vision,Screenreader
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: sounddevice
+Requires-Dist: soundfile
+
+# acadia
+
+## An audio alternative of   conventional diagrms for blind and visually impaired people
+
+Acadia  stands for accessible audio diagrams,  the  tool designed to assist blind and visually impaired people to get access to representation of numeric data.
+### Introduction
+
+When dealing with really big amounts of numbers, it is common practice to use some kind of plot or diagram. 
+Indeed, with those graphic objects one   can  study numeric data in a very natural way, clearly and efficiently making vivid impressions of different entities through their shapes almost instantaneously.
+It is more than  convenient in most cases So an approach to data representation  is considered  to be strictly  visual without any alternative.
+Given that, there is the problem for those who happen to be blind or visually impaired.
+
+Of course, with  assistive technologies like screenreading program or Braile display those users can get access to the data itself, but   in case of   hundreds and thousands of numbers they are of little help.
+A solution that would provide blind people with alternative of visual representation of numeric data is needed.
+
+Obviously, if it cannot be visual, it has to be either tactile or aural.
+An aural approach looks like more preferable, because it probably can be implemented without any additional hardware.
+
+### Concept formulation
+
+Let us take a classic example  of two-dimensional linear diagram.
+All we need  is  to provide audio alternative for  its    contour defined  by vertical and  horizontal coordinates.
+For that purpose we can try to use frequency of a signal  and its position within the stereo basis.
+But the nature of aural perception   is immanently temporal, whereas the nature of visual perception  is spacial.
+And the problem is that the third dimension, time itself, cannot be fully excluded like the third dimension in case of conventional charting.
+We have to try to reduce it as much as possible if our goal is to emulate graphic  representation, which perception is almost instantaneous.
+
+***Note:**  We can theoretically have  even the fourth dimension,  expressed through sound pressure, so the audio representation of numeric data  can potentially give us  quite unusual  and promicing opportunities even beyond the context of accessibility.*
+
+For the present our goal is to create   something like "audio snapshot", assuming  that several  seconds would be quite enough to create a mental image of the  data representation.
+
+### Subject area exploration
+
+There is a project called [the Accessible Graphs Project ](https://accessiblegraphs.org/english_guides/learnMore-en.html?lang=en),
+that exploits more or less the same idea. You can install a client with pip and then upload your data to a web application.
+Once it is done, a representation   opens in a default browser. 
+It is accessible  not only with audio interface, but also with screenreader and Braile display.
+Though the main concept  seems to be   realized, there are some features that in our humble opinion decrease its practical meaning:
+
+- the number of values that can be represented is limited to  29 items
+- presence of an Internet connection  is vital
+- valid data types  are only list and dict
+- inability to integrate into third-party applications
+- the only supported OS is Windows
+
+Also, however the "read entire graph" button is mentioned,   it is absent and you have a single option to move through the representation manually, entry by entry.
+The latter could be a good extra feature, but only when combined with an ability  to provide an instant impression. 
+Once again, that ability is the very thing that makes visual plots so handy.
+Now we should take those drawbacks into  account and try to create a tool which 
+- does not have any inherent limitations in terms of amount of data being processed
+- does not need an Internet connection to work properly
+- supports numpy arrays
+- can be  embedded into a Jupyter notebook
+- is OS-independent
+
+And finally,   we  need to  make our  audio diagram as quick as a glance.
+
+### Data processing
+
+Ok,  so far so good, to get a result we just need to realize a number of  steps. The pipeline could look like this:
+
+- get the values  for both dimensions, x and y
+- scale them to fit the range of audible frequencies and width of stereo basis (let us take the range between 220 and 7040 Hz and -45 and 45 degrees)
+- synthesize mono signal  (for example sine wave with 44100 samples per second and duration of 10 or 50 milliseconds) for each value y
+multiply mono signal by amplitude determined   by value x in order  to produce a stereo signal
+- build a collection of those signals
+- send it to sound device
+
+### Solution structure
+
+It was decided to implement the solution in an object-oriented manner and establish several classes encapsulating  logic for 
+-  production of single stereo signal (class Tone)
+- scaling  coordinates(class Space)
+- transformation the coordinates into collection of stereo signals(class Shape),  the key entity of the solution
+- highly specialized "bar chart" construction  (class Histogram, a derivative of Shape)
+
+There  are  also   several public methods defined in  Shape class:
+- ```to_device()``` to send values to sound device using sounddevice module.
+- ```to_wav()``` - to create a wav-file from values using  soundfile module.
+- ```switch(mode)``` - to switch the mode of the shape between fast and slow
+- ```add(x, y)``` - to add an embedded object of the same type
+
+The SAMPLERATE constant contains standard sampling rate value  44100 Hz.
+
+### Shape logic
+Once we evoke Shape's constructor, it creates and configures an instance  ready to produce the values. The process itself starts only when the 'values' property is called.
+If there are embedded Shapes, the values are accessed recursively and there is no difference if they are  or not and what the depth is.
+
+Inside Tone class the values are also being manufactured only when they are needed and what we have is  a very   lightweighted object  which  contains only  its configuration.
+
+The most important logic is encapsulated inside  private methods ```__tone()``` and ```__pan()```:
+```
+# synthesis   of sine wave with given parameters
+
+t = np.linspace(0, self.duration, int(SAMPLERATE * self.duration), False)
+return np.sin(2 * np.pi * self.frequency * t)
+```
+
+```
+# its panning
+left = (
+    np.sqrt(2)
+    / 2.0
+    * (np.cos(self.deviation) - np.sin(self.deviation))
+    * values
+)
+right = (
+    np.sqrt(2)
+    / 2.0
+    * (np.cos(self.deviation) + np.sin(self.deviation))
+    * values
+)
+return np.vstack((left, right))
+```
+
+### Usage
+
+Ok, assume we already have values x and y for  plotting, the first thing that we do  is calling   Shape's constructor taking  x and y as arguments.
+Also it has  an optional parameter "mode", which determins the length of each segment of our plot and consequently it final "appearance". 
+There are two valid   options: 'fast' (10 milliseconds) and 'slow' (50 milliseconds). Default is 'fast'.
+Then we can add one or whatever number is needed sets of coordinates so we have several shapes through a single object.
+Next and finally we can   send our shape ```to_device()``` or ```to_wav()```, ```switch()``` the mode or change its parameters and then repeat once again or, in case of Jupyter notebook, just call ```Audio()```  function with the values.
+
+### Examples
+#### Jupyter or not
+
+When in context of Jupyter notebook, it is strongly recommended to use 
+```IPython.display.Audio()``` function instead of calling ```to_device()``` method. 
+That function places  in the notebook play/pause control right below the cell, so you can launch the sound any time you like without necessity of repeated cell execution. 
+It takes two arguments - values of Shape object and sampling rate (44100).
+
+```
+from IPython.display import Audio
+sr = 1000
+f = 7
+x = np.arange(1000)
+y = np.sin(2 * np.pi * f * x / sr)
+sinusoid  = Shape(x, y)
+Audio(sinusoid.values, rate=44100)
+
+#or replace just the last line  like this: 
+
+sinusoid.to_device()
+```
+#### Histogram
+To create a histogram, you can  use the  Shape object with proper x and y, yet there is an option   to use an instance  of the dedicated class Histogram.
+It inherits all the methods and attributes from Shape, but its constructor  takes  a distribution as an argument (and a variaty of optional keyword arguments as well).
+
+```
+from scipy.stats import norm
+normal_distribution = norm.rvs(size=10000)
+histogram = Histogram(normal_distribution,
+    bins=100,
+    density=False,
+    smooth=False,
+    window_size=3,
+    mode='fast'
+)
+# or, with the same result
+histogram = Histogram(normal_distribution)
+# and either
+Audio(histogram.values, rate=44100)
+# or just
+histogram.to_device()
+```
+
+### Conclusion
+Finally, we have a     library that is designed  to provide  an audio representation of numeric data of various kinds without graphic component.
+Its main features:
+- a simple intuitive interface
+- the Shape object generates values, that can be 
+    - played via sound device
+    - sent to Audio() function when   in Jupyter notebook
+    - saved into a wav-file
+- an amount of data processed  is limited only to the characteristics of hardware and resulting time capacity
+- OS-independence
+- scalable structure
+
+It can be applied as a kind of assistive technology in education, for   teaching  topics regarding trigonometry, mathematical statistics, probability theory and so on to blind students,  within  the framework   of academic and applied studies   in  data science, data analysis, economics, sociology and  anywhere else   where it is necessary  to represent big amounts of numbers, as a substitute of conventional diagrams.
+
+We sincerely hope that the tool would  be helpful for blind and visually impaired people around the world and  the project  has a bright future.
+We are going to continue to do our best to make it better and there are already some further steps in the pipeline (of course, the four-dimensional diagram is  the most intriguing)
+We are always open to  any form of collaboration and kindly appreciate any suggestions of possible improvement, help  and feedback.
+
