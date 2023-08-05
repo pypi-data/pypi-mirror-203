@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: shapfs
+Version: 0.0.1
+Summary: Shapley value is used for feature selection
+Author: Jianyang Hu
+Author-email: meegohjy@gmail.com
+License-File: LICENSE
