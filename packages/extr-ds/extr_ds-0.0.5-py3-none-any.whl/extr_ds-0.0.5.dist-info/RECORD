@@ -1,0 +1,10 @@
+extr_ds/__init__.py,sha256=bewCKThOJi8g2JyE1Fo4OUXYU58jhwTVYQc9rBmB1Gk,27
+extr_ds/labelers.py,sha256=th4KQdnTjtn8p0ntO2Ah76Gv-aC_PYiQm4VbUXPc78g,1602
+extr_ds/models.py,sha256=KkAwg7SvlokyypMhai62Er012hzFEikabm-1yqDHVLM,938
+extr_ds/tokenizer.py,sha256=sCyyoi9mLrFFUlBqwq5-oSl3TYjQDpSWrf3YMGhqKDI,939
+extr_ds/validators.py,sha256=QwAAUE3RQJd_RUfAJ1xVO-afvqQmf1LJiYBw11mBRpo,1561
+extr_ds-0.0.5.dist-info/LICENSE,sha256=M0xHH4Tw7PYxnrNhA5yK6ZzlB0hwO2K7uK0sgWBGqPA,1084
+extr_ds-0.0.5.dist-info/METADATA,sha256=mJtErE4b4BpmjC34krdOxZDxvgDXEBX8W36XsED6RhA,2139
+extr_ds-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+extr_ds-0.0.5.dist-info/top_level.txt,sha256=SQCqyR2Zal0u433twbko698QwhDTaVmNi05R8MNrkBs,8
+extr_ds-0.0.5.dist-info/RECORD,,
