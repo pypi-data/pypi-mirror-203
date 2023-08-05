@@ -1,0 +1,3 @@
+[console_scripts]
+gptaapi = gpt_address_api.gpt_address_api:main
+
