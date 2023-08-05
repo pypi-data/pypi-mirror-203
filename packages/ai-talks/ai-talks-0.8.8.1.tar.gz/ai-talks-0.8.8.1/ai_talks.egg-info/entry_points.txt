@@ -1,0 +1,2 @@
+[console_scripts]
+ai-talks = run_agi:main
