@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: python-insights4ci-client
+Version: 0.0.1
+Summary: Python Insights4CI' client library
+Home-page: https://gitlab.com/insights4ci/python-insights4ci-client
+Author: Beraldo Leal
+Author-email: bleal@redhat.com
+Project-URL: Homepage, https://gitlab.com/insights4ci/python-insights4ci-client
+Project-URL: Issues, https://gitlab.com/insights4ci/python-insights4ci-client/-/issues
+Project-URL: Source, https://gitlab.com/insights4ci/python-insights4ci-client
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Provides-Extra: devel
+Requires-Dist: coverage (>=6.1.0) ; extra == 'devel'
+Requires-Dist: flake8 (>=3.6.0) ; extra == 'devel'
+Requires-Dist: isort (>=5.1.2) ; extra == 'devel'
+Requires-Dist: pylint (>=2.8.0) ; extra == 'devel'
+Requires-Dist: tox (>=3.18.0) ; extra == 'devel'
+
