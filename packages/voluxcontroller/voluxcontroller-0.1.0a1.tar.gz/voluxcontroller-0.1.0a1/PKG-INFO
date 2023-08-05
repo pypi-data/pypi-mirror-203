@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: voluxcontroller
+Version: 0.1.0a1
+Summary: Controller/gamepad interface for Volux
+Home-page: https://gitlab.com/volux/volux/
+License: AGPL-3.0-only
+Author: DrTexx
+Author-email: denver.opensource@tutanota.com
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: approxeng-input (>=2.6.3,<3.0.0)
+Requires-Dist: volux (>=0.11.2)
+Project-URL: Repository, https://gitlab.com/volux/volux/
+Description-Content-Type: text/markdown
+
+# Volux Controller
+
+TODO
+
