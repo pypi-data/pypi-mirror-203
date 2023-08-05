@@ -1,0 +1,14 @@
+seawolf/__init__.py,sha256=pFY6HljyGUlAXdltfcucEZKWJ5tKEsnHDFEjviHkOEc,430
+seawolf/_axes.py,sha256=cgWQN87E1ySeSmSUARVytKKsym8B5jdYiVdNsQFyD_8,22312
+seawolf/_axesTools.py,sha256=1iy_IK3fhOTmGb2TgK58WdxByH2zyJYZjaUqc8pBbtk,18493
+seawolf/_colors.py,sha256=uzmMh1Eu1IPO4K9G2puudu3KxghE3E4PKgXVcnU59lU,4015
+seawolf/_style.py,sha256=pIYV3nqB5ZuQ_rK5qSQ1AFKf3VPbtkx_6wAwFShVddc,4304
+seawolf/test.py,sha256=z3GoPgLzu3MQSL4ACxsjNswqqDrJNrTSD63IOO3EBM4,1244
+seawolf/fonts/CAMBRIAI.TTF,sha256=JLHFPBYE0GYyZjgyekcUFQjNrAX9X26dO5CAguFLMY4,823636
+seawolf/fonts/CAMBRIAZ.TTF,sha256=kozV0dNfYd4O5G5a3t2wn-TCZHti2fu8X-QEhlA8xnI,808520
+seawolf/fonts/Cambria.ttf,sha256=GggzqBX3-uUQPOb3USAxj-bKFzHa52ZQMT8tFxIkTh4,314820
+seawolf/fonts/cambriab.ttf,sha256=V5amyz_1f4-KXL75Ttm3gMFqpQ08HNILijFyXO0SVk8,795416
+seawolf-0.1.dist-info/METADATA,sha256=ebfZ-8ANhpnDPOepyoqq5m15_ZtBelCSEL8NzfJtftg,41273
+seawolf-0.1.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+seawolf-0.1.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+seawolf-0.1.dist-info/RECORD,,
