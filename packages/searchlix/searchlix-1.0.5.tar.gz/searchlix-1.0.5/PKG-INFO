@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: searchlix
+Version: 1.0.5
+Summary: A package for extract data from websites and text
+Home-page: UNKNOWN
+Author: Hashem
+Author-email: hashem.a.muhammad@gmail.com
+License: UNKNOWN
+Description: # Searchlix
+        ## _powerful python pakage to search in text and websites_
+        
+        
+        
+        ## Features
+        
+        - Search for page name in website
+        - Extract emails from website page
+        - Extract phone number from website page
+        - check if domain has a valid mail server
+        - check if domain is valid
+        - Pattern search in text
+        - Search for word in text
+        - Extract phone number in text / Phone number validation
+        - Extract emails in text / Email validation
+        
+        
+        
+        
+        
+        
+        ## Installation
+        
+        python 3.6+
+        
+        ```sh
+        pip install searchlix
+        ```
+        
+        ## Functions
+        
+        How you can use it.
+        
+        | Features | Function |
+        | ------ | ------ |
+        | Find emails in text / Email validation | find_email(text) |
+        | Find emails in website page | extract_email_from_link(url) |
+        | Find phone number in text / Phone number validation | find_phone_number(text) |
+        | Find phone number in website page | extract_phone_from_link(url) |
+        | Pattern search in text | pattern_search(text, pattern) |
+        | Search for page name in website | extract_page_url(url, page_name) |
+        | check if domain has a valid mail server | check_mail_server(domain) |
+        | check if domain is valid | is_valid_domian(domain) |
+        
+        ## Import
+        
+        
+        
+        
+        ```sh
+        from searchlix import searchlix
+        ```
+        
+        ## Future Works
+        
+        - Add proper error handiling
+        - Add test cases
+        - Add more features
+        
+        ## Notes
+        
+        - this is a beta version
+        - if you have any suggestions please feel free to send email to me
+        
+        ## Contact Information 
+        - email: hashem.a.muhammad@gmail.com
+        - linkedin https://linkedin.com/in/hashem-muhammad
+        
+        
+        ## License
+        
+        MIT
+Keywords: python,web scraping,emails,phone,data,search
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
