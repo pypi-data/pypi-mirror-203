@@ -1,0 +1,7 @@
+setup.py
+gpt4all/__init__.py
+gpt4all.egg-info/PKG-INFO
+gpt4all.egg-info/SOURCES.txt
+gpt4all.egg-info/dependency_links.txt
+gpt4all.egg-info/not-zip-safe
+gpt4all.egg-info/top_level.txt
