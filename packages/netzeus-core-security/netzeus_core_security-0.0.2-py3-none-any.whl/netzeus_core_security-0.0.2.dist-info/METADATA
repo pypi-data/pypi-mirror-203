@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: netzeus-core-security
+Version: 0.0.2
+Summary: NetZeus Core Security module for managing security context across all microservices/plugins
+Author: Brandon Spendlove
+Author-email: brandon.spendlove@netzeus.io
+Description-Content-Type: text/markdown
+Requires-Dist: bcrypt (>=4.0.0)
+Requires-Dist: passlib (>=1.7.4)
+Requires-Dist: PyJWT (>=1.7.1)
+Requires-Dist: fastapi (>=0.88.0)
+
+# netzeus-core-security
+NetZeus Core Security Package
+
+This module is used for microservices/plugins that want to implement security/authentication functions and authentication providers such as Azure AD or Google OAuth.
