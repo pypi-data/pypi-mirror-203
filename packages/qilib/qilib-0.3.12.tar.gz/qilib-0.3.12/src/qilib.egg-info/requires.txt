@@ -1,0 +1,16 @@
+dataclasses-json
+numpy>=1.20
+pymongo
+qcodes>=0.33.0
+qcodes_contrib_drivers>=0.13.1
+requests
+serialize
+spirack>=0.1.8
+
+[dev]
+coverage>=4.5.1
+mongomock==3.20.0
+mypy
+pylint
+pytest>=3.3.1
+types-requests
