@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: polywrap-http-plugin
+Version: 0.1.0a3
+Summary: 
+Author: Niraj Kamdar
+Author-email: niraj@polywrap.io
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: httpx (>=0.23.3,<0.24.0)
+Requires-Dist: polywrap-core (>=0.1.0a28,<0.2.0)
+Requires-Dist: polywrap-manifest (>=0.1.0a28,<0.2.0)
+Requires-Dist: polywrap-msgpack (>=0.1.0a28,<0.2.0)
+Requires-Dist: polywrap-plugin (==0.1.0a28)
+Description-Content-Type: text/markdown
+
+# Polywrap HTTP Plugin
