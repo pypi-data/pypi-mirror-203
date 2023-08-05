@@ -1,0 +1,12 @@
+bam_filter/__init__.py,sha256=t9KZdp_DIvv91kyAlbqfXkrky_63qicYujvE-nd8xlM,93
+bam_filter/__main__.py,sha256=K0ceIETZJMH1C23QWBmFBgGAH15UCaqhs8c0s9a1zxg,10168
+bam_filter/_version.py,sha256=cO9ClfB6yQfjMstg8Nl4b-d0quayJ9vn2rbdyM1P3U4,497
+bam_filter/entropy.py,sha256=GsQP84sjCGo88lPWN8X8020XxkqaFEmhgOzqZ0WVDcE,6414
+bam_filter/sam_utils.py,sha256=bjp2-jbEyp7b8050DPvPBSuacGXRNPFQXCvFeKZkvPk,43579
+bam_filter/utils.py,sha256=ej_Ag7mAr-_uPW0x5AO7dWfiX44noLXmJ3smvU4iz7w,23200
+bam_filter-1.2.1.dist-info/LICENSE,sha256=FhLv2iFNLLOs8rCjlC7lHr1-pZ4UvS7cETEr1hQ5q-0,1575
+bam_filter-1.2.1.dist-info/METADATA,sha256=G2DbHHLivlhODosVwd05xvl4cqWW1krN6Tr0VKbvREA,869
+bam_filter-1.2.1.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+bam_filter-1.2.1.dist-info/entry_points.txt,sha256=9aU_1CG5QQh3Xm82IKSFdniKToHbYTtchZtKfklctRY,56
+bam_filter-1.2.1.dist-info/top_level.txt,sha256=zsOBPiyzc9GmQfMXHAg_QNqJX-q97uwdae7tm2WDDFo,11
+bam_filter-1.2.1.dist-info/RECORD,,
