@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "gptwrite"
+version = "0.1.2"
+description = "CLI for Automated article writing"
+authors = ["otakumesi <bakednt@gmail.com>"]
+license = "MIT"
+homepage = "https://github.com/otakumesi/gpt-write"
+repository = "https://github.com/otakumesi/gpt-write"
+readme = "README.md"
+keywords = ["gpt", "openai", "cli", "article", "writing"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "*"
+openai = "*"
+python-i18n = {extras = ["yaml"], version = "*"}
+iso639-lang = "*"
+questionary = "^1.10.0"
+
+[tool.poetry.group.dev.dependencies]
+ipdb = "*"
+black = "*"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+gptwrite = "gptwrite.main:write"
