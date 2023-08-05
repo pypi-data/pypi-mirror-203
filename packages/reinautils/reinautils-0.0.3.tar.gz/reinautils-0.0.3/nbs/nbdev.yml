@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "reinautils"
+  site-url: "https://yuval6957.github.io/reinautils"
+  description: "General utilities"
+  repo-branch: main
+  repo-url: "https://github.com/yuval6957/reinautils"
