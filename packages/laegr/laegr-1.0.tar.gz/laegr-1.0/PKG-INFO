@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: laegr
+Version: 1.0
+Summary: Python package to extract graph structure of local atomic environment and build GNN to predict atomic properties (Potential Energy)
+Author: Yi Yao, Lin Li
+Author-email: yyao26@crimson.ua.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Local Atomic Enviroment Graph Representation (LAEGR).
+
+LAEGR is an open-source Python library for extracting graph structure representation of local atomic environment and building GNN model to predict local atomic environment.
+
+Example folder has the instructions about how to use the LAEGR.
+
+Author: Yi Yao (yyao26@crimson.ua.edu, yyao94@asu.edu), Lin Li.
+
+Relevant works:
