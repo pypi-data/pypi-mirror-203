@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/py_conventional_commits.egg-info/PKG-INFO
+src/py_conventional_commits.egg-info/SOURCES.txt
+src/py_conventional_commits.egg-info/dependency_links.txt
+src/py_conventional_commits.egg-info/top_level.txt
