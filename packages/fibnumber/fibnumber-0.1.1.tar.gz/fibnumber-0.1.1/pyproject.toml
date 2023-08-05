@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "fibnumber"
+version = "0.1.1"
+description = "Calculate fibonacci using a simple program"
+authors = ["XettriSomeman <bsomeman326@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.1.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+fib-number = "fibnumber.cmd.fib_numb:calculate_fib"
+
+[tool.poetry.extras]
+server=['fastapi']

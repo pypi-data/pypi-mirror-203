@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: fibnumber
+Version: 0.1.1
+Summary: Calculate fibonacci using a simple program
+Author: XettriSomeman
+Author-email: bsomeman326@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: server
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Description-Content-Type: text/markdown
+
+## Beginner Python Pip Package
+
+### To run type: fib-number --help
+
