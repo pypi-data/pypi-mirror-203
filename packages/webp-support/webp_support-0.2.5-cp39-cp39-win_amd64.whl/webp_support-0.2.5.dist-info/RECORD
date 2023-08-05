@@ -1,0 +1,12 @@
+webp_support/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webp_support/webp_support.c,sha256=Q1phBXapH2LHZ6G7ROzTpgXyFi6CXucXYjMbLeexAHU,113061
+webp_support/webp_support.cp39-win_amd64.pyd,sha256=gzAlm_ryhc5OoVt_zd_J-OWveYp11BVy7vC6a_g01EA,18944
+webp_support/webp_support.pyi,sha256=n3-qY0pRclipVf4LblE8JnfRoGsLhVzKaexzIrYN_f0,216
+webp_support/webp_support.pyx,sha256=g52FLWdeP0KRacYGE88qQjc3w9L3bLuBc_WdtrzO-bI,271
+webp_support/webp_support_c.c,sha256=eUtbKBKyw1DWHb3tZvXrbPgKfoJ1w_5UTEZdJnqgI1g,1360
+webp_support/webp_support_c.h,sha256=Fzo9WnyPKVBRRMiGo1Vx38rNTAvtQM-BzZie1Wp4cas,133
+webp_support-0.2.5.dist-info/LICENSE,sha256=iz6229BKk4x_vxd-LIEXB_DY7M7TbHHcxLJRSJNpkkM,1087
+webp_support-0.2.5.dist-info/METADATA,sha256=biZUpDuAzVEnILp19MxTR5vaYfysJNChwOmwN4r9DC8,1283
+webp_support-0.2.5.dist-info/WHEEL,sha256=eep6QWEFiQfg2wcclssb_WY-D33AnLYLnEKGA9Rn-VU,100
+webp_support-0.2.5.dist-info/top_level.txt,sha256=TzVoAQuYv7D1cICJvRj-uBV3-DD0XuZlNZqEpzKlZJs,13
+webp_support-0.2.5.dist-info/RECORD,,
