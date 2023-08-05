@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: matematikauzbek
+Version: 0.0.1
+Summary: Bu kutubxona matematik amal uchun ishlatiladi!
+Author: Islombek Hikmatullayev
+Author-email: gimlerpro8899@gmail.com
+Description-Content-Type: text/markdown
+
+```python
+a = 3
+b = 6
+print(a + b)
+print(a - b)
+print(b * a)
+print(b / a)
+```

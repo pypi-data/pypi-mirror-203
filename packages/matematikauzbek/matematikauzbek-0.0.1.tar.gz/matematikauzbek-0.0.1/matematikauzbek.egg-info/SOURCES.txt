@@ -1,0 +1,7 @@
+README.md
+setup.py
+matematikauzbek/__init__.py
+matematikauzbek.egg-info/PKG-INFO
+matematikauzbek.egg-info/SOURCES.txt
+matematikauzbek.egg-info/dependency_links.txt
+matematikauzbek.egg-info/top_level.txt
