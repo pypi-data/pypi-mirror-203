@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: search-algos
+Version: 0.0.1
+Summary: A collection of searching algorithms for lists and dictionaries
+Author: Arpan Adhikari
+Author-email: codewitharpan@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+## search-algos
+
+search-algos is a Python package that includes various searching algorithms for lists and python dictionaries. The package is designed to be easy to use and can be integrated into any Python project that requires optimized searching functionality.
+
+### Installation
+
+You can install SearchAlgos using pip:
+
+```
+pip install search-algos
+```
+
