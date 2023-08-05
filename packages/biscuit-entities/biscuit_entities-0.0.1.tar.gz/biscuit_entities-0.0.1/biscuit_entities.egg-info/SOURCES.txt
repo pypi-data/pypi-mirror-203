@@ -1,0 +1,9 @@
+setup.py
+biscuit_entities/__init__.py
+biscuit_entities/entity.py
+biscuit_entities/property.py
+biscuit_entities/singleton.py
+biscuit_entities.egg-info/PKG-INFO
+biscuit_entities.egg-info/SOURCES.txt
+biscuit_entities.egg-info/dependency_links.txt
+biscuit_entities.egg-info/top_level.txt
