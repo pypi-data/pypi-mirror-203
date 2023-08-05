@@ -1,0 +1,9 @@
+murdfpy/__init__.py,sha256=Cv7dkY6OS9BAkVrRWATFOsyyeQl2OBu8l703bTAn12U,919
+murdfpy/urdf.py,sha256=R35YnePxGgtbSx8UpRmLdUVt_tx9AeXLbubC9Iba_ig,127029
+murdfpy/utils.py,sha256=I6cMTcbJFe1tXKQAnrCVKgA1OdlL3sKMeK8M7vtXhEY,8010
+murdfpy/version.py,sha256=3LOMIFpU6nmRpZPqoAcWvDbsCkfB6CYJrh-8UnxWtWs,23
+murdfpy-0.0.23.dist-info/LICENSE,sha256=U6_PokTiaLBZpO40yd9YAqGRBZ77_eV3RDXOjgzbwMc,1069
+murdfpy-0.0.23.dist-info/METADATA,sha256=BAtziPrAfql5PREBQb9mlbMdT2R-dng6JNM7V61UFOw,1242
+murdfpy-0.0.23.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+murdfpy-0.0.23.dist-info/top_level.txt,sha256=0hDYnTx_VPMjAnAXXAxs_h0LYvY1BMAG97OWNbnbOxg,8
+murdfpy-0.0.23.dist-info/RECORD,,
