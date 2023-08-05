@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: SentenceMatcher
+Version: 0.0.2
+Summary: A simple yet useful module that allows you to match a sentence against a list of sentences and return the closest match
+Author: Mahdi Tajwar
+Keywords: sentencematcher,sentence,matcher,ai,chatbot,language
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
