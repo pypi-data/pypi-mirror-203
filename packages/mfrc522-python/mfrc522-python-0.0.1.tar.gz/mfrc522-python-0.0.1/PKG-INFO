@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mfrc522-python
+Version: 0.0.1
+Summary: The mfrc522 library is used to interact with RFID readers that use the MFRC522 chip
+Author: AnonymousXsn
+Project-URL: Homepage, https://github.com/AnonymousXsn/MFRC522-python3
+Project-URL: Bug Tracker, https://github.com/AnonymousXsn/MFRC522-python3/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# MFRC522-python3
+The mfrc522 library is used to interact with RFID readers that use the MFRC522 chip
