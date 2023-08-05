@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+subdomaindetectorlive.py
+subdomaindetectorstatus.egg-info/PKG-INFO
+subdomaindetectorstatus.egg-info/SOURCES.txt
+subdomaindetectorstatus.egg-info/dependency_links.txt
+subdomaindetectorstatus.egg-info/top_level.txt
