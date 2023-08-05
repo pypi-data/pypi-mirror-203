@@ -1,0 +1,3 @@
+[console_scripts]
+matchmaps = matchmaps._compute_realspace_diff:main
+matchmaps.ncs = matchmaps._compute_ncs_diff:main
