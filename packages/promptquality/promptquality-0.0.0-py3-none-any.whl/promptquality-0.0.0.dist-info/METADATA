@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: promptquality
+Version: 0.0.0
+Summary: PromptQuality
+Home-page: https://www.github.com/rungalileo/promptquality
+Author: Galileo Technologies, Inc
+Author-email: team@rungalileo.io
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: flake8 ; extra == "dev"
+Requires-Dist: black>=23.1.0 ; extra == "dev"
+Requires-Dist: isort>=5.11.5 ; extra == "dev"
+Requires-Dist: autoflake ; extra == "dev"
+Requires-Dist: jupyter==1.0.0 ; extra == "dev"
+Requires-Dist: furo ; extra == "doc"
+Requires-Dist: sphinx ; extra == "doc"
+Requires-Dist: sphinx-autodoc-typehints ; extra == "doc"
+Requires-Dist: myst-parser ; extra == "doc"
+Requires-Dist: sphinx-markdown-builder ; extra == "doc"
+Requires-Dist: sphinx-autobuild ; extra == "doc"
+Requires-Dist: sphinx-markdown-builder ; extra == "doc"
+Requires-Dist: pytest>=7.2.1 ; extra == "test"
+Requires-Dist: mypy>=1.0.0 ; extra == "test"
+Requires-Dist: coverage>=7.0.5 ; extra == "test"
+Requires-Dist: pytest-cov>=4.0.0 ; extra == "test"
+Requires-Dist: pytest-env>=0.8.1 ; extra == "test"
+Requires-Dist: types-setuptools>=67.3.0.1 ; extra == "test"
+Requires-Dist: types-cachetools>=4.2.4 ; extra == "test"
+Project-URL: Documentation, https://rungalileo.gitbook.io/galileo
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+
+# promptquality
+For the quality of the prompt
+
