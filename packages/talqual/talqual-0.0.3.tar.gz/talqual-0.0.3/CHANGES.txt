@@ -1,0 +1,26 @@
+CHANGES
+=======
+
+0.0.3 (2023-4-15)
+-----------------
+
+- Add data structure: template structure + data structure = output html
+- Add TAL templating i18n features
+- Add context variable `tal_repeat` when repeating commands
+- Add url: expression for TAL templates
+- Manage static Files with hard links.
+
+
+0.0.2 (2020-4-7)
+----------------
+
+- Add faceted select features
+- Add faceted+batch combination
+
+
+0.0.1 (2020-2-2)
+----------------
+
+- Initial release.
+
+- Template structure + yaml data file = output html structure
