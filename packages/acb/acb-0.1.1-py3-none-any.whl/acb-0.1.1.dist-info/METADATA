@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: acb
+Version: 0.1.1
+Summary: Asynchronus Code Base
+Author-Email: lesleslie <les@wedgwoodwebworks.com>
+License: BSD-3-Clause
+Project-URL: Homepage, https://github.com/lesleslie/acb
+Project-URL: Documentation, https://github.com/lesleslie/acb
+Project-URL: Repository, https://github.com/lesleslie/acb
+Requires-Python: >=3.11
+Requires-Dist: pydantic>=1.10.7
+Requires-Dist: itsdangerous>=2.1.2
+Requires-Dist: msgspec>=0.14.1
+Requires-Dist: addict>=2.4.0
+Requires-Dist: aiopath>=0.6.11
+Requires-Dist: arrow>=1.2.3
+Requires-Dist: google-crc32c>=1.5.0
+Description-Content-Type: text/markdown
+
+# Asynchronus Code Base
+
+## About
+
+Asynchronus Code Base (acb) is a collection of core actions and adapters useful for building out applications.
+
+## Installation
+
+```
+pdm add acb
+```
+
+## Usage
+
+### Encode
+
+```
+from acb.encode import load
+
+load.json(obj)
+```
+
+### Hash
+
+```
+from acb.hash import hash
+
+hash.blake2b(obj)
+```
+
+### Configure
+
+```
+from acb.configure import (
+    AppConfig,
+    AppSettings,
+)
+```
+
