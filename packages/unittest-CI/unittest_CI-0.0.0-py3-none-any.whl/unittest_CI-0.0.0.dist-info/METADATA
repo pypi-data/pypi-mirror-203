@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: unittest-CI
+Version: 0.0.0
+Home-page: https://github.com/COMP523TeamD/HeadCircumferenceTool
+Download-URL: https://github.com/COMP523TeamD/HeadCircumferenceTool/releases
+Author: Jesse Wei
+Author-email: jesse@cs.unc.edu
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: setuptools
+
