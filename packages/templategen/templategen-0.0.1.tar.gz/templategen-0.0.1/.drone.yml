@@ -1,0 +1,22 @@
+kind: pipeline
+type: docker
+name: Test
+
+platform:
+  os: linux
+  arch: arm64
+
+steps:
+- name: Test
+  image: python:3.6-alpine
+  commands:
+  - apk update && apk add git
+  - pip install --upgrade pip setuptools wheel
+  - pip install .
+- name: Publish PyPi
+  image: plugins/pypi
+  settings:
+    username:
+      from_secret: pypi_username
+    password:
+      from_secret: pypi_token
