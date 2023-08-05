@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: drs-compliance-test
+Version: 1.0.1
+Summary: A compliance utility reporting system for GA4GH DRS server implementations. Supports GA4GH DRS versions - 1.2.0
+Home-page: https://github.com/ga4gh/drs-compliance-suite
+Author: Yash Puligundla
+Author-email: yasasvini.puligundla@ga4gh.org
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+test
