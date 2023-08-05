@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/tata/__init__.py
+src/tata/tata.py
+src/tata.egg-info/PKG-INFO
+src/tata.egg-info/SOURCES.txt
+src/tata.egg-info/dependency_links.txt
+src/tata.egg-info/top_level.txt
