@@ -1,0 +1,10 @@
+e621_data/__init__.py,sha256=EuumqJGZ5sJz1oMvtMtwLkR4x4gTGgA3FhH0iOvRa9o,189
+e621_data/download.py,sha256=acnet3Ki_UyhcRpqS32atBglpNgJAdYDZY8_m3PQH7c,1032
+e621_data/posts.py,sha256=ZmAhI8ZTH-sEgfaftLLVf_rtKjf-U9R5chKDDjwsH6k,2716
+e621_data/tag_aliases.py,sha256=da885k9dHNNYsCoCjP50m7l79ihWcBsiT5Ny-uKVuvo,806
+e621_data/tag_implications.py,sha256=-Sa5rlbsRzQdXHRZf22plrVZVniLSnrvbcoWMgkoGRM,834
+e621_data/tags.py,sha256=AmVxLUky-PZNIBY_cvJLlhgMoFtHYULerRk_EjcjnjE,880
+e621_data-0.0.1.dist-info/LICENSE,sha256=bqTjETBMkLkITdA_tN_yuLqRDhHGEm93iNmx4-rXvCc,1066
+e621_data-0.0.1.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+e621_data-0.0.1.dist-info/METADATA,sha256=x2oObCIbvQYLBabtHg-8MswuWzXCoa6S1sP6gmwfHuE,729
+e621_data-0.0.1.dist-info/RECORD,,

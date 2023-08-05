@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: e621-data
+Version: 0.0.1
+Summary: Load the e621 exported data
+Author-email: Ben Brady <benbradybusiness@gmail.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Requires-Dist: requests
+Project-URL: Source, https://github.com/Ben-Brady/e621-data
+
+# E621-Data
+
+## Installation
+
+
+```
+```
+
