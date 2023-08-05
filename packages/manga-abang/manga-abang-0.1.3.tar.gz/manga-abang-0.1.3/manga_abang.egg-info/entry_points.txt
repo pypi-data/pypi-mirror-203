@@ -1,0 +1,2 @@
+[console_scripts]
+manga_abang = manga_abang.__main__:main
