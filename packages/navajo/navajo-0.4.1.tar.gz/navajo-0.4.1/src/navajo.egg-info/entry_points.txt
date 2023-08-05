@@ -1,0 +1,2 @@
+[console_scripts]
+navajo = navajo.main:main

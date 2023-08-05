@@ -1,0 +1,16 @@
+filetype
+gitpython
+prompt-toolkit
+pygments
+requests
+backoff
+cachetools
+flask
+numpy
+openai
+openai[datalib]
+parse
+pyjwt
+sseclient-py
+tiktoken
+tqdm

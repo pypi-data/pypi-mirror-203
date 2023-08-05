@@ -1,0 +1,2 @@
+Here's a code excerpt from the file {file_path}. Please say \"okay\" to register that you understand it:
+```{code}```
