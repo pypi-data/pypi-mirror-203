@@ -1,0 +1,15 @@
+sbom2doc/__init__.py,sha256=UXoScW29szuUhsP-AvPIJLEPeX_U31M1gxYUSooemy8,76
+sbom2doc/cli.py,sha256=DmYEtaBzQ5qvLQg7alD-tC13mqXJNJ7Pr-WN54ofoY0,2915
+sbom2doc/generator.py,sha256=iMIL9V14oTxJ62mXQ7JL7ymK9xhy1PSD5TBE-peHa2k,7083
+sbom2doc/version.py,sha256=Mustbl9r6LIU5iErNlnCJ7lyI7PZQHJcJDUDLTkW-p8,100
+sbom2doc/docbuilder/__init__.py,sha256=UXoScW29szuUhsP-AvPIJLEPeX_U31M1gxYUSooemy8,76
+sbom2doc/docbuilder/consolebuilder.py,sha256=QGFAcgk7q7eL2Y8141xPWFBUEwDiQ0XNwCRFbC7-BL8,1367
+sbom2doc/docbuilder/docbuilder.py,sha256=U8mvemVpbRg2a2NR0x-eaGAIpd6bY2bq_MZ3_IbcAi4,481
+sbom2doc/docbuilder/markdownbuilder.py,sha256=Io56grxZYX3yNnEBbFehty8zxq1V8XPEXANPPgtb8Ao,1107
+sbom2doc/docbuilder/pdfbuilder.py,sha256=I7sFtSW-Wrg3zDbPU1NKEGhARAZQr-zShe-yVbG_UCA,5818
+sbom2doc-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sbom2doc-0.2.0.dist-info/METADATA,sha256=w5J7LYt8j_WRsglmISk5i7-a2wrdeEY3cib-e-GXMTU,14054
+sbom2doc-0.2.0.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+sbom2doc-0.2.0.dist-info/entry_points.txt,sha256=-bmvwIx9D5RZ0FGkoBtdSqwTXAE5wSiDHhY4jCsdCOk,47
+sbom2doc-0.2.0.dist-info/top_level.txt,sha256=SgNoJfZaHup5cF818Xlucq4NcZ-Ukxtm0E99YmxDc3c,9
+sbom2doc-0.2.0.dist-info/RECORD,,
