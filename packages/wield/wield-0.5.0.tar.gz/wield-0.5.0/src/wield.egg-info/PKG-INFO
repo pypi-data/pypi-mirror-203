@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: wield
+Version: 0.5.0
+Summary: Toolkit for modeling interferometers, circuits, signals, and control systems
+Home-page: https://github.com/wieldphysics/wield-collection
+Author: Lee McCuller
+Author-email: mcculler@caltech.edu
+License: Apache-2.0
+Project-URL: Bug Tracker, https://github.com/wieldphysics/wield-namespace/issues
+Project-URL: Source Code, https://github.com/wieldphysics/wield-namespace
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/markdown
+License-File: LICENSES/Apache-2.0.txt
+License-File: LICENSES/CC0-1.0.txt
+License-File: NOTICE
+
+Python Wield
+--------------
+
+This is a collection of projects under the python wield package namespace for
+modeling interferometers, circuits, quantum states, and control systems. This is
+the base package to install the namespace and some of the key packages.
+
+It's version will be updated as subpackages are migrated into the namespace.
+
