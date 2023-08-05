@@ -1,0 +1,6 @@
+smart_open
+boto3
+pandas
+zstandard
+requests
+pydantic
