@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "eurogastp"
+version = "0.1.2"
+authors = [
+  { name="Daniel Jung", email="daniel.jung@dlr.de" },
+]
+maintainers = [
+  { name="Daniel Jung", email="daniel.jung@dlr.de" },
+  { name="Jean-Francois Vuillaume", email="Jean-Francois.VUILLAUME@ec.europa.eu" },
+  { name="Ricardo Fernandez-Blanco Carramolino", email="Ricardo.CARRAMOLINO@ec.europa.eu" }
+]
+description = "Python tools for analyzing the European gas system"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Source 1" = "https://github.com/ec-jrc/eurogastp"
+"Source 2" = "https://code.europa.eu/jrc-energy-security/eurogastp"
+"Homepage" = "https://github.com/ec-jrc/eurogastp"
+"Bug Tracker" = "https://github.com/ec-jrc/eurogastp/issues"
