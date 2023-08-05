@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: navajo
+Version: 0.4.1
+Summary: Talk to your code!
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: filetype
+Requires-Dist: gitpython
+Requires-Dist: prompt-toolkit
+Requires-Dist: pygments
+Requires-Dist: requests
+Requires-Dist: backoff
+Requires-Dist: cachetools
+Requires-Dist: flask
+Requires-Dist: numpy
+Requires-Dist: openai
+Requires-Dist: openai[datalib]
+Requires-Dist: parse
+Requires-Dist: pyjwt
+Requires-Dist: sseclient-py
+Requires-Dist: tiktoken
+Requires-Dist: tqdm
+
+# navajo
+
+Talk to your code!
+
+## Setup
+
+1. Make sure you have the latest version: `pip install --upgrade navajo`
+
+1. Run the `navajo` command.
+
+1. You will then be asked which directory to index. This needs to be an absolute path to the root of your codebase. Please note that indexing can take a long time if your project is large (expect about three minutes per 100k LoC).
+
+1. Once indexing is complete you will be ready to chat! There are a few built-in commands, which you can list with `help`.
