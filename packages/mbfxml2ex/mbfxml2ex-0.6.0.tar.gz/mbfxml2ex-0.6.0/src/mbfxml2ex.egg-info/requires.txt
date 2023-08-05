@@ -1,0 +1,7 @@
+cmlibs.zinc>=4.0.0
+cmlibs.utils>=0.4.0
+
+[test]
+coverage
+nose
+packaging
