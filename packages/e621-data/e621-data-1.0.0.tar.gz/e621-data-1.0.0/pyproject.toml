@@ -1,0 +1,31 @@
+[build-system]
+build-backend = "flit_core.buildapi"
+requires = ["flit_core >=3.8.0,<4"]
+
+[project]
+name = "e621-data"
+version = "1.0.0"
+description = "Load the e621 exported data"
+license = {file = "LICENSE"}
+readme = "README.md"
+authors = [
+    {name = "Ben Brady", email = "benbradybusiness@gmail.com"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Typing :: Typed",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "requests",
+]
+
+[project.urls]
+Source = "https://github.com/Ben-Brady/e621-data"
