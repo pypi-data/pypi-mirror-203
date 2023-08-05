@@ -1,0 +1,14 @@
+README.md
+setup.py
+pypi_class/__init__.py
+pypi_class/module1.py
+pypi_class/module2.py
+pypi_class.egg-info/PKG-INFO
+pypi_class.egg-info/SOURCES.txt
+pypi_class.egg-info/dependency_links.txt
+pypi_class.egg-info/top_level.txt
+pypi_class/subpackage1/__init__.py
+pypi_class/subpackage1/module3.py
+pypi_class/subpackage1/module4.py
+pypi_class/subpackage2/__init__.py
+pypi_class/subpackage2/module5.py
