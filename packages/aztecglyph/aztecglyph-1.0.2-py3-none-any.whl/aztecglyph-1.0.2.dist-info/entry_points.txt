@@ -1,0 +1,2 @@
+[console_scripts]
+aztecglyph = aztecglyph.__main__:main
