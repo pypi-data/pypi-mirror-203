@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: UlldConfig
+Version: 0.1.1
+Summary: ULLD Config Classes
+Author: Andrew Mueller
+Author-email: uhlittlelessdumb@gmail.com
+Keywords: ULLD,config,Uh Little Less Dumb,markdown,note
+Description-Content-Type: text/markdown
+
+Config classes and parsing for the Uh Little Less Dumb note taking framework.
