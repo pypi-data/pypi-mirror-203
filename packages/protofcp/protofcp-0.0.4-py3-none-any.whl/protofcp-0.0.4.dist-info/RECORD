@@ -1,0 +1,10 @@
+protofcp/FCPSocket.py,sha256=spaTrNP0aKISyyYOR2jxdf_jyla6mz88NLLqcni-TjI,1290
+protofcp/__init__.py,sha256=5qEQK8hjJiZ0fRr0ODYCNmazjXVlxoR1loBxCdIuqeY,243
+protofcp/assemblr.py,sha256=5ewi4RGPtDdd9XKyXKwUhDZV-cmgI-yq3OFi7vrEnSY,499
+protofcp/consts.py,sha256=4_Ht7EQCfS-o058xmCX83eq6yWwBk6jKLfvmxaQ_CZQ,444
+protofcp/disassemblr.py,sha256=qQcFKeHTpmN8YNNqIuTtNdx43TS8CK6NveDhB0dpXMM,826
+protofcp-0.0.4.dist-info/LICENSE,sha256=QEtee2nuWGr6nq1zL5AsAXWdRS9xc1dNIhBfBB6vZTE,11542
+protofcp-0.0.4.dist-info/METADATA,sha256=9QgBHjyzb4SyuL-TpMPCL0lbGs20HM00AiJLxMg8NBc,1693
+protofcp-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+protofcp-0.0.4.dist-info/top_level.txt,sha256=9CAcoydlcLdCD82_TfRnB2iLDEDy1dfdbQ_cChB61yU,9
+protofcp-0.0.4.dist-info/RECORD,,
