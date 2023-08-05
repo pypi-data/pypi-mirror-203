@@ -1,0 +1,12 @@
+arcipelago/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcipelago/db.py,sha256=2F-lCD2IB7BNxAcCs04gAsYOALitlKD-BjNfCz1OFFY,3537
+arcipelago/edit_conv.py,sha256=APAkjux_dui4llN-XbjAtpkHgcGV1IUQjR6B6oyWPLU,4795
+arcipelago/event.py,sha256=1ufWH2lOEgU_2axZ3MgW7WyzUeFXd1QUhAOOb10x7yI,12340
+arcipelago/event_conv.py,sha256=0sV3Xco5TEjSt4Z1aWArCVyT3KHXnWq30-JVH6HHOME,14023
+arcipelago/extra/gcalendar.py,sha256=A7TTWraPThaF6yyib2A1f1ShwimXZ1XHCXWMVIRUmA4,1676
+arcipelago/init_db.py,sha256=mlE4-1_oJSGN2xrAA7DMzjFDg7Ky4wG4DpQkKf502Og,117
+arcipelago/main.py,sha256=V2XketTP75uwDvFFsBxwnHA_iWn2LOanu6UabOkB4u8,3976
+arcipelago/notification.py,sha256=HJO0Y1-fjF6X_xN3LTuEw8BZ-GZ0vEeozPU6jxc3ASk,2042
+arcipelago-0.1.0.dist-info/METADATA,sha256=6DR_rZWMImGUfW_Mp2lu3jI9-4UvF6X2l_WxURvnb88,635
+arcipelago-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+arcipelago-0.1.0.dist-info/RECORD,,
