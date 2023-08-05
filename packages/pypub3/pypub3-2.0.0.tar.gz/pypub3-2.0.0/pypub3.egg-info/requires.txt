@@ -1,0 +1,4 @@
+jinja2
+pyxml3
+pillow
+dataclasses
