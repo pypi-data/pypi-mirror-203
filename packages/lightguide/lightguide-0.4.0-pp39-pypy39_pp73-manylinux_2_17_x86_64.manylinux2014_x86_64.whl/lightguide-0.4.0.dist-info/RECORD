@@ -1,0 +1,15 @@
+lightguide-0.4.0.dist-info/METADATA,sha256=rR5M9PZnt_awMxBbuCWVvHPvv1R6VQdfWvDPDN1awBs,5949
+lightguide-0.4.0.dist-info/WHEEL,sha256=u-nAWigzPBpUyoJXR1rZYEpET3XYLCiuQonKjs2WMxQ,136
+lightguide-0.4.0.dist-info/license_files/LICENSE,sha256=tqi_Y64slbCqJW7ndGgNe9GPIfRX2nVGb3YQs7FqzE4,34670
+lightguide/afk_filter_python.py,sha256=sjRZMUoVXkE73tQn8hXahx6sFvViZT4QDDHSMzgVHnc,2522
+lightguide/io/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lightguide/blast.py,sha256=TE73cYkwk4Ji-Up_xGyiWok0p24clhzswJ-p8y7v4f0,26334
+lightguide/gf.py,sha256=mie0RXbtr-i0LBiQ0CU2daR6iAhudGj-XB3-E4znZDA,9308
+lightguide/utils.py,sha256=tpdopAqlE2ENqxJ17HLBKWJTCTzvXVR5VFVRDUhkCb0,2289
+lightguide/__init__.py,sha256=4HNQtte9dSoXzaCREiIJ2DlbwB_RHErd_Xd-g1dZ6YY,89
+lightguide/filters.py,sha256=vf-E-_9DJaX5fPvOZftOGvrkMA-AB9L04KBtoKC8Xpw,75
+lightguide/signal.py,sha256=C2PuZ9MwCI3PGydPYay7fGbjbNJqZgF15noa_g4zNfw,1632
+lightguide/client.py,sha256=AVoW0ZqKBkCwHWLTneLW1JQr3md2lHfeTwjahxYCMX0,1039
+lightguide/lightguide.pyi,sha256=rExqRMHHzD38ky9NtmcpmxN_9DXecJm0abJH7ocFTS8,1736
+lightguide/lightguide.pypy39-pp73-x86_64-linux-gnu.so,sha256=iWBa70ABiFxa6KUpKWKe70LcemK15WDKqDiALIB9jqI,7196368
+lightguide-0.4.0.dist-info/RECORD,,
