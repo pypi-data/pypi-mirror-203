@@ -1,0 +1,15 @@
+newa_downloader/__init__.py,sha256=0WBaTNSvZ9ugy3T7UuJIIRHwe5Qzo34R3W79GjjuF0Y,298
+newa_downloader/coordinates.py,sha256=5ZgJpFgJ5kfbD-zZpGtndNtq6jrRCh2l0B8BK_lNjcY,2853
+newa_downloader/core.py,sha256=vMgJkH_NcwIKdEWiAaMH8IRpHMbZLvPXsdoJXZL8Wzo,2210
+newa_downloader/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+newa_downloader/time_span.py,sha256=eY_F65cij9KBPElzR0aU27HifSvV1OdzP0-aA83zCZE,1484
+newa_downloader/mesoscale/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+newa_downloader/mesoscale/climate.py,sha256=t5fKEm8cd5FWsGy7LlW8JpHWyd17LELNTm4ZARcOOno,1804
+newa_downloader/mesoscale/timeseries.py,sha256=8-SZukZlJ0eQRVJ8HMF_kgfzW0ud3FexzRsHbRsrm5U,1809
+newa_downloader/microscale/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+newa_downloader/microscale/climate.py,sha256=eySsSyJPjsxuavYC_mBVqGV1nKc90gcApnAV-mf-g9Y,1165
+newa_downloader-0.0.1.dist-info/LICENSE,sha256=RVeJu4D2sEt2YBdtsL-aXrNnVEPl1wx90-EA6fCUS9k,1070
+newa_downloader-0.0.1.dist-info/METADATA,sha256=sypbjX9rLCJJWn5IVpqb8OSal0HOWEuR3uFM6QKGals,1185
+newa_downloader-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+newa_downloader-0.0.1.dist-info/top_level.txt,sha256=6Gl2itqoDC3a8f8TpkCkDH4md02cbH5vme2q782uGSk,16
+newa_downloader-0.0.1.dist-info/RECORD,,
