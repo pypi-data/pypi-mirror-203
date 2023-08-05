@@ -1,0 +1,9 @@
+setup.py
+AI_Summarizer.egg-info/PKG-INFO
+AI_Summarizer.egg-info/SOURCES.txt
+AI_Summarizer.egg-info/dependency_links.txt
+AI_Summarizer.egg-info/requires.txt
+AI_Summarizer.egg-info/top_level.txt
+ai_summarizer/__init__.py
+ai_summarizer/init.py
+ai_summarizer/main.py
