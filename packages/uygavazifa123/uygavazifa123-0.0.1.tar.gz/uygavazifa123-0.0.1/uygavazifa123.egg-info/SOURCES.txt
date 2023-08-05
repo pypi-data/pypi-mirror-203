@@ -1,0 +1,7 @@
+setup.py
+uygavazifa123/__init__.py
+uygavazifa123/main.py
+uygavazifa123.egg-info/PKG-INFO
+uygavazifa123.egg-info/SOURCES.txt
+uygavazifa123.egg-info/dependency_links.txt
+uygavazifa123.egg-info/top_level.txt
