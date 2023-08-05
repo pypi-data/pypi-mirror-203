@@ -1,0 +1,90 @@
+[project]
+name = "nonebot-plugin-akinator"
+version = "0.1.0"
+description = "Template plugin project"
+authors = [
+    { name = "student_2333", email = "lgc2333@126.com" },
+]
+dependencies = [
+    "nonebot2>=2.0.0-rc.1",
+    "nonebot-adapter-onebot>=2.2.0",
+    "pydantic>=1.10.4",
+    "aiohttp>=3.8.4",
+    "aiodns>=3.0.0",
+    "cchardet>=2.1.7",
+    "pil-utils>=0.1.6",
+]
+requires-python = ">=3.8,<4.0"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://github.com/lgc2333/nonebot-plugin-akinator"
+
+[project.optional-dependencies]
+dev = [
+    "pip>=23.0.1",
+    "setuptools>=67.6.1",
+    "black>=23.3.0",
+    "ruff>=0.0.260",
+    "isort>=5.12.0",
+    "nb-cli>=1.0.5",
+]
+
+[tool.pdm.build]
+includes = []
+
+[tool.nonebot]
+adapters = [
+    { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },
+]
+plugins = [
+    "nonebot_plugin_akinator",
+]
+plugin_dirs = []
+
+[tool.ruff]
+ignore = [
+    "E501",
+    "E722",
+    "B008",
+    "TRY002",
+    "TRY003",
+    "RUF001",
+    "RUF002",
+    "RUF003",
+    "RUF100",
+]
+select = [
+    "F",
+    "E",
+    "I",
+    "N",
+    "B",
+    "A",
+    "COM",
+    "C4",
+    "DTZ",
+    "ISC",
+    "PIE",
+    "PYI",
+    "Q",
+    "RSE",
+    "RET",
+    "SLF",
+    "SIM",
+    "TID",
+    "ARG",
+    "PTH",
+    "PGH",
+    "TRY",
+    "RUF",
+]
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
