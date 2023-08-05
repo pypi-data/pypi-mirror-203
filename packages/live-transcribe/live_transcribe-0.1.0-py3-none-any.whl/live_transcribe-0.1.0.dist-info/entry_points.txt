@@ -1,0 +1,3 @@
+[console_scripts]
+live-transcribe=live_transcribe:__main__
+
