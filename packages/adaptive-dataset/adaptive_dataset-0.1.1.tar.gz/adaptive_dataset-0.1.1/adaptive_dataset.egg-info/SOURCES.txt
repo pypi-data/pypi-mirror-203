@@ -1,0 +1,8 @@
+README.md
+setup.py
+adaptive_dataset/__init__.py
+adaptive_dataset.egg-info/PKG-INFO
+adaptive_dataset.egg-info/SOURCES.txt
+adaptive_dataset.egg-info/dependency_links.txt
+adaptive_dataset.egg-info/requires.txt
+adaptive_dataset.egg-info/top_level.txt

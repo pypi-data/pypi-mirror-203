@@ -1,0 +1,4 @@
+pandas
+opencv-python==4.6.0.66
+deeplake[enterprise]
+albumentations
