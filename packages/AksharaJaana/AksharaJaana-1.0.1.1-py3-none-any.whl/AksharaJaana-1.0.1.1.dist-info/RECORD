@@ -1,0 +1,10 @@
+AksharaJaana/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+AksharaJaana/main.py,sha256=2mtF3SSkvNu8OKCjWXpZ-X4jVyeMSMFCi47uU-mwxiI,2024
+AksharaJaana/utils.py,sha256=yDrCiMHP467nEQwqBcocbobFHj30YU2XK5pqPRz9R1Y,10026
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_main.py,sha256=sA6I_ctlhZVAXndvwGg_WuSSdE-Jn5xf7ViqneBkU5w,506
+tests/test_utils.py,sha256=xlQkjYIeRfNTNYez-1rs2J5QUrjZdwgjpionZEfdwRE,5003
+AksharaJaana-1.0.1.1.dist-info/METADATA,sha256=JsIEqwO5VdPj5tlyF4ke9OfaIJhQhTJEvlkZF6Kfp7s,4637
+AksharaJaana-1.0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+AksharaJaana-1.0.1.1.dist-info/top_level.txt,sha256=OawhWz0XmiYQfO_6SCxazh9FZ4KZ2Nm1RFv_icHzle8,19
+AksharaJaana-1.0.1.1.dist-info/RECORD,,
