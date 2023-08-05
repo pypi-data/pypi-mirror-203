@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: python-library-30140721
+Version: 1.5.0
+Summary: python library which includes linear, nodes, and trees
+Author: naina-gupta
+Author-email: nainag077@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+UNKNOWN
+
