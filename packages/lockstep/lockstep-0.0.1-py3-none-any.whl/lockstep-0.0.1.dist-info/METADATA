@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lockstep
+Version: 0.0.1
+Summary: 
+Author: Mac Prible
+Author-email: prible@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+
+# Introduction
+
+Synchronize video files using audio for use with 3d motion tracking and other post-processing pipelines.
