@@ -1,0 +1,11 @@
+src/__init__.py,sha256=nZ8syR0SThxKmV0Mmd-mf9p_qYtrmrlywY5sNt0959I,14
+src/config.py,sha256=WkyrEPnFG989Pq6KD7XjgLvvx7npj_wf0CmDcplpZIo,651
+src/init.py,sha256=Mnb7X9MMPhzP-r6ZWvDamzUPTbh2OXvHkvgti6DOAA4,497
+src/install.py,sha256=FDdA3QY6bSUPvmuCgjAse1t2oqocvosTmGJN4yr9VzI,1884
+src/kicad_project_tables.py,sha256=5i4_JkSeleED-xQiQdrSfoWeHjMfyFL040eN6LT6ACI,950
+src/registry.py,sha256=u6aIk5KWPWSD4pfkDnouNV_nAHxmnIMoafk7ZdtQuOY,694
+kicad_package_manager-0.0.1.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+kicad_package_manager-0.0.1.dist-info/METADATA,sha256=xC63a_DNN2lNa1wRPle8GQsEO2yBKIsjTW-V1Ztp0Ts,2500
+kicad_package_manager-0.0.1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+kicad_package_manager-0.0.1.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+kicad_package_manager-0.0.1.dist-info/RECORD,,
