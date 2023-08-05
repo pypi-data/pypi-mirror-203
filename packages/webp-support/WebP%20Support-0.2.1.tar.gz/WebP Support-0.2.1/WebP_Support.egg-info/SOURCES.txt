@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+webp_support.c
+webp_support.pyi
+webp_support.pyx
+webp_support_c.c
+webp_support_c.h
+WebP_Support.egg-info/PKG-INFO
+WebP_Support.egg-info/SOURCES.txt
+WebP_Support.egg-info/dependency_links.txt
+WebP_Support.egg-info/top_level.txt
