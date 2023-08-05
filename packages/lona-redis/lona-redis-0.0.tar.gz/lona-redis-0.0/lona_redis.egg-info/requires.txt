@@ -1,0 +1,10 @@
+lona
+
+[packaging]
+build
+twine
+
+[testing]
+tox
+coverage==7.1.0
+pytest==7.2.1
