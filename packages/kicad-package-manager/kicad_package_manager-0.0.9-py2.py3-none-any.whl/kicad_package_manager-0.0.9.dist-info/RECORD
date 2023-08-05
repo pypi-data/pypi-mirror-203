@@ -1,0 +1,15 @@
+kicad_package_manager/__init__.py,sha256=nZ8syR0SThxKmV0Mmd-mf9p_qYtrmrlywY5sNt0959I,14
+kicad_package_manager/config.py,sha256=fy_iQu0G9Yt5lDiutUW91zRV98w3qm6E4JJoBlWiXlk,614
+kicad_package_manager/init.py,sha256=242sMU00LSXH7H7avbVWaqDkVTdzn0s1teFBWeJmYUE,479
+kicad_package_manager/install.py,sha256=g3vwr5ba7uvI2Jxab8bFTMXh_YsKBWogPlmudK7gSIw,1815
+kicad_package_manager/kicad_project_tables.py,sha256=cNqqYN44ukdijAAw_-qzR1hlKfDcb2eQK1YYnEwIzWw,1026
+kicad_package_manager/kpm.py,sha256=BPGpjarHdrPFepMRPENZrUlxSrZvqCfZ1erZmR_x_pY,842
+kicad_package_manager/listt.py,sha256=1Tom0ft6i4jzi4aBs2VQNG4Nl32pqzLQacS3IVHIvc8,358
+kicad_package_manager/registry.py,sha256=p4EzmqqoKnA8sa8bajqiHE5i7sC4c2X23UCpCDgY27k,777
+kicad_package_manager/search.py,sha256=X4Lbn-gYqv87tC4riEQhcWV2xoXnuuMzKXlpuXGbpJ0,437
+kicad_package_manager-0.0.9.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+kicad_package_manager-0.0.9.dist-info/METADATA,sha256=KQPIrXgmRvwJpMXEMQro5xjG3pIOq-raA5nuvDWt3hc,2668
+kicad_package_manager-0.0.9.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+kicad_package_manager-0.0.9.dist-info/entry_points.txt,sha256=pvD7f_20d6f6mwvITaPPPflJXY1lsLw6TDEDA7lk4IY,56
+kicad_package_manager-0.0.9.dist-info/top_level.txt,sha256=foyPUZCEH2RVRsHNjiPX1WJnS67Fnz-gb8gOmyZWbHc,22
+kicad_package_manager-0.0.9.dist-info/RECORD,,
