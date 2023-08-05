@@ -1,0 +1,16 @@
+altparse/__init__.py,sha256=sSGLh2PDe0OpFTNVA5ejP9KDRHGHIDP7CeqnsonEZL8,155
+altparse/core.py,sha256=TqkQCje3lgAmiNiahNM6GpK37GliULJ11mx3CHkYNUs,13592
+altparse/errors.py,sha256=pjFBSeowFV91SV4ghlqtGuDwOAO78Gaz6bcGBjnCYK8,615
+altparse/helpers.py,sha256=h6_mtdL9jX0UgQGLQvwWOSIQDzG5cZQuoEjV2v8P9ro,3101
+altparse/model.py,sha256=8CB1jcNDpJEedb7v-evlpdvVFj33l4D63Q1Iw6Y0Ss8,27352
+altparse/parsers.py,sha256=st6hTxupHgyyCfYdik0Y2-NcOnXS4J6MQs9JnJk93LU,14163
+altparse/ipautil/__init__.py,sha256=nfb60E-EeAqqI6vAaSLGHDhX7xz40O2aVP7OWRxOF0c,156
+altparse/ipautil/core.py,sha256=-MU2IvRKTYT__qjjkLYVcZEKm4pLVlHv0zQ_0IcJrR8,3493
+altparse/ipautil/errors.py,sha256=0L0fMHYq-GAsabnfZ7XsoGMgJZ7s8Oo0zdpSXUWMDjw,603
+altparse/ipautil/helpers.py,sha256=KS0__cxHr9esca44TGTKBFBYRFvJeTHsPr_rU8tI0Pk,4857
+altparse/ipautil/model.py,sha256=B-UFGkPBmEgziVFfBQBdY3nyFIawehB-Ms1dvMqeJiE,4150
+altparse-0.2.0.dist-info/LICENSE.txt,sha256=6xYr_mSt8rl3a61zWx9d6Ks1bYHzXp4Hu4A1SRn1RWI,1086
+altparse-0.2.0.dist-info/METADATA,sha256=ZxB-nScwDyBNB0U4cYZFhpxahj-9CPKZ2ODikouXlaU,2537
+altparse-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+altparse-0.2.0.dist-info/top_level.txt,sha256=NaWLTFDioHeqIN1UNoTmzUemX7piRH4ko0mMwVVG-mQ,9
+altparse-0.2.0.dist-info/RECORD,,
