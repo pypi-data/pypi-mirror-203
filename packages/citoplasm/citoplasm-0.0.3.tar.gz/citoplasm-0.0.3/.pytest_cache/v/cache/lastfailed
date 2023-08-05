@@ -1,0 +1,7 @@
+{
+  "test/test_verify.py::test_verify_hard_false": true,
+  "test/test_chain.py::test_chain": true,
+  "test/test_chain.py::test_chain_multistep": true,
+  "tests/test_chain.py::test_chain": true,
+  "tests/test_chain.py::test_chain_multistep": true
+}
