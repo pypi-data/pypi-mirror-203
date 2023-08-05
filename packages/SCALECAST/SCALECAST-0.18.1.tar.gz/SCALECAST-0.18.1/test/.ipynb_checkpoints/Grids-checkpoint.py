@@ -1,0 +1,16 @@
+arima = {}
+catboost = {}
+elasticnet = {}
+gbt = {}
+hwes = {}
+knn = {}
+lightgbm = {}
+mlp = {}
+mlr = {'normalizer':['minmax','scale']}
+prophet = {}
+rf = {}
+silverkite = {}
+svr={}
+theta = {}
+vecm = {}
+xgboost = {}
