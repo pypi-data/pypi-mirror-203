@@ -1,0 +1,10 @@
+scipy
+numpy
+networkx
+seaborn
+scikit-learn
+prettytable
+yfinance
+tqdm
+tensorflow>=2.4.0
+tensorflow-probability>=0.12.0
