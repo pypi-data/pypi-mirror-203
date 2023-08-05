@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+py_github_gui_rackodo.egg-info/PKG-INFO
+py_github_gui_rackodo.egg-info/SOURCES.txt
+py_github_gui_rackodo.egg-info/dependency_links.txt
+py_github_gui_rackodo.egg-info/requires.txt
+py_github_gui_rackodo.egg-info/top_level.txt
+src/__init__.py
+src/__main__.py
+src/placeholder.png
