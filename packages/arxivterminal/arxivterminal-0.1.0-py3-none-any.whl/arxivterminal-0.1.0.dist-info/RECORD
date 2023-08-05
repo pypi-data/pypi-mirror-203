@@ -1,0 +1,11 @@
+arxivterminal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arxivterminal/cli.py,sha256=ezWHh6eXt8Zpwkjt7tQd2HhB4DAyBH_jst_mGOPzs6c,2929
+arxivterminal/db.py,sha256=uMZQSmyGu2hN4eqp6Z8uNICFlxLySHmcCPIWKR6L77Q,8910
+arxivterminal/fetch.py,sha256=xgcSly8VtfGdZ3FBwc1Wp9OsVaqDrsMgFPwu2kKezVE,2171
+arxivterminal/models.py,sha256=ovKL8AwqlLFqIHhN7cP-_gIWqZrDZOViBNAGGA9ITrY,322
+arxivterminal/output.py,sha256=3QCILeR9kJNGIFCgxNpe3gTivK5ZIeLdLGd9ETeiws4,2564
+arxivterminal-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+arxivterminal-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+arxivterminal-0.1.0.dist-info/entry_points.txt,sha256=4-z88IivQK0U93CARXwzSznVLTJGxm7f_cY9hS8tpY0,47
+arxivterminal-0.1.0.dist-info/METADATA,sha256=7t9k7MQrbvz4Q0x_fA11xJrbI90hwWTxQLbA7rJtbxI,2538
+arxivterminal-0.1.0.dist-info/RECORD,,
