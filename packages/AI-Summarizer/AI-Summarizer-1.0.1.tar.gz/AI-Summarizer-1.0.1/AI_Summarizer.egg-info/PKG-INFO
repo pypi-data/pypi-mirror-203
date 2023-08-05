@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: AI-Summarizer
+Version: 1.0.1
+Summary: AI Summarizer is a Python package that uses OpenAI's GPT-3.5 to summarize any given text.
+Home-page: https://github.com/pietrosperoni/ai-summarizer
+Author: Pietro Speroni di Fenizio
+Author-email: aisummarizer@piespe.net
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
