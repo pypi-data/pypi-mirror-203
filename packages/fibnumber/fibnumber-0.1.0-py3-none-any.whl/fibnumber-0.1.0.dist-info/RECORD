@@ -1,0 +1,10 @@
+fibnumber/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fibnumber/cmd/fib_numb.py,sha256=42nVJQfdgvBccERZ1HPrRLPY56nx1yso0vbskIy5fuc,308
+fibnumber/fib_calcs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fibnumber/fib_calcs/fib_number.py,sha256=wcprQZSntYD1gHW1YojROhHph95V7ha33cbVwKllC70,302
+fibnumber/fib_calcs/fib_numbers.py,sha256=lQI9qdziYaHi60dE6AOOElhPGSDC5Q10mYMAPLWGKIc,200
+fibnumber-0.1.0.dist-info/LICENSE,sha256=cLDGRjmmwAoEVcf85w6Ynzp30kKNonhuDNRDG3qR1XM,1063
+fibnumber-0.1.0.dist-info/METADATA,sha256=Eq09sPIrVx-LTrlLTnR4nCNSQPLuIBIFht-Wa6dSCrs,588
+fibnumber-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+fibnumber-0.1.0.dist-info/entry_points.txt,sha256=qgacesAHmHT6D1cNqbl1IN3JVXbNUj_ZJWdw7VTv5iY,67
+fibnumber-0.1.0.dist-info/RECORD,,
