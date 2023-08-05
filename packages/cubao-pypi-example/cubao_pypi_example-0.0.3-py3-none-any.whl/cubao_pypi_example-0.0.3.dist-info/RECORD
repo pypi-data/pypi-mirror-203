@@ -1,0 +1,9 @@
+cubao_pypi_example/__init__.py,sha256=eJUhUcyOxh8swfmDZgrUugpBVnbIWSkbZxcmwT5GmDw,111
+cubao_pypi_example/__main__.py,sha256=1AC9a8G_qiFMo_vcd4fdAtBiFGXuoOA6SUy78nskdGE,561
+cubao_pypi_example/package_data.dat,sha256=WqA_lsd1NleRZvuhR5KWJsw6l5YOmUBXqdgCcac20Q8,10
+cubao_pypi_example/simple.py,sha256=jQxgMu2wujV5-EV7SIHDYnIfEhmJAzxyn2XKqYliCB0,43
+cubao_pypi_example-0.0.3.dist-info/LICENSE.txt,sha256=ceC9ZJOV9H6CtQDcYmHOS46NA3dHJ_WD4J9blH513pc,1081
+cubao_pypi_example-0.0.3.dist-info/METADATA,sha256=oiNd0kkP4zD1e6d5HyJQFvFTZ5ZMa4hnffjQLMg3lls,4386
+cubao_pypi_example-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cubao_pypi_example-0.0.3.dist-info/top_level.txt,sha256=67m6KsrLe4BOOybr860O9pYaW4G9kzcSBjqdPp941VQ,19
+cubao_pypi_example-0.0.3.dist-info/RECORD,,
