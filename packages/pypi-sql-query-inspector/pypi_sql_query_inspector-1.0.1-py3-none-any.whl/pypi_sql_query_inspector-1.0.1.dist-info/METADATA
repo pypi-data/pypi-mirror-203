@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pypi-sql-query-inspector
+Version: 1.0.1
+Summary: A django middleware package to print out connection queries in terminal when DEBUGing
+Author: peacefulseeker
+Project-URL: Homepage, https://pypi.org/project/pypi-sql-query-inspector/
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pygments (<=2.14.0)
+Requires-Dist: sqlparse (>=0.4.3)
+
+### SQL Inspector package
+A simple example of django middleware package
+
+### Usage
+Append middleware to `MIDDLEWARES` list:
+```
+MIDDLEWARE = [
+    ...
+    'pypi_sql_query_inspector.middleware.new_middleware',
+]
+```
