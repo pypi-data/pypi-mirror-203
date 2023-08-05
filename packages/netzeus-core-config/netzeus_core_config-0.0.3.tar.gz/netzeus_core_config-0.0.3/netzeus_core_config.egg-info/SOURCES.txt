@@ -1,0 +1,9 @@
+README.md
+setup.py
+netzeus_core_config/__init__.py
+netzeus_core_config/config.py
+netzeus_core_config.egg-info/PKG-INFO
+netzeus_core_config.egg-info/SOURCES.txt
+netzeus_core_config.egg-info/dependency_links.txt
+netzeus_core_config.egg-info/requires.txt
+netzeus_core_config.egg-info/top_level.txt
