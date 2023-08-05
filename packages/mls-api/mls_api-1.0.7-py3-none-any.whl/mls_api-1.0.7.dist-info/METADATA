@@ -1,0 +1,215 @@
+Metadata-Version: 2.1
+Name: mls-api
+Version: 1.0.7
+Summary: Python library for integrating with the MLS (Major League Soccer) API.
+Home-page: https://moatsystems.com/mls-api/
+Author: Moat Systems Limited
+Author-email: support@moatsystems.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/moatsystems/mlsapi-python/issues
+Project-URL: Changes, https://github.com/moatsystems/mlsapi-python/blob/main/CHANGELOG.md
+Project-URL: Documentation, https://docs.mlssoccerapi.com/
+Project-URL: Source Code, https://github.com/moatsystems/mlsapi-python
+Keywords: mls,mls api,mls_api,major league soccer,moat,moatsystems,moat systems
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+Description-Content-Type: text/x-rst
+Requires-Dist: requests
+
+mls-api
+========
+
+.. image:: https://badge.fury.io/py/mls-api.svg
+    :target: https://badge.fury.io/py/mls-api
+    :alt: MLS API Python Package Version
+
+Python library for integrating with `MLS API`_ functionality.
+
+.. _MLS API: https://moatsystems.com/mls-api/
+
+
+Requirements
+-------------
+
+Python 2.7 and later.
+
+
+Setup
+------
+
+You can install this package by using the pip tool and installing:
+
+.. code-block:: bash
+
+	$ pip install mls-api
+
+Or:
+
+.. code-block:: bash
+
+	$ easy_install mls-api
+
+
+Usage Example
+-------------
+
+.. code-block:: python
+
+    import os, json
+    import mls_api
+
+    # Authentication
+    username = "your_username"
+    password = "your_password"
+    response_text = login(username, password)
+    print("Login response:", response_text)
+
+    # Get all historical data
+    response_text = get_all_hist()
+    print("All historical data response:", response_text)
+
+    # Get historical data by ID
+    hist_id = "the_uuid" # UUID
+    response_text = get_hist_by_id(hist_id)
+    print("Historical data by ID response:", response_text)
+
+    # Get all real-time data (RTD)
+    response_text = get_all_rtd()
+    print("All real-time data response:", response_text)
+
+    # Get real-time data (RTD) by ID
+    rtd_id = "the_uuid" # UUID
+    response_text = get_rtd_by_id(rtd_id)
+    print("Real-time data by ID response:", response_text)
+
+    # Get a list of players with a custom limit and offset
+    limit = 20
+    offset = 10
+    response_text = get_all_players(limit, offset)
+    print("Players response:", response_text)
+
+    # Get a specific player by ID
+    player_id = "the_uuid" # UUID
+    response_text = get_player_by_id(player_id)
+    print("Player by ID response:", response_text)
+
+    # Get all top scorers data
+    all_topscorers = topscorer.get_all_topscorers()
+    print("All Top Scorers:")
+    print(all_topscorers)
+
+    # Get top scorers data by ID
+    topscorer_id = "the_uuid" # UUID
+    specific_topscorer = topscorer.get_topscorer_by_id(topscorer_id)
+    print(f"Top Scorer with ID {topscorer_id}:")
+    print(specific_topscorer)
+
+    # Get all offence data
+    all_offences = offence.get_all_offences()
+    print("All Offences:")
+    print(all_offences)
+
+    # Get offence data by ID
+    offence_id = "the_uuid" # UUID
+    specific_offence = offence.get_offence_by_id(offence_id)
+    print(f"Offence with ID {offence_id}:")
+    print(specific_offence)
+
+    # Get all assists data
+    all_assists = assists.get_all_assists()
+    print("All Assists:")
+    print(all_assists)
+
+    # Get assists data by ID
+    assist_id = "the_uuid" # UUID
+    specific_assist = assists.get_assist_by_id(assist_id)
+    print(f"Assist with ID {assist_id}:")
+    print(specific_assist)
+
+    # Get all teams data
+    all_teams = teams.get_all_teams()
+    print("All teams:\n", all_teams)
+
+    # Get teams data by ID
+    team_id = "the_uuid" # UUID
+    team = teams.get_team_by_id(team_id)
+    print(f"Team with ID {team_id}:\n", team)
+
+    # Get all fixtures data
+    all_fixtures = fixtures.get_all_fixtures()
+    print("All fixtures:\n", all_fixtures)
+
+    # Get fixtures data by ID
+    fixture_id = "the_uuid" # UUID
+    fixture = fixtures.get_fixture_by_id(fixture_id)
+    print(f"Fixture with ID {fixture_id}:\n", fixture)
+
+    # Get all standings data
+    all_standings = standings.get_all_standings()
+    print(all_standings)
+
+    # Get a specific standing by ID
+    standing_id = "the_uuid" # UUID
+    specific_standing = standings.get_standing_by_id(standing_id)
+    print(specific_standing)
+
+    # Get all news data
+    all_news = news.get_all_news()
+    print(all_news)
+
+    # Get a specific news item by ID
+    news_id = "the_uuid" # UUID
+    specific_news = news.get_news_by_id(news_id)
+    print(specific_news)
+
+
+Setting up an MLS API Account
+-----------------------------
+
+Sign up for a self-service `user account`_.
+
+.. _user account: https://moatsystems.com/mls-api/
+
+
+Using the MLS API
+------------------
+
+You can read the `API documentation`_ to understand what's possible with the MLS API. If you need further assistance, don't hesitate to `contact us`_.
+
+.. _API documentation: https://docs.mlssoccerapi.com/
+.. _contact us: https://moatsystems.com/contact/
+
+License
+--------
+
+This project is licensed under the `MIT License`_.  
+
+.. _MIT License: https://moatsystems.com/
+
+
+Copyright
+----------
+
+Copyright |copy| 2021 - 2023 `Moat Systems Limited`_. All Rights Reserved.
+
+.. |copy| unicode:: 0xA9 .. copyright sign
+.. _Moat Systems Limited: https://moatsystems.com/
+
+
