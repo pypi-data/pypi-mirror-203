@@ -1,0 +1,17 @@
+relatio/__init__.py,sha256=1DujjgKpAwz845zelHKQVEIdsHT-UyTBPwY2YBDUemA,448
+relatio/datasets.py,sha256=ef1xV6S-ydtXlSulTGSRBkVSBeFN89tMFah2pMjrnm8,1627
+relatio/dependency_parsing.py,sha256=-OGmRvU-D33knxrKRPqqRLmCYKvl1mR2enWwEq1Js9w,8351
+relatio/embeddings.py,sha256=dq0jmDPOKn_z0gIeMB8gOlZSKQTev0r7rMS0l21w60w,10651
+relatio/graphs.py,sha256=MmJC72f-M8EW0ukwDhVDrFeVbGhqfxYMeu2dh7WzM9Y,3488
+relatio/logging.py,sha256=3Xm22F3aUlDijzkKfD27RJNmYwqB059ZN_E23wujz5s,2657
+relatio/narrative_models.py,sha256=Sbhygqo_ibZ1HJaO2iU2FjUd05L2E_-A6q1EciQ9qaQ,32455
+relatio/preprocessing.py,sha256=sATDuxrbLFVpWVMdBcnVplcbYvmOgIW-kvbLS9E-9O0,11222
+relatio/semantic_role_labeling.py,sha256=TZsviSndktADmGz56vm24H8A9XBg0SwWn1IoHonTHHI,8085
+relatio/supported_models.py,sha256=0ZLk1zFYVVJvGkzllKL-jC7_r2hd_Yfrson1BrroRIE,1628
+relatio/utils.py,sha256=9usyYxHOmSSEXxEediHh9FLdAfidh7t16fmI2-AhLF4,10198
+relatio/verbs.py,sha256=6IJAbIQNt7wHJ45gvV4gcf8GOeWlSzThIHIxpC89xZc,4232
+relatio-0.3.0.dist-info/LICENSE,sha256=sjgvByA5Cie1S4Lzq4A-fE26jv0lEJVqYym0VcU3kJc,1265
+relatio-0.3.0.dist-info/METADATA,sha256=GhB44uy0Q3xRyKvnU40oU1w-1dMSKwkgPnbsx0oOr6A,4024
+relatio-0.3.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+relatio-0.3.0.dist-info/top_level.txt,sha256=118R0UrXaQ0VImQbWUvKZ3jEi79s8eM46vuId_atGG0,8
+relatio-0.3.0.dist-info/RECORD,,
