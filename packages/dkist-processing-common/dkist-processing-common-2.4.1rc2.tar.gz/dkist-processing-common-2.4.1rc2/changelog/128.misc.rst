@@ -1,0 +1,1 @@
+remove spectral line support from dkist-processing-common because it now resides in `dkist-spectral-lines <https://pypi.org/project/dkist-spectral-lines/>`_
