@@ -1,0 +1,15 @@
+ddpw/__init__.py,sha256=rWU3o-iCX6ByAyu3W14bXIOzDjP-FQfvyE3J_CDGmYg,38
+ddpw/artefacts.py,sha256=LFsK2iNim0uK0J6Ab08ua686KSzzMQ0q5pqqmNMglsQ,1583
+ddpw/job.py,sha256=8xWe9EdQWyFpg7QuVvpEe5hK2oK0-_raA8UjZmKZAHU,2021
+ddpw/platform.py,sha256=toq_Ypp5L-3aWbCxXE2xY4wXGO1SctwaqaFH-f_LU6w,4779
+ddpw/utils.py,sha256=Kju9WoOOOxiLDnNRAml4CNzZ1nZaLCADCUD1zQYiYpA,2881
+ddpw/wrapper.py,sha256=1SjFkNft56ZrNSeXjRQ6sevBC6cpW87bpPXjnveXYp4,4430
+ddpw/gpu_setup/__dataset.py,sha256=96bv_1RuasnpeWuzuOFr4xZWidP1elKg9-if5VdKQhE,2878
+ddpw/gpu_setup/__init__.py,sha256=_G_XD3DbmkixD_JHWnWAS-jvYZ8XRM573vzJGq9ZYUE,3047
+ddpw/gpu_setup/__model.py,sha256=G5AtThqOK1bxegjU4fus5BGzGAhdzx39_-uatQB9ry0,971
+ddpw/gpu_setup/__seed.py,sha256=n8YeCqNl5mf3FBrQss5dAv7s79P0TYb2Hnk-OgQWyLI,305
+ddpw-4.0.0.dist-info/LICENCE.md,sha256=EtDR3fEST3mMc8N9jZ9iQTdQgsjP6W0K_iUHI2jHEy4,1504
+ddpw-4.0.0.dist-info/METADATA,sha256=ACAJBRJ5APrydwxd3I1j9PfWZz_LBCizmTSrzkIvQ2s,2552
+ddpw-4.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ddpw-4.0.0.dist-info/top_level.txt,sha256=v-9bC8cIzPVK3CfHULdDCHohv0O2aXxO1lynatGCnMw,5
+ddpw-4.0.0.dist-info/RECORD,,
