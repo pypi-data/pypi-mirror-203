@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+shreycricmac.egg-info/PKG-INFO
+shreycricmac.egg-info/SOURCES.txt
+shreycricmac.egg-info/dependency_links.txt
+shreycricmac.egg-info/entry_points.txt
+shreycricmac.egg-info/requires.txt
+shreycricmac.egg-info/top_level.txt
