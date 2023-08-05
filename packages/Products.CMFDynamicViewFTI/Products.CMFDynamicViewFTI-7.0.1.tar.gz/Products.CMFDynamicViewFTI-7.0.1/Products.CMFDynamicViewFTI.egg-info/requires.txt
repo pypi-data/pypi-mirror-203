@@ -1,0 +1,13 @@
+setuptools
+zope.browser
+zope.browsermenu
+Products.CMFCore
+ExtensionClass
+Zope
+
+[test]
+Products.GenericSetup
+plone.base
+plone.app.testing>=4.2.5
+plone.testing
+zope.publisher
