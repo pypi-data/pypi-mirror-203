@@ -1,0 +1,6 @@
+# ============================================================================
+# PYTHON PACKAGE REQUIREMENTS FOR: behavecrackle -- invoke build-system
+# ============================================================================
+
+# -- REUSE: invoke tasks requirements
+-r ../tasks/py.requirements.txt

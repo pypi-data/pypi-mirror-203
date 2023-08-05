@@ -1,0 +1,6 @@
+[console_scripts]
+behavecrackle = behavecrackle.__main__:main
+
+[distutils.commands]
+behave_test = setuptools_behave:behave_test
+
