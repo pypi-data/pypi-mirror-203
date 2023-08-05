@@ -1,0 +1,17 @@
+idealgeo/__init__.py,sha256=ar-XZ-r3Eia5CFYh6N3XQvFVcTBYO_Z63BC1YeRMVos,59
+idealgeo/__main__.py,sha256=iAoTCwuTj6WwQp3Gc0chf8jcaMO5eynMnIc3CnVj9W8,363
+idealgeo/cli.py,sha256=pLCKe9cahCG4Mnrfbkl3t1wDOl8e6S0ba2m9OfRyLqs,735
+idealgeo/client.py,sha256=7Kf_-WVHd3GcePSQr_4OvadDqU79aGh5vgwXX1k68AQ,2030
+idealgeo/geometries/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+idealgeo/geometries/buffer.py,sha256=TQ1U5eO6C24_cQOkDonKpQhvRDhNBMV89ZTDaGD0aBI,1939
+idealgeo/geometries/custom.py,sha256=iHkoNY0W6zPLR85mXo-xszNBT3cXq94ipbmXOD8dgLg,450
+idealgeo/geometries/location.py,sha256=86srHv6UfsoTURx79wbJ46YLUaQRWxlGPtOImpthwuc,249
+idealgeo/geometries/region.py,sha256=Q-EMCyYNpmk5HhJfpqmg3zmsv6_YnmW8olDBFKWikaI,2084
+idealgeo/insights/__init__.py,sha256=c49BUgszxuQcP6_gw-Rzw6qger5qvRwKPxU0skflS8w,271
+idealgeo-0.0.3.dist-info/AUTHORS.rst,sha256=AMCi-tL3D5xzQ7vQFPg6Y5VYo0qDD8V_3cVaRvaBLXA,61
+idealgeo-0.0.3.dist-info/LICENSE,sha256=CCqZ4nWYlUN3tDQxe3eWrVTPVCQ76rssMiPGdzJ9_hY,584
+idealgeo-0.0.3.dist-info/METADATA,sha256=5V6m9cvBQgKuVARSRZUqXosUnow--s-q0ykDkKGZG2M,3909
+idealgeo-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+idealgeo-0.0.3.dist-info/entry_points.txt,sha256=_C6TChemirvjtbW6nOsH94xWjgbGe7CwuyS0PX_kwdc,47
+idealgeo-0.0.3.dist-info/top_level.txt,sha256=MXKBT1MoBkCHlKWXi02mMVC9g_VhhvJSoa1-HIyufL8,9
+idealgeo-0.0.3.dist-info/RECORD,,
