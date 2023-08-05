@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: libasd
+Version: 1.5.6
+Summary: A library to read High Speed AFM data file
+Home-page: https://github.com/ToruNiina/libasd
+Author: Toru Niina
+Author-email: niina.toru.68u@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: cmake
+Requires-Dist: wheel
+
+UNKNOWN
+
