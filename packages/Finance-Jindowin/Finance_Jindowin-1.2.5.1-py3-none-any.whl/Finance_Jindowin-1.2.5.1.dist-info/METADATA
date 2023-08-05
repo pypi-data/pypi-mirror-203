@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Finance-Jindowin
+Version: 1.2.5.1
+Summary: Jindowin1.2.5.1
+Home-page: https://github.com/flaght
+Author: flaght
+Author-email: flaght@gmail.com
+Requires-Dist: numpy (>=1.17.0)
+Requires-Dist: pandas (>=1.1.1)
+Requires-Dist: requests (>=2.21.0)
+Requires-Dist: gevent (>=21.1.2)
+Requires-Dist: greenlet (>=1.1.2)
+Requires-Dist: pymongo (>=3.11.2)
+Requires-Dist: urllib3 (>=1.21.1)
+Requires-Dist: nameko (>=2.14.1)
+Requires-Dist: oss2 (>=2.14.0)
+Requires-Dist: mysqlclient (>=1.4.2)
+Requires-Dist: mysql-connector (>=2.2.9)
+Requires-Dist: mysql-connector-python (>=8.0.22)
+Requires-Dist: PyMySQL (>=1.0.2)
+
