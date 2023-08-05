@@ -1,0 +1,9 @@
+barbell2_castor/__init__.py,sha256=TFeCMCo9avsZX3iIHoWLJrBT0f3s_ZOXlV8qaeE37xE,105
+barbell2_castor/api.py,sha256=iFJ-yQQwhBUeny7m6PB0aPGX7WEaRiniNtfS_X3ksXM,8904
+barbell2_castor/castor2sqlite.py,sha256=ueMUBDFgFg-Y5EPdyo_a9-OTQ7AESyQUMSFNThtJ_Cg,14709
+barbell2_castor/utils.py,sha256=2zZ9Zmq6LIBsysCWO9K5z1XIcgYUgCHYvLbqGBEGcLM,628
+barbell2_castor-0.2.0.dist-info/METADATA,sha256=mKmz0std3_JcmK30HcWmc87LzvR_Yvx3Hr7rnhUXPZQ,853
+barbell2_castor-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+barbell2_castor-0.2.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+barbell2_castor-0.2.0.dist-info/top_level.txt,sha256=OIkEM79qIgE7D59VxIyDgTGw47wacL2_b-l6Gh9gUc8,16
+barbell2_castor-0.2.0.dist-info/RECORD,,
