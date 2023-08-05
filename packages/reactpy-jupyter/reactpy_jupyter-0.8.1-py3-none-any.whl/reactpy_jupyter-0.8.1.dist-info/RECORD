@@ -1,0 +1,12 @@
+reactpy_jupyter/__init__.py,sha256=evlQwbNlBKgPuvhLPL9bganHgHGoR9gBU0h67cpV_c4,637
+reactpy_jupyter/import_resources.py,sha256=V1GuaNyxiZ_XzlVIM8gdIG_G--HtIyeBS62ZizNgjSk,3975
+reactpy_jupyter/ipython_extension.py,sha256=aLPibk3H0WYQO5AiQAQnfC6yYqjtS9jBJl0Cmw5Vz78,1289
+reactpy_jupyter/jupyter_server_extension.py,sha256=7DrCkoOo0kCsuwA5FiX9gJiEhvFF2lr3MQW6SzzYlUA,1277
+reactpy_jupyter/widget.py,sha256=2cXQIw2yOkhty4ONgTjIwIr31sBmgdEnwP1oUf9idSk,4306
+reactpy_jupyter/static/index.js,sha256=zc9lMI6yx3Sf3PfJ0FPy9Np6wxqt2tPtBtp5zXMK3Tc,744360
+reactpy_jupyter-0.8.1.data/data/etc/jupyter/jupyter_server_config.d/reactpy-jupyter.json,sha256=obmXphQVEmBAmMyIqkwOuUpaEKVv1a0hBeORY3INWKM,115
+reactpy_jupyter-0.8.1.dist-info/LICENSE,sha256=nfoDPqpXukz9ocjDeRG8RLMsasZWiB7AEK3RaH8CjMQ,1070
+reactpy_jupyter-0.8.1.dist-info/METADATA,sha256=8LBt8fF7VD4zQXgdyLXvSfJ6d6C_2v6uJ_GmcfMcLHs,3869
+reactpy_jupyter-0.8.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+reactpy_jupyter-0.8.1.dist-info/top_level.txt,sha256=nBOiqS4hMNmHHQf2b_51tWq5KHZFw7FPg_hvZQjDejY,16
+reactpy_jupyter-0.8.1.dist-info/RECORD,,
