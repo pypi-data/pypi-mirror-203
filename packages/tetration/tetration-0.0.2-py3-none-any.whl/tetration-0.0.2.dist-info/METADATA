@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: tetration
+Version: 0.0.2
+Summary: The 4th Hyperoperation : Tetration
+Project-URL: Homepage, https://github.com/Tanmay53/tetration
+Project-URL: Bug Tracker, https://github.com/Tanmay53/tetration/issues
+Author-email: Tanmay Khatri <tanmaykhatri46@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Tetration
+
+The 4th Hyperoperation. Tetrate numbers and watch them being solved.
+
+## Installation
+
+```cmd
+pip install tetration
+```
+
+## Usage
+
+```python
+from tetration import tetrate, tetrate_solve
+
+print(tetrate(2, 3))
+# 16
+
+# To tetrate and show the solution steps
+tetrate_solve(2, 3) # 16
+# ((2)^2)^2
+# (2)^4
+# 16
+
+```
