@@ -1,0 +1,11 @@
+MANIFEST.in
+README.txt
+setup.py
+algo/__init__.py
+algo/algo1.py
+algo/algo3.py
+algo/claseotra.py
+algoxyz.egg-info/PKG-INFO
+algoxyz.egg-info/SOURCES.txt
+algoxyz.egg-info/dependency_links.txt
+algoxyz.egg-info/top_level.txt
