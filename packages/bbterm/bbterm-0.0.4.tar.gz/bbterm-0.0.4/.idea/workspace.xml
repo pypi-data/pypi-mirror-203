@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="909841d9-6306-4403-b86b-6eb60c965fc5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbterm/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/animation_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbterm/animation_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/canvas.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbterm/canvas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/errors.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbterm/errors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbterm/extensions/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/ansi.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbterm/extensions/ansi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/slash.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbterm/extensions/slash.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/font.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbterm/font.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inline_font.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbterm/inline_font.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbterm/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protocol.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbterm/protocol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprites.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbterm/sprites.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telnet_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbterm/telnet_client.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2OT2QTz0mxUqqwCQp12hkpfaghs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="909841d9-6306-4403-b86b-6eb60c965fc5" name="Changes" comment="" />
+      <created>1681570236688</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681570236688</updated>
+    </task>
+    <servers />
+  </component>
+</project>
