@@ -1,0 +1,13 @@
+typing-extensions # ; python_version < "3.9"
+bitstruct
+numpy
+bitarray >= 1.5.1
+pytest
+pytest-cov
+tox >= 4
+flake8
+sphinx
+sphinx_rtd_theme
+sphinxcontrib-spelling
+build
+twine
