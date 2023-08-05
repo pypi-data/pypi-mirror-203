@@ -1,0 +1,11 @@
+crawlerpy/__init__.py,sha256=o-KTn0zJudtCYvPwv150KIFJ0idnPk0my7FxbiT0-n4,500
+crawlerpy/dtc.py,sha256=Xu2dy-noOq62xxzp9mdf4D8zVUE4D167IbrV8nikTQM,3189
+crawlerpy/sap.py,sha256=khLkxezxTlh9Z-EAPYaLjeW4p_-nhArowitBFAd3XNk,1007
+crawlerpy/scmb.py,sha256=DaGbHCt-uwH1uP-9RdtIlnwGpkuM3pg47CwtUrXFBpc,2269
+crawlerpy/util.py,sha256=QH70wGeRUrIeF8_A_W-Bb4GSYj6Oi8ZJ2wV9DIbKPJI,357
+crawlerpy/vdm.py,sha256=hnI47pVpkfSdxmQqe6P9bwXIAJCS0sY2Nk9yf1kNgU0,3893
+crawler_py-2.0.7.dist-info/LICENSE,sha256=wDzqAntLQORAL6vQhVdzZyfsPVvFStZKtkct5DIZjK0,18047
+crawler_py-2.0.7.dist-info/METADATA,sha256=KsoB3f9MhbdBGWWwrWprD0sJh3pLv1DPvHP-d7utFoo,1092
+crawler_py-2.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+crawler_py-2.0.7.dist-info/top_level.txt,sha256=IAP8kzTJe0WMOoRJlIz3rdSS9EFU3NV6EpTcUeTBATE,10
+crawler_py-2.0.7.dist-info/RECORD,,
