@@ -1,0 +1,2 @@
+[console_scripts]
+count = src.wc_util:app
