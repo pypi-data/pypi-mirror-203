@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: indiek-core
+Version: 0.1.0
+Summary: core logic for indiek
+Author: Adrian Ernesto Radillo
+Author-email: adrian.radillo@gmail.com
+License: GNU Affero General Public License v3.0
+Requires-Python: >=3.8
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-pep8 ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+
