@@ -1,0 +1,12 @@
+ghid-0.0.1.dist-info/RECORD,,
+ghid-0.0.1.dist-info/LICENSE,sha256=9nlEUL-CyZOiAwYkhPJ9WpdcJXymCKI2riH4_lqvBps,1516
+ghid-0.0.1.dist-info/WHEEL,sha256=ZpcXDw8xvXnB95GzPuvGTblRFId_5hNBEGdWCY25bL4,111
+ghid-0.0.1.dist-info/top_level.txt,sha256=cVSNI-uNy3ECplFtHEwK2b-K-ftJVidlFf0FIQrEado,5
+ghid-0.0.1.dist-info/METADATA,sha256=U-SX0NpU-lIzHpcKNcliq8i7tZylYhyyOnybrK5YbJ0,540
+ghid/build.py,sha256=qfUFLnZAHm6p1k7T5J_O5uHyGkrkA2NvLz91SoJ377A,43293
+ghid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ghid/go.py,sha256=7OPJVoeTpNuYsEroIsDq7PvKATANv2zO0Hw1QIVHSws,58249
+ghid/_ghid.cpython-310-darwin.so,sha256=wXnCOMIBDJrNx-1S6sJatM81RNAd-du2bBZcu0J-J5U,3735296
+ghid/ghid.py,sha256=RE4QQQWOlb8jcNhXosgTXK9psehwazGBLWycV3kGfT8,116064
+ghid/.dylibs/libpython3.10.dylib,sha256=ZAFjRK64IPZaS4YOlSMfW6wLgNNbJL_jJfJJQOTX08s,4788000
+ghid/.dylibs/libintl.8.dylib,sha256=cnxYo5HVFSlWzZNVZzB1Djxs9f9-loNT5P-K4R_-_0w,110640
