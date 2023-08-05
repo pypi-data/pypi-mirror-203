@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/abbccd/test.py
+src/abbccd.egg-info/PKG-INFO
+src/abbccd.egg-info/SOURCES.txt
+src/abbccd.egg-info/dependency_links.txt
+src/abbccd.egg-info/top_level.txt
