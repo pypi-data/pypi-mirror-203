@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: chichitk
+Version: 0.0.1
+Summary: Python UI library built upon Tkinter
+Home-page: UNKNOWN
+Author: Samuel Gibson
+Author-email: <samuelpgibson12@gmail.com>
+License: UNKNOWN
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: Pillow
+Requires-Dist: fitz
+
+
+# ChichiTk
+
