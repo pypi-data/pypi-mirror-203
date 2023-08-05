@@ -1,0 +1,40 @@
+name: Tests and Lint
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-versions: [ "3.10", "3.11" ]
+
+    steps:
+    - uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab
+    - uses: actions/setup-python@d27e3f3d7c64b4bbf8e4abfb9b63b83e846e0435
+      with:
+        python-version: ${{ matrix.python-versions }}
+
+    - name: Install tox and coverage
+      run: pip install tox tox-gh-actions build
+
+    - name: Install build dependency
+      run: python3 -m pip install --upgrade pip build
+
+    - name: Test Build binary wheel and source tarball
+      run: python3 -m build --sdist --wheel --outdir dist/ .
+
+    - name: Run Python tests
+      run: make tests
+
+    - name: Codecov
+      uses: codecov/codecov-action@40a12dcee2df644d47232dde008099a3e9e4f865
+      with:
+        files: coverage.xml
+        fail_ci_if_error: false
+        verbose: true
