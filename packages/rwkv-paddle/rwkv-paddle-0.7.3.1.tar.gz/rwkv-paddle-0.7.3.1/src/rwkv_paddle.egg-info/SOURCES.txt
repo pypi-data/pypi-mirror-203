@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/rwkv_paddle/__init__.py
+src/rwkv_paddle/model.py
+src/rwkv_paddle/serialization.py
+src/rwkv_paddle/utils.py
+src/rwkv_paddle.egg-info/PKG-INFO
+src/rwkv_paddle.egg-info/SOURCES.txt
+src/rwkv_paddle.egg-info/dependency_links.txt
+src/rwkv_paddle.egg-info/requires.txt
+src/rwkv_paddle.egg-info/top_level.txt
+src/rwkv_paddle/cuda/operators.cu
+src/rwkv_paddle/cuda/wrapper.cpp
