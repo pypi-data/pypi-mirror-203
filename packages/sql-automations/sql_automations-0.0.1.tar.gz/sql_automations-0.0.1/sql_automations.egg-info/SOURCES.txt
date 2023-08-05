@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+sql_automations.egg-info/PKG-INFO
+sql_automations.egg-info/SOURCES.txt
+sql_automations.egg-info/dependency_links.txt
+sql_automations.egg-info/entry_points.txt
+sql_automations.egg-info/top_level.txt
+src/sql_automations/__init__.py
+src/sql_automations/sql_cli_tool.py
+src/sql_automations/big_query/__init__.py
+src/sql_automations/big_query/execute_sql.py
+src/sql_automations/data_cleaning/__init__.py
+src/sql_automations/data_cleaning/read_data.py
