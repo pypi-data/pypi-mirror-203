@@ -1,0 +1,13 @@
+README.md
+setup.py
+src/credentials_manager_client/__init__.py
+src/credentials_manager_client/app.py
+src/credentials_manager_client/main.py
+src/credentials_manager_client.egg-info/PKG-INFO
+src/credentials_manager_client.egg-info/SOURCES.txt
+src/credentials_manager_client.egg-info/dependency_links.txt
+src/credentials_manager_client.egg-info/entry_points.txt
+src/credentials_manager_client.egg-info/requires.txt
+src/credentials_manager_client.egg-info/top_level.txt
+src/credentials_manager_client/apps/__init__.py
+src/credentials_manager_client/apps/auth/__init__.py

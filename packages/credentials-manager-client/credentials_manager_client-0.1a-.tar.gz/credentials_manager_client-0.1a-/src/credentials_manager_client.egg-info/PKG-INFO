@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: credentials-manager-client
+Version: 0.1a-
+Summary: Backend service
+Home-page: https://github.com/makersdevs/credentials_manager
+Requires-Python: >=3.10.3

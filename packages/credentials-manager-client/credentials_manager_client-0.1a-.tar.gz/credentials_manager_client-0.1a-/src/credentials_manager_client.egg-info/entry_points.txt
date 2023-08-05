@@ -1,0 +1,2 @@
+[console_scripts]
+credentials_manager_client = credentials_manager.main:execute
