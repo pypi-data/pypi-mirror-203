@@ -1,0 +1,3 @@
+[console_scripts]
+pyroscopegridding = pyroscopegridding.gtools:main
+
