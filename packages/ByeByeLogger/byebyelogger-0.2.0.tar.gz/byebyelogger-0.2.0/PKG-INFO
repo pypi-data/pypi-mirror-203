@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: byebyelogger
+Version: 0.2.0
+Summary: A simple, yet powerful Python logging library that makes you say goodbye to your standard logger.
+Author-email: Aleksa Lukic <aleksalukic92@web.de>
+Project-URL: Homepage, https://github.com/N4r0Bs/ByeByeLogger
+Project-URL: Repository, https://github.com/N4r0Bs/ByeByeLogger
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# ByeByeLogger
+
+### Oh, great! Another logging package, because obviously, we need more of those, right? Well, let me introduce you to ByeByeLogger, the one that's going to make you say goodbye to your current logger (whether you like it or not).
+
+
+## Installation
+- To get this totally groundbreaking package, just do the usual `pip` dance:
+```bash
+pip install byebyelogger
+```
