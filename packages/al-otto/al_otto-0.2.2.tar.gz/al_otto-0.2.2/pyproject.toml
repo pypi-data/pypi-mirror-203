@@ -1,0 +1,69 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "al-otto"
+dynamic = []
+description = "The ottomatic video engine"
+authors = [
+    { name = "Quaternion Media", email = "qm@quaternion.media" },
+]
+dependencies = [
+    "fastapi~=0.95",
+    "moviepy~=1.0",
+    "pydantic~=1.10",
+]
+requires-python = ">=3.8.1,<4.0"
+readme = "README.md"
+version = "0.2.2"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://github.com/quaternionmedia/otto"
+documentation = "https://quaternionmedia.github.io/otto/"
+repository = "https://github.com/quaternionmedia/otto"
+
+[project.optional-dependencies]
+render = [
+    "gizeh~=0.1",
+    "bezier~=2021.2",
+    "tqdm~=4.65",
+]
+test = [
+    "pytest~=7.3",
+    "httpx~=0.24",
+    "pytest-cov~=4.0",
+    "pytest-xdist~=3.2",
+]
+docs = [
+    "mkdocs~=1.4",
+    "mkdocs-material~=9.1",
+    "mkdocs-git-revision-date-localized-plugin~=1.2",
+    "mike~=1.1",
+    "mkdocstrings[python]~=0.21",
+    "setuptools~=67.6",
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "uvicorn~=0.21",
+    "black~=23.3",
+    "ruff~=0.0",
+]
+nox = [
+    "nox~=2022.11",
+]
+
+[tool.pdm.version]
+source = "file"
+path = "otto/_version.py"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
