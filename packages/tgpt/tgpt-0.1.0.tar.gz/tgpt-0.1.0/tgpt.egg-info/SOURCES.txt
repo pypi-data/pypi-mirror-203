@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tgpt/__init__.py
+tgpt/commandline_interface.py
+tgpt/config_handler.py
+tgpt/gpt_client.py
+tgpt/image_handler.py
+tgpt/main.py
+tgpt.egg-info/PKG-INFO
+tgpt.egg-info/SOURCES.txt
+tgpt.egg-info/dependency_links.txt
+tgpt.egg-info/entry_points.txt
+tgpt.egg-info/requires.txt
+tgpt.egg-info/top_level.txt
