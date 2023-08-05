@@ -1,0 +1,9 @@
+geode_implicit/__init__.py,sha256=XhJI3TYOQYJIH62azxpDvjijOgPHiw-rVsf1HVCtWOM,159
+geode_implicit/explicitation.py,sha256=Bc6f_43Iyl_XdQDeC_AawPcHG4paevMMXPUjYRN9ACk,277
+geode_implicit/implicitation.py,sha256=iLJMBNAkOs8uSpf4TLqDmQFS2inn8wVqMOzDYXCn7Ho,216
+geode_implicit/insertion.py,sha256=Ufq_8FzbNJkBR5-xdO--FjQhpqETnOXReQYPrh92WIc,242
+geode_implicit/model_io.py,sha256=zNNkwimAePcQxhl2qJnEvczeu6MGoXnwuiULVZNT1R0,212
+Geode_Implicit-2.0.0.dist-info/METADATA,sha256=_3ozIve-3Di2R-r3uDmU7sCNkuY06PGP_Upk-aDrFNw,2999
+Geode_Implicit-2.0.0.dist-info/WHEEL,sha256=jrOhEbqKwvzRFSJcbYXlJCyVkgVdHg4_7__YHrdTUfw,102
+Geode_Implicit-2.0.0.dist-info/top_level.txt,sha256=en1gGkG76WrTwf913IpVYGFiSRrSP4d4BQa6430AyRQ,15
+Geode_Implicit-2.0.0.dist-info/RECORD,,
