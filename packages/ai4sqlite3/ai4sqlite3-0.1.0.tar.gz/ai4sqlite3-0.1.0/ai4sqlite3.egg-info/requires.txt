@@ -1,0 +1,13 @@
+openai
+alive_progress
+getch
+prettytable
+prompt-toolkit
+
+[dev]
+setuptools
+build
+twine
+pre-commit
+black
+ruff

@@ -1,0 +1,16 @@
+.gitignore
+.pre-commit-config.yaml
+LICENSE
+README.md
+pyproject.toml
+release.sh
+./README.md
+ai4sqlite3/__init__.py
+ai4sqlite3/__main__.py
+ai4sqlite3/_version.py
+ai4sqlite3.egg-info/PKG-INFO
+ai4sqlite3.egg-info/SOURCES.txt
+ai4sqlite3.egg-info/dependency_links.txt
+ai4sqlite3.egg-info/entry_points.txt
+ai4sqlite3.egg-info/requires.txt
+ai4sqlite3.egg-info/top_level.txt
