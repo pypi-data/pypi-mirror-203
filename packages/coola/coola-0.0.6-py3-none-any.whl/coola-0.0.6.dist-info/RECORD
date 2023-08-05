@@ -1,0 +1,12 @@
+coola/__init__.py,sha256=d96ICNQvra2f2WSMOqGvV1ZVLGYQ6mCmbxgVas3ewOs,681
+coola/allclose.py,sha256=0iB4GASpY_ZAp7jkVeggHQ9G0opwB9wDsope-33Zdy4,18460
+coola/equality.py,sha256=U9EZVpuNc0EClB8MBhzm9fjxBs-oj-R0Hrw8RRlkAps,13171
+coola/format.py,sha256=UkCIvPSvLULelyV_Yq-nDGK2Z6XGLR4fY7hkRbfHo_M,2444
+coola/import_utils.py,sha256=iz27fFanDhvT4OqxbBvzpS5oZh1OEp659VbdUPT_e7k,1195
+coola/ndarray.py,sha256=DwbnuLe1nzfo4ZYqcLaBqIiHF-mXQv9kn9PTScT9rCI,4260
+coola/pytorch.py,sha256=JcxWqKCKBsGp1dgpSSOOLK4OVXOa061GDTjalbqt3U0,7521
+coola/testing.py,sha256=bFSxn1zN481q5bJZtoRP3-txuiv4GJUAHBdz1Sz0ODs,297
+coola-0.0.6.dist-info/LICENSE,sha256=nP63ZB3H79FVJ15_TZbXWvNH7XmXT2Ab1q11r-sDXkY,1501
+coola-0.0.6.dist-info/METADATA,sha256=2vjbqoxiILnWXqXhWPl3yaBX7wDtUvSo6AW_Pq6fxmE,5791
+coola-0.0.6.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+coola-0.0.6.dist-info/RECORD,,
