@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: maelzel
+Version: 0.10.4
+Summary: Utilities for sound, music notation, acoustics, etc
+Home-page: https://github.com/gesellkammer/maelzel
+Author: Eduardo Moguillansky
+Author-email: eduardo.moguillansky@gmail.com
+License: LGPLv2
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Multimedia :: Sound/Audio
+Requires-Python: >=3.9
+License-File: LICENSE.md
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: music21
+Requires-Dist: appdirs
+Requires-Dist: tabulate
+Requires-Dist: cachetools
+Requires-Dist: pyyaml
+Requires-Dist: watchdog
+Requires-Dist: psutil
+Requires-Dist: lxml
+Requires-Dist: quicktions
+Requires-Dist: rich
+Requires-Dist: chardet
+Requires-Dist: simple-term-menu
+Requires-Dist: visvalingamwyatt
+Requires-Dist: emlib (>=1.7.3)
+Requires-Dist: ctcsound7 (>=0.3.0)
+Requires-Dist: bpf4 (>=1.8.4)
+Requires-Dist: configdict (>=2.6)
+Requires-Dist: sndfileio (>=1.8.1)
+Requires-Dist: numpyx (>=1.3.1)
+Requires-Dist: python-constraint
+Requires-Dist: csoundengine (>=1.20.0)
+Requires-Dist: pitchtools (>=1.9.2)
+Requires-Dist: risset (>=2.4.0)
+Requires-Dist: loristrck (>=1.5.2)
+Requires-Dist: vamphost (>=1.2.1)
+
+.. figure:: docs/assets/maelzel-logo.png
+    :width: 320px
+    :align: center
+
+
+-----------------
+
+|sh-pypi| |sh-license| |sh-docs|
+
+.. |sh-pypi| image:: https://img.shields.io/pypi/v/maelzel?color=green
+.. |sh-license| image:: https://img.shields.io/badge/license-lgpl__2__1-blue
+.. |sh-docs| image:: https://readthedocs.org/projects/maelzel/badge/?version=latest
+    :target: http://maelzel.readthedocs.io/?badge=latest
+
+maelzel
+=======
+
+**maelzel** is a framework for computer music in python. It provides
+datatypes to define notes, chords, sequences, lines, voices, scores, etc.
+These objects can be combined with soundfiles and samples, rendered as notation
+and synthesized in realtime.
+
+It provides functionality for composition, music notation, sound analysis
+and synthesis, feature extraction, transcription and machine learning
+
+
+Documentation
+-------------
+
+https://maelzel.readthedocs.io/en/latest/index.html
+
+
+--------------
+
+
+Installation
+------------
+
+::
+
+    pip install maelzel
+
+
+Dependencies
+~~~~~~~~~~~~
+
+- python >= 3.9
+- csound (>= 6.18)
+- lilypond
+
+
+-------------
+
+
+Demos
+-----
+
+https://maelzel.readthedocs.io/en/latest/Introduction.html#demo-notebooks
+
+.. figure:: docs/assets/maelzel-demos.png
+  :target: https://maelzel.readthedocs.io/en/latest/Introduction.html#demo-notebooks
+
+
+Or check the example notebooks:
+
+https://github.com/gesellkammer/maelzel/tree/master/docs/notebooks
