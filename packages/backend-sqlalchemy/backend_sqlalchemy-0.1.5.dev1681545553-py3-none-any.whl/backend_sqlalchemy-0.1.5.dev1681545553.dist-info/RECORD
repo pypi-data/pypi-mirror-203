@@ -1,0 +1,6 @@
+backend_sqlalchemy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backend_sqlalchemy/main.py,sha256=fHhFyyIGsvsvweyQTMZ4p3bc_vqFnNiCI9GMh6mOSqg,248
+backend_sqlalchemy/mixins.py,sha256=ez_mET24CaxLWa0Bk6SwccBOiDSFY6OOeq1h50bfyvk,463
+backend_sqlalchemy-0.1.5.dev1681545553.dist-info/METADATA,sha256=Usbrie6zXrnLYsYzB42--hb6TH1OqC2j0ct0XCIKOV4,1584
+backend_sqlalchemy-0.1.5.dev1681545553.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+backend_sqlalchemy-0.1.5.dev1681545553.dist-info/RECORD,,
