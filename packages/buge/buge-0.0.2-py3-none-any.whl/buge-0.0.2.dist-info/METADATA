@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: buge
+Version: 0.0.2
+Summary: buge is a command-line application that uses the OpenAI API to diagnose bugs when programming.
+Home-page: https://github.com/damonpickett/buge
+Author: Damon Pickett
+Author-email: Damon Pickett <damon.pickett@gmail.com>
+Project-URL: Homepage, https://github.com/damonpickett/buge
+Project-URL: Bug Tracker, https://github.com/damonpickett/buge/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: python-dotenv
+Requires-Dist: rich
+
