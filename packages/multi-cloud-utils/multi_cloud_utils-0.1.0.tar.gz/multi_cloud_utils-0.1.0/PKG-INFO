@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: multi-cloud-utils
+Version: 0.1.0
+Summary: Helpful utility functions for AWS, Azure, GCP and many more cloud providers
+Home-page: https://github.com/rawwar/multi-cloud-utils-python
+License: Apache-2.0
+Keywords: aws,azure,gcp,cloud,utils,multi-cloud,utility
+Author: kalyanr
+Author-email: kalyan.ben10@gmail.com
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Project-URL: Changelog, https://github.com/rawwar/multi-cloud-utils-python/blob/main/CHANGELOG.md
+Project-URL: Documentation, https://github.com/rawwar/multi-cloud-utils-python
+Project-URL: Issue Tracker, https://github.com/rawwar/multi-cloud-utils-python/issues
+Project-URL: Repository, https://github.com/rawwar/multi-cloud-utils-python
+Description-Content-Type: text/markdown
+
+# multi_cloud_utils
+A python package with helpful utility functions for AWS, GCP, Azure
+
