@@ -1,0 +1,9 @@
+osintbuddy/__init__.py,sha256=uiXcaHcx8VnmGyctVcVkotm1mix1K-P61ZiFKxD45io,374
+osintbuddy/manager.py,sha256=6UxqYnQWHgqzyFv7-cm63mqXmwVYTm7JyUGMKawGwF0,206
+osintbuddy/plugins.py,sha256=CWQSuHZDhKopGPNeSLY4CGyLqq-9xTfxgJ1GHI9NRTQ,1284
+osintbuddy/utils.py,sha256=cW_w55hJAAoCZ_aUcXad9oN5sbTyVaSLDDmTZc0ID6E,6498
+osintbuddy/examples/ip-plugin.py,sha256=ldvhluuoO1CVMYUBZVfUb-F77K9EGsbztRtDN8hKx90,527
+osintbuddy-0.0.2rc15.post1.dist-info/LICENSE,sha256=s-mXqM2AghSzUo_jV9-34uHJxyUWlOCl8d8j6NXOnzM,11
+osintbuddy-0.0.2rc15.post1.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+osintbuddy-0.0.2rc15.post1.dist-info/METADATA,sha256=NpTc0H-Pi7w9rwarrzW8yhnwTufmzYqocyfX6KzDogU,7790
+osintbuddy-0.0.2rc15.post1.dist-info/RECORD,,
