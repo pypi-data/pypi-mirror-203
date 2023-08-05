@@ -1,0 +1,10 @@
+pypercard/__about__.py,sha256=qvHwCc_PKrniLqc4NNf9VLfojp9xewekYHBB77x5r5Q,777
+pypercard/__init__.py,sha256=jH1KuRFkWq6CYEFmGe8f_OkGYfEM5W5nwpbb3ozxe8g,863
+pypercard/core.py,sha256=hOATTpNOyGYd983kRzlEFHQF2MwsAqemetEl0_bhbbw,30292
+pypercard/datastore.py,sha256=SykBKZg6ux8xLflTT5PUZWYi3BeCRiZRJ8XLhowshdg,4897
+pypercard/state_machine.py,sha256=kFGwZwwEIiKiGg1x2LSJkAj2NpnJQyLmL6AxGFUnna8,11489
+pypercard-0.0.1a6.dist-info/METADATA,sha256=DNfAR4umQKI0QUeYuKC4M47vXbnon6BTC1eGrJYJNGg,5860
+pypercard-0.0.1a6.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+pypercard-0.0.1a6.dist-info/licenses/AUTHORS,sha256=BV5cYKG_FS6epDerEe27sE1WKHR8UDNcamPJgVxOoS4,87
+pypercard-0.0.1a6.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pypercard-0.0.1a6.dist-info/RECORD,,
