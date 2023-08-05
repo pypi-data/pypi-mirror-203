@@ -1,0 +1,3 @@
+[console_scripts]
+midgard-bot=midgard_discord.main:main
+

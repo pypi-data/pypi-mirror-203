@@ -1,0 +1,12 @@
+midgard_discord/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+midgard_discord/cloud.py,sha256=4fpnivSVYZoA_rGmnDqWzyTBrho4Tz8z3JHZUjTRDXI,8233
+midgard_discord/commands.py,sha256=RaFecFu0Q2j_vgyzDOaOJxigYBGPAOKn7emEgMgepIg,2847
+midgard_discord/database.py,sha256=vpFvbjSxnUlSm76ySJl6TJbZzsb4g-ptTUXhEFEkkO8,2244
+midgard_discord/main.py,sha256=ABuqlGrWYo1xpOF8ScIfJwdM5WrFq4pCBG5X0vjoc7Y,15663
+midgard_discord/networking.py,sha256=zDJ2t0G9UtrcOhrbeVxBLVj3Btbu6gxdQR5i_Ne_18Y,3700
+midgard_discord/texts.py,sha256=pzhQu87DWmZ2GKuZAGM9OEUPxLKqsRSiFt8RdMgxz1g,1992
+midgard_discord/utils.py,sha256=YN7n34bljIJ2_X3fvI9nsN3irZ5bWGFLd6ILIm3sC18,585
+midgard_discord-0.8.0.dist-info/METADATA,sha256=xucXVUU6OOr9xkZwTHlG-L_1vT9vyjJ22URAXmAchP4,2965
+midgard_discord-0.8.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+midgard_discord-0.8.0.dist-info/entry_points.txt,sha256=bMxOSIbHHIVYjoN7_ePsAtCj7m_AWIPede0q6ilc7tw,57
+midgard_discord-0.8.0.dist-info/RECORD,,
