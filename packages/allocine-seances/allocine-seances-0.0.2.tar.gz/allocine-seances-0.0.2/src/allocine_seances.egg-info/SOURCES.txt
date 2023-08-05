@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/allocineAPI/URLs.py
+src/allocineAPI/__init__.py
+src/allocineAPI/allocineAPI.py
+src/allocine_seances.egg-info/PKG-INFO
+src/allocine_seances.egg-info/SOURCES.txt
+src/allocine_seances.egg-info/dependency_links.txt
+src/allocine_seances.egg-info/requires.txt
+src/allocine_seances.egg-info/top_level.txt
