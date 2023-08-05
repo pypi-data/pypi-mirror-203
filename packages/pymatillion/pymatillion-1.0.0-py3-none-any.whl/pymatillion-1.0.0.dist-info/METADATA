@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pymatillion
+Version: 1.0.0
+Author-email: Abhinav Tiwari <abhinavtiwariusa84@gmail.com>
+Project-URL: Homepage, https://github.com/tiwari-abhi/PyMatillion
+Project-URL: Docs, https://tiwari-abhi.github.io/PyMatillion/reference
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+
