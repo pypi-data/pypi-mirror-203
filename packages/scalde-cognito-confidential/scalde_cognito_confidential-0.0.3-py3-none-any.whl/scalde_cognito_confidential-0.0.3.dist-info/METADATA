@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: scalde-cognito-confidential
+Version: 0.0.3
+Summary: AWS Cognito client library for confidential clients
+Author-email: Thomas Marquis <thomas.marquis.dev@gmail.com>
+Keywords: security,aws,cognito,oicd
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.28.2)
+Requires-Dist: python-jose[cryptography] (>=3.3.0)
+Requires-Dist: authlib (>=1.2.0)
+
+# scalde-cognito-confidential
