@@ -1,0 +1,11 @@
+leveled_hotbackup_s3_sync/__init__.py,sha256=Sa6E3LeYdkk0glQH1wRrrDQjRonVFno9rvrNqVrsUFA,273
+leveled_hotbackup_s3_sync/__main__.py,sha256=Sa6E3LeYdkk0glQH1wRrrDQjRonVFno9rvrNqVrsUFA,273
+leveled_hotbackup_s3_sync/app.py,sha256=jqwlCnbUGr17C7OKhdw4hR6MQdkqZbIUhlBP4sUGB4M,4054
+leveled_hotbackup_s3_sync/hints.py,sha256=gQyE-noNv6WHjKhBdn2CxasZ0kHFx5MrkQP-bWvOelU,1029
+leveled_hotbackup_s3_sync/journal.py,sha256=LGHiUc_r9VO_lQT42mYBUvoMHQ8sCwieD7mEGvl2Z10,2127
+leveled_hotbackup_s3_sync/manifest.py,sha256=ApJA7zEthxjemOtC4wR0zDIU-vEx5FpOQHFCxZYdI3A,2221
+leveled_hotbackup_s3_sync/utils.py,sha256=IfwpgQrGJq1zYbq0XF6Q361wNj6YmS64w_1Xa83PZ8Y,3801
+leveled_hotbackup_s3_sync-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+leveled_hotbackup_s3_sync-0.0.2.dist-info/METADATA,sha256=Ot78bbDNxfhFThAvtxvEdJoqKsbHMv1qITK6HkVXXdA,3169
+leveled_hotbackup_s3_sync-0.0.2.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+leveled_hotbackup_s3_sync-0.0.2.dist-info/RECORD,,
