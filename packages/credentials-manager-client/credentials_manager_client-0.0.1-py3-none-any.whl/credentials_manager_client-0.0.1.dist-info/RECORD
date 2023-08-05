@@ -1,0 +1,15 @@
+credentials_manager_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+credentials_manager_client/app.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+credentials_manager_client/main.py,sha256=NJLMgKd-K5QDG5zXteP0k4h1gkCBSS_DguKrloKbsAk,35
+credentials_manager_client/apps/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+credentials_manager_client/apps/auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+credentials_manager_client/apps/auth/abstract_models.py,sha256=s0htgqPq2CPA4AWlYmIpxgZ3mfBoyR4sBPRKsf6z7xA,501
+credentials_manager_client/apps/auth/models.py,sha256=5BR0tdH5gWLCdKYKkpDgeIEdWL2iw8ooYUupQKq0Ego,2005
+credentials_manager_client/db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+credentials_manager_client/db/base_model.py,sha256=bMJIc4RRQ-HLuj9j9iknHzhkMQl511JmH-8tQ7yKADg,1251
+credentials_manager_client-0.0.1.dist-info/LICENSE,sha256=RCb4Z1PJo89GM1o1lJSYhn-u-KxtupWHmTNms9MVgBA,1092
+credentials_manager_client-0.0.1.dist-info/METADATA,sha256=ChNrEmsguJs1syno3BXz_e664N2M47wxt1jPuKzu57k,2121
+credentials_manager_client-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+credentials_manager_client-0.0.1.dist-info/entry_points.txt,sha256=zVzzM89UYkbfITPP9_01oT6q6Om75El40nCw9Nst5eg,71
+credentials_manager_client-0.0.1.dist-info/top_level.txt,sha256=H7SEIANJCk58bjhNBi94UnIf4Wgt_sz41GoS6jz_P04,27
+credentials_manager_client-0.0.1.dist-info/RECORD,,
