@@ -1,0 +1,14 @@
+magicgui
+napari
+numpy
+pandas
+qtpy
+tabulous>=0.5.0
+
+[testing]
+napari
+pyqt5
+pytest
+pytest-cov
+pytest-qt
+tox
