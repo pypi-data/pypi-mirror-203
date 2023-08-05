@@ -1,0 +1,10 @@
+branthebuilder/__init__.py,sha256=6KJ0MGvmVg8FRGQkGCq4VwyPKwvUh0VvOZQRxTHd1vU,86
+branthebuilder/main.py,sha256=WQ33sRLayNvXMatUI7n5YDWd2SZi_WYhYQyQ35v0E6E,7351
+branthebuilder/nb_scripts.py,sha256=r2ZQuiw6m9PXruQKm68odie6DyPcRrkzmC6UTl8cAcg,587
+branthebuilder/vars.py,sha256=R8PbdPQfQ0_dqu7p-HVBV6lo_XiiclPbBcwSfL7hFLM,1176
+branthebuilder/tests/test_integration.py,sha256=TKuaOeeQFb4T0w21r_CfUGzAOX5gcdZS8ArO8J6az6s,1580
+branthebuilder-1.0.10.dist-info/entry_points.txt,sha256=ugUElm9mX7IxnuQo0dy_R4lA8sx8Jx7Od6zy8UjPlNg,44
+branthebuilder-1.0.10.dist-info/LICENSE,sha256=PsZAtTBheWHymkKBWeCbw96MkxuDK4NG8lJXLFUxDu4,1056
+branthebuilder-1.0.10.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+branthebuilder-1.0.10.dist-info/METADATA,sha256=rxpwr0Qr2fIB3SG3LlliszXBxRk-eh3k3LnLhxyYAz8,1593
+branthebuilder-1.0.10.dist-info/RECORD,,
