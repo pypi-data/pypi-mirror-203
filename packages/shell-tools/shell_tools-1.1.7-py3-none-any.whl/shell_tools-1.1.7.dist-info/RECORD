@@ -1,0 +1,14 @@
+shell_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shell_tools/cli.py,sha256=tVJYxnc2MJWAO0ZV-h5BENK52b5k8r7hfIG_iER62hI,4714
+shell_tools/dirs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shell_tools/dirs/search.py,sha256=t9_o3_hPMTjfLso4zau6kSqyadcbxY5x8LyrT322r6o,734
+shell_tools/files/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shell_tools/files/random.py,sha256=HntFgIsZOz41zzBtKPFvhPKqAzhj3I0mFBED1h7gZZs,1092
+shell_tools/git/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shell_tools/git/misc.py,sha256=bIQEPmZMBoqZFinDM4Tr7HmqCIWPxOe_TQEqAhvNqew,1089
+shell_tools-1.1.7.dist-info/LICENSE,sha256=yihrWBiKaFWNxm6q27n0245RRlW2X52GSg9Cn0jckD0,1092
+shell_tools-1.1.7.dist-info/METADATA,sha256=W7BKqXhbP3k0TibrnHOT7EdMUiB9dmAN8PSPeofe4Ac,835
+shell_tools-1.1.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+shell_tools-1.1.7.dist-info/entry_points.txt,sha256=6IYgybtEZPhKDHLxDSoOzQBe5eR3TCsns6r8H0Y2CVc,158
+shell_tools-1.1.7.dist-info/top_level.txt,sha256=NMLTMkfJEhhT5o1wFrqjBdThQq2Zx1T1Qcc5WiYLFe4,12
+shell_tools-1.1.7.dist-info/RECORD,,
