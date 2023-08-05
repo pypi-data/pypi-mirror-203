@@ -1,0 +1,5 @@
+setup.py
+ENSF_338_final_project.egg-info/PKG-INFO
+ENSF_338_final_project.egg-info/SOURCES.txt
+ENSF_338_final_project.egg-info/dependency_links.txt
+ENSF_338_final_project.egg-info/top_level.txt
