@@ -1,0 +1,10 @@
+ghid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ghid/_ghid.cp310-win_amd64.pyd,sha256=Jfw07ObB72QWSmvsK6yKXGY463ABwY_6lhV5ZkLmANM,6118922
+ghid/build.py,sha256=Jvhl0UdUWOpN1AtGK8WpPDBG4Egnt5qpFg1eFvFS17s,43297
+ghid/ghid.py,sha256=ermaNzjHIFwjAq4PXe9Tpe7HQIoZ1pG-LzzydET7rAE,116068
+ghid/go.py,sha256=e6h5HjU9LV06Iabtr2q02muCoAxuvVjW1shgRbmfYcQ,58253
+ghid-0.0.1.dist-info/LICENSE,sha256=9nlEUL-CyZOiAwYkhPJ9WpdcJXymCKI2riH4_lqvBps,1516
+ghid-0.0.1.dist-info/METADATA,sha256=U-SX0NpU-lIzHpcKNcliq8i7tZylYhyyOnybrK5YbJ0,540
+ghid-0.0.1.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+ghid-0.0.1.dist-info/top_level.txt,sha256=cVSNI-uNy3ECplFtHEwK2b-K-ftJVidlFf0FIQrEado,5
+ghid-0.0.1.dist-info/RECORD,,
