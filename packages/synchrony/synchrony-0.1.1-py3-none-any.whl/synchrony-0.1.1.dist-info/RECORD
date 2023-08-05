@@ -1,0 +1,11 @@
+s3synchrony/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+s3synchrony/s3synchrony.py,sha256=M0O-ecwMZ3q3Yyf2wchCD9RWwDt-WAZ5_DqEbRBmhqU,2772
+s3synchrony/DataPlatforms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+s3synchrony/DataPlatforms/baseconn.py,sha256=LuiGPf5Ce1KjGC-EQwOm5EYMUOvS_awoAE5dCujd1Iw,2934
+s3synchrony/DataPlatforms/s3conn.py,sha256=s2mJOjPHG1krxALjhVUH5CQ4nWUVoV0WNv0bpte_f50,40648
+synchrony-0.1.1.dist-info/COPYING.txt,sha256=147suqs6MvUiKCqV5RToQTFYHL1iLui1y5Z0UKarrQk,35849
+synchrony-0.1.1.dist-info/LICENSE.md,sha256=99-2l8iLG4Ob5F0f7pOMZteCHHLoph7KE1GLOaT0F0s,35564
+synchrony-0.1.1.dist-info/METADATA,sha256=rN3H8cgUm6sh_HbdUOolY33Ml5XjsQXvZ1OtFcOocWA,6098
+synchrony-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+synchrony-0.1.1.dist-info/top_level.txt,sha256=QH2dZteHICutyk2MZK-Ugxgzev6AodOXENUGmjDXboA,12
+synchrony-0.1.1.dist-info/RECORD,,
