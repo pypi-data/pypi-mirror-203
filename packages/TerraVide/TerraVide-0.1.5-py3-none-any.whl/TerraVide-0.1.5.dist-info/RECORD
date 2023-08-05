@@ -1,0 +1,11 @@
+terravide/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+terravide/src/GroundClassification.py,sha256=szcfUlXBWNZyfR98hb_1ECKATr8gba7vGoJwLme_k6s,1521
+terravide/src/Preprocessing.py,sha256=qaf8cUkuzrX59EpfsovTYBHuH3aL_gIrPHzAxLe_huU,6683
+terravide/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+terravide/src/dataset.py,sha256=BQ_h2M_yfeCRQK1-x7w2N3KodlItlXlCJNtBRZce5OA,5329
+terravide/src/info.py,sha256=-zM2c7QN1VmB6LKyxk_a4VmBcR9zFfjgf1zTVyp_OIk,1890
+TerraVide-0.1.5.dist-info/LICENSE.txt,sha256=Xls7b8BjxTFa4V8KSKGS6btKzcHClWKfXrybObzVdHM,1079
+TerraVide-0.1.5.dist-info/METADATA,sha256=b-33_QA6tgboi7CFIvwXQVci5-Nqypw2F3f0nxRwcSs,1429
+TerraVide-0.1.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+TerraVide-0.1.5.dist-info/top_level.txt,sha256=_TYpiafDLYgGHsklKVyIKSslDujxc25q5wCHqgHwOK8,23
+TerraVide-0.1.5.dist-info/RECORD,,
