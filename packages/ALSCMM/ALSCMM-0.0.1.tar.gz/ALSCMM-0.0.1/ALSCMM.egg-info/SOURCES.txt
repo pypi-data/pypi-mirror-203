@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+ALSCMM.egg-info/PKG-INFO
+ALSCMM.egg-info/SOURCES.txt
+ALSCMM.egg-info/dependency_links.txt
+ALSCMM.egg-info/not-zip-safe
+ALSCMM.egg-info/requires.txt
+ALSCMM.egg-info/top_level.txt

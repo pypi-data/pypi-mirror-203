@@ -1,0 +1,4 @@
+
+include *.txt  # 包含文件
+recursive-include examples *.txt *.py  # 递归查找这三个类型文件，多个文件用空格隔开
+prune examples/sample?/build  # 排除此文件
