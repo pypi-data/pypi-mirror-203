@@ -1,0 +1,10 @@
+setup.py
+gamfra_test_probability/Binomialdistribution.py
+gamfra_test_probability/Gaussiandistribution.py
+gamfra_test_probability/Generaldistribution.py
+gamfra_test_probability/__init__.py
+gamfra_test_probability.egg-info/PKG-INFO
+gamfra_test_probability.egg-info/SOURCES.txt
+gamfra_test_probability.egg-info/dependency_links.txt
+gamfra_test_probability.egg-info/not-zip-safe
+gamfra_test_probability.egg-info/top_level.txt
