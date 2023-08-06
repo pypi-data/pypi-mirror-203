@@ -1,0 +1,13 @@
+{
+  "method": "get_proxy_transaction_count",
+  "module": "proxy",
+  "kwargs": {
+    "address": "0x2910543af39aba0cd09dbb2d50200b3e800a63d2"
+  },
+  "log_timestamp": "2023-04-18-20:33:30",
+  "res": {
+    "jsonrpc": "2.0",
+    "cid": 1,
+    "result": "0xaf64"
+  }
+}

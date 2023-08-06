@@ -1,0 +1,45 @@
+{
+  "method": "get_internal_txs_by_address",
+  "module": "accounts",
+  "kwargs": {
+    "address": "0x126c5b0b637340569ee98c768e97992ea2fa426d",
+    "startblock": 4397831,
+    "endblock": 4397831,
+    "sort": "asc"
+  },
+  "log_timestamp": "2023-04-18-20:32:55",
+  "res": [
+    {
+      "blockNumber": "4397831",
+      "timeStamp": "1615102410",
+      "hash": "0x988b215379dd9fe320e2c6de7781b67a09f8b8bd8f8c95d96bcfa6f9a5513f40",
+      "from": "0x126c5b0b637340569ee98c768e97992ea2fa426d",
+      "to": "0x2ac3c1d3e24b45c6c310534bc2dd84b5ed576335",
+      "value": "0",
+      "contractAddress": "",
+      "input": "",
+      "type": "staticcall",
+      "gas": "49707",
+      "gasUsed": "1440",
+      "traceId": "0",
+      "isError": "0",
+      "errCode": ""
+    },
+    {
+      "blockNumber": "4397831",
+      "timeStamp": "1615102410",
+      "hash": "0x988b215379dd9fe320e2c6de7781b67a09f8b8bd8f8c95d96bcfa6f9a5513f40",
+      "from": "0x126c5b0b637340569ee98c768e97992ea2fa426d",
+      "to": "0x2ac3c1d3e24b45c6c310534bc2dd84b5ed576335",
+      "value": "0",
+      "contractAddress": "",
+      "input": "",
+      "type": "call",
+      "gas": "17805",
+      "gasUsed": "15143",
+      "traceId": "1",
+      "isError": "0",
+      "errCode": ""
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "method": "get_contract_creator_and_creation_tx_hash",
+  "module": "contracts",
+  "kwargs": {
+    "addresses": [
+      "0x7af963cF6D228E564e2A0aA0DdBF06210B38615D"
+    ]
+  },
+  "log_timestamp": "2023-04-18-20:33:08",
+  "res": [
+    {
+      "contractAddress": "0x7af963cf6d228e564e2a0aa0ddbf06210b38615d",
+      "contractCreator": "0x0402c3407dcbd476c3d2bbd80d1b375144baf4a2",
+      "txHash": "0x15a574c775917dc3ea5f433b45dc9c398f3bb842c34d747aac8fc89d336a0309"
+    }
+  ]
+}

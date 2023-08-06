@@ -1,0 +1,13 @@
+{
+  "method": "get_proxy_est_gas",
+  "module": "proxy",
+  "kwargs": {
+    "data": "0x4e71d92d",
+    "to": "0xf0160428a8552ac9bb7e050d90eeade4ddd52843",
+    "value": "0xff22",
+    "gas_price": "0x51da038cc",
+    "gas": "0x5f5e0ff"
+  },
+  "log_timestamp": "2023-04-18-20:33:34",
+  "res": "EtherscanErrorResponse(\"response={'jsonrpc': '2.0', 'id': 1, 'error': {'code': -32000, 'message': 'err: max fee per gas less than block base fee: address 0x0000000000000000000000000000000000000000, maxFeePerGas: 21971876044 baseFee: 52762442675 (supplied gas 12510499)'}}\")"
+}

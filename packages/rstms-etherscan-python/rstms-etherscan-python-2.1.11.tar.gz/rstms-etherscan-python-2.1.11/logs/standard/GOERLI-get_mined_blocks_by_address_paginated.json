@@ -1,0 +1,512 @@
+{
+  "method": "get_mined_blocks_by_address_paginated",
+  "module": "accounts",
+  "kwargs": {
+    "address": "0x0000000000000000000000000000000000000000",
+    "page": 1,
+    "offset": 100
+  },
+  "log_timestamp": "2023-04-18-20:33:02",
+  "res": [
+    {
+      "blockNumber": "8853106",
+      "timeStamp": "1681867452",
+      "blockReward": "40592555882213585"
+    },
+    {
+      "blockNumber": "8852820",
+      "timeStamp": "1681862748",
+      "blockReward": "10143372235023378"
+    },
+    {
+      "blockNumber": "8852504",
+      "timeStamp": "1681857492",
+      "blockReward": "40532651355291393"
+    },
+    {
+      "blockNumber": "8852479",
+      "timeStamp": "1681857096",
+      "blockReward": "32295976481555807"
+    },
+    {
+      "blockNumber": "8852471",
+      "timeStamp": "1681856988",
+      "blockReward": "84139015370520399"
+    },
+    {
+      "blockNumber": "8852191",
+      "timeStamp": "1681852428",
+      "blockReward": "100050154595065341"
+    },
+    {
+      "blockNumber": "8852102",
+      "timeStamp": "1681850868",
+      "blockReward": "33638129430129138"
+    },
+    {
+      "blockNumber": "8852054",
+      "timeStamp": "1681850088",
+      "blockReward": "78962835772193176"
+    },
+    {
+      "blockNumber": "8852027",
+      "timeStamp": "1681849596",
+      "blockReward": "100618311490454133"
+    },
+    {
+      "blockNumber": "8851887",
+      "timeStamp": "1681847496",
+      "blockReward": "23418944570695667"
+    },
+    {
+      "blockNumber": "8851870",
+      "timeStamp": "1681847196",
+      "blockReward": "72347624591748863"
+    },
+    {
+      "blockNumber": "8851810",
+      "timeStamp": "1681846068",
+      "blockReward": "68151111037820992"
+    },
+    {
+      "blockNumber": "8851799",
+      "timeStamp": "1681845864",
+      "blockReward": "53133578392776877"
+    },
+    {
+      "blockNumber": "8851722",
+      "timeStamp": "1681844640",
+      "blockReward": "186803529145503791"
+    },
+    {
+      "blockNumber": "8851720",
+      "timeStamp": "1681844616",
+      "blockReward": "171266156763687124"
+    },
+    {
+      "blockNumber": "8851644",
+      "timeStamp": "1681843224",
+      "blockReward": "57229617326538320"
+    },
+    {
+      "blockNumber": "8851594",
+      "timeStamp": "1681842456",
+      "blockReward": "50848903346446977"
+    },
+    {
+      "blockNumber": "8851400",
+      "timeStamp": "1681839192",
+      "blockReward": "289932515514733805"
+    },
+    {
+      "blockNumber": "8851356",
+      "timeStamp": "1681838484",
+      "blockReward": "66859707029973667"
+    },
+    {
+      "blockNumber": "8851189",
+      "timeStamp": "1681835880",
+      "blockReward": "302032462847640280"
+    },
+    {
+      "blockNumber": "8851163",
+      "timeStamp": "1681835448",
+      "blockReward": "81466570755553163"
+    },
+    {
+      "blockNumber": "8850991",
+      "timeStamp": "1681832748",
+      "blockReward": "216776711728831848"
+    },
+    {
+      "blockNumber": "8850926",
+      "timeStamp": "1681831632",
+      "blockReward": "98323251677895814"
+    },
+    {
+      "blockNumber": "8850862",
+      "timeStamp": "1681830624",
+      "blockReward": "257259313899919492"
+    },
+    {
+      "blockNumber": "8850739",
+      "timeStamp": "1681828644",
+      "blockReward": "170618599991669389"
+    },
+    {
+      "blockNumber": "8850626",
+      "timeStamp": "1681826700",
+      "blockReward": "286152134236405112"
+    },
+    {
+      "blockNumber": "8850609",
+      "timeStamp": "1681826400",
+      "blockReward": "69274267958590401"
+    },
+    {
+      "blockNumber": "8850521",
+      "timeStamp": "1681825008",
+      "blockReward": "130440642927243371"
+    },
+    {
+      "blockNumber": "8850357",
+      "timeStamp": "1681821960",
+      "blockReward": "45527551173623914"
+    },
+    {
+      "blockNumber": "8850176",
+      "timeStamp": "1681818948",
+      "blockReward": "66927861795042627"
+    },
+    {
+      "blockNumber": "8849916",
+      "timeStamp": "1681814628",
+      "blockReward": "191547022174743836"
+    },
+    {
+      "blockNumber": "8849563",
+      "timeStamp": "1681808604",
+      "blockReward": "256666557391735661"
+    },
+    {
+      "blockNumber": "8849405",
+      "timeStamp": "1681805904",
+      "blockReward": "55131305587294090"
+    },
+    {
+      "blockNumber": "8849020",
+      "timeStamp": "1681799652",
+      "blockReward": "99040851674305291"
+    },
+    {
+      "blockNumber": "8848822",
+      "timeStamp": "1681796148",
+      "blockReward": "49809396929408944"
+    },
+    {
+      "blockNumber": "8848819",
+      "timeStamp": "1681796112",
+      "blockReward": "29739271757765585"
+    },
+    {
+      "blockNumber": "8848752",
+      "timeStamp": "1681795104",
+      "blockReward": "31571483897994377"
+    },
+    {
+      "blockNumber": "8848689",
+      "timeStamp": "1681794108",
+      "blockReward": "43561214252016353"
+    },
+    {
+      "blockNumber": "8848651",
+      "timeStamp": "1681793460",
+      "blockReward": "43523273187901057"
+    },
+    {
+      "blockNumber": "8848614",
+      "timeStamp": "1681792908",
+      "blockReward": "10198725743143447"
+    },
+    {
+      "blockNumber": "8848513",
+      "timeStamp": "1681791240",
+      "blockReward": "23060892282967228"
+    },
+    {
+      "blockNumber": "8848479",
+      "timeStamp": "1681790736",
+      "blockReward": "46751530909586629"
+    },
+    {
+      "blockNumber": "8848409",
+      "timeStamp": "1681789596",
+      "blockReward": "8385826730432547"
+    },
+    {
+      "blockNumber": "8848403",
+      "timeStamp": "1681789512",
+      "blockReward": "45535620992737216"
+    },
+    {
+      "blockNumber": "8848395",
+      "timeStamp": "1681789392",
+      "blockReward": "75636291372317007"
+    },
+    {
+      "blockNumber": "8848185",
+      "timeStamp": "1681786092",
+      "blockReward": "179610921148005924"
+    },
+    {
+      "blockNumber": "8848056",
+      "timeStamp": "1681783920",
+      "blockReward": "16648121410050511"
+    },
+    {
+      "blockNumber": "8847953",
+      "timeStamp": "1681782312",
+      "blockReward": "11836781113293588"
+    },
+    {
+      "blockNumber": "8847824",
+      "timeStamp": "1681780332",
+      "blockReward": "17689543017039983"
+    },
+    {
+      "blockNumber": "8847794",
+      "timeStamp": "1681779780",
+      "blockReward": "15338744493911346"
+    },
+    {
+      "blockNumber": "8847750",
+      "timeStamp": "1681779024",
+      "blockReward": "7048379902083917"
+    },
+    {
+      "blockNumber": "8847523",
+      "timeStamp": "1681775364",
+      "blockReward": "14276373074830890"
+    },
+    {
+      "blockNumber": "8847375",
+      "timeStamp": "1681772880",
+      "blockReward": "19403541783976087"
+    },
+    {
+      "blockNumber": "8847135",
+      "timeStamp": "1681769136",
+      "blockReward": "15480436991252191"
+    },
+    {
+      "blockNumber": "8846999",
+      "timeStamp": "1681767060",
+      "blockReward": "18894507285229542"
+    },
+    {
+      "blockNumber": "8846956",
+      "timeStamp": "1681766316",
+      "blockReward": "20395133412832936"
+    },
+    {
+      "blockNumber": "8846849",
+      "timeStamp": "1681764552",
+      "blockReward": "26259478345366797"
+    },
+    {
+      "blockNumber": "8846729",
+      "timeStamp": "1681762740",
+      "blockReward": "18659809119202943"
+    },
+    {
+      "blockNumber": "8846680",
+      "timeStamp": "1681761840",
+      "blockReward": "22561740527892762"
+    },
+    {
+      "blockNumber": "8846618",
+      "timeStamp": "1681760952",
+      "blockReward": "10280228291232014"
+    },
+    {
+      "blockNumber": "8846548",
+      "timeStamp": "1681759836",
+      "blockReward": "10978425456329855"
+    },
+    {
+      "blockNumber": "8846504",
+      "timeStamp": "1681759212",
+      "blockReward": "45415686065922173"
+    },
+    {
+      "blockNumber": "8846418",
+      "timeStamp": "1681757688",
+      "blockReward": "16251570920963309"
+    },
+    {
+      "blockNumber": "8846344",
+      "timeStamp": "1681756500",
+      "blockReward": "69708728959139564"
+    },
+    {
+      "blockNumber": "8846282",
+      "timeStamp": "1681755528",
+      "blockReward": "37894336697230904"
+    },
+    {
+      "blockNumber": "8846148",
+      "timeStamp": "1681753164",
+      "blockReward": "41428919243811723"
+    },
+    {
+      "blockNumber": "8846131",
+      "timeStamp": "1681752828",
+      "blockReward": "112258918355728435"
+    },
+    {
+      "blockNumber": "8846048",
+      "timeStamp": "1681751352",
+      "blockReward": "55993047384958927"
+    },
+    {
+      "blockNumber": "8845925",
+      "timeStamp": "1681749240",
+      "blockReward": "54745934307153013"
+    },
+    {
+      "blockNumber": "8845815",
+      "timeStamp": "1681747476",
+      "blockReward": "28972210074828061"
+    },
+    {
+      "blockNumber": "8845734",
+      "timeStamp": "1681746168",
+      "blockReward": "80995103434926664"
+    },
+    {
+      "blockNumber": "8845698",
+      "timeStamp": "1681745592",
+      "blockReward": "126098799392131756"
+    },
+    {
+      "blockNumber": "8845646",
+      "timeStamp": "1681744752",
+      "blockReward": "110018091517540791"
+    },
+    {
+      "blockNumber": "8845640",
+      "timeStamp": "1681744656",
+      "blockReward": "50316622284208805"
+    },
+    {
+      "blockNumber": "8845597",
+      "timeStamp": "1681743972",
+      "blockReward": "46336030145438538"
+    },
+    {
+      "blockNumber": "8845574",
+      "timeStamp": "1681743636",
+      "blockReward": "51335399013203876"
+    },
+    {
+      "blockNumber": "8845569",
+      "timeStamp": "1681743516",
+      "blockReward": "125032048121543649"
+    },
+    {
+      "blockNumber": "8845389",
+      "timeStamp": "1681740708",
+      "blockReward": "222164073869902965"
+    },
+    {
+      "blockNumber": "8845385",
+      "timeStamp": "1681740648",
+      "blockReward": "0"
+    },
+    {
+      "blockNumber": "8845378",
+      "timeStamp": "1681740528",
+      "blockReward": "96363307413520182"
+    },
+    {
+      "blockNumber": "8845323",
+      "timeStamp": "1681739676",
+      "blockReward": "160676000354815040"
+    },
+    {
+      "blockNumber": "8845279",
+      "timeStamp": "1681738920",
+      "blockReward": "61299409558785057"
+    },
+    {
+      "blockNumber": "8845211",
+      "timeStamp": "1681737780",
+      "blockReward": "100767384964936259"
+    },
+    {
+      "blockNumber": "8845205",
+      "timeStamp": "1681737672",
+      "blockReward": "80578855698440214"
+    },
+    {
+      "blockNumber": "8845195",
+      "timeStamp": "1681737516",
+      "blockReward": "234289410729201467"
+    },
+    {
+      "blockNumber": "8845193",
+      "timeStamp": "1681737456",
+      "blockReward": "68350551499026431"
+    },
+    {
+      "blockNumber": "8845165",
+      "timeStamp": "1681737012",
+      "blockReward": "95114555967104503"
+    },
+    {
+      "blockNumber": "8845163",
+      "timeStamp": "1681736988",
+      "blockReward": "38960030368279518"
+    },
+    {
+      "blockNumber": "8845072",
+      "timeStamp": "1681735524",
+      "blockReward": "61352535107300193"
+    },
+    {
+      "blockNumber": "8845021",
+      "timeStamp": "1681734600",
+      "blockReward": "26957849372324665"
+    },
+    {
+      "blockNumber": "8844989",
+      "timeStamp": "1681734072",
+      "blockReward": "28485767676267927"
+    },
+    {
+      "blockNumber": "8844929",
+      "timeStamp": "1681733148",
+      "blockReward": "43464340354052917"
+    },
+    {
+      "blockNumber": "8844847",
+      "timeStamp": "1681731804",
+      "blockReward": "60223182915294361"
+    },
+    {
+      "blockNumber": "8844756",
+      "timeStamp": "1681730460",
+      "blockReward": "21771800675919921"
+    },
+    {
+      "blockNumber": "8844750",
+      "timeStamp": "1681730376",
+      "blockReward": "36565371201413621"
+    },
+    {
+      "blockNumber": "8844664",
+      "timeStamp": "1681729092",
+      "blockReward": "27341860503033403"
+    },
+    {
+      "blockNumber": "8844640",
+      "timeStamp": "1681728720",
+      "blockReward": "31555276894611007"
+    },
+    {
+      "blockNumber": "8844590",
+      "timeStamp": "1681727904",
+      "blockReward": "31816559039120331"
+    },
+    {
+      "blockNumber": "8844589",
+      "timeStamp": "1681727892",
+      "blockReward": "62471402698995891"
+    },
+    {
+      "blockNumber": "8844547",
+      "timeStamp": "1681727208",
+      "blockReward": "41892380398914695"
+    }
+  ]
+}

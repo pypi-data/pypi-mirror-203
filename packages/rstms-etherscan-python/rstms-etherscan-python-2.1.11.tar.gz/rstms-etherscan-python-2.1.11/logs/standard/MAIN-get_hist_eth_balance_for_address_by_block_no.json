@@ -1,0 +1,10 @@
+{
+  "method": "get_hist_eth_balance_for_address_by_block_no",
+  "module": "pro",
+  "kwargs": {
+    "address": "0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae",
+    "block_no": "8000000"
+  },
+  "log_timestamp": "2023-04-18-20:33:10",
+  "res": "EtherscanUnauthorizedEndpoint(\"Sorry, it looks like you are trying to access an API Pro endpoint. Contact us to upgrade to API Pro. url='https://api.etherscan.io/api?module=account&action=balancehistory&address=0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae&blockno=8000000&apikey=...'\")"
+}

@@ -1,0 +1,25 @@
+# notebooks
+*.ipynb
+
+# pyc files
+*pyc*
+
+# coverage
+*coverage*
+
+# VSCode
+.vscode/*
+
+# Sphinx
+docs
+
+# eggs
+*egg*
+
+.fmt
+.black
+.flake8
+.errors
+dist
+postactivate
+.release

@@ -1,0 +1,7 @@
+{
+  "method": "get_total_eth_supply",
+  "module": "stats",
+  "kwargs": {},
+  "log_timestamp": "2023-04-18-20:33:45",
+  "res": "116275675499000000000000000"
+}

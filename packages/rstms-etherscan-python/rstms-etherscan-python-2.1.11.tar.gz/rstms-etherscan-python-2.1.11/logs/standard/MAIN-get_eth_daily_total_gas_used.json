@@ -1,0 +1,11 @@
+{
+  "method": "get_eth_daily_total_gas_used",
+  "module": "pro",
+  "kwargs": {
+    "start_date": "2019-02-01",
+    "end_date": "2019-02-28",
+    "sort": "asc"
+  },
+  "log_timestamp": "2023-04-18-20:33:18",
+  "res": "EtherscanUnauthorizedEndpoint(\"Sorry, it looks like you are trying to access an API Pro endpoint. Contact us to upgrade to API Pro. url='https://api.etherscan.io/api?module=stats&action=dailygasused&startdate=2019-02-01&enddate=2019-02-28&sort=asc&apikey=...'\")"
+}
