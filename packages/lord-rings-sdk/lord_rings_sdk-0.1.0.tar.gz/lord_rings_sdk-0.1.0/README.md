@@ -1,0 +1,54 @@
+# Lord of ring SDK
+
+## Installation
+
+pip install lord_of_rings_sdk
+
+## Import
+
+The Client object is the cornerstone of the Lord of the Rings API SDK. Use it to make calls to the API endpoints and retrieve the corresponding data.
+
+```
+from lord_rings_sdk import Client
+client = Client(version="v2", env="dev")
+```
+
+## Methods
+
+- `movie.get` This method is used to retrieve a list of all the movies available.
+  ```
+  client.movie.get()
+  client.movie.get(movie_id)
+  ```
+- `movie.get_quote` This method is used to retrieve all the quotes from a specific movie. Note that this method only works for the Lord of the Rings trilogy. You can specify the movie's ID using the id parameter.
+  ```
+  client.movie.get_quote(id=movie_id)
+  ```
+
+## Parameters
+
+The SDK methods support parameters to include in the query. They allow pagination, sorting and filtering by marching values.
+
+```
+client.movie.get(
+    parameters=Parameters(
+        pagination=PaginationOptions(limit=1, page=1, offset=0),
+        sorting=SortingOptions(direction="desc", parameter="name"),
+        filtering=FilteringOptions(
+            matches={Match(parameter="runtimeInMinutes", value="462")}
+        ),
+    )
+)
+```
+
+## Test
+
+In order to try the SDK follow the next steps:
+
+- Install the SDK
+- Import the SDK
+- Sign up in the API https://the-one-api.dev/
+- Login in the API https://the-one-api.dev/
+- Get the access token
+- Export the access token in the LORD_RINGS_TOKEN env variable or set the `headers` argument when calling the methods with the `Authorization` header.
+- Try SDK methods
