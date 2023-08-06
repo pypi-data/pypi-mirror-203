@@ -1,0 +1,11 @@
+take_it_easy/__init__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+take_it_easy/_modidx.py,sha256=fny14WFVz_jYi8MpCEbGlIXWyWC1yM-MgyBMIAXY-Bs,3344
+take_it_easy/board.py,sha256=jioxixcDEzaIJNflJSzUMj0_t1ZgTXXYmWLxyEW6J7c,3479
+take_it_easy/play.py,sha256=4WU5o0W_tRsMx3qUBlthgEykyLic1zBby9nzk5R9fiA,2187
+take_it_easy/tiles.py,sha256=vzFT0XCUhhO3CkGy38koxE9TeECJ9IwcOQACmx7tPw0,2053
+take_it_easy-0.0.3.dist-info/LICENSE,sha256=Jan8iAuZ2IzedgvYqIMNtEqkOaItwKYhoB0cS2SB9nk,1071
+take_it_easy-0.0.3.dist-info/METADATA,sha256=ErQUOxagC6mc5YzgAibA065Ced9q-qeMJBnDh2-G3Bg,11616
+take_it_easy-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+take_it_easy-0.0.3.dist-info/entry_points.txt,sha256=tqxNfJK6HSkMdW3Q0qV9YYQn8XOS1MCKFnyqqUL0knE,46
+take_it_easy-0.0.3.dist-info/top_level.txt,sha256=UfZl7KCsnwPWkeZJW_2uxYP0HhngGNCsiMRkzBfoHv4,13
+take_it_easy-0.0.3.dist-info/RECORD,,
