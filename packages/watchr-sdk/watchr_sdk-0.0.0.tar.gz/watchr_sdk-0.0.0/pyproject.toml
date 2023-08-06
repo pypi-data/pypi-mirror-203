@@ -1,0 +1,89 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "watchr-sdk"
+description = 'Watchr Python SDK'
+readme = "README.md"
+requires-python = ">=3.7"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Amin Alaee", email = "me@aminalaee.dev" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "httpx",
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://github.com/getwatchr/watchr-python#readme"
+Issues = "https://github.com/getwatchr/watchr-python/issues"
+Source = "https://github.com/getwatchr/watchr-python"
+
+[tool.hatch.version]
+path = "watchr_sdk/__init__.py"
+
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "tests/",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["watchr_sdk"]
+
+[tool.hatch.envs.test]
+dependencies = [
+  "black==23.3.0",
+  "coverage==7.2.3",
+  "mypy==1.2.0",
+  "pytest==7.3.1",
+  "ruff==0.0.261",
+]
+
+[tool.hatch.envs.test.scripts]
+format = [
+  "black .",
+  "ruff --fix .",
+]
+test = [
+  "coverage run -m pytest",
+  "coverage report --show-missing --skip-covered",
+  "coverage xml",
+]
+lint = [
+  "ruff .",
+  "black --check .",
+  "mypy watchr_sdk tests",
+]
+
+[[tool.hatch.envs.test.matrix]]
+python = ["37", "38", "39", "310", "311"]
+
+[tool.mypy]
+disallow_untyped_defs = true
+ignore_missing_imports = true
+show_error_codes = true
+no_implicit_optional = true
+
+[tool.coverage.run]
+source_pkgs = [
+  "watchr_sdk",
+  "tests",
+]
+
+[tool.ruff.isort]
+combine-as-imports = true
