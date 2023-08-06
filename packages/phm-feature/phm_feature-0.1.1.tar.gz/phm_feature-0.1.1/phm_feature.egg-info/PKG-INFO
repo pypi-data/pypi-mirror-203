@@ -1,0 +1,192 @@
+Metadata-Version: 2.1
+Name: phm-feature
+Version: 0.1.1
+Summary: time-freq feature from signal for phm purpose
+Home-page: UNKNOWN
+Author: QinHaiNing
+Author-email: 2364839934@qq.com
+License: UNKNOWN
+Description: phm-feature
+        =======================================================================================================
+        
+        介绍
+        ----------------------------------------------------------------------------
+        
+        - phm中的特征抽取任务
+        - 抽取振动信号中的各类时、频域业务特征值
+        
+        软件架构
+        -------------------------------------------------------------------------------
+        
+        软件架构说明
+        
+        .. code-block:: shell
+        
+            .
+            ├── build
+            │   ├── bdist.linux-x86_64
+            │   └── lib
+            │       └── phm_feature
+            │           └── __init__.py
+            ├── dist
+            │   ├── phm_feature-0.0.2-py3-none-any.whl
+            │   └── phm_feature-0.0.2.tar.gz
+            ├── LICENSE
+            ├── phm_feature
+            │   ├── __init__.py
+            ├── phm_feature.egg-info
+            │   ├── dependency_links.txt
+            │   ├── PKG-INFO
+            │   ├── SOURCES.txt
+            │   └── top_level.txt
+            ├── README.md
+            ├── setup.py
+            └── test.py
+        
+        安装教程
+        -----------------------------------------------------------------------------------
+        
+        - 使用pip进行安装
+        
+        .. code-block:: python
+        
+            pip install phm-feature
+        
+        使用说明
+        -------------------------------------------------------------------------------------
+        
+        获得振动信号的特征值
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        .. code-block:: python
+        
+            import phm_feature
+            from phm_feature import *
+            enable_parallel(processnum=None) 开启多线程模式
+            disable_parallel() 开启单线程模式
+            feature_t(data) 获取时间域特征
+            feature_f 获取频率域特征
+            fft(data, 50) 快速离散傅里叶变换
+            power(data, 50) 功率谱
+            ifft(data, 50) 快速离散逆傅里叶变换
+            cepstrum(data, 50) 倒谱
+            envelope(data) 包络谱
+            window(data, 'hamming') 加窗-汉明窗
+            divide(data, 50, 25) 分帧
+        
+        参与贡献
+        --------------------------------------------------------------------------------------------
+        
+        2022-07-04 v0.0.1
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        pypi上传初版本
+        
+        pypi上传phm-feature初版本
+        
+        
+        2022-07-04 v0.0.2
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        新增多线程模式
+        
+        
+        phm-feature
+        =========================================================================
+        
+        介绍
+        -------------------------------------------------------------------------
+        
+        使用torch torchaudio 构建PHM特征抽取功能层
+        
+        功能层介绍
+        -----------------------------------------------------------------------------
+        
+        torchphm.layers 将phm固定使用的数据操作，固化为如下层：
+        
+        .. code-block:: python
+        
+            1. STFT 离散傅立叶变换
+            2. Spectrogram 谱图
+            3. MelFilterbank mel譜过滤
+            4. AmplitudeToDb 幅度取分贝
+            5. TimeStretch 变速不变调
+            6. ComplexNorm 复数输出取模'范数'
+            7. ApplyFilterbank 过滤器应用
+        
+        应用场景
+        ------------------------------------------------------------------------------------
+        
+        .. note::
+        
+            组合上述功能层，实现不同场景
+        
+        .. code-block:: shell
+        
+            1. STFT
+                分帧==>加窗==>短时离散傅立叶变换
+            
+            2. "变速不变调" Time scale modification
+                详细见 https://zhuanlan.zhihu.com/p/337193578
+                用于声谱图压缩、扩张处理，供后续分析
+            
+            3. 梅尔mel谱转换
+               对于语谱图进行mel谱转换
+            
+            4. HPSS
+                中值滤波，过滤出频率的谐波分量与冲击分量
+                为什么中值滤波，可以过滤出"数据轮廓"及发现"谐波分量和冲击分量"，参见
+                https://blog.csdn.net/qq_38131594/article/details/80758567
+        
+        
+        软件结构说明
+        -----------------------------------------------------------------------------------
+        
+        .. code-block:: shell
+        
+            .
+            ├── dist
+            │   ├── torchphm-1.1.7.tar.gz
+            │   └── torchphm-1.1.8.tar.gz
+            ├── draw
+            │   ├── draw_functional.py
+            │   ├── draw_layers.py
+            │   ├── draw_torchphm_layers.ipynb
+            │   ├── torchphm -> ../torchphm
+            │   └── Untitled.ipynb
+            ├── examples_torchphm.ipynb
+            ├── README.md
+            ├── setup.cfg
+            ├── setup.py
+            ├── tests
+            │   ├── test_functional.py
+            │   └── test_layers.py
+            ├── torchphm
+            │   ├── beta_hpss.py
+            │   ├── functional.py
+            │   ├── __init__.py
+            │   ├── layers.py
+            └── torchphm.egg-info
+        
+        ======================== =========== 
+        dist                     pypi上传包
+        ======================== =========== 
+        draw                     画图
+        examples_torchphm.ipynb  应用例程
+        tests                    测试文件
+        torchphm                 实现源码
+        ======================== =========== 
+        
+        安装教程
+        --------------------------------------------------------------------------------------
+        
+        .. code-block:: python 
+        
+            pip install phm-feature
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
