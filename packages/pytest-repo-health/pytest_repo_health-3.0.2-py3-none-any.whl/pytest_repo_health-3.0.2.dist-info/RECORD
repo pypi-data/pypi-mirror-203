@@ -1,0 +1,12 @@
+pytest_repo_health/__init__.py,sha256=gFgKBYsEbH3yQvZDiE2ofLUcBMvi_2Fs5yGPU64HsbQ,2433
+pytest_repo_health/plugin.py,sha256=P1LFekX1jcs4TXKFvg8pPhjyigoXY_pj4jbpOuO9sXc,6893
+pytest_repo_health/utils.py,sha256=fx6WLGOF9qacPA-FstCQCbMWa4qe_ADvRbxlEv3hBC0,1308
+pytest_repo_health/fixtures/__init__.py,sha256=3sa7fBET1nIkeGzAh4ivxiVf3I6bZ13cuOO9tgtm9JU,80
+pytest_repo_health/fixtures/git.py,sha256=sEL_qVEIZqdPgZQhev02WwrkK2Idfsf2dBYnGpauTGE,990
+pytest_repo_health/fixtures/github.py,sha256=e3f8soGgpRlJQ0BMQstNbD7Ct99VTz-lYnvx3WO-wd4,2704
+pytest_repo_health-3.0.2.dist-info/LICENSE,sha256=EGobS4txMkp4nvtKWfbPrHgaw0-Nl0_gZ5QYYWL0eRc,35135
+pytest_repo_health-3.0.2.dist-info/METADATA,sha256=JhuMK3nIxJ38SBCnx60t6P9-vlUVySmAMiPtkqAMBFk,7375
+pytest_repo_health-3.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pytest_repo_health-3.0.2.dist-info/entry_points.txt,sha256=wjY5s2H198z0s0_s0dtWmnQkeQNQwMbsPAwRGP825SA,46
+pytest_repo_health-3.0.2.dist-info/top_level.txt,sha256=gBwBLa15M80fFOz7LNEJnte8Nr9JDdUUc1xe42qy8ME,19
+pytest_repo_health-3.0.2.dist-info/RECORD,,
