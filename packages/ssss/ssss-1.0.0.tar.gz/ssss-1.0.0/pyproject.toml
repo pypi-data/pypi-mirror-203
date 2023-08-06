@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "ssss"
+version = "1.0.0"
+description = "ssss, short for Super Simple Static Site, is a static site generator that leverages Jinja and Markdown for creating templates and content. It generates static HTML files for an efficient and lightweight website."
+authors = ["Magnus Åberg <himself@magnusaberg.me>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+markdown = "^3.4.3"
+pyyaml = "^6.0"
+argparse = "^1.4.0"
+importlib-metadata = "^6.3.0"
+jinja2 = "^3.1.2"
+
+[tool.poetry.scripts]
+ssss = "ssss:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
