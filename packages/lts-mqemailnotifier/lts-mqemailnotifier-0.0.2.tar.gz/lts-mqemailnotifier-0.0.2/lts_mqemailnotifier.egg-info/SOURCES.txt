@@ -1,0 +1,9 @@
+README.md
+setup.py
+lts_mqemailnotifier.egg-info/PKG-INFO
+lts_mqemailnotifier.egg-info/SOURCES.txt
+lts_mqemailnotifier.egg-info/dependency_links.txt
+lts_mqemailnotifier.egg-info/requires.txt
+lts_mqemailnotifier.egg-info/top_level.txt
+mqresources/__init__.py
+mqresources/mqutils.py
