@@ -1,0 +1,15 @@
+tabledetect/__init__.py,sha256=OplJCmlTxrEkoBivPuEPBg-Y97Bisecl0H0pA6HXNXs,110
+tabledetect/tabledetect.py,sha256=CeiJTKkHL2_Acl9cAyG_4mjZtbCgUMy-u9MQLsXX2GI,3187
+tabledetect/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tabledetect/helpers/boundigbox_to_cropped_image.py,sha256=KQjqsXttgbW6WISPpr7GFK_sTQgmA_aNbXjt7OatHQE,2154
+tabledetect/helpers/download.py,sha256=HkZEn5OBjKjxBAw6EpKUw_I2rlS4oPtRKFoYtUVpNTI,730
+tabledetect/helpers/yolo_to_boundingbox.py,sha256=ejkfMutRwvBqmj1pisT5h6YLTqYVyAclBLR6es_Wbp4,784
+tabledetect/resources/examples/2007-01404285-p2.png,sha256=8b9XvqjkRWXPazkyLBrAi7GLwpYGtCclnMApr9INiOY,130362
+tabledetect/resources/examples/2007-02501625-p3.png,sha256=OHauu6AR9Z3aZeQD1f_hnVwRmQkJX0pAEezF4pXmO3A,145605
+tabledetect/resources/examples/2008-75500021-p4.png,sha256=QHMDuIgsxtgOouKUFd_8cDP-9_NHfG2CF9tpq_aXkJU,289812
+tabledetect/resources/examples/2008-75500021-p8.png,sha256=Sa5drYHix7POmbo_l4h3DN8CpZl9EmnC9v3Xsi3XHTY,275074
+tabledetect/resources/examples/2020-76400425-p1.png,sha256=Xw45uNcucP5TA02upHcFmE_HR2VCbT9SiJaXe_IsuLc,196663
+tabledetect-0.2.5.dist-info/LICENSE,sha256=ae1hkcvecWBJFKDYj2pDjbfudaVNF4kiWiv6DlIt3AQ,1101
+tabledetect-0.2.5.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+tabledetect-0.2.5.dist-info/METADATA,sha256=2EeLF1LfAqgxu2LB8VU4H2RIlu9CRJTE9dvxQVRY7ZU,884
+tabledetect-0.2.5.dist-info/RECORD,,
