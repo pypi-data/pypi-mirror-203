@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: oc-config-validate
+Version: 1000.0.2
+Summary: Validate OpenConfig-based configuration of devices.
+Author: Nowasky
+Author-email: nowasky.jr@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests
+
