@@ -1,0 +1,14 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+main.py,sha256=G3qGPu_y6me2P90pOJVWb1KmHZ2GyHToUsfuiZVX9hg,76
+cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli/cli.py,sha256=lCXCpOKVZcmRQdZDF3uT0i4H7vQ78RnnAr1pxJVn4fs,2459
+login/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+login/login.py,sha256=39njw5-M8vcDjyuqAq_lML9tu8wSDfSsbo0rdrDWf5Q,6586
+scraping/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scraping/scraper.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unitn_course_scraper-0.1.5.dist-info/LICENSE,sha256=-BeIbua7Ze0wmKeYex6XgWU9FccfhVic4NKvZjxm03M,34888
+unitn_course_scraper-0.1.5.dist-info/METADATA,sha256=aij3wrKRjUe352prwZcWEiEr01gkoAev6wZiGjK8t1c,1453
+unitn_course_scraper-0.1.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+unitn_course_scraper-0.1.5.dist-info/entry_points.txt,sha256=ISe_THHw3npb1prgVn0o2siQQPkBVAex7kUB3zgQ_bs,60
+unitn_course_scraper-0.1.5.dist-info/top_level.txt,sha256=T2j1o7U3fNEqSLsL2cWo5F7f7VyipA8WeJU7ujNL3U8,33
+unitn_course_scraper-0.1.5.dist-info/RECORD,,

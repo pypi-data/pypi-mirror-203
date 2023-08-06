@@ -1,0 +1,2 @@
+[console_scripts]
+unitn-course-scraper = cli.cli:parse_args
