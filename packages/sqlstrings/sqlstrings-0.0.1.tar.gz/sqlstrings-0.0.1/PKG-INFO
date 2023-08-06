@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: sqlstrings
+Version: 0.0.1
+Summary: Package generates SQL query strings in multiple dialects.
+Home-page: https://github.com/alikellaway/sqlstrings
+Author: Ali Kellaway
+Author-email: Ali Kellaway <ali.kellaway139@gmail.com>
+Project-URL: Homepage, https://github.com/alikellaway/sqlstrings
+Keywords: sql database python library strings generate
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sql_tools
+A set of Python functions allowing for the generation of sql statements in Python.
