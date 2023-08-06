@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: flask-redis-ex
+Version: 0.0.1
+Summary: use redis in flask
+Home-page: https://gitee.com/krealseu/flask-redis-ex
+Author: krealseu
+Author-email: lthee12@hotmail.com
+License: MIT
+Keywords: flask,redis
+Requires-Dist: Flask (>=0.8)
+Requires-Dist: redis (>=2.7.6)
+
