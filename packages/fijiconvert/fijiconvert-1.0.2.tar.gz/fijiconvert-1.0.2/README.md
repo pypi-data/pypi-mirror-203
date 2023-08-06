@@ -1,0 +1,1 @@
+This package provides a tool for converting FIJI markers and regions to XML objects.
