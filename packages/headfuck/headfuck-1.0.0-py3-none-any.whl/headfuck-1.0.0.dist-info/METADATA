@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: headfuck
+Version: 1.0.0
+Summary: A Brainfuck-like esoteric programming language with matrices
+Project-URL: Homepage, https://github.com/JJPMaster/headfuck
+Project-URL: Bug Tracker, https://github.com/JJPMaster/headfuck/issues
+Author-email: JJPMaster <ssatjyrbusiness@gmail.com>
+License-File: LICENSE
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# headfuck
+A Brainfuck-like esoteric programming language based on matrices.
