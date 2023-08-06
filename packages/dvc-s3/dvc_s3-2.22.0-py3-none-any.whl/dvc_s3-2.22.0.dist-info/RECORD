@@ -1,0 +1,14 @@
+dvc_s3/__init__.py,sha256=-c4Ezt6_sp-X7z6VvSXmZcoNXQgaBf_hvWZsCRjfp-U,7537
+dvc_s3/_dvc_s3_version.py,sha256=GXTVjcmQnmBmlau3g34VBzy-lzf6TBteli3JXgrnX7M,162
+dvc_s3/path.py,sha256=dZ8EvqLfDrlabCs7-g_0UdsATVStI0bNfNRNLOyqOwM,1656
+dvc_s3/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dvc_s3/tests/cloud.py,sha256=yZxpVRf3QR1lfEEuZgEHHl-JzD1e3iNunV51ZvsudJw,2625
+dvc_s3/tests/conftest.py,sha256=UNhnW-wCMbleRbl2FIyk9oVuZiuhkOlbUsnL9XLf_yo,170
+dvc_s3/tests/fixtures.py,sha256=42K8L82DYaht3c67uykwEQRZ7gq-hsuRoRiO1SE9PwU,699
+dvc_s3/tests/test_dvc.py,sha256=_lc-T9r4DAloqaSoNZTEirV5Fjjpx-LmIp9yX4tcn7U,1935
+dvc_s3/tests/test_utils.py,sha256=mxCTv66IjjZITQgNjZxMT5qbs763mBSvoJSbQWUHVIw,713
+dvc_s3-2.22.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dvc_s3-2.22.0.dist-info/METADATA,sha256=nYt6ugOgLDBUcP6dN91G8tay2SzC8oY7dBvDTRbr3nc,2213
+dvc_s3-2.22.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dvc_s3-2.22.0.dist-info/top_level.txt,sha256=wmhe5BYuFIFaeqSv_6-C_9PKFpDQruZUVFaixEWky2o,7
+dvc_s3-2.22.0.dist-info/RECORD,,
