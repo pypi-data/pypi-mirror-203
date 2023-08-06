@@ -1,0 +1,69 @@
+[
+  {
+    "label": "登录方式",
+    "value": "login_type",
+    "type": 0,
+    "color": null,
+    "is_value": false,
+    "status": true,
+    "sort": 10,
+    "remark": null,
+    "children": [
+      {
+        "label": "普通扫码登录",
+        "value": "0",
+        "type": 1,
+        "color": "primary",
+        "is_value": true,
+        "status": true,
+        "sort": 0,
+        "remark": null,
+        "children": []
+      },
+      {
+        "label": "微信公众号扫码",
+        "value": "1",
+        "type": 1,
+        "color": "success",
+        "is_value": true,
+        "status": true,
+        "sort": 1,
+        "remark": null,
+        "children": []
+      },
+      {
+        "label": "飞书扫码登录",
+        "value": "2",
+        "type": 1,
+        "color": "primary",
+        "is_value": true,
+        "status": true,
+        "sort": 2,
+        "remark": null,
+        "children": []
+      },
+      {
+        "label": "钉钉扫码登录",
+        "value": "3",
+        "type": 1,
+        "color": "success",
+        "is_value": true,
+        "status": true,
+        "sort": 3,
+        "remark": null,
+        "children": []
+      },
+      {
+        "label": "关注微信公众号登录(待开发)",
+        "value": "4",
+        "type": 1,
+        "color": "success",
+        "is_value": true,
+        "status": true,
+        "sort": 4,
+        "remark": null,
+        "children": []
+      }
+    ]
+  }
+]
