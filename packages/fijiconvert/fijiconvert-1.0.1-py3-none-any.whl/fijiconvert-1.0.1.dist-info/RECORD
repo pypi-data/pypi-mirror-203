@@ -1,0 +1,15 @@
+fijiconvert/__init__.py,sha256=J0ff39vEVYgB_0jzX1sEoBfK0TEXl7WeKyhfVrE36r8,23
+fijiconvert/buildsetup.py,sha256=2B6e4k2DkjVUQcgGPpl5Xc-cNIMT2KVk-OE7OTKbfI8,285
+fijiconvert/converter.py,sha256=67Zse_G-OG_1ENbDwHM41D0T3QRm5FnQlNqEpbPwIZ8,9498
+fijiconvert/main.py,sha256=dElIBYq6kiB_QqKPmTMgG4n52N6dbYkWIe6NaNSoqtI,294
+fijiconvert/reader.py,sha256=ph2g2ZaveDbUpSFDzNmkD-tbsnAT8Beg01N36Y4wEzA,1899
+fijiconvert/setupcheckerr.py,sha256=UKbo9WyzeHy6UpoexPKJpMsHE-8wW5OZFsFztWa99zo,1412
+fijiconvert/tacchkdlg.py,sha256=eIrNoJe11My0Ndw0NRlvqkK6xgPakuY_y2AcIHowvqo,3261
+fijiconvert/ui_fijiconvertdialog.py,sha256=LS1_G-BRgQ7cPWpYJP8yqyTjXT2LFBLi1ftXv8M-lt4,24180
+fijiconvert/writer.py,sha256=jpMt5crJ7jluowhp13cqELKVo59UfCRXkUvxNctW9Vs,5281
+fijiconvert/xml_gui.py,sha256=oC95ucRhqncVfY0-vSvJI4w9k0tXIpASxBkzgGV2yI8,15104
+fijiconvert-1.0.1.dist-info/METADATA,sha256=wHR5p9UZZ2ARSwrkVldgJ9-3hha7OTcltMWNAOQxNjQ,421
+fijiconvert-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+fijiconvert-1.0.1.dist-info/entry_points.txt,sha256=kx-VmWB-_RxwE_cb95K02_zXxy3exiUNQQFQB71bHk0,50
+fijiconvert-1.0.1.dist-info/top_level.txt,sha256=LGJ5RAmDa6z2ngktwWQOopDKoe6gRymAvsls7j7KjHY,12
+fijiconvert-1.0.1.dist-info/RECORD,,
