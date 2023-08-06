@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: lazyfunc
+Version: 0.2.0
+Summary: Operations between callables, with lazy evaluation.
+Author-email: Josh Read <joshua-read@hotmail.co.uk>
+Project-URL: Documentation, https://josh-read.github.io/lazyfunc/
+Project-URL: Issues, https://github.com/josh-read/lazyfunc/issues
+Project-URL: Source, https://github.com/josh-read/lazyfunc
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: all
+Requires-Dist: lazyfunc[examples] ; extra == 'all'
+Requires-Dist: lazyfunc[dev] ; extra == 'all'
+Requires-Dist: lazyfunc[docs] ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: numpy ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs ; extra == 'docs'
+Requires-Dist: mkdocstrings-python-legacy ; extra == 'docs'
+Requires-Dist: mkdocs-material ; extra == 'docs'
+Provides-Extra: examples
+Requires-Dist: numpy ; extra == 'examples'
+Requires-Dist: scipy ; extra == 'examples'
+Requires-Dist: matplotlib ; extra == 'examples'
+

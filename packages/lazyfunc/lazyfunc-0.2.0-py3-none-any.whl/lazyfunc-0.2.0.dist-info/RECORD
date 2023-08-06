@@ -1,0 +1,11 @@
+_version.py,sha256=dQUHa1PGpJsNE2x_SQFxtOX-jousEqplwH1bdsk6mnE,160
+lazyfunc/__init__.py,sha256=bzXPTr53iyS467R6DxzufiGRFaslIGR6cCBM5HUaN4I,146
+lazyfunc/arguments.py,sha256=f8nDDsxCmTe6hTp7hbBGxsV_5a9bVaGbe3Jge_DLiOQ,231
+lazyfunc/lazy_func.py,sha256=TmYljcO5qH4DhqOgk0gGo-0NWeZ_imGuJ8Zwf0eBGA8,9831
+lazyfunc/operators.py,sha256=ovm8bM_NK4mjFaqUUBjDq5Eu8YZOaHGzl1v4OEXzXhE,2708
+lazyfunc/utils.py,sha256=Vu4ZBYEhIIXTPAzxqlhNCg99VEyYNWE2mWF_FL3ePKI,466
+lazyfunc-0.2.0.dist-info/LICENSE,sha256=bxrCoBFCKU5kZ3iDgMf1QPXRT9S8p2VsuV2E6BVniKg,1066
+lazyfunc-0.2.0.dist-info/METADATA,sha256=cbulyTTRN2ML5ndw4lfuYQDDWJCDQ5pPKeutSU3jZ5E,1445
+lazyfunc-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lazyfunc-0.2.0.dist-info/top_level.txt,sha256=0obUJk2Pn90M-yiO9nOXXQ1hpAtguG_5eVPUC3JLl2c,18
+lazyfunc-0.2.0.dist-info/RECORD,,
