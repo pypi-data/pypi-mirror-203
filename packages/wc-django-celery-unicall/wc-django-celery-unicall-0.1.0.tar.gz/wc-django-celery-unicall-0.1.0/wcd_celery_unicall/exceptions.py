@@ -1,0 +1,2 @@
+class UnicallError(Exception):
+    pass
