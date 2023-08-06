@@ -1,0 +1,4 @@
+contracts_folder: contracts
+
+cairo:
+  manifest: "cairo/Cargo.toml"
