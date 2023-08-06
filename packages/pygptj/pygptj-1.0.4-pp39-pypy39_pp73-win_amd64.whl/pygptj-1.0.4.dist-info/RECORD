@@ -1,0 +1,10 @@
+_pygptj.pypy39-pp73-win_amd64.pyd,sha256=oJODgyjz__3QUd8alRpStfvvv51iLE7NCf1Al-MUzAM,331776
+pygptj/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygptj/_logger.py,sha256=WFVAqybw6Iv37eWJ-8EHK3Jf_TK_LDcVbfgCsMvjD8E,661
+pygptj/constants.py,sha256=EqaA7xc5k9Q3mZ-IZG9oxAlu-Vswf7QGeRYweTTvids,146
+pygptj/model.py,sha256=ofdwtwR40qvtX5i0PE7S7k_jTVnDTSHPfBOLvdOCoks,4129
+pygptj-1.0.4.dist-info/LICENSE,sha256=HqeugnSeeR1FNP0tVPb7tFS7EEtPOhNc6JL0l9TPXlU,1094
+pygptj-1.0.4.dist-info/METADATA,sha256=DofMMgoA2vfGGO_avTEDknC-rb_3U0ZsXlBDn3EYv0Q,2226
+pygptj-1.0.4.dist-info/WHEEL,sha256=QQY0XPJVcbNrDwRnZBTwtxGbMWJnHaWRpMJLfPEPCFM,107
+pygptj-1.0.4.dist-info/top_level.txt,sha256=ueJs6t2fn4ggNMTihnxehDIaCVfGKh80LGrJNh1B7cw,15
+pygptj-1.0.4.dist-info/RECORD,,
