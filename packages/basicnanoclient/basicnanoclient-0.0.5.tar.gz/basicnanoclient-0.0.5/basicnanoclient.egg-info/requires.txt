@@ -1,0 +1,5 @@
+requests
+setuptools
+mkdocs
+mkdocstrings
+mkdocstrings-python
