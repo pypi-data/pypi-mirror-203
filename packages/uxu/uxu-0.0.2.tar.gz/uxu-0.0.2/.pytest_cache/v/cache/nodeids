@@ -1,0 +1,16 @@
+[
+  "tests/test_listdiff.py::test_compose_chars",
+  "tests/test_listdiff.py::test_concat_chars",
+  "tests/test_listdiff.py::test_expander1",
+  "tests/test_listdiff.py::test_expander_chars",
+  "tests/test_listdiff.py::test_prop_compose",
+  "tests/test_listdiff.py::test_prop_concat",
+  "tests/test_listdiff.py::test_recover_chars",
+  "tests/test_listdiff.py::test_recover_explicit",
+  "tests/test_listdiff.py::test_validate_chars",
+  "tests/test_listdiff.py::test_validate_explicit",
+  "tests/test_patch.py::test_button",
+  "tests/test_patch.py::test_examples",
+  "tests/test_patch.py::test_hydrate_examples",
+  "tests/test_patch.py::test_patch_1"
+]

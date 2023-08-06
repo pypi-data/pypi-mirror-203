@@ -1,0 +1,80 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "uxu"
+description = 'Server-side interactive HTML engine.'
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "E.W.Ayers", email = "contact@edayers.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "miniscutil",
+  "websockets",
+  "html5lib",
+  "dominate",
+
+  # server
+  "pydantic",
+  "pydantic[dotenv]",
+  "python-jose", # for JWTs
+  "starlette",
+
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://github.com/EdAyers/sss/uxu"
+Issues = "https://github.com/EdAyers/sss/issues"
+Source = "https://github.com/EdAyers/sss/uxu"
+
+[tool.hatch.version]
+path = "uxu/__about__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "pytest",
+  "pytest-cov",
+  "miniscutil @ {root:uri}/../miniscutil",
+]
+[tool.hatch.envs.default.scripts]
+cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=uxu --cov=tests {args}"
+no-cov = "cov --no-cov {args}"
+
+[[tool.hatch.envs.test.matrix]]
+python = ["37", "38", "39", "310", "311"]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = [
+  "uxu/__about__.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+[tool.hatch.envs.test]
+dependencies = [
+  "pytest", "pytest-cov", "hypothesis", "pytest-snapshot",
+  "pytest-asyncio",
+  "numpy",
+  "miniscutil @ {root:uri}/../miniscutil",
+]
