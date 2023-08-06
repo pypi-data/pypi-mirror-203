@@ -1,0 +1,17 @@
+vpp_papi/__init__.py,sha256=HUNMaL3gMo6Z8L24roOZ18SbriaoCE7gaZh4EEsOf70,827
+vpp_papi/macaddress.py,sha256=wZ5rKDm-4vHU7UHIKRPgN55KQi1t_VkMzBVDYZUMx6c,2144
+vpp_papi/vpp_format.py,sha256=YirDV_V8ap_7vXedfoGvkCFI4x0TcFtYTJ9EMjxk3kA,7692
+vpp_papi/vpp_papi.py,sha256=Yql_e5Mj-RphMesYszAu5UCKYk8xByyjryTr7x_35G8,33249
+vpp_papi/vpp_serializer.py,sha256=OLg4Z99dmY2L-Q41r8WAsIqmF5PvhtWyC1l86FxQYvs,21872
+vpp_papi/vpp_stats.py,sha256=lGDaPGG6yS9SoZjBgYgFl39bGVKMxa4YcJChq7RXtmY,18576
+vpp_papi/vpp_transport_socket.py,sha256=33rbABcZe7DQEok-_fByI7w_Eg1_nPv1roD40k1t3zc,7976
+vpp_papi/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vpp_papi/tests/test_macaddress.py,sha256=9SdbpISPdfZ1928e2Yg9GbM1ucQv1Kp_2ICDZjWpp_g,207
+vpp_papi/tests/test_vpp_format.py,sha256=OHxu0nWzdPF8DpPL30ul0TW-e1SI9j27hMOGaPQMbJg,4510
+vpp_papi/tests/test_vpp_papi.py,sha256=u_n-uEmLMOgM9A-IEOw67_00mWEdqnVwrGX4ZJRjhIg,6352
+vpp_papi/tests/test_vpp_serializer.py,sha256=FUnvCl-GcWVQ3vJTRN3p9BRvnqIjYjRvAeeifwiLKSY,24145
+vpp_papi-2.0.1.dist-info/LICENSE.txt,sha256=xllut76FgcGL5zbIRvuRc7aezPbvlMUTWJPsVr2Sugg,11358
+vpp_papi-2.0.1.dist-info/METADATA,sha256=f3_8KnDVXS9ZWt_G8BvTTLbvnL4_naOAox_jcqIT3kM,239
+vpp_papi-2.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+vpp_papi-2.0.1.dist-info/top_level.txt,sha256=W-FnWVjneNLs64yE6Adxb6UOApfiANgN2KImDwUq7z4,9
+vpp_papi-2.0.1.dist-info/RECORD,,
