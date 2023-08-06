@@ -1,0 +1,25 @@
+project = "Balladeer JS frontend example"
+
+[BOTTLE]
+type = "Bottle"
+state = 1
+
+[PERFORMANCE]
+type = "Song"
+prompt = "Type 'look', 'bottle', or 'break'"
+
+[[_]]
+# Many bottles
+if.PERFORMANCE.state = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+s="""
+<>  {PERFORMANCE.state} green bottles, hanging on the wall.
+
+"""
+
+[[_]]
+# One bottle
+if.PERFORMANCE.state = 1
+s="""
+<>  {PERFORMANCE.state} [green bottle](https://www.onegreenbottle.com/), hanging on the wall.
+
+"""
