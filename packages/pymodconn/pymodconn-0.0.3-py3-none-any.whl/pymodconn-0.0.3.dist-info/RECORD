@@ -1,0 +1,11 @@
+pymodconn/__init__.py,sha256=hpuK_LPtGPqiffXe9dwQJsf4u6J2hVVePSxMP6rgLaY,333
+pymodconn/configs_init.py,sha256=xQhIZ3Z14kr9ACAYzKPkn61L1BA-px6cGi7-jDSFcgk,1646
+pymodconn/model_gen.py,sha256=Mu6Z11mw2RQJ1SoWr31oyTxzJkYW7R72JhNEceWC1A4,15301
+pymodconn/model_gen_utils.py,sha256=bnX4gB7RIzGqUmbDfZQb_AqP94pGDt2LDJd7PF5QG8A,27521
+tests_usage/RUN_MODELONLY.py,sha256=8ucfQ91_dv0O4XYSLfuTJqDCpk8jsr_oOg7ChyOZOJ4,1498
+tests_usage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymodconn-0.0.3.dist-info/LICENSE,sha256=MKil3R51EV4SseU0nxvrZ5tYsL-ItoB1kMeIrt70wF0,1072
+pymodconn-0.0.3.dist-info/METADATA,sha256=Qt9sSOFZ1X5wkVgF0Nxo5-xCdO8sXdrShZY_v9xVXk0,1260
+pymodconn-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pymodconn-0.0.3.dist-info/top_level.txt,sha256=jYLvV906a851GZAydtcULxmOxIB_K-NBWw4-yLOvta0,22
+pymodconn-0.0.3.dist-info/RECORD,,
