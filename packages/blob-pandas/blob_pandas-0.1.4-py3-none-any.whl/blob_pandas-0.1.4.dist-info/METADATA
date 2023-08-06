@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: blob-pandas
+Version: 0.1.4
+Summary: Classes and utils to communicate with Azure Blob Storage through pandas DataFrames
+Home-page: https://gitlab.com/tantardini/blob-pandas
+Keywords: utils,azure-blob-storage
+Author: Mattia Tantardini
+Author-email: mattia.tantardini@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: azure-storage-blob (>=12.16.0,<13.0.0)
+Requires-Dist: pandas (>=2.0.0,<3.0.0)
+Project-URL: Repository, https://gitlab.com/tantardini/blob-pandas
+Description-Content-Type: text/markdown
+
+# blob-pandas
+Classes and utils to communicate with Azure Blob Storage through pandas DataFrames.
+
+## Installation
+```
+pip install blob-pandas
+```
+
+## Usage
+Describe how to launch and use blob-pandas project.
+
