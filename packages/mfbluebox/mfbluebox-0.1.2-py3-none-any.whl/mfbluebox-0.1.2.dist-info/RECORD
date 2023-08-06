@@ -1,0 +1,15 @@
+bluebox/__init__.py,sha256=dbRP-m1Vr9NvG96fh8AjRmC7TRdoTpHY9aM8eRQcZv4,469
+bluebox/__main__.py,sha256=sFmUd8CNQnkHfMmC8SiAp-2C4QChnZoqCjip73V6BpM,87
+bluebox/box.py,sha256=4uymRkzUSKZ3SZuOAISl5a3LlCceL6kCjPjkTf7J0Ik,5869
+bluebox/cli.py,sha256=WGS8z69Qat_GRVr7U1SVPXmCfCaZEBlnEeEec6RcD-4,5374
+bluebox/freqs.py,sha256=UlBIGMYGu3T5qpbuo7f2xQya34U5_aVnul_2N_rsn8U,4406
+bluebox/wave.py,sha256=ohZqpYYPa2IcTvMXxFukpn5mTfbaslA9eHwI2cY_Fqo,2439
+bluebox/backends/__init__.py,sha256=AqBYY8vOKes3RsPFBSbP2MemM8zLs0ocdrGwtC4VFAY,724
+bluebox/backends/backend_dummy.py,sha256=NYW-USaNhg2YR6WJzUHaiNL3rRRbG76jDISfwrQlklM,2054
+bluebox/backends/backend_pyaudio.py,sha256=sMmZZddbe4ISK-V2OFoZTCBdtsFhYB-UuZRZa1gCXDI,4642
+bluebox/backends/base.py,sha256=cb4ipJE-DeiqJ64IUi_2uha9aVQHlNSsctrbcfXq_Dg,1270
+mfbluebox-0.1.2.dist-info/LICENSE.md,sha256=aB9keSAlYWiWc-VTPKJ81ldRMSBM_otFKYzYQzXvkF4,1061
+mfbluebox-0.1.2.dist-info/METADATA,sha256=ziNY1mPbNQhHBNBPPfI_SlWaYv7nSCJwPywD6iXz3z8,5434
+mfbluebox-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mfbluebox-0.1.2.dist-info/top_level.txt,sha256=PvM3bb19ZNELMMz1MXewWPXFxh0xG9du4j9DEjCz3l4,8
+mfbluebox-0.1.2.dist-info/RECORD,,
