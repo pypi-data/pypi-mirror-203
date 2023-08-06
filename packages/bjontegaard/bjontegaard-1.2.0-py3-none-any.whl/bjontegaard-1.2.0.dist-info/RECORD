@@ -1,0 +1,11 @@
+bjontegaard/__init__.py,sha256=XClec_F-RiQ20iclCB6TAce8TCcxkwao8oqTqrfrsqc,1721
+bjontegaard/bd_akima.py,sha256=D58E7JAGlVUOKpFu_jCcgPGJTOuwvoHw8F43DjCIjW4,5068
+bjontegaard/bd_cubic.py,sha256=mlqSFhcDJPZpp6Qojdj_jajZGRI1urYDCA2sC4bMidQ,4701
+bjontegaard/bd_piecewise_cubic.py,sha256=mYrZ4UdDrO3qDFTrK6_8cPJdp9suJFFxB0a9qT-PTuc,4376
+bjontegaard/evaluate.py,sha256=RZUwFLafxNZkWaVcZOhkKcFINUo9XPb0dwWN8zTTGPk,5391
+bjontegaard/functions.py,sha256=7NHWOnUMYuH8s9G0HZBc306BjDBLPCaKkFl-AzqFKv0,11751
+bjontegaard-1.2.0.dist-info/LICENSE,sha256=Fr-xZEz0piNXWBfdQxjax0ejibxguN_uonPPIEUG2tc,1557
+bjontegaard-1.2.0.dist-info/METADATA,sha256=cquVNrtAfXU2ZUK9r-snQYoA-VFFvWzJr6YqsdJ4mbI,7589
+bjontegaard-1.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+bjontegaard-1.2.0.dist-info/top_level.txt,sha256=OXWKbEiOGXOcI79mwk1QmK95j13IPDTis6gs1vUtX9A,12
+bjontegaard-1.2.0.dist-info/RECORD,,
