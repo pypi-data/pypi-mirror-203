@@ -1,0 +1,3 @@
+[console_scripts]
+chlog=chlog.__main__:main
+

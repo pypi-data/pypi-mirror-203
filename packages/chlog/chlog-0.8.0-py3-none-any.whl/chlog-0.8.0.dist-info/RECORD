@@ -1,0 +1,13 @@
+chlog/__init__.py,sha256=4inwoPoj2zp2OiP_pJOUi6fGOdxHoH2SbueNU3dCNtM,610
+chlog/__main__.py,sha256=y-MWR5JUs-GSg9IMbz4mSAAMC3NBYYa4nYiQUYTSNPU,6203
+chlog/changelog.py,sha256=n6wDH_3fr6nr8ocZBEAUzF6sqfOpTq4BXJmgIsUT5oM,10753
+chlog/console.py,sha256=swTHOXtFO81MJUcZvEwh4PiCy5HrP2Rj_OIm6ZShi-E,123
+chlog/versioning.py,sha256=XTn_QabyoA3zyesXjbG_DN9DsY5eY1_HtkhQ8lk-6Ls,3030
+chlog/config/__init__.py,sha256=pTkfPHLA-K6OWfIQy7oWgMhrn2EE4iDHx0r2--9Uc7U,4229
+chlog/config/alternative.toml,sha256=1fiGPpK9IZtQLprWv5vTgheaXoJEjevGN-BI0oj0SQ4,1494
+chlog/config/defaults.toml,sha256=xZfPJ3Mx_UQvlg6D58UCzCV5SI1IAQsXyQL-r24Wqwk,1882
+chlog-0.8.0.dist-info/entry_points.txt,sha256=luk00WV9Z7mGT8mZwSTDOmnmP_F0_YvVXHbXEWIl-qc,45
+chlog-0.8.0.dist-info/LICENSE,sha256=l0kWZCpsWZRCAQF9IrBT2rw9JpUT1P282ny1tfQsLa8,1077
+chlog-0.8.0.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+chlog-0.8.0.dist-info/METADATA,sha256=i387iS_C4f-ZX_HydtNy8y6jmtidgRBXRL0UFFWIlVk,5818
+chlog-0.8.0.dist-info/RECORD,,

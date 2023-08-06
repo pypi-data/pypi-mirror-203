@@ -1,0 +1,70 @@
+# These are chlog's default settings. They are also used to implement the CLI.
+
+[tool.chlog]
+break-marker = "[Breaking]"
+chlog-filename = "CHANGELOG.md"
+chlog-prolog = '''
+    # CHANGELOG
+
+    All notable changes to this project will be documented in this file.
+
+    The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+    This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+'''
+date-mask = "- %DATE%"
+use-brackets = true
+
+[[tool.chlog.commands]]
+command = "added"
+aliases = ['new']
+heading = "Added"
+help = "add a change note for a new feature"
+description = '''
+    Records new feature change notes in the Unreleased section of the
+    changelog.
+'''
+
+[[tool.chlog.commands]]
+command = "fixed"
+aliases = ['fix']
+heading = "Fixed"
+help="add a change note for a bug fix"
+description='''
+    Records bug fix change notes in the Unreleased section of the changelog.
+'''
+
+[[tool.chlog.commands]]
+command = "changed"
+aliases = ['ch']
+heading = "Changed"
+breaking = true
+help = "add a change note to the changelog"
+description = '''
+    Records software change notes in the Unreleased section of the changelog.
+'''
+
+[[tool.chlog.commands]]
+command = "deprecated"
+heading = "Deprecated"
+help = "add a deprecation notice to the changelog"
+description='''
+    Records deprecation notes in the Unreleased section of the changelog.
+'''
+
+[[tool.chlog.commands]]
+command = "removed"
+aliases = ['rm']
+heading = "Removed"
+help = "add a change note about a removed feature to the changelog"
+description = '''
+    Records feature removals in the Unreleased section of the changelog.
+'''
+
+[[tool.chlog.commands]]
+command = "security"
+heading = "Security"
+help = "add a note about a security issue to the changelog"
+description = '''
+    Records change notes regarding software security in the Unreleased
+    section of the changelog.
+'''
