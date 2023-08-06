@@ -1,0 +1,14 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "password": "Has\u0142o",
+                    "url": "URL",
+                    "username": "Nazwa u\u017cytkownika",
+                    "verify_ssl": "Weryfikacja certyfikatu SSL"
+                }
+            }
+        }
+    }
+}
