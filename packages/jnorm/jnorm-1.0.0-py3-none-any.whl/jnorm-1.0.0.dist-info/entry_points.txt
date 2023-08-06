@@ -1,0 +1,2 @@
+[console_scripts]
+jnorm = jnorm.main:run
