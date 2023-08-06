@@ -1,0 +1,275 @@
+# pylint: disable=invalid-overridden-method
+from datetime import timedelta, datetime
+
+from db.python.layers.assay import AssayLayer
+from db.python.layers.sequencing_group import SequencingGroupLayer
+from models.models.analysis import AnalysisInternal
+from models.models.assay import AssayUpsertInternal
+from models.models.sequencing_group import (
+    SequencingGroupInternal,
+    SequencingGroupUpsertInternal,
+)
+from test.testbase import DbIsolatedTest, run_as_sync
+
+from db.python.layers.analysis import AnalysisLayer
+from db.python.layers.sample import SampleLayer
+
+from models.models.sample import SampleUpsertInternal
+from models.enums import AnalysisStatus
+
+
+class TestAnalysis(DbIsolatedTest):
+    """Test sample class"""
+
+    @run_as_sync
+    async def setUp(self) -> None:
+        # don't need to await because it's tagged @run_as_sync
+        super().setUp()
+        self.sl = SampleLayer(self.connection)
+        self.sgl = SequencingGroupLayer(self.connection)
+        self.asl = AssayLayer(self.connection)
+        self.al = AnalysisLayer(self.connection)
+
+        sample = await self.sl.upsert_sample(
+            SampleUpsertInternal(
+                external_id='Test01',
+                type='blood',
+                meta={'meta': 'meta ;)'},
+                active=True,
+                sequencing_groups=[
+                    SequencingGroupUpsertInternal(
+                        type='genome',
+                        technology='short-read',
+                        platform='illumina',
+                        meta={},
+                        sample_id=None,
+                        assays=[
+                            AssayUpsertInternal(
+                                type='sequencing',
+                                meta={
+                                    'sequencing_type': 'genome',
+                                    'sequencing_technology': 'short-read',
+                                    'sequencing_platform': 'illumina',
+                                },
+                            )
+                        ],
+                    ),
+                    SequencingGroupUpsertInternal(
+                        type='exome',
+                        technology='short-read',
+                        platform='illumina',
+                        meta={},
+                        sample_id=None,
+                        assays=[
+                            AssayUpsertInternal(
+                                type='sequencing',
+                                meta={
+                                    'sequencing_type': 'exome',
+                                    'sequencing_technology': 'short-read',
+                                    'sequencing_platform': 'illumina',
+                                },
+                            )
+                        ],
+                    ),
+                ],
+            )
+        )
+        self.sample_id = sample.id
+        self.genome_sequencing_group_id = sample.sequencing_groups[0].id
+        self.exome_sequencing_group_id = sample.sequencing_groups[1].id
+
+        await self.al.create_analysis(
+            AnalysisInternal(
+                type='cram',
+                status=AnalysisStatus.COMPLETED,
+                sequencing_group_ids=[self.genome_sequencing_group_id],
+                meta={'sequence_type': 'genome', 'size': 1024},
+            )
+        )
+
+    @run_as_sync
+    async def test_add_cram(self):
+        """
+        Test adding an analysis of type CRAM
+        """
+
+        analyses = await self.connection.connection.fetch_all('SELECT * FROM analysis')
+        analysis_samples = await self.connection.connection.fetch_all(
+            'SELECT * FROM analysis_sequencing_group'
+        )
+        # print(analyses, analysis_samples)
+
+        self.assertEqual(1, len(analyses))
+
+        self.assertEqual(1, analysis_samples[0]['sequencing_group_id'])
+        self.assertEqual(analyses[0]['id'], analysis_samples[0]['analysis_id'])
+
+    @run_as_sync
+    async def test_get_sequencing_group_file_sizes_single(self):
+        """
+        Test retrieval of sample file sizes over time
+        """
+
+        today = datetime.utcnow().date()
+
+        result = await self.al.get_sequencing_group_file_sizes(project_ids=[1])
+        expected = {
+            'project': self.project_id,
+            'sequencing_groups': {
+                self.genome_sequencing_group_id: [
+                    {
+                        'start': today,
+                        'end': None,
+                        'size': 1024,
+                    }
+                ]
+            },
+        }
+
+        # Check output is formatted correctly
+        self.assertEqual(1, len(result))
+        self.assertDictEqual(expected, result[0])
+
+    @run_as_sync
+    async def test_get_sequencing_group_file_sizes_single_sample_double_sg(self):
+        today = datetime.utcnow().date()
+
+        # Add exome cram
+        await self.al.create_analysis(
+            AnalysisInternal(
+                type='cram',
+                status=AnalysisStatus.COMPLETED,
+                sequencing_group_ids=[self.exome_sequencing_group_id],
+                meta={'sequence_type': 'exome', 'size': 3141},
+            )
+        )
+        expected = {
+            'project': self.project_id,
+            'sequencing_groups': {
+                self.genome_sequencing_group_id: [
+                    {
+                        'start': today,
+                        'end': None,
+                        'size': 1024,
+                    }
+                ],
+                self.exome_sequencing_group_id: [
+                    {
+                        'start': today,
+                        'end': None,
+                        'size': 3141,
+                    }
+                ],
+            },
+        }
+
+        # Assert that the exome size was added correctly
+        result = await self.al.get_sequencing_group_file_sizes(project_ids=[1])
+        self.assertDictEqual(expected, result[0])
+
+    @run_as_sync
+    async def test_get_sequencing_group_file_sizes_exclusive_date_range(self):
+        today = datetime.utcnow().date()
+
+        # Assert that if we select a date range outside of sample creation date
+        # that is doesn't show up in the map
+        yesterday = today - timedelta(days=3)
+        result = await self.al.get_sequencing_group_file_sizes(
+            project_ids=[1], end_date=yesterday
+        )
+
+        self.assertEqual([], result)
+
+    @run_as_sync
+    async def test_get_sequencing_group_file_sizes_newer_sample(self):
+        today = datetime.utcnow().date()
+
+        # Add another genome cram that's newer
+        await self.al.create_analysis(
+            AnalysisInternal(
+                type='cram',
+                status=AnalysisStatus.COMPLETED,
+                sequencing_group_ids=[self.genome_sequencing_group_id],
+                meta={'sequence_type': 'genome', 'size': 11111},
+            )
+        )
+        expected = {
+            'project': self.project_id,
+            'sequencing_groups': {
+                self.genome_sequencing_group_id: [
+                    {
+                        'start': today,
+                        'end': None,
+                        'size': 11111,
+                    }
+                ]
+            },
+        }
+
+        result = await self.al.get_sequencing_group_file_sizes(project_ids=[1])
+        self.assertDictEqual(expected, result[0])
+
+    @run_as_sync
+    async def test_get_sequencing_group_file_sizes_two_samples(self):
+        today = datetime.utcnow().date()
+
+        # Add another sample and it's analysis cram as well
+        sample_2 = await self.sl.upsert_sample(
+            SampleUpsertInternal(
+                external_id='Test02',
+                type='blood',
+                meta={'meta': 'meta ;)'},
+                active=True,
+                sequencing_groups=[
+                    SequencingGroupUpsertInternal(
+                        type='genome',
+                        technology='short-read',
+                        platform='illumina',
+                        meta={},
+                        sample_id=None,
+                        assays=[
+                            AssayUpsertInternal(
+                                type='sequencing',
+                                meta={
+                                    'sequencing_type': 'genome',
+                                    'sequencing_technology': 'short-read',
+                                    'sequencing_platform': 'illumina',
+                                },
+                            )
+                        ],
+                    )
+                ],
+            )
+        )
+        sequencing_group_2_id = sample_2.sequencing_groups[0].id
+        await self.al.create_analysis(
+            AnalysisInternal(
+                type='cram',
+                status=AnalysisStatus.COMPLETED,
+                sequencing_group_ids=[sequencing_group_2_id],
+                meta={'sequence_type': 'genome', 'size': 987654321},
+            )
+        )
+
+        expected = {
+            'project': self.project_id,
+            'sequencing_groups': {
+                self.genome_sequencing_group_id: [
+                    {
+                        'start': today,
+                        'end': None,
+                        'size': 1024,
+                    }
+                ],
+                sequencing_group_2_id: [
+                    {
+                        'start': today,
+                        'end': None,
+                        'size': 987654321,
+                    }
+                ],
+            },
+        }
+
+        result = await self.al.get_sequencing_group_file_sizes(project_ids=[1])
+        self.assertDictEqual(expected, result[0])
