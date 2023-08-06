@@ -1,0 +1,21 @@
+This is a download package for Emily version 0.9, a freeware WYSIWYG editor which uses a subset of HTML5 called MLE as its storage format.
+
+You will need Python version 3.8 or later installed on your machine to run this app.  You will also need the PyQt6 cross platform application toolkit - to install this, use the command line to say 
+
+  pip install PyQt6
+    
+You will then need to download TWO packages: GUIbits version 1.0 and Emily version 0.9.  On the command line, say:
+
+  pip install guibits1_0
+    
+and then
+
+  pip install emily0_9
+  
+To run Emily, use the 
+
+  emily filename
+  
+command, or hit the Emily icon on the desktop, or double-click on any .mle file.
+
+RNB 12 Apr 2023 12:12

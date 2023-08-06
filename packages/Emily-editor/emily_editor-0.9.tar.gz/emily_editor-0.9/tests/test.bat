@@ -1,0 +1,21 @@
+py code_point_testing_test.py
+py persisting_test.py
+py texting_test.py
+py unicode_io_test.py
+py css_emitting_test.py
+py html_emitting_test.py
+py html_texting_test.py
+py looking_ahead_test.py
+py string_parsing_test.py
+py text_emitting_test.py
+py text_tokenizing_test.py
+py html_css_parsing_test.py
+py html_parsing_test.py
+py mle_emitting_test.py
+py css_parsing_test.py
+py mle_parsing_test.py
+py page_laying_out_test.py
+py rendering_test.py
+py text_printing_test.py
+py emily_test.py
+echo "Test suite complete"

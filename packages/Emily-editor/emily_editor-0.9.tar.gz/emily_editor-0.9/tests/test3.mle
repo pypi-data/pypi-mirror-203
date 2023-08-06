@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Emily version 99.9 Document</title>
+<style>
+  body {font-family: "Liberty";}
+  body {font-size: 20pt;}
+  p {text-align: left;}
+  p.begin {text-align: left;}
+  p.middle {text-align: center;}
+  p.end {text-align: right;}
+  p.justify {text-align: justify;}
+</style>
+</head>
+<body>
+<p class="begin">
+  hello
+</p>
+</body>
+</html>

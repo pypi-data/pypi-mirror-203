@@ -1,0 +1,7 @@
+  body {font-family: "Palatino";}
+  body {font-size: 18pt;}
+  p {text-align: left;}
+  p.begin {text-align: left;}
+  p.middle {text-align: center;}
+  p.end {text-align: right;}
+  p.justify {text-align: justify;}

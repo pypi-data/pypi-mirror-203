@@ -1,0 +1,3062 @@
+Learning Journal for Emily 0.9
+------------------------------
+RNB
+12 Feb 22
+12:48
+  Even before starting this I have some ideas.  Ruth had a terrible experience where she inadvertently hit CTRL-A, SPACE, CTRL-S and thus wiped out a letter to her brother and saved a space.  This must not be allowed to happen with Emily 0.9.  CTRL-Z undoing is not the answer as it doesn't restore the clipboard after a save (perhaps it should??).
+12:51
+  I think a possible solution would be for Emily to assume that when a section of text has been selected (especially when it's the whole of the text), the next operation should be a CTRL-C or CTRL-X, and if it isn't, a query dialog should be displayed.
+12:55
+  Another possibility would be NOT to implement CTRL shortcuts AT ALL.  In other words, cutting copying and pasting would all be done via menus.  Maybe we could leave CTRL-S, as this is well-understood and fairly harmless.  But CTRL-C, CTRL-X and CTRL-V may just be too dangerous to implement.
+13:01
+  Another related issue is how many undos we allow.  It would be possible (but expensive) to allow undos back to the last save, but is this really necessary?  Most of the time the user only wants to undo the previous operation.  And do we want CTRL-Z to initiate an undo?  For the reasons outlined above, I would prefer Undo to be a menu entry in the Edit menu.  This is slightly more work for the user, but a lot safer.
+13:09
+  Backing up.
+13:14
+
+14 Feb 2022
+09:45
+  The most egregious problem is the sequence CTRl-A, letter.  If we could intercept this in some way, it's probably OK to allow CTRL-C and CTRL-V.  So I think showing an "Are you sure?" dialog if CTRL-A is followed by anything but CTRL-C or CTRL-X might be a possibility.  In fact, showing an "Are you sure?" whenever a text selection is not followed by CTRL-C or CTRL-X might be useful, as it would flag the situation where information is lost irrevocably.
+09:53
+  Backing up.
+09:56
+
+25 Jul 2022
+09:52
+  Now starting on this seriously, having uploaded GUIbits 0.7 and Emily0.8 to SourceForge.
+  There are several updates that are needed:
+  
+   1. cut and paste
+   
+   2. search and replace
+   
+   3. more than one page of text
+   
+  but I think that (1) is the most desirable, as it involves new ideas: the "Are you sure?" safeguard mentioned above, and the intelligent paste where a pushdown menu of alternatives is presented.
+  Doing (1) will also involve implementing a fat cursor and allowing the user to left-hit the text to position the cursor.  It will also imply an extension to GUIbits to allow keyboard combinations (CTRL-C, CTRL-V) to be associated with a menu entry.  We might as well throw CTRL-S into the mix as well.
+10:04
+  So we will start by updating GUIbits to v 0.8, which will allow keyboard combinations.
+10:06
+  Backing up.
+10:12
+
+6 Aug 2022
+13:47
+  Well, have now updated GUIbits to version 1.0, which includes responding to Ctrl-S, Ctrl-Z, Ctrl-X, Ctrl-C and Ctrl-V.
+  So the first job is to allow Ctrl-S to perform a Save.  This requires no new functionality in Emily, and will allow us to design the shortcut on the File menu, as a template for other shortcuts.
+13:51
+  So looking at what needs modifying.
+14:06
+  OK, managed to update the version number of Emily, and amend the menu entry.  Now need to get Emily to use GUIbits 1.0, and capture Ctrl-S.
+14:27
+  OK, updated all the 23 Emily source files and .bat files to use guibits1_0 and emily0_9.  Thank you, Notepad++!
+14:29
+  Seems to be working.
+14:48
+  Found the first error!  When we start a new .mle file, the Save button remains obstinately greyed out, despite the user typing text.  This was OK in Emily 0.8, because it forced the user to SaveAs, but it is not OK for Emily 0.9, when we want a Ctrl-S to force a SaveAs in the this situation.
+14:51
+  Backing up.
+15:13
+
+8 Aug 22
+15:02
+  So looking at the current logic.
+15:05
+  is_loaded and file_name are the two relevant globals in emily.py.
+15:09
+  texting.has_been_modified(my_text) is also involved.
+15:14
+  At the moment the Save item is only activated if is_loaded is true and texting.has_been_modified(my_text) is also true.  We want to change this so that only texting.has_been_modified(my_text) is relevant.  If is_loaded is false, we do a SaveAs instead of a Save.
+15:21
+  So we have two alterations to make:
+  
+   1. In file_bar_item_hit, modify the display so that the Save item is activated if texting.has_been_modified(my_text).
+   
+   2. In save_file, if s is empty, call save_file_as, otherwise, continue as now.
+
+15:32
+  Backing up.
+15:36
+
+9 Aug 2022
+09:20
+  Well, not quite.  The filename is persistent (current_file_name) and is kept so that Emily behaves sensibly and remembers the folder and file the user was working in last.  It is is_loaded which indicates whether the currently loaded file is the one named in persistent.get_current_file_name.
+  So the alteration is:
+  
+    2. In save_file, if not is_loaded, call save_file__as, otherwise continue as now.
+09:38
+  So implementing this.
+10:01
+  Working up to a point, but the actual file save is not happening.  When we try to use the SaveAs dialog, another SaveAs dialog appears with a blank filename.
+10:04
+  Backing up.
+10:23
+
+14:01
+  This is because the definition of save_file has changed.  By the time save_file_as calls it, is_loaded is effectively true, as the loaded file is the same as the current_file_name.  We must make sure the preconditions are satisfied when save_file is called, or we fall into an infinite regress.
+14:20
+  OK, better, but now Ctrl-S is always saving, irrespective of the state of texting.has_been_modified(my_text).
+14:29
+  OK. but now forcing the save of an unmodified text does not work.  save_file_as will have to force the modified flag before calling save_as!
+14:41
+  This is now working to my satisfaction, and the battery on my lovely new Acer Swift 3 is getting low, so that's it for now!
+14:42
+  Backing up.
+14:46
+
+10 Aug 22
+14:24
+  Hot day (27deg C) but Laughing Dog has windows open, so it's tolerable.  Looked up how to access the clipboard in Python.  There are two modules: clipboard and pyperclip, so downloaded them both.  We will of course have our own pushdown fixed size stack clipboard (courtesy of guibits1_0.latest_listing) and the invariant is that the top entry of the stack is always identical to the system clipboard.  Then we can start to think about Cut, Copy and Paste.
+14:33
+  The first job however, is to make Emily display a fat cursor properly.
+14:36
+  The guibits1_0.cursoring contractor is devoted to the flashing cursor, so Emily will have to sort this one out on her own!
+14:41
+  The relevant contractor is rendering.py, which exposes a type TextAndScreenCursorPosition.  Emily uses two of these, for the start and end of the cursor resp.  At the moment they are identical, or rendering.render_cursor raises an exception.  We have to change this so a fat cursor appears as a light blue-grey background to the text.  Then Cut and Copy take this text and push it onto the local clipboard stack and the system clipboard (cut also removes the text, making the cursor thin).
+14:48
+  At the same time, we must remember the safety rule above: showing an "Are you sure?" dialog if the display of the fat cursor is not followed by a Ctrl-X or Ctrl_C, i.e. if information is being lost.
+14:50
+  Also coming into play is Ctrl-Z.  We must ensure that we have a viable inverse operation for each and every user gesture.  These inverses and their parameters will be stacked on a normal Python stack, and unstacked as required by the user's Ctrl-Zs.  The stack will be cleared by a Save operation (sorry, user!), as otherwise we have potential space problems.
+14:55
+  So we need to start with rendering.py.
+14:59
+  A little bit of work.  Not just render_cursor, but move_cursor_down and move_cursor_up need to be modified too, to collapse the cursor if necessary.
+15:05
+  Backing up.
+15:11
+
+11 Aug 2022
+13:51
+  But first of all, we need to be able to paint the background colour of the cursor.  This is a job for GUIbits.
+13:53
+  Backing up.
+13:57
+
+30 Aug 22
+14:55
+  Job done, and easier than expected, as all the command listing code was there already.  We put in an extra command list for the rectangle commands, and voila! it all works out.
+  Now we have to work out the algorithm to paint the fat cursor, which may extend over one line or several.  The base case is straightforward - we just use the start and end positions to calculate the rectangle; the inductive case is a bit tricky, and took me a day or two to work out in my head: each added line of cursor requires making the rectangle reach the end of the current line, painting it, then starting a new rectangle at the start of the next line (which becomes the current line).  Finally, the last line of the rectangle is reached, and we make the rectangle extend to the end-of-cursor position and paint it.
+15:03
+  This algorithm will be included in rendering.render_cursor, which currently has a horrible blank (well, a raised exception) for the fat cursor case.
+15:07
+  The pseudocode for the algorithm is:
+  
+    start_pos = start position of cursor
+    current_line = start line of cursor
+    while current_line < end line of cursor:
+      end_pos = end of current line
+      paint the cursor
+      current_line += 1
+      start_pos = start of current line
+    end_pos = end position of cursor
+    paint the cursor
+    
+  Note that the start and end positions of the line are available from the Text, but we do have to take the alignment of the line into account.
+  As PyQt's estimate of the length of a line is a bit approximate, there may be some visual artifacts in the appearance of the cursor.
+15:15
+  Backing up.
+15:23
+
+31 Aug 22
+11:47
+  So starting to implement this.
+12:27
+  Well, that didn't get far!  Loads of assertion errors in rendering.py, mostly inaccuracies in page position (do we really need to be accurate to 0.01 of a point, as _equals_float insists?).  However, a serious error at line 2347:
+  
+    pg._page_position.y_offset=12.0
+    Traceback (most recent call last):
+      File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\windowing.py", line 663, in closeEvent
+        _result = _wc(_window)
+      File "rendering.py", line 2347, in window_closing
+        assert pg._page_position.y_offset == 0.0
+    AssertionError
+ 
+  12 points is no small error!  This needs investigation.
+12:32
+  Backing up.
+12:38
+
+14:36
+  Investigating.
+14:48
+  This is another inaccuracy-of-measurement error.  The test is to render
+  
+    "The doggy sat on the"
+    
+  which is not supposed to line-wrap, followed by 
+  
+    "The doggy sat on the "
+    
+  which IS supposed to line-wrap.  Unfortunately under PyQt6, they both do!  Trying
+  
+    "The dogs sat on the"
+15:02
+  Now working OK.  It seems that strings are slightly longer under PyQt6 compared with PyQt5.
+15:24
+  Many more inaccuracies, now fixed.
+  Cleaning up.
+15:26
+  All tests now running through OK.  A little worrying, though, that a change in measuring text lengths in PyQt6 compared with PyQt5 has passed clean through GUIbits and is picked up by Emily!  Anyway, hopefully the later measurement is more accurate.
+15:29
+  Backing up.
+15:35
+
+16:08
+  So now starting to implement the above algorithm to paint the fat cursor.
+16:38
+  Most of it done, except for finding the start and end of the appropriate line.  I haven't a clue as to how to do this at the moment.  There may be a problem here, as we need to know the length of the "current" line, but this was current long ago when the text was being rendered.  Do we actually have to store the length of each line?  I hope not, but I think it may be necessary, as line length calculations are local to rendering.render_text.
+16:48
+  Backing up.
+16:56
+
+1 Sep 22
+11:14
+  On fact, as I dimly saw yesterday (despite my new glasses) there is a logical problem here:
+   
+   1. The fat cursor must be rendered before the text, as it is a background to the text.
+   
+   2. The fat cursor cannot know exactly where it is to be rendered until the text has been rendered.
+   
+  However, GUIbits can come to our aid here.  It ensures that rectangle commands are executed before text commands when a system-initiated paint callback occurs.  Thus it ensures that the fat cursor will always be in the background.
+  This does not solve the problem of finding the cursor dimensions, however.  But recall that the paint commands for text and rectangle can be requested in any order.  GUIbits orders them in increasing y-offset, and also puts all the rectangle commands before the text ones.  Thus, if we generate the fat cursor commands as we generate the text commands, we have the relevant information to hand, without having to store anything.  We can render the cursor on the fly, as long as we:
+  
+   1. lock both the command lists
+   2. scan the text and generate fat cursor and text commands as we go (also saving the thin cursor position, if any)
+   3. unlock the command lists and force a paint callback to paint the cursor and text
+   4. paint any thin cursor that has been found in the scan
+   
+  This means a rewrite of rendering.render_text - perhaps no bad thing, as it's pretty complex already, and may be amenable to simplification.
+11:35
+  A chink of light - rendering._render_line is called every time a text line is output, and may be a good place to insert the fat cursor code.  If no line is rendered, no cursor is rendered (thin or fat), so we may be able to contain the relevant flag-setting etc. inside rendering._render_line.  Fortunately, it takes the start and end positions of the cursor as parameters.
+11:43
+  Backing up.
+11:51
+
+14:25
+  No, the best place to fix the cursor position is in rendering._fix_cursor_position, believe it or not.  This is called in many places (too many in my opinion), the most sensible being _de_escape, which de-escapes the HTML code of the token string, and is therefore in an excellent position to fix the cursor position on the screen.
+14:35
+  _fix_cursor_position is called in render_cursor_lines, render_rest_of_text, render_text, _de_escape and _render_token, and seems necessary in every case.  If we could modify it to paint a rectangle of the fat cursor as well as find the position of the thin cursor, we are in business.  It needs an extra attribute in the cursor position, the boolean _in_fat_cursor.  If it hits a cursor start position which is equal to the end position, it marks the cursor page position (start and end) as now.  If the start pos is NOT equal to the end pos, it sets _in_fat_cursor and sets cursor_start_pos to the current page position.  If it hits the end position, it notes this as cursor_end_pos, paints the cursor rectangle from cursor_start_pos to cursor_end_pos and sets _in_fat_cursor false.  If it hits end-of-line and _in_fat_cursor is true, it paints the cursor rectangle from cursor_start_pos to the end-of-line position, and sets cursor_start_pos to the start of the next line.
+14:50
+  Got all that?  It's one of our "sideways" algorithms, but it should work out.
+15:04
+  Backing up.
+15:06
+
+3 Sep 2022
+18:04
+  Have decided to replace rendering.render_text and rendering.render_cursor by rendering.render_text_and_cursor, as both renders are always necessary, and this strategy reduces comprehension dependencies and simplifies pres and posts.  Just checking that it is sensible.
+18:13
+  Yes, render_cursor is always called after render_text, render_cursor_lines or render_rest_of_text, so we can modify each of these to include render_cursor.
+18:16
+  Backing up.
+18:31
+
+5 Sep 2022
+14:01
+  But more radical reorganization is necessary.  For every glyph rendered on the Page (including the virtual \n at the end of each line), we need to do several actions:
+  
+   1. set up an entry in the back_map, so that we can map cursor hits and cursor movement from the Page to the Text.
+   
+   2. check the cursor for a hit on the current Text position, and if thin, mark the Page position in the start and end positions; if fat, mark the start position in the Page position and set _in_fat_cursor true.
+   
+   3. For a fat cursor, check _in_fat_cursor and if true and we are at the end of a line, set the end-of-line position as the cursor end Page position and render the non-final cursor rectangle. Then set the start of the NEXT line as the cursor start Page position. If _in_fat_cursor is true and we have hit the end text position, set this as the cursor end Page position and render the final cursor rectangle.
+14:10
+  This is a lot of work for each Page position, but alas! all necessary.  I suggest we write a routine to do this, called _render_glyph or somesuch, and call this from every procedure that renders glyphs (i.e. render_cursor_lines, render_rest_of_text, render_text, _de_escape, _render_token and _try_line).  We can then abandon _fix_cursor_position and hopefully simplify the rendering.py contractor.
+14:24
+  So starting to implement this.
+14:33
+  Updated new_cursor_position.
+14:50
+  Wrote skeleton of _render_glyph.
+  Backing up.
+15:01
+
+18:18
+  Trying the implementation.
+19:03
+  Done the first draft.  Some questions remain, especially around alignment.
+  Backing up.
+19:07
+
+6 Sep 22
+17:15
+  At the moment, the text line and the cursor are derelativized separately just before they are painted. I think we keep this scheme, as it makes all the pre-rendering much easier.  It might make sense to encapsulate the derelativizing and painting, as they are now done in three places.
+17:36
+  Well..., it's now done in render_token, and then the x-offset of the line is used to derelativize the cursor.  This is a bit messy, but the information is guaranteed to be there in the Page, I suppose.  We will use the same idea.
+17:57
+  Second draft done.  No obvious errors.
+  Backing up.
+18:04
+
+8 Sep 2022
+10:09
+  Just a few improvements...
+10:27
+  Hit a snag.  Rendering a text line and rendering a fat cursor rectangle are intimately connected - the sequence has to be:
+  
+   1. Find the start point of the line from the alignment
+   
+   2. Paint the line str at the start point
+   
+   3. If in the fat cursor, find the rectangle and paint it at the start point
+   
+   4. Update the Page attributes to the next line
+   
+  If we do not follow this sequence, the fat cursor rectangle will be out of kilter with the text.  However, this is at a LOWER level than render_glyph, as it is triggered when the glyph is '\n' (or when a line overflows).  So I think the code to render an intermediate fat cursor rectangle has to be in _render_line, not _render_glyph.  On the other hand, the code to render the final fat cursor rectangle has to be in _render_glyph, as it is triggered when the rendering position on the Page hits the end cursor position, and this has to be checked for every glyph rendered.
+10:37
+  This means that the fat cursor code is sprayed all over the place, which is not ideal.  I cannot think of a way to bring it together.  Anyway, should we want to?  Are we not thinking a teeny bit O-O?  We have a Text, we have a Page and we have a cursor which may be thin or fat.  When we render a glyph, we may have to modify the Page attributes and the cursor start and/or end attributes.  When we move to a new line of the Page, we may have to modify the Page attributes and the cursor attributes, and we may have to output a cursor rectangle in addition to the text string.  Is this such a problem?  I don't think so.  We simply have to test two procedures (_render_glyph and _render_line) instead of one.  Tough bananas!
+10:47
+  So trying to implement this.
+11:11
+  Implemented in _render_glyph and _try_line, with test schemas.
+11:15
+
+13 Sep 2022
+20:25
+  Back at All Saints Eastbourne for Ruth's rehearsal with the Eastbourne Concert Orchestra, after a weekend spent singing in Bath.  I am supposed to be updating the spreadsheet of the Orchestra's Music, but I am trying to catch up with Emily first.
+  We actually need cursor code in THREE places:
+  
+   1. in render_text, at the start of the scan of the Text.
+   
+   2. in _render_glyph, as each glyph is added to the current line.
+   
+   3. in _try_line, as the current line is painted and a new line is started.
+   
+  In addition, we must lock both command lists before the scan, and unlock after.  This is best done with a with-statement in render_text.
+  
+  For (1), we must check whether the start of the cursor is at the start point (line 0, offset 0). If so, if thin we set both the Page positions and we are done, if fat, we set the start Page position, and set _in_fat_cursor true (for both positions, to be on the safe side).
+  
+  For (2), 
+    if the cursor is thin, we check for the start position, and set the page position (both start and end) if we have a hit.
+    if the cursor is fat (i.e. _in_fat_cursor is true), we check for a hit on the end cursor position; if found, we set the end page position, then render the rectangle from the start to the end position.
+    
+  For (3), after we have rendered the current line, iff the cursor is fat, we set the end page position to the end of the current line, and render the cursor rectangle from start page position to end page position.  Then we start a new line and set the start page position to the start of this new line.
+  
+  A lot of this code is very similar without being QUITE identical.  If we can see some sub-procedures we can extract, we should do so.
+20:51
+  Looking at implementing this.
+21:07
+  The locking and unlocking of command lists is done internally in GUIbits; we don't need to worry about it.  This makes life easier.
+21:10
+  Backing up.
+21:13
+
+14 Sep 22
+11:27
+  So continuing to implement this.
+11:37
+  Written _less_than_text_position.
+11:41
+  _less_than_text_position testing out OK.
+11:53
+  Modified render_text.
+12:02
+  render_text still working for thin cursor.
+12:28
+  Updated _render_glyph and _try_line, but now error:
+  
+    Tests of render_text p2._page_position.x_offset=8.0
+    Traceback (most recent call last):
+      File "rendering.py", line 1294, in _render_token
+        _try_line(pg,p1,p2)
+      File "rendering.py", line 1435, in _try_line
+        painting.paint_rectangle(win,x,y,w,h,c)
+      File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\painting.py", line 81, in paint_rectangle
+        raise Exception(mess)
+    Exception: Attempt to paint rectangle with negative width or height
+    rectangle (28.8046875,0.0,-20.8046875,0.0)
+
+  This looks extremely dodgy!
+12:30
+  Backing up.
+12:32
+
+14 Sep 22
+13:27
+  Looking at this.
+13:40
+  _in_fat_cursor is true when the cursor is actually thin.
+13:46
+  Due to poor initialization in tests.  Now fixed.
+14:07
+  Fat cursor at (0,0),(0,1) not appearing!
+14:16
+  Because _render_glyph is never called!
+14:20
+  _render_glyph should be called in _de_escape.
+14:40
+  Error: attempt to render rectangle with negative width
+15:03
+  Found error in _render_glyph, but we're still getting a rectangle with negative width.  Also the thin cursor is being rendered at (0,1) instead of (0,0).
+15:05
+  Backing up.
+15:08
+
+15 Sep 22
+07:09
+  I think these two errors may be connected.  The second one is due to the text position not being updated, I think.
+07:16
+  Yes, that's better, but still no sign of the thick cursor.  Where are you??
+07:24
+  The fat cursor situation is being recognized correctly; checking what is actually being rendered.
+07:28
+  So, the system is correctly painting a rectangle at (0,0,0,0).  That's why we can't see it.  Investigating.
+07:30
+  This is because the page positions coming into _render_glyph are (0,0),(0,0).  Also _render_glyph is not seeing the start of the cursor.
+07:32
+  Actually, that is OK, as the start position has already been found by render_text.
+07:40
+  Problem was because p2's page position was not being updated by _render_glyph.  We now have a cursor rectangle with width, but zero height!
+07:43
+  We have a cursor rectangle!   Unfortunately, it hasn't been derelativized, so it's in the top left hand corner of the page.
+07:48
+  Cursor rectangle appearing and in the correct position.  Nice shade of blue too.  Many more tests to come, but for now, well pleased.
+07:51
+  Backing up.
+07:54
+
+10:59
+  It strikes me that the derelativization is going to be necessary in several places, so I will make a little procedure _render_fat_cursor which will take p1, p2 and pg and render the fat cursor.  This means, I think, that we will have to rename render_cursor to render_thin_cursor, which is more accurate, but which means emily.py will have to be changed too.
+11:17
+  _render_cursor_rectangle (changed the name) written and tested.  Embedded it in _render_glyph and it's working a treat.
+11:28
+  Updated _try_line to use _render_cursor_rectangle.
+11:29
+  Backing up.
+11:34
+
+16 Sep 22
+08:37
+  Improving the cursor tests by making the second line END aligned.
+08:50
+  That's OK, but now fat cursor not appearing, because its end position is not checked when a space is output.
+08:56
+  Fixed.
+09:01
+  ((0,0),(0,1)),((0,0),(0,13)),((0,1),(0,13)) all working successfully.
+09:09
+  ((0,1),(0,14)) working.
+  ((0,1),(1,0)) not working - rectangle has negative width.
+09:14
+  The cursor hit at (1,0) has been missed, it's still looking for the cursor-end at the end of the text.
+  Anyway, I'm unhappy about what rectangle should be rendered in this situation (which is bound to occur).  I think it should be two rectangles: one ending on the end of the first line, and one with zero width (which is valid) on the second line.
+09:28
+  ((0,1),(1,0)) now working - needed extra code in _render_token to deal with this situation.  As it's special, we didn't need to render the zero-width rectangle.
+09:30
+  ((0,1),(1,1)) not working.
+09:32
+  Backing up.
+09:35
+
+15:39
+  ((0,1),(1,1)) case apparently seeing the end of cursor in the right place, but the rectangle does not appear.
+15:46
+  Because (again!) it has a width of zero.
+16:05
+  This is because the text and page start cursor position are not reset properly at the start of a new page line.
+16:12
+  OK, now rendering, but not derelativized!
+16:16
+  This is because the line's start x-offset is not derelativized until the line is rendered, which is after the cursor's page start x-offset has been set to the line's.
+16:18
+  Backing up.
+16:21
+
+17 Sep 22
+11:50
+  I think the sun was affecting me yesterday, sitting outside Cafe Zio on a beautiful autumn day.  We have fixed the derelativizing problem, yesterday's trouble was the cursor rectangle not having the correct alignment.  Now we have to do things in the right order:
+  
+   1. Prepare the line for rendering.
+   
+   2. Given the length of the line in points, use page_laying_out.x_offset_of_line to find the x-offset of the line.
+   
+   3. Queue the line to be rendered.
+   
+   4. Prepare the cursor rectangle, with the same alignment as the line.
+   
+   5. Queue the rectangle for rendering.
+   
+  How this is shared out among the procedures is not that important, what is important is the sequence, which must be as above.
+12:04
+  Backing up.
+12:15
+
+15:18
+  Checking how _try_line is used.
+15:24
+  It is used in _render_line, and also in _render_token, when the final <end> token is processed, and in both cases is preceded by the code:
+  
+    pg._page_position.x_offset = page_laying_out.x_offset_of_line(pg._line_width,pg._text_width,pg._current_alignment)
+
+  I suggest this could be incorporated into _try_line.
+15:41
+  Done, but now I note that in render_glyph, if we hit end-of-cursor before end-of-line, we cannot render the rectangle as now because we don't know, in general, the start position of the line.  The tests have only worked because we had left-justified lines.
+15:46
+  I don't see how we can fix this.  Maybe _in_fat_cursor can be redefined to mean "in the lines holding the fat cursor".  Then at the end of the line... it will screw up.  No, we need yet another flag, _cursor_rectangle_pending, which can be set when we hit end-of-cursor, and tested in _try_line, so that the cursor rectangle can be rendered.  Note that this solution will work at the end of each line in the text, including any final incomplete one, as _try_line is called in both cases.
+15:54
+  Implementing this.
+16:10
+  Trying it.
+16:12
+  It works!  So that is rendering.py updated.  We now need to remove all the surplus code, including that in render_cursor, which will be renamed render_thin_cursor.
+16:15
+  Backing up.
+16:19
+
+18 Sep 22
+11:42
+  First adding a few more tests.  As these tests are global to rendering.py, I need a test schema that is global, too.
+11:53
+  Strangely, everything is fine until we start on the third line.  Then the second line rectangle reverts to the start of text rather than the start of the right-aligned line.  Why?
+11:58
+  The error occurs when the end position of the cursor is (2,0).  In some strange way, this modifies the previous rectangle to start at (1,0).  I think that _try_line is the place to begin our investigations.
+12:15
+  Oddly, _try_line does not seem to be painting the rectangle.
+12:20
+  Also oddly, _try_line does not seem to recognize it is in the fat cursor.  Nevertheless, the fat cursor is rendered.  By whom?
+12:37
+  OK, getting a grip on this.  The problem is in _try_line, in the situation where the cursor is at start-of-line.  _try_line finds itself in the fat cursor on line 1 (the second line) and renders a cursor, but it has not aligned the start position of the rectangle, only the end position.  This is the situation where it decides to skip rendering the final rectangle, as it has a width of zero, so it should be easy to find.
+12:47
+  ("it" being _render_glyph, so actually not relevant!)
+  I think this will happen whenever _try_line is called upon to output a non-final rectangle.  The code is just not there to align the rectangle to the line.  It IS there when the rectangle is the final one.
+12:54
+  Nearly right, but now the non-final rectangle gets set to start-of-line, even when it should be indented!  We need to ADD the start-of-line position to the cursor start position to get the correctly aligned cursor rectangle.
+12:58
+  Now looking good.  But what a business!  The code being distributed around the various rendering procedures didn't help.  Nearly all the errors involved missing code, so pace Dijkstra, testing does help in this situation.
+  I now need to formalize the test schema and write it in the testing section.
+13:17
+  Done that, and changed render_cursor to render_thin_cursor.  Now running all the tests.
+13:20
+  Error!
+  
+    Tests of _try_line
+    Start of _try_line
+    Traceback (most recent call last):
+      File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\windowing.py", line 663, in closeEvent
+        _result = _wc(_window)
+      File "rendering.py", line 1908, in window_closing
+        assert win._pg._line_list[0] == (1.23,"Test of _try_line")
+    AssertionError
+13:22
+  Clearly, we're not out of the woods yet!
+13:23
+  Backing up.
+13:31
+
+19 Sep 22
+11:41
+  Continuing.
+11:57
+  The error happens because we now align the line inside _try_line, so the offset is set to 0.0.
+12:02
+  Changed the tests to avoid the message.
+  Another error, _cursor_rectangle_pending set when cursor is thin, leading to the output of a rectangle of width zero.
+12:16
+  The error does not occur on Newline, so it must occur when a line is wrapped.
+12:31
+  Yes, we have a line wrapped because a Word has been found and the line has overflowed.  _cursor_rectangle_pending is set, but the start and end positions of the cursor are the same.  This should not happen!
+12:40
+  It is not obvious why this should happen.  _cursor_rectangle_pending is only set when _in_fat_cursor is set and we hit the end-of-cursor position.  _in_fat_cursor is only set when the cursor end position is not equal to the start cursor position.  Therefore, this situation should not happen.  But it does!
+12:46
+  Backing up.
+12:49
+
+14:06
+  The error occurs when we reach line 0, offset 18.
+14:24
+  Think I have found the error: the test code does not initialize the cursor positions before each test, so the _cursor_rectangle_pending flag is not reset from the previous test.  Still a bit unhappy though, as the _cursor_rectangle_pending flag should be False at the end of each test.
+14:32
+  That has fixed it.  The preceding test had a fat cursor and never reached the end of line, so _cursor_rectangle_pending was left True.  The offset 18 test had a thin cursor, but _cursor_rectangle_pending was not reset, hence the error.
+14:36
+  Next error:
+  
+    File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\windowing.py", line 663, in closeEvent
+    _result = _wc(_window)
+    File "rendering.py", line 2380, in window_closing
+    assert p1._page_position.x_offset == 0.0
+    AssertionError
+14:40
+  This occurs because the line now wraps in a slightly different position to before, when we were using PyQt5.  I'm putting this down to "improved" PyQt6 code.
+14:53
+  Hmmmm!  The x-offset corresponding to code point offset 19 for Courier 12 point is 136.8 (7.2 * 19).  However, the value given by PyQt6 is 136.822265625.  This is why the line wraps earlier, as the next code point offset is > 144.0, instead of being equal to it.
+15:01
+  The error creeps in earlier, when we were forced to accept offset 18 as 129.62, rather than 129.6.  It seems that PyQt6 is inserting extra space between characters (even in a fixed-width font such as Courier).  And this means that we cannot use writing.width_in_points_of in a linear way.  We mention this in the manual:
+  
+    note:
+      in general:
+          width_in_points_of(s1+s2) ≤ width_in_points_of(s1)+width_in_points_of(s2) 
+
+15:08
+  But note that in this case, we seem to have
+  
+    width_in_points_of(s1+s2) > width_in_points_of(s1)+width_in_points_of(s2) 
+
+  In other words, width_in_points_of is only approximately linear, and we don't know whether the result of concatenation will be more or less than the expected linear value.  Yuk!
+15:10
+  Backing up.
+15:16
+
+16:29
+  However, the fact that the line is wrapping one glyph later (not earlier, as I said above) implies that the width_in_points_of is now less than in PyQt5.  So although
+  
+    width_in_points_of(s1+s2) > width_in_points_of(s1)+width_in_points_of(s2)
+    
+    PyQt6.width_in_points_of(s1+s2) < PyQt5.width_in_points_of(s1+s2)
+    
+  So I think the error is less than before.  We still have non-linearity, so we cannot assume
+  
+    width_in_points_of(s1+s2) = width_in_points_of(s1)+width_in_points_of(s2)
+   
+  However, I think the comment in the GUIbits Manual needs modification to
+  
+    in general:
+      width_in_points_of(s1+s2) >= width_in_points_of(s1)+width_in_points_of(s2) 
+   
+16:38
+  Backing up.
+16:40
+
+20 Sep 22
+14:53
+  Well, whatever, we have to face the reality of the situation.  PyQt6 lays out strings of glyphs slightly differently from PyQt5, and GUIbits has to reflect that.  So we need to modify the tests to cope with the line wrapping at a different point.  Also we need to put a warning in GUIbits that width measurement is not linear.  Maybe something like
+  
+    in general:
+      width_in_points_of(s1+s2) /= width_in_points_of(s1)+width_in_points_of(s2) 
+  
+  without committing ourselves to whether it's greater or less!  What a palaver!  Wouldn't it be nice if PyQt just laid out the glyphs linearly one after the other with no intervening space?  But it doesn't, and we have to accept that.
+15:22
+  Updated the GUIbits manual.  Now to update the tests.
+15:37
+  Another error from the _render_token tests.
+  
+    Start of _render_token
+    Start of _try_line
+    p1._page_position.x_offset=-1.0
+    p1._page_position.y_offset=-1.0
+    Traceback (most recent call last):
+      File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\windowing.py", line 663, in closeEvent
+        _result = _wc(_window)
+      File "rendering.py", line 2488, in window_closing
+        assert p1._page_position.x_offset == 0.0
+    AssertionError
+
+  The thin cursor is at (1,0) in the text.  Because the line has wrapped, it should be at (0.0,24.0) in the page.  It is actually at (-1.0,-1.0), i.e. the cursor position has been missed altogether.  This looks like an error in _render_token, when a NL token is encountered.
+15:56
+  Yes, we only update the fat cursor.  Added the necessary code.
+15:58
+  Now in render_cursor_lines and render_rest_of_text, and we're seeing a fat cursor at ((0,0),(0,1) and a thin cursor at (0,0).  Aaaarghh!!
+16:29
+  Problem was in the tests, which were set up when we only had a thin cursor.  Changed the tests to guard the rendering of a thin cursor.
+16:34
+  Still bad.  Think we are forgetting to clear the cursor between tests.
+16:48
+  OK, STILL have two cursors, a thin and a thick one, on all tests after tnum = 16, which is the start of the tests of render_text. We have studiously cleared the cursor between tests, and put a guard before any call of render_thin_cursor.  The only possibility I can think of is that the fat cursor is being rendered forever, because we never clear it.  Perhaps we need to write a clear_fat_cursor procedure, but where?  GUIbits doesn't know about the fat cursor, it only provides a blinking cursor.  It looks as if Emily will have to sort this out herself!
+16:59
+  Backing up.
+17:04
+
+20:22
+  Well, it would help if GUIbits windowing.clear cleared both the text command list and the rectangle command list.  Then Emily could clear the page and know it was clear.  And the tests could use a windowing.clear to ensure that the rendering was done on a blank page.
+20:27
+  Backing up.
+20:30
+
+21 Sep 22
+15:15
+  Updated GUIbits and Emily is working much better.  Now thinking that render_thin_cursor should just ignore a fat cursor.  This would avoid having to put the call in a guard.
+15:57
+  Done that, and it works fine.  We now need to go through all the rendering procedures and make sure we have all the tests schemas and tests in place.
+16:04
+  I'm pretty happy with the tests.  Just need to remove all the prints.
+16:13
+  Cleaning up.  Tests still working well.
+  Backing up.
+16:16
+
+22 Sep 22
+10:00
+  Continuing cleaning up.
+10:23
+  OK, I'm now satisfied with the tests.
+  Backing up.
+10:27
+
+15:17
+  Now trying Emily, but immediate problems as it's using rendering.render_cursor instead of rendering.render_thin_cursor.
+15:25
+  Fixed that, and it appears to be working well.  Now starting on cut-and-paste, which requires Emily to be responsive to cursor-hits and cursor-drags.
+15:33
+  We need to set up a MouseListener.  As it's private, I will call it _MouseListener.
+15:39
+  No we won't.  All contents of emily.py are private, so we'll call it MouseListener.
+15:58
+  Successfully set up the MouseListener (which involved instantiating an instance of the class, and attaching it to the (showing) window), but now we get:
+  
+    C:\Bosware\Emily\EmilyVersion0_9\emily0_9>python emily.py
+    Traceback (most recent call last):
+      File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\windowing.py", line 795, in mousePressEvent
+        mousing._mousePressEvent(self,qme)
+      File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\mousing.py", line 264, in _mousePressEvent
+        self._last_mouse_press_x = qme.x()
+    AttributeError: 'QMouseEvent' object has no attribute 'x'
+
+  Well, it used to have, is all I can say!
+  Clearly the definition has changed in PyQt6, and somehow we failed to pick this up in testing.  So back to GUIbits again!
+16:02
+  Backing up.
+16:06
+
+16:44
+  Fixed GUIbits (mousing.py had definitely not been tested properly), so trying again.
+16:46
+  double-click now being recognized, so a source of hope.
+16:47
+  Backing up.
+16:49
+
+26 Sep 22
+12:03
+  Continuing with the other callbacks.
+12:17
+  Added test versions of all the mouse callbacks.
+12:19
+  And they are all responsive.
+  Now trying to add functionality to mouse_clicked.
+12:41
+  This is proving unexpectedly difficult.  We have a procedure rendering._nearest_glyph_interstice_of which will give us the (line_offset,glyph_offset) position on the page of the nearest glyph interstice for a given (x,y) hit of the mouse (but note that the mouse (x,y) is relative to the tlh corner of the page, and rendering works to the tlh corner of the text on the page).
+  Once we have found the nearest glyph interstice, we can use the _back_map to convert this to a (line_offset, code_point_offset) position in the text.  We can then use this position to render the cursor, by rendering the text.
+  But is this sensible?  We have the cursor page position already, from rendering._nearest_glyph_interstice_of.  It seems daft to convert to a text position, and then back to a page position.
+12:55
+  Yes, but we need the text position to be defined to be able to manipulate the cursor left-right using the arrow keys.  I think this is necessary, though it may be possible to get away with just setting up the cursor page position and text position and then rendering the thin cursor, without doing the text scan.
+13:02
+  But what we need is an exposed procedure in rendering.py which will give us access to the _back_map, i.e. a procedure text_position_of which, given a page position, returns the equivalent text position.
+13:05
+  Looking at updating rendering.py to do this.
+13:11
+  Written spec of text_position_of.
+  Backing up.
+13:14
+
+15:17
+  Now writing text_position_of.
+15:48
+  Written text_position_of, and tests.
+17:13
+  text_position_of testing out OK.
+17:14
+  Backing up.
+17:18
+
+27 Sep 22
+20:00
+  Looking at _nearest_glyph_interstice_of to see if it could supply the page (x-offset,y-offset) in addition to the page (line-offset, glyph-offset).  This would save a scan of the text.
+20:07
+  Yes!  The binary search gives lo_off and hi_off as well as lo and hi.  So we can return all the above.  We also need to expose _nearest_glyph_interstice_of as nearest_glyph_interstice_of so that emily.py can use it.
+20:10
+  Backing up.
+20:13
+
+28 Sep 22
+10:46
+  Enhancing _nearest_glyph_interstice_of as above.
+11:03
+  Updated _nearest_glyph_interstice_of.
+11:34
+  _nearest_glyph_interstice_of testing out OK.  Had to write special routine to test the quadruple result for equality.  Now need to update rest of rendering.py and emily.py to use the new version.
+11:37
+  Backing up.
+11:38
+
+29 Sep 22
+09:00
+  So doing this.
+09:06
+  rendering.py testing out OK.  Now need to continue to implement mouse click in Emily.
+09:19
+  Need to make _nearest_glyph_interstice_of public.
+09:23
+  Done that, and rendering.py testing out OK.
+09:32
+  Set up the mouse-click, but an immediate error!  If there is no text, the algorithm connot find the place in the text!  Need to think of a default in this case.
+09:37
+  Updated rendering.nearest_glyph_interstice_of to deal with this.  Need to test.
+09:51
+  Update was wrong!  But now OK, and nearest_glyph_interstice_of testing out OK.
+09:54
+  mouse-click code running through, but no cursor appears.
+09:58
+  Ah!  Cursor was there, but very small.  My 75-year-old eyes are the culprit.
+09:59
+  Now if cursor hits above the page, the system bombs.
+10:04
+  Fixed that in nearest_glyph_interstice_of.  Testing out OK.
+  Now Emily dealing with an empty text, and hitting the page anywhere!
+  nearest_glyph_interstice_of accepts any offsets, including negative ones.
+10:07
+  Backing up.
+10:10
+
+16:53
+  Now trying an actual text.
+17:01
+  Fine until we try to move around the text.  The text code point offset is wrong.
+17:04
+  Was being set to the line offset.  But now the up and down arrow keys are not working so well (one-out error).
+17:07
+  No text lock on the mouse-hit, which may be the problem.
+17:21
+  Error still there.
+17:27
+  Aha!  render_cursor_up_down uses globals cp1 and cp2, whereas elsewhere they are declared locally.  We need to sort this: do we want Emily's top level to use global variables or pass everything thru parameters?  Because the Page has an associated text_position which could be used.  I'm very wary of globals, especially when they duplicate values held elsewhere.  I think we should abandon them, at the cost of a bit of code, with the benefit of reducing duplication.
+17:32
+  Backing up.
+17:35
+
+30 Sep 22
+08:03
+  NO, wrong again, Richard!  For contractors, the use of "pure" procedures is clear: minimal dependency on the rest of the system, independence of testing, ease of updating.  For callback procedures this is not the case.
+  Callbacks need to be as independent of the rest of the system as possible.  This means that they are specified as skeletons, having the minimum number of parameters and empty functionality.  They are designed to be replaced by real callback implementations, which actually perform the functionality required by the particular system being constructed.  These implementations must adhere to the callback specification, ergo they must use the same parameters and satisfy the preconditions and postconditions.  They also have additional functionality, and use and update other parts of the system, in order to carry out their tasks.  Ergo, direct access to globals is necessary.
+08:14
+  This is no problem as long as:
+  
+   1. the globals are mentioned in the preconditions and postconditions of the callback implementation, so that the functionality of the callback is clear, and suitable tests can be devised.
+
+   2. the globals are distinctively marked as such, preferably at the start of the callback code.
+   
+   3. the globals do not duplicate values held in other globals - that way lies madness.
+08:22
+  Backing up.
+08:24
+
+10:47
+  Going through emily.py and making sure the above three conditions hold.
+12:21
+  Whew!!  That took a while, much assisted by Notepad++'s search and replace facilities.
+12:24
+  Tried running Emily, and got the following error:
+  
+    Traceback (most recent call last):
+      File "C:\Bosware\Emily\EmilyVersion0_9\emily0_9\rendering.py", line 1426, in _render_token
+        _render_line(pg,p1,p2)
+      File "C:\Bosware\Emily\EmilyVersion0_9\emily0_9\rendering.py", line 1251, in _render_line
+        _try_line(pg,p1,p2)
+      File "C:\Bosware\Emily\EmilyVersion0_9\emily0_9\rendering.py", line 1518, in _try_line
+        _render_cursor_rectangle(p1,p2,pg)
+      File "C:\Bosware\Emily\EmilyVersion0_9\emily0_9\rendering.py", line 1155, in _render_cursor_rectangle
+        painting.paint_rectangle(win,x,y,w,h,c)
+      File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\painting.py", line 81, in paint_rectangle
+        raise Exception(mess)
+    Exception: Attempt to paint rectangle with negative width or height
+    rectangle (513.240234375,540.0,-3.0,12.0)
+12:25
+  This needs investigation, but not today!
+  Backing up.
+12:28
+
+16:08
+  Investigating.
+16:12
+  The error is caused by p2 being < p1.  This happens when we do cursor-up from the end of the text.  p2 is not updated at all, which leads eventually to disaster.
+16:38
+  Found there are no checks in rendering.py for p1 <= p2.  Put them in on all exposed procedures which take p1 and p2.
+16:40
+  This still doesn't trap the error. (Must remember to put extra tests in for all these checks).  Checking out emily.render_cursor_up_down.
+17:02
+  Found error in UP_ARROW, now corrected, but cursor still moving to end of line, also in UP_ARROW before call of _render_cursor_up_down.
+17:04
+  The error is in rendering.move_cursor_up.
+17:08
+  The problem is the _back_map.  It is giving the wrong text position for the page position fed to it.  Either the _back_map has been set up wrongly or nearest_glyph_interstice_of is producing the wrong page position, i.e. the end of the line rather than the start of it.
+17:12
+  A fascinating error, which I shall investigate more closely tomorrow.
+17:13
+  Backing up.
+17:20
+
+3 Oct 2022
+12:19
+  No, the problem is not the _back_map: the page and text positions are consistent.  The problem appears to be nearest_glyph_interstice_of, which is giving a wildly incorrect page position.
+12:31
+  Have instrumented nearest_glyph_interstice_of.
+12:38
+  Which seems to be working correctly.  The problem occurs on the first big paragraph that wraps several times.  We hit cursor-up, nearest_glyph_interstice_of returns (40,0) correctly, but by the time we enter render_cursor_up_down, the _text_position.code_point_offset is 366 rather than 0!
+12:49
+  _text_position.code_point_offset is set inside rendering.move_cursor_up, using the _back_map.  So this is the problem after all.  Improving the diagnostics and testing again.
+13:00
+  Break for lunch.
+13:59
+  Re-testing.
+14:23
+  Yes, (40,0) is back-mapped to (11,366) instead of (12,0).  This means that on a soft line wrap, the first glyph of the next page line maps to text equivalent of the end of the previous line, i.e. the entry is being made twice.
+14:28
+  Checking out line-wrapping in rendering.py.
+14:39
+  Not obvious where the back-map is being updated.  I need to instrument where the back-map is being updated and check the values that are being put in.  I need a test file with one long line (which is guaranteed to wrap) to do this.
+14:45
+  The test file gives interesting results.  The back map works fine until we reach the first glyph of the line, which maps to the end of the space at the end of the previous line (which incidentally should not be there!).  Thereafter the back-mapping is OK again.  So we do not have an extra entry in the back-map, we have an incorrect entry from glyph-interstice 0 to a rogue space at the end of the previous line.
+14:53
+  Think I have found it.  If a space is removed from the wrapping line, the code-point offset is not decremented as it should be.
+14:55
+  Better - the rogue space is no longer there (i.e. the mapping is more accurate).  But the entry for glyph-offset 0 is still incorrect.
+15:16
+  I'm beginning to understand this.  Take a text like:
+  
+    This is a long line.
+    
+  which wraps to 
+  
+    This is a long
+    line.
+    
+  If we wrap on the space, then we need to render the line
+  
+    This is a long
+    
+  and set up an entry in the back-map from the start of the next page line to the position in the text PAST the space (i.e. the start interstice of "line").
+  
+  If we wrap on the word "line", then we need to remove the space from the end of the previous line, ideally remove the back-map entry for the end of this space (but it will never be used, because the cursor will never be in that position), render the line
+  
+    This is a long
+
+  and set up an entry in the back-map from the start of the next page line to the position in the text PAST the space (i.e. the start interstice of "line").
+  
+  So in both cases we need to set up the entry in the back map to the start interstice of "line" in the text.  This is not happening at present, the entry maps to the end interstice of "long".
+15:28
+  So fixing this.
+15:37
+  Well, the error is still happening!  Clearly my understanding is not yet complete.  Time to think overnight about this.
+15:39
+  Backing up.
+15:44
+
+4 Oct 22
+08:12
+  Let us review the situation.  The error only happens on soft newline, i.e. when an over-long line of the text wraps on the page.  Under these circumstances, a space between two words is converted to a soft newline.  When this happens, the cursor should be positioned at the end of the last word of the first line, or the start of the first word of the second line.  It is actually positioned at the end of the last word of the first line, or at the end of the succeeding space (which does not actually exist on the page).
+08:18
+  This means that when we move backwards along a wrapped line, the cursor jumps from offset 1 of the second line to the phantom space of the previous line.  When we move upwards at offset 0 of a wrapped line, the cursor jumps to the phantom space.
+08:21
+  This is not a problem of the back-mapping from the page to the text, I now think (having tested this possibility extensively).  Rather, the mapping is OK (i.e. back to either side of the actual space in the text).  The problem is that the cursor is positioned incorrectly on the page for offset 0 of the non-initial lines of a wrapped line.  We need to look carefully at the cursor-positioning code to find out why this is.
+08:27
+  Backing up.
+08:28
+
+14:33
+  So checking the entire sequence from up-arrow being hit to the cursor being positioned, to see where the error lies.
+14:49
+  Everything OK at entry to emily.render_cursor_up_down.
+14:55
+  Inside render_cursor_up_down, the position becomes corrupted before rendering.render_thin_cursor is called.
+15:00
+  Break for electrician.
+15:34
+  Continue.
+15:36
+  The page position gets corrupted in rendering.render_cursor_lines.
+15:53
+  And this is because render_cursor_lines has not been updated and is using the old way of fixing the cursor.  It should work for a thin cursor, but doesn't.  It certainly won't work for a fat cursor.
+15:56
+  The same applies to rendering.render_rest_of_text.  These procedures are both optimizations to make special cases more efficient.  They only really work for a thin cursor which is being moved around by the arrow keys.  We now have a fat cursor which can cover arbitrary amounts of text, and the ability of the user to hit the text anywhere to position the cursor.  Both these enhancements are necessary for a decent editor.  I think we should try to abandon render_cursor_lines and render_rest_of_text, and find new ways of optimizing the rendering of the text (if necessary) to deal with the new situation.
+16:03
+  Backing up.
+16:08
+
+19:21
+  Well, render_cursor_lines certainly won't work for a fat cursor, but render_rest_of_text is a sensible optimization which makes adding a character to the end of the text O(c) rather than O(no of characters in the text).  I don't think we should be too hasty in chucking these away.  Also worth investigating further, to see exactly where the error is.
+19:42
+  Well, what do you know, it's in the while loop where the text is rendered.  This means that the rendering is not wrapping where it should.  And this is odd, because the code is identical to that in render_text, which does wrap correctly.
+19:47
+  Well, that's not quite true, there is an extra condition on the while-loop, which looks dodgy to me.  It is
+  
+    while not unicoding3_0.equals(tk,unicoding3_0.string_of("<end>")) \
+          and pg._page_position.y_offset <= end_y_offset:
+
+  If end_y_offset is incorrect, this would result in a shortened loop, which might cause the error.
+19:57
+  Yes, this is where it happens - when the end_y_offset terminates the loop prematurely.  There is something wrong with the algorithm: I don't like the idea of the page position terminating a loop which is fundamentally based on the text.  If the loop was terminated halfway through the rendering of a wrapped line, this could very easily explain the error.  Yuk!
+20:02
+  OK, the strategy is now clear: we abandon render_cursor_lines, which is fundamentally faulty, but retain render_rest_of_text, which does have merit, and should cope with wrapped lines, as the terminating condition is reading the <end> token.
+20:04
+  So trying replacing render_cursor_lines with render_text.
+20:12
+  Removed render_cursor_lines from rendering.py
+20:15
+  Replaced all calls of render_cursor_lines in emily.py with calls to render_text.  This makes absolutely no difference.  Oh well, enough for today.
+20:16
+  Backing up.
+20:21
+
+8 Oct 22
+11:38
+  Well, what we could do now is update all the arrow button responses to use the new strategy (i.e. get the page position from nearest_glyph_interstice_of).  This would work, but the error would still be there.  I see no alternative to running my test file with one wrapped line through Emily, and putting diagnostics in _render_token, which is where the problem seems to occur.
+11:54
+  OK, the problem occurs when a space is read and this is the last token which fits on the line (or possibly when it causes a wrap).  Anyway, at this point, the correct page position in the cursor positions p1 and p2 (obtained from nearest_glyph_interstice_of) is corrupted to the end interstice of the space.  So this must mean that the space fits on the line.  Later, the next word is read, and at this point the line should wrap, the last space on the line should be removed, and the page position should be updated to the start of the next line, but this is not happening.
+12:00
+  Backing up.
+12:04
+
+14:17
+  So checking out exactly what DOES happen when a wrapping word is read.
+14:30
+  It looks like the page position is updated, but not the cursor position (or positions).
+14:41
+  Amended the code for the wrap-on-word case, and also for the wrap-on-space case.  Now to test!
+14:46
+  This seems to have fixed it.
+14:48
+  Removing the prints and trying a big file.
+15:00
+  rendering.py testing out OK.
+15:02
+  Emily now testing out OK!  But we do have to optimize the code for the arrow keys; it's not good to have a complete render of the text for each movement of the cursor, especially as we have now modified nearest_glyph_interstice_of to give us the cursor position on the page.
+15:03
+  Backing up.
+15:07
+
+10 Oct 22
+16:22
+  Calculating the amount of time I spent on the misplaced cursor error.
+16:26
+  The answer is 403 minutes, i.e. 6 hours and 43 minutes, which is a considerable amount of time.  If I had tested out rendering.py properly after adding the mods to deal with a mouse-click (rather than frigging the tests to run through), I suspect the error would have been trapped and we could have saved a lot of time.  Even going through the entire contractor and making sure the tests were up-to-date would have taken a maximum of around 3 hours, I estimate.  OK, it's tedious, especially with something like line wrapping, which is really fiddly to test.  But worth it.
+16:31
+  So now re-implementing the cursor arrow code to use the new version of nearest_glyph_interstice_of, which removes the need to do a render_text to position the cursor on the page, and thus saves time.
+16:40
+  The optimization only works for cursor up and down.  For cursor left and right, we update the cursor position in the text, and do a render_text to find the page position.  This seems a bit heavy, given that a random mouse-click by the user positions the cursor on the page without the need for a render_text.  Investigating.
+16:47
+  Well, the optimization for mouse-click works because nearest_glyph_interstice_of uses the page's line list to find the position of the mouse hit on the appropriate line.  Surely we can use a similar idea to find the cursor position for a left or right arrow, given the line list, back-map and all the rest of it?
+16:52
+  Not necessarily, the mouse-click code works because everything is in terms of position on the page, whereas for cursor-right and cursor-left, the position in the text is the key variable.
+16:54
+  Maybe we can optimize cursor-up and cursor-down, and leave cursor-right and cursor-left unoptimized.  Still better than nothing.
+16:55
+  Backing up.
+17:01
+
+11 Oct 22
+15:12
+  So looking into this.
+15:27
+  We need a new procedure in rendering.py, _set_thin_cursor_text_and_page, which will set up p1 and p2 from line-offset and code-point-offset in the text, and x-offset and y-offset in the page.  Then we are in a position to say:
+  
+    with my_text._my_lock:
+      texting.set_cursor(my_text,lo,cpo)
+      rendering.render_thin_cursor(p1,p2,my_page)
+
+  which will render the cursor without the tedium of rendering the whole text.
+15:43
+  _set_thin_cursor_text_and_page written.
+16:04:
+  _set_thin_cursor_text_and_page testing out OK.
+16:05
+  Backing up.
+16:08
+
+19:51
+  Continuing.
+19:56
+  Realized _set_thin_cursor_text_and_page should be exposed, i.e. set_thin_cursor_text_and_page.
+20:04
+  Included set_thin_cursor_text_and_page in the mouse-click code of emily.py - it works!
+20:13
+  Just realized that set_thin_cursor_text_and_page doesn't really work for cursor_up and cursor_down, as the cursor positions need to be global to remember the desired x-offset.  We need to feed in the addresses of the globals cp1 and cp2 in emily.py, luckily this is easy in Python.
+20:32
+  Updated set_thin_cursor_text_and_page, testing out OK.
+20:50
+  We need to update the parameterization of move_cursor_up and move_cursor_down to use cp1 and cp2.
+20:51
+  Backing up.
+20:55
+
+12 Oct 22
+15:09
+  So doing this.
+15:39
+  Hit a snag: under the old regime, move_cursor_up and move_cursor_down just modified the cursor's p1 and p2 to give a consistent thin cursor position.  Then we did a render_text which ran through the text, using the text's cursor.  When it found a match on text position, it updated the page position.
+  We now deem this to be unnecessary, as we already have the page position.  So we can just do a render_thin_cursor.  However, we also try to update the text's cursor position, for consistency should the user try to insert or delete text.  This is a mistake, I think - the system should transfer the on-screen cursor's text position to the text's cursor position in this case.
+15:48
+  move_cursor_down testing out OK.
+15:51
+
+15 Oct 22
+14:48
+  Now trying to modify move_cursor_up.
+15:47
+  move_cursor_up modified, and tests updated.
+16:00
+  move_cursor_up testing out OK.
+  Backing up.
+16:12
+
+17 Oct 22
+13:03
+  Now updating emily.py to deal with the new situation.
+13:13
+  Done that, and the cursor positioning seems to be working fine.
+  The next job is to allow the user to drag the mouse to obtain a fat cursor.  After we have created a fat cursor, all the cursor arrows must still work in a sane way (i.e. collapse the cursor to the appropriate edge and move)
+13:17
+  Backing up.
+13:22
+
+14:37
+  But first of all, removing or commenting out the diagnostics.
+14:48
+  Done.  What is required is for the the initial mouse-press to fix the cursor (start and end).  Then if the mouse is being dragged towards the end of the text, the end position should follow the mouse-dragged location, ending up with the final mouse-released.   If the mouse is being draged towards the beginning of the text, the start position should follow the mouse-dragged location, ending up with the final mouse-released.
+14:52
+  What happens if the user drags initially one way and then the other?  Every time they cross the initial point (which may be the start or end point depending on the direction of the initial drag), the process swaps to the other one.  All a bit complicated for my 75-year-old brain.
+14:55
+  I think we need a global in emily.py called drag_direction, with two values: FORWARD and BACKWARD.
+  
+  If drag_direction == FORWARD:
+    initial_position = start position of the cursor
+    mouse-dragged gives the location of the end position of the cursor
+    mouse-released gives the location of the end position of the cursor
+    moving the cursor back over the start position causes drag_direction to change to BACKWARD
+    
+  If drag_direction == BACKWARD:
+    initial_position = end position of the cursor
+    mouse-dragged gives the location of the start position of the cursor
+    mouse-released gives the location of the start position of the cursor
+    moving the cursor forward over the end position causes drag_direction to change to FORWARD
+15:00
+  A bit clumsy, but I think it will work.
+15:32
+  On mouse-pressed, we have to set both the text and page position of the cursor.  So we need access to the page and the page's back-map.
+15:37
+  Well, no, we need access to rendering.text_position_of, which will give us the text position, given the line offset and glyph offset of the cursor in the page.  Which means we have to find the line offset and glyph offset of the cursor in the page from its (x,y) position.
+15:41
+  This is a job for rendering.nearest_glyph_interstice_of, I think.
+15:55
+  Yup, and a few other procedures from rendering.py.  However, mouse-pressed now working OK.
+15:56
+  Backing up.
+16:00
+
+18 Oct 22
+12:54
+  Having second thoughts about the mouse-dragging algorithm.  The key is to think about the invariants of the process.  In this case, one invariant is that there is a "pivot" (the mouse-press position) around which the dragging takes place.  If the mouse is dragged beyond the pivot (in terms of the Text position) the cursor start position is set to the (Text and Page) positions of the pivot, and the end position is set to the current mouse position.  If the mouse is dragged BEFORE the pivot (in terms of the Text position) the cursor END position is set to the (Text and Page) positions of the pivot, and the START position is set to the current mouse position.
+  I think this idea will give a simpler (and more effective) process.  We can abandon the drag_direction, and have a global called "pivot" which is of type TextAndScreenCursorPosition.  This is set on mouse-press (along with the start and end positions of the cursor), and then checked on mouse-drag and mouse-release as above.  It will be persistent for the entire mouse-dragging process.
+13:04
+  Backing up.
+13:08
+
+14:15
+  So implementing this.
+14:30
+  mouse_pressed implemented, with pivot.
+15:03
+  mouse_dragged implemented.  There are a few problems:
+  
+   1. the line offset of the mouse on the page is not taken into account; the fat cursor stays on the line of the pivot.
+   
+   2. the fat cursor is not removed when a new mouse-hit occurs; we have two cursors!
+   
+   3. the change of direction when moving backwards through the pivot does not work; the system attempts to render a cursor with negative width.
+15:07
+  Apart from this - fine!
+  Backing up.
+15:11
+
+19 Oct 22
+15:29
+  So looking into these errors.  First of all replacing render_rest_of_text with render_text, as we're not too worried about efficiency in the first instance, correctness must be the supreme goal.
+15:47
+  cp1 and cp2 appear to be correct on the call of render_text, therefore the error must be in render_text.
+16:02
+  Looks like the pg._page_position.y_offset is not being updated at the end of a line.
+16:23
+  No, that's not the problem, because the text lines are rendered OK.  What is happening is that cp2's y-position is being updated when cp1's text position is matched, so the cp2 is always on the same line as cp1.  Why did this not happen in the tests?
+16:28
+  Somehow, the page position of cp2 is becoming entangled with the page position of cp1.
+16:33
+  I can't see why this is happening.  We need to drill down through the render routines to find out. Sigh!
+16:40
+  cp1 and cp2 are fine throughout.  The only thing that isn't fine is the blue rectangle on the screen.  This is being output with cp2's x_offset but cp1's y_offset.  If cp1's y_offset changes (because we're dragging backwards) the end y-offset of the blue rectangle changes too.  If cp2's y_offset changes (because we're dragging forwards) the end offset of the blue rectangle stays the same (i.e. as cp1's y_offset.  We need to study where the blue rectangle is actually output.
+17:02
+  Well, study away, but I can't find the problem.  Time to sleep on it, I think.
+17:03
+  Backing up.
+17:09
+
+20 Oct 22
+11:35
+  Found the answer at about 3 a.m.  cp1 and cp2 are NOT fine, they are being used in two different ways.  For emily.py, they are the start and end positions of the cursor.  For rendering.render_text and its ilk, they are the start and end positions of the current cursor rectangle.  When mouse_dragged resets cp1 and cp2 to the pivot and the mouse position, it effectively rules out the possibility of a multi-rectangle cursor.  Hence the strange behaviour we see.
+11:41
+  We need to use cp1 and cp2 consistently, and the only sane solution is to ensure that they are indeed the start position and the end position of the cursor.  Then cutting and pasting will work as expected.  This means that render_text and its ilk must use DIFFERENT position variables for the start and end of the current cursor rectangle.  These variables can be local to render_text.  They must be completely separate from emily.py's cp1 and cp2, i.e. we have to clone the contents of cp1 and cp2, not just say p1 = cp1, which, in Python, will point p1 to cp1.  I think a clone_position procedure is required.
+11:59
+  _clone_position written.
+12:13
+  _clone_position testing out OK.
+12:26
+  Modified render_text and updated the pres on all the subprocedures.
+  Breaking for a walk.
+12:27
+  Backing up.
+12:29
+
+15:43
+  Now testing.
+15:57
+  render_text is not updating p1 and p2 on exit.
+16:02
+  This is tricky.  We have specified that render_text ensures that cp1 and cp2 are the position of the cursor in the text and page on exit.  How do we ensure this when:
+  
+   1. cp1 and cp2 are cloned as cr1 and cr2.
+   
+   2. cr1 and cr2 are modified as necessary as the unlimited number of cursor rectangles are rendered.
+
+   3. the original position of cr1 is lost in this process?
+   
+  Clearly, we have to retain the original text and page position of cr1 (yet another position variable).  Then we have to copy the original text and page position of cr1 to cp1, and the final text and page position of cr2 to cp2.  This needs to be done immediately after the token-rendering loop.
+16:39
+  Done that, but the _desired_x_offset is being corrupted.  Needs investigation.
+16:41
+  Backing up.
+16:49
+
+21 Oct 2022
+11:13
+  Investigating.
+11:55
+  Something has gone very wrong.  The _desired_x_offset is set up correctly for both p1 and p2 inside render_text.  (Set to the pg's x-offset, as required.)  But when tested outside render_text in the test program, p1 and p2 have an incorrect _desired_x_offset.  Furthermore (and this is where the story really starts) they are not the same p1 and p2 as were fed into the render_text routine.  I have got terribly tangled with my cloning and assigning in Python.  Need to find out where.
+12:25
+  The problem is with _clone_position.  This always produces a completely new variable.  So the p1 and p2 we are talking about at the end of render_text are not the same as the p1 and p2 at the start.  So we need to hang on to the originals and copy the contents of the local variables explicitly.
+12:35
+  That's fixed.
+12:42
+  But now another error:
+  
+      thin cursor at (0,4)
+    Start of render_text
+      p1._page_position.x_offset=0.0
+    Traceback (most recent call last):
+      File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\windowing.py", line 669, in closeEvent
+        _result = _wc(_window)
+      File "rendering.py", line 3009, in window_closing
+        assert _equals_float(p1._page_position.x_offset,28.8)
+    AssertionError
+12:53
+  Quite a bit out!
+12:54
+  Backing up.
+12:57
+
+16:13
+  Investigating.
+16:24
+  Happens just before p1 and p2 are updated.  p1 has the wrong x_offset.
+16:26
+  This is because we've reset p1 to the value at the start of the scan.  This should only happen for the fat cursor.
+16:32
+  Modified.
+16:34
+  Well, we've staggered through the rendering.py tests.  Trying emily.py.
+16:41
+  Well, the original problem is still there.
+16:42
+  Backing up.
+16:44
+
+22 Oct 22
+13:02
+  First of all though, going to improve the tests for render_text, as the postcondition is tighter.
+13:15
+  First test OK.
+13:29
+  Done quite a few of the extra tests.
+  Backing up.
+13:32
+
+23 Oct 22
+11:08
+  Realized last night that the tests for the fat cursor only test the case where the text has hard newlines - we never test wrapping on a space or a word.  It is no surprize that this is where the errors have been occurring.  What we need to do is:
+  
+   1. Continue to tighten up the render_text tests.
+   
+   2. Extend the fat cursor tests to include wrapping - we can use "the cat sat on the mat" and "the dogs sat on the mat" to test word wrapping and space wrapping resp.
+11:11
+  Break.
+11:25
+  This has two advantages:
+  
+   1. It may find the cursor end y-offset error.
+   
+   2. If we have to modify the render_text/_render_token/_de_escape system, this will help to avoid other errors.
+11:28
+  Backing up.
+11:34
+
+14:36
+  So doing this.
+14:52
+  Break.
+14:57
+  Continuing.
+15:20
+  Tests now running through for render_text.
+15:44
+  Written first test for fat cursor on wrapping text!
+15:53
+  Now have two tests.  Neither is completely satisfactory.  In the first test, the fat cursor extends to the space at the end of the first line.  But there should not be a space at the end of the first line!
+  In the second test, where the fat cursor should extend to the start of the second line, the cursor does not appear at all.  Shame!
+15:55
+  Backing up.
+15:59
+
+26 Oct 22
+09:22
+  Looking into the first error.
+09:26
+  Code point offset 19 should be the start of the word "mat", i.e. the start of the second line on the screen.  Instead, the cursor rectangle is extended past the end of the first line, past a (probably non-existent) space.  The p2 is correctly positioned at (0.0,12.0), the start of the seond line.  Very rum!
+09:35
+  Tried a new test from (0,0) to (0,18) which works out OK on screen and for postconditions.
+09:37
+  So looking at the actual output of the blue rectangle in _try_line.
+09:43
+  Have put prints at start of _try_line.
+  Break.
+
+15:05
+  Continuing.
+15:07
+  Hmmm! _try_line is called three times for each test, once for each line, with the same p1 and p2 each time.
+15:22
+  This is correct, however, in the first test ((0,0),(0,18)), the rectangle is rendered at
+    (0.0,0.0)(129.6,0.0)
+  In the second test ((0,0),(0,19)) the first line rectangle is rendered at
+    ((7.2,0.0), (136.8,0.0))
+  which is wrong, and explains why the cursor extends past the end of line.
+  
+  Worse still, the second line rectangle is given as 
+    ((7.2,0.0),(0.0,12.0))
+  This means that the start-of-rectangle position has not been updated.  It should be (0.0,12.0).  The rectangle is not rendered, as _cursor_rectangle_pending is false.
+15:35
+  We need to fix these errors.
+15:54
+  Fixed the first one - p2 was not being updated when a word overflowed.
+16:05
+  The second one is to do with _fix_cursor_position.  This updates a cursor page position to the current page position, but only if the text positions match.  Alas! after we've rendered the first line, removed the space, and moved on to the next line, the page's text position is at (0,19), ready for the next word, but the cursor text position is at (0,18), still at the end of the last line.  It is imperative that the cursor start and end text positions are updated to the position corresponding to start of the new page line, whenever a new line is started on the page, i.e. at word-overflow, space-overflow and hard newline.
+16:19
+  We have the correct code, or a better approximation, for hard newline.  This carefully distinguishes between the fat and thin cursor cases.  We need to do something very similar for the word-overflow and space-overflow cases.  In fact, it may be a good idea to encapsulate this code in a procedure _update_cursor_positions, which would guarantee that the text and page positions did not get out of kilter.
+16:23
+  Backing up.
+16:28
+
+27 Oct 22
+14:25
+  Writing the test code for line wrapping, however belatedly, has given me a much better feel for the algorithm required.  Two points stand out:
+  
+   1. _render_cursor_rectangle does not need two cursor positions, all it needs are the start and end x-offset of the rectangle (x1 and x2).  The y-offset and font size (height) are available in the Page.
+   
+   2. For rendering a multi-line fat cursor, p1, p2, x1 and x2 are ALL required.  p1 and p2 are global to the app, therefore they have to be held as locals in emily.py and passed to render_text as parameters.  x1 and x2 are used inside a single text scan, so they have to be declared as locals inside render_text, and passed down to _render_token as parameters (along with p1 and p2).
+14:34
+  For the algorithm itself, we have three cases:
+  
+   1. Thin cursor.  p1 and p2 are identical.  When the render hits p1._text_position, p2 is checked.  If p1._text_position = p2._text_position, the page position is set for both p1 and p2.  After the text render, render_thin_cursor is called.
+   
+   2. Fat cursor on one line.  p1 < p2.  When the render hits p1, p2 is checked and found > p1.  p1._in_fat_cursor and p2._in_fat_cursor are set.  p1._page_position is set to pg.page_position.  x1 is set to p1._page_position.x_offset.  When the render hits p2._text_position, _in_fat_cursor is cleared, p2._page_position is set to pg._page_position, and x2 is set to p2,_page_position.x_offset.  Then p1._cursor_rectangle_pending and p2._cursor_rectangle_pending are set.
+   At the end of the line, _cursor_rectangle_pending is found true. After the line has been aligned and rendered, x1 and x2 are aligned.  _render_cursor_rectangle is called with x1 and x2 as parameters.
+   
+   3. Fat cursor on multiple lines.  p1 << p2.  When the render hits p1, p2 is checked and found > p1.  p1._in_fat_cursor and p2._in_fat_cursor are set.  p1._page_position is set to pg.page_position.  x1 is set to p1._page_position.x_offset.
+   At the end of the line, _in_fat_cursor is found true.  After the line has been aligned and rendered, x1 is aligned. x2 is set to pg._page_position.x_offset.  _render_cursor_rectangle is called with x1 and x2 as parameters.  A new line is set up, and x1 is set to 0.0.
+   When the render hits p2._text_position, _in_fat_cursor is cleared, p2._page_position is set to pg._page_position, and x2 is set to p2,_page_position.x_offset.  Then p1._cursor_rectangle_pending and p2._cursor_rectangle_pending are set.
+   At the end of the line, _cursor_rectangle_pending is found true. After the line has been aligned and rendered, x1 and x2 are aligned.  _render_cursor_rectangle is called with x1 and x2 as parameters.
+15:05
+  No-one is going to mistake this for an elegant algorithm.  But it should work.
+15:07
+  Rewriting _render_cursor_rectangle.
+15:32
+  _render_cursor_rectangle written and testing out OK.
+15:33
+  Backing up.
+15:36
+
+31 Oct 22
+13:58
+  Continuing with _try_line.  This requires x1 and x2 as parameters, plus in_fat_cursor and cursor_rectangle_pending, both booleans.
+14:13
+  Hit a snag.  _try_line is required to update in_fat_cursor and cursor_rectangle_pending as well as test them.  To fix this, however, we could clean up the whole mechanism and reduce redundancy.  At the moment, both p1 and p2 are duplicated _in_fat_cursor and _cursor_rectangle_pending.  These booleans have a lifetime of the text scan, as do x1 and x2.  If we made x1, x2, in_fat_cursor and cursor_rectangle_pending local variables of render_text, we can remove them from p1 and p2 altogether, leaving just the text position, page position, _desired_x_offset and _update_x_offset, these last two being required as local to emily's main procedure for movement up and down the page.
+14:21
+  So doing this.
+14:43
+  Found that _minimum_page_distance is only used inside _find_text_and_page_offset, so it can also be removed from p1 and p2.
+14:55
+  Found that _find_text_and_page_offset is not used, so removing it.
+14:59
+  It has been replaced by find_nearest_glyph_offset, which is O(log n) on the length of the line, rather than O(n).
+  We still need to test _try_line.
+15:02
+  Backing up.
+15:08
+
+1 Nov 22
+12:53
+  Continuing.
+13:09
+  Written test schema for _try_line.
+13:26
+  First test runs through.
+  Backing up.
+13:28
+
+15:03
+  Continuing.
+15:46
+  Nasty error.  cursor_rectangle_pending is not being updated as far as the client is concerned.  It is as far as _try_line is concerned.  Parameter passing in Python strikes again!
+15:57
+  Backing up.
+16:00
+
+18:09
+  I am confused on boolean parameters in Python.  The Python Tutorial says that parameters are passed by assignment to local variables, but that the value passed is the object reference.  OK, say I have a list: the value passed is the reference to the list.  If I update the list inside the procedure, the reference remains unchanged, and the client code can refer, via that same reference value, to the updated list.
+  Now suppose I have a boolean parameter.  It will be evaluated and the result created as an object (having value True or False) and a reference to that object will be assigned to a local variable (say the in_fat_cursor parameter, which becomes a local value of the procedure).  If we assign a new value to in_fat_cursor, the local variable will refer to a new object with value True or False.  The original name of the boolean parameter remains unchanged, as does its value.
+  Ergo, we have to distinguish, rather as in Java, between simple values like booleans and numbers and Python strings (which are immutable), and compound values like lists and sets.  Simple values are effectively passed by value, and compound values are effectively passed by reference (as long as the procedure only modifies COMPONENTS of the compound value, not if it replaces the whole shabang).
+18:20
+  This means that dear old _try_line, if it wishes to update x1, x2, in_fat_cursor, and cursor_rectangle_pending (and it does), will have to return the updated values as a quadruple, and the client will have to assign the result of the _try_line call back to the original variables.
+18:29
+  So trying to implement this.  It was a lot easier when these values were part of the two compound variables (p1 and p2), but I really don't want that duplication.
+18:41
+  OK, this is clumsy, but it works.
+  Backing up.
+18:44
+
+2 Nov 22
+09:16
+  No, this is getting crazy.  The quadruple will have to be returned by _render_line and _render_token, because the variables' lifetime is the entire scan, i.e. they are local to render_text.  On the other hand we don't want to return to the duplicating of x1, x2, in_fat_cursor and cursor_rectangle_pending in p1 and p2.
+09:21
+  I suggest we invent a new type, CursorPosition, which contains:
+  
+    the start and end positions of the cursor in the Text
+    the start and end positions of the cursor in the Page
+    the start and end x-offsets of the current cursor rectangle
+    the in_fat_cursor and cursor_rectangle_pending flags
+    
+  Then we can just pass an object (whoops! variable) of this type around the rendering routines.  It's not quite optimal as x1, x2 and the flags will be undefined outside of a text scan, whereas the start and end positions of the cursor are fixed until the user changes them.  User gestures and text scans are closely connected, however.  And we avoid duplicating values, so that is a definite improvement.  The number of parameters to the rendering routines is reduced too.  All in all, a good idea, which I shall implement.
+09:31
+  Backing up.
+09:37
+
+17:54
+  This change is going to affect quite a bit of rendering.py.
+  Namely, the exposed types and procedures:
+    CursorPosition replaces TextAndScreenCursorPosition
+    move_cursor_down
+    move_cursor_up
+    new_cursor_position
+    render_rest_of_text (which may not be needed)
+    render_text
+    render_thin_cursor
+    set_cursor_position_to_start
+    set_thin_cursor_text_and_page
+    set_on_screen_to_text
+    set_text_to_on_screen
+    
+  and the private procedures:
+    _clone_position
+    _de_escape
+    _equals_text_position
+    _fix_cursor_position
+    _render_cursor_rectangle
+    _render_glyph
+    _render_line
+    _render_token
+    _try_line
+    _print_pos
+18:05
+  i.e. most of rendering.py!  But the changes are minor in each case (certainly as far as the client is concerned), and mainly involve replacing p1 and p2 with cp of type CursorPosition.  The functionality remains the same, we have just gathered everything to do with the cursor position into one compound variable.  ALmost like O_O!
+18:11
+  Backing up.
+18:13
+
+3 Nov 22
+12:07
+  So implementing this, starting with the new type.
+12:24
+  new_cursor_position testing out OK.
+12:28
+  _clone_position is no longer required.
+12:55
+  set_thin_cursor_text_and_page testing out OK.
+13:02
+  set_cursor_position_to_start testing out OK.
+13:03
+  Backing up.
+13:09
+
+14:20
+  Continuing.
+14:25
+  set_on_screen_to_text testing out OK.
+14:31
+  set_text_to_on_screen testing out OK.
+14:40
+  render_thin_cursor testing out OK.
+14:41
+  _render_cursor_rectangle testing out OK.
+14:58
+  First test of _try_line OK!
+  Backing up.
+14:59
+
+4 Nov 22
+16:21
+  Perhaps another test?
+17:28
+  A few more tests done, while watching "Midsomer Murders".
+17:31
+  Backing up.
+17:41
+
+7 Nov 22
+12:04
+  In retrospect, it would probably have been better to have used one cursor position to define the thin cursor, and not try to second-guess the form of the variable required for the fat cursor.  It made the development of rendering.py much more complicated, and confused us when we came to implement the fat cursor.  ALWAYS IMPLEMENT THE CURRENT SYSTEM, AND DON'T ASSUME YOU UNDERSTAND WHAT IS REQUIRED FOR LATER, HOWEVER "OBVIOUS" IT MAY SEEM
+12:10
+  Now continuing with the tests for _try_line.
+12:26
+  Problem - blue rectangle is not showing for one glyph wide cursor.
+12:42
+  Sorted - problem was in test code.
+12:43
+  Backing up.
+12:55
+
+14:59
+  Continuing.
+16:02
+  _try_line testing out OK.  Cleaning up.
+16:15
+  Backing up.
+16:18
+
+9 Nov 22
+13:56
+  Decided that we should test _try_line's ability to deal with non-left-aligned lines.
+15:01
+  Quite a bit of work!  _try_line now running through, but _try_line is defined
+    1658 to 1765, i.e. 108 lines
+  The tests take up
+    2186 to 2586, i.e. 401 lines
+  
+  There must be an easier way!
+  Cleaning up.
+15:11
+  Backing up.
+15:14
+
+10 Nov 22
+11:57
+  Continuing.
+12:05
+  _render_line testing out OK.
+12:08
+  Problem with _fix_cursor_position, which hasn't been updated to the new CursorPosition type.
+12:17
+  Updated _fix_cursor_position.
+12:22
+  Rewritten test schema and tests for _fix_cursor_position.
+12:27
+  This should have been picked up earlier, I was starting the tests at tnum=1 rather than tnum=0.  Remember, von Neumann liked counting from 0.
+12:28
+  Break.
+13:05
+  Continuing.  _fix_cursor_position, _de_escape, nearest_glyph_interstice_of testing out OK.
+13:07
+  Backing up.
+13:10
+
+16:28
+  Continuing.
+17:24
+  Problem with move_cursor_down:
+  
+    Tests of move_cursor_down cp._start_text_position.code_point_offset=19
+    Traceback (most recent call last):
+      File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\windowing.py", line 669, in closeEvent
+        _result = _wc(_window)
+      File "rendering.py", line 2040, in window_closing
+        assert cp._start_text_position.code_point_offset == 30  # end of second line of text
+    AssertionError
+    
+  A long way out!
+17:24
+  Backing up.
+17:31
+
+11 Nov 22
+10:02
+  Continuing.
+10:29
+  This is a puzzling error.  The cursor has been moved to the START of the last line ((1,19) in the text) instead of the end(1,30).
+10:36
+  The start and end page positions are also set to the start of the last line.
+10:41
+  Found the problem, I think: we were still using p2 instead of cp for the cursor position in some places.  Replaced every occurrence of p2 in rendering.py with cp.  This has led to some redundancy, which I shall remove as we go along.
+10:45
+  move_cursor_down now testing out OK.  Also move_cursor_up, set_text_font_name and set_text_font_size.  Came to grief in text_position_of.
+10:47
+  Cleaning up before we move on.
+10:52
+  The problem in text_position_of is caused by the tests using render_text to set up.  A bad idea, as render_text has not been tested!
+11:03
+  Moved tests of text_position_of to the end of the tests, i.e. after render_text has been tested.
+11:07
+  Major leap forward.  render_thin_cursor and _render_cursor_rectangle testing out OK.
+  Problem on the last test of _try_line, but enough for now.
+11:14
+  Backing up.
+11:22
+
+14:41
+  Continuing.
+15:07
+  Removed all the duplicate new_cursor_positions, _fix_cursor_positions and set_cursor_position_to_starts.
+15:13
+  _try_line and render_line now testing out OK.  Problem in render_token to do with CursorPosition.
+15:29
+  The problem was in _print_pos, which had not been updated.
+15:46
+  Another problem in render_token, which we'll leave till later.
+15:49
+  Backing up.
+15:57
+
+12 Nov 22
+09:47
+  The problem is:
+  
+    Start of _render_token
+    cp._end_page_position.x_offset=122.419921875
+    Traceback (most recent call last):
+      File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\windowing.py", line 669, in closeEvent
+        _result = _wc(_window)
+      File "rendering.py", line 2927, in window_closing
+        assert _equals_float(cp._end_page_position.x_offset,129.62)
+    AssertionError
+09:50
+  Looks like a one-glyph-out error.  Interestingly, the start page position is OK, so we have a situation in which the end x-offset is less than the start x-offset.  Not a happy situation.  Something wrong in render_token.
+09:53
+  Backing up.
+09:57
+
+15:11
+  The start and end text positions are equal too, so this is just a blip in one value.  Weird, as the CursorPosition values should have been set up in set_thin_cursor_text_and_page, which guarantees identity between start and end values.  Incidentally, why is this procedure exposed?
+15:16
+  Because emily.py uses it.  Anyway, set_thin_cursor_text_and_page is NOT used by render_token, so this explains how the values can be different.  No alternative to following the case through.
+15:24
+  Well, this is a bit tricky.  The cursor text position is set up at the beginning of the test, then render_token is called for each token, then the page position is checked.  The error could have occurred on any run of render_token, but clearly the place to start is the text position, which is the end of line 1, just at the point where the line wraps on a space.
+15:44
+  If a space is added to a line, _render_glyph ensures that any cursor position hit is noted, but if it is not added because of the wrap, then the hit is not seen, at least, not for the end position.
+15:53
+  This is strange, because the start and end page positions should have been set up by the previous _de_escape.  We need to check the cursor position after the relevant render_tokens.
+16:08
+  I put the prints in the wrong place, but this has revealed the error!  After the wrap, the cursor page position is fine.  We then render the next token ("mat."), and the end position is corrupted.
+16:16
+  This is a knock-on from the dreaded fat cursor.  The Word token causes line-wrap.  The procedure checks whether the previous line ends in a space.  If it does, the space is removed and the fat cursor end position is set back one glyph.  This is fine if we're in a fat cursor, but if we're not, it causes the corruption.  We need to guard this action carefully.  We may or may not be in a fat cursor when we process the Word.  The correct guard is the inequality of the cursor start and end positions.  If they are unequal, then either we are correctly reducing the fat cursor length, or the end position is undefined because we haven't reached the end of the cursor yet.  I think it would be better to strengthen the guard to ensure that the fat cursor end point is in fact the end point of the previous line.  So the guard should be "the cursor is not thin and the end of the cursor was the end of the previous line".  Quite how to express that in Python is the next task.
+16:25
+  Break
+17:13
+  Backing up.
+17:22
+
+13 Nov 22
+11:42
+  On nth thoughts, I don't think the fat cursor needs reducing at all.  Either the cursor rectangle runs to the end of the current line, in which case removing the last space will set up _try_line for the correct render of the rectangle, or the cursor actually ends after the removed space, which means it ends at the beginning of the next line, which is allowed for by _try_line.  The second argument also holds for a thin cursor.  So I say, remove the code which reduces the length of the cursor, and let's see what happens.
+12:02
+  _render_token now testing out OK.
+  Problem in render_text.
+  Removing excess prints.
+12:08
+  Backing up.
+12:10
+
+14 Nov 22
+15:04
+  Continuing looking into render_text problem.
+15:23
+  Made many changes to render_text to reconcile the code with the new CursorPosition.  Now finding that the _desired_x_offset is now 0.0 instead of the current page x_offset, which is 7.2.
+15:38
+  This is because we're using the start x-offset instead of the end x-offset.  But which should we use?  If we are moving up, we need to use the start x-offset, but if we are moving down, we need to use the end x-offset.
+15:41
+  I think the mechanism is a bit faulty.  After a render_text, the _update_x_offset flag should be set True (i.e. ignore the _desired_x_offset - there isn't one!), and the _desired_x_offset should be set to -1.0.  Only after the move up/down has been started, using the start/end x-offset as appropriate, should the system remember the desired x-offset  (i.e. _update_x_offset should be set False, and _desired_x_offset will be preserved).
+15:50
+  Changing the system to implement this.
+16:22
+  render_text now testing out OK.  Removing prints.
+16:34
+  Correction!  render_text not displaying fat cursor at ((0,0),(0,1)).
+16:35
+  Backing up.
+16:38
+
+15 Nov 222
+14:07
+  I think this is because the fat cursor x-offsets and flags are not being set up correctly by _fix_cursor_position.
+14:15
+  Hmmm!  _fix_cursor_position seems to duplicate code used in render_glyph.  This is not a good idea.  I think we need to encapsulate the fixing of the cursor position, including setting up the fat cursor offsets and flags, in one procedure.  So modifying _fix_cursor_position to do this.
+14:49
+  _fix_cursor_position modified.
+15:50
+  Tests modified.
+16:01
+  Tests coming along - still a few problems.
+  Backing up.
+16:07
+
+19:35
+  Continuing with _fix_cursor_position tests.
+19:59
+  _fix_cursor_position testing out OK.
+  Now what we need to do is incorporate _fix_cursor_position in render_glyph.  Then we can test _de_escape, which uses render_glyph.  At the moment, these tests are in the wrong order.
+20:08
+  Worse still: there are no tests for _render_glyph!  We must write them, and insert them between the tests for _fix_cursor_position and those for _de_escape.
+20:11
+  Backing up.
+20:15
+
+16 Nov 22
+10:37
+  So doing this.
+10:47
+  Well, that was easy!  _render_glyph reduces to a two line procedure, once we incorporate _fix_cursor_position.  This means that the cursor is guaranteed to be correctly positioned every time a glyph is rendered.  The only other place we need to call _fix_cursor_position is at the very start of the render, before we have rendered any glyph.  Then we are bound to have checked the cursor for all possible glyph interstices.  One word of caution: we need to be careful on line-wraps and hard newlines, as they may need special treatment.
+  Now writing the tests.
+11:29
+  _render_glyph testing out OK.  (Found error in GUIbits1_0 manual on the way.)
+  Now need to rewrite _de_escape and _render_token, ensuring _render_glyph and _fix_cursor_position are used correctly.
+11:31
+  Backing up.
+11:35
+
+13:34
+  Looking at _de_escape.
+13:43
+  We need to write a procedure _update_back_map, which will update the back map as necessary.  This is done in four places in the code.
+14:25
+  _update_back_map written and testing out OK.
+14:31
+  Incorporated _update_back_map into _de_escape, which is testing out OK.
+14:32
+  _nearest_glyph_interstice_of testing out OK.
+14:45
+  Incorporated _update_back_map into all other places, which were all in _render_token.  Not tested yet!
+14:48
+  Backing up.
+14:54
+
+17 Nov 22
+14:03
+  Continuing with tests.
+14:43
+  Tests working out very well.  Just one problem: on fat cursor at (0,1)(0,19), the cursor extends itself past the end of the wrapped line.  This corrects itself at fat cursor at (0,1)(0,20), when it correctly runs on to the next line.
+15:05
+  The problem is not in _render_token, which correctly trims the line.  I think the problem may be in _try_line, which actually renders the fat cursor rectangle.
+15:10
+  It's an interaction between _render_token and _try_line.  In the first case, fat cursor at (0,1)(0,19), _render_token sends _cursor_rectangle_pending to _try_line, which then uses the given rectangle x-offsets to render the rectangle; in the second case, fat cursor at (0,1)(0,20), _render_token sends _in_fat_cursor to _try_line, which then uses the actual end of line to determine the end x-offset.  So _render_token is sending an incorrect end x-offset in the first case.
+15:16
+  And this is because, when the space was added to the line, there was plenty of room and so the end x-offset for the cursor was set to the end of the current line, and _cursor_rectangle_pending was set.  Then a naughty word comes along, the line is wrapped and the space removed from the line, BUT the cursor is still set up for the line as was, with a space on the end.  Shame!
+15:20
+  So in this case (the space has been removed from the current line but the fat cursor has been finalized) we must also shorten the cursor.  This is a job for _render_token.
+15:22
+  Backing up.
+15:25
+
+22 Nov 22
+11:32
+  Returning to this after illness and a trip to London to rehearse Mozart's Requiem.  We need to think carefully about when the cursor rectangle has to be shortened.  It is NOT when a space causes line-wrap, because in this case the space is not added to the line.  Also space followed by hard newline should be left as is, I think, if that's what the user wants.  The conditions are:
+  
+   1. a word has caused line-overflow
+   
+   2. there was a space at the end of the wrapped line, which has been removed
+   
+   3. the cursor rectangle is pending.
+   
+   4. the cursor rectangle end x-offset is greater than the end x-offset of the line.
+   
+  If all these conditions are satisfied, the cursor rectangle x-offset should be set to the x-offset of the end of the line.  With suitable relativization, of course.
+11:40
+  Trying to implement this.
+12:00
+  _render_token modified.
+12:04
+  modified version of _render_token testing out OK.
+12:08
+  text_position_of testing out OK.
+12:09
+  Running through all the tests again, removing unnecessary prints.
+12:10
+  Break.
+12:32
+  Resume.
+12:37
+  All tests running through OK.
+12:38
+  Backing up.
+12:42
+
+27 Nov 22
+14:57
+  Noticed an error message wrong in render_rest_of_text.
+15:16
+  Also wrong in render_text.  Changed test schemas for render_rest_of_text, render_text.
+15:38
+  render_rest_of_text testing out OK.
+15:42
+  render_text testing out OK.
+15:48
+  Cleaned up rendering.py.
+  Backing up.
+15:52
+
+28 Nov 22
+14:31
+  Checking what needs to be done to emily.py.
+14:32
+  We were in the middle of testing cursor dragging and cursor moving when we realized the problem was rendering.py, around 20th October.  So I will continue along this track.
+14:39
+  Have removed the instantiations of cp1 and cp2 in emily.py, and replaced by an instantiation of cp.  Now attempting to run to see what Python throws up.
+15:32
+  Decided cp is really better as the name of the current code point (and is required as such by character_key_hit), so called the global cursor position curpos.  This should avoid confusion.  emily.py running.
+15:37
+  Backing up.
+15:43
+
+1 Dec 22
+13:37
+  Continuing with cursor movement tests.
+13:57
+  Gradually getting rid of old-fashioned position references.  Worried that cursor left at start of text, and cursor right at end of text, does not give a bell.
+13:59
+  Does, but takes a while!
+14:00
+  Two problems:
+  
+   1. When dragging backwards through text, cursor will not move to position (0,0), only (0,1).
+   
+   2. When fat cursor has been rendered, mouse hit does not wipe the fat cursor before rendering the thin cursor.
+14:05
+  Looking at (1).  Cursor now dragging OK, but we get an exception:
+  
+    Start of mouse_dragged
+      x_in_text=-18.75
+      y_in_text=20.25
+      curpos:
+        cp._start_text_position.line_offset=0
+        cp._start_text_position.code_point_offset=51
+        cp._end_text_position.line_offset=0
+        cp._end_text_position.code_point_offset=66
+        cp._start_page_position.x_offset=0.0
+        cp._start_page_position.y_offset=20.0
+        cp._end_page_position.x_offset=127.724609375
+        cp._end_page_position.y_offset=20.0
+        cp._desired_x_offset=0.0
+        cp._update_x_offset=True
+        cp._start_x_offset=0.0
+        cp._end_x_offset=127.724609375
+        cp._in_fat_cursor=False
+        cp._cursor_rectangle_pending=False
+      pivot:
+        cp._start_text_position.line_offset=0
+        cp._start_text_position.code_point_offset=66
+        cp._end_text_position.line_offset=0
+        cp._end_text_position.code_point_offset=66
+        cp._start_page_position.x_offset=127.724609375
+        cp._start_page_position.y_offset=20.0
+        cp._end_page_position.x_offset=127.724609375
+        cp._end_page_position.y_offset=20.0
+        cp._desired_x_offset=-1.0
+        cp._update_x_offset=True
+        cp._start_x_offset=-1.0
+        cp._end_x_offset=-1.0
+        cp._in_fat_cursor=False
+        cp._cursor_rectangle_pending=False
+    Traceback (most recent call last):
+      File "C:\Bosware\Emily\EmilyVersion0_9\emily0_9\rendering.py", line 1569, in _render_token
+        _render_line(pg,cp)
+      File "C:\Bosware\Emily\EmilyVersion0_9\emily0_9\rendering.py", line 1386, in _render_line
+        _try_line(pg,cp)
+      File "C:\Bosware\Emily\EmilyVersion0_9\emily0_9\rendering.py", line 1683, in _try_line
+        _render_cursor_rectangle(ax1,ax2,pg)
+      File "C:\Bosware\Emily\EmilyVersion0_9\emily0_9\rendering.py", line 1295, in _render_cursor_rectangle
+        painting.paint_rectangle(win,x,y,w,h,c)
+      File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\painting.py", line 81, in paint_rectangle
+        raise Exception(mess)
+    Exception: Attempt to paint rectangle with negative width or height
+    rectangle (451.931640625,72.0,-5.0,20.0)
+14:07
+  Well, negative width in this case.  Looking at (2) above.
+14:14
+  The problem is: the page is not being re-rendered when the mouse hits, therefore the blue cursor rectangle remains in place.  Don't like the efficiency implications of re-rendering, but I think we have to attempt it.
+14:17
+  Break for tea.
+15:18
+  Continuing.
+15:29
+  Solved (2) by re-rendering.  (1) seems to occur whenever the mouse drag goes to a negative x or y.
+15:32
+  Backing up.
+15:39
+
+3 Dec 22
+15:47
+  Putting diagnostic in _render_cursor_rectangle(x1,x2,pg) in an attempt to see what is going on.
+15:52
+  As I suspected, x2 < x1, which is bad news.
+15:55
+  Also found another error, which is 
+  
+   3. When the cursor is pivoting in the first line, the first glyph position is never painted blue.
+15:57
+  As for (1), the problem occurs somewhere between the start of mouse_dragged and the call of _render_cursor_rectangle.
+15:59
+  Backing up.
+16:03
+
+5 Dec 22
+14:13
+  (1) seems to be an intermittent timing-dependent fault.  Maybe caused by interaction between the main program and the mouse_dragged callback?  I think it would be wise to protect the cursor with a lock, as we have done for the text.  This means reworking all the rendering.py procedures which use the cursor: eight exposed procedures and six private ones.  This job can wait for a while!
+14:20
+  Meanwhile, I will investigate (3).
+14:23
+  The problem only occurs when the pivot (start of mouse-drag) is on the first line of the page.
+14:27
+  The problem occurs somewhere between the start of mouse dragged with a negative x, and the call of _render_cursor_rectangle, by which time the start of rectangle x-offset x1=12.216796875.  It should be 0.0.
+14:34
+  The curpos is OK at the call of render_text.  Therefore, it must become corrupted between the start of render_text and the call of _render_cursor_rectangle.
+14:40
+  Thus it is somewhere in the many calls of render_token.
+  Breaking for refreshment.
+15:16
+  Backing up.
+15:21
+
+8 Dec 22
+08:18
+  Well, no, the error occurs BEFORE we start rendering tokens.
+08:36
+  Put prints in render_text.  The curpos is updated correctly when the mouse drags past the start of text, but the _render_cursor_rectangle x-offsets remain obstinately the same.
+08:36
+  And this is because, in this particular case (the cursor starts and ends on the same page line), it is not sufficient to flag in_fat_cursor on a text position match, we also need to flag _cursor_rectangle_pending.  Normally we can rely on render_token to set each flag in order, but in this particular case this does not happen.
+08:52
+  No, what is missing is the update of the start and end x-offset IN THE CURPOS.  This is done by _fix_cursor_position, which I think should be called by render_text to check for a match at the start of text.
+09:00
+  That has fixed it!  Now will change cp to curpos throughout rendering.py.
+09:12
+  Done that and tested rendering.py - OK!  Need to remove prints.
+09:13
+  Backing up.
+09:16
+
+9 Dec 22
+16:56
+  Now returning to (1), which has not been fixed by any of the changes so far.  Trying to locate the problem.
+17:02
+  This is some weird error.  All values are fine on the call of render_text, but by the call of _render_cursor_rectangle we have:
+  
+    x1=379.931640625
+    x2=374.931640625
+    
+  which seems to be completely crazy to me.  Also note that x1 > x2, which leads to the inevitable
+  
+    Exception: Attempt to paint rectangle with negative width or height
+    rectangle (451.931640625,72.0,-5.0,20.0)
+    
+  Have to say that the x-offset doesn't look too smart either.  And where did that come from? (Later: it's OK, it's x1 derelativized.)
+  Any attempt to locate the error more precisely requires us to drill down to _render_token, which I will now do.
+17:21
+  The error occurs in _render_token, when we wrap the line.  Somehow the start and end page positions, which were
+
+    curpos._start_page_position.x_offset=0.0
+    curpos._start_page_position.y_offset=20.0
+    curpos._end_page_position.x_offset=158.26171875
+    curpos._end_page_position.y_offset=20.0
+
+  become
+  
+    curpos._start_page_position.x_offset=379.931640625
+    curpos._start_page_position.y_offset=0.0
+    curpos._end_page_position.x_offset=158.26171875
+    curpos._end_page_position.y_offset=20.0
+
+  furthermore, we have
+  
+    curpos._start_x_offset=379.931640625
+    curpos._end_x_offset=158.26171875
+    curpos._in_fat_cursor=True
+
+  which is invalid.  By the start of _render_cursor_rectangle, we have
+  
+    x1=379.931640625
+    x2=374.931640625
+
+  and the end is nigh.
+
+  I also noticed that the text positions are very suspect.  Before the last mouse_dragged, we have
+  
+    curpos._start_text_position.line_offset=0
+    curpos._start_text_position.code_point_offset=0
+    curpos._end_text_position.line_offset=0
+    curpos._end_text_position.code_point_offset=70
+  
+  and after the mouse_dragged, we have
+  
+    curpos._start_text_position.line_offset=0
+    curpos._start_text_position.code_point_offset=51
+    curpos._end_text_position.line_offset=0
+    curpos._end_text_position.code_point_offset=70
+
+  Note that (0,51) is the position in the text of the wrap in the page, i.e. the system thinks the cursor is on the second line of the page, when in fact it is also covering the first line.
+17:46
+  I also noticed an interesting detail when moving the thin cursor around.  When we get to just before the wrapping point, we have
+  
+    curpos._start_page_position.x_offset=374.931640625
+    curpos._start_page_position.y_offset=0.0
+    curpos._end_page_position.x_offset=374.931640625
+    curpos._end_page_position.y_offset=0.0
+
+  after the wrapping space is processed, we have
+  
+    curpos._start_page_position.x_offset=379.931640625
+    curpos._start_page_position.y_offset=0.0
+    curpos._end_page_position.x_offset=379.931640625
+    curpos._end_page_position.y_offset=0.0
+
+  Then after the first token of the next line is processed, we have
+ 
+    curpos._start_page_position.x_offset=0.0
+    curpos._start_page_position.y_offset=20.0
+    curpos._end_page_position.x_offset=0.0
+    curpos._end_page_position.y_offset=20.0
+
+  So the 374.931640625 and 379.931640625 represent the position of the cursor on the page before and after the wrapping space.  This surely has something to do with the error, as these two values are precisely the ones causing the system's downfall.  I suspect that the removal of the space which triggers the wrap somehow translates into a negative cursor rectangle 5 points wide.
+18:02
+  Well, that's enough clues for now.  I think our search has to concentrate on the addition followed by the removal of a wrapping space, and the affect this has on the curpos and the start and end x-offsets.  It's clear that this effect is not healthy.
+18:05
+  Backing up.
+18:09
+
+10 Dec 22
+09:01
+  Actually, the error occurs when a WORD causes line-wrap (which is much more likely than a space causing line-wrap).  Under these circumstances, the trailing space of the current line is removed, and a new line is started.  This is when curpos becomes corrupted and a negative cursor rectangle is produced, with disastrous consequences.
+09:04
+  Backing up.
+09:08
+
+20:32
+  So investigating this case.
+20:58
+  The error occurs when we drag the cursor down the screen at the left hand side, so that the cursor is reduced from two lines to one (the second line).
+21:02
+  Under these circumstances, when the word "guaranteed" causes the line to wrap, the cursor start position on the page is modified from (0.0,20.0) (i.e. the start of the second line, correct), to (379.931640625,0.0) (the end of the first line, with the trailing space, INCORRECT).  The start_x_offset is also modified to 379.931640625, alas!
+21:07
+  Actually, the modification occurs BEFORE the wrapping word is processed, i.e. it is the previous space which has modified the cursor start position.
+21:11
+  Oh dear!  It all becomes horribly clear.  When the space is added (because the line has NOT overflowed) in _render_glyph, a check is done on the start and end cursor positions in the text.  Alas! this test finds that the cursor start text position (0,51) is a match for the current position in the text (the interstice at the end of the space, (0,51)).  So the cursor start page position is duly updated to the end of the current line (with its terminating space).
+  When the next word is processed, the line has its terminating space removed, and a new line is started (in effect, the terminating space becomes a soft newline).  So now (0,51) in the text corresponds to the start of the second line on the page.  However, the cursor start page position is not updated to reflect the new situation.  Result - disaster!
+21:31
+  It is important to realize that the error occurs when the system is rendering the (space-reduced) line, i.e. before is has set up the next line and has a chance to correct the cursor position.  _render_line is called with the cursor start page position set to (379.931640625,0.0), but the line length is 374.931640625.  This is the situation which causes the negative cursor rectangle to be produced.  The deed is done in _try_line.  We have to ensure that this scenario cannot occur.
+21:47
+  Backing up.
+21:50
+
+12 Dec 22
+13:47
+  Fixing this in _render_token.  When the space is removed after a word-induced wrap, we have to check whether the cursor start position in the text is the same as the start of the word.  If it is, we simply set the in_fat_cursor flag to False.  Then the match will be done again at the start of the next line.  Simple!
+13:50
+  So trying this.
+14:01
+  Fixed this, I hope.  Had to use the page position rather than the text position, which has already moved on to the end of the word, after the get_next_token.
+14:05
+  That has fixed it.
+  Cleaning up.
+14:15
+  Fat cursor now working very nicely.  Very pleased.
+14:19
+  Backing up.
+14:21
+
+15 Dec 22
+17:44
+  Tried Emily on my old Acer Swift, and it's not too slow.  Am keeping the dear old machine going so I can use it as a timing test bed, because Emily is no use if it only works on the latest hardware.
+  Have found a few problems with the fat cursor and the arrow keys:
+
+   1. The up and down arrows work a lot faster than the sideways arrows.  Why?
+   
+   2. If you do up-arrow or down-arrow with the fat cursor showing, the fat cursor remains visible - you have two cursors!  Sideways arrows wipe the cursor.  This may be connected to (1), in that sideways arrows re-render the entire page with each cursor movement - possibly overkill.  If we could find a way to wipe the fat cursor whenever we move to a thin cursor, without doing a complete re-render of the page, we could kill two birds with one stone.
+   
+   3. Right-arrow from a fat cursor moves on from the end of the cursor, which seems correct to me.  Left-arrow moves back, but also from the end of the cursor, which does not seem correct.
+   
+   4. Shift+arrow-key is intercepted by the windowing system, and used to shift the relevant scrollbar.  It would be nice if shift+arrow-key extended the cursor, as it does for every other known editor.
+ 
+   5. It would also be nice if double-click selected a word, but don't let's get into changing modes with left and right arrows moving word by word - it's too confusing.  Also don't let's have triple-click selecting a line or sentence - also too confusing.
+18:13
+  A few things to think about, anyway.
+18:14
+  Backing up.
+18:19
+
+21 Dec 22
+12:17
+  So looking at (3).
+12:32
+  The culprit is rendering.set_text_to_on_screen, which always sets the text cursor to the end cursor position on the screen.
+12:35
+  OK, so we've got to be careful here.  The text cursor is a single point in the text.  Now that we have mouse-drags, and potentially arrow+shift, we have a situation where the screen cursor could be fat and the text cursor thin.  Suppose the user wants to cut and paste text.  They select a section of text with a mouse-drag.  Then they press CTRL+x and expect that section of text to disappear.  How do we implement that?
+12:42
+  I think the answer is that we can do it by starting at the fat cursor start offset in the text, repeatedly finding the current code point and adding it to the clipboard, and then deleting it, until the fat cursor end point in the text is reached.
+  Similarly with copying and insertions from the clipboard.  The current text model is sufficient to cope with this.  What we do need however, are TWO procedures to set the text cursor from the screen cursor, one to set it to the start position, and one to set it to the end position (which we already have).  I propose we name these rendering.set_text_to_on_screen_start and rendering.set_text_to_on_screen_end.
+12:51
+  Modified set_text_to_on_screen to set_text_to_on_screen_end.
+12:54
+  set_text_to_on_screen_end testing out OK.
+13:01
+  set_text_to_on_screen_start testing out OK.
+13:02
+  Backing up.
+13:09
+
+22 Dec 22
+15:08
+  Now trying to update emily.py to the new interface from rendering.py.
+15:23
+  This has proved more tricky than expected.  We have changed the behaviour of:
+  
+    BACKSPACE
+    DELETE
+    ENTER
+    LEFT_ARROW (where we found the error)
+    RIGHT_ARROW (hopefully a null change)
+    character_key_hit
+    font_name_item_hit
+    text_font_size_item_hit
+    render_cursor_left_right (but this is covered by LEFT_ARROW and RIGHT_ARROW)
+    set_current_alignment
+    
+  and all these must be checked for consistency for both a thin and fat cursor.
+15:31
+  So doing this.
+15:33
+  Problems found:
+  
+    BACKSPACE - deletes the glyph before the cursor.  Fat cursor does not disappear
+    DELETE - deletes the glyph after the cursor.  Fat cursor does not disappear
+    ENTER - adds a NL at the end of the cursor.  Fat cursor does not disappear
+    LEFT_ARROW - OK!
+    RIGHT_ARROW - OK!
+    character_key_hit - new character appears at end of cursor, 
+                          but cursor does not disappear
+    font_name_item_hit - cursor is made thin, but cursor appears one character 
+                           beyond end of old fat cursor
+    text_font_size_item_hit - cursor is made thin, at end of old fat cursor - OK
+15:50
+  Break for Graham to try to fix HP Desktop.
+17:28
+  HP Desktop fixed!
+  
+    set_current_alignment - cursor is made thin, 
+                              at end of old fat cursor, but old fat cursor still 
+                                there, unaffected by change of alignment.
+17:30
+  Clearly, some redesign needed.  First of all, we need to decide what we want to happen in each case.  Then we need to implement the changes.
+17:32
+  Backing up
+17:38
+
+24 Dec 22
+12:41
+  We also need to look at UP_ARROW and _DOWN_ARROW with the fat cursor.
+12:44
+    UP_ARROW - the cursor moves up one line and along one glyph from the start 
+                 cursor position.  The fat cursor still shows.
+    DOWN_ARROW - the cursor moves down one line and at the end of the fat cursor - 
+                   good!  But the fat cursor still shows.
+12:49
+  Putting all these results together, we have:
+  
+    BACKSPACE - deletes the glyph before the cursor.  Fat cursor does not disappear
+    DELETE - deletes the glyph after the cursor.  Fat cursor does not disappear
+    ENTER - adds a NL at the end of the cursor.  Fat cursor does not disappear
+    LEFT_ARROW - OK!
+    RIGHT_ARROW - OK!
+    UP_ARROW - the cursor moves up one line and along one glyph from the start 
+                 cursor position.  The fat cursor still shows.
+    DOWN_ARROW - the cursor moves down one line and at the end of the fat cursor - 
+                   good!  But the fat cursor still shows.
+    character_key_hit - new character appears at end of cursor, 
+                          but cursor does not disappear
+    font_name_item_hit - cursor is made thin, but cursor appears one character 
+                           beyond end of old fat cursor
+    text_font_size_item_hit - cursor is made thin, at end of old fat cursor - OK
+12:51
+  Break for Xmas cards.
+14:59
+  It is clear that the main problem is the fat cursor not disappearing, along with a few off-by-one errors.  In addition, trying to make the fat cursor disappear by re-rendering the entire Page is terribly wasteful.  I propose we resurrect rendering.render_cursor_lines, but this time make it work properly.  We know that the new (thin) cursor position is guaranteed to be within one Page line of the old fat cursor, so surely we can use this fact to write a render_cursor_lines procedure that will only render from (old cursor line)-1 to (old cursor line)+1.
+15:08
+  Backing up.
+15:13
+
+25 Dec 22
+12:18
+  I have had an even better idea: we write rendering.render_lines(t,p,plo1,plo2) which gives a very general algorithm for rendering text t from page p line plo1 to (but not including) page line plo2.  This is implementable because:
+  
+   1. we can always back map from the start of a page line to the equivalent text position.
+   
+   2. the start of a page line will always be on a token interstice, so we can repeatedly render_token to fill the required page lines.
+   
+  render_lines is a very general procedure.  We can use it to implement:
+  
+   1. render_text - as render_lines(t,p,first page line, last page line +1)
+   
+   2. render_rest_of_text - as render_lines(t,p, plo1, last page line +1)
+   
+   3. all the arrow gestures - as render_lines(t,p, plo1, plo2) where plo1
+      and plo2 are the minimum and maximum lines that cover the original 
+      and final positions of the cursor.  Note that this works for both fat
+      and thin cursors.
+      
+   4. mouse-dragging - as render_lines(t,p,plo1,plo2) where plo1 and plo2 are the 
+      start and end positions of the fat cursor.
+      
+   5. character-insertion and -deletion, as render_lines(t,p,page line of 
+      insertion/deletion, last page line +1)
+      
+  What is more, render_text represents the minimum re-render for all these situations, much as a clip rectangle can be used to give the minimum re-render in graphical applications.
+12:58
+  Backing up.
+13:03
+
+26 Dec 22
+20:00
+  We can do even better.  Character-insertion and -deletion can be optimised even further.  If we think of the back map with all the entries marked green, after an insertion or deletion, a section of the map will be modified.  We can think of these entries turning red.  It must be the case that the entries in this section are contiguous - the section may be one character long, or may extend to the end of the page, but it will always be one contiguous sequence.  This means that we can write a procedure rendering.render_change(t,p) which will update the back-map after an insertion or deletion, note the point at which the "red" section ends, and then use render_lines to render just the page lines that have changed.
+20:39
+  I've thought of a snag with this - the map isn't updated until the tokens have been processed and the corresponding glyphs are being output.  I don't think this is a deal-breaker, it just requires a bit of thought.  The relevant point is that a page line is not output until after the back map has been updated.  We may need a few flags - I'll think about it.
+20:48
+  Backing up.
+20:53
+
+27 Dec 22
+12:27
+  Hmmm, if we're not careful we'll have more flags than V.E. Day, each flag representing many dependencies.  I think the best plan is to keep render_text as a separate procedure, which just does a straight render of the whole text from beginning to end.  This will be used when reading in the external file, for example.  As a side-effect, render_text will set up the back map.
+  We then give render_change the precondition that the back map is present, as it can only be used after the initial read-in.  We then have the problem of processing the end of the "red" entries in the map, and rendering just the relevant page lines.  This doesn't fit well with our design of reading and processing tokens repeatedly.
+  So I think we will need some flags, to carry the relevant information from the point of discovery in render_token (actually in _de_escape, which it calls), to the setting of the termination in _render_line (I would suggest), and the terminating of the token-processing loop in render_change.
+12:46
+  Therefore we need two flags, which can be conveniently placed in Page:
+  
+    end_of_change - which will be set True when _de_escape finds that the map
+                      entry it is updating is already set to the same value
+                      
+    end_of_change_line - which will be set True when _render_line finds that 
+                           end_of_change is True
+                           
+    Then render_change will check for end_of_change_line and terminate its token-processing loop.
+    I think this design implies that the parameters of render_change are
+    (t,p,plo1) where plo1 is the page line offset of the start of the "red" sequence in the map (i.e. the start of the modified portion of the page).
+12:55
+  So this gives us three rendering procedures:
+  
+   1. render_text - just does a straight render of the entire text.
+   
+   2. render_lines - renders a sequence of line from plo1 to just before plo2.
+                     Used when moving the cursor around with the arrow keys.
+   
+   3. render_change - used when inserting or deleting characters, to render only 
+                        the lines of the page that have been modified.
+
+  Clearly, we could use render_lines(0,999) to implement render_text, but I'm not sure that the extra complexity is worth it.
+13:00
+  Backing up.
+13:03
+
+28 Dec 22
+15:05
+  Come off it!  Of course it is worth it!  I have just counted the number of dependencies in render_text, it is 30, more or less.  If we implement render_text as render_lines(0,999) we have saved 30 places where rendering.py could be affected by changes in other parts of the system.
+15:10
+  So we need to:
+  
+    1. implement render_lines and test it.
+    
+    2. re-implement render_text in terms of render_lines, and test that it still 
+         works to spec.
+    
+    3. implement render_change
+    
+    4. modify emily.py to use the new rendering procedures where appropriate.
+    
+15:13
+  Backing up.
+15:15
+
+2 Jan 23
+10:31
+  Returning to this after a diversion caused by the desktop Windows 10 breaking.  Reloading the latest version of Python and PyQt caused an error to appear in GUIBits, apparently caused by a change to the spec of PyQt between 6.3 and 6.4.  Not good!  Anyway, all fixed now and I've run all the tests for guibits1_0 with no problems.
+  As a side-effect of moving to Python 3.11.1, we now say "py" instead of "python" to start the interpreter.
+10:36
+  Anyway, now starting to implement render_lines.
+10:56
+  Found we need to use text_position_of to find the relevant text positions.
+11:02
+  Backing up.
+11:07
+
+3 Jan 23
+12:25
+  Not sure about render_change.  It puts an O(number of glyphs) action in _de_escape for possibly unnecessary speed-up.  I think we'll stick to render_lines and use render_lines(current line, 999) to cope with insertions and deletions.
+12:29
+  Anyway, continuing with render_lines.
+13:02
+  Written first draft of render_lines.  Now for the tests.
+13:22
+  First test successful!
+  Backing up.
+13:29
+
+18:45
+  Realized I used an "and" instead of an "or" in the termination condition for the render_lines loop.  Elementary error!
+18:48
+  Fixed.
+  Backing up.
+18:50
+
+5 Jan 23
+15:11
+  Continuing with render_lines tests.
+15:42
+  Nearly finished the parameter-checking tests.
+  Backing up.
+15:46
+
+6 Jan 23
+13:59
+  Realized that there is an extra precondition: plo1 must be within range of the currently displayed page text.  Adding a parameter check for this.
+14:05
+  Also realized that because Python models all the integers, up to and including infinity, we can use math.inf instead of the arbitrary 999 to indicate "to end of text".
+15:13
+  Got through testing parameter checking successfully, but now program in a loop.
+15:15
+  Whoops!  Forgot to put the parentheses around the "or" clause in the loop guard!
+15:16
+  render_lines now rendering a single blank line successfully!  It's a start!
+15:17
+  Backing up.
+15:22
+
+7 Jan 23
+12:49
+  Continuing with tests of render_lines.
+13:26
+  Made up test of three lines, with plo1 = 1, i.e. second line, but render_lines says out of range.  Think this is because the back map has not been set up - need an initial render_text.
+13:37
+  Did an initial render_text with black text and tried to render_lines(1,2) with blue text - did not work.
+13:42
+  Checked the text start and end points - OK.
+13:46
+  Checked the loop - OK.  I think it's rendering black instead of blue.
+13:50
+  No, it's not rendering at all - _try_line is never called.
+13:53
+  _render_token never calls _render_line.
+14:00
+  ...because the NL at the end of line 2 is never processed.  I think this is because the loop terminates too early.  The loop guard halts when we hit the text position equivalent to (2,0) in the page.  In our case, this is (2,0) in the text, which render_lines is seeing as the NL.
+14:05
+  Backing up.
+14:08
+
+15:08
+  And this is because the guard operates AFTER the relevant token has been read in.  We had to write the loop this way because the original termination condition was "just having read an <END> token".  We now have to modify the loop so that both of the termination conditions can be used.  The total termination condition is
+  
+    we've just read an <END> token or we are poised to read the end line
+    
+  I think the only nice way to do this (as Python, quite rightly, doesn't allow jumps out of loops) is to set a flag (surprise, surprise) when the <END> token is read, which then terminates the loop.  But we must not try to render the <END> token.
+15:19
+  Well, rendering the <END> token just renders the line so far, and is necessary for texts that are not terminated by NL.  So we keep that, I think.
+15:25
+  Rewritten the loop using an eot flag.  It's actually simpler!
+15:29
+  Working, but still not turning the line blue.
+15:44
+  Because pg._text_color is still BLACK when _try_line is called.
+15:48
+  And that's because the test was set up wrongly.  Now working beautifully.  We just need to test the loop termination for an inf plo2.
+15:55
+  Backing up.
+15:58
+
+9 Jan 23
+11:00
+  So trying this.
+11:12
+  math.inf is not allowed as an int value.  We will have to use 999 or somesuch instead.  Changing the precondition on render_lines.
+11:27
+  That works, but now the fat cursor at ((0,0),(0,1)) also shows a thin cursor at ((0,0).
+11:31
+  This was because the tests hadn't wiped the cursor, but I think we should upgrade render_lines to always render the cursor - it already renders the fat cursor - and therefore to wipe any cursor it finds at the start of the render.
+11:50
+  That seems to have fixed it.  One advantage is that the wiping and rendering is paired, so it's more difficult to mess things up.  I'm hoping it will work for render_text too.
+11:57
+  Now we have the opposite problem: rendering a thin cursor leaves the old fat cursor showing.  I thought this was the problem render_lines was supposed to solve!
+12:01
+  Backing up.
+12:06
+
+14:31
+  To understand why this has happened, we have to go back to the definition of rendering as currently practised.  What we are trying to do when rendering is specify the color of each pixel in the window of the app.  If we clear the window, every pixel reverts to the background color.  If we render text, certain pixels are converted to the text color.  When we render a fat cursor, one or more rectangular areas are converted to the fat cursor color.  Because, on each repaint of the window, rectangles are painted prior to text, the text appears on top of the colored cursor.
+  If we now wish to move or change the fat cursor, we have two options (at least):
+  
+   1. clear the window, render the cursor and render the entire text.  This is an O(number of pixels in the window's pane) operation.
+   
+   2. Overpaint the cursor with the background color.  This is an O(number of pixels in the cursor rectangles) operation, and therefore in general a lot quicker.
+   
+  I think we therefore need a procedure clear_cursor(win,curpos,pg), which will either wipe the thin cursor or overpaint the fat cursor.
+14:46
+  Eventually, if we clear the fat cursor n times, we will have n "paint background color" operations going on for each repaint (assuming none of the repainted cursors includes another).  It might be better in that case to just have one "repaint background" operation, which will clear the entire pane background while leaving the text intact.  As the pane has a fixed size, there will then be a maximum of two repaint rectangle operations, one for the background and one for the fat cursor, at any given time.
+  This needs thought.
+14:55
+  Backing up.
+14:59
+
+17:01
+  We can do nothing about the repaint procedure, which is basically:
+  
+   1. clear the pane
+   2. paint the rectangles
+   3. paint the text strings
+   
+  but we can minimise the number of rectangles repainted.  To do this we need a procedure painting.clear_rectangles in GUIbits, which will just clear the rectangles and leave the text strings.  This will replace windowing.clear, which clears both.  I guess we need writing.clear_text, too, which will clear the text strings and leave the rectangles.  Then the old windowing.clear equates to calling both the new procedures, in either order.
+17:31
+  Now we can implement the fat cursor as a set of rectangles, and wipe it by doing a clear_rectangles.  Good job we didn't release GUIbits 1.0 until we had thoroughly beta'd it!
+17:36
+  Backing up.
+17:40
+
+13 Jan 23
+10:32
+  In the end, decided to keep windowing.clear and wrote painting.clear_rectangles and writing.clear_text (which does not clear the thin cursor).  All three procedures could be useful, I think.
+10:35
+  Breaking for Iceland.
+11:26
+  But first, we need to replace render_text and render_rest_of_text with render_lines, which is more general.  This way we save a two-way redundancy of duplication.
+11:53
+  Hang on!  render_lines only works if we can guarantee that the text is already rendered and the back map is set up.  Therefore we need render_text.  We can still save a one-way redundancy by replacing render_rest_of_text.
+12:07
+  Hmmm!  The only place that render_rest_of_text is used is in emily.render_modified_text.  This requires access to the page line offset of the curpos, which is strictly not allowed.  Maybe an access procedure in rendering.py?
+12:14
+  Backing up.
+12:19
+
+15:48
+  Been having a think.  If the only use of render_rest_of_text is in render_modified_text, and render_modified_text knows the cursor position in the text, what is the point of using the back map?  It seems to me that wherever render_rest_of_text is used, the cursor position in the text will be known.  After all, the only point of the back map is to find the cursor position in the text when the user has hit an arbitrary point on the page.  So the client must need to find the equivalent position in the text BEFORE render_rest_of_text is called.  Ergo, we can replace render_rest_of_text by render_lines, modified to take the TEXT first line and last line+1.
+15:53
+  This leads to an interesting conclusion.  We CAN replace render_text by render_lines(0,TO_END) as the back map is no longer needed as a precondition.  So we can in fact replace all the text rendering by calls to render_lines.
+16:11
+  Backing up.
+16:13
+
+14 Jan 23
+10:22
+  So modifying render_lines.
+10:36
+  Found a snag - in general, the page position is not known if we know the text position.  We have to render the entire text from start to finish to ensure we know the page position equivalent to a given text position.  This rules out the amendment above; just because we can guarantee the start text position for a partial render, it does not follow that we can guarantee the start page position.  Pity!
+10:40
+  OK, well keep render_lines as is.  It's still better than before.  We can eliminate render_rest_of_text, which is something.
+10:44
+  Re-tested rendering.py - still refusing to clear the fat cursor, but we know how to fix this!
+11:15
+  Fixed, and tests of render_lines now running through.
+11:21
+  Trying to run all of tests for rendering.  Failed on tests for render_rest_of_text, need to replace with tests for render_lines!
+11:22
+  Backing up.
+11:26
+
+15 Jan 23
+13:17
+  So trying this.
+13:36
+  OK, revised tests and renumbered then so that they are all consecutive.
+13:45
+  All tests running through OK.  Halleluia!
+13:46
+  Backing up.
+13:48
+
+17 Jan 23
+10:39
+  So now looking at emily.py now that we've improved rendering.py.
+10:43
+  But first, updated the preconditions on rendering.render_lines.  I've realized that render_lines can be used whenever a back map exists for plo1, the start page line.  This is always the case for page line 0, as the text always consists of at least one line, and the back map is set up to reflect this.  Ergo, we CAN replace render_text by render_lines(0,TO_END) where TO_END is 999 or somesuch.
+10:47
+  So now looking at updating emily.py to use render_lines exclusively.
+  After that we will try to fix the five problems we discovered on 15 Dec:
+  
+   1. The up and down arrows work a lot faster than the sideways arrows.  Why?
+   
+   2. If you do up-arrow or down-arrow with the fat cursor showing, the fat cursor remains visible - you have two cursors!  Sideways arrows wipe the cursor.  This may be connected to (1), in that sideways arrows re-render the entire page with each cursor movement - possibly overkill.  If we could find a way to wipe the fat cursor whenever we move to a thin cursor, without doing a complete re-render of the page, we could kill two birds with one stone.
+   
+   3. Right-arrow from a fat cursor moves on from the end of the cursor, which seems correct to me.  Left-arrow moves back, but also from the end of the cursor, which does not seem correct.
+   
+   4. Shift+arrow-key is intercepted by the windowing system, and used to shift the relevant scrollbar.  It would be nice if shift+arrow-key extended the cursor, as it does for every other known editor.
+ 
+   5. It would also be nice if double-click selected a word, but don't let's get into changing modes with left and right arrows moving word by word - it's too confusing.  Also don't let's have triple-click selecting a line or sentence - also too confusing.
+
+11:09
+  Replaced all the calls of render_text with render_line(0,_TO_END).  Everything works, except that when we change the font size to a smaller value, the old text is not overwritten.  I suspect that this error has been there a while...
+11:15
+  Fixed.
+  Backing up.
+11:18
+
+18 Jan 23
+17:59
+  Now looking at the above five problems.  (1) and (2) are connected.  Now we have render_lines and clear_rectangles, we can improve the handling of the arrow keys.
+  If we have a fat cursor, then the action is simple:
+  
+   1. clear_rectangles, clearing the fat cursor
+   2. move the thin cursor to the appropriate position
+      (the left or right edge, or the line above the left edge,
+       or the line below the right edge)
+   3. use render_lines to render the line of the thin cursor
+   
+  If we have a thin cursor, the action is:
+  
+   1. move the cursor as required (this may involve the back map for up and down).
+   2. use render_lines to re-render the old and new position (two lines)
+   
+  Note that because we are talking text lines here, we may actually render more page lines than text lines.  No matter, this is still much more efficient than rendering the whole page.
+18:30
+  Updated the text font name menu to clear the page before re-rendering, as for text font size.
+18:31
+  Backing up.
+18:35
+
+19 Jan 23
+15:39
+  So starting with left-arrow.
+15:47
+  Working out quite nicely, but as we are now distinguishing between a fat cursor (move to start of cursor) and a thin cursor (move backwards in text, if possible) I think we need a new procedure in rendering, is_thin(curpos).
+16:21
+  is_thin written and tested.
+16:23
+  Backing up.
+16:47
+
+20 Jan 23
+16:53
+  So starting to update left-arrow.
+17:15
+  left-arrow callback now working, but two problems:
+  
+   1. the left-arrow code refers to curpos._start_text_position, which is a bit naughty.
+   2. left-arrow on thin cursor is still inefficient - it's re-rendering the entire page (and turning on the fan on my laptop!)
+17:24
+  Attempt to fix (2) failed - the cursor is not moving.
+17:36
+  All the text cursor and screen cursor positions look correct, so this is something to do with render_lines.
+17:41
+  Backing up.
+17:44
+
+21 Jan 23
+10:14
+  Richard, please TRY to distinguish between text lines and page lines.  You used the wrong one as a parameter to render_lines, and are then surprized when it doesn't work!
+  Fixing this really requires two new procedures in rendering:
+  
+    start_page_line_of(curpos)
+    end_page_line_of(curpos)
+    
+  but for now I will inline the code.
+10:24
+  The cursor is now actually moving backwards, but gets stuck at the start of a page line.  This sounds like a serious failure to me...
+10:31
+  The text position is being decremented correctly, but the page position gets stuck.
+10:36
+  render_lines is not updating the cursor page position when the cursor moves to the end of the previous line.  Furthermore, it stops updating the cursor page position from then on, that is, it's not a question of render_lines missing the cursor when it's at the end of a page line, it misses it from then on.
+10:48
+  The only explanation for this is that the page text position is getting corrupted.  We know that the cursor text position is OK, because we can see it in the prints.  We know that rendering._fix_cursor_position works, because it has been succesfully updating the cursor page position up to the point where the cursor hits the start of the page line.  Ergo, the page text position is being corrupted, and stays corrupted, when the cursor hits start of page line.
+11:00
+  Page text position looks OK.
+  Tried modifying render_lines to render the whole page and eveything works fine!  This is a weird error!
+11:01
+  Backing up.
+11:04
+
+13:54
+  Still haven't sorted out the difference between text lines and page lines!  render_lines works from the start of the given page line to the line before the end page line.  Therefore, when we move the cursor back, if it goes to the page line above, it gets missed in the scan.  The answer is to start the scan from the page line above the current screen cursor position.  This will also be necessary for up-arrow, so we should include it in start_page_line_of.  For right-arrow and down-arrow, the actual page line number is correct, as any movement will be to the line after, and we always scan at least two page lines.
+14:01
+  A slight wrinkle - if the start page line number is 0, we leave it, as the user cannot move the cursor back/up from the initial page line.  So we incorporate this into start_page_line_of too.
+14:03
+  So putting these insights into the inline code.
+14:11
+  Inline code working nicely, including at start of page!  Taking the prints out for timing.
+14:17
+  Yes, left-arrow is now much faster than right-arrow.  Now writing start_page_line_of and end_page_line_of.
+14:44
+  Written them, and tests.
+14:46
+  start_page_line_of and start_page_line_of_back written and tested.  Only the names have been changed to protect the innocent.
+14:48
+  Now inserting start_page_line_of_back into left-arrow code.
+14:59
+  Working extremely well.  Cleaning up.
+15:00
+  Backing up.
+15:06
+
+23 Jan 23
+14:26
+  Now updating right-arrow.
+14:37
+  Update done; testing.
+14:41
+  right-arrow working nicely.  Trying up-arrow.
+14:51
+  We need two new routines in rendering.py: collapse_cursor_to_start(curpos) and collapse_cursor_to_end(curpos).  These will allow the fat cursor to be collapsed without involving the text cursor.
+15:09
+  collapse_to_end/start written.
+15:24
+  collapse_to_end testing out OK.
+15:30
+  collapse_to_start testing out OK.
+  Backing up.
+15:36
+
+16:34
+  Continuing with up-arrow.
+16:37
+  up-arrow rewritten.
+16:40
+  up-arrow working.  Emboldened to try down-arrow.
+16:46
+  My luck didn't hold.  Works OK except when a fat cursor is replaced by a thin one.  Then the cursor gets stuck and a "ping" sounds - i.e. the system thinks the cursor is at end of text.
+16:49
+  It sometimes happens at other times too.
+16:55
+  This is a result of the rendering optimization we have just implemented.  rendering.move_cursor_down assumes that pg._page_position.y_offset is the last non-blank line of the page, but this is no longer true, as the entire page may not have been rendered.  We will have to re-think this.
+16:58
+  Backing up.
+17:01
+
+25 Jan 2023
+14:15
+  We can solve the false-end-of-text problem.  Whenever the last line of the page is rendered (or attempted to be rendered, if it is beyond the visible page), the <end> token of the text has been read.  Therefore, we can hold the position of the EOT (_EOT_page_position, or such) and update it every time <end> is processed by render_token.  A convenient place to hold this information would be the Page variable.  It will be initialized as (0,0).  When a text file is modified or read in, it will be updated.  In this way, we can guarantee that _EOT_page_position always represents the current end of the text on the page, and can be used by the right-arrow and down-arrow code to check for out-of-bounds.
+14:24
+  Implementing this.
+14:30
+  rendering.new_page updated and tested.
+15:01
+  Updated rendering._render_token and tests.
+15:06
+  First test of _render_token fails:
+  
+    Tests of _render_token
+      page is 3" wide by 4" deep,
+      with horizontal indent of 0.5", vertical indent of 1"
+    len(pg._line_list)=1
+    Traceback (most recent call last):
+      File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\windowing.py", line 669, in closeEvent
+        _result = _wc(_window)
+                  ^^^^^^^^^^^^
+      File "C:\Bosware\Emily\EmilyVersion0_9\emily0_9\rendering.py", line 3241, in window_closing
+        assert len(pg._line_list) == 0
+               ^^^^^^^^^^^^^^^^^^^^^^^
+    AssertionError
+15:07
+  Somehow, processing the <end> token has modified the line list.
+15:07
+  Backing up.
+15:11
+
+27 Jan 23
+12:56
+  Well, this is not surprising as the <end> token causes a (short) line to be rendered.  However, it strikes me that if we want EOT_position to be used for right-arrow as well as down-arrow, we need to ensure that both the x-offset and y-offset represent the actual end of text point on the page.  At the moment this is not the case.
+  I suggest we:
+
+   1. update _render_token to ensure that it is the case
+   2. modify the _render_token tests to test that this is the case.
+13:14
+  Have modified _try_line to set pg._page_position.x_offset to the end point of the rendered line.  This should carry forward to _render_token setting EOT_position.
+13:38
+  _try_line not updating the x-offset properly.  We have:
+  
+      win._pg._line_width=122.419921875
+      start_x_offset=0.0
+      win._pg._page_position.x_offset=158.419921875
+      
+  i.e. the page position x-offset is 36 points too high.  Why?
+13:39
+  Backing up.
+13:42
+
+16:29
+  Investigating.
+16:37
+  The return value from writing.write_string is 158.419921875, i.e. not as expected.
+16:40
+  Hang on, I think we're forgetting about the indent.
+16:43
+  Yes, writing.write_string returns the x-offset of the line from the lh edge of the page.  So we need to do a bit more processing on the x_offset.
+16:59
+  That has sorted it.
+17:12
+  OK, I'm happy with _try_line.  _render_token still needs its tests improving.  We don't need to test the <end> token over and over.  I suggest we rewrite the _render_token tests and tie them up in some way with the test program.
+17:39
+  _render_token testing out OK, but now we have a problem that the fat cursor tests and ff. (win._tnum == 21 and after) use render_text, which no longer exists.  We need to replace all occurrences with render_lines(0,TO_END).  If we want to be very thorough, we could reinstate the render_text tests (win._tnum == 20) using render_lines(0,TO_END).
+17:45
+  Backing up.
+17:48
+
+28 Jan 23
+14:52
+  So reinstating the tests.
+15:15
+  Working through the tests with the new spec for EOT.  Decided, as the majority of rendering.py is now test code, to hive off the tests into rendering_test.py, to avoid dependency of aggregation.
+15:52
+  Breaking to cut flowers.
+16:17
+  Backing up.
+16:28
+  Continuing.
+17:53
+  All tests now OK, but we need to modify move_cursor_right and move_cursor_down, and tighten up their tests.
+17:54
+  Backing up.
+18:00
+
+30 Jan 23
+15:44
+  So doing this.
+15:59
+  Modified move_cursor_down, move_cursor_right does not exist!
+16:05
+  move_cursor_down testing out OK.
+16:23
+  Tried emily.py and cursor movement is now very satisfactory.  However, there are a couple of problems:
+  
+   1. It is impossible to save an Emily file with a text that ends on an incomplete line, because all text is stored in HTML paragraphs, which end with a blank line.  In fact, there always seem to be TWO empty lines at the end of a read-in text, which cannot be right.
+   
+   2. using mouse-drag to make a fat cursor is, in general, very ill-defined - I think because the old rectangles do not get wiped when the mouse changes its direction.
+16:28
+  Looking at (2) first.
+16:30
+  Yes, that seems to be the problem, the old rectangles do not get wiped.  Investigating.
+16:39
+  Yes, changed the mouse dragging callback to do this.  Everything now fine.
+16:56
+  As for (1), I have found in L642 ff. of mle_parsing._parse_paragraph_or_break that after parsing the paragraph contents into a text variable, the system emits two hard line breaks.  This is fine if the paragraph is followed by another paragraph (we obtain a blank line between paragraphs) but not so good if the paragraph is the last line of the text.  This needs some thought.
+17:01
+  Backing up.
+17:08
+
+31 Jan 23
+13:38
+  The HTML spec says that paragraphs are preceded and followed by a single newline.  This seems like a sensible idea, as it ensures that paragraphs are separated by a blank line and that other items such as diagrams and lists are kept separate from following or preceding paragraphs.  So we should follow this standard, but if we do we will always have a blank line at the start of our text.  So I suggest that we precede and follow every paragraph with a newline, except for the start of text, when we drop the preceding newline.
+13:43
+  Looking at implementing this in mle_parsing._parse_paragraph_or_break.
+13:50
+  Implemented without the initial NL-dropping.
+14:18
+  Tests modified; all tests working through OK.
+14:22
+  Tried Emily; all OK except for an extra blank line at the start of text, as expected.  Noticed that on selecting an entire paragraph the blue rectangles are not always as tall/deep as they should be, leading to white background showing through in between.  Some sort of rounding error (it changes as the page is enlarged and reduced) so may be a GUIbits problem.
+14:25
+  Backing up.
+14:29
+
+1 Feb 23
+07:46
+  Hmmm!  Just tried saving an Emily file and reloading it.  It now has TWO extra blank lines at the start of the text!  And so on... eventually, a page of blank lines.  The emitting side of Emily needs to be modified, so that the initial blank line is recognized as the start of a paragraph, rather than a <BR>.  (There are problems further down the text too...),
+  The relevant contractor is text_emitting.py.
+07:54
+  Backing up.
+07:58
+
+11:33
+  So looking at text_emitting.py.
+11:43
+  The relevant procedure is parse_text.  At the moment it is a Diamond Jubilee of flags.  It should be possible to write it more simply, as a paragraph start can be recognized as a Newline not followed by a Newline or END_OF_TEXT.  In these cases (Newline Newline | NewLine EOT) we output a <br>.
+  
+  So I propose:
+  
+    in_para = False
+    cp = texting.current_code_point(t)
+    while cp != texting.END_OF_TEXT
+      if cp == ord('\n'):
+        texting.advance(t)
+        cp = texting.current_code_point(t)
+        if cp == ord('\n') or cp == texting.END_OF_TEXT:
+          if not in_para:
+            html_emitting.emit_start_tag(unicoding3_0.string_of("br"),w)
+            html_emitting.emit_new_line(w)
+          else: # in_para
+            html_emitting.emit_end_tag(unicoding3_0.string_of("p"),w)
+            html_emitting.emit_new_line(w)
+            in_para = False
+        else:  # NL not followed by NL or EOT
+          if in_para:
+            html_emitting.emit_start_tag(unicoding3_0.string_of("br"),w)
+            html_emitting.emit_new_line(w)
+            html_emitting.emit_indent(w)
+          else:  # not in_para            
+            _emit_paragraph_start_tag(texting.get_alignment(t),w)
+            html_emitting.emit_new_line(w)
+            html_emitting.emit_indent(w)
+            in_para = True
+      else:  # not NL, must be in_para
+        unicode_io.write(cp,w)
+        texting.advance(t)
+        
+12:23
+  This is a lot simpler than the original algorithm (the designers of HTML knew what they were doing), so I think the plan now is to implement it, while hanging on to the old algorithm in case it all goes pear-shaped.
+12:28
+  Backing up.
+12:34
+
+15:06
+  So trying this.
+15:27
+  Set up the algorithm and the test schema.  Now need to write the tests.
+15:28
+  Backing up.
+15:29
+
+11:25
+  Slight probs with algorithm: because the user has carte blanche on editing, we have to allow for:
+  
+   1. texts that start with an Element (not Newline).
+   
+   2. texts that end without a Newline.
+11:45
+  Modified algorithm and tests.  Trying first few tests.
+11:54
+  Gets into an infinite loop on a text of "the".  Not good!
+11:55
+  Backing up.
+11:58
+
+14:23
+  Investigating.
+14:25
+  Forgot to update cp.
+14:36
+  Fixed that but test text now wrong - cursor not reset on new text.
+14:44
+  Apparently, the new text is the same as the old - the _init_ hs not been performed.
+14:49
+  No, the problem is with the writer - we forgot to re-initialize it.
+14:58
+  First tranche of tests now running through OK.
+15:10
+  All tests now running through OK.  Very happy.  Cleaning up.
+15:15
+  Backing up.
+15:18
+
+16:47
+  Trying Emily with the new text_emitting.
+17:07
+  OK-ish.  We have a newline start and finish, once the file has been saved.
+17:09
+  But we keep on getting "cursor out of range" exceptions, so something is amiss.
+17:14
+  Backing up.
+17:18
+
+4 Feb 23
+15:19
+  Looking at the "cursor out of range" errors, which seem to happen when we're deleting text.
+15:21
+  Yes, just moving around the text is OK.
+15:26
+  However, have found another problem which occurs when moving around the text with the left and right arrow keys: the frame gets overwritten with stuff from the page, i.e. the menu bar, zoom keys and scrollbars disappear!  This looks like some kind of weird timing error inside PyQt6, and I will ignore it for now.
+  Looking for the "cursor out of range" error.
+15:36
+  Quickly found it!  The DELETE button is not deleting at the cursor point, leading to errors.
+15:38
+  This also happens on the BACKSPACE button.  Here is the trace for when I pressed BACKSPACE in the middle of the second line of text:
+  
+    File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\windowing.py", line 767, in keyPressEvent
+      keyboarding._keyPressEvent(self,qke)
+    File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\keyboarding.py", line 113, in _keyPressEvent
+      self._my_control_callback(controlling.ActionCode.BACKSPACE)
+    File "C:\Bosware\Emily\EmilyVersion0_9\emily0_9\emily.py", line 219, in action_key_hit
+      render_modified_text()
+    File "C:\Bosware\Emily\EmilyVersion0_9\emily0_9\emily.py", line 1557, in render_modified_text
+      rendering.render_lines(my_text,curpos,my_page,start_line,rendering.TO_END)
+    File "C:\Bosware\Emily\EmilyVersion0_9\emily0_9\rendering.py", line 815, in render_lines
+      texting.set_cursor(t,stlo,stcpo)
+    File "C:\Bosware\Emily\EmilyVersion0_9\emily0_9\texting.py", line 402, in set_cursor
+      raise Exception("Attempt to set cursor character offset to invalid value: co="+str(co))
+  Exception: Attempt to set cursor character offset to invalid value: co=1064
+15:44
+  The culprit looks like rendering.render_lines, our lovely new rendering routine.  It manages to produce a completely crazy start code point offset of 1064.
+15:51
+  I will check this theory out by printing the entry values to render_lines.
+15:52
+  Break.
+17:14
+  Continue.
+17:21
+  Interesting.  The values given to render_lines do not look correct.  In particular, the start and end cursor text values are (0,0), and the start page line offset is 34.  This is odd, as the cursor is on line 1.  Perhaps render_lines is not to blame!
+17:34
+  Found error in render_modified_text; it's using the page x-offset rather than the y-offset to calculate the page start line.
+17:39
+  Better, the BACKSPACE now works and actually deletes characters, but on reaching the start of the text, we obtain:
+    Start of action_key_hit
+    Start of render_lines
+      curpos:
+        curpos._start_text_position.line_offset=0
+        curpos._start_text_position.code_point_offset=0
+        curpos._end_text_position.line_offset=0
+        curpos._end_text_position.code_point_offset=0
+        curpos._start_page_position.x_offset=410.013671875
+        curpos._start_page_position.y_offset=12.0
+        curpos._end_page_position.x_offset=410.013671875
+        curpos._end_page_position.y_offset=12.0
+        curpos._desired_x_offset=0.0
+        curpos._update_x_offset=True
+        curpos._start_x_offset=-1.0
+        curpos._end_x_offset=-1.0
+        curpos._in_fat_cursor=False
+        curpos._cursor_rectangle_pending=False
+      plo1=1
+      plo2=999
+    Traceback (most recent call last):
+      File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\windowing.py", line 767, in keyPressEvent
+        keyboarding._keyPressEvent(self,qke)
+      File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\keyboarding.py", line 113, in _keyPressEvent
+        self._my_control_callback(controlling.ActionCode.BACKSPACE)
+      File "C:\Bosware\Emily\EmilyVersion0_9\emily0_9\emily.py", line 219, in action_key_hit
+        render_modified_text()
+      File "C:\Bosware\Emily\EmilyVersion0_9\emily0_9\emily.py", line 1557, in render_modified_text
+        rendering.render_lines(my_text,curpos,my_page,start_line,rendering.TO_END)
+      File "C:\Bosware\Emily\EmilyVersion0_9\emily0_9\rendering.py", line 837, in render_lines
+        render_thin_cursor(curpos,pg)
+      File "C:\Bosware\Emily\EmilyVersion0_9\emily0_9\rendering.py", line 949, in render_thin_cursor
+        cursoring.draw_cursor(pg._my_window,pg._font_size,pg._horizontal_indent + curpos._start_page_position.x_offset,pg._vertical_indent + curpos._start_page_position.y_offset,coloring.BLACK)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\cursoring.py", line 79, in draw_cursor
+        raise Exception("cursor lies outside the pane")
+    Exception: cursor lies outside the pane
+17:42
+  This is because the html_texting.retreat has failed to pick up that the BACKSPACE has hit the start of text, and has returned True, causing a render_modified_text to occur instead of a BEL.  Needs investigation.
+17:49
+  rendering.render_thin_cursor should really have checked for cursor out of range.  It does so if the cursor is beyond the end of the page, but not if it is before the start of the page.  That is why the error went down to the GUIbits level.  This needs correcting.
+17:51
+  Backing up.
+17:56
+
+6 Feb 23
+14:05
+  So the plan is:
+   
+   1. Put better checks into render_thin_cursor.
+   
+   2. Look into why html_texting.retreat has not picked up the cursor out-of-range condition.
+14:15
+  Amended render_thin_cursor.
+14:22
+  Amended the tests.
+14:25
+  It works, but "cursor out of range" means that render_thin_cursor does nothing - not really diagnostic correctness as it should be.  Changing render_thin_cursor to give an exception when the cursor is out of range.
+14:35
+  Amended render_thin_cursor.
+14:57
+  Found error in render_lines - the cursor page position is not set up after a scan of the text with the cursor text position at (0,0).
+15:09
+  Turns out to be an error in the tests; I assumed new_cursor_position gave a thin cursor at (0,0), actually it gives an undefined cursor.  This error has only been picked up because of the tightening of the precondition on render_thin_cursor - proof that diagnostic correctness works!
+15:15
+  Tests now running through - removing prints.
+15:23
+  Tests still running through!  A load of commented-out code in rendering.py that needs to be removed eventually, but is doing no harm at the moment.
+15:24
+  Backing up.
+15:29
+
+17:06
+  Now looking at (2) above.
+17:10
+  Surprisingly, the improvements to rendering.render_thin_cursor have not caused the cursor out-of-range to be picked up - it's left to guibits1_0.cursoring.draw_cursor to complain.  This means that the cursor's page position looks OK to render_thin_cursor.  Checking params to draw_cursor.
+17:19
+  The x-offset is to blame!  The y-offset is OK, but the x-offset is about twice what it should be.
+17:23
+  Aha!  On entry to render_thin_cursor the cursor text position is fine at (0,0), but the page position is way off at (756.365234375,12.0).  Both the page position offsets are wrong - the y-offset should be 0.0, and the x-offset somewhere around 520.0.
+17:32
+  The problem seems to revolve around render_lines.  This is called with plo1 = 1 after the (virtual) NL has been backspaced out.  Thus it misses the cursor text hit at (0,0) and fails to update the cursor page position correctly.  Why the page position is so far out I do not know.  Trying to find out why plo1 is set to 1.
+17:44
+  The error is in emily.render_modified_text.  It uses the (incorrect, old) cursor page position to calculate plo1, thus forcing render_lines to miss the new cursor text position.  This must be changed!
+17:47
+  Backing up.
+17:51
+
+7 Feb 23
+10:17
+  Have checked out render_modified_text; it is used in 
+  
+    BACKSPACE
+    DELETE
+    ENTER (i.e. NL)
+    character_key_hit
+    set_current_alignment
+    
+  Of these, only BACKSPACE ends up occasionally needing a render_lines from the line ABOVE the last cursor page position.  I'm uncertain about set_current_alignment, but I guess the cursor position doesn't change vertically.  So I think the best plan is to replace the call of render_modified_text in BACKSPACE with a special call of render_lines with plo1 set to old cursor page y-offset/font_size - 1 (with a wrinkle to ensure plo1 is >= 0).  Then everything else should work.
+10:28
+  Have just checked out set_current_alignment - it only realigns the portion of the current paragraph from the current cursor line.  This is not correct - it should realign the entire paragraph (i.e. the entire text line).  I think the best solution here is to call render_lines(0,rendering.TO_END) - i.e. just re-render the whole text.  Any other strategy requires that we know the start of the text line (possible) and the equivalent position in the page (impossible).
+10:34
+  So implementing these changes.
+10:46
+  Emily now working happily.  However, have noticed one problem: the Alignment menu has its dot on the last alignment set, not the alignment of the current paragraph.  Can we change this?
+10:52
+  alignment_bar_item_hit requires that current_alignment is the alignment of the current paragraph, however, this requirement is not met.  Whenever the cursor changes paragraph, we need to update current_alignment.
+10:58
+  I think we need to do this dynamically, i.e. make sure the text cursor matches the screen cursor, then extract the current alignment using texting.get_alignment(my_text).
+10:59
+  Break for washing.
+11:20
+  Continuing.
+11:28
+  Modified alignment_bar_item_hit to operate dynamically, using the start text cursor position.
+11:31
+  Working nicely.  Cleaning up.
+11:39
+  Checking cleaned code.
+11:47
+  All working well.  Just one thing I've noticed - if we print a file and the printing fails, the system gives a user exception dialog, but then bombs.  It should carry on.  Also the text size in the "file printed OK" dialog looks a bit small.
+11:49
+  Backing up.
+11:54
+
+17:33
+  Looking at the OK problem first.
+17:43
+  Not our problem - this is Print as PDF's dialog.  Our exception dialog is beautiful, but bombs.
+17:56
+  The relevant contractor is text_printing.
+18:09
+  Sorted by not re-raising the exception.
+18:11
+  Backing up.
+18:19
+
+8 Feb 23
+15:35
+  Forgot to update the precondition of render_modified_text.
+15:40
+  Done.
+15:44
+  Backing up.
+15:49
+
+16 Feb 2023
+17:23
+  Just noticed that render_modified_text uses a hidden variable of rendering, curpos._start_page_position.  We need to use rendering.start_page_line_of instead.
+17:40
+  Done that - now to test.
+17:45
+  It works OK, but I notice a rogue print at the start of save_file.
+17:57
+  Fixed that.
+  Backing up.
+18:00
+
+21 Feb 23
+15:35
+  Noticed precondition for render_modified_text still mentions the hidden variable, so fixing this.
+15:42
+  Done.
+  Backing up.
+15:44

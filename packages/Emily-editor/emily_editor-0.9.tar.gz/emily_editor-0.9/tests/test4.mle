@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Emily version 0.8 Document</title>
+<style>
+  body {font-family: "Times New Roman";}
+  body {font-size: 12pt;}
+  p {text-align: left;}
+  p.begin {text-align: left;}
+  p.middle {text-align: center;}
+  p.end {text-align: right;}
+  p.justify {text-align: justify;}
+</style>
+</head>
+<body>
+<p class="begin">
+  hello everybody, I'm Emily,<br>
+  your new editor.
+</p>
+<br>
+<p class="begin">
+  Goodbye
+</p>
+<p class="begin">
+  Hello again!
+</p>
+<br>
+<p class="begin">
+  Goodbye again
+</p>
+</body>
+</html>

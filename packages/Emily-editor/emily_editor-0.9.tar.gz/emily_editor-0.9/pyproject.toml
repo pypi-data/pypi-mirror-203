@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling","GUIbits==1.0"]
+build-backend = "hatchling.build"
+[project]
+name = "Emily_editor"
+version = "0.9"
+authors = [
+  { name="rnb", email="talkguibits@gmail.com" },
+]
+description = "WYSIWYG editor using subset of HTML5 for storage"
+readme = "README.txt"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License (GPL)",
+    "Operating System :: OS Independent",
+]
