@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: editshare-flow-api
+Version: 1.0.1
+Summary: FLOW Python API
+Home-page: https://www.editshare.com
+Author: EditShare
+Author-email: editshare-api@editshare.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# EditShare Python API
+
+FLOW is a media management platform that supports and manages all types of media content
+whether located on premise, in the cloud or as a hybrid implementation.  
+
+
+This is a python module that wraps EditShare's REST apis  
+Each service is represented as a class within the module
+
+For more information see https://developers.editshare.com/
+
+For more information our our products see https://editshare.com/
