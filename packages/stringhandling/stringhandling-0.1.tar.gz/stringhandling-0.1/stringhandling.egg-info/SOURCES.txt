@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+stringhandling/__init__.y.py
+stringhandling/strhandle.py
+stringhandling.egg-info/PKG-INFO
+stringhandling.egg-info/SOURCES.txt
+stringhandling.egg-info/dependency_links.txt
+stringhandling.egg-info/not-zip-safe
+stringhandling.egg-info/top_level.txt
