@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: quantumcomputingsim
+Version: 1.0.5
+Summary: A library to simulate quantum computations
+Home-page: https://github.com/stealthypanda/quantumcomputingsim
+Download-URL: https://github.com/stealthypanda/quantumcomputingsim/archive/v_1.0.1.tar.gz
+Author: Shaik Mohammed Touseef
+Author-email: shaikm259@gmail.com
+License: MIT
+Keywords: quantum,simulator
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
