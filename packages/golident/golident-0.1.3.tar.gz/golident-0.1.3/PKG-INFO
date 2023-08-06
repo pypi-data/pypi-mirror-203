@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: golident
+Version: 0.1.3
+Summary: generate dazzling identicons with Conway's Game of Life
+License-File: LICENSE-APACHE
+License-File: LICENSE-MIT
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Provides-Extra: dev
+Requires-Dist: build; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: twine; extra == 'dev'

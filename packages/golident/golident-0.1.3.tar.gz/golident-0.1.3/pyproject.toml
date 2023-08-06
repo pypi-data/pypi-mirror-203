@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "golident"
+version = "0.1.3"
+description = "generate dazzling identicons with Conway's Game of Life"
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "scipy",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "twine",
+    "build",
+]
