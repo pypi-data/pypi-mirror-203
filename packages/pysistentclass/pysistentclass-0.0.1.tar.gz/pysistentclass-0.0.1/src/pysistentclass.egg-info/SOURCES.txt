@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/pysistentclass/__init__.py
+src/pysistentclass.egg-info/PKG-INFO
+src/pysistentclass.egg-info/SOURCES.txt
+src/pysistentclass.egg-info/dependency_links.txt
+src/pysistentclass.egg-info/requires.txt
+src/pysistentclass.egg-info/top_level.txt
