@@ -1,0 +1,17 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+benbaptist_elevenlabs.egg-info/PKG-INFO
+benbaptist_elevenlabs.egg-info/SOURCES.txt
+benbaptist_elevenlabs.egg-info/dependency_links.txt
+benbaptist_elevenlabs.egg-info/requires.txt
+benbaptist_elevenlabs.egg-info/top_level.txt
+elevenlabs/__init__.py
+elevenlabs/endpoint.py
+elevenlabs/exceptions.py
+elevenlabs/tts.py
+elevenlabs/voices/__init__.py
+elevenlabs/voices/audiofile.py
+elevenlabs/voices/voice.py
+elevenlabs/voices/voices_iter.py
