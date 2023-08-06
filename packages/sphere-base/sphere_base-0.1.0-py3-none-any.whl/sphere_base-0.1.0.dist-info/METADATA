@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: sphere-base
+Version: 0.1.0
+Summary: The library was created to be used as a building block for applications were informationshould appear on the surface of a sphere.
+Home-page: https://github.com/rboltze/spherebase
+Author: Richard Boltze
+Author-email: rboltze@protonmail.com
+License: MIT license
+Keywords: sphere_base
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: numpy (==1.24.2)
+Requires-Dist: Pillow (==9.4)
+Requires-Dist: pybullet (==3.2.5)
+Requires-Dist: pyrr (==0.10.3)
+Requires-Dist: pyperclip (~=1.8.1)
+Requires-Dist: setuptools (~=67.6)
+Requires-Dist: PyOpenGL (==3.1.6)
+Requires-Dist: PyQt5 (==5.15.9)
+
