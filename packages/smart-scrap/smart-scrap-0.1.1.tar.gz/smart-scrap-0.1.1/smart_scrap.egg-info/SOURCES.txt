@@ -1,0 +1,8 @@
+setup.py
+db/__init__.py
+db/main.py
+smart_scrap.egg-info/PKG-INFO
+smart_scrap.egg-info/SOURCES.txt
+smart_scrap.egg-info/dependency_links.txt
+smart_scrap.egg-info/entry_points.txt
+smart_scrap.egg-info/top_level.txt
