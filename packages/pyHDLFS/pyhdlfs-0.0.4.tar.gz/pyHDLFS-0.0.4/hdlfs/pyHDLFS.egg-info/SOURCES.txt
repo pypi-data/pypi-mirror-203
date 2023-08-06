@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+hdlfs/__init__.py
+hdlfs/hdlfs.py
+hdlfs/pyHDLFS.egg-info/PKG-INFO
+hdlfs/pyHDLFS.egg-info/SOURCES.txt
+hdlfs/pyHDLFS.egg-info/dependency_links.txt
+hdlfs/pyHDLFS.egg-info/requires.txt
+hdlfs/pyHDLFS.egg-info/top_level.txt
+tests/test_pyhdlfs.py
