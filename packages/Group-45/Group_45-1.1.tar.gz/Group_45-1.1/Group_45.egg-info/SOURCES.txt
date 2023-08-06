@@ -1,0 +1,7 @@
+setup.py
+Group_45.egg-info/PKG-INFO
+Group_45.egg-info/SOURCES.txt
+Group_45.egg-info/dependency_links.txt
+Group_45.egg-info/requires.txt
+Group_45.egg-info/top_level.txt
+mylib/__init__.py
