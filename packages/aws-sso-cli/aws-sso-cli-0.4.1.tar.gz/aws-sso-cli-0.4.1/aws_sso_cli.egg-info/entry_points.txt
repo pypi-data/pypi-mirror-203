@@ -1,0 +1,2 @@
+[console_scripts]
+aws-sso-cli = aws_sso_cli:main
