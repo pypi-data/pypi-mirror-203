@@ -1,0 +1,10 @@
+queryrunner/__init__.py,sha256=qrf9j0IxrDiqEA3T4wiEchkXLBnEEXPnc-We8EbdJP4,160
+queryrunner/__main__.py,sha256=vrEz7l0KtQFJXmeBrIL4JJe_wK9pJmwEkzDGxpc7HnE,31
+queryrunner/cli.py,sha256=-L-Zrhvs5GEde7nYT5CH71Mjvz3mI8wu8SkQPHwsvJA,1616
+queryrunner/query.py,sha256=Tbsm9eilNv_7TDHw3sEDvWQzhLNr3M1eZyaoFNEO-8g,1548
+queryrunner/version.py,sha256=QTYqXqSTHFRkM9TEgpDFcHvwLbvqHDqvqfQ9EiXkcAM,23
+queryrunner-0.1.0.dist-info/entry_points.txt,sha256=yPjOzEzzzlgpqtWwx5nhZiZtra4QNWF_zBrCXZHIwMU,51
+queryrunner-0.1.0.dist-info/LICENSE,sha256=93Zzq3Gu4iXVLnccuVHBcaI4C3xxV74cSq_U4kajQ2A,1069
+queryrunner-0.1.0.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+queryrunner-0.1.0.dist-info/METADATA,sha256=9LD_l35jtPNOrn_VwBR7pYsxqMSnJ8Or9uF3Ln6EFSI,2261
+queryrunner-0.1.0.dist-info/RECORD,,
