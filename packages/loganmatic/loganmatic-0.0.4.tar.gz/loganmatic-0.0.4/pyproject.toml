@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loganmatic"
+version = "0.0.4"
+authors = [
+  { name="Gabriel Logan", email="author@example.com" },
+]
+description = "Biblioteca de matematica com algumas funções para facilitar calculos"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/gabriel-logan/Math_Lib_Js"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
