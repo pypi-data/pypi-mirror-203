@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: loganmatic
+Version: 0.0.5
+Summary: Biblioteca de matematica com algumas funções para facilitar calculos
+Author-email: Gabriel Logan <author@example.com>
+Project-URL: Homepage, https://github.com/gabriel-logan/Math_Lib_Js
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A biblioteca calcula (atualmente) o valor de PI e do Numero de Euler ||
+Calcula Funções: Seno, Cosseno ||
+fatora um numero || 
+calcula o fatorial de um numero || 
+o modulo || 
+gera um numero aleatorio entre 2 numeros || 
+calcula raizes cubicas e quadrada e calcula as raizes de equações de primeiro e segundo grau
+
+Feito por **Gabriel Lima**
