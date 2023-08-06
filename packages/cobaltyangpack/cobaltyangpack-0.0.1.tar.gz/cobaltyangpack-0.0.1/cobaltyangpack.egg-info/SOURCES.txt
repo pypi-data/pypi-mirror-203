@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+cobaltyang/FaceMeshModule.py
+cobaltyang/HandTrackingModule.py
+cobaltyang/__init__.py
+cobaltyangpack.egg-info/PKG-INFO
+cobaltyangpack.egg-info/SOURCES.txt
+cobaltyangpack.egg-info/dependency_links.txt
+cobaltyangpack.egg-info/top_level.txt
