@@ -1,0 +1,46 @@
+[project]
+name = "carmine"
+description = "An opinionated Python toolchain made by crushing bugs."
+authors = [
+    { name = "David Seaward", email = "david@librem.one" },
+]
+dependencies = [
+    "black ~= 23.0",
+    "coverage>=7.2.1",
+    "mdformat>=0.7.16",
+    "mdformat_mkdocs[recommended]>=1.0.0",
+    "mkdocs>=1.4.2",
+    "mkdocs-awesome-pages-plugin>=2.8.0",
+    "mkdocs-mermaid2-plugin>=0.6.0",
+    "pytest>=7.2.2",
+    "reuse>=1.1.2",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = []
+version = "0.1.4"
+
+[project.license]
+text = "Apache-2.0"
+
+[project.scripts]
+carmine = "carmine.cli:invoke"
+
+[project.urls]
+Source = "https://gitlab.com/lfdo/toolchain/carmine"
+Project = "https://lofidevops.neocities.org"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.syllabub.project]
+conduct = "contributor-covenant-2.1"
+copyright = "Copyright 2023 David Seaward and contributors"
+origin = "DCO-1.1-git-signoff"
+title = "Carmine toolchain"
