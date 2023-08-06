@@ -1,0 +1,3 @@
+[console_scripts]
+ansible-aisnippet=ansible_aisnippet.main:app
+
