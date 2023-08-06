@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/antimeridian/__init__.py
+src/antimeridian/__main__.py
+src/antimeridian/_implementation.py
+src/antimeridian.egg-info/PKG-INFO
+src/antimeridian.egg-info/SOURCES.txt
+src/antimeridian.egg-info/dependency_links.txt
+src/antimeridian.egg-info/entry_points.txt
+src/antimeridian.egg-info/requires.txt
+src/antimeridian.egg-info/top_level.txt
+tests/test_fix_geojson.py
+tests/test_multi_polygon.py
+tests/test_polygon.py
