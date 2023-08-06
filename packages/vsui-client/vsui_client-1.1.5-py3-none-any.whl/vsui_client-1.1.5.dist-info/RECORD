@@ -1,0 +1,8 @@
+vsui_client/__init__.py,sha256=y-bzOsayt0AzIZLKCzqt58xjhSMCl7XYW5ECQdPZScw,157
+vsui_client/_log.py,sha256=WKPHfpISXaoHs2lwG4rds6O8TOrcVrNDLHBQY5TcYxM,92
+vsui_client/_main.py,sha256=RIFNI0MUIWHLPDbiE0utLh2I-cbQOwj8zfqJAYA3MqM,982
+vsui_client/_oo_interface.py,sha256=lcqsB4_B_ujuzb2-IP7vXbLUcHOQp8d5FmxDImNLapk,5519
+vsui_client/_vsui_client.py,sha256=UWPor1wsYv-Va0vK5WKVlTcUf1qNOgxA0OwtFEk4bLw,4060
+vsui_client-1.1.5.dist-info/METADATA,sha256=vfDTjSmZVPMNK3EnZu2AGk2q7LS3n1uHbPbkFdOClIo,4447
+vsui_client-1.1.5.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+vsui_client-1.1.5.dist-info/RECORD,,
