@@ -1,0 +1,42 @@
+From 7b7e69a6b43bdbc21db7b72491cc0c2544864027 Mon Sep 17 00:00:00 2001
+From: David Vo <auscompgeek@users.noreply.github.com>
+Date: Sun, 16 Apr 2023 13:50:48 +1000
+Subject: [PATCH] PhotonPoseEstimator: Add constructor taking unique_ptr
+
+---
+ photonlib/PhotonPoseEstimator.h | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+
+diff --git a/photonlib/PhotonPoseEstimator.h b/photonlib/PhotonPoseEstimator.h
+index 5d76a851e6cd..18c3302659d8 100644
+--- a/photonlib/PhotonPoseEstimator.h
++++ b/photonlib/PhotonPoseEstimator.h
+@@ -88,10 +88,25 @@ class PhotonPoseEstimator {
+    */
+   explicit PhotonPoseEstimator(frc::AprilTagFieldLayout aprilTags,
+                                PoseStrategy strategy, PhotonCamera&& camera,
+                                frc::Transform3d robotToCamera);
+ 
++  /**
++   * Create a new PhotonPoseEstimator.
++   *
++   * @param aprilTags A AprilTagFieldLayout linking AprilTag IDs to Pose3ds with
++   * respect to the FIRST field.
++   * @param strategy The strategy it should use to determine the best pose.
++   * @param camera The PhotonCamera.
++   * @param robotToCamera Transform3d from the center of the robot to the camera
++   * mount positions (ie, robot ➔ camera).
++   */
++  explicit PhotonPoseEstimator(frc::AprilTagFieldLayout aprilTags,
++                               PoseStrategy strategy,
++                               std::unique_ptr<PhotonCamera> camera,
++                               frc::Transform3d robotToCamera);
++
+   /**
+    * Get the AprilTagFieldLayout being used by the PositionEstimator.
+    *
+    * @return the AprilTagFieldLayout
+    */
+-- 
+2.39.1
+
