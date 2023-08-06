@@ -1,0 +1,17 @@
+LICENSE
+setup.cfg
+setup.py
+fooder.egg-info/PKG-INFO
+fooder.egg-info/SOURCES.txt
+fooder.egg-info/dependency_links.txt
+fooder.egg-info/entry_points.txt
+fooder.egg-info/requires.txt
+fooder.egg-info/top_level.txt
+fooder_cli/__init__.py
+fooder_cli/__main__.py
+fooder_cli/client.py
+fooder_cli/diary.py
+fooder_cli/entry.py
+fooder_cli/main.py
+fooder_cli/meal.py
+fooder_cli/product.py
