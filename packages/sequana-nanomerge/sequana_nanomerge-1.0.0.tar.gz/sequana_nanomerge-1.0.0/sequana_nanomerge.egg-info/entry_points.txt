@@ -1,0 +1,2 @@
+[console_scripts]
+sequana_nanomerge = sequana_pipelines.nanomerge.main:main
