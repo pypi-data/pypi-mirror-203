@@ -1,0 +1,3 @@
+[console_scripts]
+backupr=backupr.cli:main
+
