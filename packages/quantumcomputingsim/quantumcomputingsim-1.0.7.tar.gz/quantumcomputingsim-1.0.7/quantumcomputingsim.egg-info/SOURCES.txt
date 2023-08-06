@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+quantum/__init__.py
+quantum/quantum.py
+quantumcomputingsim.egg-info/PKG-INFO
+quantumcomputingsim.egg-info/SOURCES.txt
+quantumcomputingsim.egg-info/dependency_links.txt
+quantumcomputingsim.egg-info/top_level.txt
