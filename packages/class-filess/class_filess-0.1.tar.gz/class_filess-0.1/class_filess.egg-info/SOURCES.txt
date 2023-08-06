@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+class_filess/_init_.py
+class_filess.egg-info/PKG-INFO
+class_filess.egg-info/SOURCES.txt
+class_filess.egg-info/dependency_links.txt
+class_filess.egg-info/not-zip-safe
+class_filess.egg-info/top_level.txt
