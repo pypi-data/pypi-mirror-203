@@ -1,0 +1,25 @@
+{
+  "method": "get_contract_source_code",
+  "module": "contracts",
+  "kwargs": {
+    "address": "0xBB9bc244D798123fDe783fCc1C72d3Bb8C189413"
+  },
+  "log_timestamp": "2023-04-18-16:50:41",
+  "res": [
+    {
+      "SourceCode": "",
+      "ABI": "Contract source code not verified",
+      "ContractName": "",
+      "CompilerVersion": "",
+      "OptimizationUsed": "",
+      "Runs": "",
+      "ConstructorArguments": "",
+      "EVMVersion": "Default",
+      "Library": "",
+      "LicenseType": "Unknown",
+      "Proxy": "0",
+      "Implementation": "",
+      "SwarmSource": ""
+    }
+  ]
+}

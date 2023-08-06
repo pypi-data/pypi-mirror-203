@@ -1,0 +1,12 @@
+{
+  "method": "get_eth_last_price",
+  "module": "stats",
+  "kwargs": {},
+  "log_timestamp": "2023-04-18-16:50:56",
+  "res": {
+    "ethbtc": "0.0689",
+    "ethbtc_timestamp": "1681854624",
+    "ethusd": "2089.97",
+    "ethusd_timestamp": "1681854622"
+  }
+}

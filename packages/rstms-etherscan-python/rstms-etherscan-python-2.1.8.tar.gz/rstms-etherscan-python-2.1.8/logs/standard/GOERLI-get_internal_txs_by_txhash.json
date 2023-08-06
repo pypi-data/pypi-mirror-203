@@ -1,0 +1,24 @@
+{
+  "method": "get_internal_txs_by_txhash",
+  "module": "accounts",
+  "kwargs": {
+    "txhash": "0x1b71be923f0dcb1f4a196d340d868ff0b35f494e7f3f6575b81812b0824696bb"
+  },
+  "log_timestamp": "2023-04-18-17:27:21",
+  "res": [
+    {
+      "blockNumber": "4362113",
+      "timeStamp": "1614510654",
+      "from": "0xf0277caffea72734853b834afc9892461ea18474",
+      "to": "",
+      "value": "0",
+      "contractAddress": "0x208e08ce43be6a967a57005f449f9afdc8f04ffb",
+      "input": "",
+      "type": "create",
+      "gas": "1335655",
+      "gasUsed": "1334764",
+      "isError": "0",
+      "errCode": ""
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+black
+bump2version
+coverage
+flake8
+flake8-length
+flit
+isort
+pdbpp
+pyrate-limiter
+pytest
+pytest-datadir

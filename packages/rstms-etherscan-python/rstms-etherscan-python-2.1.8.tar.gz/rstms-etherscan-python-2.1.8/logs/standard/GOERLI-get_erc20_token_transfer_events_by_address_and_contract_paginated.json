@@ -1,0 +1,56 @@
+{
+  "method": "get_erc20_token_transfer_events_by_address_and_contract_paginated",
+  "module": "accounts",
+  "kwargs": {
+    "contract_address": "0x2ac3c1d3e24b45c6c310534bc2dd84b5ed576335",
+    "address": "0x9fc8720759bf397bdc13ae08760a7aea7ebbdf56",
+    "page": 1,
+    "offset": 100,
+    "sort": "asc"
+  },
+  "log_timestamp": "2023-04-18-17:27:23",
+  "res": [
+    {
+      "blockNumber": "4325753",
+      "timeStamp": "1613965032",
+      "hash": "0xc0cf92beaaa25b44bf3a92f094f44a005a14d6aa4bb8491d72a6ee04936c25c2",
+      "nonce": "64",
+      "blockHash": "0xacffe82a6e2059e9d40763a1bc62463dc91b676e2c1d14b82bea6b437b4fc607",
+      "from": "0x0000000000000000000000000000000000000000",
+      "contractAddress": "0x2ac3c1d3e24b45c6c310534bc2dd84b5ed576335",
+      "to": "0x9fc8720759bf397bdc13ae08760a7aea7ebbdf56",
+      "value": "100000000000000000",
+      "tokenName": "gBZZ",
+      "tokenSymbol": "gBZZ",
+      "tokenDecimal": "16",
+      "transactionIndex": "6",
+      "gas": "519306",
+      "gasPrice": "2000000000",
+      "gasUsed": "274574",
+      "cumulativeGasUsed": "669283",
+      "input": "deprecated",
+      "confirmations": "4526709"
+    },
+    {
+      "blockNumber": "4325755",
+      "timeStamp": "1613965062",
+      "hash": "0x9e84d825187ca1f78259a81b6cb206a5d08c553a7995ccb0337668c6993d6bc1",
+      "nonce": "1",
+      "blockHash": "0x64b090f873531fac60cd4d7d57cb209ff2a47c09347ed85d30df972d5b3eed16",
+      "from": "0x9fc8720759bf397bdc13ae08760a7aea7ebbdf56",
+      "contractAddress": "0x2ac3c1d3e24b45c6c310534bc2dd84b5ed576335",
+      "to": "0x0d99ee1ed8cbd52c544719b2a940d246ae8f6d69",
+      "value": "100000000000000000",
+      "tokenName": "gBZZ",
+      "tokenSymbol": "gBZZ",
+      "tokenDecimal": "16",
+      "transactionIndex": "4",
+      "gas": "51775",
+      "gasPrice": "2000000000",
+      "gasUsed": "36775",
+      "cumulativeGasUsed": "332336",
+      "input": "deprecated",
+      "confirmations": "4526707"
+    }
+  ]
+}
