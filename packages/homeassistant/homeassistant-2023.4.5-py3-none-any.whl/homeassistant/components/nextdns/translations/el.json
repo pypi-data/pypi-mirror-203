@@ -1,0 +1,174 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "\u0391\u03c5\u03c4\u03cc \u03c4\u03bf \u03c0\u03c1\u03bf\u03c6\u03af\u03bb NextDNS \u03ad\u03c7\u03b5\u03b9 \u03ae\u03b4\u03b7 \u03c1\u03c5\u03b8\u03bc\u03b9\u03c3\u03c4\u03b5\u03af."
+        },
+        "error": {
+            "cannot_connect": "\u0391\u03c0\u03bf\u03c4\u03c5\u03c7\u03af\u03b1 \u03c3\u03cd\u03bd\u03b4\u03b5\u03c3\u03b7\u03c2",
+            "invalid_api_key": "\u039c\u03b7 \u03ad\u03b3\u03ba\u03c5\u03c1\u03bf \u03ba\u03bb\u03b5\u03b9\u03b4\u03af API",
+            "unknown": "\u0391\u03c0\u03c1\u03cc\u03c3\u03bc\u03b5\u03bd\u03bf \u03c3\u03c6\u03ac\u03bb\u03bc\u03b1"
+        },
+        "step": {
+            "profiles": {
+                "data": {
+                    "profile": "\u03a0\u03c1\u03bf\u03c6\u03af\u03bb"
+                }
+            },
+            "user": {
+                "data": {
+                    "api_key": "\u039a\u03bb\u03b5\u03b9\u03b4\u03af API"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "device_connection_status": {
+                "name": "\u039a\u03b1\u03c4\u03ac\u03c3\u03c4\u03b1\u03c3\u03b7 \u03c3\u03cd\u03bd\u03b4\u03b5\u03c3\u03b7\u03c2 \u03c3\u03c5\u03c3\u03ba\u03b5\u03c5\u03ae\u03c2"
+            },
+            "device_profile_connection_status": {
+                "name": "\u039a\u03b1\u03c4\u03ac\u03c3\u03c4\u03b1\u03c3\u03b7 \u03c3\u03cd\u03bd\u03b4\u03b5\u03c3\u03b7\u03c2 \u03c0\u03c1\u03bf\u03c6\u03af\u03bb \u03c3\u03c5\u03c3\u03ba\u03b5\u03c5\u03ae\u03c2"
+            }
+        },
+        "button": {
+            "clear_logs": {
+                "name": "\u0395\u03ba\u03ba\u03b1\u03b8\u03ac\u03c1\u03b9\u03c3\u03b7 \u03b1\u03c1\u03c7\u03b5\u03af\u03c9\u03bd \u03ba\u03b1\u03c4\u03b1\u03b3\u03c1\u03b1\u03c6\u03ae\u03c2"
+            }
+        },
+        "sensor": {
+            "all_queries": {
+                "name": "\u0395\u03c1\u03c9\u03c4\u03ae\u03bc\u03b1\u03c4\u03b1 DNS"
+            },
+            "blocked_queries": {
+                "name": "\u039c\u03c0\u03bb\u03bf\u03ba\u03b1\u03c1\u03b9\u03c3\u03bc\u03ad\u03bd\u03b1 \u03b5\u03c1\u03c9\u03c4\u03ae\u03bc\u03b1\u03c4\u03b1 DNS"
+            },
+            "blocked_queries_ratio": {
+                "name": "\u0391\u03bd\u03b1\u03bb\u03bf\u03b3\u03af\u03b1 \u03b1\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03ad\u03bd\u03c9\u03bd \u03b5\u03c1\u03c9\u03c4\u03b7\u03bc\u03ac\u03c4\u03c9\u03bd DNS"
+            },
+            "doh3_queries": {
+                "name": "\u0395\u03c1\u03c9\u03c4\u03ae\u03bc\u03b1\u03c4\u03b1 DNS-over-HTTP/3"
+            },
+            "doh3_queries_ratio": {
+                "name": "\u0391\u03bd\u03b1\u03bb\u03bf\u03b3\u03af\u03b1 \u03b5\u03c1\u03c9\u03c4\u03b7\u03bc\u03ac\u03c4\u03c9\u03bd DNS-over-HTTP/3"
+            },
+            "doh_queries": {
+                "name": "\u0395\u03c1\u03c9\u03c4\u03ae\u03bc\u03b1\u03c4\u03b1 DNS-over-HTTPS"
+            },
+            "doh_queries_ratio": {
+                "name": "\u0391\u03bd\u03b1\u03bb\u03bf\u03b3\u03af\u03b1 \u03b5\u03c1\u03c9\u03c4\u03b7\u03bc\u03ac\u03c4\u03c9\u03bd DNS-over-HTTPS"
+            },
+            "doq_queries": {
+                "name": "\u0395\u03c1\u03c9\u03c4\u03ae\u03bc\u03b1\u03c4\u03b1 DNS-over-QUIC"
+            },
+            "doq_queries_ratio": {
+                "name": "\u0391\u03bd\u03b1\u03bb\u03bf\u03b3\u03af\u03b1 \u03b5\u03c1\u03c9\u03c4\u03b7\u03bc\u03ac\u03c4\u03c9\u03bd DNS-over-QUIC"
+            },
+            "dot_queries": {
+                "name": "\u0395\u03c1\u03c9\u03c4\u03ae\u03bc\u03b1\u03c4\u03b1 DNS-over-TLS"
+            },
+            "dot_queries_ratio": {
+                "name": "\u0391\u03bd\u03b1\u03bb\u03bf\u03b3\u03af\u03b1 \u03b5\u03c1\u03c9\u03c4\u03b7\u03bc\u03ac\u03c4\u03c9\u03bd DNS-over-TLS"
+            },
+            "encrypted_queries": {
+                "name": "\u039a\u03c1\u03c5\u03c0\u03c4\u03bf\u03b3\u03c1\u03b1\u03c6\u03b7\u03bc\u03ad\u03bd\u03b1 \u03b5\u03c1\u03c9\u03c4\u03ae\u03bc\u03b1\u03c4\u03b1"
+            }
+        },
+        "switch": {
+            "block_fortnite": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 Fortnite"
+            },
+            "block_gambling": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 \u03c4\u03b6\u03cc\u03b3\u03bf\u03c5"
+            },
+            "block_hulu": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 Hulu"
+            },
+            "block_imgur": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 Imgur"
+            },
+            "block_instagram": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 Instagram"
+            },
+            "block_leagueoflegends": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 League of Legends"
+            },
+            "block_messenger": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 Messenger"
+            },
+            "block_minecraft": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 Minecraft"
+            },
+            "block_netflix": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 Netflix"
+            },
+            "block_nrd": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 \u03c0\u03c1\u03cc\u03c3\u03c6\u03b1\u03c4\u03b1 \u03ba\u03b1\u03c4\u03b1\u03c7\u03c9\u03c1\u03b7\u03bc\u03ad\u03bd\u03c9\u03bd \u03c4\u03bf\u03bc\u03ad\u03c9\u03bd"
+            },
+            "block_page": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1\u03c2"
+            },
+            "block_parked_domains": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 \u03b4\u03b5\u03c3\u03bc\u03b5\u03c5\u03bc\u03ad\u03bd\u03c9\u03bd \u03c4\u03bf\u03bc\u03ad\u03c9\u03bd"
+            },
+            "block_pinterest": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 Pinterest"
+            },
+            "block_piracy": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 \u03c0\u03b5\u03b9\u03c1\u03b1\u03c4\u03b5\u03af\u03b1\u03c2"
+            },
+            "block_porn": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 \u03c0\u03bf\u03c1\u03bd\u03cc"
+            },
+            "block_primevideo": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 Prime Video"
+            },
+            "block_reddit": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 Reddit"
+            },
+            "block_roblox": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 Roblox"
+            },
+            "block_signal": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 Signal"
+            },
+            "block_skype": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 Skype"
+            },
+            "block_snapchat": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 Snapchat"
+            },
+            "block_social_networks": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 \u03ba\u03bf\u03b9\u03bd\u03c9\u03bd\u03b9\u03ba\u03ce\u03bd \u03b4\u03b9\u03ba\u03c4\u03cd\u03c9\u03bd"
+            },
+            "block_spotify": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 Spotify"
+            },
+            "block_steam": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 Steam"
+            },
+            "block_telegram": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 Telegram"
+            },
+            "block_tiktok": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 TikTok"
+            },
+            "block_tinder": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 Tinder"
+            },
+            "block_tumblr": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 Tumblr"
+            },
+            "block_twitch": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 Twitch"
+            },
+            "block_twitter": {
+                "name": "\u0391\u03c0\u03bf\u03ba\u03bb\u03b5\u03b9\u03c3\u03bc\u03cc\u03c2 Twitter"
+            }
+        }
+    },
+    "system_health": {
+        "info": {
+            "can_reach_server": "\u03a0\u03c1\u03bf\u03c3\u03ad\u03b3\u03b3\u03b9\u03c3\u03b7 \u03b4\u03b9\u03b1\u03ba\u03bf\u03bc\u03b9\u03c3\u03c4\u03ae"
+        }
+    }
+}
