@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: apinator
+Version: 0.0.1
+Summary: Library for building type-checked bindings to external REST APIs
+Author-email: Rearc Data <data@rearc.io>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: typing_extensions>=4
+Requires-Dist: pydantic>=1,<2
+Requires-Dist: requests
+Requires-Dist: pytest ; extra == "tests"
+Requires-Dist: pytest-cov ; extra == "tests"
+Requires-Dist: responses ; extra == "tests"
+Project-URL: Home, https://github.com/rearc-data/apinator
+Provides-Extra: tests
+
+
