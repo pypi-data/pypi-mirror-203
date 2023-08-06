@@ -1,0 +1,3 @@
+[console_scripts]
+cligpt = oai_tools.cligpt:main
+
