@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: dkredis
+Version: 0.1.9
+Summary: dkredis - Python interface to Redis
+Home-page: https://github.com/datakortet/dkredis
+Author: bjorn
+Author-email: bp@datakortet.no
+License: MIT
+Keywords: redis
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE
+Requires-Dist: redis (==4.5.4)
+
+
+
+dkredis - Python interface to Redis
+===================================
+
+.. image:: https://coveralls.io/repos/github/datakortet/dkredis/badge.svg?branch=master
+    :target: https://coveralls.io/github/datakortet/dkredis?branch=master
+
+.. .. image:: https://gitlab.com/norsktest/dkredis/badges/master/pipeline.svg
+..    :target: https://gitlab.com/norsktest/dkredis/commits/master
+..    :alt: pipeline status
+
+.. image:: https://github.com/datakortet/dkredis/actions/workflows/ci-cd.yml/badge.svg
+   :target: https://github.com/datakortet/dkredis/actions/workflows/ci-cd.yml
+   :alt: CI/CD Pipeline
+
+.. image:: https://img.shields.io/badge/docs-darkgreen.svg
+   :target: https://norsktest.gitlab.io/dkredis
+   :alt: documentation
+
+.. image:: https://codecov.io/gl/norsktest/dkredis/branch/master/graph/badge.svg?token=2QOZN0V09V
+  :target: https://codecov.io/gl/norsktest/dkredis
+
+
+
