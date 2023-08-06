@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: fijiconvert
+Version: 1.0.1
+Summary: For converting FIJI markers to XML
+Home-page: https://pypi.org/project/fijiconvert/
+Author: Jean Fecteau
+Author-email: jfecteau@mbfbioscience.com
+Keywords: sparc,mbf,bioscience,fiji,xml
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+This package provides a tool for converting FIJI markers to XML objects.
