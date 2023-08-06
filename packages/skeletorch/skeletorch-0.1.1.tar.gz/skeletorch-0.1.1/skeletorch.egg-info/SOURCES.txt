@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+skeletorch/__init__.py
+skeletorch/skeletorch.py
+skeletorch.egg-info/PKG-INFO
+skeletorch.egg-info/SOURCES.txt
+skeletorch.egg-info/dependency_links.txt
+skeletorch.egg-info/requires.txt
+skeletorch.egg-info/top_level.txt
