@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "dockerhub-cli"
+version = "0.1.0"
+description = ""
+authors = ["None"]
+readme = "README.md"
+packages = [{include = "dockerhub_cli"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.28.2"
+tabulate = "^0.9.0"
+rich = "^13.3.4"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+dockerhub-cli = "dockerhub_cli.__init__:main"
