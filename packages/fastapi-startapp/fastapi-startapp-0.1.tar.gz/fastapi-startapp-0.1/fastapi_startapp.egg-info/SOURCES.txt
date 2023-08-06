@@ -1,0 +1,10 @@
+README.md
+setup.py
+fastapi_startapp.egg-info/PKG-INFO
+fastapi_startapp.egg-info/SOURCES.txt
+fastapi_startapp.egg-info/dependency_links.txt
+fastapi_startapp.egg-info/entry_points.txt
+fastapi_startapp.egg-info/requires.txt
+fastapi_startapp.egg-info/top_level.txt
+scripts/__init__.py
+scripts/startapp.py
