@@ -1,0 +1,17 @@
+numpy
+matplotlib
+scipy
+
+[all]
+ipyparallel
+assimulo
+python_libsbml
+
+[cvode]
+assimulo
+
+[parscan]
+ipyparallel
+
+[sbml]
+python_libsbml
