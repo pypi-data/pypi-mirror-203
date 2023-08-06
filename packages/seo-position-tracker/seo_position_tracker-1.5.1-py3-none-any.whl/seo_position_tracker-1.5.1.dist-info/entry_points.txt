@@ -1,0 +1,3 @@
+[console_scripts]
+seo=seo_position_tracker.main:main
+
