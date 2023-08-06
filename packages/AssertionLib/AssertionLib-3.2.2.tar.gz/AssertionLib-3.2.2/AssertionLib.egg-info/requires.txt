@@ -1,0 +1,22 @@
+
+[:python_version == "3.6"]
+Nano-Utils>=0.4.1
+
+[:python_version >= "3.7"]
+Nano-Utils>=2.3.1
+
+[doc]
+sphinx>=2.4
+sphinx_rtd_theme
+
+[test]
+numpy
+pandas
+pytest>=5.4.0
+pytest-cov
+sphinx>=2.4
+sphinx_rtd_theme
+
+[test_no_optional]
+pytest>=5.4.0
+pytest-cov
