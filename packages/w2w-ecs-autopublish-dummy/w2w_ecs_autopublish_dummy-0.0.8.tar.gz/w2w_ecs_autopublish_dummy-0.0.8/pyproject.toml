@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "w2w_ecs_autopublish_dummy"
+version = "0.0.8"
+authors = [
+    { name = "Oriol Tintó", email = "oriol.tinto@lmu.de" },
+]
+description = "A test to try PYPI package publishing using CI."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+[project.scripts]
+autopublished = "w2w_ecs_autopublish_dummy.main:launcher"
+
+[project.urls]
+"Homepage" = "https://gitlab.physik.uni-muenchen.de/Oriol.Tinto/w2w_ecs_autopublish_dummy"
