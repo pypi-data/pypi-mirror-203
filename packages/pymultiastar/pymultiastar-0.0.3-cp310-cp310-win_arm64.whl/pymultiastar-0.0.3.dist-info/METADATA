@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pymultiastar
+Version: 0.0.3
+Summary: Multi-goal A* with cpp bindings to python
+Author-Email: Jeremy Castagno <jeremybyu@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Requires-Dist: numpy>=1.15
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: Pillow; extra == "dev"
+Provides-Extra: dev
+Description-Content-Type: text/markdown
+
+# Multi-Goal A-star
+
+This repo contains code to search for multiple goals with heterogenous values using an A* discrete planner.
+
