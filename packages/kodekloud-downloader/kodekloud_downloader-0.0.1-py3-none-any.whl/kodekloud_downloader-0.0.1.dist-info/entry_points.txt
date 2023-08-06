@@ -1,0 +1,3 @@
+[console_scripts]
+kisskh=kodekloud_dl.cli:kodekloud
+
