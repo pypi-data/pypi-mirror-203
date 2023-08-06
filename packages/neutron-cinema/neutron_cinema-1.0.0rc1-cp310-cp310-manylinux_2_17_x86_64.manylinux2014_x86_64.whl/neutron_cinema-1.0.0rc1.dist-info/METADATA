@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: neutron-cinema
+Version: 1.0.0rc1
+Summary: China Spallation Neutron Source Monte Carlo System
+Author: Xiao-Xiao Cai, Ming Tang, Zi-Yi Pan, Ni Yang
+Author-email: cinema-users@outlook.com
+Project-URL: repository, https://gitlab.com/cinema-developers/prompt.git
+Keywords: NCyrstal,Neutron Scattering,Spectroscopy
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyvista
+Requires-Dist: matplotlib
+Requires-Dist: mcpl
+
+# prompt
+
+Prompt: Probability-Conserved Cross Section Biasing Monte Carlo Particle Transport System. 
+
+Introduction of system can be found at [arXiv](https://arxiv.org/abs/2304.06226).
+
+## Installing on Linux(Ubuntu) from source
+
+To build Prompt, several prerequisites are needed.
+```
+sudo apt install g++ cmake python3-dev python3-pip python3-venv
+```
+
+Clone the source and compile it as
+
+```
+git clone https://gitlab.com/cinema-developers/prompt.git
+cd prompt
+. env.sh
+cimbuild
+```
+
+## Installing on Linux with pip
+
+```
+pip install neutron-cinema
+```
+
+<h3 align="left">Connect with us:</h3>
+<p align="left"><a href="mailto:cinema-users@outlook.com">cinema-users@outlook.com</a>
+</p>
+
+
+
