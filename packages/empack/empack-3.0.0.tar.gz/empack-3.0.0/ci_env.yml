@@ -1,0 +1,9 @@
+name: ci-env
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - pip
+  - pytest
+  - micromamba >=1.4.1
+  - microsoft::playwright
