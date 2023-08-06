@@ -1,0 +1,40 @@
+[project]
+name = "oz-defender"
+description = "OpenZeppelin Defender API client"
+
+[tool.poetry]
+name = "oz-defender"
+version = "0.0.2"
+description = ""
+authors = ["Franklin <contact@hellofranklin.co>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/franklin-systems/oz-defender"
+repository = "https://github.com/franklin-systems/oz-defender"
+packages = [
+    {include = "oz_defender"}
+]
+keywords = [
+    "openzeppelin",
+    "open zeppelin",
+    "oz",
+    "defender",
+    "ethereum",
+    "relayer",
+    "gasless",
+    "api",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.3.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
