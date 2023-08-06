@@ -1,0 +1,16 @@
+aishell/__init__.py,sha256=srEEaUREva8uq9drbX4g2yAAcGFhGBzzglmnKxA_iX0,53
+aishell/__main__.py,sha256=vgDkFg3hgDDk9RIfF3XXl8LM7FK4OW2wGcT3ljsPt64,128
+aishell/cli/__init__.py,sha256=NV-sF0m5eDfdY3MNxPCTcu9koEHj-7hZenVEOkK-VI8,90
+aishell/cli/aishell.py,sha256=IRTNsIFtKWORDXol2FsIS3YuDPPhT4ahftWDFB9BfEY,1571
+aishell/cli/cli_app.py,sha256=Vt4xMercjYWP091RH7U1Dmk4ebTDE1rH5WteLM4_MGk,43
+aishell/cli/config_aishell.py,sha256=NMzbFdWRbbka8LOwkMtMMDDTMhjWz9yV53LO9OIDTys,1305
+aishell/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aishell/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aishell/tests/sample_test.py,sha256=ZqcoPQTr9oc5rOUAS02IhVViFHyGEpBAIqNDAieHvZA,77
+aishell/utils/__init__.py,sha256=WbcHNsDX67Jo2nNSus8D04nc1SADKksRKn6YhDhG8p8,68
+aishell/utils/construct_prompt.py,sha256=4zT0245ouXW1FizSLoKQBlXP4SmVcjNwIoE8Kz8-Vds,269
+aishell-2023.4.16.post1.dist-info/LICENSE,sha256=HSsMzI008-FuL_DOoca85nlVuuwKZfH3FnFyZyWvF-s,1064
+aishell-2023.4.16.post1.dist-info/METADATA,sha256=dhR-_dVpDnOkNmP4Cb2BqrmVit2dBvGaBPXOcXqhMaM,3355
+aishell-2023.4.16.post1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+aishell-2023.4.16.post1.dist-info/entry_points.txt,sha256=MmXwKMPLNSUIyWXgEbLxGTXWbn_PcWZDynZ6tbS5fso,40
+aishell-2023.4.16.post1.dist-info/RECORD,,
