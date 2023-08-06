@@ -1,0 +1,16 @@
+README.md
+setup.py
+dbxconfig/__init__.py
+dbxconfig/_config.py
+dbxconfig/_deltalake.py
+dbxconfig/_source.py
+dbxconfig/_stage_type.py
+dbxconfig/_table_index.py
+dbxconfig/_timeslice.py
+dbxconfig/_utils.py
+dbxconfig.egg-info/PKG-INFO
+dbxconfig.egg-info/SOURCES.txt
+dbxconfig.egg-info/dependency_links.txt
+dbxconfig.egg-info/not-zip-safe
+dbxconfig.egg-info/requires.txt
+dbxconfig.egg-info/top_level.txt
