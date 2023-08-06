@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+bmgen/__main__.py
+bmgen/info.py
+bmgen.egg-info/PKG-INFO
+bmgen.egg-info/SOURCES.txt
+bmgen.egg-info/dependency_links.txt
+bmgen.egg-info/entry_points.txt
+bmgen.egg-info/requires.txt
+bmgen.egg-info/top_level.txt
