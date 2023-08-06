@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "telegram-bottools"
+version = "0.1.2"
+description = "Telegram Bot Tools"
+authors = ["Ricardo Merces <ricardo.merces@gmail.com>"]
+readme = "README.md"
+packages = [{include = "telegram_bottools"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.28"
+urllib3 = "^1.26"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
