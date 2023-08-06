@@ -1,0 +1,2 @@
+[console_scripts]
+scrap = scrap.main:main
