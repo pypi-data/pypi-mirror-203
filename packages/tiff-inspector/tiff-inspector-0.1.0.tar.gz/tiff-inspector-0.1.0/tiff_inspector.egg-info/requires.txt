@@ -1,0 +1,5 @@
+tifffile>=2021.1.1
+imagecodecs
+
+[:python_version < "3.8"]
+importlib_metadata
