@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/divio_docs_gen/__init__.py
+src/divio_docs_gen/args.py
+src/divio_docs_gen/colourstring.py
+src/divio_docs_gen/docsgen.py
+src/divio_docs_gen/index.py
+src/divio_docs_gen/repo.py
+src/divio_docs_gen/sections.py
+src/divio_docs_gen/table.py
+src/divio_docs_gen.egg-info/PKG-INFO
+src/divio_docs_gen.egg-info/SOURCES.txt
+src/divio_docs_gen.egg-info/dependency_links.txt
+src/divio_docs_gen.egg-info/top_level.txt
