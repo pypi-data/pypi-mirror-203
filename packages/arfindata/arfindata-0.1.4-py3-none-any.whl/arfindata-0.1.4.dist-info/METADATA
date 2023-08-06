@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: arfindata
+Version: 0.1.4
+Summary: Python package for the aquisition and pre-treatment of China's listed companies' annual reports
+Home-page: https://github.com/napstablook04/ARfindata
+Author: linkfr
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: selenium
+Requires-Dist: fitz
+Requires-Dist: pdfplumber
+Requires-Dist: requests
+
+UNKNOWN
+
