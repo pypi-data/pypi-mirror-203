@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+pydtb/__init__.py
+pydtb/pydtb.py
+pydtb.egg-info/PKG-INFO
+pydtb.egg-info/SOURCES.txt
+pydtb.egg-info/dependency_links.txt
+pydtb.egg-info/not-zip-safe
+pydtb.egg-info/top_level.txt
+tests/test_pydtb.py
