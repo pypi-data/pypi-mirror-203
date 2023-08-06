@@ -1,0 +1,8 @@
+include jq.py
+include config/*
+include models/*
+include db/*
+include views/*
+include templates/*
+include tests/*
+include static/*
