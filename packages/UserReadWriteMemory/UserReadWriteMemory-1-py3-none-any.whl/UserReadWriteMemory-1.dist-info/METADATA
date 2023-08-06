@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: UserReadWriteMemory
+Version: 1
+Summary: Reading and writing to the memory of any process.
+Author: User0092
+Author-email: unknownuser0092@protonmail.com
+Keywords: Read Memory,Write Memory,Process memory,Hacking,UserReadWriteMemory
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Utilities
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.4.0
+Description-Content-Type: text/markdown
+
+The ReadWriteMemory Class is made on Python for reading and writing to the memory of any process.
+                   This Class does not depend on any extra modules and only uses standard Python libraries like ctypes.
+                   
