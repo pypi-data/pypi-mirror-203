@@ -1,0 +1,8 @@
+README.md
+setup.py
+degtrig/__init__.py
+degtrig/main.py
+degtrig.egg-info/PKG-INFO
+degtrig.egg-info/SOURCES.txt
+degtrig.egg-info/dependency_links.txt
+degtrig.egg-info/top_level.txt
