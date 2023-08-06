@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: rewards-envs
+Version: 0.0.1
+Summary: A custom environment creation engine for rewards.ai
+License: MIT
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Flask (>=2.2.3,<3.0.0)
+Requires-Dist: fastapi (>=0.95.1,<0.96.0)
+Requires-Dist: gymnasium (>=0.28.1,<0.29.0)
+Requires-Dist: opencv-python (>=4.7.0.72,<5.0.0.0)
+Requires-Dist: pandas (>=1.5.3,<2.0.0)
+Requires-Dist: pygame (>=2.3.0,<3.0.0)
+Requires-Dist: torch (>=2.0.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+
