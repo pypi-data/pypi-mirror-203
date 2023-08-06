@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+RapidNomad.egg-info/PKG-INFO
+RapidNomad.egg-info/SOURCES.txt
+RapidNomad.egg-info/dependency_links.txt
+RapidNomad.egg-info/not-zip-safe
+RapidNomad.egg-info/requires.txt
+RapidNomad.egg-info/top_level.txt
