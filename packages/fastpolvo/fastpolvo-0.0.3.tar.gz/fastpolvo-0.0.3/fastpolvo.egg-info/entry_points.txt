@@ -1,0 +1,2 @@
+[nbdev]
+fastpolvo = fastpolvo._modidx:d
