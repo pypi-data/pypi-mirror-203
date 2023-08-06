@@ -1,0 +1,16 @@
+README.md
+setup.py
+gpt4all_j.egg-info/PKG-INFO
+gpt4all_j.egg-info/SOURCES.txt
+gpt4all_j.egg-info/dependency_links.txt
+gpt4all_j.egg-info/not-zip-safe
+gpt4all_j.egg-info/top_level.txt
+gpt4allj/__init__.py
+gpt4allj/lib.py
+gpt4allj/model.py
+gpt4allj/lib/ggml.dll
+gpt4allj/lib/gptj.dll
+gpt4allj/lib/libggml.dylib
+gpt4allj/lib/libggml.so
+gpt4allj/lib/libgptj.dylib
+gpt4allj/lib/libgptj.so
