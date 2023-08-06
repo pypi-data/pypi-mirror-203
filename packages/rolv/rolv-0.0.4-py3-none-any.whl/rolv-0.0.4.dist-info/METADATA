@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: rolv
+Version: 0.0.4
+Summary: Package to quickly set up linux terminal environment.
+Home-page: https://github.com/dwrolvink/rolv
+Author: https://github.com/dwrolvink
+Author-email: dwrolvink@protonmail.com
+License: GNU General Public License v3 or later (GPLv3+)
+Requires-Python: >=3.9
+
