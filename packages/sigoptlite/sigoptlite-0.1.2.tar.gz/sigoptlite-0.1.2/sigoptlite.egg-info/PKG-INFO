@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sigoptlite
+Version: 0.1.2
+Summary: In memory driver for SigOpt
+Home-page: https://sigopt.org
+Maintainer: SigOpt
+Maintainer-email: support@sigopt.com
+License: Apache-2.0
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.10
+License-File: LICENSE
+
+In memory driver for SigOpt
