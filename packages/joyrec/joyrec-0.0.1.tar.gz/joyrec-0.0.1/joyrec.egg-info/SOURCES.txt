@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+joyrec/__init__.py
+joyrec/example.py
+joyrec.egg-info/PKG-INFO
+joyrec.egg-info/SOURCES.txt
+joyrec.egg-info/dependency_links.txt
+joyrec.egg-info/top_level.txt
