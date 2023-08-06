@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "komorebicpy"
+packages = [
+    { include="komorebic", from="." }
+]
+version = "0.0.2"
+description = "Python wrapper around komorebic.exe"
+authors = ["Dmitrij Vinokour <dmitrij.vinokour@cojodi.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+loguru = "^0.7.0"
+easydict = "^1.10"
+pywin32 = "^306"
+ujson = "^5.7.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.0"
+pytest-asyncio = "^0.21.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
