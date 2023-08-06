@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "nsk-backupr"
+version = "0.2.1"
+description = "A backup runner designed to tar up a root directory, optionally encrypt it, and upload to remote storage."
+authors = ["Erik Nelson <erik@nsk.io>"]
+readme = "README.md"
+packages = [
+  { include = "backupr" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+#mailgun = "^0.1.1"
+click = "^8.1.3"
+loguru = "^0.6.0"
+kink = "^0.6.5"
+#python-gnupg = "^0.5.0"
+b2sdk = "^1.18.0"
+pydantic = "^1.10.7"
+pydantic-yaml = "^0.11.2"
+munch = "^2.5.0"
+pyyaml = "^6.0"
+python-gnupg = "^0.5.0"
+
+[tool.poetry.urls]
+"Homepage" = "https://github.com/eriknelson/backupr"
+"Repository" = "https://github.com/eriknelson/backupr"
+"Bug Tracker" = "https://github.com/eriknelson/backupr/issues"
+
+[tool.poetry.group.dev.dependencies]
+pytest-cov = "^4.0.0"
+pytest = "^7.2.0"
+pylint = "^2.15.9"
+randomfiletree = "^1.2.0"
+docker = "^6.0.1"
+
+[tool.poetry.scripts]
+backupr = "backupr.cli:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
