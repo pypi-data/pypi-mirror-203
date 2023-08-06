@@ -1,0 +1,17 @@
+bioforma-0.1.0a0.dist-info/METADATA,sha256=O95StaNpG1tddYC88yVesRbcWmTsAAcB01Q0iRWT5os,3527
+bioforma-0.1.0a0.dist-info/WHEEL,sha256=1Fcie4ZmOXYOyZxOTcgNmIz6Y4in75GNZzibdgZHysA,93
+bioforma-0.1.0a0.dist-info/license_files/LICENSE,sha256=iEJwJcAvFiLvqzQqDVLjT1Pbue4tObGGuVXe2OnjlPU,1094
+bioforma/alignment/distance.pyi,sha256=xlTBY7-Q66AQ6F26m_rfTuza44ue4fItLAkSxcwkkwU,346
+bioforma/alignment/__init__.pyi,sha256=FoiXYMR5qQVExjR7PMCmKPaGD-VxoFeJvQ7fYyVkX4o,2140
+bioforma/alphabets/dna.pyi,sha256=VgxKf59DxalDT7yS2jC_pHM_ARWZJ5uDNy0UiDkVEeo,270
+bioforma/alphabets/protein.pyi,sha256=tr1N5mPyepAmSQkQshdofLhAkcC2d3A4Vp6wGxIB7Vw,126
+bioforma/alphabets/rna.pyi,sha256=SRg11bf3gA4KcTef9B6fbJjmBMSnwrPH3HYQ6-A2woo,270
+bioforma/alphabets/__init__.pyi,sha256=N54YRgXV9bzYBzOUA2XEUq9WVD9m_0bSLfu7UITAOqU,779
+bioforma/scores.pyi,sha256=5D07kGvtXdd0Y4SoeuH1Qd1vhLg752fxs5SoKIyHzzI,221
+bioforma/seq_analysis/gc.pyi,sha256=5xhI-yrdkVDPaz4e4harHPtdRk4TEGUxEd_KfzflEWo,95
+bioforma/seq_analysis/orf.pyi,sha256=9-TsXyp_Uo5m-P5IZvb9V_-NAVs9QWNwH3i8mtvYYLM,404
+bioforma/seq_analysis/__init__.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bioforma/_bioforma.pyi,sha256=A7snMAAzxKmLoLaivH6oadek2WOfUtqNWJ7Tc2mgVWw,62
+bioforma/__init__.py,sha256=C63fnyWuOXFm1O1BwET_6Hma_DcicCvh3c3kFSQ0oMM,64
+bioforma/_bioforma.cp311-win32.pyd,sha256=dpS9pcdAq32YzAX5UwM1RjiJ_RVnJCZgz0yDgQfnH8U,613888
+bioforma-0.1.0a0.dist-info/RECORD,,
