@@ -1,0 +1,11 @@
+pipen_board/__init__.py,sha256=PmGbO25b1MWCjcF3lGiK7GQXDeTeqIDfDhmbSrWh87o,348
+pipen_board/apis.py,sha256=4Y8liiLi7WEspNiPwQXEapILJ-rq8kDkf6qCOlgWnHM,7170
+pipen_board/cli.py,sha256=4ajt2vR3F-IMP_bEzzcborMrOAGk55E-C1rHDsqYnIw,4081
+pipen_board/data_manager.py,sha256=InfiHIydIerutNWBcnG5MQfVY2WXZP83LEbBH2gP8bM,21706
+pipen_board/defaults.py,sha256=gAIoixMKnp3SpOCmz0J22iiy8UO-KWEPuEryoRDJhuU,5895
+pipen_board/plugin.py,sha256=vE6vgA8NZxBsCEXNWgK0h2L4TXP4wHckSqgFYDHMy9g,7488
+pipen_board/quart_app.py,sha256=GoKStN0TQx9Ybpnd7W9DDldrr-LxXrHEKG2nUSLOEiY,3341
+pipen_board-0.0.4.dist-info/METADATA,sha256=5BVj5RJv20T8n9tKGNKl9eLW94891b4mQPzQwS82pfE,2628
+pipen_board-0.0.4.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+pipen_board-0.0.4.dist-info/entry_points.txt,sha256=9CCAS87lcg9Nwhb8LUADIJ9R7h_4FtY7CF2B4l4x6E8,101
+pipen_board-0.0.4.dist-info/RECORD,,
