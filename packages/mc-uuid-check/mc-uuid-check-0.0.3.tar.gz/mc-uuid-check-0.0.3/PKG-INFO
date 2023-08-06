@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: mc-uuid-check
+Version: 0.0.3
+Summary: Turns input Playername and returns Minecraft UUID's
+Author-email: Faiataiga <faiataiga@protonmail.com>
+License: GPL-3.0-only
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Utilities
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Minecraft Offline UUID Generator
+
+This Python Program takes a Username and gives back a Minecraft Offline UUID
+
+## Usage
+
+```bash
+#For Help 
+mc-offline-uuid -h
+```
+
+
+## Building
+
+To Build you can use a programm named 'just' or copy the needed instructions from the justfile
+
+```bash
+pip install build
+```
+
+
+# Source:
+[Source](https://github.com/Faiataiga/mc-uuid-check)

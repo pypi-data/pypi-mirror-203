@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+mc_uuid_check/__init__.py
+mc_uuid_check/__main__.py
+mc_uuid_check/helperfunctions.py
+mc_uuid_check/mc_offline_uuid.py
+mc_uuid_check/mc_online_uuid.py
+mc_uuid_check.egg-info/PKG-INFO
+mc_uuid_check.egg-info/SOURCES.txt
+mc_uuid_check.egg-info/dependency_links.txt
+mc_uuid_check.egg-info/entry_points.txt
+mc_uuid_check.egg-info/requires.txt
+mc_uuid_check.egg-info/top_level.txt

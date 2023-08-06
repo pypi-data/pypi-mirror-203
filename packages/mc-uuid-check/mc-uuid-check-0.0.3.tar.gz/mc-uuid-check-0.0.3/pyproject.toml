@@ -1,0 +1,31 @@
+[build-system]
+requires = [
+	"setuptools>=65.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mc-uuid-check"
+version = "0.0.3"
+authors = [
+	{ name='Faiataiga', email='faiataiga@protonmail.com'},
+]
+description = "Turns input Playername and returns Minecraft UUID's"
+readme = "README.md"
+license = { text = "GPL-3.0-only"}
+requires-python = ">=3.11"
+dependencies = [
+	"requests"
+]
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"Operating System :: OS Independent",
+	"Environment :: Console",
+	"License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+	"Topic :: Utilities"
+]
+
+
+[project.scripts]
+mc-uuid-check = "mc_uuid_check.__main__:main"
+
