@@ -1,0 +1,61 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id":"tiff_schema.json",
+    "type": "object",
+    "properties": {
+        "metadata":{
+            "type":"object",
+            "description":"collection of metadata properties of the TIFF file overall",
+            "properties":{
+                "filename": {
+                    "type": "string",
+                    "description": "The file path of the TIFF file"
+                },
+               "byteorder": {
+                    "type": "string",
+                    "description": "Byte order of the TIFF file"
+                },
+                "is_bigtiff": {
+                    "type": "boolean",
+                    "description": "Indicates whether the TIFF file is a BigTIFF file"
+                },
+                "flags":{
+                    "type":"array",
+                    "items":{
+                        "type":"string"
+                    }
+                }
+            }
+        },
+        "shape":{
+            "type":"array",
+            "items":{
+                "type":"integer"
+            },
+            "description":"dimensions of the array format version of the TIFF file"
+        },
+        "dtype":{
+            "type":"string",
+            "description":"dtype of the array format version of the TIFF file"
+        },
+        "page_count":{
+            "type":"integer",
+            "description":"total number of TiffPage in the image"
+        },        
+        "series_count":{
+            "type":"integer",
+            "description":"total number of TiffSeries in the image"
+        },
+        "page_count":{
+            "type":"integer",
+            "description":"total number of TiffPage in the image"
+        },        
+        "series":{
+            "type":"array",
+            "description":"List of series in the tiff",
+            "minItems":1,
+            "items":{"$ref": "series_schema.json"}
+        }
+    },
+    "required": ["metadata", "shape", "dtype", "series"]
+}

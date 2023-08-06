@@ -1,0 +1,12 @@
+schemas/frame_schema.json,sha256=vurJqaGZqyECOFty-6YrlEbbGIfwcO0FW9NxjQrr9Gw,297
+schemas/level_schema.json,sha256=EdXC1wwxzk01KI6fRa9Pkqs4Fttbrnp_dG35IyEtM6M,2131
+schemas/page_schema.json,sha256=yVfM1Dx1W-1gXcSbkgBBPwrNjBzJTeWLvsO9dHyP65M,7180
+schemas/series_schema.json,sha256=crsp9NYUqtsFUlW43hvyeJspQbPfTXIQZWOmXmoLtQ0,3934
+schemas/tiff_schema.json,sha256=qBU2Foh4kib7oduszoaK8yepQX3bUdggVn5zWXjsWIA,1991
+tiffinspector/__init__.py,sha256=iGX0XEHUanPwWdORAQWgrF73cWzk40zASjw27NNtknA,14287
+tiffinspector/_version.py,sha256=4tiFb2P7FkJcfr6zfC5uYtPuEzqDWVKyRVSrht1qgzY,160
+tiff_inspector-0.1.1.dist-info/LICENSE,sha256=PDbTPuHXSd2-IidFOZjIb6y4mXtgNe-NAsqX_GYgm_w,1074
+tiff_inspector-0.1.1.dist-info/METADATA,sha256=p4K7vl2IUu3TLBm7kZblg0bVd6Nb3KPxX0rklSByhnk,2673
+tiff_inspector-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tiff_inspector-0.1.1.dist-info/top_level.txt,sha256=eQ-s2S05AHzyu-w4qzCbHHr_FW_I7Nn0Lta_pToXKOI,14
+tiff_inspector-0.1.1.dist-info/RECORD,,
