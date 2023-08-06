@@ -1,0 +1,15 @@
+assets/images/azure-openai-service-key-endpoint.png,sha256=75WR_RRNmwrK5tZwORqL87fFw330vQM2J2L9MFbGHD0,80425
+assets/images/azure-openai-service-models.png,sha256=EP35fOeRwcwyrcYK8dtyxeNkZpOMkcSXTLuWLCUgvhA,158116
+assets/images/openai-platform-api-key.png,sha256=6l9m2nYx_HQKAVC1erh4WC2bNu56rLx4U-nNL34b2gU,161351
+assets/images/openai-platform-org-id.png,sha256=NHsHvjSry12-ME3EDQwi3RqEqtq5ui4JVTlKrPjVTP0,112924
+build/lib/chatgpt_pre_commit_hooks/__init__.py,sha256=m6UekKftTahNJ3W5K3mZSz4Y4ZZpHRxF_ZAxuaKYL7o,12
+build/lib/chatgpt_pre_commit_hooks/chatgpt_commit_message.py,sha256=Ag8z_ZtMNT-IQCX663QIl9A0C59qGMoXq8PFOxvxpcI,11193
+chatgpt_pre_commit_hooks/__init__.py,sha256=m6UekKftTahNJ3W5K3mZSz4Y4ZZpHRxF_ZAxuaKYL7o,12
+chatgpt_pre_commit_hooks/chatgpt_commit_message.py,sha256=Ag8z_ZtMNT-IQCX663QIl9A0C59qGMoXq8PFOxvxpcI,11193
+docs/chatgpt_commit_message.md,sha256=RAWGwrX6xpr_nSwPWvDZ0zdRrc1hyspJbM5KN4fH68w,4845
+chatgpt_pre_commit_hooks-0.1.1.dist-info/LICENSE,sha256=Y1yr22x2rPr8UiQmDhuqXBo42CAp2AdW0zoz-8SyAbk,1073
+chatgpt_pre_commit_hooks-0.1.1.dist-info/METADATA,sha256=ngsdZQ0mxnb-VJi_Db1YxPFFX5BYUniPUPehLobz64I,14089
+chatgpt_pre_commit_hooks-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+chatgpt_pre_commit_hooks-0.1.1.dist-info/entry_points.txt,sha256=z4xcqjUui6G7p1_OSS8q0eNNT_ww5fDcwS8IjT9K8bc,96
+chatgpt_pre_commit_hooks-0.1.1.dist-info/top_level.txt,sha256=cInhl23HMP-0Ye_EaZZi9C1DjQRdtUusKl9qACyMpoM,48
+chatgpt_pre_commit_hooks-0.1.1.dist-info/RECORD,,
