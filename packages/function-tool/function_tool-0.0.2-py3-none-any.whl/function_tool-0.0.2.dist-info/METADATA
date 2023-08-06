@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: function-tool
+Version: 0.0.2
+Summary: some usual tool with class
+Home-page: https://gitee.com/DerrickChiu/function_tool.git
+Author: DerrickChiu
+Author-email: chiull@foxmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
+
+### function_tool工具包
+本工具包对一些常用的功能进行了Python封装，目前主要包含以下功能：
+
+### 1. 日期时间类
+DateTimeTool
++ timestamp2time函数：Unix时间戳转时间字符串
++ time2timestamp函数：时间字符串转Unix时间戳
+
