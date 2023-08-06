@@ -1,0 +1,16 @@
+MANIFEST.in
+requirements.txt
+setup.py
+wyoming_faster_whisper/__init__.py
+wyoming_faster_whisper/__main__.py
+wyoming_faster_whisper/const.py
+wyoming_faster_whisper/download.py
+wyoming_faster_whisper/handler.py
+wyoming_faster_whisper.egg-info/PKG-INFO
+wyoming_faster_whisper.egg-info/SOURCES.txt
+wyoming_faster_whisper.egg-info/dependency_links.txt
+wyoming_faster_whisper.egg-info/requires.txt
+wyoming_faster_whisper.egg-info/top_level.txt
+wyoming_faster_whisper/faster_whisper/__init__.py
+wyoming_faster_whisper/faster_whisper/feature_extractor.py
+wyoming_faster_whisper/faster_whisper/transcribe.py
