@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mongo-db-operation
+Version: 1.0.0
+Summary: A small package for CRUD operations for Mongo DB
+Author-email: Melih Teke <me@mteke.com>
+Project-URL: Homepage, https://github.com/melihteke/mongo-db-operation
+Project-URL: Bug Tracker, https://github.com/melihteke/mongo-db-operation/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# devnet_test
+devnet_test

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/mongo-db-operation/__init__.py
+src/mongo-db-operation/environment.py
+src/mongo-db-operation/mongodb_operation.py
+src/mongo_db_operation.egg-info/PKG-INFO
+src/mongo_db_operation.egg-info/SOURCES.txt
+src/mongo_db_operation.egg-info/dependency_links.txt
+src/mongo_db_operation.egg-info/top_level.txt
