@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+packagename_jarne.egg-info/PKG-INFO
+packagename_jarne.egg-info/SOURCES.txt
+packagename_jarne.egg-info/dependency_links.txt
+packagename_jarne.egg-info/requires.txt
+packagename_jarne.egg-info/top_level.txt
