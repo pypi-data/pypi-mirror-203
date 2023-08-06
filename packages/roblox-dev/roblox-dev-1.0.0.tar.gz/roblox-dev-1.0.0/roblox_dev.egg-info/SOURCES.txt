@@ -1,0 +1,6 @@
+README.md
+setup.py
+roblox_dev.egg-info/PKG-INFO
+roblox_dev.egg-info/SOURCES.txt
+roblox_dev.egg-info/dependency_links.txt
+roblox_dev.egg-info/top_level.txt
