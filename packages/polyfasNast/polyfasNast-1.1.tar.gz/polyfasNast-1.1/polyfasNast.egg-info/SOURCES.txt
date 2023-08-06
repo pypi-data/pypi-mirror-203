@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+polyfasNast/_init_.py
+polyfasNast/class_file.py
+polyfasNast.egg-info/PKG-INFO
+polyfasNast.egg-info/SOURCES.txt
+polyfasNast.egg-info/dependency_links.txt
+polyfasNast.egg-info/not-zip-safe
+polyfasNast.egg-info/top_level.txt
