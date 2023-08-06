@@ -1,0 +1,11 @@
+toggl_track/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+toggl_track/__main__.py,sha256=8hDtWlaFZK24KhfNq_ZKgtXqYHsDQDetukOCMlsbW0Q,59
+toggl_track/cli.py,sha256=HluPVZi6EVDPjcNdSwodnvbqINvuOSQ-hdyEeNPxEro,3236
+toggl_track/result.py,sha256=SomuSL8DohY2JWHdyXCXd6JoKOdeqUcVkZJqUAsoPXo,5141
+toggl_track/toggl.py,sha256=4WKXlbk-XTne31Mfqmeb_-kHAVwOYBKxEm8GBPCVR8E,2390
+toggl_track-0.5.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+toggl_track-0.5.0.dist-info/METADATA,sha256=KtPNtc87AjLzeTI7n7SooefREVIIhbgpffyKm_6njYg,11503
+toggl_track-0.5.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+toggl_track-0.5.0.dist-info/entry_points.txt,sha256=SpjbZ16Q4vAsAQnTgwzcptpEpsmYz0hw0tpo4lgVyB0,44
+toggl_track-0.5.0.dist-info/top_level.txt,sha256=qrvOGm4fRqy__EmuegflekyrPgj3L5KqPHuc-n1O-JU,12
+toggl_track-0.5.0.dist-info/RECORD,,
