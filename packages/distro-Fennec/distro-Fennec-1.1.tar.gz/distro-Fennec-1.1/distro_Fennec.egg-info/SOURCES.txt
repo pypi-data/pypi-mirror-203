@@ -1,0 +1,10 @@
+setup.py
+distro-Fennec/Binomialdistribution.py
+distro-Fennec/Gaussiandistribution.py
+distro-Fennec/Generaldistribution.py
+distro-Fennec/__init__.py
+distro_Fennec.egg-info/PKG-INFO
+distro_Fennec.egg-info/SOURCES.txt
+distro_Fennec.egg-info/dependency_links.txt
+distro_Fennec.egg-info/not-zip-safe
+distro_Fennec.egg-info/top_level.txt
