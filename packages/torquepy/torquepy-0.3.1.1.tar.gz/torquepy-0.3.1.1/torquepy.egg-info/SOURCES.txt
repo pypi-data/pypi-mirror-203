@@ -1,0 +1,7 @@
+setup.py
+torquepy/__init__.py
+torquepy/torquepy.py
+torquepy.egg-info/PKG-INFO
+torquepy.egg-info/SOURCES.txt
+torquepy.egg-info/dependency_links.txt
+torquepy.egg-info/top_level.txt
