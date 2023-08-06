@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "code-compass"
+version = "0.1.2"
+description = ""
+authors = ["Roman <roman-right@protonmail.com>"]
+readme = "README.md"
+packages = [{ include = "code_compass" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+cookiecutter = "^2.1.1"
+pyside6 = "^6.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+code-compass = "code_compass.app:run"
+
+[tool.black]
+line-length = 79
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
