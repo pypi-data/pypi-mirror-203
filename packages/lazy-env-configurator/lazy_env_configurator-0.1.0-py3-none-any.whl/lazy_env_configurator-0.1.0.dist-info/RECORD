@@ -1,0 +1,8 @@
+README.md,sha256=FA1BDrV_nLNsbcspTx6HP9xsMLbBnK6Zg9ZDpYnDyUE,2752
+lazy_env_configurator/__init__.py,sha256=nkufECyU907IpthK_yra3Y8WBrwrRZ8o-qU-tYbe8v8,5440
+pytest.ini,sha256=JBQQpll3YKVTg_9SgsMRmzOkhZjuPuYv61L02jT-4Vo,74
+requirements-test.txt,sha256=Ho79hNS4iXB-BlNKt4VcBphVNh19xsU5toC7-zF7Hqs,1466
+tox.ini,sha256=3R-Bh6ORbWs3knZKHrUcHdyimEy6C1vB5_5gAnlskSw,340
+lazy_env_configurator-0.1.0.dist-info/METADATA,sha256=rAAfrliFzXNld5MC5BGDO0SNj-182C-OpQfSDaUlHxU,3962
+lazy_env_configurator-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+lazy_env_configurator-0.1.0.dist-info/RECORD,,
