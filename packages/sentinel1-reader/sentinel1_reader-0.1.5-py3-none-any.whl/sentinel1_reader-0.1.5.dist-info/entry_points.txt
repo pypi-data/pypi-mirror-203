@@ -1,0 +1,2 @@
+[console_scripts]
+s1_info = s1reader.s1_info:main
