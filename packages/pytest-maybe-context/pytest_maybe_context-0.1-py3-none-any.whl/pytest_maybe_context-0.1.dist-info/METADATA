@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pytest-maybe-context
+Version: 0.1
+Summary: Simplify tests with warning and exception cases.
+Home-page: https://github.com/wrwrwr/pytest-maybe-context
+License: MIT
+Keywords: pytest,plugin
+Author: wrwrwr
+Author-email: code@wr.waw.pl
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pytest (>=7,<8)
+Project-URL: Repository, https://github.com/wrwrwr/pytest-maybe-context
+Description-Content-Type: text/markdown
+
+# pytest-maybe-context
+
+Makes it a bit easier to write warning and exception checks along other cases.
+
+```python
+from pytest import mark, raises, warns
+from pytest_maybe_context import maybe_context, not_context
+
+@mark.parametrize(('buffering', 'expected'), (
+    (0, b'contents'),
+    (1, warns(RuntimeWarning)),
+    (.1, raises(TypeError))
+))
+def test_example(buffering, expected):
+    with maybe_context(expected):
+        file = open('file', 'rb', buffering)
+    if not_context(expected):
+        assert file.read() == expected
+```
+
+## Installation
+
+```bash
+poetry add pytest-maybe-context --group dev
+```
+
