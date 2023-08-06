@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: papers-cli
+Version: 2
+Summary: utilities to keep your PDF library organized
+Home-page: https://github.com/perrette/papers
+Download-URL: https://github.com/perrette/papers/archive/v2.tar.gz
+Author: Mahe Perrette
+Author-email: mahe.perrette@gmail.com
+License: MIT
+Requires: bibtexparser
+Requires: crossrefapi
+Requires: rapidfuzz
+Requires: unidecode
+Requires: scholarly
+License-File: LICENSE

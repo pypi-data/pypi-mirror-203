@@ -1,0 +1,7 @@
+*.egg-info/
+*.pyc
+.tox
+.cache
+__pycache__
+build
+MANIFEST
