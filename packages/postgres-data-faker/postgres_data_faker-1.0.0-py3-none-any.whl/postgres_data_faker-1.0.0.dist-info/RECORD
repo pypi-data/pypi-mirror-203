@@ -1,0 +1,5 @@
+postgres_data_faker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+postgres_data_faker/main.py,sha256=OGuHrBJ5vdThomMpMxZVYChQMqFxD0_9G3YOD5s9_Yg,3605
+postgres_data_faker-1.0.0.dist-info/METADATA,sha256=I8rf2M3K4B8xTna6SoHKrgZm2J96Pq64xR-LRFoXzyA,423
+postgres_data_faker-1.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+postgres_data_faker-1.0.0.dist-info/RECORD,,
