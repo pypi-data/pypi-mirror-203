@@ -1,0 +1,6 @@
+module.py
+setup.py
+ci_test_88f11c2a.egg-info/PKG-INFO
+ci_test_88f11c2a.egg-info/SOURCES.txt
+ci_test_88f11c2a.egg-info/dependency_links.txt
+ci_test_88f11c2a.egg-info/top_level.txt
