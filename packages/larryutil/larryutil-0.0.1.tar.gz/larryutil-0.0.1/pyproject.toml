@@ -1,0 +1,29 @@
+#requires是生成包所需的包的列表。你 不需要安装它们;像 pip 一样构建前端会安装它们
+#在临时、隔离的虚拟环境中自动使用，以便在 构建过程。
+#build-backend是前端将用于的 Python 对象的名称 执行构建。
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+#包名称
+name = "larryutil"
+#版本号
+version = "0.0.1"
+#作者信息
+authors = [
+    { name="larryane", email="176286@qq.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+#配置项目地址
+[project.urls]
+"Homepage" = "https://github.com/pypa/sampleproject"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
