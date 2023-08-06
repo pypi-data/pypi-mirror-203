@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/sqlstrings/__init__.py
+src/sqlstrings/csv_handling.py
+src/sqlstrings/postgre.py
+src/sqlstrings/transact.py
+src/sqlstrings/value_handling.py
+src/sqlstrings.egg-info/PKG-INFO
+src/sqlstrings.egg-info/SOURCES.txt
+src/sqlstrings.egg-info/dependency_links.txt
+src/sqlstrings.egg-info/top_level.txt
+tests/test_csv_handling.py
+tests/test_main.py
+tests/test_postgre.py
+tests/test_transact.py
+tests/test_value_handling.py
