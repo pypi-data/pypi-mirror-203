@@ -1,0 +1,15 @@
+minder_downloader/.ipynb_checkpoints/__init__-checkpoint.py,sha256=6GhfmHt_tBl6evuuAgpX0Q9JysnHqyMHN11qBPhWe8k,140
+minder_downloader/.ipynb_checkpoints/download-checkpoint.py,sha256=zQy0UMMgpKMlLK-F2xVtZrehWKvT3gUAqGaj3w4hKeQ,5456
+minder_downloader/.ipynb_checkpoints/info-checkpoint.py,sha256=tDRvthpIEzRskNyByc0IDn2WAkvQip8GC7aWZhMf2Yk,1095
+minder_downloader/.ipynb_checkpoints/upload-checkpoint.py,sha256=J6K17orm9xUegoQwpbxUt_1j_NLjcRwFwDhBeUQnlng,87
+minder_downloader/__init__.py,sha256=6GhfmHt_tBl6evuuAgpX0Q9JysnHqyMHN11qBPhWe8k,140
+minder_downloader/__version__.py,sha256=JPZuTlpN0NAC2deiPUE6p5p9_XAfVUD6mL7RLiNvH4s,154
+minder_downloader/config.py,sha256=c5sqFqtMJml0Amy-1IhdJ46U8gu_jbgB7gIN49uh8M8,2269
+minder_downloader/download.py,sha256=6uDWvxr9rgTEReLDoGF1YmfnKgR0qYY8Icl2qMrwClA,9435
+minder_downloader/info.py,sha256=dwLqNwLDSEEz-MQ1tlj6SRSColpuhvMdljmoyfwEtv0,2148
+minder_downloader/update.py,sha256=zC9dakBcQQWiQJ9tiK8RBUYa70UJgzHPCgIX870hvu8,419
+minder_downloader/upload.py,sha256=3-d07NpTFweLS2ye8VSfM2fjtSTIG2MeN1qdUN4TBWE,1081
+minder_downloader/utils.py,sha256=xAK38kP_U5LCh1_PdvUd-KI21I4qcPucPaKkHtuwTWQ,5586
+minder_downloader-0.1.9.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+minder_downloader-0.1.9.dist-info/METADATA,sha256=gb5zMhCGkbb0nOrzodehISRVlXWTC-QvDlQEQIFE4LE,3018
+minder_downloader-0.1.9.dist-info/RECORD,,
