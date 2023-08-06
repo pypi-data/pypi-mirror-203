@@ -1,0 +1,7 @@
+pyproject.toml
+src/HassWS/__init__.py
+src/HassWS.egg-info/PKG-INFO
+src/HassWS.egg-info/SOURCES.txt
+src/HassWS.egg-info/dependency_links.txt
+src/HassWS.egg-info/requires.txt
+src/HassWS.egg-info/top_level.txt
