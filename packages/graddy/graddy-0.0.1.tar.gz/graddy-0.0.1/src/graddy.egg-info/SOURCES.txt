@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/graddy.egg-info/PKG-INFO
+src/graddy.egg-info/SOURCES.txt
+src/graddy.egg-info/dependency_links.txt
+src/graddy.egg-info/requires.txt
+src/graddy.egg-info/top_level.txt
