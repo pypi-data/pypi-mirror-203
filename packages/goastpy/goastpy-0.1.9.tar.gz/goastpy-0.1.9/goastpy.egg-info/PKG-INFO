@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: goastpy
+Version: 0.1.9
+Summary: Python Wrapper for Go AST Parser
+Home-page: https://github.com/itayg25/goastpy
+Author: Itay Gersten
+Author-email: Itay.Gersten@gmail.com
+Keywords: GO,GOLANG,PYTHON,AST,GOPY,PYGO,PARSER,ASTPARSER
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# GoAstPy - Python Wrapper for Go AST Parser
+
+`GoAstPy` is a Python wrapper for the built-in Go Abstract Syntax Tree (AST) parser. It allows you to parse and manipulate Go source code from within your Python applications. This package is perfect for developers working with Go code analysis, code generation, or automated refactoring tools in Python.
+
+## 🚀 Installation
+
+```bash
+pip install goastpy
+```
+
+## 📚 Usage
+
+```python
+import goastpy
+
+if __name__ == '__main__':
+    code = '''
+    package main
+
+    import "fmt"
+
+    func main() {
+        fmt.Println("Hello, World!")
+    }
+    '''
+    parsed_code = goastpy.GoAst(code)
+    print(parsed_code.ast)
+```
+
+With GoAstPy, you can quickly and easily parse Go source code, extract information about its structure, and work with it in your Python projects.
+
+## 🛠️ Building the Go Shared Library
+
+```bash
+cd ./goastpy
+go build -o goastparser.so -buildmode=c-shared main.go goastparser_export.go
+
+```
+This command generates a shared library file (goastparser.so) that is used by the Python wrapper to interface with the Go AST parser.
+
+## 🔖 GitHub Tags
+
+- `golang`
+- `python`
+- `ast`
+- `go-ast-parser`
+- `code-analysis`
+- `code-generation`
+- `refactoring`
+
+## 📖 License
+
+This project is licensed under the MIT License.
+
+## 🌟 Contributing
+
+We welcome contributions from the community! If you find a bug or have a feature request, please [open an issue](https://github.com/itayg25/GoAstPy/issues) or submit a [pull request](https://github.com/itayg25/GoAstPy/pulls). Let's make `GoAstPy` even better together!
+
