@@ -1,0 +1,16 @@
+README.md
+license.txt
+setup.py
+Package_1/Compare_Txt_Class.py
+Package_1/Convert_File_Extension_Class.py
+Package_1/Convert_Pdf_Class.py
+Package_1/File_Handler_Class.py
+Package_1/Read_Filenames_Dir_Class.py
+Package_1/__init__.py
+Package_2/Create_Windows_Class.py
+Package_2/__init__.py
+Pdf_check_fraud.egg-info/PKG-INFO
+Pdf_check_fraud.egg-info/SOURCES.txt
+Pdf_check_fraud.egg-info/dependency_links.txt
+Pdf_check_fraud.egg-info/requires.txt
+Pdf_check_fraud.egg-info/top_level.txt
