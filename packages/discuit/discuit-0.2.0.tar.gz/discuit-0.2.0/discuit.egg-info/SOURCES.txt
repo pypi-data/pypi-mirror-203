@@ -1,0 +1,17 @@
+CITATION.cff
+LICENSE
+MANIFEST.in
+NOTICE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+discuit/__init__.py
+discuit/run_discuit.py
+discuit.egg-info/PKG-INFO
+discuit.egg-info/SOURCES.txt
+discuit.egg-info/dependency_links.txt
+discuit.egg-info/not-zip-safe
+discuit.egg-info/requires.txt
+discuit.egg-info/top_level.txt
+tests/test_my_module.py
