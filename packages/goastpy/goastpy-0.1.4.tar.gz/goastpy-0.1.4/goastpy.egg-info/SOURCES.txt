@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+./goastpy/__init__.py
+./goastpy/goastparser_wrapper.py
+./goastpy/goastpy.py
+goastpy.egg-info/PKG-INFO
+goastpy.egg-info/SOURCES.txt
+goastpy.egg-info/dependency_links.txt
+goastpy.egg-info/top_level.txt
