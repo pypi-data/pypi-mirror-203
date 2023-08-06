@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: umjunsik
+Version: 1.2.1
+Summary: Umjunsik programming language
+Home-page: https://github.com/rycont/umjunsik-lang
+Author: rycont
+Author-email: rycont@outlook.kr
+License: MIT
+Keywords: umjunsik esolang
+Requires-Python: >=3
+License-File: LICENSE

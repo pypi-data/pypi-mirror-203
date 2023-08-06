@@ -1,0 +1,2 @@
+[console_scripts]
+umjunsik = umjunsik:main
