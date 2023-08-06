@@ -1,0 +1,8 @@
+README.md
+setup.py
+lovematch/__init__.py
+lovematch/lovematch.py
+lovematch.egg-info/PKG-INFO
+lovematch.egg-info/SOURCES.txt
+lovematch.egg-info/dependency_links.txt
+lovematch.egg-info/top_level.txt
