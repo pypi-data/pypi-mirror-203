@@ -1,0 +1,7 @@
+setup.py
+owenisas/__init__.py
+owenisas/owenisas.py
+owenisas.egg-info/PKG-INFO
+owenisas.egg-info/SOURCES.txt
+owenisas.egg-info/dependency_links.txt
+owenisas.egg-info/top_level.txt
