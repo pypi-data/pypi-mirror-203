@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: Video-Audio-Image-Downloader
+Version: 0.0.7
+Summary: In this tool is help to Download the Youtube Video,Audio and Any type of Google and other site's Images
+Home-page: https://git.selfmade.ninja/SRIDHARDSCV/audio_video_image_downloder-1
+Author: Sridhar
+Author-email: dcsvsridhar@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+## Download
+
+#### Prerequisites
+
+
+On Ubuntu/Debian:
+
+```
+sudo apt install update
+sudo apt install upgrade
+```
+
+
+
+#### Usage
+
+
+To download the Youtube video's and Audio's,ANd Download Any type of Image's.
+
+```
+ Downloader [Option..]
+
+
