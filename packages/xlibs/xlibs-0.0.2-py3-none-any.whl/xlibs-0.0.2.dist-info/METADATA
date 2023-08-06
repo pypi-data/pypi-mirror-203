@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: xlibs
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: pyarrow
+Requires-Dist: thelogger
+
+UNKNOWN
+
