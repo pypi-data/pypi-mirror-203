@@ -1,0 +1,11 @@
+bgserve/__init__.py,sha256=IIA515mef7aIUWLCzohFb_uRACATruIXZJ2ke_i8Suw,296
+bgserve/_background_server.py,sha256=RW_Zod3eoOqlFZINw9iahg5vf3NS6CNWMQ-t6fosvMU,2976
+bgserve/_protocols.py,sha256=CkVoZr9nrTtRMDVNOHeMFO3FKz7j50JFapLPV71MmFU,935
+bgserve/_provide.py,sha256=mybipRekl-pyH-KLad8vyuj93rWrO40uEgpJwfwIc30,3506
+bgserve/_resources.py,sha256=ex0mbjPWCqEdm5ZVoPBAFyFxuMuc2HA4S3rMoBWuwwI,5938
+bgserve/_tilesets.py,sha256=vI2zTnAzedv5zg0vy39cdR5pBMQuh16BD0Q6VCApWL8,6262
+bgserve/_util.py,sha256=FzOhA_52PnvGMNSJFH1LFL0PnllbGu8gvjuQstMwbwU,4739
+bgserve-0.0.0.dist-info/METADATA,sha256=URvObgBQ9nYULQROt9YfBxylA6VTzuzsMml3iR4zhxo,2476
+bgserve-0.0.0.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+bgserve-0.0.0.dist-info/licenses/LICENSE,sha256=JM-DWhWjrq9yyOjf6n6yVVoHjZZZ11akcSAftPraLbE,1068
+bgserve-0.0.0.dist-info/RECORD,,
