@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: strongmind-clever_client
+Version: 1.0.1
+Summary: Clever Data API
+Home-page: https://github.com/StrongMind/clever-client-python
+Author-email: platform@strongmind.com
+License: UNKNOWN
+Keywords: Swagger,Clever Data API
+Platform: UNKNOWN
+
+    Serves the Clever Data API  # noqa: E501
+    
+
