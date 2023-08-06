@@ -1,0 +1,9 @@
+dirname: REGISTRY_SYSTEM
+files:
+- C:\\.+\\System32\\config\\SAM*
+- C:\\.+\\System32\\config\\SYSTEM*
+- C:\\.+\\System32\\config\\SOFTWARE*
+- C:\\.+\\System32\\config\\SECURITY*
+- C:\\.+\\System32\\config\\DEFAULT*
+- C:\\.+\\System32\\config\\systemprofile\\NTUSER\.DAT*
+- C:\\.+\\ServiceProfiles\\LocalService\\NTUSER\.DAT*
