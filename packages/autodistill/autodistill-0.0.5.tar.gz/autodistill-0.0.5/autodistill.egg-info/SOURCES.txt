@@ -1,0 +1,10 @@
+README.md
+setup.py
+autodistill.egg-info/PKG-INFO
+autodistill.egg-info/SOURCES.txt
+autodistill.egg-info/dependency_links.txt
+autodistill.egg-info/requires.txt
+autodistill.egg-info/top_level.txt
+src/__init__.py
+src/hello.py
+test/test_hello.py
