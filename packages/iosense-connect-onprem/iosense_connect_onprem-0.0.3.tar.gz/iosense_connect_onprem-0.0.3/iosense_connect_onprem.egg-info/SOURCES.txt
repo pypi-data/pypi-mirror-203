@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+iosense_connect_onprem/__init__.py
+iosense_connect_onprem/data_access.py
+iosense_connect_onprem.egg-info/PKG-INFO
+iosense_connect_onprem.egg-info/SOURCES.txt
+iosense_connect_onprem.egg-info/dependency_links.txt
+iosense_connect_onprem.egg-info/top_level.txt
