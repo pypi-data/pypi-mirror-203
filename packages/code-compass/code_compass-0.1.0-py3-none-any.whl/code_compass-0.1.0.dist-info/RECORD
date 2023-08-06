@@ -1,0 +1,11 @@
+code_compass/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+code_compass/app.py,sha256=tpEp2RKfpj7_pu9KYoCvjtoBbBM4KFjcruftMvH2S0g,16569
+code_compass/category.py,sha256=3vIyshte7PjwtOA3IsBDjHtrwdo9Ck9j1SSg5UJG5RY,3468
+code_compass/config.py,sha256=J6trmUd90Gs6WROHyqT7zETgzSQEJTeWV0xwYTkMzmA,520
+code_compass/db.py,sha256=x164GkH5KfQxUuGblgAvk244bRZgquivQENVJ1Nz3-Q,1042
+code_compass/project.py,sha256=VLlhjzyJ2qIiYV3xSoKpf7ZK6KheYXYnlVcL7BYwIfY,3769
+code_compass/~/.config/charm_runner/data.db,sha256=jdNVUyL-wZe_fxIqIni6buT7bLuXFsIoimZQ_h5J5nQ,12288
+code_compass-0.1.0.dist-info/entry_points.txt,sha256=rM_PN_NZEjw0J6bdyY2_8LYmG4H2aW2QNuSR5DOOEfY,53
+code_compass-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+code_compass-0.1.0.dist-info/METADATA,sha256=bpf5Pf2LUD7Foe_AANtu9IS0_UuzxTQjCpws0AtQiek,1053
+code_compass-0.1.0.dist-info/RECORD,,
