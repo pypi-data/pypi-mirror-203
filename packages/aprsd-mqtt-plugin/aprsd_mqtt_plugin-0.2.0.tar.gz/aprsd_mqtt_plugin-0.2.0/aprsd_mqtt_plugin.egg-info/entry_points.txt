@@ -1,0 +1,2 @@
+[oslo.config.opts]
+aprsd_mqtt_plugin.conf = aprsd_mqtt_plugin.conf.opts:list_opts
