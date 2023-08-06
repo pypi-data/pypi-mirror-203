@@ -1,0 +1,12 @@
+CHANGELOG.md,sha256=RCNSkfw8Hvbk_Ff7vpCBtp5xQvP6vj9SnvSdFE7E16U,400
+LICENSE,sha256=mwaCmdS3DiHJrkmzgQLQdIeMvgZjbPDI-9lo-Q1I3nc,1071
+README.md,sha256=HaJuZ2BgDaN4cZd7ojxKrWAxzXRD6NP7w951VQCvVLo,6563
+lazy_env_configurator/__init__.py,sha256=HYybBHWmiBAMbLDIR8r_06qM5_uWNJ5A4JzJU5Uxptc,7718
+lazy_env_configurator/custom_warnings.py,sha256=y8LXzNSHT0R1VtoPvheYjwQXJmFMItw3SonCDN-iUy4,149
+pytest.ini,sha256=JBQQpll3YKVTg_9SgsMRmzOkhZjuPuYv61L02jT-4Vo,74
+requirements-test.txt,sha256=Ho79hNS4iXB-BlNKt4VcBphVNh19xsU5toC7-zF7Hqs,1466
+tox.ini,sha256=3R-Bh6ORbWs3knZKHrUcHdyimEy6C1vB5_5gAnlskSw,340
+lazy_env_configurator-0.2.0.dist-info/LICENSE,sha256=mwaCmdS3DiHJrkmzgQLQdIeMvgZjbPDI-9lo-Q1I3nc,1071
+lazy_env_configurator-0.2.0.dist-info/METADATA,sha256=vK1jkJ-N1wrE617r7rIMn1FB6aHTbQKO_XzUDvnUV2o,7773
+lazy_env_configurator-0.2.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+lazy_env_configurator-0.2.0.dist-info/RECORD,,
