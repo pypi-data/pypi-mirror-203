@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: avsos
+Version: 0.0.2
+Requires-Dist: PyPDF2
+Requires-Dist: cryptography
+Requires-Dist: keyring
+Requires-Dist: psutil
+Requires-Dist: python-nmap
+Requires-Dist: python-owasp-zap-v2.4
+Requires-Dist: reportlab
+Requires-Dist: schedule
+Requires-Dist: tk
+Requires-Dist: tldextract
+Requires-Dist: whois
+
