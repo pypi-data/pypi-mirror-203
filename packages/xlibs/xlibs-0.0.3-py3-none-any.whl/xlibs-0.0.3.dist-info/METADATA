@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: xlibs
+Version: 0.0.3
+Requires-Python: >=3.8
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: pyarrow
+Requires-Dist: thelogger
+Requires-Dist: icecream
+
