@@ -1,0 +1,12 @@
+genomenotebook/__init__.py,sha256=rmNAc4ZysZMni6LtZzVjtJtDHMF3MtJSwJhcG0IMl1Y,58
+genomenotebook/_modidx.py,sha256=_SG8wFQYsUf0d3bi2LmuY3THk8yKoT6lAh1tkkjrRiU,4566
+genomenotebook/browser.py,sha256=ESkxh18hap_IHYi2O4DrKl4cQ_8ULEPfhDbPHY6JYYU,9751
+genomenotebook/examples.py,sha256=fc_vTeeKDqdU05vB4c1VTWiqu96O-6fe0l7lv5iHWQs,294
+genomenotebook/js_callback_code.py,sha256=yF7-hBGjk4SK4H00gtTgRf3O4N46VSIa-7QqGDUeiGw,642
+genomenotebook/plotting.py,sha256=NtMvXgkvZ7NHVnDuc_6mXWfim4rSo-yJNTq4oVn_pa0,7515
+genomenotebook-0.3.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+genomenotebook-0.3.2.dist-info/METADATA,sha256=SPU3M2l_kT7sUXllv1d05wT4xpnxczezfGerJzaG07E,1580
+genomenotebook-0.3.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+genomenotebook-0.3.2.dist-info/entry_points.txt,sha256=G049wAYVN5LoOslqWDjHCU5Pur0RqAEtZNXBmo-1nOs,50
+genomenotebook-0.3.2.dist-info/top_level.txt,sha256=z_NxCprs-ENT3j9jTQfrfB39VIOz_a3DOmiwDGOc9V0,15
+genomenotebook-0.3.2.dist-info/RECORD,,
