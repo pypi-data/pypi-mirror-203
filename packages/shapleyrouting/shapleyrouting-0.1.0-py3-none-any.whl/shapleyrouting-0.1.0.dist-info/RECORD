@@ -1,0 +1,8 @@
+shapleyrouting/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shapleyrouting/main.py,sha256=givT_akOzW4so0UxpAIi6GfTPa8TC9NRSEcmIxjt1CY,5251
+shapleyrouting/rideshare/__init__.py,sha256=usp704cWbMzOUjf0QxedO0-JPaiv3duIlIn_j-y1w2M,76
+shapleyrouting/rideshare/rideshare.py,sha256=51mRqlxaeMT4KPoq5O3GLcQijsWH52yhyMpll5fhhtA,7101
+shapleyrouting-0.1.0.dist-info/LICENSE.md,sha256=CUvt2ilcBwKAfRAnoA4RNPTLcdUj3En21LPK9YkFMGg,11358
+shapleyrouting-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+shapleyrouting-0.1.0.dist-info/METADATA,sha256=Q0PA_z7LaOzwmkAgJuyJv-aaEtNj7uG9MZciFQ_Wh-w,1486
+shapleyrouting-0.1.0.dist-info/RECORD,,
