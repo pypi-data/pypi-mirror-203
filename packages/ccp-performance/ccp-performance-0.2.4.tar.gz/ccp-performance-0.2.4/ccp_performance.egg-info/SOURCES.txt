@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ccp/tests/data/UTGCA_1231_A_1s.csv
+ccp/tests/data/UTGCA_1231_A_2019-01-01T00_00_00_2020-12-11T00_00_00_12h
+ccp/tests/data/lp-sec1-caso-a-eff.csv
+ccp/tests/data/lp-sec1-caso-a-head.csv
+ccp/tests/data/normal-eff.csv
+ccp/tests/data/normal-head.csv
+ccp_performance.egg-info/PKG-INFO
+ccp_performance.egg-info/SOURCES.txt
+ccp_performance.egg-info/dependency_links.txt
+ccp_performance.egg-info/requires.txt
+ccp_performance.egg-info/top_level.txt
