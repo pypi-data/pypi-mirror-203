@@ -1,0 +1,61 @@
+[tool.poetry]
+name = "musical-notes"
+version = "0.1.0"
+description = "Musical Notes CLI: A command-line tool for music students to practice identifying and memorizing musical notes."
+license = "MIT"
+authors = ["drigols <drigols.creative@gmail.com>"]
+readme = "README.md"
+packages = [{include = "musical_notes"}]
+classifiers = [
+    "Topic :: Education",
+    "Environment :: Console",
+    "Natural Language :: English",
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3.11",
+]
+
+[tool.poetry.urls]
+"Documentation" = "https://musical-notes.readthedocs.io/en/latest/"
+"Repository" = "https://github.com/drigols/musical-notes"
+"Issue Tracker" = "https://github.com/drigols/musical-notes/issues"
+
+[tool.poetry.scripts]
+musical-notes = "musical_notes.cli:app"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "^0.7.0"
+rich = "^13.3.4"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.2"
+pytest-cov = "^4.0.0"
+blue = "^0.9.1"
+isort = "^5.12.0"
+taskipy = "^1.10.3"
+
+[tool.poetry.group.doc.dependencies]
+mkdocs-material = "^9.1.4"
+mkdocstrings = "^0.20.0"
+mkdocstrings-python = "^0.8.3"
+mkdocs-macros-plugin = "^0.7.0"
+jinja2 = "^3.1.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = "--doctest-modules"
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.taskipy.tasks]
+lint = "blue --check --diff . && isort --check --diff ."
+docs = "mkdocs serve"
+pre_test = "task lint" # Pre test.
+test = "pytest -s -x --cov=musical_notes -vv"
+post_test = "coverage html" # Post test.
