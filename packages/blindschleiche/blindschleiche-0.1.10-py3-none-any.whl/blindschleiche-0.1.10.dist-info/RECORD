@@ -1,0 +1,17 @@
+blsl/__init__.py,sha256=6mPADMgrzy7p5r6dYouculBHKNUP0tGgWbFnTq3JGI4,1774
+blsl/__main__.py,sha256=eI85U00AovX84M2AwDe-bqpCUwlGMO00X-Psh1Y_XYE,317
+blsl/falen.py,sha256=zU-VXt-iiqiU6kzPbXwZEj8cmCUNnVudf7K41V8DfRM,848
+blsl/genigvjs.py,sha256=T08wR7J4GgTaRbxWhnHnaYxSetvUVj6Yjr5YNCSGIZY,5274
+blsl/ildemux.py,sha256=OC96JY_-ns9UdG4zwWrFedPs4lGxUubpM_WD8K_h3cg,6521
+blsl/ilsample.py,sha256=mF-3eT4oiWpytPScyj-U35o-sfVG7GxAa07UexVhaxw,1324
+blsl/liftoff_gff3.py,sha256=M5lilcPIjjvmT5UeLdq2iVpzHuzyNecNGwXcsayKlSI,3882
+blsl/mask2bed.py,sha256=nzp7q3Q0vZ1JUcA_cfig4fsqj79Hbvk5Yl7778gXDVs,1953
+blsl/n50.py,sha256=aiM1wsjgZ39egyO2f3bA0fiPqQm2wuegEA4BNH7sCYI,1170
+blsl/pansn_rename.py,sha256=KN0lc7UoEBQ283sNhUnutb9jZ-Z2RZpIafFKTiT8p2A,4842
+blsl/regionbed.py,sha256=MH9_4v9ahfecni3DT2jQnDvKVAiauD9_0iTppShmba8,1338
+blsl/telogrep.py,sha256=AxeAash3Y2ii1fRnLjuhdWvh4vzVkU9Ah4XPrrZ8BoA,3189
+blsl/uniref_accessionmap.py,sha256=ZlI5ARBIuFDFla1hAMUT9Oug-cekvVnD4P1x8HI6Sn8,1290
+blindschleiche-0.1.10.dist-info/entry_points.txt,sha256=pfv7dytBZc8LiclZjcN-XXAuX-j4jkdccYZpJ_U30Ok,34
+blindschleiche-0.1.10.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+blindschleiche-0.1.10.dist-info/METADATA,sha256=ypWXEXLIOdPbxCBu4YSq6YJfxQ1VAzrLyKNXtJk3UVA,2401
+blindschleiche-0.1.10.dist-info/RECORD,,
