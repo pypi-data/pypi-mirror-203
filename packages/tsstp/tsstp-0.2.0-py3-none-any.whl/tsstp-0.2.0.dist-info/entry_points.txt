@@ -1,0 +1,3 @@
+[console_scripts]
+tsstp = tsstp.datatemplate:DataTemplate
+

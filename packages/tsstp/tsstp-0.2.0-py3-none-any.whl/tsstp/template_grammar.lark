@@ -1,0 +1,63 @@
+start: NEWLINE* _unitlist{unit, NEWLINE} NEWLINE*
+
+// unit
+unit: loop_template | template_string | multi_template | if_stmt  | string |  loop
+
+// basic units
+multi_template: ( loop_template | string )+
+
+// template grammar
+loop_template: template ("~" loop_num)?
+loop_num: INT | "n" | CNAME | function
+template.2: "{{" var "}}"
+
+// function
+function: WORD "(" CNAME ")"
+
+template_string: (string loop_template) |  (loop_template string)
+
+// string grammar
+string: symbol_string | const_string
+const_string: CNAME*
+symbol_string: (NUMBER | SYMBOL | WORD)*
+
+
+// if statment
+if_stmt.2: "{%" "if" condition "%}" NEWLINE statement NEWLINE [ "{%" "else" "%}" NEWLINE else_statement  NEWLINE] "{%" "endif" "%}"
+condition: CNAME | CNAME [GT | LT | EQUAL] NUMBER | NUMBER [GT | LT | EQUAL] CNAME | NUMBER GT CNAME GT NUMBER | NUMBER LT CNAME LT NUMBER
+//statement: loop_template | string | template_string
+statement: _unitlist{unit, NEWLINE}
+//else_statement: loop_template | string | template_string
+else_statement: _unitlist{unit, NEWLINE}
+
+// loop statment
+loop.2: "{%" "loop" iter_num "%}" NEWLINE statement NEWLINE  "{%" "endloop" "%}"
+iter_num: INT | CNAME | function   // It can be either a concrete number or a template variable that represents a numeric value
+
+// variable
+var: var_name ("|" indicator)? ("|" filter)?
+indicator: "_" INDIC_WORD "_"
+// indicator reserved word
+INDIC_WORD: "alpha" | "string" | "number" | "symbol"
+filter: WORD
+var_name: CNAME
+
+
+// Helper elements
+SYMBOL: "(" | ")" | "-" | "=" | "\\" | "/" | "-" | ":" | "," | "_" | "+" | "." | "?" | ";" | "[" | "]" | "{" | "}" | "!" | "&" | "*" | "%" | "#" | "@" | "'" | ">" | "<" | "^"
+_unitlist{x, sep}: x (sep x)*
+GT: ">" | ">="
+LT: "<" | "<="
+EQUAL: "=="
+
+// import common elements from library
+%import common.WORD
+%import common.CNAME
+%import common.WS_INLINE
+%import common.NUMBER
+%import common.INT
+%import common.WS
+%import common.NEWLINE
+
+// ignore " " "\t"
+%ignore WS_INLINE
