@@ -1,0 +1,8 @@
+README.md
+setup.py
+test_bmi.py
+test_bmi.egg-info/PKG-INFO
+test_bmi.egg-info/SOURCES.txt
+test_bmi.egg-info/dependency_links.txt
+test_bmi.egg-info/entry_points.txt
+test_bmi.egg-info/top_level.txt
