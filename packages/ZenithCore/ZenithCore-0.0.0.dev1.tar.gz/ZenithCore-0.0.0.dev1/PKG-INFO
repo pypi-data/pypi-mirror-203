@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: ZenithCore
+Version: 0.0.0.dev1
+Summary: A package for Zenith Core Libraries
+Home-page: https://github.com/ZenithResearch/ZenithCore
+Author: Maaz Waraich
+Author-email: waraichmaaz@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
