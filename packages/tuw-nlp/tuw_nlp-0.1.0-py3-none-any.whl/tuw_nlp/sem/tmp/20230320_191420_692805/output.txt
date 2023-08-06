@@ -1,0 +1,4 @@
+ROOT(VERB_NSUBJ_PRON_0(_NSUBJ_PRON(we_PRON_PRP_0_1),VERB_AUX_AUX_0(_AUX_AUX(have_AUX_VBP_0_2),VERB_OBJ_NOUN_0(_OBJ_NOUN(NOUN_DET_DET_0(_DET_DET(the_DET_DT_0_4),spam_NOUN_NN_0_5)),HANDLE_OBL_CASE_ADP_9_6(into_ADP_IN_0_6,NOUN_DET_DET_0(_DET_DET(the_DET_DT_0_4),NOUN_COMPOUND_NOUN_0(_COMPOUND_NOUN(junk_NOUN_NN_0_8),folder_NOUN_NN_0_9)),VERB_PUNCT_PUNCT_0(_PUNCT_PUNCT(PERIOD_PUNCT_PERIOD_0_10),dump_VERB_VBN_0_3))))))
+(u_1<root> / dump_3  :2 (u_11 / spam_5)  :1 (u_14 / we_1)  :1-of (u_3 / into_6  :2 (u_4 / folder_9  :0 (u_8 / junk_8))))
+null
+<null>

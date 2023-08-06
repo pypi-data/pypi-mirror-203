@@ -1,0 +1,24 @@
+digraph finite_state_machine {
+	dpi=140;
+	0 [shape = circle, label = "root"];
+	1 [shape = circle, label = "we"];
+	10 [shape = circle, label = "_"];
+	2 [shape = circle, label = "have"];
+	3 [shape = circle, label = "dump"];
+	4 [shape = circle, label = "the"];
+	5 [shape = circle, label = "spam"];
+	6 [shape = circle, label = "into"];
+	7 [shape = circle, label = "the"];
+	8 [shape = circle, label = "junk"];
+	9 [shape = circle, label = "folder"];
+	0 -> 3 [ label = "ROOT" ];
+	3 -> 1 [ label = "NSUBJ" ];
+	3 -> 10 [ label = "PUNCT" ];
+	3 -> 2 [ label = "AUX" ];
+	3 -> 5 [ label = "OBJ" ];
+	3 -> 9 [ label = "OBL" ];
+	5 -> 4 [ label = "DET" ];
+	9 -> 6 [ label = "CASE" ];
+	9 -> 7 [ label = "DET" ];
+	9 -> 8 [ label = "COMPOUND" ];
+}

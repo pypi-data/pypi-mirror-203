@@ -1,0 +1,108 @@
+interpretation ud: de.up.ling.irtg.algebra.TreeWithAritiesAlgebra
+interpretation fl: de.up.ling.irtg.algebra.graph.GraphAlgebra
+
+S! -> ROOT(VERB)
+[ud] ROOT_1(?1)
+[fl] ?1
+VERB -> dump_VERB_VBN_0_3
+[ud] VERB_1(dump_0)
+[fl] "(dump<root> / dump_3)"
+VERB -> VERB_NSUBJ_PRON_0(NSUBJ_PRON, VERB) [0.1]
+[ud] VERB_2(?1, ?2)
+[fl] f_dep1(merge(merge(?2,"(r<root> :1 (d1<dep1>))"), r_dep1(?1)))
+NSUBJ_PRON -> _NSUBJ_PRON(PRON)
+[ud] _NSUBJ_1(?1)
+[fl] ?1
+PRON -> we_PRON_PRP_0_1
+[ud] PRON_1(we_0)
+[fl] "(we<root> / we_1)"
+VERB -> VERB_AUX_AUX_0(AUX_AUX, VERB) [0.1]
+[ud] VERB_2(?1, ?2)
+[fl] ?2
+AUX_AUX -> _AUX_AUX(AUX)
+[ud] _AUX_1(?1)
+[fl] ?1
+AUX -> have_AUX_VBP_0_2
+[ud] AUX_1(have_0)
+[fl] "(have<root> / have_2)"
+VERB -> VERB_OBJ_NOUN_0(OBJ_NOUN, VERB) [0.1]
+[ud] VERB_2(?1, ?2)
+[fl] f_dep1(merge(merge(?2,"(r<root> :2 (d1<dep1>))"), r_dep1(?1)))
+OBJ_NOUN -> _OBJ_NOUN(NOUN)
+[ud] _OBJ_1(?1)
+[fl] ?1
+NOUN -> spam_NOUN_NN_0_5
+[ud] NOUN_1(spam_0)
+[fl] "(spam<root> / spam_5)"
+NOUN -> NOUN_DET_DET_0(DET_DET, NOUN) [0.1]
+[ud] NOUN_2(?1, ?2)
+[fl] ?2
+DET_DET -> _DET_DET(DET)
+[ud] _DET_1(?1)
+[fl] ?1
+DET -> the_DET_DT_0_4
+[ud] DET_1(the_0)
+[fl] "(the<root> / the_4)"
+VERB -> VERB_OBL_NOUN_0(OBL_NOUN, VERB) [0.1]
+[ud] VERB_2(?1, ?2)
+[fl] f_dep1(merge(merge(?2,"(r<root> :2 (d1<dep1>))"), r_dep1(?1)))
+OBL_NOUN -> _OBL_NOUN(NOUN)
+[ud] _OBL_1(?1)
+[fl] ?1
+NOUN -> folder_NOUN_NN_0_9
+[ud] NOUN_1(folder_0)
+[fl] "(folder<root> / folder_9)"
+NOUN -> NOUN_CASE_ADP_0(CASE_ADP, NOUN) [0.1]
+[ud] NOUN_2(?1, ?2)
+[fl] f_dep1(merge(merge(?2,"(r<root> :0 (d1<dep1>))"), r_dep1(?1)))
+CASE_ADP -> _CASE_ADP(ADP)
+[ud] _CASE_1(?1)
+[fl] ?1
+VERB -> HANDLE_OBL_CASE_ADP_9_6(ADP, NOUN, VERB)
+[ud] VERB_2(_OBL_1(NOUN_2(_CASE_1(?1), ?2)),?3)
+[fl] f_dep2(f_dep1(merge(merge(merge(?3,"(d1<dep1> :1 (r<root>) :2 (d2<dep2>))"), r_dep1(?1)), r_dep2(?2))))
+VERB -> HANDLE_OBL_MARK_ADP_9_6(ADP, NOUN, VERB)
+[ud] VERB_2(_OBL_1(NOUN_2(_MARK_1(?1), ?2)),?3)
+[fl] f_dep2(f_dep1(merge(merge(merge(?3,"(d1<dep1> :1 (r<root>) :2 (d2<dep2>))"), r_dep1(?1)), r_dep2(?2))))
+ADP -> into_ADP_IN_0_6
+[ud] ADP_1(into_0)
+[fl] "(into<root> / into_6)"
+NOUN -> NOUN_DET_DET_0(DET_DET, NOUN) [0.1]
+[ud] NOUN_2(?1, ?2)
+[fl] ?2
+DET_DET -> _DET_DET(DET)
+[ud] _DET_1(?1)
+[fl] ?1
+VERB -> HANDLE_OBL_CASE_DET_9_7(DET, NOUN, VERB)
+[ud] VERB_2(_OBL_1(NOUN_2(_CASE_1(?1), ?2)),?3)
+[fl] f_dep2(f_dep1(merge(merge(merge(?3,"(d1<dep1> :1 (r<root>) :2 (d2<dep2>))"), r_dep1(?1)), r_dep2(?2))))
+VERB -> HANDLE_OBL_MARK_DET_9_7(DET, NOUN, VERB)
+[ud] VERB_2(_OBL_1(NOUN_2(_MARK_1(?1), ?2)),?3)
+[fl] f_dep2(f_dep1(merge(merge(merge(?3,"(d1<dep1> :1 (r<root>) :2 (d2<dep2>))"), r_dep1(?1)), r_dep2(?2))))
+DET -> the_DET_DT_0_7
+[ud] DET_1(the_0)
+[fl] "(the<root> / the_7)"
+NOUN -> NOUN_COMPOUND_NOUN_0(COMPOUND_NOUN, NOUN) [0.1]
+[ud] NOUN_2(?1, ?2)
+[fl] f_dep1(merge(merge(?2,"(r<root> :0 (d1<dep1>))"), r_dep1(?1)))
+COMPOUND_NOUN -> _COMPOUND_NOUN(NOUN)
+[ud] _COMPOUND_1(?1)
+[fl] ?1
+VERB -> HANDLE_OBL_CASE_NOUN_9_8(NOUN, NOUN, VERB)
+[ud] VERB_2(_OBL_1(NOUN_2(_CASE_1(?1), ?2)),?3)
+[fl] f_dep2(f_dep1(merge(merge(merge(?3,"(d1<dep1> :1 (r<root>) :2 (d2<dep2>))"), r_dep1(?1)), r_dep2(?2))))
+VERB -> HANDLE_OBL_MARK_NOUN_9_8(NOUN, NOUN, VERB)
+[ud] VERB_2(_OBL_1(NOUN_2(_MARK_1(?1), ?2)),?3)
+[fl] f_dep2(f_dep1(merge(merge(merge(?3,"(d1<dep1> :1 (r<root>) :2 (d2<dep2>))"), r_dep1(?1)), r_dep2(?2))))
+NOUN -> junk_NOUN_NN_0_8
+[ud] NOUN_1(junk_0)
+[fl] "(junk<root> / junk_8)"
+VERB -> VERB_PUNCT_PUNCT_0(PUNCT_PUNCT, VERB) [0.1]
+[ud] VERB_2(?1, ?2)
+[fl] ?2
+PUNCT_PUNCT -> _PUNCT_PUNCT(PUNCT)
+[ud] _PUNCT_1(?1)
+[fl] ?1
+PUNCT -> PERIOD_PUNCT_PERIOD_0_10
+[ud] PUNCT_1(PERIOD_0)
+[fl] "(PERIOD<root> / PERIOD_10)"

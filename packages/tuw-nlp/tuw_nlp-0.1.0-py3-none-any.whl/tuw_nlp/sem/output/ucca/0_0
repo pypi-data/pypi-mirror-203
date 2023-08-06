@@ -1,0 +1,22 @@
+digraph finite_state_machine {
+	dpi=140;
+	X0_1 [shape = circle, label = "We"];
+	X0_10 [shape = circle, label = "_"];
+	X0_2 [shape = circle, label = "have"];
+	X0_3 [shape = circle, label = "dumped"];
+	X0_4 [shape = circle, label = "the"];
+	X0_5 [shape = circle, label = "spam"];
+	X0_6 [shape = circle, label = "into"];
+	X0_7 [shape = circle, label = "the"];
+	X0_8 [shape = circle, label = "junk"];
+	X0_9 [shape = circle, label = "folder"];
+	X0_3 -> X0_1 [ label = "A" ];
+	X0_3 -> X0_2 [ label = "F" ];
+	X0_3 -> X0_5 [ label = "C" ];
+	X0_3 -> X0_9 [ label = "C" ];
+	X0_5 -> X0_4 [ label = "E" ];
+	X0_9 -> X0_10 [ label = "U" ];
+	X0_9 -> X0_6 [ label = "R" ];
+	X0_9 -> X0_7 [ label = "E" ];
+	X0_9 -> X0_8 [ label = "E" ];
+}
