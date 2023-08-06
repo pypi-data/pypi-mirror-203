@@ -1,0 +1,3 @@
+[console_scripts]
+db_simple = db_simple:main
+
