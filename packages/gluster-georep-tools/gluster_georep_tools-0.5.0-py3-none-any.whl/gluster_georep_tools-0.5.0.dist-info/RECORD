@@ -1,0 +1,12 @@
+gluster_georep_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gluster_georep_tools/_version.py,sha256=o_9FMpKXs1TaEQNOx-A4tDxKLoFOXZyS8RpLoa-PFCI,160
+gluster_georep_tools/setup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gluster_georep_tools/setup/cli.py,sha256=wl3QcMGb5xggXlNseMTno0a6bQStMKC-S-lapDHvGHc,17823
+gluster_georep_tools/status/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gluster_georep_tools/status/cli.py,sha256=PdIXRAWXcCLgUMUBe8BLeDOAiuddtmSePtIxME34_04,4884
+gluster_georep_tools-0.5.0.dist-info/LICENSE,sha256=tk-8sfeeqMA-Iw1kywY5s5b7O3ZHgVxOlbhnaT-mjto,1107
+gluster_georep_tools-0.5.0.dist-info/METADATA,sha256=NrvcV5qDc9Tt7w1SBsg0TlzE0l1klKli2fq9_S44ZZw,690
+gluster_georep_tools-0.5.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gluster_georep_tools-0.5.0.dist-info/entry_points.txt,sha256=4WZ8RNFwyqTGMvJx2oDq9JHJTGkRL32Gml6Sy_6dWUA,138
+gluster_georep_tools-0.5.0.dist-info/top_level.txt,sha256=rpOPYvi4Fk4bq4y4QHoo597g45NwTPEXMODQm7VWeiQ,21
+gluster_georep_tools-0.5.0.dist-info/RECORD,,
