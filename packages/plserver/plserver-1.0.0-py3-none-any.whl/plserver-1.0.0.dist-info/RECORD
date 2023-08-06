@@ -1,0 +1,11 @@
+plserver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plserver/__main__.py,sha256=-syAchi066UP6kDT3-K-KVTr7tw1qoJij-J0JaU9ZIs,858
+plserver/file_handler.py,sha256=OWa4h2YbA-B3g3eF0KhRTJ_h8fUwZjhIbdPhan2ItFQ,2297
+plserver/help.txt,sha256=3Bp9SSq2o1X9NQ147rzNutp9_BdUSWmgZcMcBqa16m0,239
+plserver/server.py,sha256=f-537eFFLSJc5L1l-Mxtt3YQaLF-iYOv6bvtghn2wpA,2419
+plserver/websocket.js,sha256=t7GAb24gO6NzFLqWKdiOqN9rYDmmPI_MopKvywW_FCA,1673
+plserver/websocket_handler.py,sha256=gZWG5MNo0of8mWeDIobJBtau77n-M3u5515xXAvidkU,1093
+plserver-1.0.0.dist-info/METADATA,sha256=2BkRusHiDZNUWeM6C512jDpy5huGhliga8-SLdBgF2w,2416
+plserver-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+plserver-1.0.0.dist-info/top_level.txt,sha256=fUurYE0VZdL0LHjuS4EMWFSBV2k2yaEe53p5ihmm_lc,9
+plserver-1.0.0.dist-info/RECORD,,

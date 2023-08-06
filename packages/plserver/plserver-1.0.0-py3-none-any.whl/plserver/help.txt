@@ -1,0 +1,8 @@
+usage python3 -m plserver [-h] [-p] [port] 
+
+ positional arguments: 
+ port  specify alternate port (Default:2000)
+
+OPTIONS: 
+    -p, --port        PORT (Specify por to use, default 2000)
+    -h, --help        Display this help text.
