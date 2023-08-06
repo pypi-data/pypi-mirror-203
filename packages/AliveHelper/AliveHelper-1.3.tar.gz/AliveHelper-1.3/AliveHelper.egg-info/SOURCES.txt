@@ -1,0 +1,7 @@
+setup.py
+AliveHelper/__init__.py
+AliveHelper.egg-info/PKG-INFO
+AliveHelper.egg-info/SOURCES.txt
+AliveHelper.egg-info/dependency_links.txt
+AliveHelper.egg-info/requires.txt
+AliveHelper.egg-info/top_level.txt
