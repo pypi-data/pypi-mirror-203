@@ -1,0 +1,12 @@
+sparsecca/__init__.py,sha256=cqkXbbdoptayzjErDYM41kEjKGYT63dl3YqzY-5Uuvw,316
+sparsecca/_cca_ipls.py,sha256=6k7DN6NGY74RAGa6fHCqPvvyqlTkPSp4i6XohVIaiwE,5192
+sparsecca/_cca_pmd.py,sha256=TuxetxQKXKcF4_2f7fUnDK5v2fWdGKIzMYBySs2tWTw,3065
+sparsecca/_multicca_lp.py,sha256=3noXGY2I13n-dkMKBBLZLrFGEdM0vcgOROl--EDwLz8,5607
+sparsecca/_multicca_pmd.py,sha256=TGCdfCqI-0Yp7WU_eLU5MRC2CiEgBBwJidIL6I1Nfmw,3331
+sparsecca/_multicca_pmd_permute.py,sha256=xskM3A-CqqcqrXuRbbVE6rDZLUXC0oFsj7bEmmyHBKc,2919
+sparsecca/_pmd.py,sha256=MbOkdns83Sd2EPC_8aMScrt6hXYbhdTp9WXNy_AWM-U,2141
+sparsecca/_utils_pmd.py,sha256=G20GBIO7QHm_gUeVqxCYmlYZKBCznOtq1emof4IzAgU,2219
+sparsecca-0.3.0.dist-info/LICENSE,sha256=jJzLlsBl5wYTW2y60nm3IdphVuUfOl8nxrMymvlBbXM,1558
+sparsecca-0.3.0.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+sparsecca-0.3.0.dist-info/METADATA,sha256=kwfqS4hTOnqbo_J45OPACb5MBkek2bbtQzwvXoktPDk,1906
+sparsecca-0.3.0.dist-info/RECORD,,
