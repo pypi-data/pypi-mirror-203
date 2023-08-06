@@ -1,0 +1,19 @@
+{% load django_vite %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Text Collaboration Room</title>
+    {% vite_hmr_client %}
+</head>
+<body>
+    <div id="y-functions">
+        <div id="y-version"></div>
+        <button type="button" id="y-connect-btn">Disconnect</button>
+    </div>
+    {{ room_name|json_script:"room-name" }}
+    {% vite_asset 'frontend/main.js' %}
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+version: '3'
+
+x-app-defaults:
+  &app_defaults
+  build: .
+  command: uvicorn textcollab_project.asgi:application
+  links:
+    - db
+    - broker
+  environment:
+    - DATABASE_URL=://postgres@db/postgres
+  depends_on:
+    - db
+    - broker
+
+services:
+  db:
+    image: postgres:15.2
+    volumes:
+      - postgres-data:/var/lib/postgresql/data/
+  broker:
+    image: redis:5
+    volumes:
+      - "redis-data:/data"
+  app:
+    <<: *app_defaults
+    command: uvicorn textcollab_project.asgi:application
+    ports:
+      - "8000:8000"
+  worker:
+    <<: *app_defaults
+    command: python manage.py yroom
+
+volumes:
+  postgres-data: {}
+  redis-data: {}
