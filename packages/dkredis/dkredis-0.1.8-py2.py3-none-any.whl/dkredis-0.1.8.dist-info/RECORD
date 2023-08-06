@@ -1,0 +1,7 @@
+dkredis/__init__.py,sha256=bcPBmhqdPDThVdCiowTRmJqfZTqS-hcsN3_uBcKgO8s,53
+dkredis/dkredis.py,sha256=mBoFfjaZabD0mUrVZhZhFwA-YAHxXTfNTBqHLQ4W9i8,11456
+dkredis/rediscache.py,sha256=zTXoDmQIUB76iIdgjiM0mzdm-Rh2f1VvoNeCJep-dik,6425
+dkredis-0.1.8.dist-info/METADATA,sha256=6pb7JsWflBUlx94m6j9rnhfnx71kTLmZ1TL3m5BJ6d0,1313
+dkredis-0.1.8.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+dkredis-0.1.8.dist-info/top_level.txt,sha256=M36x_OYjzsABSgsMc7UBa2M69NAbTr0TV-6Httf8bJE,8
+dkredis-0.1.8.dist-info/RECORD,,
