@@ -1,0 +1,37 @@
+[bumpversion]
+current_version = "1.0.0"
+commit = true
+tag = true
+
+[bumpversion.file]
+source = "src/pyenv_validator/version.py"
+
+[tool.black]
+line-length = 79
+exclude = "src/pyenv_validator/version.py"
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+exclude = ["venv", "src/pyenv_validator/version.py"]
+# Ignore missing docstrings in __init__: D107
+# Ignore missing type annotation for self: ANN101
+# Ignore missing type annotation for special methods (i.e. __init__): ANN204
+# Ignore missing type annotation for cls: ANN102
+# Conflicts with W504 and no longer conforms to PEP8: W503
+extend-ignore = ["D107", "ANN101", "ANN204", "ANN102", "W503"]
+literal-inline-quotes = "double"
+literal-multiline-quotes = "double"
+
+[tool.pylint."MESSAGES CONTROL"]
+fail-under = 9
+# Naming, imports and line lenght are already covered by flake8 so disabling for pylint
+disable = "import-error,invalid-name,line-too-long"
+ignore = "src/pyenv_validator/version.py"
+
+[[tool.mypy.overrides]]
+ignore_missing_imports = true
+
+[mypy.'src.pyenv_validator.version']
+ignore_errors = true
