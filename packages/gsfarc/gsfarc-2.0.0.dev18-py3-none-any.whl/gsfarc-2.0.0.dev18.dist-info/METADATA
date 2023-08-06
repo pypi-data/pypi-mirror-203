@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: gsfarc
+Version: 2.0.0.dev18
+Summary: GSF Py Client Utilities for ArcGIS
+Home-page: https://github.com/geospatial-services-framework/gsfpyarc
+Author: NV5 Geospatial
+Author-email: gsf@harris.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: gsf (>=2.0.0)
+
+
+*****************
+GSF Py for ArcGIS
+*****************
+
+Installation
+============
+
+Install GSF Py for ArcGIS using pip::
+
+    pip install gsfarc
+
+Documentation
+=============
+
+For the full API documentation visit: http://gsf-py-for-arcgis.readthedocs.io
+
