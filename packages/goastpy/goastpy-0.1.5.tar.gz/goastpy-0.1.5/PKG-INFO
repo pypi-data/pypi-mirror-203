@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: goastpy
+Version: 0.1.5
+Summary: a python wrapper for the built-in go parser using c-types
+Home-page: https://github.com/itayg25/goastpy
+Author: Itay Gersten
+Author-email: Itay.Gersten@gmail.com
+Keywords: GO,GOLANG,PYTHON,AST,GOPY,PYGO,PARSER,ASTPARSER
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# gopyast
+a python wrapper for the built-in go parser
