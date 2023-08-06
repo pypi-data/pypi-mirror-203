@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: django_excel_report
+Version: 0.0.1
+Summary: Simplify excel reports from django apps
+Author: Boris Alekseev
+Author-email: i.borisalekseev@gmail.com
+Maintainer: 
+Maintainer-email: 
+License: MIT
+Project-URL: Source, https://github.com/dichem/django-excel-report
+Keywords: django excel
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Quick guide:
+
+Here is defined models for example:
+```python
+from django.db import models
+
+
+class M2MRelated(models.Model):
+    field = models.TextField()
+
+
+class RelatedModel:
+    field = models.TextField()
+
+
+class MyModel:
+    field = models.TextField()
+    related_model = models.ForeignKey(RelatedModel, models.DO_NOTHING)
+    m2m_related = models.ManyToManyField(M2MRelated)
+```
+How to use BaseReport class:
+```python
+from django_excel_report import BaseReport
+
+
+class MyReport(BaseReport):
+    model = MyModel
+    fields = ["field", "related_model__field", "m2m_related__field"]
+
+def some_task(**kwargs):
+    qs = MyModel.objects.filter(**kwargs)
+    report = MyReport(queryset=qs)
+    report.generate()
+```
