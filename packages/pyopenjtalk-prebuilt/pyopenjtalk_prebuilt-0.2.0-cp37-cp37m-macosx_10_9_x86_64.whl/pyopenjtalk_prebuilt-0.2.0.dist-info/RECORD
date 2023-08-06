@@ -1,0 +1,12 @@
+pyopenjtalk_prebuilt-0.2.0.dist-info/LICENSE.md,sha256=w4CDpNUcHqhuCLMwOphNDCNxjFrCFAWK9wWBTTD0u1s,1177
+pyopenjtalk_prebuilt-0.2.0.dist-info/RECORD,,
+pyopenjtalk_prebuilt-0.2.0.dist-info/WHEEL,sha256=cn3MqKxXPZf_umXVN9bjU7rU5G5fwrevuD19NAvGz6I,110
+pyopenjtalk_prebuilt-0.2.0.dist-info/top_level.txt,sha256=S7eQayVhEioHtm7lS-oG8mteALqSBd5DR9HJjfJnHO0,12
+pyopenjtalk_prebuilt-0.2.0.dist-info/METADATA,sha256=eZ0k0SJ4z_zWbUOdp0UU4QHVFbNl8pPf7vPpiKv_MMY,6815
+pyopenjtalk/version.py,sha256=FVHPBGkfhbQDi_z3v0PiKJrXXqXOx0vGW_1VaqNJi7U,22
+pyopenjtalk/htsengine.cpython-37m-darwin.so,sha256=euuRW4AxicvuajC03Zvh3kvYq5WATb_eVHcbfVcw7Lw,209424
+pyopenjtalk/__init__.py,sha256=ruwoXzvhqJMXLp-3ByJiBUAFNO803ICFhc-QwZuyKU0,4986
+pyopenjtalk/openjtalk.cpython-37m-darwin.so,sha256=8ROQt4WbVNrQ_t7WHyUzvGZ3L7TPyjXq56iMSXpxNq4,2023664
+pyopenjtalk/htsvoice/LICENSE_mei_normal.htsvoice,sha256=r4oFts4o5RNlj98EgPNtv0nL6HjSVx2X3QF-gFLHE5E,2870
+pyopenjtalk/htsvoice/README.md,sha256=-yfJC1ZNcmpujB4DyBJ1MQLGkrCObIbkpO25cFDpdt0,100
+pyopenjtalk/htsvoice/mei_normal.htsvoice,sha256=875JpoOJBKbCGHkLZOB8PoPBiG6ZXcooS0E8qrGRhN4,862503
