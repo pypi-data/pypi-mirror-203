@@ -1,0 +1,5 @@
+plugins
+querysource
+resources
+settings
+templates
