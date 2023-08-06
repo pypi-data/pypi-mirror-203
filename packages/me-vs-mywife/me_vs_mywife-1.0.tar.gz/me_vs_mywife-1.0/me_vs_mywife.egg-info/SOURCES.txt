@@ -1,0 +1,6 @@
+README.md
+setup.py
+me_vs_mywife.egg-info/PKG-INFO
+me_vs_mywife.egg-info/SOURCES.txt
+me_vs_mywife.egg-info/dependency_links.txt
+me_vs_mywife.egg-info/top_level.txt
