@@ -1,0 +1,5 @@
+/target
+/Cargo.lock
+src/xmls/200.xml
+src/xmls/40k.xml
+output.arrow
