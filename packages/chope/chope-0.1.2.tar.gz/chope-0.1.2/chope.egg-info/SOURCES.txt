@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+chope/__init__.py
+chope/css.py
+chope/element.py
+chope.egg-info/PKG-INFO
+chope.egg-info/SOURCES.txt
+chope.egg-info/dependency_links.txt
+chope.egg-info/requires.txt
+chope.egg-info/top_level.txt
+tests/__init__.py
+tests/test_css.py
+tests/test_element.py
