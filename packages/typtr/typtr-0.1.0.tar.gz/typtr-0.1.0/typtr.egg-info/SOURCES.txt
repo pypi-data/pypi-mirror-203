@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+typtr/__init__.py
+typtr/base.py
+typtr/cli.py
+typtr/cstyle.py
+typtr/java.py
+typtr/js.py
+typtr/typescanner.py
+typtr.egg-info/PKG-INFO
+typtr.egg-info/SOURCES.txt
+typtr.egg-info/dependency_links.txt
+typtr.egg-info/entry_points.txt
+typtr.egg-info/top_level.txt

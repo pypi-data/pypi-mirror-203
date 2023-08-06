@@ -1,0 +1,28 @@
+[build-system]
+requires = [
+    "setuptools>=67",
+    "setuptools-scm>=7"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "typtr"
+dynamic = ["version"]
+authors = [
+    {name = "Niklas Lindström", email = "lindstream@gmail.com"},
+]
+description = "A transpiler for an idiomatic subset of typed Python into semantically similar object-oriented languages."
+license = {text = "ISC License"}
+classifiers = [
+    "License :: OSI Approved :: ISC License (ISCL)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development",
+    "Typing :: Typed"
+]
+readme = "README.md"
+
+[project.scripts]
+typtr = "typtr.cli:main"
+
+[tool.setuptools_scm]
