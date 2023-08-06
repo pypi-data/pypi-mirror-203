@@ -1,0 +1,5 @@
+requests
+valmi_airbyte_cdk
+
+[tests]
+pytest~=6.2
