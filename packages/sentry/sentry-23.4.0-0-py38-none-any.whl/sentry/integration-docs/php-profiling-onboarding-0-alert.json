@@ -1,0 +1,7 @@
+{
+  "id": "php-profiling-onboarding-0-alert",
+  "name": "PHP",
+  "html": "<div class=\"alert warning\">\nProfiling in PHP is currently in Beta, and there may be some bugs. We recognize the irony. If you have any questions or feedback, join our <a href=\"https://discord.gg/zrMjKA4Vnz\">discord channel</a>.\n</div>",
+  "link": "https://discord.gg/zrMjKA4Vnz",
+  "wizard_setup": null
+}

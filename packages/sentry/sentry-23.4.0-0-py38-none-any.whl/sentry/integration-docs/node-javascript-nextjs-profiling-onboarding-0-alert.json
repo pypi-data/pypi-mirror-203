@@ -1,0 +1,7 @@
+{
+  "id": "node-javascript-nextjs-profiling-onboarding-0-alert",
+  "name": "Node",
+  "html": "<div class=\"alert warning\">\nProfiling in Node is currently in Beta, and there may be some bugs. We recognize the irony. If you have any questions or feedback, join our <a href=\"https://discord.gg/zrMjKA4Vnz\">discord channel</a>.\n<p>Note that only nextjs server side profiling is supported, client side (browser profiling) is not supported and you will need to make sure you only enable profiling in <code>sentry.server.config.js</code> file.</p>\n</div>",
+  "link": "https://discord.gg/zrMjKA4Vnz",
+  "wizard_setup": null
+}
