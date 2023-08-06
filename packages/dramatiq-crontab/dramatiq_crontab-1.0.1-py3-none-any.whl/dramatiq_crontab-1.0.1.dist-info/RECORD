@@ -1,0 +1,11 @@
+dramatiq_crontab/__init__.py,sha256=NJxWLB2MS6dhuai6dOw5faglDo8Bq0F11UwhZ3qJpEQ,2218
+dramatiq_crontab/_version.py,sha256=jfpxxup8_WijhRsk1sE1WuWsTrZLOofguKnpC74vx9w,160
+dramatiq_crontab/conf.py,sha256=UB8fYEO-jCjJcENMaQRiQ3dh5P4yrrVy1Tb-8gqG9yY,255
+dramatiq_crontab/tasks.py,sha256=Pa2iEYzqsVC9zdvwpVNs2ScB_N2Dt7F6gvS7vePq3Eo,157
+dramatiq_crontab/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dramatiq_crontab/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dramatiq_crontab/management/commands/crontab.py,sha256=wa70a2P3GUGPtemWAtUU8iIiZn-Luy98TFfSyjKwdpQ,2989
+dramatiq_crontab-1.0.1.dist-info/LICENSE,sha256=6kTF92nxUp51XoWlxRE2Uf0jg1KBzOHGpkWVAOPF4-k,1497
+dramatiq_crontab-1.0.1.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+dramatiq_crontab-1.0.1.dist-info/METADATA,sha256=8RjPwJuy6Cp928IyGjrvmLnuMOu5qkC6i1Z3r6ua3r4,4714
+dramatiq_crontab-1.0.1.dist-info/RECORD,,
