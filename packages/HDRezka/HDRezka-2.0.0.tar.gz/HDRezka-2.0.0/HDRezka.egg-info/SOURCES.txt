@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+HDRezka.egg-info/PKG-INFO
+HDRezka.egg-info/SOURCES.txt
+HDRezka.egg-info/dependency_links.txt
+HDRezka.egg-info/requires.txt
+HDRezka.egg-info/top_level.txt
+hdrezka/__init__.py
+hdrezka/_antiobfuscation.py
+hdrezka/_bs4.py
+hdrezka/errors.py
+hdrezka/translators.py
