@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+UserReadWriteMemory/__init__.py
+UserReadWriteMemory.egg-info/PKG-INFO
+UserReadWriteMemory.egg-info/SOURCES.txt
+UserReadWriteMemory.egg-info/dependency_links.txt
+UserReadWriteMemory.egg-info/top_level.txt
