@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bwc-bscan
+Version: 0.1.0
+Summary: A library For Getting Information on Hardware, Software and Atmospheres for Python. Developers can troubleshoot Issues Using the Library in Mobile and Web Apps.
+Home-page: UNKNOWN
+Author: Aníbal Barca, 
+Author-email: anibalbs@barca.com, 
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### Python PIP Bscan
+
