@@ -1,0 +1,70 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - libcomcat v2.0.17+30.gd91b248.dirty
+    method: GET
+    uri: https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=1994-06-01T00%3A00%3A00&endtime=1994-10-06T00%3A00%3A00&limit=20000&maxmagnitude=9.0&minmagnitude=8.0&offset=1&orderby=time-asc&eventtype=earthquake
+  response:
+    body:
+      string: '{"type":"FeatureCollection","metadata":{"generated":1671575378000,"url":"https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=1994-06-01T00%3A00%3A00&endtime=1994-10-06T00%3A00%3A00&limit=20000&maxmagnitude=9.0&minmagnitude=8.0&offset=1&orderby=time-asc&eventtype=earthquake","title":"USGS
+        Earthquakes","status":200,"api":"1.13.6","limit":20000,"offset":1,"count":2},"features":[{"type":"Feature","properties":{"mag":8.2,"place":"55
+        km NNW of Reyes, Bolivia","time":771121996230,"updated":1651167536965,"tz":null,"url":"https://earthquake.usgs.gov/earthquakes/eventpage/usp0006dzc","detail":"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=usp0006dzc&format=geojson","felt":null,"cdi":null,"mmi":3.673,"alert":null,"status":"reviewed","tsunami":0,"sig":1034,"net":"us","code":"p0006dzc","ids":",choy19940609003316,gcmtm060994a,usp0006dzc,gcmt19940609003316,duputel060994a,iscgem168418,atlas19940609003317,","sources":",choy,gcmt,us,gcmt,duputel,iscgem,atlas,","types":",focal-mechanism,ground-failure,impact-text,moment-tensor,origin,phase-data,shakemap,trump-shakemap,","nst":null,"dmin":null,"rms":1.1,"gap":null,"magType":"mw","type":"earthquake","title":"M
+        8.2 - 55 km NNW of Reyes, Bolivia"},"geometry":{"type":"Point","coordinates":[-67.553,-13.841,631.3]},"id":"usp0006dzc"},
+
+        {"type":"Feature","properties":{"mag":8.3,"place":"48 km E of Shikotan, Russia","time":781276975840,"updated":1651166534274,"tz":null,"url":"https://earthquake.usgs.gov/earthquakes/eventpage/usp0006kdp","detail":"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=usp0006kdp&format=geojson","felt":null,"cdi":null,"mmi":7.258,"alert":null,"status":"reviewed","tsunami":0,"sig":1060,"net":"us","code":"p0006kdp","ids":",usp0006kdp,choy19941004132255,gcmtm100494b,gcmt19941004132258,duputel100494b,atlas19941004132257,iscgem145456,","sources":",us,choy,gcmt,gcmt,duputel,atlas,iscgem,","types":",finite-fault,focal-mechanism,impact-text,moment-tensor,origin,phase-data,shakemap,trump-shakemap,","nst":null,"dmin":null,"rms":0.9,"gap":null,"magType":"mw","type":"earthquake","title":"M
+        8.3 - 48 km E of Shikotan, Russia"},"geometry":{"type":"Point","coordinates":[147.321,43.773,14]},"id":"usp0006kdp"}],"bbox":[-67.553,-13.841,14,147.321,43.773,631.3]}'
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Max-Age:
+      - '86400'
+      Cache-Control:
+      - public, max-age=60
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2269'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 20 Dec 2022 22:29:38 GMT
+      Expires:
+      - Tue, 20 Dec 2022 22:30:38 GMT
+      Last-Modified:
+      - Tue, 20 Dec 2022 22:29:38 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 747643510d5744fd5b06cb1647567818.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - lDMRTeMoDa2mFlzR48U4SH-rhFlsifkbNSNAhOamneqkWGRlo2iH1Q==
+      X-Amz-Cf-Pop:
+      - IAD55-P5
+      X-Cache:
+      - Miss from cloudfront
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

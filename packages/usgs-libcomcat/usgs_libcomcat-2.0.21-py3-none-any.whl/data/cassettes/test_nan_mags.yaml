@@ -1,0 +1,967 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - libcomcat v2.0.17+30.gd91b248.dirty
+    method: GET
+    uri: https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=us2000arrw&includedeleted=false&includesuperseded=false
+  response:
+    body:
+      string: '{"type":"Feature","properties":{"mag":4.2,"place":"79 km SSE of San
+        Mateo del Mar, Mexico","time":1504882974840,"updated":1512676822040,"tz":null,"url":"https://earthquake.usgs.gov/earthquakes/eventpage/us2000arrw","felt":null,"cdi":null,"mmi":null,"alert":null,"status":"reviewed","tsunami":0,"sig":271,"net":"us","code":"2000arrw","ids":",us2000arrw,","sources":",us,","types":",origin,phase-data,","nst":null,"dmin":1.276,"rms":1.36,"gap":138,"magType":"mb","type":"earthquake","title":"M
+        4.2 - 79 km SSE of San Mateo del Mar, Mexico","products":{"origin":[{"indexid":"2646996","indexTime":1608799805154,"id":"urn:usgs-product:us:origin:us2000arrw:1512676822040","type":"origin","code":"us2000arrw","source":"us","updateTime":1512676822040,"status":"UPDATE","properties":{"azimuthal-gap":"138","depth":"36.06","depth-type":"from
+        location","error-ellipse-azimuth":"327","error-ellipse-intermediate":"12600","error-ellipse-major":"24100","error-ellipse-minor":"3200","error-ellipse-plunge":"86","error-ellipse-rotation":"45","evaluation-status":"reviewed","event-type":"earthquake","eventParametersPublicID":"quakeml:us.anss.org/eventparameters/2000arrw/1512677052","eventsource":"us","eventsourcecode":"2000arrw","eventtime":"2017-09-08T15:02:54.840Z","eventtime-error":"2.76","horizontal-error":"4.3","latitude":"15.5101","latitude-error":"0.0728","longitude":"-94.8102","longitude-error":"0.0271","magnitude":"4.2","magnitude-error":"0.098","magnitude-num-stations-used":"3","magnitude-source":"us","magnitude-type":"mb","minimum-distance":"1.276","num-phases-used":"51","origin-source":"us","original-signature":"MC4CFQC7QQUcA2hfG2ZveFr/ixzzdlihPAIVALA+6kDoN9zRzYep5TIWwYjw5XRZ","original-signature-version":"v1","pdl-client-version":"Version
+        1.12.1 2017-05-24","quakeml-magnitude-publicid":"quakeml:us.anss.org/magnitude/2000arrw/mb","quakeml-origin-publicid":"quakeml:us.anss.org/origin/2000arrw","quakeml-publicid":"quakeml:us.anss.org/event/2000arrw","review-status":"reviewed","standard-error":"1.36","title":"79
+        km SSE of San Mateo del Mar, Mexico","vertical-error":"15.8"},"preferredWeight":158,"contents":{"contents.xml":{"contentType":"application/xml","lastModified":1512677765000,"length":195,"url":"https://earthquake.usgs.gov/product/origin/us2000arrw/us/1512676822040/contents.xml","sha256":"ABhLiaqdYWmIak24eD/csBAWouBShhatD9bUzLNEZFk="},"quakeml.xml":{"contentType":"application/xml","lastModified":1512676822000,"length":3712,"url":"https://earthquake.usgs.gov/product/origin/us2000arrw/us/1512676822040/quakeml.xml","sha256":"+cwlrt2e5ANDg90A25PgtuwfVOXw4QFHAlLCBv1gxj4="}}}],"phase-data":[{"indexid":"6241988","indexTime":1609067188060,"id":"urn:usgs-product:us:phase-data:us2000arrw:1512676822040","type":"phase-data","code":"us2000arrw","source":"us","updateTime":1512676822040,"status":"UPDATE","properties":{"azimuthal-gap":"138","depth":"36.06","depth-type":"from
+        location","error-ellipse-azimuth":"327","error-ellipse-intermediate":"12600","error-ellipse-major":"24100","error-ellipse-minor":"3200","error-ellipse-plunge":"86","error-ellipse-rotation":"45","evaluation-status":"reviewed","event-type":"earthquake","eventParametersPublicID":"quakeml:us.anss.org/eventparameters/2000arrw/1512677052","eventsource":"us","eventsourcecode":"2000arrw","eventtime":"2017-09-08T15:02:54.840Z","eventtime-error":"2.76","horizontal-error":"4.3","latitude":"15.5101","latitude-error":"0.0728","longitude":"-94.8102","longitude-error":"0.0271","magnitude":"4.2","magnitude-error":"0.098","magnitude-num-stations-used":"3","magnitude-source":"us","magnitude-type":"mb","minimum-distance":"1.276","num-phases-used":"51","origin-source":"us","original-signature":"MC4CFQCmB+aYiQD8/ppBo4qkRfSFPTrEogIVAKdrmspXmM8yDE7QJIpsI28MtYVI","original-signature-version":"v1","pdl-client-version":"Version
+        1.12.1 2017-05-24","quakeml-magnitude-publicid":"quakeml:us.anss.org/magnitude/2000arrw/mb","quakeml-origin-publicid":"quakeml:us.anss.org/origin/2000arrw","quakeml-publicid":"quakeml:us.anss.org/event/2000arrw","review-status":"reviewed","standard-error":"1.36","vertical-error":"15.8"},"preferredWeight":158,"contents":{"contents.xml":{"contentType":"application/xml","lastModified":1512677765000,"length":195,"url":"https://earthquake.usgs.gov/product/phase-data/us2000arrw/us/1512676822040/contents.xml","sha256":"ABhLiaqdYWmIak24eD/csBAWouBShhatD9bUzLNEZFk="},"quakeml.xml":{"contentType":"application/xml","lastModified":1512676822000,"length":81082,"url":"https://earthquake.usgs.gov/product/phase-data/us2000arrw/us/1512676822040/quakeml.xml","sha256":"id1tsnucmeT91e9JIoal49Blu0y/9uKq8OCvYfVFxfM="}}}]}},"geometry":{"type":"Point","coordinates":[-94.8102,15.5101,36.06]},"id":"us2000arrw"}'
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Max-Age:
+      - '86400'
+      Cache-Control:
+      - public, max-age=60
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4707'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 20 Dec 2022 22:31:30 GMT
+      Expires:
+      - Tue, 20 Dec 2022 22:32:30 GMT
+      Last-Modified:
+      - Tue, 20 Dec 2022 22:31:30 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 ccabfbceff64477665e33f03003a399c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Lz6a6D7Sok86bJbKeAZUdCury5e-vNoJV-GCx0kYhJkP7OlXtrEJ6w==
+      X-Amz-Cf-Pop:
+      - IAD55-P5
+      X-Cache:
+      - Miss from cloudfront
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - libcomcat v2.0.17+30.gd91b248.dirty
+    method: GET
+    uri: https://earthquake.usgs.gov/product/phase-data/us2000arrw/us/1512676822040/quakeml.xml
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\r\n<q:quakeml
+        xmlns:q=\"http://quakeml.org/xmlns/quakeml/1.2\" xmlns=\"http://quakeml.org/xmlns/bed/1.2\"
+        xmlns:catalog=\"http://anss.org/xmlns/catalog/0.1\" xmlns:tensor=\"http://anss.org/xmlns/tensor/0.1\">\r\n\r\n
+        \ <eventParameters xmlns=\"http://quakeml.org/xmlns/bed/1.2\" publicID=\"quakeml:us.anss.org/eventparameters/2000arrw/1512677052\">\r\n
+        \   <comment>\r\n      <text>HYDRA - us</text>\r\n    </comment>\r\n    <event
+        catalog:dataid=\"us2000arrw\" catalog:datasource=\"us\" catalog:eventid=\"2000arrw\"
+        catalog:eventsource=\"us\" publicID=\"quakeml:us.anss.org/event/2000arrw\">\r\n
+        \     <description>\r\n        <text>Offshore Oaxaca, Mexico</text>\r\n        <type>Flinn-Engdahl
+        region</type>\r\n      </description>\r\n      <description>\r\n        <text>79.7
+        km (49.5 miles) SSE of San Mateo del Mar, Oaxaca, Mexico (pop. 5441)\r\n85.5
+        km (53.2 miles) SSE of Salina Cruz, Oaxaca, Mexico (pop. 73648)\r\n101.3 km
+        (62.9 miles) SSE of Santo Domingo Tehuantepec, Oaxaca, Mexico (pop. 37389)\r\n104.9
+        km (65.2 miles) SSE of Juchit\xE1n de Zaragoza, Oaxaca, Mexico (pop. 67637)\r\n228.2
+        km (141.8 miles) SW of Tuxtla Guti\xE9rrez, Chiapas, Mexico (pop. 481128)\r\n</text>\r\n
+        \       <type>nearest cities</type>\r\n      </description>\r\n      <amplitude
+        publicID=\"quakeml:us.anss.org/amp/us_miar_bhz_00/mb\">\r\n        <genericAmplitude>\r\n
+        \         <value>6.5e-09</value>\r\n        </genericAmplitude>\r\n        <type>AMB</type>\r\n
+        \       <unit>m</unit>\r\n        <period>\r\n          <value>0.9000</value>\r\n
+        \       </period>\r\n        <timeWindow>\r\n          <begin>0.00</begin>\r\n
+        \         <end>50.00</end>\r\n          <reference>2017-09-08T15:06:52.02Z</reference>\r\n
+        \       </timeWindow>\r\n        <waveformID channelCode=\"BHZ\" locationCode=\"00\"
+        networkCode=\"US\" stationCode=\"MIAR\"/>\r\n        <scalingTime>\r\n          <value>2017-09-08T15:07:29.045Z</value>\r\n
+        \       </scalingTime>\r\n        <magnitudeHint>mb</magnitudeHint>\r\n        <evaluationMode>automatic</evaluationMode>\r\n
+        \     </amplitude>\r\n      <amplitude publicID=\"quakeml:us.anss.org/amp/tx_sand_hhz_00/mb\">\r\n
+        \       <genericAmplitude>\r\n          <value>5.45e-09</value>\r\n        </genericAmplitude>\r\n
+        \       <type>AMB</type>\r\n        <unit>m</unit>\r\n        <period>\r\n
+        \         <value>1.0500</value>\r\n        </period>\r\n        <timeWindow>\r\n
+        \         <begin>0.00</begin>\r\n          <end>50.00</end>\r\n          <reference>2017-09-08T15:06:13.47Z</reference>\r\n
+        \       </timeWindow>\r\n        <waveformID channelCode=\"HHZ\" locationCode=\"00\"
+        networkCode=\"TX\" stationCode=\"SAND\"/>\r\n        <scalingTime>\r\n          <value>2017-09-08T15:06:59.49Z</value>\r\n
+        \       </scalingTime>\r\n        <magnitudeHint>mb</magnitudeHint>\r\n        <evaluationMode>automatic</evaluationMode>\r\n
+        \     </amplitude>\r\n      <amplitude publicID=\"quakeml:us.anss.org/amp/im_tx32_bhz_--/mb\">\r\n
+        \       <genericAmplitude>\r\n          <value>3.6e-09</value>\r\n        </genericAmplitude>\r\n
+        \       <type>AMB</type>\r\n        <unit>m</unit>\r\n        <period>\r\n
+        \         <value>0.9500</value>\r\n        </period>\r\n        <timeWindow>\r\n
+        \         <begin>0.00</begin>\r\n          <end>50.00</end>\r\n          <reference>2017-09-08T15:06:16.12Z</reference>\r\n
+        \       </timeWindow>\r\n        <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042284</pickID>\r\n
+        \       <waveformID channelCode=\"BHZ\" locationCode=\"--\" networkCode=\"IM\"
+        stationCode=\"TX32\"/>\r\n        <scalingTime>\r\n          <value>2017-09-08T15:06:45.22Z</value>\r\n
+        \       </scalingTime>\r\n        <magnitudeHint>mb</magnitudeHint>\r\n        <evaluationMode>automatic</evaluationMode>\r\n
+        \     </amplitude>\r\n      <magnitude catalog:dataid=\"us_2000arrw_mb\" catalog:datasource=\"us\"
+        publicID=\"quakeml:us.anss.org/magnitude/2000arrw/mb\">\r\n        <stationMagnitudeContribution>\r\n
+        \         <stationMagnitudeID>quakeml:us.anss.org/stationmagnitude/us_miar_bhz_00/mb</stationMagnitudeID>\r\n
+        \         <weight>NaN</weight>\r\n        </stationMagnitudeContribution>\r\n
+        \       <stationMagnitudeContribution>\r\n          <stationMagnitudeID>quakeml:us.anss.org/stationmagnitude/tx_sand_hhz_00/mb</stationMagnitudeID>\r\n
+        \         <weight>NaN</weight>\r\n        </stationMagnitudeContribution>\r\n
+        \       <stationMagnitudeContribution>\r\n          <stationMagnitudeID>quakeml:us.anss.org/stationmagnitude/im_tx32_bhz_--/mb</stationMagnitudeID>\r\n
+        \         <weight>NaN</weight>\r\n        </stationMagnitudeContribution>\r\n
+        \       <mag>\r\n          <value>4.2</value>\r\n          <uncertainty>0.098</uncertainty>\r\n
+        \         <confidenceLevel>90</confidenceLevel>\r\n        </mag>\r\n        <type>mb</type>\r\n
+        \       <originID>quakeml:us.anss.org/origin/2000arrw</originID>\r\n        <methodID>smi:us.anss.org/metadata/methodid/magnitude/mb/1.0</methodID>\r\n
+        \       <stationCount>3</stationCount>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <evaluationStatus>reviewed</evaluationStatus>\r\n        <creationInfo>\r\n
+        \         <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-13T14:33:47Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </magnitude>\r\n      <magnitude catalog:dataid=\"us_unm_2000arrw_md\"
+        catalog:datasource=\"us\" publicID=\"quakeml:us.anss.org/magnitude/unm_2000arrw/md\">\r\n
+        \       <mag>\r\n          <value>3.9</value>\r\n        </mag>\r\n        <type>Md</type>\r\n
+        \       <stationCount>12</stationCount>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <evaluationStatus>reviewed</evaluationStatus>\r\n        <creationInfo>\r\n
+        \         <agencyID>unm</agencyID>\r\n          <agencyURI>smi:us.anss.org/metadata/agencyid/unm</agencyURI>\r\n
+        \         <creationTime>2017-10-02T21:31:02Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </magnitude>\r\n      <stationMagnitude publicID=\"quakeml:us.anss.org/stationmagnitude/us_miar_bhz_00/mb\">\r\n
+        \       <originID>quakeml:us.anss.org/origin/2000arrw</originID>\r\n        <mag>\r\n
+        \         <value>3.86</value>\r\n        </mag>\r\n        <type>mb</type>\r\n
+        \       <amplitudeID>quakeml:us.anss.org/amp/us_miar_bhz_00/mb</amplitudeID>\r\n
+        \     </stationMagnitude>\r\n      <stationMagnitude publicID=\"quakeml:us.anss.org/stationmagnitude/tx_sand_hhz_00/mb\">\r\n
+        \       <originID>quakeml:us.anss.org/origin/2000arrw</originID>\r\n        <mag>\r\n
+        \         <value>3.63</value>\r\n        </mag>\r\n        <type>mb</type>\r\n
+        \       <amplitudeID>quakeml:us.anss.org/amp/tx_sand_hhz_00/mb</amplitudeID>\r\n
+        \     </stationMagnitude>\r\n      <stationMagnitude publicID=\"quakeml:us.anss.org/stationmagnitude/im_tx32_bhz_--/mb\">\r\n
+        \       <originID>quakeml:us.anss.org/origin/2000arrw</originID>\r\n        <mag>\r\n
+        \         <value>3.48</value>\r\n        </mag>\r\n        <type>mb</type>\r\n
+        \       <amplitudeID>quakeml:us.anss.org/amp/im_tx32_bhz_--/mb</amplitudeID>\r\n
+        \     </stationMagnitude>\r\n      <origin catalog:dataid=\"us_unm20170908150256\"
+        catalog:datasource=\"us_unm\" catalog:eventid=\"20170908150256\" publicID=\"quakeml:us.anss.org/origin/unm_20170908150256\">\r\n
+        \       <originUncertainty>\r\n          <horizontalUncertainty>4100</horizontalUncertainty>\r\n
+        \         <minHorizontalUncertainty>2298</minHorizontalUncertainty>\r\n          <maxHorizontalUncertainty>12250</maxHorizontalUncertainty>\r\n
+        \         <azimuthMaxHorizontalUncertainty>168</azimuthMaxHorizontalUncertainty>\r\n
+        \         <confidenceEllipsoid>\r\n            <semiMajorAxisLength>14400</semiMajorAxisLength>\r\n
+        \           <semiMinorAxisLength>2700</semiMinorAxisLength>\r\n            <semiIntermediateAxisLength>12100</semiIntermediateAxisLength>\r\n
+        \           <majorAxisPlunge>0</majorAxisPlunge>\r\n            <majorAxisAzimuth>348</majorAxisAzimuth>\r\n
+        \           <majorAxisRotation>180</majorAxisRotation>\r\n          </confidenceEllipsoid>\r\n
+        \         <preferredDescription>confidence ellipsoid</preferredDescription>\r\n
+        \         <confidenceLevel>90</confidenceLevel>\r\n        </originUncertainty>\r\n
+        \       <time>\r\n          <value>2017-09-08T15:02:56.1Z</value>\r\n          <uncertainty>6.15</uncertainty>\r\n
+        \         <confidenceLevel>90.00</confidenceLevel>\r\n        </time>\r\n
+        \       <longitude>\r\n          <value>-94.8550</value>\r\n          <uncertainty>0.0233</uncertainty>\r\n
+        \         <confidenceLevel>90.00</confidenceLevel>\r\n        </longitude>\r\n
+        \       <latitude>\r\n          <value>15.6500</value>\r\n          <uncertainty>0.0836</uncertainty>\r\n
+        \         <confidenceLevel>90.00</confidenceLevel>\r\n        </latitude>\r\n
+        \       <depth>\r\n          <value>70100</value>\r\n          <uncertainty>8000</uncertainty>\r\n
+        \         <confidenceLevel>90.00</confidenceLevel>\r\n        </depth>\r\n
+        \       <quality>\r\n          <associatedPhaseCount>54</associatedPhaseCount>\r\n
+        \         <usedPhaseCount>12</usedPhaseCount>\r\n          <standardError>3.03</standardError>\r\n
+        \       </quality>\r\n        <type>hypocenter</type>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <evaluationStatus>reviewed</evaluationStatus>\r\n        <creationInfo>\r\n
+        \         <agencyID>unm</agencyID>\r\n          <agencyURI>smi:us.anss.org/metadata/agencyid/unm</agencyURI>\r\n
+        \         <creationTime>2017-10-13T14:33:48Z</creationTime>\r\n          <version>0</version>\r\n
+        \       </creationInfo>\r\n      </origin>\r\n      <origin catalog:dataid=\"us2000arrw\"
+        catalog:datasource=\"us\" catalog:eventid=\"2000arrw\" publicID=\"quakeml:us.anss.org/origin/2000arrw\">\r\n
+        \       <originUncertainty>\r\n          <horizontalUncertainty>4300</horizontalUncertainty>\r\n
+        \         <minHorizontalUncertainty>2921</minHorizontalUncertainty>\r\n          <maxHorizontalUncertainty>10810</maxHorizontalUncertainty>\r\n
+        \         <azimuthMaxHorizontalUncertainty>193</azimuthMaxHorizontalUncertainty>\r\n
+        \         <confidenceEllipsoid>\r\n            <semiMajorAxisLength>24100</semiMajorAxisLength>\r\n
+        \           <semiMinorAxisLength>3200</semiMinorAxisLength>\r\n            <semiIntermediateAxisLength>12600</semiIntermediateAxisLength>\r\n
+        \           <majorAxisPlunge>86</majorAxisPlunge>\r\n            <majorAxisAzimuth>327</majorAxisAzimuth>\r\n
+        \           <majorAxisRotation>45</majorAxisRotation>\r\n          </confidenceEllipsoid>\r\n
+        \         <preferredDescription>confidence ellipsoid</preferredDescription>\r\n
+        \         <confidenceLevel>90</confidenceLevel>\r\n        </originUncertainty>\r\n
+        \       <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-1002374478\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-1002374478</pickID>\r\n
+        \         <phase>Pn</phase>\r\n          <azimuth>101.132</azimuth>\r\n          <distance>5.38175</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>87.2</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>0.00</timeResidual>\r\n          <timeWeight>0.8100</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-13T14:33:18Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/idc_2171_ctbto/pick/12608957\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/idc_2171_ctbto/pick/12608957</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>131.702</azimuth>\r\n          <distance>45.7096</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>35.1</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-1.70</timeResidual>\r\n          <timeWeight>0.0000</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>idc</agencyID>\r\n            <agencyURI>smi:us.anss.org/metadata/agencyid/idc</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-09-20T13:05:50Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/idc_2171_ctbto/pick/12608829\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/idc_2171_ctbto/pick/12608829</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>28.0096</azimuth>\r\n          <distance>84.1098</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>21.7</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>0.00</timeResidual>\r\n          <timeWeight>0.0000</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>idc</agencyID>\r\n            <agencyURI>smi:us.anss.org/metadata/agencyid/idc</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-09-20T13:05:50Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3187_bpid-2001886209\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3187_bpid-2001886209</pickID>\r\n
+        \         <phase>Pn</phase>\r\n          <azimuth>342.357</azimuth>\r\n          <distance>13.4393</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>83.4</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>3.50</timeResidual>\r\n          <timeWeight>0.6100</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <creationTime>2017-09-08T19:05:17Z</creationTime>\r\n          </creationInfo>\r\n
+        \       </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3187_bpid-2001886211\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3187_bpid-2001886211</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>347.021</azimuth>\r\n          <distance>16.1644</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>53.7</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>2.40</timeResidual>\r\n          <timeWeight>0.5700</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <creationTime>2017-09-08T19:05:29Z</creationTime>\r\n          </creationInfo>\r\n
+        \       </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3187_bpid-2001886212\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3187_bpid-2001886212</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>346.401</azimuth>\r\n          <distance>17.5948</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>53.4</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>2.80</timeResidual>\r\n          <timeWeight>0.6000</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <creationTime>2017-09-08T19:05:34Z</creationTime>\r\n          </creationInfo>\r\n
+        \       </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3187_bpid-2001886213\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3187_bpid-2001886213</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>332.808</azimuth>\r\n          <distance>16.8687</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>53.6</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>0.50</timeResidual>\r\n          <timeWeight>0.5900</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <creationTime>2017-09-08T19:05:37Z</creationTime>\r\n          </creationInfo>\r\n
+        \       </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3187_bpid-2001886214\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3187_bpid-2001886214</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>352.404</azimuth>\r\n          <distance>19.2037</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>52.7</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-4.00</timeResidual>\r\n          <timeWeight>0.6300</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <creationTime>2017-09-08T19:05:41Z</creationTime>\r\n          </creationInfo>\r\n
+        \       </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3187_bpid-2001886215\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3187_bpid-2001886215</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>354.604</azimuth>\r\n          <distance>20.4377</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>52.0</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>1.40</timeResidual>\r\n          <timeWeight>0.6500</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <creationTime>2017-09-08T19:05:45Z</creationTime>\r\n          </creationInfo>\r\n
+        \       </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/unm_2173_ick/201709081502562\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/unm_2173_ick/201709081502562</pickID>\r\n
+        \         <phase>Pn</phase>\r\n          <azimuth>281.78</azimuth>\r\n          <distance>1.27664</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>89.8</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-0.10</timeResidual>\r\n          <timeWeight>1.0800</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>unm</agencyID>\r\n            <agencyURI>smi:us.anss.org/metadata/agencyid/unm</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-02T21:31:11Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/unm_2173_ick/201709081502563\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/unm_2173_ick/201709081502563</pickID>\r\n
+        \         <phase>Sn</phase>\r\n          <azimuth>281.78</azimuth>\r\n          <distance>1.27664</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>89.8</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-0.70</timeResidual>\r\n          <timeWeight>0.5900</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>unm</agencyID>\r\n            <agencyURI>smi:us.anss.org/metadata/agencyid/unm</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-02T21:31:11Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/unm_2173_ick/201709081502564\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/unm_2173_ick/201709081502564</pickID>\r\n
+        \         <phase>Pn</phase>\r\n          <azimuth>275.775</azimuth>\r\n          <distance>1.61044</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>89.7</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-0.40</timeResidual>\r\n          <timeWeight>1.0500</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>unm</agencyID>\r\n            <agencyURI>smi:us.anss.org/metadata/agencyid/unm</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-02T21:31:11Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/unm_2173_ick/201709081502565\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/unm_2173_ick/201709081502565</pickID>\r\n
+        \         <phase>Sn</phase>\r\n          <azimuth>275.775</azimuth>\r\n          <distance>1.61044</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>89.7</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-1.40</timeResidual>\r\n          <timeWeight>0.5500</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>unm</agencyID>\r\n            <agencyURI>smi:us.anss.org/metadata/agencyid/unm</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-02T21:31:11Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/unm_2173_ick/201709081502566\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/unm_2173_ick/201709081502566</pickID>\r\n
+        \         <phase>Pn</phase>\r\n          <azimuth>51.9117</azimuth>\r\n          <distance>2.05464</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>89.4</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-0.40</timeResidual>\r\n          <timeWeight>1.0300</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>unm</agencyID>\r\n            <agencyURI>smi:us.anss.org/metadata/agencyid/unm</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-02T21:31:11Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/unm_2173_ick/201709081502567\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/unm_2173_ick/201709081502567</pickID>\r\n
+        \         <phase>Sn</phase>\r\n          <azimuth>51.9117</azimuth>\r\n          <distance>2.05464</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>89.3</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>0.10</timeResidual>\r\n          <timeWeight>0.5100</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>unm</agencyID>\r\n            <agencyURI>smi:us.anss.org/metadata/agencyid/unm</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-02T21:31:11Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/unm_2173_ick/201709081502568\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/unm_2173_ick/201709081502568</pickID>\r\n
+        \         <phase>Pn</phase>\r\n          <azimuth>282.472</azimuth>\r\n          <distance>2.30221</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>89.2</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>0.20</timeResidual>\r\n          <timeWeight>1.0100</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>unm</agencyID>\r\n            <agencyURI>smi:us.anss.org/metadata/agencyid/unm</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-02T21:31:11Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/unm_2173_ick/201709081502569\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/unm_2173_ick/201709081502569</pickID>\r\n
+        \         <phase>Sn</phase>\r\n          <azimuth>282.472</azimuth>\r\n          <distance>2.30221</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>89.0</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-1.80</timeResidual>\r\n          <timeWeight>0.4900</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>unm</agencyID>\r\n            <agencyURI>smi:us.anss.org/metadata/agencyid/unm</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-02T21:31:11Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/unm_2173_ck/2017090815025610\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/unm_2173_ck/2017090815025610</pickID>\r\n
+        \         <phase>Pn</phase>\r\n          <azimuth>310.378</azimuth>\r\n          <distance>2.40318</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>89.1</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>2.00</timeResidual>\r\n          <timeWeight>1.0000</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>unm</agencyID>\r\n            <agencyURI>smi:us.anss.org/metadata/agencyid/unm</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-02T21:31:11Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/unm_2173_ck/2017090815025611\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/unm_2173_ck/2017090815025611</pickID>\r\n
+        \         <phase>Sn</phase>\r\n          <azimuth>310.378</azimuth>\r\n          <distance>2.40318</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>89.0</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>2.40</timeResidual>\r\n          <timeWeight>0.4900</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>unm</agencyID>\r\n            <agencyURI>smi:us.anss.org/metadata/agencyid/unm</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-02T21:31:11Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042273\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042273</pickID>\r\n
+        \         <phase>Pn</phase>\r\n          <azimuth>105.452</azimuth>\r\n          <distance>8.98836</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>85.1</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-1.20</timeResidual>\r\n          <timeWeight>0.9700</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:56:54Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042274\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042274</pickID>\r\n
+        \         <phase>Pn</phase>\r\n          <azimuth>109.411</azimuth>\r\n          <distance>10.0019</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>84.5</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-0.80</timeResidual>\r\n          <timeWeight>0.8600</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:56:57Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042275\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042275</pickID>\r\n
+        \         <phase>Pn</phase>\r\n          <azimuth>119.609</azimuth>\r\n          <distance>10.5667</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>84.2</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>0.90</timeResidual>\r\n          <timeWeight>0.8000</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:57:00Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042277\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042277</pickID>\r\n
+        \         <phase>Pn</phase>\r\n          <azimuth>117.261</azimuth>\r\n          <distance>11.9996</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>83.7</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>1.30</timeResidual>\r\n          <timeWeight>0.6900</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:57:13Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042280\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042280</pickID>\r\n
+        \         <phase>Pn</phase>\r\n          <azimuth>344.313</azimuth>\r\n          <distance>14.5478</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>83.1</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>1.60</timeResidual>\r\n          <timeWeight>0.5800</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:57:50Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042278\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042278</pickID>\r\n
+        \         <phase>Pn</phase>\r\n          <azimuth>116.829</azimuth>\r\n          <distance>12.109</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>83.7</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>0.70</timeResidual>\r\n          <timeWeight>0.6800</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:57:16Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042279\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042279</pickID>\r\n
+        \         <phase>Pn</phase>\r\n          <azimuth>117.823</azimuth>\r\n          <distance>12.8039</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>83.5</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>0.50</timeResidual>\r\n          <timeWeight>0.6400</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:57:34Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042282\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042282</pickID>\r\n
+        \         <phase>Pn</phase>\r\n          <azimuth>336.181</azimuth>\r\n          <distance>15.8718</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>68.6</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-1.70</timeResidual>\r\n          <timeWeight>0.6500</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:58:12Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042286\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042286</pickID>\r\n
+        \         <phase>Pn</phase>\r\n          <azimuth>340.433</azimuth>\r\n          <distance>16.3953</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>66.9</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-0.50</timeResidual>\r\n          <timeWeight>0.6800</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:58:33Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042288\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042288</pickID>\r\n
+        \         <phase>Pn</phase>\r\n          <azimuth>352.367</azimuth>\r\n          <distance>16.9355</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>65.5</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-1.00</timeResidual>\r\n          <timeWeight>0.7200</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:58:45Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042291\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042291</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>338.274</azimuth>\r\n          <distance>17.975</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>53.3</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>0.10</timeResidual>\r\n          <timeWeight>0.6000</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:59:06Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042292\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042292</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>345.774</azimuth>\r\n          <distance>18.378</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>53.1</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>0.50</timeResidual>\r\n          <timeWeight>0.6100</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:59:12Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042295\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042295</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>3.13039</azimuth>\r\n          <distance>18.9872</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>52.8</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-0.70</timeResidual>\r\n          <timeWeight>0.6200</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:59:29Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042294\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042294</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>344.094</azimuth>\r\n          <distance>18.904</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>52.9</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-1.10</timeResidual>\r\n          <timeWeight>0.6200</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:59:24Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042297\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042297</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>355.283</azimuth>\r\n          <distance>20.4398</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>52.0</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>1.30</timeResidual>\r\n          <timeWeight>0.6500</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:59:54Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042298\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042298</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>355.378</azimuth>\r\n          <distance>20.4771</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>52.0</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-0.70</timeResidual>\r\n          <timeWeight>0.6500</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:59:59Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042299\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042299</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>355.081</azimuth>\r\n          <distance>20.5384</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>51.9</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-1.30</timeResidual>\r\n          <timeWeight>0.6600</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T14:00:04Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042301\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042301</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>355.175</azimuth>\r\n          <distance>20.908</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>51.7</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>0.70</timeResidual>\r\n          <timeWeight>0.6600</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T14:00:16Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042296\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042296</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>343.502</azimuth>\r\n          <distance>20.256</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>52.1</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>0.60</timeResidual>\r\n          <timeWeight>0.6500</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:59:48Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042302\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042302</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>321.842</azimuth>\r\n          <distance>22.154</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>50.7</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>1.10</timeResidual>\r\n          <timeWeight>0.6900</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T14:00:36Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042300\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042300</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>327.467</azimuth>\r\n          <distance>20.6449</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>51.9</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>0.10</timeResidual>\r\n          <timeWeight>0.6600</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T14:00:09Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042303\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042303</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>3.13246</azimuth>\r\n          <distance>22.1329</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>50.8</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>1.50</timeResidual>\r\n          <timeWeight>0.6900</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T14:00:40Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042306\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042306</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>2.80554</azimuth>\r\n          <distance>25.2288</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>41.3</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-0.90</timeResidual>\r\n          <timeWeight>0.7800</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T14:01:03Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042307\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042307</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>129.79</azimuth>\r\n          <distance>37.8896</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>37.9</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-1.10</timeResidual>\r\n          <timeWeight>0.9000</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T14:01:17Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042305\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042305</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>137.596</azimuth>\r\n          <distance>24.5869</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>41.5</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>1.70</timeResidual>\r\n          <timeWeight>0.7600</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T14:00:59Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042276\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042276</pickID>\r\n
+        \         <phase>Pn</phase>\r\n          <azimuth>118.189</azimuth>\r\n          <distance>10.4512</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>84.3</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>1.00</timeResidual>\r\n          <timeWeight>0.8100</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:57:04Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042281\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042281</pickID>\r\n
+        \         <phase>Pn</phase>\r\n          <azimuth>350.984</azimuth>\r\n          <distance>15.4137</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>70.3</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-2.00</timeResidual>\r\n          <timeWeight>0.6200</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:58:07Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042284\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042284</pickID>\r\n
+        \         <phase>Pn</phase>\r\n          <azimuth>330.811</azimuth>\r\n          <distance>15.9984</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>68.2</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-0.70</timeResidual>\r\n          <timeWeight>0.6600</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:58:17Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042285\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042285</pickID>\r\n
+        \         <phase>Pn</phase>\r\n          <azimuth>330.81</azimuth>\r\n          <distance>15.9991</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>68.2</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-0.40</timeResidual>\r\n          <timeWeight>0.6600</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:58:21Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042289\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042289</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>359.517</azimuth>\r\n          <distance>17.6731</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>53.4</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-0.40</timeResidual>\r\n          <timeWeight>0.6000</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:58:59Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042290\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042290</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>350.978</azimuth>\r\n          <distance>17.7006</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>53.4</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-0.80</timeResidual>\r\n          <timeWeight>0.6000</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:59:01Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042293\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042293</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>353.795</azimuth>\r\n          <distance>18.5269</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>53.0</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>0.00</timeResidual>\r\n          <timeWeight>0.6200</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T13:59:17Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042304\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042304</pickID>\r\n
+        \         <phase>P</phase>\r\n          <azimuth>324.528</azimuth>\r\n          <distance>24.0547</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>41.6</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>0.70</timeResidual>\r\n          <timeWeight>0.7400</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T14:00:53Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <arrival publicID=\"quakeml:us.anss.org/arrival/2000arrw/us_3341_bpid-2002042308\">\r\n
+        \         <pickID>quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042308</pickID>\r\n
+        \         <phase>Pn</phase>\r\n          <azimuth>352.103</azimuth>\r\n          <distance>16.5836</distance>\r\n
+        \         <takeoffAngle>\r\n            <value>66.4</value>\r\n          </takeoffAngle>\r\n
+        \         <timeResidual>-1.10</timeResidual>\r\n          <timeWeight>0.7000</timeWeight>\r\n
+        \         <creationInfo>\r\n            <agencyID>us</agencyID>\r\n            <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \           <author>manual</author>\r\n            <creationTime>2017-10-07T14:02:24Z</creationTime>\r\n
+        \         </creationInfo>\r\n        </arrival>\r\n        <time>\r\n          <value>2017-09-08T15:02:54.84Z</value>\r\n
+        \         <uncertainty>2.76</uncertainty>\r\n          <confidenceLevel>90.00</confidenceLevel>\r\n
+        \       </time>\r\n        <longitude>\r\n          <value>-94.8102</value>\r\n
+        \         <uncertainty>0.0271</uncertainty>\r\n          <confidenceLevel>90.00</confidenceLevel>\r\n
+        \       </longitude>\r\n        <latitude>\r\n          <value>15.5101</value>\r\n
+        \         <uncertainty>0.0728</uncertainty>\r\n          <confidenceLevel>90.00</confidenceLevel>\r\n
+        \       </latitude>\r\n        <depth>\r\n          <value>36060</value>\r\n
+        \         <uncertainty>15800</uncertainty>\r\n          <confidenceLevel>90.00</confidenceLevel>\r\n
+        \       </depth>\r\n        <depthType>from location</depthType>\r\n        <methodID>smi:us.anss.org/metadata/methodid/origin/RayLocator/1.0</methodID>\r\n
+        \       <earthModelID>smi:us.anss.org/metadata/methodid/earthModel/ak135/1.0</earthModelID>\r\n
+        \       <quality>\r\n          <associatedPhaseCount>54</associatedPhaseCount>\r\n
+        \         <usedPhaseCount>51</usedPhaseCount>\r\n          <standardError>1.36</standardError>\r\n
+        \         <azimuthalGap>138</azimuthalGap>\r\n          <secondaryAzimuthalGap>146</secondaryAzimuthalGap>\r\n
+        \         <minimumDistance>1.276</minimumDistance>\r\n        </quality>\r\n
+        \       <type>hypocenter</type>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <evaluationStatus>reviewed</evaluationStatus>\r\n        <creationInfo>\r\n
+        \         <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-13T14:33:36Z</creationTime>\r\n          <version>22</version>\r\n
+        \       </creationInfo>\r\n      </origin>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-1002374478\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:04:12.61Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"--\" networkCode=\"SV\"
+        stationCode=\"MTO3\"/>\r\n        <phaseHint>Pn</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-13T14:33:18Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/idc_2171_ctbto/pick/12608957\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:11:10.04Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"SHZ\" locationCode=\"--\" networkCode=\"IR\"
+        stationCode=\"SIV\"/>\r\n        <phaseHint>P</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>idc</agencyID>\r\n          <agencyURI>smi:us.anss.org/metadata/agencyid/idc</agencyURI>\r\n
+        \         <creationTime>2017-09-20T13:05:50Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/idc_2171_ctbto/pick/12608829\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:15:21.63Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"SHZ\" locationCode=\"--\" networkCode=\"IR\"
+        stationCode=\"NOA\"/>\r\n        <phaseHint>P</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>idc</agencyID>\r\n          <agencyURI>smi:us.anss.org/metadata/agencyid/idc</agencyURI>\r\n
+        \         <creationTime>2017-09-20T13:05:50Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3187_bpid-2001886209\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:06:06.02Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"BHZ\" locationCode=\"--\" networkCode=\"TA\"
+        stationCode=\"833A\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-09-08T19:05:17Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3187_bpid-2001886211\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:06:43.94Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"00\" networkCode=\"TX\"
+        stationCode=\"BRDY\"/>\r\n        <phaseHint>P</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-09-08T19:05:29Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3187_bpid-2001886212\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:07:00.26Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"BHZ\" locationCode=\"--\" networkCode=\"TA\"
+        stationCode=\"ABTX\"/>\r\n        <phaseHint>P</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-09-08T19:05:34Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3187_bpid-2001886213\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:06:50.04Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"00\" networkCode=\"TX\"
+        stationCode=\"ALPN\"/>\r\n        <phaseHint>P</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-09-08T19:05:37Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3187_bpid-2001886214\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:07:11.11Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"--\" networkCode=\"OK\"
+        stationCode=\"X34A\"/>\r\n        <phaseHint>P</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-09-08T19:05:41Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3187_bpid-2001886215\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:07:29.9Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"EHZ\" locationCode=\"--\" networkCode=\"ZD\"
+        stationCode=\"RH07\"/>\r\n        <phaseHint>P</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-09-08T19:05:45Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/unm_2173_ick/201709081502562\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:03:16.03Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"SHZ\" locationCode=\"--\" networkCode=\"IR\"
+        stationCode=\"HUIG\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>unm</agencyID>\r\n          <agencyURI>smi:us.anss.org/metadata/agencyid/unm</agencyURI>\r\n
+        \         <creationTime>2017-10-02T21:31:11Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/unm_2173_ick/201709081502563\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:03:31.29Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"SHZ\" locationCode=\"--\" networkCode=\"IR\"
+        stationCode=\"HUIG\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>unm</agencyID>\r\n          <agencyURI>smi:us.anss.org/metadata/agencyid/unm</agencyURI>\r\n
+        \         <creationTime>2017-10-02T21:31:11Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/unm_2173_ick/201709081502564\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:03:20.21Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"SHZ\" locationCode=\"--\" networkCode=\"IR\"
+        stationCode=\"PANG\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>unm</agencyID>\r\n          <agencyURI>smi:us.anss.org/metadata/agencyid/unm</agencyURI>\r\n
+        \         <creationTime>2017-10-02T21:31:11Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/unm_2173_ick/201709081502565\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:03:38.73Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"SHZ\" locationCode=\"--\" networkCode=\"IR\"
+        stationCode=\"PANG\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>unm</agencyID>\r\n          <agencyURI>smi:us.anss.org/metadata/agencyid/unm</agencyURI>\r\n
+        \         <creationTime>2017-10-02T21:31:11Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/unm_2173_ick/201709081502566\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:03:26.43Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"SHZ\" locationCode=\"--\" networkCode=\"IR\"
+        stationCode=\"TGIG\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>unm</agencyID>\r\n          <agencyURI>smi:us.anss.org/metadata/agencyid/unm</agencyURI>\r\n
+        \         <creationTime>2017-10-02T21:31:11Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/unm_2173_ick/201709081502567\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:03:51.32Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"SHZ\" locationCode=\"--\" networkCode=\"IR\"
+        stationCode=\"TGIG\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>unm</agencyID>\r\n          <agencyURI>smi:us.anss.org/metadata/agencyid/unm</agencyURI>\r\n
+        \         <creationTime>2017-10-02T21:31:11Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/unm_2173_ick/201709081502568\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:03:30.35Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"SHZ\" locationCode=\"--\" networkCode=\"IR\"
+        stationCode=\"PEIG\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>unm</agencyID>\r\n          <agencyURI>smi:us.anss.org/metadata/agencyid/unm</agencyURI>\r\n
+        \         <creationTime>2017-10-02T21:31:11Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/unm_2173_ick/201709081502569\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:03:55.43Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"SHZ\" locationCode=\"--\" networkCode=\"IR\"
+        stationCode=\"PEIG\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>unm</agencyID>\r\n          <agencyURI>smi:us.anss.org/metadata/agencyid/unm</agencyURI>\r\n
+        \         <creationTime>2017-10-02T21:31:11Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/unm_2173_ck/2017090815025610\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:03:33.75Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"SHZ\" locationCode=\"--\" networkCode=\"IR\"
+        stationCode=\"OXBJ\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>unm</agencyID>\r\n          <agencyURI>smi:us.anss.org/metadata/agencyid/unm</agencyURI>\r\n
+        \         <creationTime>2017-10-02T21:31:11Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/unm_2173_ck/2017090815025611\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:04:02.35Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"SHZ\" locationCode=\"--\" networkCode=\"IR\"
+        stationCode=\"OXBJ\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>unm</agencyID>\r\n          <agencyURI>smi:us.anss.org/metadata/agencyid/unm</agencyURI>\r\n
+        \         <creationTime>2017-10-02T21:31:11Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042273\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:05:00.7Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"--\" networkCode=\"NU\"
+        stationCode=\"MATN\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:56:54Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042274\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:05:14.89Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"BHZ\" locationCode=\"--\" networkCode=\"NU\"
+        stationCode=\"ACON\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:56:57Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042275\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:05:24.3Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"--\" networkCode=\"OV\"
+        stationCode=\"DUNO\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:57:00Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042277\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:05:44.37Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"--\" networkCode=\"TC\"
+        stationCode=\"LCR2\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:57:13Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042280\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:06:19.26Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"00\" networkCode=\"TX\"
+        stationCode=\"HNDO\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:57:50Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042278\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:05:45.3Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"--\" networkCode=\"OV\"
+        stationCode=\"RIMA\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:57:16Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042279\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:05:54.49Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"--\" networkCode=\"OV\"
+        stationCode=\"SRBA\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:57:34Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042282\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:06:33.47Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"00\" networkCode=\"TX\"
+        stationCode=\"SAND\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:58:12Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042286\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:06:41.32Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"00\" networkCode=\"TX\"
+        stationCode=\"OZNA\"/>\r\n        <phaseHint>Pn</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:58:33Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042288\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:06:47.52Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"00\" networkCode=\"TX\"
+        stationCode=\"FW13\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:58:45Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042291\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:07:01.78Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"00\" networkCode=\"TX\"
+        stationCode=\"ODSA\"/>\r\n        <phaseHint>P</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:59:06Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042292\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:07:06.56Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"00\" networkCode=\"TX\"
+        stationCode=\"APMT\"/>\r\n        <phaseHint>P</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:59:12Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042295\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:07:12.02Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"BHZ\" locationCode=\"00\" networkCode=\"US\"
+        stationCode=\"MIAR\"/>\r\n        <phaseHint>P</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:59:29Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042294\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:07:10.74Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"00\" networkCode=\"TX\"
+        stationCode=\"DKNS\"/>\r\n        <phaseHint>P</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:59:24Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042297\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:07:29.83Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"00\" networkCode=\"GS\"
+        stationCode=\"OK031\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:59:54Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042298\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:07:28.23Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"00\" networkCode=\"GS\"
+        stationCode=\"OK052\"/>\r\n        <phaseHint>P</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:59:59Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042299\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:07:28.31Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"00\" networkCode=\"GS\"
+        stationCode=\"OK033\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T14:00:04Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042301\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:07:34.32Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"00\" networkCode=\"GS\"
+        stationCode=\"OK048\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T14:00:16Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042296\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:07:27.2Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"BHZ\" locationCode=\"00\" networkCode=\"US\"
+        stationCode=\"AMTX\"/>\r\n        <phaseHint>P</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:59:48Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042302\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:07:48.16Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"BHZ\" locationCode=\"10\" networkCode=\"IU\"
+        stationCode=\"TUC\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T14:00:36Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042300\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:07:30.99Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"BHZ\" locationCode=\"--\" networkCode=\"TA\"
+        stationCode=\"121A\"/>\r\n        <phaseHint>P</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T14:00:09Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042303\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:07:48.18Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"BHZ\" locationCode=\"--\" networkCode=\"N4\"
+        stationCode=\"S39B\"/>\r\n        <phaseHint>P</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T14:00:40Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042306\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:08:15.79Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"BHZ\" locationCode=\"--\" networkCode=\"N4\"
+        stationCode=\"N38B\"/>\r\n        <phaseHint>P</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T14:01:03Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042307\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:10:06.61Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"--\" networkCode=\"BR\"
+        stationCode=\"ETMB\"/>\r\n        <phaseHint>P</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T14:01:17Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042305\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:08:12.74Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"--\" networkCode=\"EC\"
+        stationCode=\"BOSC\"/>\r\n        <phaseHint>P</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T14:00:59Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042276\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:05:22.89Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"--\" networkCode=\"OV\"
+        stationCode=\"ORTG\"/>\r\n        <phaseHint>Pn</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:57:04Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042281\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:06:27.2Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"BHZ\" locationCode=\"--\" networkCode=\"TA\"
+        stationCode=\"435B\"/>\r\n        <phaseHint>Pn</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:58:07Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042284\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:06:36.12Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"BHZ\" locationCode=\"--\" networkCode=\"IM\"
+        stationCode=\"TX32\"/>\r\n        <phaseHint>Pn</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:58:17Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042285\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:06:36.41Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"BHZ\" locationCode=\"--\" networkCode=\"IM\"
+        stationCode=\"TX31\"/>\r\n        <phaseHint>Pn</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:58:21Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042289\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:06:57.85Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"BHZ\" locationCode=\"--\" networkCode=\"N4\"
+        stationCode=\"Z38B\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:58:59Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042290\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:06:57.83Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"00\" networkCode=\"TX\"
+        stationCode=\"FW03\"/>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:59:01Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042293\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:07:07.66Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"--\" networkCode=\"OK\"
+        stationCode=\"LOOK\"/>\r\n        <phaseHint>P</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T13:59:17Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042304\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:08:06.9Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"HHZ\" locationCode=\"--\" networkCode=\"AE\"
+        stationCode=\"X16A\"/>\r\n        <phaseHint>P</phaseHint>\r\n        <evaluationMode>manual</evaluationMode>\r\n
+        \       <creationInfo>\r\n          <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T14:00:53Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <pick publicID=\"quakeml:us.anss.org/pick/2000arrw/us_3341_bpid-2002042308\">\r\n
+        \       <time>\r\n          <value>2017-09-08T15:06:42.95Z</value>\r\n        </time>\r\n
+        \       <waveformID channelCode=\"BHZ\" locationCode=\"--\" networkCode=\"TA\"
+        stationCode=\"WHTX\"/>\r\n        <onset>questionable</onset>\r\n        <phaseHint>Pn</phaseHint>\r\n
+        \       <evaluationMode>manual</evaluationMode>\r\n        <creationInfo>\r\n
+        \         <agencyID>us</agencyID>\r\n          <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n
+        \         <creationTime>2017-10-07T14:02:24Z</creationTime>\r\n        </creationInfo>\r\n
+        \     </pick>\r\n      <preferredOriginID>quakeml:us.anss.org/origin/2000arrw</preferredOriginID>\r\n
+        \     <preferredMagnitudeID>quakeml:us.anss.org/magnitude/2000arrw/mb</preferredMagnitudeID>\r\n
+        \     <type>earthquake</type>\r\n      <creationInfo>\r\n        <agencyID>us</agencyID>\r\n
+        \       <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n        <creationTime>2017-10-13T14:33:54Z</creationTime>\r\n
+        \     </creationInfo>\r\n    </event>\r\n    <creationInfo>\r\n      <agencyID>us</agencyID>\r\n
+        \     <agencyURI>smi:anss.org/metadata/agencyid/us</agencyURI>\r\n      <creationTime>2017-12-07T20:00:22.04Z</creationTime>\r\n
+        \   </creationInfo>\r\n  </eventParameters>\r\n\r\n</q:quakeml>\r\n"
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Max-Age:
+      - '86400'
+      Age:
+      - '8699262'
+      Cache-Control:
+      - max-age=315360000
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '81082'
+      Content-Type:
+      - application/xml
+      Date:
+      - Sun, 11 Sep 2022 06:03:48 GMT
+      ETag:
+      - '"bee4d88e77a86c407e9bf094b091a228"'
+      Expires:
+      - Wed, 08 Sep 2032 06:03:48 GMT
+      Last-Modified:
+      - Tue, 15 Dec 2020 18:13:50 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 7858d9a710c9f9ade149eac1339a9a6c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - IHNO5C6e9VP4PQlvJ7ldphKSSUslaSOpMcseRyWJotufUGIZBEVhgQ==
+      X-Amz-Cf-Pop:
+      - IAD55-P5
+      X-Cache:
+      - Hit from cloudfront
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+      x-amz-meta-modified:
+      - '2017-12-07T20:00:22.000Z'
+      x-amz-meta-sha256:
+      - id1tsnucmeT91e9JIoal49Blu0y/9uKq8OCvYfVFxfM=
+      x-amz-version-id:
+      - 'null'
+    status:
+      code: 200
+      message: OK
+version: 1
