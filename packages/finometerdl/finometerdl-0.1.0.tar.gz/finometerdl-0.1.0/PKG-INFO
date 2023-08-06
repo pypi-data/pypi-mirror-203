@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: finometerdl
+Version: 0.1.0
+Summary: A data logger for the Finometer Medical Device
+Home-page: https://github.com/abdrysdale/finometer-data-logger
+License: GPL-3.0-or-later
+Author: Alex
+Author-email: adrysdale@protonmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pyserial (>=3.5,<4.0)
+Project-URL: Repository, https://github.com/abdrysdale/finometer-data-logger
+Description-Content-Type: text/markdown
+
+# Finometer Data Logger
+
+This project is intended to use an Arduino as a data logger for a Finometer Medical System.
+The project consists of two parts: `finometer_logger.ino` and `logger.py`.
+
+## finometer_logger.ino
+
+`finometer_logger.ino` is a C++ script designed to be loaded on to an Arduino board to interact with the analogue (BNC) outputs of the Finometer.
+The pins should be set up as follows:
+
+Finometer Analogue Output 1 -> Arudion Pin A1 (Finger cuff pressure)
+Finometer Analogue Output 2 -> Arudion Pin A2 (Hydrostatic finger height)
+Finometer Analogue Output 3 -> Arudion Pin A3 (Arm cuff pressure)
+Finometer Analogue Output 4 -> Arudion Pin A4 (Finger plethysmogram)
+
+These output values are sent via a serial connection along with the elapsed time since the Arduino started.
+
+## logger.py
+
+The `logger.py` script is a simple python script that logs the values read from a serial port to an output csv file.
+If no name is provided the output file is named `output-` followed by the current date an time.
+
