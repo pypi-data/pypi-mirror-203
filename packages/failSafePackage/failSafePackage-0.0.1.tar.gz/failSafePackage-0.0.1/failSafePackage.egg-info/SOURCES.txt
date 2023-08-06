@@ -1,0 +1,9 @@
+Licence.txt
+setup.py
+failSafePackage/__init__.py
+failSafePackage/fail_safe_validation.py
+failSafePackage.egg-info/PKG-INFO
+failSafePackage.egg-info/SOURCES.txt
+failSafePackage.egg-info/dependency_links.txt
+failSafePackage.egg-info/requires.txt
+failSafePackage.egg-info/top_level.txt
