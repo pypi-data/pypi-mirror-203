@@ -1,0 +1,10 @@
+hdrezka/__init__.py,sha256=6cVhYOBQs7rhGzE0rRyffMC5lw2To9MAeVdx09SnHD8,901
+hdrezka/_antiobfuscation.py,sha256=BBV3VOTw5yvIiK60mGVj5eAhz9UtPUBrs3UL8-idDUE,1047
+hdrezka/_bs4.py,sha256=OoyPeuNDmj03HebOMi0SdvjxBif-YGJLc4IO8TWz_mE,299
+hdrezka/errors.py,sha256=RwxmJD3nC4kqjqAw-dNYmlKi5XmmWfsnk5B5iqc__e4,365
+hdrezka/translators.py,sha256=144NhI2QCANihzvoeNQeTv7OCIczH4ABX3PN9mXW3vY,387
+HDRezka-2.0.0.dist-info/LICENSE,sha256=T0POcAhXx1UkCQVQtJN9c_YF4flaAAAKNtrlIpdRRKk,1084
+HDRezka-2.0.0.dist-info/METADATA,sha256=xAIk9G6UGaA1BzrhE823UdrJ-Bz4VqtgTN2PzXPGA6w,4499
+HDRezka-2.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+HDRezka-2.0.0.dist-info/top_level.txt,sha256=aiuXNMDWIKH6qzw1cTVTRx2TSH0_I8RoXmnybEfCNQo,8
+HDRezka-2.0.0.dist-info/RECORD,,
