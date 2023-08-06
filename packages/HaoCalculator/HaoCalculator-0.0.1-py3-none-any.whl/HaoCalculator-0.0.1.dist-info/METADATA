@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: HaoCalculator
+Version: 0.0.1
+Summary: Basic Mulplication package for Python
+Author: Hao Vy Phan
+Author-email: vyhao03@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Freely Distributable
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE.txt
+Requires-Dist: tqdm
+Requires-Dist: wheel
+
