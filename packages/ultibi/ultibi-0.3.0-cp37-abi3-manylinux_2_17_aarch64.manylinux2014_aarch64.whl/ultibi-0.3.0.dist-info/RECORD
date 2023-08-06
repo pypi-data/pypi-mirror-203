@@ -1,0 +1,11 @@
+ultibi-0.3.0.dist-info/METADATA,sha256=ujCNc2F117K0dUb0hD9NPwTruDn4ECBEz82zUCE2sso,4949
+ultibi-0.3.0.dist-info/WHEEL,sha256=Q-j-ZvqYncRWSzKEa7sW-oPqf-zLpZpO_Qsrjj7ZUuI,131
+ultibi/__init__.py,sha256=4QHrFWCJttZL6Z-hbcvynJ66igwr5aqnN8xuC8snVFI,848
+ultibi/rust_module/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ultibi/internals/__init__.py,sha256=25mtzNDYwgQ-HChhrAFSZNQy3IOJGqF_hlxwwYnt5LU,1062
+ultibi/internals/measure.py,sha256=DAl9GX2cyxbzsV72Bwwh4375z2IyDfE4T9BsOzhcSv0,5202
+ultibi/internals/dataset.py,sha256=5bOyLsPR4FJN3uildRZqvlwhoK0gC98U3NhwT__fjyI,6735
+ultibi/internals/filters.py,sha256=11gf2pZldhgH6PhJ-9vPnvriyaE2qa3_IXX_E-B94c4,3133
+ultibi/internals/requests.py,sha256=Fy8hrViS-YUtHZ31-YUDqbmxraWnFljRu-J8uB7Wm-k,2952
+ultibi/rust_module/ultima_pyengine.abi3.so,sha256=lUAUDbfpACSPLpvxInXKJhBLKo0fnHXg_XITHkPn8IM,43816560
+ultibi-0.3.0.dist-info/RECORD,,
