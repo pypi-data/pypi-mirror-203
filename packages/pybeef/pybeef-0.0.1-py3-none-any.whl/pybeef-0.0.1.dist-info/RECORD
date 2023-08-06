@@ -1,0 +1,11 @@
+beef/__init__.py,sha256=o_edpJ2ZNs7i71djzJb-bUATx6n9tvFk2pfuDdi3OgQ,184
+beef/beef.py,sha256=Cx9Sk9eS1eYxWeH1yTOoKNWfnvwesvLFidzJN5Z_I5A,11888
+beef/client.py,sha256=QbLGkAdziUxZrDhgZN6l0viGjP3Nz2Lyk0k6Tb4Wkts,561
+beef/pool.py,sha256=9BlQzU5PMXgP6tUGZTtjfGO75TgbasZf7km7dN4YR3o,1809
+beef/progress.py,sha256=6mDMwLYejVIN2WJS5LhzJHE_nuGISYWgGzD_wZ7XB58,750
+beef/server.py,sha256=q2dXezcqB0BS05hDnMEZ1h9AYcGMyLXMuo_mKB-FO4M,203
+beef/worker.py,sha256=QdtjBq_mmbMdfwvPvFiSU2xjhlO58mq7GXmNJzNSCMo,358
+pybeef-0.0.1.dist-info/METADATA,sha256=pnVuSk2QhdJOIEogEoFHTXdfS9ySjykxVYRkB-6fchk,1690
+pybeef-0.0.1.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+pybeef-0.0.1.dist-info/licenses/LICENSE,sha256=7qe1rmajH9dcHvUXBLMgUaHSjDaXAqVKPbo9Glq3OsM,1070
+pybeef-0.0.1.dist-info/RECORD,,
