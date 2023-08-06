@@ -1,0 +1,5 @@
+cdiserrors
+cdislogging
+jinja2
+PyYAML
+six
