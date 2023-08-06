@@ -1,0 +1,4 @@
+pyparsing<4,>=3
+
+[:python_version < "3.7"]
+dataclasses
