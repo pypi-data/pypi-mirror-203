@@ -1,0 +1,2 @@
+[console_scripts]
+report-env = report_env.main:main
