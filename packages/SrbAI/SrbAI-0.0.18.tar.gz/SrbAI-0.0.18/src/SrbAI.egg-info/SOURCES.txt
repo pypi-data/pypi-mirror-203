@@ -1,0 +1,126 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/SrbAI.egg-info/PKG-INFO
+src/SrbAI.egg-info/SOURCES.txt
+src/SrbAI.egg-info/dependency_links.txt
+src/SrbAI.egg-info/requires.txt
+src/SrbAI.egg-info/top_level.txt
+src/srbai/__init__.py
+src/srbai/test.py
+src/srbai/Alati/Transliterator.py
+src/srbai/Alati/__init__.py
+src/srbai/Alati/../Resursi/Modeli/model.hunpos.mte5.defnpout
+src/srbai/Alati/../Resursi/PomocneDatoteke/cygwin1.dll
+src/srbai/Alati/../Resursi/PomocneDatoteke/hunpos-tag
+src/srbai/Alati/../Resursi/PomocneDatoteke/hunpos-tag-lx
+src/srbai/Alati/../Resursi/PomocneDatoteke/hunpos-tag.exe
+src/srbai/Alati/../Resursi/PomocneDatoteke/hunpos-train
+src/srbai/Alati/../Resursi/PomocneDatoteke/hunpos-train-lx
+src/srbai/Alati/../Resursi/PomocneDatoteke/hunpos-train.exe
+src/srbai/Alati/../Resursi/Recnici/Serbian (Cyrillic).dic
+src/srbai/Alati/../Resursi/Recnici/Serbian (Cyrillic)_licence.txt
+src/srbai/Alati/../Resursi/Recnici/Serbian (Latin).dic
+src/srbai/Alati/../Resursi/Recnici/Serbian (Latin)_licence.txt
+src/srbai/Glas/__init__.py
+src/srbai/Glas/../Resursi/Modeli/model.hunpos.mte5.defnpout
+src/srbai/Glas/../Resursi/PomocneDatoteke/cygwin1.dll
+src/srbai/Glas/../Resursi/PomocneDatoteke/hunpos-tag
+src/srbai/Glas/../Resursi/PomocneDatoteke/hunpos-tag-lx
+src/srbai/Glas/../Resursi/PomocneDatoteke/hunpos-tag.exe
+src/srbai/Glas/../Resursi/PomocneDatoteke/hunpos-train
+src/srbai/Glas/../Resursi/PomocneDatoteke/hunpos-train-lx
+src/srbai/Glas/../Resursi/PomocneDatoteke/hunpos-train.exe
+src/srbai/Glas/../Resursi/Recnici/Serbian (Cyrillic).dic
+src/srbai/Glas/../Resursi/Recnici/Serbian (Cyrillic)_licence.txt
+src/srbai/Glas/../Resursi/Recnici/Serbian (Latin).dic
+src/srbai/Glas/../Resursi/Recnici/Serbian (Latin)_licence.txt
+src/srbai/JezickiModeli/__init__.py
+src/srbai/JezickiModeli/../Resursi/Modeli/model.hunpos.mte5.defnpout
+src/srbai/JezickiModeli/../Resursi/PomocneDatoteke/cygwin1.dll
+src/srbai/JezickiModeli/../Resursi/PomocneDatoteke/hunpos-tag
+src/srbai/JezickiModeli/../Resursi/PomocneDatoteke/hunpos-tag-lx
+src/srbai/JezickiModeli/../Resursi/PomocneDatoteke/hunpos-tag.exe
+src/srbai/JezickiModeli/../Resursi/PomocneDatoteke/hunpos-train
+src/srbai/JezickiModeli/../Resursi/PomocneDatoteke/hunpos-train-lx
+src/srbai/JezickiModeli/../Resursi/PomocneDatoteke/hunpos-train.exe
+src/srbai/JezickiModeli/../Resursi/Recnici/Serbian (Cyrillic).dic
+src/srbai/JezickiModeli/../Resursi/Recnici/Serbian (Cyrillic)_licence.txt
+src/srbai/JezickiModeli/../Resursi/Recnici/Serbian (Latin).dic
+src/srbai/JezickiModeli/../Resursi/Recnici/Serbian (Latin)_licence.txt
+src/srbai/JezickiModeli/FastText/__init__.py
+src/srbai/JezickiModeli/FastText/__main__.py
+src/srbai/JezickiModeli/FastText/embedding.py
+src/srbai/JezickiModeli/FastText/globals.py
+src/srbai/JezickiModeli/FastText/io_utils.py
+src/srbai/JezickiModeli/FastText/model.py
+src/srbai/JezickiModeli/FastText/similarity.py
+src/srbai/JezickiModeli/FastText/text_preprocessing.py
+src/srbai/JezickiModeli/FastText/../../Resursi/Modeli/model.hunpos.mte5.defnpout
+src/srbai/JezickiModeli/FastText/../../Resursi/PomocneDatoteke/cygwin1.dll
+src/srbai/JezickiModeli/FastText/../../Resursi/PomocneDatoteke/hunpos-tag
+src/srbai/JezickiModeli/FastText/../../Resursi/PomocneDatoteke/hunpos-tag-lx
+src/srbai/JezickiModeli/FastText/../../Resursi/PomocneDatoteke/hunpos-tag.exe
+src/srbai/JezickiModeli/FastText/../../Resursi/PomocneDatoteke/hunpos-train
+src/srbai/JezickiModeli/FastText/../../Resursi/PomocneDatoteke/hunpos-train-lx
+src/srbai/JezickiModeli/FastText/../../Resursi/PomocneDatoteke/hunpos-train.exe
+src/srbai/JezickiModeli/FastText/../../Resursi/Recnici/Serbian (Cyrillic).dic
+src/srbai/JezickiModeli/FastText/../../Resursi/Recnici/Serbian (Cyrillic)_licence.txt
+src/srbai/JezickiModeli/FastText/../../Resursi/Recnici/Serbian (Latin).dic
+src/srbai/JezickiModeli/FastText/../../Resursi/Recnici/Serbian (Latin)_licence.txt
+src/srbai/Klasifikatori/__init__.py
+src/srbai/Klasifikatori/../Resursi/Modeli/model.hunpos.mte5.defnpout
+src/srbai/Klasifikatori/../Resursi/PomocneDatoteke/cygwin1.dll
+src/srbai/Klasifikatori/../Resursi/PomocneDatoteke/hunpos-tag
+src/srbai/Klasifikatori/../Resursi/PomocneDatoteke/hunpos-tag-lx
+src/srbai/Klasifikatori/../Resursi/PomocneDatoteke/hunpos-tag.exe
+src/srbai/Klasifikatori/../Resursi/PomocneDatoteke/hunpos-train
+src/srbai/Klasifikatori/../Resursi/PomocneDatoteke/hunpos-train-lx
+src/srbai/Klasifikatori/../Resursi/PomocneDatoteke/hunpos-train.exe
+src/srbai/Klasifikatori/../Resursi/Recnici/Serbian (Cyrillic).dic
+src/srbai/Klasifikatori/../Resursi/Recnici/Serbian (Cyrillic)_licence.txt
+src/srbai/Klasifikatori/../Resursi/Recnici/Serbian (Latin).dic
+src/srbai/Klasifikatori/../Resursi/Recnici/Serbian (Latin)_licence.txt
+src/srbai/NER/NER_classla.py
+src/srbai/NER/__init__.py
+src/srbai/NER/../Resursi/Modeli/model.hunpos.mte5.defnpout
+src/srbai/NER/../Resursi/PomocneDatoteke/cygwin1.dll
+src/srbai/NER/../Resursi/PomocneDatoteke/hunpos-tag
+src/srbai/NER/../Resursi/PomocneDatoteke/hunpos-tag-lx
+src/srbai/NER/../Resursi/PomocneDatoteke/hunpos-tag.exe
+src/srbai/NER/../Resursi/PomocneDatoteke/hunpos-train
+src/srbai/NER/../Resursi/PomocneDatoteke/hunpos-train-lx
+src/srbai/NER/../Resursi/PomocneDatoteke/hunpos-train.exe
+src/srbai/NER/../Resursi/Recnici/Serbian (Cyrillic).dic
+src/srbai/NER/../Resursi/Recnici/Serbian (Cyrillic)_licence.txt
+src/srbai/NER/../Resursi/Recnici/Serbian (Latin).dic
+src/srbai/NER/../Resursi/Recnici/Serbian (Latin)_licence.txt
+src/srbai/Resursi/Modeli/model.hunpos.mte5.defnpout
+src/srbai/Resursi/PomocneDatoteke/cygwin1.dll
+src/srbai/Resursi/PomocneDatoteke/hunpos-tag
+src/srbai/Resursi/PomocneDatoteke/hunpos-tag-lx
+src/srbai/Resursi/PomocneDatoteke/hunpos-tag.exe
+src/srbai/Resursi/PomocneDatoteke/hunpos-train
+src/srbai/Resursi/PomocneDatoteke/hunpos-train-lx
+src/srbai/Resursi/PomocneDatoteke/hunpos-train.exe
+src/srbai/Resursi/Recnici/Serbian (Cyrillic).dic
+src/srbai/Resursi/Recnici/Serbian (Cyrillic)_licence.txt
+src/srbai/Resursi/Recnici/Serbian (Latin).dic
+src/srbai/Resursi/Recnici/Serbian (Latin)_licence.txt
+src/srbai/SintaktickiOperatori/POS_tagger.py
+src/srbai/SintaktickiOperatori/__init__.py
+src/srbai/SintaktickiOperatori/spellcheck.py
+src/srbai/SintaktickiOperatori/stemmer_nm.py
+src/srbai/SintaktickiOperatori/../Resursi/Modeli/model.hunpos.mte5.defnpout
+src/srbai/SintaktickiOperatori/../Resursi/PomocneDatoteke/cygwin1.dll
+src/srbai/SintaktickiOperatori/../Resursi/PomocneDatoteke/hunpos-tag
+src/srbai/SintaktickiOperatori/../Resursi/PomocneDatoteke/hunpos-tag-lx
+src/srbai/SintaktickiOperatori/../Resursi/PomocneDatoteke/hunpos-tag.exe
+src/srbai/SintaktickiOperatori/../Resursi/PomocneDatoteke/hunpos-train
+src/srbai/SintaktickiOperatori/../Resursi/PomocneDatoteke/hunpos-train-lx
+src/srbai/SintaktickiOperatori/../Resursi/PomocneDatoteke/hunpos-train.exe
+src/srbai/SintaktickiOperatori/../Resursi/Recnici/Serbian (Cyrillic).dic
+src/srbai/SintaktickiOperatori/../Resursi/Recnici/Serbian (Cyrillic)_licence.txt
+src/srbai/SintaktickiOperatori/../Resursi/Recnici/Serbian (Latin).dic
+src/srbai/SintaktickiOperatori/../Resursi/Recnici/Serbian (Latin)_licence.txt
