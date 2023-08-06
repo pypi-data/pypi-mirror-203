@@ -1,0 +1,13 @@
+model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+model/image_list.py,sha256=xsGr0PhJzMN01VpIAwUVrBllyPUno7j0rnctJi6yDsw,4387
+presenter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+presenter/presenter.py,sha256=Uq30pHOUShjPyjTU0DhGZgcwhGKgymjse9kjkmq_pMg,3961
+view/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+view/dialog.py,sha256=usJwQ5a-62UT-m2cbGugGvPWdw0IurkxxYmXHiGoY5k,4589
+view/main_window.py,sha256=jlLerW6GTb3pRMnAPLprSUpKkClXn3q6LklVEDc7TVM,7586
+view/widget.py,sha256=LMW_RwxLQE_FIrTeKT-tBy_ubW3lgggoxm8kgrg2wMg,6961
+nimocr-0.1.1.dist-info/METADATA,sha256=kWFMgyEJuYHu-4Cal-i69JimsW4FvppCt9Zp06e4sq8,418
+nimocr-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+nimocr-0.1.1.dist-info/entry_points.txt,sha256=G0Y0lUHDjbIkCCg3QakUx88mExeK7ri48mYu1mY-zd4,41
+nimocr-0.1.1.dist-info/top_level.txt,sha256=Ab3HSQs2pzgyz58kL9jbBGvm_9WFt3XZi7hrY0rZVBg,21
+nimocr-0.1.1.dist-info/RECORD,,
