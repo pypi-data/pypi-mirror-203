@@ -1,0 +1,21 @@
+# Quotient Bloom Filters
+
+Quotient Bloom Filters (QBFs) are a probabilistic data structure used to test if an element is a member of a set. They are a variant of the conventional Bloom Filter (BF) that incorporate a hierarchical level structure to improve the accuracy of membership queries.
+
+## Conventional Bloom Filter
+
+Conventional Bloom Filters (BFs) are used to determine whether an element is a member of a set or not. They work by hashing the element to a set of positions in an array of bits. If all the bits at these positions are set to 1, then the element is considered to be a member of the set. However, if any of the bits are set to 0, then the element is definitely not a member of the set. BFs are designed to minimize the number of false negatives, which occur when a member is incorrectly identified as not being part of the set. They do so at the cost of allowing for a certain number of false positives, which occur when a non-member is incorrectly identified as being part of the set.
+
+## Quotient Bloom Filter
+
+QBFs improve upon BFs by incorporating a hierarchical level structure that allows for a more fine-grained control over the probability of false positives. QBFs introduce the concept of "levels" in which each level consists of a set of Bloom Filters that store the number of times an element has been inserted. The maximum number of times an element can be inserted in a level is equal to the number of levels, and the number of levels determines the total number of bits allocated to each element.
+
+To query if an element is in the set, the QBF checks if all the bits for the element are set to 1 in all the levels. If all the bits are set to 1, then the element is considered to be a member of the set. However, if any of the bits are set to 0, then the element is not a member of the set. The use of levels allows for more control over the false positive rate. The probability of a false positive depends on the number of levels and the number of times the element has been inserted. As the number of levels and the number of insertions increase, the probability of a false positive decreases.
+
+## Level Mechanism
+
+The level mechanism works by allocating more bits to an element as it is inserted more times. When an element is inserted, its hash values are computed and the corresponding bits in the bit array are incremented by 1 in all the levels. The maximum value for each bit is equal to the number of levels. When an element is queried for membership, the QBF checks if all the bits for the element are set to 1 in all the levels. If any of the bits are set to 0, the QBF returns that the element is not in the set.
+
+## Use Case within Large Language Model Generation
+
+QBFs can be used as an efficient mechanism for indexing and searching the massive data sets required for the training of large language models. These data sets consist of billions of tokens, and the use of conventional data structures can be prohibitive in terms of memory requirements and computational complexity. By using QBFs, the size of the index can be reduced by several orders of magnitude while maintaining a high level of accuracy in the search results. The hierarchical level structure allows for a more fine-grained control over the false positive rate, which is critical in ensuring the accuracy of the search results. Overall, QBFs provide an efficient and effective solution for indexing and searching massive data sets required for the training of large language models.
