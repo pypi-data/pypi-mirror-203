@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: uke
+Version: 0.1.0.dev0
+Summary: Creating Ukulele Chord and Strumming Patterns Diagrams in SVG with Python
+Home-page: https://github.com/llxlr/uke
+License: MIT
+Keywords: music,ukulele,uke,uku,chord,audio,svg,strumming patterns
+Author: llxlr
+Author-email: i@xhlr.top
+Requires-Python: >=3.7,<3.11
+Classifier: Development Status :: 4 - Beta
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Multimedia :: Sound/Audio
+Provides-Extra: tuner
+Requires-Dist: jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: matplotlib (>=3.5.3,<4.0.0) ; extra == "tuner"
+Requires-Dist: numpy (>=1.21.6,<2.0.0) ; extra == "tuner"
+Requires-Dist: simpleaudio (>=1.0.4,<2.0.0) ; extra == "tuner"
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Project-URL: Documentation, https://github.com/llxlr/uke#readme
+Project-URL: Repository, https://github.com/llxlr/uke
+Description-Content-Type: text/markdown
+
+# uke
+
+[![PyPI - Version](https://img.shields.io/pypi/v/uke.svg)](https://pypi.org/project/uke)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/uke.svg)](https://pypi.org/project/uke)
+[![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install uke
+```
+
+```console
+pipx install uke
+```
+
+## License
+
+`uke` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+

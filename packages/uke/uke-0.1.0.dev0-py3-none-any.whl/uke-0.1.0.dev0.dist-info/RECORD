@@ -1,0 +1,14 @@
+uke/__init__.py,sha256=a7qByjxmQA7Z1KFMYjBKg_og91EURETl3fHVFvL0Vqk,28
+uke/__main__.py,sha256=3y19JXFWQKSs_8V5e0i6iWWvwh_hddN_dfj6bMYfzZ8,46
+uke/chord.py,sha256=5Mz4HH4EV3TLTFO6S71JoK89I8oW5s5ViuABORweoIo,6858
+uke/cli.py,sha256=MDtEEubiQ0L3qZ9kNm-glPZZJ1J6Zn8cYsy3LvOHfcA,442
+uke/strum.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uke/tmpl/__init__.py,sha256=nZxuSd7ve9B8zeY-qFJjHyFjjVrFGeBoNvTvFy-s_DA,208
+uke/tmpl/base.jinja2,sha256=mz2ST9aRP-l1RykW5Tx-xjfb6pKIeyttCV4-8DA4ndY,265
+uke/tmpl/chord.jinja2,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uke/tuner.py,sha256=i2mwHyjkX_fZYjxcJaV3bYox1PFs-GduuQfymZmovOc,3447
+uke-0.1.0.dev0.dist-info/entry_points.txt,sha256=5Xw0BUETQana1yduO2YNtKsNrCEJXn3xKMHOzuSpTfk,35
+uke-0.1.0.dev0.dist-info/LICENSE,sha256=oSeicMDM30iI7hZRAA-kiggD4rjGYZsKOk0KaS20lV4,1092
+uke-0.1.0.dev0.dist-info/METADATA,sha256=NDM_UWUvQdOzEOlD4GHLttbG7xFaWRul_ljrJ6L0TPI,2277
+uke-0.1.0.dev0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+uke-0.1.0.dev0.dist-info/RECORD,,
