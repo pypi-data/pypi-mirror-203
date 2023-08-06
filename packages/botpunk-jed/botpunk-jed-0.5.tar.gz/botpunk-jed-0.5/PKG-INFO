@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: botpunk-jed
+Version: 0.5
+Summary: A bot that solves quizzes for you
+Home-page: https://github.com/JJJed/botpunk
+Download-URL: https://github.com/JJJed/botpunk/archive/refs/heads/master.zip
+Author: Jed
+Author-email: joshuaelijah.davis@gmail.com
+License: MIT
+Keywords: BOT,QUIZZES,JETPUNK
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
