@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+src/PyGromatic.egg-info/PKG-INFO
+src/PyGromatic.egg-info/SOURCES.txt
+src/PyGromatic.egg-info/dependency_links.txt
+src/PyGromatic.egg-info/requires.txt
+src/PyGromatic.egg-info/top_level.txt
