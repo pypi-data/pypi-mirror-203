@@ -1,0 +1,10 @@
+pyproject.toml
+setup.py
+iFastApi/Test.py
+iFastApi/__init__.py
+iFastApi/setup.py
+ifastapi.egg-info/PKG-INFO
+ifastapi.egg-info/SOURCES.txt
+ifastapi.egg-info/dependency_links.txt
+ifastapi.egg-info/not-zip-safe
+ifastapi.egg-info/top_level.txt
