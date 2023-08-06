@@ -1,0 +1,10 @@
+jeff_api/__init__.py,sha256=NRBfhfUZ9Y3m0aCZkiRCKXsjojP8zMzXmcSoQ_0i8B0,89
+jeff_api/bridge.py,sha256=cv88k6V6w1dpBNFP-xK_M7tg5xrKUeZNsHUbXHYHHmA,7745
+jeff_api/extension.py,sha256=kVy4PWK7ABnTgcDMt4TfX6XKShsnyEfVmnhkwk_QVCY,1778
+jeff_api/message.py,sha256=H0pwdmUeTfdNiXE2aa5SdHXa3ntyWroJORipUCHjS50,474
+jeff_api/tools.py,sha256=pqF7x2nSkHifXEcHg21wJjnKN18eowqQJYbQsJO3eqs,188
+jeff_api-1.2.3.dist-info/LICENSE,sha256=j7os6l-rL41JN72g9Uo0BirdaqXL-11HDE0ao82fwi8,1087
+jeff_api-1.2.3.dist-info/METADATA,sha256=MqAx-54VfQ-6BzHCfMxO6Rh2TlwiVp3FXmElxSWUzg0,765
+jeff_api-1.2.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+jeff_api-1.2.3.dist-info/top_level.txt,sha256=xXyEsCP_PFCR3Knans0__Rx7ocC4XhzL1m_ggbGg7NA,9
+jeff_api-1.2.3.dist-info/RECORD,,
