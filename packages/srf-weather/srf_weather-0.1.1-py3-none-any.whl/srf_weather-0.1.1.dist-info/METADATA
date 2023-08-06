@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: srf-weather
+Version: 0.1.1
+Summary: A weather app for SRF
+Home-page: https://github.com/weieran/SRF-Weather
+License: MIT
+Author: Andreas Weier
+Author-email: andreas.weier.open.source@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Project-URL: Documentation, https://srf-weather.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/weieran/SRF-Weather
+Description-Content-Type: text/x-rst
+
+SRF Weather
+===========
+
+Wrapper around the SRF freemium API
+(https://developer.srgssr.ch/api-catalog/srf-weather/srf-weather-description)
+
+For api definition see also
+https://developer.srgssr.ch/api-catalog/srf-weather
+
+Full documentation is available at https://srf-weather.readthedocs.io/en/latest/
+
+
