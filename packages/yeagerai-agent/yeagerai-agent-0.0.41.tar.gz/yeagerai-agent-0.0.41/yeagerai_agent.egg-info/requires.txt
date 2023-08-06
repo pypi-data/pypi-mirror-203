@@ -1,0 +1,6 @@
+langchain
+openai
+GitPython
+click
+gradio
+python-dotenv
