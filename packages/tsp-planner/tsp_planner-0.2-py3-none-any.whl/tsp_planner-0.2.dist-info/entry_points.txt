@@ -1,0 +1,2 @@
+[console_scripts]
+tsp_planner = tsp_planner.main:main

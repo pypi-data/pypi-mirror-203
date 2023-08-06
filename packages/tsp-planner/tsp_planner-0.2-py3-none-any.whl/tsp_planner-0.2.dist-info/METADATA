@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tsp-planner
+Version: 0.2
+Summary: A service for solving the Travelling Salesman Problem using OR-tools library
+Home-page: https://github.com/ghorbani-mohammad/travelling-salesman-problem
+Author: Planning Tech
+Requires-Dist: pika
+Requires-Dist: ortools
+
