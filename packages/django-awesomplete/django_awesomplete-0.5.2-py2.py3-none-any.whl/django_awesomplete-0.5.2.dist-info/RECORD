@@ -1,0 +1,13 @@
+awesomplete/__init__.py,sha256=isJrmDBLRag7Zc2UK9ZovWGOv7ji1Oh-zJtJMNJFkXw,22
+awesomplete/widgets.py,sha256=3AsbYFDs5UCjESBzMqMDXgZrS-HuqA5xo2kXWVb9a_M,4458
+awesomplete/static/awesomplete/css/awesomplete.css,sha256=XeyvwJZmCav7TahmErVIC5QGl27nl8UgX2ah2X3GJb4,1702
+awesomplete/static/awesomplete/js/widget.js,sha256=q3bLSw5JcpqPYTSa6L1iOuFeODJpDXafBi0BLc0Do54,5057
+awesomplete/static/awesomplete/js/vendor/awesomplete.js,sha256=_kfJoqw2OdFhhkSaDzawlW_WRYbK85DYVAT5A8I7Mrk,13164
+awesomplete/static/awesomplete/js/vendor/awesomplete.min.js,sha256=9An6HBw3-aiMsvHOQ4iRirfquKUcpZJaZDCHM7jQuOc,7599
+awesomplete/static/awesomplete/js/vendor/awesomplete.min.js.map,sha256=GweJp6Nw7Kyo38s_BTyKeFlh07HljOj8b5D_6f7p8fA,24637
+awesomplete/templates/awesomplete/widget_wrapper.html,sha256=1vbxFV4sxsGc49DDSxm5e2vtPPBY3NwUNVTRQGSBOtA,136
+django_awesomplete-0.5.2.dist-info/LICENSE,sha256=KCsRlLIq1Xez6p3B4wYIN2MiJ5m9dnx_KaabkNdGeOs,1515
+django_awesomplete-0.5.2.dist-info/METADATA,sha256=AYGRY_NU_o2ygAF_NhO_PYJYXkq5oOVJZNY_QLPzMmA,6407
+django_awesomplete-0.5.2.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+django_awesomplete-0.5.2.dist-info/top_level.txt,sha256=_cy9nwqYZhdR0IOgo1zc3_ye6n0v76WB5Y8KipsBC6c,12
+django_awesomplete-0.5.2.dist-info/RECORD,,
