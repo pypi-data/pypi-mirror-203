@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: FPfits
+Version: 0.0.3
+Summary: Fitting and Plotting made simpler
+Home-page: UNKNOWN
+Author: FelixDedekind
+Author-email: png.spammail@gmail.com
+License: UNKNOWN
+Keywords: python
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+
+UNKNOWN
+
