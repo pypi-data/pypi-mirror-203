@@ -1,0 +1,8 @@
+README.md
+setup.py
+pynamer/__init__.py
+pynamer.egg-info/PKG-INFO
+pynamer.egg-info/SOURCES.txt
+pynamer.egg-info/dependency_links.txt
+pynamer.egg-info/not-zip-safe
+pynamer.egg-info/top_level.txt
