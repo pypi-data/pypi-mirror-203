@@ -1,0 +1,7 @@
+Products.CMFCore
+Products.ZCatalog
+setuptools
+
+[test]
+plone.app.testing
+profilehooks
