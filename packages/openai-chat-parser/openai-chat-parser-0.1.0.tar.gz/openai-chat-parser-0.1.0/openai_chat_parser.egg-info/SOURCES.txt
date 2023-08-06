@@ -1,0 +1,10 @@
+README.rst
+setup.py
+openai_chat_parser/__init__.py
+openai_chat_parser/__main__.py
+openai_chat_parser.egg-info/PKG-INFO
+openai_chat_parser.egg-info/SOURCES.txt
+openai_chat_parser.egg-info/dependency_links.txt
+openai_chat_parser.egg-info/entry_points.txt
+openai_chat_parser.egg-info/requires.txt
+openai_chat_parser.egg-info/top_level.txt
