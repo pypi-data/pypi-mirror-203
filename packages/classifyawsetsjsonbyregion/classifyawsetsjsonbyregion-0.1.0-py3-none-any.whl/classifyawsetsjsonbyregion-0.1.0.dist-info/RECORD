@@ -1,0 +1,16 @@
+classifyawsetsjsonbyregion/__init__.py,sha256=jDplQozIZ-Q3voVnqku-SwpmbB1MIHatZrwNbvAL4Dc,158
+classifyawsetsjsonbyregion/analyzer.py,sha256=EUr2ALsLpSjOEW9C0MW9chAB2lHEiGfQWKzzbZGavQk,2115
+classifyawsetsjsonbyregion/awsets.py,sha256=IMVf91hmGpr7HEaNd-93zqgQ9-CZP8d4QtxlOoL0Zs8,1045
+classifyawsetsjsonbyregion/cli.py,sha256=1TbPwcvVubuN8E2Uil7oPQ9tkleTNfwRi4Gx5IodMeY,359
+classifyawsetsjsonbyregion/config.py,sha256=BuSXdQ2FuE7aFLto8uTr4VJxhsmybIO5Pm25vuidAzA,328
+classifyawsetsjsonbyregion/csv.py,sha256=WqBObx3doUxSE9_PvGbhUOKmpR7ygM6aCGD9QXk7C7E,831
+classifyawsetsjsonbyregion/filepath.py,sha256=uX7f6ocwGsj5H94lQ6e5sXSJQhq8RLQ4D9UyHlUv4kI,859
+classifyawsetsjsonbyregion/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+classifyawsetsjsonbyregion/awsregion/__init__.py,sha256=bWKS1SwYtC4Vi8gdLzqDaFL7hzc5vgR9P0sriC6Wtig,18
+classifyawsetsjsonbyregion/awsregion/classifier.py,sha256=epUf-nyEPkMmbue9S7SXqgUBdL0NSh8a5iS4HVfdC_4,1713
+classifyawsetsjsonbyregion-0.1.0.dist-info/LICENSE,sha256=NiIdqgTwrHZWOeTg5VvcrBrgM1t1juwgA3G2QjSrj1k,1073
+classifyawsetsjsonbyregion-0.1.0.dist-info/METADATA,sha256=UeS8dSrQSz-ct94JBr-zmL5blR-a-BKUZPWUWuMkdHA,6131
+classifyawsetsjsonbyregion-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+classifyawsetsjsonbyregion-0.1.0.dist-info/entry_points.txt,sha256=reGLUm0s5HqhUIYLseszDqxqmAxpu4xHJCKoFPKU0GE,87
+classifyawsetsjsonbyregion-0.1.0.dist-info/top_level.txt,sha256=PlOuOCJMhrrbkQ4vFG7utFaWef-LipkyZ_q3Go8JIyA,27
+classifyawsetsjsonbyregion-0.1.0.dist-info/RECORD,,

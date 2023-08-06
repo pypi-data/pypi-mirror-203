@@ -1,0 +1,133 @@
+Metadata-Version: 2.1
+Name: classifyawsetsjsonbyregion
+Version: 0.1.0
+Summary: Classifies AWSets JSON by region.
+Author-email: Yukihiko Shinoda <yuk.hik.future@gmail.com>
+Maintainer-email: Yukihiko Shinoda <yuk.hik.future@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Yukihiko Shinoda
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: homepage, https://github.com/yukihiko-shinoda/classify-awsets-json-by-region
+Project-URL: repository, https://github.com/yukihiko-shinoda/classify-awsets-json-by-region
+Keywords: classifyawsetsjsonbyregion,classify-awsets-json-by-region,awsets,aws
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Security
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click (>=7.0)
+Requires-Dist: yamldataclassconfig
+Requires-Dist: typing-extensions ; python_version <= "3.7"
+Provides-Extra: test
+
+# Classify AWSets JSON by Region
+
+[![Test](https://github.com/yukihiko-shinoda/classify-awsets-json-by-region/workflows/Test/badge.svg)](https://github.com/yukihiko-shinoda/classify-awsets-json-by-region/actions?query=workflow%3ATest)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/d3006b43fedc1ffd5db7/test_coverage)](https://codeclimate.com/github/yukihiko-shinoda/classify-awsets-json-by-region/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d3006b43fedc1ffd5db7/maintainability)](https://codeclimate.com/github/yukihiko-shinoda/classify-awsets-json-by-region/maintainability)
+[![Code Climate technical debt](https://img.shields.io/codeclimate/tech-debt/yukihiko-shinoda/classify-awsets-json-by-region)](https://codeclimate.com/github/yukihiko-shinoda/classify-awsets-json-by-region)
+[![Python versions](https://img.shields.io/pypi/pyversions/classifyawsetsjsonbyregion.svg)](https://pypi.org/project/classifyawsetsjsonbyregion)
+[![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fyukihiko-shinoda%2Fclassify-awsets-json-by-region)](http://twitter.com/share?text=Classify%20AWSets%20JSON%20by%20Region&url=https://pypi.org/project/classifyawsetsjsonbyregion/&hashtags=python)
+
+Classifies AWSets JSON by AWS region.
+
+## Advantage
+
+- Output the list of AWS resources as CSV files classified by AWS region
+- Enable filter to exclude AWS resources not in question
+
+### Output the list of AWS resources as CSV files classified by AWS region
+
+You can check the states of AWS resources by AWS region. It's also useful to compare the states of AWS resources between AWS regions by using text diff tools like [Visual Studio Code].
+
+### Enable filter to exclude AWS resources not in question
+
+You can exclude AWS resources not in question by using `config.yml`. It's useful to reduce the number of AWS resources to be checked, such like the one AWS created by default. You can focus on AWS resources in question.
+
+## Quickstart
+
+1.\
+Install `classifyawsetsjsonbyregion` with pip:
+
+```console
+pip install classifyawsetsjsonbyregion
+```
+
+2.\
+Create following directories:
+
+- `input`
+- `output`
+- `intermediate`
+
+3.\
+Put AWSets JSON files in it and rename it as `awsets.json`:
+
+```plaintext
+your_working_directory/
++---input/
+    +---awsets.json
++---intermediate/
++---output/
+```
+
+4.\
+Run `classify-awsets-json-by-region`:
+
+```console
+classify-awsets-json-by-region
+```
+
+<!-- markdownlint-disable no-trailing-punctuation -->
+## How do I...
+<!-- markdownlint-enable no-trailing-punctuation -->
+
+<!-- markdownlint-disable no-trailing-punctuation -->
+### Use intermediate directory for?
+<!-- markdownlint-enable no-trailing-punctuation -->
+
+This directory is for intermediate files. These files are useful for debugging. The contents of these files are the classifying result of AWSets JSON before filtering AWS resources. Note that the file for excluded AWS regions is not created.
+
+## Credits
+
+This package was created with [Cookiecutter] and the [yukihiko-shinoda/cookiecutter-pypackage] project template.
+
+[Cookiecutter]: https://github.com/audreyr/cookiecutter
+[Visual Studio Code]: https://code.visualstudio.com/
+[yukihiko-shinoda/cookiecutter-pypackage]: https://github.com/audreyr/cookiecutter-pypackage
