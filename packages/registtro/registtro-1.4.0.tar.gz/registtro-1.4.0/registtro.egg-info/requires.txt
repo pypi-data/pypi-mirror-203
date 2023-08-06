@@ -1,0 +1,4 @@
+basicco<11,>=10.1.2
+tippo<5,>=4
+pyrsistent<1,>=0
+six
