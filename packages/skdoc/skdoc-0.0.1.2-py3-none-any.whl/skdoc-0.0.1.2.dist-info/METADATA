@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: skdoc
+Version: 0.0.1.2
+Summary: Automated documentation engine for scikit-learn models
+Home-page: UNKNOWN
+Author: ['Denis Abdullin', 'Emile Antat']
+Author-email: denisabdullincz@gmail.com
+License: UNKNOWN
+Keywords: python,scikit-learn,sklearn,machine learning,documentation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas (>=1.0.0)
+Requires-Dist: scikit-learn (>=1.0.0)
+Requires-Dist: quarto
+Requires-Dist: papermill (>=2.0.0)
+Provides-Extra: dev
+Requires-Dist: pytest (>=3.7) ; extra == 'dev'
+
+# skdoc
+Automated documentation engine for scikit-learn models
+
+
