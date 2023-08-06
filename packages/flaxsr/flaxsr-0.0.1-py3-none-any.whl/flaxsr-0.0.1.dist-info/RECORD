@@ -1,0 +1,15 @@
+FlaxSR/__init__.py,sha256=NyPxSO4MYTgfwqOgTihLlwIpKmwqYmUyeQ8wR_IkJ9A,42
+FlaxSR/layers/__init__.py,sha256=XmEUQ7GU5L6FawKfgU3PajHfOKFeOWMZPzatpkk06Ps,179
+FlaxSR/layers/stochastic.py,sha256=a52I_HHA_ZiTI0cKC3O6moOd1o5zgQldnMLu_SzyqOI,1478
+FlaxSR/layers/upscale.py,sha256=he1-pNl9zS1tYEiJgeCVuHXTep5sCFzTQvnppTiwJQI,1564
+FlaxSR/models/__init__.py,sha256=kLCfhxPdjoZs7HvTiLDhK5VgLNYUnTxP6B-nUBg_EUw,194
+FlaxSR/models/edsr.py,sha256=-LNKF8Jn2nrpVhacyy0XL30aOptXiEXshg2zvb76wqw,3658
+FlaxSR/models/espcn.py,sha256=rafsA-ICXjnxDunc8vTFOmA_5t4xoxP1VOpF9c-zAmA,858
+FlaxSR/models/fsrcnn.py,sha256=JR2R51ywYz5OrimyTwgd5mkDzM4drh-21vaof5jEtBA,1072
+FlaxSR/models/srcnn.py,sha256=667uOj9YYl8JIiGFA__yx51AHT6_aRpiWDV180b32lw,1013
+FlaxSR/models/vdsr.py,sha256=OJIm13inZU7OuS7AeytvxOlgasxB-IwbkbL7Sy52AxM,890
+flaxsr-0.0.1.dist-info/LICENSE,sha256=UeuGtONxLyJHg6LVfV_8F_rV8oCPKaBRpwlgDixQCO4,11313
+flaxsr-0.0.1.dist-info/METADATA,sha256=9LOOHyMTwlEbHQJ_LyHa3Cfm3GqxK8GA8dVJs5vOZNg,1193
+flaxsr-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+flaxsr-0.0.1.dist-info/top_level.txt,sha256=MVm6sMxEshMxPdjXtT9zH_BEQEqfThUdXHoNEId4NeE,7
+flaxsr-0.0.1.dist-info/RECORD,,
