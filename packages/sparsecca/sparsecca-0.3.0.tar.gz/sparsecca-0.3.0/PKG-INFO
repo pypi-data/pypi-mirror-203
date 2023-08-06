@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: sparsecca
+Version: 0.3.0
+Summary: A full implementation of sparse CCA.
+Author: theislab, Erkka Heinila
+Maintainer-email: Yuge Ji <jiyuge@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: statsmodels
+Requires-Dist: pyomo
+Requires-Dist: bump2version ; extra == "dev"
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: twine>=4.0.2 ; extra == "dev"
+Requires-Dist: sphinx>=4 ; extra == "doc"
+Requires-Dist: sphinx-book-theme>=0.3.3 ; extra == "doc"
+Requires-Dist: myst-nb ; extra == "doc"
+Requires-Dist: sphinxcontrib-bibtex>=1.0.0 ; extra == "doc"
+Requires-Dist: sphinx-autodoc-typehints ; extra == "doc"
+Requires-Dist: ipykernel ; extra == "doc"
+Requires-Dist: ipython ; extra == "doc"
+Requires-Dist: sphinx-copybutton ; extra == "doc"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: codecov ; extra == "test"
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+
+## sparsecca
+
+Python implementations for Sparse CCA algorithms. Includes:
+
+* Sparse (multiple) CCA based on Penalized Matrix Decomposition (PMD) from Witten et al, 2009.
+* Sparse CCA based on Iterative Penalized Least Squares from Mai et al, 2019.  
+  
+One main difference between these two is that while the first is very simple it assumes datasets to be white.
+
+### Installation
+
+#### Dependencies
+
+In addition to basic scientific packages such as numpy and scipy, iterative penalized least squares needs either glmnet\_python or pyglmnet to be installed.
+
+#### This package can be installed normally with
+
+```
+git clone https://github.com/theislab/sparsecca  
+cd sparsecca  
+pip install .
+```
+
+### Usage
+
+See examples, https://teekuningas.github.io/sparsecca
+
+### Acknowledgements
+
+Great thanks to the original authors, see Witten et al, 2009 and Mai et al, 2019.
+
