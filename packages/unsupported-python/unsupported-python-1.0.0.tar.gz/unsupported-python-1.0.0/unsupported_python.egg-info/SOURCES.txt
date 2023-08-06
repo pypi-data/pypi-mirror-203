@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+unsupported_python.egg-info/PKG-INFO
+unsupported_python.egg-info/SOURCES.txt
+unsupported_python.egg-info/dependency_links.txt
+unsupported_python.egg-info/top_level.txt
