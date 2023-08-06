@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ldbpy
+Version: 0.0.2
+Summary: ldbpy
+Author: Ziheng Wang
+Author-email: zihengw@stanford.edu
+Requires-Python: >=3.7
+License-File: LICENSE
+
+
+meant to be used as a library for pyquokka
