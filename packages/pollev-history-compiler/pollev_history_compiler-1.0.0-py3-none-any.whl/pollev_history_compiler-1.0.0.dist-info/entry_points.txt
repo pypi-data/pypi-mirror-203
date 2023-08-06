@@ -1,0 +1,2 @@
+[console_scripts]
+pollev-compiler = pollev_tools.reader:main
