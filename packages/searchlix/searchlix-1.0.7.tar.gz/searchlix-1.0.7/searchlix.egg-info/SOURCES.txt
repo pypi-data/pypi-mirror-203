@@ -1,0 +1,9 @@
+README.md
+setup.py
+searchlix/__init__.py
+searchlix/searchlix.py
+searchlix.egg-info/PKG-INFO
+searchlix.egg-info/SOURCES.txt
+searchlix.egg-info/dependency_links.txt
+searchlix.egg-info/requires.txt
+searchlix.egg-info/top_level.txt
