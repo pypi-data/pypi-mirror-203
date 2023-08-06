@@ -1,0 +1,14 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+sitesniffer.egg-info/PKG-INFO
+sitesniffer.egg-info/SOURCES.txt
+sitesniffer.egg-info/dependency_links.txt
+sitesniffer.egg-info/requires.txt
+sitesniffer.egg-info/top_level.txt
+src/sitesniffer/__init__.py
+src/sitesniffer/_sitesniffer.py
+src/sitesniffer/data.py
+src/sitesniffer/exceptions.py
+tests/test_sitesniffer.py
