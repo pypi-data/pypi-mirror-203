@@ -1,0 +1,9 @@
+newsfeedback/__init__.py,sha256=L6zbQIZKsAP-Knhm6fBcQFPoVdIDuejxze60qX23jiw,21
+newsfeedback/defaults/default_homepage_config.yaml,sha256=rX576dTD3_Y5u-TkX4dpKfSkrVRKAM5LdXaO0HhEvQk,1316
+newsfeedback/defaults/default_metadata_config.yaml,sha256=0oDJXUL1wa4lPIT-8GsmC_AAsT3PmpDGBpg211kUfUQ,236
+newsfeedback/main.py,sha256=WKhwVaXPgl2wabm8PSBs_AzzxisxWAjZt_KINbc8M1A,35320
+newsfeedback-0.1.0.dist-info/entry_points.txt,sha256=9Fb6dEBg6MT_FdBaqjMebUrcKBznQ6ago-tivKT3WuU,54
+newsfeedback-0.1.0.dist-info/LICENSE,sha256=dUZWMOV0rAPuofTXLfBx-CRoJ8KHfpk0YJbswXzPHBw,1138
+newsfeedback-0.1.0.dist-info/METADATA,sha256=G_Y_brnnPdFPdLke5ZYN_d6ZzGbx7vxsv7l1UM7FBOc,887
+newsfeedback-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+newsfeedback-0.1.0.dist-info/RECORD,,
