@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "python_textbelt"
+version = "0.0.1"
+authors = [
+  { name="Kylie Norquist", email="kylie.norquist@newbit.dev" },
+  ]
+description = "Interact with the Textbelt API in Python."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/knorquist/python_textbelt"
+"Bug tracker" = "https://github.com/knorquist/python_textbelt/issues"

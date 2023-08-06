@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: python_textbelt
+Version: 0.0.1
+Summary: Interact with the Textbelt API in Python.
+Project-URL: Homepage, https://github.com/knorquist/python_textbelt
+Project-URL: Bug tracker, https://github.com/knorquist/python_textbelt/issues
+Author-email: Kylie Norquist <kylie.norquist@newbit.dev>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# python_textbelt
+Interact with the Textbelt API in Python.
