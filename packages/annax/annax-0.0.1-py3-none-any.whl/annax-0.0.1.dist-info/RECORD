@@ -1,0 +1,15 @@
+annax/__init__.py,sha256=8TnFaGjYbhXS8JwLticWfWkPN4Nw5rmgB0FcZyUdajc,114
+annax/index.py,sha256=72mOn-zVwew52_Biscn5mtjx3RkXBmTzeFY_5v4ccow,6830
+annax/ivf.py,sha256=rMlhunfVxHpcgmfLklHZgmj8giHtBQ4wEcUuM6WzBgc,5220
+annax/kmeans.py,sha256=PeoyPchVl9NIt6H7HZLJFnZpKl2bxiRAw-WfxBcYLlA,3686
+annax/ops.py,sha256=vBhDTSiqG1z7OfVyYCYr0DRmt1nmxnGX5T_PXTkaDe0,1339
+annax/pfunc.py,sha256=2-GEWtx1WO6ZYt2jKH-oJqI1rkbsr4UiUwd1SpWQ0Vk,3092
+annax/pq.py,sha256=PvJYwoz8U88QQvfgl-mF-S3438S4Mkr1fCz-M_rjKOY,4874
+annax/search.py,sha256=oxQ2_W8X3zZxHESHm7QfGzPtoMloIXXxk8NWdhAqrqQ,3127
+annax/serialize.py,sha256=nhrc_lrOMp-1gSXpS9MozceZlS0ijhiIC5VrhXwLcPU,311
+annax/version.py,sha256=0E2q3bbXSYHV7qQaXVj0To-J2XdlP2Roo0TsM8oQtR4,160
+annax-0.0.1.dist-info/LICENSE,sha256=nHukE4G7nocUAadXJCBwy1b6MB8OpeGd2TgLlZr-ITA,1062
+annax-0.0.1.dist-info/METADATA,sha256=8KythT5D32M1mOgtBTbKqHdfqdYRnwrrIu4pV0OM0eo,3908
+annax-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+annax-0.0.1.dist-info/top_level.txt,sha256=VzaY8kBhJOH6ENpMmjGM8ZfefFd_OJiNvC6_R4xv7VY,6
+annax-0.0.1.dist-info/RECORD,,
