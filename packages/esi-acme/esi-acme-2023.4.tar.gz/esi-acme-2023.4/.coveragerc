@@ -1,0 +1,22 @@
+#
+# Copyright (c) 2023 Ernst Strüngmann Institute (ESI) for Neuroscience
+# in Cooperation with Max Planck Society
+#
+# SPDX-License-Identifier: CC0-1.0
+#
+
+[run]
+branch = True
+source = acme
+
+[report]
+exclude_lines =
+    if self.debug:
+    if debug:
+    raise NotImplementedError
+    if __name__ == .__main__.:
+ignore_errors = True
+omit =
+    acme/tests/*
+    *setup.py
+    test_*
