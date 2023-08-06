@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+template_py/__init__.py
+template_py/template_py.py
+tpl.py.egg-info/PKG-INFO
+tpl.py.egg-info/SOURCES.txt
+tpl.py.egg-info/dependency_links.txt
+tpl.py.egg-info/entry_points.txt
+tpl.py.egg-info/requires.txt
+tpl.py.egg-info/top_level.txt
