@@ -1,0 +1,4 @@
+requests
+pycryptodomex
+pywin32
+pysqlite3
