@@ -1,0 +1,2 @@
+# install:required
+typer[all]==0.7.0

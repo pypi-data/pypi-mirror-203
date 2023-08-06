@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: unipi-control-os-helpers
+Version: 2023.1
+Summary: Useful tools for the Unipi Control OS.
+Home-page: https://github.com/superbox-dev/unipi-control-os-helpers
+Author: Michael Hacker
+Author-email: mh@superbox.one
+Project-URL: Source Code, https://github.com/superbox-dev/unipi-control-os-helpers
+Project-URL: Bug Reports, https://github.com/superbox-dev/unipi-control-os-helpers/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![license-url](https://img.shields.io/badge/license-Apache%202-yellowgreen)](https://opensource.org/license/apache-2-0/)
+![coverage-badge](https://raw.githubusercontent.com/superbox-dev/unipi-control-os-helpers/main/coverage.svg)
+![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)
+![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)
+
+# Unipi Control OS Helpers
+
+Useful tools for the [Unipi Control OS](https://github.com/superbox-dev/unipi-control-os).
+
+## Commands
+
+| Commands                 | Description                               |
+|--------------------------|-------------------------------------------|
+| `os-tools backup config` | Backup Unipi Control configuration files. |

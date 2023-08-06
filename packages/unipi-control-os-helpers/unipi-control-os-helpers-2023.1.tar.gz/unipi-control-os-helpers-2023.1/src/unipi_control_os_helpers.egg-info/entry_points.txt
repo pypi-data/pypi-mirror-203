@@ -1,0 +1,2 @@
+[console_scripts]
+os-tools = unipi_control_os_helpers.os_tools:app

@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+src/unipi_control_os_helpers/__init__.py
+src/unipi_control_os_helpers/os_tools.py
+src/unipi_control_os_helpers/version.py
+src/unipi_control_os_helpers.egg-info/PKG-INFO
+src/unipi_control_os_helpers.egg-info/SOURCES.txt
+src/unipi_control_os_helpers.egg-info/dependency_links.txt
+src/unipi_control_os_helpers.egg-info/entry_points.txt
+src/unipi_control_os_helpers.egg-info/requires.txt
+src/unipi_control_os_helpers.egg-info/top_level.txt
