@@ -1,0 +1,12 @@
+iso3166_2/__init__.py,sha256=owBM7Bcu_BN0PqcQ4xArnDpd4urU0xU8_hRGNGtVgho,132
+iso3166_2/iso3166_2.py,sha256=0G3sakpkCEMcicAivz39lUPm6VG_PlxBX5qHjV11R5s,7749
+iso3166_2/iso3166-2-data/README.md,sha256=ZrSEjM5dk0HvHtrvIq0SOzkFfAfb8RHcHdU0UFkes4s,228
+iso3166_2/iso3166-2-data/iso3166-2-min.json,sha256=eOwg6TfL4eJmtYn8dMQxo0i9QWltn9E4URnPiwY_MKQ,1089432
+iso3166_2/iso3166-2-data/iso3166-2.json,sha256=ph7PKjrW4simI5Q575rXQV2DHxxbmpk1uuzMjXFdr_M,2787107
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_iso3166_2.py,sha256=sZMc6zJQmCAlwUSOJYBxyAItnqY8GgwpsGDGQttNWYM,14550
+iso3166_2-1.0.0.dist-info/LICENSE,sha256=c7x3wSyrro_6hI0Pa1Z-aaICr8YWFoKRJ2876w1ke2s,1059
+iso3166_2-1.0.0.dist-info/METADATA,sha256=Idp0NmXLJkhj1Mw1fpy6dBue8HHMwzu9rJUbiLI2jr0,11570
+iso3166_2-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+iso3166_2-1.0.0.dist-info/top_level.txt,sha256=jRhsKs1XKuSLyASZqIstwMIVurd7yjFmHCHtwU5ZRQ0,16
+iso3166_2-1.0.0.dist-info/RECORD,,
