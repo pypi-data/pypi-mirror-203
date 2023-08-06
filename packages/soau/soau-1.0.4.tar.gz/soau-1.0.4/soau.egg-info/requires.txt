@@ -1,0 +1,8 @@
+tqdm
+PyAutoGUI
+sounddevice
+psutil
+GPUtil
+tabulate
+scipy
+setuptools
