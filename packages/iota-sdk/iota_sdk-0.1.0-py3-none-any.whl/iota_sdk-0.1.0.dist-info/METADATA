@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: iota-sdk
+Version: 0.1.0
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Rust
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+
