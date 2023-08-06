@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+askpyro/__init__.py
+askpyro/conversation.py
+askpyro/errors.py
+askpyro.egg-info/PKG-INFO
+askpyro.egg-info/SOURCES.txt
+askpyro.egg-info/dependency_links.txt
+askpyro.egg-info/top_level.txt
