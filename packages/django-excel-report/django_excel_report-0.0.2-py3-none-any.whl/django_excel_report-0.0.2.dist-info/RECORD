@@ -1,0 +1,14 @@
+django_excel_report/__init__.py,sha256=hdwEAkFxIF9WOwyIP4W_CVG-Gta3mah-S1LeH5rjJrI,160
+django_excel_report/error.py,sha256=YY13-wz0QD8sizwnZvyrYGwfdO8zye10bhiR2hHRMOE,39
+django_excel_report/report.py,sha256=-aV0NXLcCV_1Qt2mzvmoojyM0qCs9RFZ54aHCo5NGUg,1426
+django_excel_report/writer/__init__.py,sha256=4m0lfS2MzyPWgV5Jon2D0yy_frxSrCZLQmGY1fbjok8,63
+django_excel_report/writer/accessors.py,sha256=q2HnFAe17I77JHPzHCvRJhDCgN6vN88akQ760Jtzd6g,1488
+django_excel_report/writer/acessors_builder.py,sha256=WH0q5niXc4PToAIu1paZrY6bfUFGnU5gV_be0ztDS1o,4132
+django_excel_report/writer/get_queryset_builder.py,sha256=vPdio15e2PRcjj7rZOntAgVWNUir4tv1nreC-TUXzjM,1192
+django_excel_report/writer/report_meta.py,sha256=N_D5yGMAPXd8ojpnoDnsaivgrD3UqAiSgjJh1eVg3h8,1209
+django_excel_report/writer/writer.py,sha256=8W0vpm-uqkY55OsVlWzc7MEVZjsvB_Sit38s7EUIUQ8,2416
+django_excel_report-0.0.2.dist-info/LICENSE,sha256=3zbh7FiVDjvzSkqKFttWezW7iX429gKgDbPc9KcyjuI,3409
+django_excel_report-0.0.2.dist-info/METADATA,sha256=SbniaTL1WIxACJjz8_Q_B7PyuMyWFfUoT0Z4I-nqCa4,1876
+django_excel_report-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_excel_report-0.0.2.dist-info/top_level.txt,sha256=s2sNR-EftwJVpQIa_dPE8asJA09l9ZTJZO0OXyJtJlY,20
+django_excel_report-0.0.2.dist-info/RECORD,,
