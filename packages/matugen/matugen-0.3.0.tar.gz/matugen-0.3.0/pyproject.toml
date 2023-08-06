@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "matugen"
+version = "0.3.0"
+description = ""
+authors = ["InioX <justimnix@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+material-color-utilities-python = "0.1.5"
+rich = "^12.5.1"
+
+[tool.poetry.scripts]
+matugen = "matugen.__main__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
