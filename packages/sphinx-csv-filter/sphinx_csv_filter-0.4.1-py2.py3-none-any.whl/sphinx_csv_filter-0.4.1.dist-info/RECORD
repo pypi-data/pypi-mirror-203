@@ -1,0 +1,9 @@
+sphinx_csv_filter-0.4.1-py3.11-nspkg.pth,sha256=nqN0-lx5dVfXKgm9N7WRgI0lrvtTYi2PUOtTjfAMtjY,534
+crate/sphinx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crate/sphinx/csv.py,sha256=3MAAKVd8qdhx-ZqDCk6xvDI62Arja8tuX0utncOH1Lo,4570
+sphinx_csv_filter-0.4.1.dist-info/LICENSE,sha256=VaPslbRc6zsvz8teuOkaE3iB7caWIZCCjVcOyRPR9a0,10775
+sphinx_csv_filter-0.4.1.dist-info/METADATA,sha256=2rCdruGiTm4_8ElFzqtchJiki1r5D6PRBOXl2W8wtSs,5977
+sphinx_csv_filter-0.4.1.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+sphinx_csv_filter-0.4.1.dist-info/namespace_packages.txt,sha256=2wP2HlpxdhgTLMl9ipi168xkm6FMq9_2bf0xGGxF_OI,6
+sphinx_csv_filter-0.4.1.dist-info/top_level.txt,sha256=2wP2HlpxdhgTLMl9ipi168xkm6FMq9_2bf0xGGxF_OI,6
+sphinx_csv_filter-0.4.1.dist-info/RECORD,,
