@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Salvador_info/Salvador_info.py
+Salvador_info/__init__.py
+Salvador_info.egg-info/PKG-INFO
+Salvador_info.egg-info/SOURCES.txt
+Salvador_info.egg-info/dependency_links.txt
+Salvador_info.egg-info/requires.txt
+Salvador_info.egg-info/top_level.txt
