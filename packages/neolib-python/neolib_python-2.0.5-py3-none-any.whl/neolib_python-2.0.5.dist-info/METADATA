@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: neolib-python
+Version: 2.0.5
+Summary: useful library 4 python developing
+Author: neo1seok
+Author-email: neo1seok@gmail.com
+Keywords: neolib_python,neolib,neo1seok
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+Requires-Dist: attributedict
+
+# neolib_python
