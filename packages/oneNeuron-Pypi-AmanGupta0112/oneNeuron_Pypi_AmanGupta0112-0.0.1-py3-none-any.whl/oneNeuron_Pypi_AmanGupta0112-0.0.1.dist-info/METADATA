@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: oneNeuron-Pypi-AmanGupta0112
+Version: 0.0.1
+Summary: Simple Perceptron implementation
+Home-page: https://github.com/AmanGupta0112/oneNeuron_Pypi
+Author: AmanGupta0112
+Author-email: guptaamanvns0542@gmail.com
+License: MIT
+Keywords: Perceptron,OneNeuron
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: joblib
+Requires-Dist: matplotlib
+
+# oneNeuron_Pypi
+## Refrence -
+[Official Python Documentation](https://packaging.python.org/tutorials/packaging-projects/)
