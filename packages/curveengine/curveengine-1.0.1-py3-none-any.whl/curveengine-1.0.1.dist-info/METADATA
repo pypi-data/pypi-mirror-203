@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: curveengine
+Version: 1.0.1
+Summary: A simple curve bootstraping tool based on ORE/QuantLib
+Author: Jose Melo
+Author-email: jmelo@live.cl
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Requires-Dist: open-source-risk-engine
+
