@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: CaptianSonar
+Version: 0.0.1
+Summary: First Release of CaptianSonar
+Home-page: https://pypi.org/search/?q=CaptianSonar&o=
+Download-URL: https://pypi.org/search/?q=CaptianSonar&o=
+Author: Michael Caggeso
+Author-email: laurencaggeso@gmail.com
+License: Michael`s License
+Requires: pyglet
+
+First Release of CaptianSonar
