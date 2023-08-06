@@ -1,0 +1,93 @@
+#!/bin/bash
+#-------------------------------------------------------------------------------
+# es7s/core
+# (c) 2023 A. Shavykin <0.delameter@gmail.com>
+#-------------------------------------------------------------------------------
+# shellcheck disable=SC2059,SC2120
+
+function _ww () {
+    local width=$COLUMNS
+    [[ -z $width ]] && width=$(tput cols 2>/dev/null)
+    [[ -z $width ]] && width=$(stty size 2>/dev/null | cut -f2 -d" " )
+    printf %s "${width:-80}"
+}
+function _sep() { printf "%${1:-40}s\n" "" | tr " " _ ; }
+function _pp_desc() { printf "${1}" ; }
+function _pgrek_prompt() {
+    local opts="(${_y}${_u}t${_f}erm/${_r}${_u}k${_f}ill/${_u}r${_f}epeat/${_u}h${_f}elp/${_u}q${_f}uit)"
+    while true; do
+        read -N1 -r -p "$last_result"$'\e7'" $opts> " tkrq
+        case $tkrq in
+          [Tt]*) printf "${_d}[erm]${_f}\n"   ; return 1 ;;
+          [Kk]*) printf "${_d}[ill]${_f}\n"   ; return 2 ;;
+          [Rr]*) printf "${_d}[epeat]${_f}\n" ; return 3 ;;
+          [Hh]*) printf "${_d}[elp]${_f}\n"   ; printf "${keys}\n" ;;
+          [Qq]*) printf "${_d}[uit]${_f}\n"   ; return 0 ;;
+              *) printf "${_d} [?] ${_f}\n"   ; sleep 0.1 ;;
+        esac
+    done
+}
+
+function _pgrek_iter() {
+    local cmd=("pgrep" "-fa" "$@")
+    local cmdkill pids pids_raw pids_exclude pg_exc pp_exc
+
+    printf "${_be}> ${cmd[*]}${_f}\n"
+    pids_raw="$("${cmd[@]}" 2> >(sed -Ee 's/^/'$_r'  /; s/$/'$_f'/;' >&2))"
+    pg_exc=$?
+    printf "  Exit code $pg_exc\n"
+    pids_exclude="$$|$PPID"
+    pids="$(sed -E <<<"$pids_raw" '/^('$pids_exclude')/d' | tee /dev/stderr 2> >(sed -Ee 's/^[0-9]+/  \x1b[91m&\x1b[m/' >&2) | cut -d' ' -f1 | tr $'\n' ' ')"
+    pids_amount="$(wc -w <<<"${pids}")"
+    sed -E <<<"$pids_raw" -e "/^($pids_exclude)/!d; s/^[0-9]+/  $_d&$_gy/; s/$/$_f/" >&2
+    last_result="[$(date +%H:%M:%S)] Found ${_b}${_y}${pids_amount}${_f} PID(s), select an action"
+
+    echo
+    if _pgrek_prompt ; then
+        return 126
+    else
+        pp_exc=$?
+
+        if [[ $pp_exc -eq 1 ]] ; then cmdkill="kill $pids"
+        elif [[ $pp_exc -eq 2 ]] ; then cmdkill="kill -9 $pids"
+        elif [[ $pp_exc -eq 3 ]] ; then return 0
+        fi
+        [[ $pids_amount -eq 0 ]] && printf "\nNo active PIDs, skipping\n" && return 0
+
+        printf "\n${_be}> ${cmdkill}${_f}"
+        $cmdkill
+        printf "\n  Exit code $?\n"
+    fi
+}
+
+function _main() {  # [pgre]p and p[k]ill
+    local _f=$'\e[m' _b=$'\e[1m' _be=$'\e[34m' _y=$'\e[33m' _ff=$'\e[39m' \
+          _r=$'\e[31m' _d=$'\e[2m' _i=$'\e[7m' _fi=$'\e[27m' _fb=$'\e[22m' \
+          _bkg=$'\e[48;5;236m' _gyg=$'\e[48;5;16m' _w=$'\e[97m' _u=$'\e[4m' \
+          _fu=$'\e[24m' _gy=$'\e[37m'
+
+    local   KEY_TERM="${_gyg}${_y} ${_u}t${_fu}${_fb}erm   ${_f}   send SIGTERM to all listed PIDs"
+    local   KEY_KILL="${_gyg}${_r} ${_u}k${_fu}${_fb}ill   ${_f}   send SIGKILL to all listed PIDs"
+    local KEY_REPEAT="${_gyg}${_w} ${_u}r${_fu}${_fb}epeat ${_f}   discard the results, call pgrep again"
+    local   KEY_HELP="${_gyg}${_w} ${_u}h${_fu}${_fb}elp   ${_f}   show this help"
+    local  KEY_ABORT="${_gyg}${_w} ${_u}q${_fu}${_fb}uit   ${_f}   exit the program"
+
+    local SEP="\n    "
+    local keys="\n  Current query:${SEP}${_u}$*${_f}\n"
+    keys+="\n  Available actions:${SEP}$KEY_TERM${SEP}$KEY_KILL${SEP}$KEY_REPEAT${SEP}$KEY_HELP${SEP}$KEY_ABORT\n"
+    keys+="\n    es7s/pgrek (c) 2023 A. Shavykin <0.delameter@gmail.com>\n"
+
+    [[ -z "$*" ]] && printf "Starting without arguments disabled for safety" && return 0
+
+    local last_result
+    while true ; do
+        if _pgrek_iter "$@" ; then
+            :
+        else
+            break
+        fi
+        echo
+    done
+}
+
+_main "$@"
