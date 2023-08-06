@@ -1,0 +1,14 @@
+chatbot/__init__.py,sha256=-wqngFWx-YVpRQmUERLjc60w6G5toTn-avTRzGA60ks,47
+chatbot/base.py,sha256=eNu0IaPETKUipJ7TMwKmgMxri0b2zDkZNdFt-avvjBU,1803
+chatbot/chain.py,sha256=YRUZ0CF3u7mv5cZ6vF1ewarPmqkNRHyzwZZlMBi5D0I,2296
+chatbot/ui/__init__.py,sha256=b0QGXvtTOxrHY9bt438r22FSD6lq8f9ifEQ_AOjFEDs,38
+chatbot/ui/main.py,sha256=-Ze5U8S3AyWEjBvqh09i8e7Uu-Hxd12gnXhLiL9KEh0,1692
+chatbot/ui/templates.py,sha256=fXdaGoh2eia1Jun8LujvhIZxESuYq3CoVjYsgFqJOdY,1337
+llama_inference/__init__.py,sha256=-GP2ePHHHY2wDiMR_HQ3U_tb9_oc7aV9KlkEz9PtKQY,118
+llama_inference/model.py,sha256=bOqhNeEFyPUASFV3zcLHs-_XZ9fGQpWVNZfer1jrDAU,4968
+llama_inference/serve.py,sha256=oau0ooJ2Nzj9ISn9KtoR_DaOH3PtBQKCDC_vweeFNYg,1136
+llama_inference-0.0.3.dist-info/LICENSE,sha256=Mkmn-8XuNWKsneGVYgjadWmV8Ukon1yXgIL0gQdotzM,1070
+llama_inference-0.0.3.dist-info/METADATA,sha256=nK4pblvP-ZlAU0NwtkspO9zCqFIodetrGwtkh67yCCU,1998
+llama_inference-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+llama_inference-0.0.3.dist-info/top_level.txt,sha256=RkNGQhoUZIwEGAIQ3axpnSJdWC0K8GV746cIVgPwBqE,24
+llama_inference-0.0.3.dist-info/RECORD,,
