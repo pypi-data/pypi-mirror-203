@@ -1,0 +1,16 @@
+znh5md/__init__.py,sha256=jdcxLoiytLCSNyU3SbOQQfZef_UGOzzRmdrqSa_PvNs,450
+znh5md/cli.py,sha256=L63_Qa2t3KO_Jb9iW9_823DZu4P1qvVOGDVlEN1s2MI,1404
+znh5md/format/__init__.py,sha256=GZmny-YfhbSsAiE6-8iB48mfQlljv0d-rxkBPGPc680,3638
+znh5md/io/__init__.py,sha256=EaPS6mVz_bL8lQ1iNbZh5CZCydqavhKdRXLyWxysqPE,249
+znh5md/io/base.py,sha256=FoRn5rv8iQ_UV0F-rQaEH-N7KGyorJrGlTWzduM4OIo,9426
+znh5md/io/reader.py,sha256=3kbRvwwYIaqbOXYT8xqfsct9YcYul-Ic1MZ6_Iy_bbg,7467
+znh5md/utils.py,sha256=fk0YzBGsu2UvdinjnjWRt4Y5Rldpcf7aDuZh52Qd6VA,179
+znh5md/znh5md/__init__.py,sha256=8q6EHG050Y4PES9mr-xVv97Y0qFMtXUnqqy1rwn2nyg,268
+znh5md/znh5md/base.py,sha256=WYlnyaAdlA42T8txTpkgIt9b6fi8YCxp_oOpCCyxaVM,366
+znh5md/znh5md/h5ase.py,sha256=D4fYgZfcapDDweUf8moR69jCFZGGvVFnzDUGyoKHaVw,4431
+znh5md/znh5md/h5dask.py,sha256=hyG6PRhMUQrYZKkSUZV5qQQ4F_yvrkKMspffsHibD_E,7391
+znh5md-0.1.6.dist-info/LICENSE,sha256=ccaRXQQmV3KgM5vtRydpQsZ4tFzAFTQhDr5phP0a7GU,13575
+znh5md-0.1.6.dist-info/METADATA,sha256=43wdZfCgZed4GmG3fsjb0ymcKEIoguyptk-e1CQ0M4Q,3719
+znh5md-0.1.6.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+znh5md-0.1.6.dist-info/entry_points.txt,sha256=MRLW5Vvzdhe3nH6_SN7x_kVn1fHYLn2Ms7YOMkg4EDE,41
+znh5md-0.1.6.dist-info/RECORD,,
