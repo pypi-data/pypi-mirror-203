@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+thule.py
+thule.egg-info/PKG-INFO
+thule.egg-info/SOURCES.txt
+thule.egg-info/dependency_links.txt
+thule.egg-info/top_level.txt
