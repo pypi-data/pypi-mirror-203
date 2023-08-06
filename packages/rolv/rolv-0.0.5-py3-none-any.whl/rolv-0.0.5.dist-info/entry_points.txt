@@ -1,0 +1,5 @@
+[console_scripts]
+rolv = rolv:help_text
+rolv.disclaimer = rolv:disclaimer
+rolv.install = rolv:install
+rolv.version = rolv:version
