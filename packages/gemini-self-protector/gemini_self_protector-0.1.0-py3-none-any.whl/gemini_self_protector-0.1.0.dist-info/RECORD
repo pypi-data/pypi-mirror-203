@@ -1,0 +1,13 @@
+gemini_self_protector/__init__.py,sha256=vJmhmXA01LjAcexcSpdZRzCPsTHV-iIW-UrD8a_5IgI,390
+gemini_self_protector/_audit.py,sha256=qV9rzABVbqB4dICU5_fbY3MY13cDf17hwZmFlV8Thn8,2188
+gemini_self_protector/_config.py,sha256=i-Ajt4Js5Lp6Q9isXttSNQW_0QO4GCa3Ueg8TMdEaTo,9464
+gemini_self_protector/_gemini.py,sha256=5s2d-UKTUquRrYjskbf39mwI4CclaH7tAED_z11wp-c,17471
+gemini_self_protector/_logger.py,sha256=JNVIo4Bu14KnltUfT0xDzxyGuKrcb0XE01ADdJENuEM,2728
+gemini_self_protector/_protect.py,sha256=nJUgC4a5n0FiyL_PQM9IWa-iSNVtpkRm6Gu9DIzZMU4,13158
+gemini_self_protector/_template.py,sha256=JY5B5IhmZ3XbPXw_DU6sydJ5yk5m_WIhxD6mytKWRo4,40282
+gemini_self_protector/_utils.py,sha256=fptgRFR0mEfT5JAQEeVkDsQNfOUnVv3S7VltzZLz4g8,10739
+gemini_self_protector/gemini_self_protector.py,sha256=aCr3hdrJ16r30wvDwiosaiBa2_GWA1qDoh0_YfVKJ8k,18769
+gemini_self_protector-0.1.0.dist-info/LICENSE,sha256=lUmgHfZheJ8VuDytOQng0wQrXckf_FaOcqRlKNwgNSk,1069
+gemini_self_protector-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+gemini_self_protector-0.1.0.dist-info/METADATA,sha256=KLfvarpuRklz48oQdSWUjizEqIpMHm5Ocjn3j7FMVcA,3817
+gemini_self_protector-0.1.0.dist-info/RECORD,,
