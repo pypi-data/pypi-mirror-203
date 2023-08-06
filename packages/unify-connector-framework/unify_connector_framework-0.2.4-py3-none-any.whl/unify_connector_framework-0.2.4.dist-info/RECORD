@@ -1,0 +1,11 @@
+unifyconnectorframework/__init__.py,sha256=zKCPAfmYocTiBwEtImSRkMI0PIQp8dK-TDg94UWdXrI,799
+unifyconnectorframework/connector.py,sha256=moP00ICfWQcsidd9PUGQXfQiqeLj9K26-Fg6c08u5os,15890
+unifyconnectorframework/connector_handler.py,sha256=IHVLQ-QbjybO_hCvrtK0Unqv35Xb9YlVplqeCky9e7k,10771
+unifyconnectorframework/logging.py,sha256=xY5khMmWjugy3q6X6HxKmTE5TG7XIqIFOYFnp0OF4aY,1691
+unifyconnectorframework/organization_client.py,sha256=1oBJrW4Qz4c9f5QZv8n_yef02c_sucICaYX8Df01LDg,17872
+unifyconnectorframework/utils.py,sha256=A5dOWcqDhhtMdxa8AL_067PTGUWt7UotIxvo7vk-Xgc,1373
+unify_connector_framework-0.2.4.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+unify_connector_framework-0.2.4.dist-info/METADATA,sha256=o3mEDrBrb0uVNgHk_TrDNGFAqQWq9WOtLtvFFOgm6WA,3052
+unify_connector_framework-0.2.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+unify_connector_framework-0.2.4.dist-info/top_level.txt,sha256=G3taEJ_T5MLiNNeqNS6lIRawDlIhXfBx7AcB9HcXNyo,24
+unify_connector_framework-0.2.4.dist-info/RECORD,,
