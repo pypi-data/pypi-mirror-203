@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: hyperdb-python
+Version: 0.1.1
+Summary: A hyper-fast local vector database for use with LLM Agents.
+Home-page: https://github.com/jdagdelen/hyperdb
+Author: John Dagdelen
+Author-email: jjdagdelen@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# HyperDB
+
+A hyper-fast local vector database for use with LLM Agents. [Now accepting SAFEs ($35M cap minimum.)](https://www.youtube.com/watch?v=QH2-TGUlwu4)
+
+## Installation
+
+Install the package from PyPI:
+
+```bash
+pip install hyperdb-python
+```
+
+## Usage
+
+Here's an example of using HyperDB to store and query documents:
+
+```python
+import json
+from hyperdb import HyperDB
+
+# Load documents from the JSONL file
+documents = []
+
+with open("demo/pokemon.jsonl", "r") as f:
+    for line in f:
+        documents.append(json.loads(line))
+
+# Instantiate HyperDB with the list of documents and the key "description"
+db = HyperDB(documents, key="info.description")
+
+# Save the HyperDB instance to a file
+db.save("demo/pokemon_hyperdb.json")
+
+# Load the HyperDB instance from the save file
+db.load("demo/pokemon_hyperdb.json")
+
+# Query the HyperDB instance with a text input
+results = db.query("Likes to sleep.", top_k=5)
+```
+
