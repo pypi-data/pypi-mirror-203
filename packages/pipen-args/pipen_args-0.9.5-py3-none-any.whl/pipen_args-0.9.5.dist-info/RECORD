@@ -1,0 +1,10 @@
+pipen_args/__init__.py,sha256=Wa3QPP0_t9_UWBedtnchL6oqANNbKizEDkHntDF3kMg,969
+pipen_args/defaults.py,sha256=b8fWw1FesyPcJ58dm9zFHdyYi3sYgxYiG-5s20avVMo,3872
+pipen_args/parser_.py,sha256=aNl8Qb7Aff8yu4IYXSnpsiHwbQaunA26JRxispa1JnI,9934
+pipen_args/plugin.py,sha256=-qeb-NS21oxDCuWVG5QboSDI0AGilG9dkhhdPO3sFDY,7971
+pipen_args/procgroup.py,sha256=wLg27gf2XCy4d08k9sGMc906ULKmfFKXPtcg0rju54Y,3277
+pipen_args/version.py,sha256=ORAtCCI2THBDcdzIbh6oBsoshDvkkmXUWpmO4Q5McAk,22
+pipen_args-0.9.5.dist-info/METADATA,sha256=2-2qIrE4wL7XOubv5L-Ide3ljBetXbINelimo5kLvgA,2864
+pipen_args-0.9.5.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+pipen_args-0.9.5.dist-info/entry_points.txt,sha256=Rqrq-aoZSB3uPvjIbm9oCcyLmIQPWfbeKenqhDPC1lk,43
+pipen_args-0.9.5.dist-info/RECORD,,
