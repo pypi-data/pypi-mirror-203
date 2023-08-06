@@ -1,0 +1,13 @@
+ifm3dpy.cpython-39-aarch64-linux-gnu.so,sha256=b1yOplkN-0-tswIyMnyuRRetxp181vH_DB_jFV0BTdk,5038600
+ifm3dpy-1.2.6.dist-info/entry_points.txt,sha256=pqInrNlpgzWo5AF8JaFVA0f-3viBOfZ1MaW_jKNQh2k,49
+ifm3dpy-1.2.6.dist-info/WHEEL,sha256=WmgP0K1kdqJz8z1pv4uWmQ_zr3BEvqOuA4KvS4Wklqs,150
+ifm3dpy-1.2.6.dist-info/METADATA,sha256=2JFsnyc-byaZTo7N9zhEpoKmMYolwpMesqKN1zpSISI,322
+ifm3dpy-1.2.6.dist-info/LICENSE-thirdparty,sha256=7ZrsjFbOgiDKdtVUEt0YwEhDocS-0ffpHldTyTYYm_I,46704
+ifm3dpy-1.2.6.dist-info/top_level.txt,sha256=14HBGAbWOrqlPHpP6qJsqIy1QTcnxt44R8E5pQ6wIMA,15
+ifm3dpy-1.2.6.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+ifm3dpy-1.2.6.dist-info/RECORD,,
+ifm3dpy/__init__.pyi,sha256=OUOyzRkAR3nWF-RMc3vbSQTBHAzOPsqF6LSH2BJLuvA,5856
+ifm3dpy/deserialize/__init__.pyi,sha256=da9rAurwB11ldLiu2_ut4JJCtxko5MLni-rKKOiCZIM,9766
+ifm3dpy/device/__init__.pyi,sha256=bLRenkJ43O9-BS86VUI2Wh-IkAz2xnO1QVA6h8Bw1AI,34373
+ifm3dpy/framegrabber/__init__.pyi,sha256=M0_Sh3hy5XpTRBZbggoCpZWliBA6tZkfoBDaV1gbMxI,12054
+ifm3dpy/swupdater/__init__.pyi,sha256=InVqiXfbUt_SKMhMEqYkTI3DVQOizbOMLgMJQ4Owjmw,2234
