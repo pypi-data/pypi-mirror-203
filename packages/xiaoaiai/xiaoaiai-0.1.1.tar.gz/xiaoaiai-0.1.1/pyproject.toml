@@ -1,0 +1,52 @@
+[project]
+name = "xiaoaiai"
+description = "Play ChatGPT with xiaomi AI speaker"
+readme = "README.md"
+authors = [
+    { name = "lozn", email = "qssq521@gmail.com" },
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+requires-python = ">=3.7.1"
+dependencies = [
+    "miservice_fork",
+    "openai",
+    "aiohttp",
+    "rich",
+    "edge-tts>=6.1.3",
+    "EdgeGPT",
+]
+version = "0.1.1"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/qssq/xiaoai"
+
+[project.scripts]
+xiaogpt = "xiaoai.cli:main"
+
+[tool.pdm]
+autoexport = [
+    { filename = "requirements.txt", without-hashes = true },
+]
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.pdm.build]
+includes = [
+    "xiaogpt/",
+    "ChatGPT/src/",
+    "xiaoai/",
+]
+
+[build-system]
+requires = [
+    "pdm-backend>=2.0.0",
+]
+build-backend = "pdm.backend"
