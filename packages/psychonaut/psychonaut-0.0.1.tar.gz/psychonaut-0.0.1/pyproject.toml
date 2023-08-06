@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "psychonaut"
+version = "0.0.1"
+description = "Python async client and TUI for bsky"
+authors = ["generativist <jbn@abreka.com>"]
+readme = "README.md"
+homepage = "https://github.com/jbn/psychonaut"
+repository = "https://github.com/jbn/psychonaut"
+documentation = "https://github.com/jbn/psychonaut"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.8.4"
+pydantic = "^1.10.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
