@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+codigofacilito_jorgef/__init__.py
+codigofacilito_jorgef/__main__.py
+codigofacilito_jorgef/config.py
+codigofacilito_jorgef/workshops.py
+codigofacilito_jorgef.egg-info/PKG-INFO
+codigofacilito_jorgef.egg-info/SOURCES.txt
+codigofacilito_jorgef.egg-info/dependency_links.txt
+codigofacilito_jorgef.egg-info/requires.txt
+codigofacilito_jorgef.egg-info/top_level.txt

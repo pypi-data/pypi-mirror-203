@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: codigofacilito_jorgef
+Version: 0.0.1
+Summary: este paquete de prueba, permite consumir el api de codigo facilito
+Home-page: https://github.com/JorgeFigueroa/codigofacilito_package
+Author: Jorge figueroa
+Author-email: atientas0412@gmail.com
+License: MIT
+Keywords: codigofacilito_jorgef
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+python -m venv .venv
+venv\Scripts\activate
+
+pip install requests
+pip freeze > requirements.txt
+
+## provando un paquete
+python -m nome_paquete
+
+python setup.py sdist
+pip install pip --upgrade
+pip install twine
+twine upload dist/*
+
+
+
+
