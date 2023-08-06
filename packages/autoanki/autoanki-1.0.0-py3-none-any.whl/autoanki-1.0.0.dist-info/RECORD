@@ -1,0 +1,16 @@
+autoanki/AutoAnki.py,sha256=GOMepUJm0WZobMqR80RndLciAKv4SLWkZpbTbxmUXQo,5273
+autoanki/__init__.py,sha256=eAwDkQPiwBHTTD1ICKyHZAOoP2j87943AyUMuyZ3tE8,30
+autoanki/BookCleaner/BookCleaner.py,sha256=MTIeLPBamC6h4A8Mw8wX2QLIt-K7CeGYBQ_wZNnUUzM,7268
+autoanki/BookCleaner/__init__.py,sha256=JmFQgOOvCFdbnn-gRhVq2C6I4TPD_aYKijsrJqrPnoE,37
+autoanki/DatabaseManager/DatabaseManager.py,sha256=5kY8yn9TUDKGZo7Qo0-7IEcxU9xb_rswzlJVP6NSTpQ,13082
+autoanki/DatabaseManager/__init__.py,sha256=S7S8ykq4z9urACvc85KyKmu3XNbD6AB5ZifVJbs9q5k,45
+autoanki/DeckManager/__init__.py,sha256=gqug78K5ZK8nBPsLhmKV1-3iYjK1b60IDSpSIh-OvWs,6414
+autoanki/Dictionary/CC-CEDictionary.py,sha256=l2-ovxmeePzx8mpezep72rYdosg5Gw85CyUC7L2hO9M,122
+autoanki/Dictionary/Dictionary.py,sha256=xExAfZFHGgGzRDnu9WrMU5JQUdFsbLSwY9dezYHOrtw,232
+autoanki/Dictionary/YellowBridgeDictionary.py,sha256=fu_WKdsM6g_HxEr3fumbFC7D6Fbi1E6aE_5y-l6nsC0,5580
+autoanki/Dictionary/__init__.py,sha256=ofdEL1vmG3eLQrPtJdch6kgpXxMwWPaMrRFJiFuzD3Q,58
+autoanki-1.0.0.dist-info/LICENSE.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoanki-1.0.0.dist-info/METADATA,sha256=oi71FwvqsXd7DJuCpd3PCC83fkWeziSBqONYoPa71Kk,4342
+autoanki-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+autoanki-1.0.0.dist-info/top_level.txt,sha256=XA6-IHWYRcKP93EC1b5B2o8vLT9M2QdpDfwoAkAVW6I,9
+autoanki-1.0.0.dist-info/RECORD,,
