@@ -1,0 +1,2 @@
+[console_scripts]
+nos = nos.cli.cli:app_cli
