@@ -1,0 +1,12 @@
+README.md
+setup.py
+pollev_history_compiler.egg-info/PKG-INFO
+pollev_history_compiler.egg-info/SOURCES.txt
+pollev_history_compiler.egg-info/dependency_links.txt
+pollev_history_compiler.egg-info/entry_points.txt
+pollev_history_compiler.egg-info/requires.txt
+pollev_history_compiler.egg-info/top_level.txt
+pollev_tools/__init__.py
+pollev_tools/reader.py
+pollev_tools/../resources/config.ini
+pollev_tools/../resources/html-styles.css
