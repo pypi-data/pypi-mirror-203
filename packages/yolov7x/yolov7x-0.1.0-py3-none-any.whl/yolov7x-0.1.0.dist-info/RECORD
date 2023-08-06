@@ -1,0 +1,7 @@
+yolov7x/__init__.py,sha256=BIYCj6TRzGWCEbYG5ZNaTHQ4am6c9QVbgS80hLG0blc,6
+yolov7x/common.py,sha256=SbBrU5DfatAVD1Qpmr1iAScVuVxuXdfF3zTZHoswLpw,84388
+yolov7x/experimental.py,sha256=Cx8RA4m3BPnCDfioyDs3v7RWj73Lpa76oFlFK00lEnY,10898
+yolov7x/yolo.py,sha256=7VMdAO2IaYZS1O3pX2qXpQQwSRnFeQT9Zqd5xXDGDgk,40024
+yolov7x-0.1.0.dist-info/METADATA,sha256=Up4zHsNNO752GN3nMrPQydXpAJ4-Ffonw4jlB5ScKbY,961
+yolov7x-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+yolov7x-0.1.0.dist-info/RECORD,,
