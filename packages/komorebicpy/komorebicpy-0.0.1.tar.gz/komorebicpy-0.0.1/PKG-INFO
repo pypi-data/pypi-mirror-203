@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: komorebicpy
+Version: 0.0.1
+Summary: Python wrapper around komorebic.exe
+License: MIT
+Author: Dmitrij Vinokour
+Author-email: dmitrij.vinokour@cojodi.com
+Requires-Python: >=3.8,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: easydict (>=1.10,<2.0)
+Requires-Dist: loguru (>=0.7.0,<0.8.0)
+Requires-Dist: pywin32 (>=306,<307)
+Requires-Dist: ujson (>=5.7.0,<6.0.0)
+Description-Content-Type: text/markdown
+
+
