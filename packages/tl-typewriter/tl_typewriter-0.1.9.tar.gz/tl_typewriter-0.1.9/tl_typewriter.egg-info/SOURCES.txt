@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+tl_typewriter.egg-info/PKG-INFO
+tl_typewriter.egg-info/SOURCES.txt
+tl_typewriter.egg-info/dependency_links.txt
+tl_typewriter.egg-info/entry_points.txt
+tl_typewriter.egg-info/requires.txt
+tl_typewriter.egg-info/top_level.txt
+typewriter/__main__.py
+typewriter/writer.py
