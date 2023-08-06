@@ -1,0 +1,2 @@
+[console_scripts]
+tl_typewriter = tl_typewriter.__main__:main
