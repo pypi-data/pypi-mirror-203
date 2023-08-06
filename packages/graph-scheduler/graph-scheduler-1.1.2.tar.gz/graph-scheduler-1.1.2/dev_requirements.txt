@@ -1,0 +1,9 @@
+networkx
+psyneulink >=0.9.1.0
+pytest
+pytest-benchmark
+pytest-cov
+pytest-helpers-namespace
+pytest-pycodestyle
+pytest-pydocstyle
+pytest-xdist
