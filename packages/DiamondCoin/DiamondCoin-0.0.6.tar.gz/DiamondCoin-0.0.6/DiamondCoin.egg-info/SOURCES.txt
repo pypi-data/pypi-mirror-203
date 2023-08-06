@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+DiamondCoin.egg-info/PKG-INFO
+DiamondCoin.egg-info/SOURCES.txt
+DiamondCoin.egg-info/dependency_links.txt
+DiamondCoin.egg-info/requires.txt
+DiamondCoin.egg-info/top_level.txt
