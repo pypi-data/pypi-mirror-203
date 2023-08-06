@@ -1,0 +1,14 @@
+musical_notes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+musical_notes/chords.py,sha256=29DCCQyXNMZNSxk5JnTlMA03nkZjFv4CQI9OJSuE7ic,1775
+musical_notes/cli.py,sha256=RIFq6YmBUNfktVcXK6-4_PLJBIDuta6RizygX4wY0CM,1505
+musical_notes/convert_degrees.py,sha256=G-5_VRJ_8S5ZoDv1S7Vr7-JrhUXTnb7Ym_or1G-bRn8,644
+musical_notes/half_step.py,sha256=o31bj6C3c7ACnAgfr7wFskGEP0w-QkgO4sCEhRInofI,609
+musical_notes/harmonic_field.py,sha256=lzup0m3IlDWH2QAwc5yogsAyZvT7hnhZTcWcyaK4kkI,1099
+musical_notes/minors.py,sha256=LSTWThUxEJEr6uEaIKIOT-gnqJT1HwKqkwUkPrbEN8s,461
+musical_notes/scales.py,sha256=QWvSDkNZzXNhUs1kUp_6ApirKrrwYttPBiJ-v3sKQkQ,1717
+musical_notes/triads.py,sha256=mZHTCVAkgPGmoGgssB1yKIO6KnXrvcY1n8gKwx_dEYw,1358
+musical_notes-0.1.0.dist-info/entry_points.txt,sha256=Rmwt3txs7TPzN0QO9ftuon90X711apJH3k4fiUgvaqw,55
+musical_notes-0.1.0.dist-info/LICENSE.md,sha256=N_miVL-TAliP0VMxYljzvu-BMWgrS9ZBYajO5LNHSFs,1101
+musical_notes-0.1.0.dist-info/METADATA,sha256=5s6jEN0kC8GVK2ShOQf0X7T9596L3T9e5Q8_R8NNFyg,15051
+musical_notes-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+musical_notes-0.1.0.dist-info/RECORD,,

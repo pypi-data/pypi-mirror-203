@@ -1,0 +1,3 @@
+[console_scripts]
+musical-notes=musical_notes.cli:app
+
