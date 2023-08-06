@@ -1,0 +1,15 @@
+include COPYING
+include NEWS.md
+include README.md
+include Makefile
+include doc/conf.py
+include doc/index.rst
+include doc/module.rst
+include doc/news.md
+include doc/readme.md
+include doc/contributing.md
+include doc/security.md
+include setup.cfg
+include tests/test_xattr.py
+include tests/__init__.py
+include xattr.c
