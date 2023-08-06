@@ -1,0 +1,13 @@
+openai
+langchain
+typer
+llama_index
+
+[docs]
+mkdocs-material
+mkdocs
+panel
+jupyter_bokeh
+
+[tests]
+pytest
