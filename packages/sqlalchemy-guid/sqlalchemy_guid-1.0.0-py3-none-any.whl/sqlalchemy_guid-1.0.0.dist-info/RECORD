@@ -1,0 +1,6 @@
+sqlalchemy_guid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlalchemy_guid/guid.py,sha256=mPglp2763qEQ-u72SP0ugsmeU_L9lnsIdo0i7XKywTk,1352
+sqlalchemy_guid-1.0.0.dist-info/LICENSE,sha256=nuDuFhV_Zj4WUMSa7VbC5B-3dJB6SflDHPvIaVyPXCw,1075
+sqlalchemy_guid-1.0.0.dist-info/METADATA,sha256=PWHKnDIaCIJKrlpbPWnKfrabUsMDnjDPCJQT83eAhu8,627
+sqlalchemy_guid-1.0.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+sqlalchemy_guid-1.0.0.dist-info/RECORD,,
