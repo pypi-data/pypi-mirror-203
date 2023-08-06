@@ -1,0 +1,8 @@
+README.md
+setup.py
+cupid/__init__.py
+cupid.egg-info/PKG-INFO
+cupid.egg-info/SOURCES.txt
+cupid.egg-info/dependency_links.txt
+cupid.egg-info/not-zip-safe
+cupid.egg-info/top_level.txt
