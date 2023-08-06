@@ -1,0 +1,2 @@
+[console_scripts]
+sql2gpt = sql2gpt:main
