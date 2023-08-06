@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: piig
+Version: 0.1.50
+Summary: Transpile python into cnc gcode.
+License: MIT
+Keywords: cnc,gcode
+Author: sac
+Author-email: sac@pobox.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: build (>=0.10.0,<0.11.0)
+Requires-Dist: bump2version (>=1.0.1,<2.0.0)
+Requires-Dist: coverage (>=7.2.3,<8.0.0)
+Requires-Dist: docopt (>=0.6.2,<0.7.0)
+Requires-Dist: loguru (>=0.7.0,<0.8.0)
+Requires-Dist: metadict (>=0.1.3,<0.2.0)
+Requires-Dist: pylama (>=8.4.1,<9.0.0)
+Requires-Dist: pylint (>=2.17.2,<3.0.0)
+Requires-Dist: pytest (>=7.3.1,<8.0.0)
+Requires-Dist: pytypes (>=1.0b10,<2.0)
+Requires-Dist: single-version (>=1.5.1,<2.0.0)
+Requires-Dist: twine (>=4.0.2,<5.0.0)
+Description-Content-Type: text/markdown
+
+
+
+**piig** turns Python into CNC G Code.
+
+
+
+Example:
+
+
+
+
