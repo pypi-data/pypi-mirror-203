@@ -1,0 +1,16 @@
+odoo/addons/purchase_stock_tier_validation/README.rst,sha256=_LV6CrRz0L1Wj6r_e1OLcNocMC2R13jTYQRgT8r1r70,3111
+odoo/addons/purchase_stock_tier_validation/__init__.py,sha256=eShEGRadAlxopoLqIQ4-N42FM7MWPSuBe0h_l1cXTPM,87
+odoo/addons/purchase_stock_tier_validation/__manifest__.py,sha256=gi69ED9aibZu08jXx-SOWQr_BezlVpf0KE3KiJJjJ4U,566
+odoo/addons/purchase_stock_tier_validation/i18n/purchase_stock_tier_validation.pot,sha256=YtKl2epTFAEk_JSbhWg5w8WxrP-XkQqob_sABQVXIs0,520
+odoo/addons/purchase_stock_tier_validation/models/__init__.py,sha256=q5cxK5Sx-TvF-M9-s4VZ2pz9rQnbp4dpsZ1H7aRM6n4,91
+odoo/addons/purchase_stock_tier_validation/models/stock_rule.py,sha256=Wv5BFXNXFHf1JG9CH2tNGGxi2sJYLq4NKfbTMmvRlVk,483
+odoo/addons/purchase_stock_tier_validation/readme/CONTRIBUTORS.rst,sha256=YtiBGRGK3x5LHL3icEXIoHbUg1JnGZh7RovHPIyECfk,47
+odoo/addons/purchase_stock_tier_validation/readme/DESCRIPTION.rst,sha256=Vz8eP6YoJK6soB_UiFXLjyiX8VLqMYGkXLCgp0NDo6c,389
+odoo/addons/purchase_stock_tier_validation/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/purchase_stock_tier_validation/static/description/index.html,sha256=8EMcbGxEGi3rRYj0wItnktw3tREgp_mQzS1CuEGjloo,12232
+odoo/addons/purchase_stock_tier_validation/tests/__init__.py,sha256=0xXRaSDy9b899pgcm89Or-5n1xpZSxfO9RpA-KzBlRk,50
+odoo/addons/purchase_stock_tier_validation/tests/test_purchase_stock_tier_validation.py,sha256=_ZnJ4MUUG6fUQFTzoDU7HUfHrkw_xhZJKWnyVQ8-kS4,3930
+odoo13_addon_purchase_stock_tier_validation-13.0.1.0.1.dev2.dist-info/METADATA,sha256=-cY1jJP-v5Ha9CBUtwl_aIz3nd5Tp98UCVR5oo-wjPI,3749
+odoo13_addon_purchase_stock_tier_validation-13.0.1.0.1.dev2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+odoo13_addon_purchase_stock_tier_validation-13.0.1.0.1.dev2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo13_addon_purchase_stock_tier_validation-13.0.1.0.1.dev2.dist-info/RECORD,,
