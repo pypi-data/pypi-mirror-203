@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sqapi
+Version: 0.1
+Summary: A python package that simplifies interactions with the SQUIDLE+ API. It can be used to integrate automated labelling from machine learning algorithms and plenty other cool things.
+Home-page: https://bitbucket.org/ariell/pysq
+Download-URL: https://bitbucket.org/ariell/pysq/get/bede6badfc1ea09cd45b3ae3d4bc3551daa0b3e0.tar.gz
+Author: Greybits Engineering
+License: MIT
+Keywords: SQUIDLE+,API,SQ,Machine Learning
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
