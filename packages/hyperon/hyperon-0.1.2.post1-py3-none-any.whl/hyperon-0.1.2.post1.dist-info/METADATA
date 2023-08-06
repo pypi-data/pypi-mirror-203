@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: hyperon
+Version: 0.1.2.post1
+Summary: Hyperon API in Python
+Provides-Extra: dev
+Requires-Dist: coverage ; extra == 'dev'
+
