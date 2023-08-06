@@ -1,0 +1,5 @@
+bdb: 'bash debugger'
+kamon: 'kafka queue monitor by container'
+nalog: 'nano-logger'
+watson: 'watson'
+pgrek: 'process grep-and-kill'
