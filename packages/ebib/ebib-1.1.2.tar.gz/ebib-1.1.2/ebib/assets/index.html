@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>$title</title>
+		<style>
+			body {
+				margin: 0;
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+				background-color: #DDDDDD;
+			}
+			#head {
+				text-align: center;
+				background-color: #FFCF00;
+				min-height: 15vh;
+				line-height: 15vh;
+			}
+			h1 {
+				margin: 0;
+				display: inline-block;
+				line-height: normal;
+				font-size: 10vh;
+				vertical-align: middle;
+			}
+			h2 {
+				margin: 0.5em 0.3em 0.3em 0.3em;
+			}
+			#searchbar {
+				margin: 1em;
+				padding: 0.5em;
+				border-radius: 0.3em;
+				background-color: #FFFFFF;
+				display: flex;
+				gap: 0.5em;
+			}
+			#query {
+				min-width: 40vw;
+			}
+			#export {
+				margin-left: auto;
+			}
+			#main-flex {
+				display: flex;
+				align-items: flex-start;
+			}
+			#side-panel {
+				display: inline-block;
+				width: 15vw;
+				background-color: #FFFFFF;
+				border-radius: 0.3em;
+				margin: 1em;
+				padding: 0.5em;
+			}
+			#main-panel {
+				display: inline-block;
+				background-color: #FFFFFF;
+				border-radius: 0.3em;
+				margin: 1em;
+				padding: 0.5em;
+				flex-grow: 1;
+			}
+			.expandable {
+				-webkit-user-select: none; /* Safari 3.1+ */
+				-moz-user-select: none; /* Firefox 2+ */
+				-ms-user-select: none; /* IE 10+ */
+				user-select: none;
+			}
+			.expandable::before {
+				content: "\25B6";
+				color: black;
+				display: inline-block;
+				margin-right: 0.3em;
+				transition: 0.5s;
+			}
+			.expandable:hover {
+				cursor: pointer;
+			}
+			.expanded::before {
+				-ms-transform: rotate(90deg); /* IE 9 */
+				-webkit-transform: rotate(90deg); /* Safari */
+				transform: rotate(90deg);
+			}
+			.expand-content button {
+				background: none;
+				border: none;
+				margin: 0.2em 0.2em 0.2em 1em;
+				font-size: 1em;
+				display: none;
+			}
+			.expanded-content button {
+				display: block;
+				left: 0;
+			}
+			.expand-content button:hover {
+				text-decoration: underline;
+				cursor: pointer;
+			}
+			.expand-content button::before {
+				content: "\2610";
+				color: black;
+				display: inline-block;
+				margin-right: 0.3em;
+			}
+			.expand-content .selected::before {
+				content: "\2611";
+			}
+			.article {
+				margin: 0em 0em 1em 0em;
+				display: grid;
+				grid-template-columns: 2em auto 10em;
+				gap: 0.2em;
+				border-bottom: solid #D0D0D0;
+				padding: 0.5em 0;
+			}
+			.cbox {
+				grid-column: 1;
+			}
+			.doi {
+				grid-column: 2;
+			}
+			.date {
+				grid-column: 3;
+			}
+			.title {
+				grid-column: 2 / span 2;
+			}
+			.authors {
+				grid-column: 2 / span 2;
+			}
+		</style>
+	</head>
+	<body>
+		<section id="head">
+			<h1>PAPERS</h1>
+		</section>
+		<div id="searchbar">
+			<form id="form">
+			<input type="text" id="query" aria-label="Start typing a query here to begin Search"/>
+			<button type="button" onclick="document.getElementById('query').value = ''">&#x274C;</button>
+			<button type="submit" aria-label="submit">&#x1f50e;</button>
+			</form>
+			<button id="export" onclick="export_selected()">Export 0 items</button>
+		</div>
+		<div id="main-flex">
+			<div id="side-panel">
+				<div id="tags" class="expand-content">
+					<h2 class="expandable">Tags</h2>
+				</div>
+				<div id="authors" class="expand-content">
+					<h2 class="expandable">Authors</h2>
+				</div>
+			</div>
+
+			<div id="main-panel">
+			</div>
+		</div>
+
+		<script>
+			const expandables = document.getElementsByClassName('expandable');
+			for (let i = 0; i < expandables.length; i++) {
+				expandables[i].addEventListener('click', function () {
+					this.parentElement.classList.toggle('expanded-content');
+					this.classList.toggle('expanded');
+				});
+			}
+			document.getElementById('form').onsubmit = (e) => {
+				e.preventDefault();
+				search_query();
+			};
+		</script>
+		<script type="module" src="index.js"></script>
+	</body>
+</html>	
