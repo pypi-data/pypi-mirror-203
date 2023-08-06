@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: libsigopt
+Version: 1.0.0
+Summary: SigOpt computation libraries
+Home-page: https://sigopt.org
+Maintainer: SigOpt
+Maintainer-email: support@sigopt.com
+License: Apache-2.0
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: jsonschema (<4,>=3.0.1)
+Requires-Dist: numpy (<1.23,>=1.22.4)
+Requires-Dist: qmcpy (==1.2)
+Requires-Dist: scipy (<2,>=1.10.1)
+
+SigOpt computation libraries
