@@ -1,0 +1,7 @@
+[build-system]
+build-backend = 'setuptools.build_meta'
+requires = ['setuptools > 50']
+
+[project]
+name = "yt-dlp-custom"
+version = "0.0.1"
