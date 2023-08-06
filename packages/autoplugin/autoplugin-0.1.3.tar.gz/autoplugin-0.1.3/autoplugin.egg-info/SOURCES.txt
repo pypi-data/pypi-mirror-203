@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+autoplugin/__init__.py
+autoplugin/autoplugin.py
+autoplugin/basic_app.py
+autoplugin/testing.py
+autoplugin.egg-info/PKG-INFO
+autoplugin.egg-info/SOURCES.txt
+autoplugin.egg-info/dependency_links.txt
+autoplugin.egg-info/requires.txt
+autoplugin.egg-info/top_level.txt
