@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pyleiden
+Version: 0.1.0
+Summary: pyLeiden: a CLI tool for clustering with the Leiden algorithm
+Author-email: Antonio Camargo <antoniop.camargo@gmail.com>
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: igraph >=0.10.3
+Project-URL: Home, https://github.com/apcamargo/pyleiden
