@@ -1,0 +1,10 @@
+MySQLPandas/__init__.py,sha256=kmpSoWIBulap_8Pe2U_nn60lmJ9oikKg9HXG1CEcVM8,294
+MySQLPandas/core.py,sha256=Nyz5hJWi0bnXWHrczSMHOAwx-DEFkv7BtmFmyq_9ZQI,14088
+MySQLPandas/lib/DataFrameClass.py,sha256=eDmDjzyTLIDX9HXQ4hKZJZYUAg5NYlmLTJW4eytEeyg,6471
+MySQLPandas/lib/ErrorClass.py,sha256=ViqtZrnF7XWSqOzlP3OIuPVNPYz2coFrmzBjiae8DLw,92
+MySQLPandas/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MySQLPandas-0.0.18.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+MySQLPandas-0.0.18.dist-info/METADATA,sha256=8XL1nYPsXq3-gEpiSR8gvQUk_o7ROIMgxKcKxMYym70,3576
+MySQLPandas-0.0.18.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+MySQLPandas-0.0.18.dist-info/top_level.txt,sha256=kWMwcPGmEF7HmPwYLCP0Z2MWxPJUuvfIWOnVlV4JFWU,28
+MySQLPandas-0.0.18.dist-info/RECORD,,
