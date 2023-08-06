@@ -1,0 +1,2 @@
+[console_scripts]
+odbc2orm = odbc2orm.__main__:main
