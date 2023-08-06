@@ -1,0 +1,39 @@
+  [
+    {
+      "name": "libcomcat",
+      "description": "Python wrapper around ComCat web API",
+      "version": "main",
+      "status": "Beta",
+      "organization": "U.S. Geological Survey",
+      "vcs": "git",
+      "repositoryURL": "https://code.usgs.gov/ghsc/esi/libcomcat-python.git",
+      "homepageURL": "https://code.usgs.gov/ghsc/esi/libcomcat-python",
+      "downloadURL": "https://code.usgs.gov/ghsc/esi/libcomcat-python/-/archive/main/libcomcat-python-main.zip",
+      "disclaimerURL": "https://code.usgs.gov/ghsc/esi/libcomcat-python/-/raw/main/DISCLAIMER.md",
+      "permissions": {
+        "licenses": [
+          {
+            "name": "Public Domain",
+            "URL": "https://code.usgs.gov/ghsc/esi/libcomcat-python/-/raw/main/LICENSE.md"
+          }
+        ],
+        "usageType": "openSource",
+        "exemptionText": null
+      },
+      "laborHours": 1,
+      "languages": [ "Python" ],
+      "tags": [
+        "earthquake",
+        "catalog",
+        "search",
+        "download"
+      ],
+      "contact": {
+        "name": "Mike Hearne",
+        "email": "mhearne@usgs.gov"
+      },
+      "date": {
+        "metadataLastUpdated": "2017-09-21"
+      }
+    }
+  ]

@@ -1,0 +1,16 @@
+*.pyc
+build
+*~
+.DS_Store
+.ipynb_checkpoints/
+.cache
+.coverage
+coverage.xml
+htmlcov
+.pytest_cache/
+libcomcat_python.egg-info/
+libcomcat.egg-info/
+src/libcomcat.egg-info/PKG-INFO
+src/*.egg-info
+.vscode/
+dist/

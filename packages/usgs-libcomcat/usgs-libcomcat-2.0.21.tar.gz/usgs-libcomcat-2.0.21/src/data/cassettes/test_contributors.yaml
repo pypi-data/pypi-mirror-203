@@ -1,0 +1,66 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://earthquake.usgs.gov/fdsnws/event/1/contributors
+  response:
+    body:
+      string: '<?xml version="1.0"?>
+
+        <Contributors><Contributor>admin</Contributor><Contributor>ak</Contributor><Contributor>at</Contributor><Contributor>atlas</Contributor><Contributor>av</Contributor><Contributor>cgs</Contributor><Contributor>ci</Contributor><Contributor>ew</Contributor><Contributor>hv</Contributor><Contributor>ismp</Contributor><Contributor>ld</Contributor><Contributor>mb</Contributor><Contributor>nc</Contributor><Contributor>nm</Contributor><Contributor>nn</Contributor><Contributor>np</Contributor><Contributor>official</Contributor><Contributor>ok</Contributor><Contributor>pr</Contributor><Contributor>prod01-pdl01.cr.usgs.gov</Contributor><Contributor>prod02-pdl01.cr.usgs.gov</Contributor><Contributor>pt</Contributor><Contributor>se</Contributor><Contributor>tx</Contributor><Contributor>us</Contributor><Contributor>uu</Contributor><Contributor>uw</Contributor></Contributors>'
+    headers:
+      Access-Control-Allow-Headers:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Max-Age:
+      - '86400'
+      Cache-Control:
+      - public, max-age=60
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '893'
+      Content-Type:
+      - application/xml
+      Date:
+      - Tue, 20 Dec 2022 22:33:48 GMT
+      Expires:
+      - Tue, 20 Dec 2022 22:34:48 GMT
+      Last-Modified:
+      - Tue, 20 Dec 2022 22:33:48 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 ead5a4c5fbab9ab09302c9bd4c52b4b4.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - RMwAi0lsZyu0F9QgeSIjKx0e8zHyqt3XdTjf97i6raRPtekQOVqRyg==
+      X-Amz-Cf-Pop:
+      - IAD50-C2
+      X-Cache:
+      - Miss from cloudfront
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1
