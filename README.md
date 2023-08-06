@@ -3,36 +3,10 @@
 This repo contains 40000 packages uploaded to PyPI between 
 2023-04-14 08:57 and 2023-04-19 20:31.
 
-The repo is 49% (19999/40000) complete.
+The repo is 54% (21999/40000) complete.
 
-## Packages:
+Package contents can be found [in the code branch](https://github.com/pypi-data/pypi-mirror-203/tree/code/packages).
 
-| Name  | Count |
-| ----- | ----- |
-| hiddifypanel | 311 |
-| jina | 226 |
-| django-trackings | 225 |
-| pydantic-core | 162 |
-| pyplasm | 150 |
-| kolo | 114 |
-| rabbitizer | 112 |
-| tmu | 108 |
-| pygptj | 104 |
-| pyamg | 103 |
-| robyn | 102 |
-| pyopenjtalk-prebuilt | 102 |
-| xxtea | 98 |
-| tract | 92 |
-| rapidfuzz | 92 |
-| webp-support | 90 |
-| arraymap | 88 |
-| libdeeplake | 78 |
-| pyarmor.cli.core | 76 |
-| brightest-path-lib | 75 |
-| websockets | 70 |
-| ddtrace | 69 |
-| dqrobotics | 68 |
-| casers | 68 |
-| hubert-envs | 66 |
+A browsable package list for all repositories [all packages here](https://pypi-data.github.io/website/repositories/pypi-mirror-203).
 
 
