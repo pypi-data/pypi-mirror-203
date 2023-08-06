@@ -1,0 +1,2 @@
+[intake.drivers]
+odbc = intake_odbc.intake_odbc:ODBCPartitionedSource
