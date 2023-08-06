@@ -1,0 +1,17 @@
+pydicts/__init__.py,sha256=WHa-T0n8Fh400WXdmzMrjyMAgkM29J8anffT8naQpOU,144
+pydicts/classes.py,sha256=TH2-62epmkBSteRLX6KuUXEQkx7LiiBmO_pqytN9xzQ,2814
+pydicts/locale/en/LC_MESSAGES/pydicts.mo,sha256=-5Hgff2pmCFFbfqMcHAYXFXkXlPdLpoT0F_kuCmmPwM,424
+pydicts/locale/en.po,sha256=iQd3zNctpjlvAm1LA1MxAq2imsN7GQKqcEPdk9gdXpY,738
+pydicts/locale/es/LC_MESSAGES/pydicts.mo,sha256=faYIF4GvuyvZvyUGmD4Z7f0fCP5_4T2m1wGmpUknNlE,513
+pydicts/locale/es.po,sha256=WD5_JvG2vGOplPo_eVipNFVukH7Obkf3jBfBnw_CW-4,2755
+pydicts/locale/pydicts.pot,sha256=iXhJeaNJ1EINW7G8Y4pLxyDEqLYVn3GEZKyKM5FPL44,633
+pydicts/lod.py,sha256=MFY87PCh716MREhSwV-3YZX6WUAAzRiuYmcho_-aiEY,5550
+pydicts/lod_xyv.py,sha256=9cihUKvDsmuGu-iaKGSLIAgGcOAhtLGX1U6wdeMD2vs,1052
+pydicts/lod_ymv.py,sha256=3rq2Pn2m5PGMXYwApCbadV4ZcgfRj2PFHrF_qnct9Ck,8792
+pydicts/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydicts/tests/test_lod.py,sha256=1OjOWnVSrdjxGr-2z0ENNek07vMF_eVSTwAQiG57ITk,1064
+pydicts/tests/test_lod_ymv.py,sha256=_mvgzV_n2r1UeXB5c8PrpiMvVmbq-t20UyLa-_UivKU,409
+pydicts-0.4.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pydicts-0.4.0.dist-info/METADATA,sha256=caAvlt6igJNl1JvdcHpShUgxHNjDoSx3myplE0accxI,3901
+pydicts-0.4.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+pydicts-0.4.0.dist-info/RECORD,,
