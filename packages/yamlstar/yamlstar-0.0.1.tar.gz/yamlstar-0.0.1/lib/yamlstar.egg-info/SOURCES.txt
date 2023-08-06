@@ -1,0 +1,12 @@
+.long_description.md
+MANIFEST.in
+ReadMe.md
+setup.cfg
+setup.py
+lib/yamlstar/__init__.py
+lib/yamlstar.egg-info/PKG-INFO
+lib/yamlstar.egg-info/SOURCES.txt
+lib/yamlstar.egg-info/dependency_links.txt
+lib/yamlstar.egg-info/requires.txt
+lib/yamlstar.egg-info/top_level.txt
+test/test.py
