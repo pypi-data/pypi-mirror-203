@@ -1,0 +1,8 @@
+
+[packaging]
+build
+twine
+pip-autoremove
+
+[tests]
+pytest
