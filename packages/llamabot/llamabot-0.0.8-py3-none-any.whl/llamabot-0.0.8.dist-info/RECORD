@@ -1,0 +1,11 @@
+llamabot/__init__.py,sha256=NvkylZym5CPIH31pvRn8LD87qEmKurxA0Y7FxSHeY-Y,284
+llamabot/bot.py,sha256=0eSmGYvVcV9bQ8rgwB6_7FDfk6gENwm0c3eOW3q5_ik,7436
+llamabot/cli.py,sha256=rPn6sM37-fh4QMgK0gii2F4WUuhZxz440YEQvl6LwRY,652
+llamabot/preprocessing.py,sha256=OCaLSNliCUgd3kOEqP-fIwrFPQCc31hz8ZDn5ry6V48,35
+llamabot/schemas.py,sha256=_dYw3aCpotoutfOVwvHkDr_oE1ACMaB0RNpjEwuX8CI,182
+llamabot/utils.py,sha256=l1LvaBoIFhEBcVWht_LNO0jtFYaHu1fj646HaG4nYBs,30
+llamabot-0.0.8.dist-info/METADATA,sha256=7Wqs7A8KF-QZftLaMtOZ5qgfVTRPwc3TxXNukWX5tw8,407
+llamabot-0.0.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+llamabot-0.0.8.dist-info/entry_points.txt,sha256=Zb1vXJlvgR7kK6HzXVgZlhMphkVvk--lqg6gHDqb0LU,46
+llamabot-0.0.8.dist-info/top_level.txt,sha256=_gsoRb8h5xRbEsBN5hGf_sh958mchqHJvg8GTseY5qg,9
+llamabot-0.0.8.dist-info/RECORD,,
