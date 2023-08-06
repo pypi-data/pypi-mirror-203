@@ -1,0 +1,25 @@
+[project]
+name = "HTMLDocumentGenerator"
+version = "1.0.3"
+authors = [
+  { name="Ouedraogo Somkieta Rahim Alex", email="s.r.a.ouedraogo@gmail.com" },
+]
+description = "The HTMLDocumentGenerator is a Python class that allows you to easily generate HTML documents with customizable tags and content. It provides a simple and intuitive way to create HTML documents for websites or other applications."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    'importlib-metadata; python_version<"3.6"',
+]
+
+[project.urls]
+"Homepage" = "https://github.com/somkietacode/HTMLDocumentGenerator"
+"Bug Tracker" = "https://github.com/somkietacode/HTMLDocumentGenerator/issues"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

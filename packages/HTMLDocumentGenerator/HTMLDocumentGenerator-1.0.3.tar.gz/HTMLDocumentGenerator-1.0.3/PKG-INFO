@@ -1,0 +1,151 @@
+Metadata-Version: 2.1
+Name: HTMLDocumentGenerator
+Version: 1.0.3
+Summary: The HTMLDocumentGenerator is a Python class that allows you to easily generate HTML documents with customizable tags and content. It provides a simple and intuitive way to create HTML documents for websites or other applications.
+Author: Ouedraogo Somkiéta Rahim Alex
+Author-email: Ouedraogo Somkieta Rahim Alex <s.r.a.ouedraogo@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/somkietacode/HTMLDocumentGenerator
+Project-URL: Bug Tracker, https://github.com/somkietacode/HTMLDocumentGenerator/issues
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## HTMLDocumentGenerator
+
+The `HTMLDocumentGenerator` is a Python class that allows you to easily generate HTML documents with customizable tags and content. It provides a simple and intuitive way to create HTML documents for websites or other applications.
+
+### Features
+- Add HTML tags with custom tag names, attributes, and content
+- Set attributes for the `<head>` tag, such as title, style, etc.
+- Generate a complete HTML document with the `<!DOCTYPE>`, `<html>`, `<head>`, and `<body>` tags
+- Generate a string representation of the HTML document
+- NEW FEATURE: Write the generated HTML document to an HTML file using the `open` function
+
+### Example Usage
+
+```python
+from html_document_generator import HTMLDocumentGenerator, HTMLTagGenerator
+
+# Create an instance of HTMLDocumentGenerator
+doc_generator = HTMLDocumentGenerator()
+doc_generator.set_attribute('head', 'title', 'My Website')
+
+# Generate the header tag
+header_tag = HTMLTagGenerator(tag_name='header', tag_content='<h1>Welcome to My Website</h1>')
+doc_generator.add_tag(header_tag)
+
+# Generate the nav tag
+nav_tag = HTMLTagGenerator(tag_name='nav', tag_content='<ul><li>Home</li><li>Contact</li></ul>')
+doc_generator.add_tag(nav_tag)
+
+# Generate the main tag
+main_tag = HTMLTagGenerator(tag_name='main', tag_content='<p>Explore the content of my website!</p>')
+doc_generator.add_tag(main_tag)
+
+# Generate the footer tag
+footer_tag = HTMLTagGenerator(tag_name='footer', tag_content='<p>Contact information: email@example.com, Phone: 123-456-7890</p>')
+doc_generator.add_tag(footer_tag)
+
+# Generate the complete HTML document
+html_doc = doc_generator.generate_document()
+
+# Write the generated HTML document to an HTML file
+with open('index.html', 'w') as file:
+    file.write(html_doc)
+
+print('HTML file created successfully!')
+```
+
+### Exemple 2
+
+```python
+from html_document_generator import HTMLDocumentGenerator, HTMLTagGenerator
+
+# Define the content for the home page
+header_content = '<h1>Welcome to Farmer\'s Farm</h1>'
+nav_content = '<ul><li>Home</li><li>Contact</li></ul>'
+main_content = '<p>Explore the freshest produce from our farm!</p>'
+footer_content = '<p>Contact information: Email: info@farmersfarm.com, Phone: 123-456-7890</p>'
+
+# Create an instance of HTMLDocumentGenerator for home page
+home_doc_generator = HTMLDocumentGenerator()
+home_doc_generator.set_attribute('head', 'title', 'Home | Farmer\'s Farm')
+home_doc_generator.set_style('body { background-color: lightgreen; }')
+
+# Generate the header tag for home page
+header_tag = HTMLTagGenerator(tag_name='header', tag_content=header_content)
+home_doc_generator.add_tag(header_tag)
+
+# Generate the nav tag for home page
+nav_tag = HTMLTagGenerator(tag_name='nav', tag_content=nav_content)
+home_doc_generator.add_tag(nav_tag)
+
+# Generate the main tag for home page
+main_tag = HTMLTagGenerator(tag_name='main', tag_content=main_content)
+home_doc_generator.add_tag(main_tag)
+
+# Generate the footer tag for home page
+footer_tag = HTMLTagGenerator(tag_name='footer', tag_content=footer_content)
+home_doc_generator.add_tag(footer_tag)
+
+# Define the content for the contact page
+contact_header_content = '<h1>Contact Us</h1>'
+contact_form_content = '<form action="/submit" method="post">' \
+                       '<label for="name">Name:</label>' \
+                       '<input type="text" id="name" name="name" required>' \
+                       '<label for="email">Email:</label>' \
+                       '<input type="email" id="email" name="email" required>' \
+                       '<label for="message">Message:</label>' \
+                       '<textarea id="message" name="message" required></textarea>' \
+                       '<input type="submit" value="Submit">' \
+                       '</form>'
+contact_footer_content = '<p>Contact information: Email: info@farmersfarm.com, Phone: 123-456-7890</p>'
+
+# Create an instance of HTMLDocumentGenerator for contact page
+contact_doc_generator = HTMLDocumentGenerator()
+contact_doc_generator.set_attribute('head', 'title', 'Contact | Farmer\'s Farm')
+contact_doc_generator.set_style('body { background-color: lightblue; }')
+
+# Generate the header tag for contact page
+contact_header_tag = HTMLTagGenerator(tag_name='header', tag_content=contact_header_content)
+contact_doc_generator.add_tag(contact_header_tag)
+
+# Generate the nav tag for contact page
+contact_nav_tag = HTMLTagGenerator(tag_name='nav', tag_content=nav_content)
+contact_doc_generator.add_tag(contact_nav_tag)
+
+# Generate the main tag for contact page
+contact_main_tag = HTMLTagGenerator(tag_name='main', tag_content=contact_form_content)
+contact_doc_generator.add_tag(contact_main_tag)
+
+# Generate the footer tag for contact page
+contact_footer_tag = HTMLTagGenerator(tag_name='footer', tag_content=contact_footer_content)
+contact_doc_generator.add_tag(contact_footer_tag)
+
+
+# Write the generated HTML document to an HTML file
+with open('home.html', 'w') as file:
+    file.write(home_doc_generator.generate_document())
+    print('HTML file created successfully')
+    file.close()
+
+with open('contact.html', 'w') as file:
+    file.write(contact_doc_generator.generate_document())
+    print('HTML file created successfully')
+    file.close()
+```
+
+### Requirements
+
+Python 3.6+
+No external dependencies
+License
+This class is released under the MIT License.
+
+### Contributions
+Contributions are welcome! Please feel free to open issues or submit pull requests to improve this class.
