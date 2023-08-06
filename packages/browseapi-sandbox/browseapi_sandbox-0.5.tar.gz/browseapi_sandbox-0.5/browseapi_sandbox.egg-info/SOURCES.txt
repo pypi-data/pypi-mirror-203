@@ -1,0 +1,14 @@
+LICENSE.txt
+README.rst
+setup.py
+browseapi/__init__.py
+browseapi/client.py
+browseapi/containers.py
+browseapi/exceptions.py
+browseapi/tests/__init__.py
+browseapi/tests/test_client.py
+browseapi_sandbox.egg-info/PKG-INFO
+browseapi_sandbox.egg-info/SOURCES.txt
+browseapi_sandbox.egg-info/dependency_links.txt
+browseapi_sandbox.egg-info/requires.txt
+browseapi_sandbox.egg-info/top_level.txt
