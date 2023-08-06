@@ -1,0 +1,9 @@
+Pillow>=8.1.2
+
+[test]
+mock
+pytest
+pytest-asyncio
+pytest-cov
+requests
+testpath
