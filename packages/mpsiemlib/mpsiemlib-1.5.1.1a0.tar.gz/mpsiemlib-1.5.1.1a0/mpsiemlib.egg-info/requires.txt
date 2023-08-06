@@ -1,0 +1,4 @@
+requests
+PyYAML
+pytz
+elasticsearch>=7.17.9
