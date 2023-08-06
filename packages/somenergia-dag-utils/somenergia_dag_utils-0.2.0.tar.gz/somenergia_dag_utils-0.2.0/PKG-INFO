@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: somenergia-dag-utils
+Version: 0.2.0
+Summary: utilities to run along with airflow dags used in somenergia
+Author: Equip Dades
+Author-email: dades@somenergia.coop
+Requires-Python: >=3.8.1,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: apache-airflow (<2.5.3)
+Description-Content-Type: text/markdown
+
+# somenergia-dag_utils
+
+Dag tasks to check and update github repositories for CDD
+
