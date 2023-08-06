@@ -1,0 +1,17 @@
+ledes_parser/__init__.py,sha256=mkOz_qLldyzXT13G6iEvQy8KvYiE2SLf40w54OTXFS4,1144
+ledes_parser/base_ledes_parser.py,sha256=cQG30ZttWe2VrZLO4wkkzp9c-R1eUA67DsD8w87EOEI,229
+ledes_parser/ledes_1998BIV2_parser.py,sha256=Kfwg8Mtg4gnAwF_znZ5-5vZgvbZKgAjlncBDjK3kkJ8,655
+ledes_parser/ledes_1998BI_parser.py,sha256=0-lp-AM4K4cXZl3vM-3pk3YrQSFj7jXHUC_-AH-VPYU,400
+ledes_parser/ledes_1998B_parser.py,sha256=RiHOkC_JG8bFL1PmPQ017Tr9X7pcBkqlfjdOta7Weww,2557
+ledes_parser/ledes_dynamic_parser.py,sha256=tqnPn-rqyhbTTq0kRHp6Wb21A8Of9bvL67HHEuGm1Ic,955
+ledes_parser/typings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ledes_parser/typings/invoice_types.py,sha256=oNWuBGfJ8Vc3SPyxzXvO1hij4tz-bhLx9wLU5QDF2bo,961
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_dynamic_ledes_parser.py,sha256=iOGE2akf_Oylo0OpclAO_XcRTrVihrRLkaK9yV4kaM4,951
+tests/test_ledes_1998B_parser.py,sha256=0oK8YBURkZEkAkyNXOoEDl5pz2IxzEfQ4YheEtB5LbQ,3216
+tests/test_parse_leads_file.py,sha256=qAgppnkfYfLcOA3XbkZoNSwgxmou5rEixrnWm1IkOQw,241
+ledes_parser-1.0.1.dist-info/LICENSE,sha256=eIjgBoNGlBx6Bu2_UfU1SxWTzdTLA9XrR5ZTcrScTmg,1070
+ledes_parser-1.0.1.dist-info/METADATA,sha256=yFpafiGOfHrfwsKcS9853s0pH7UvViCJjXKOQz8AgLg,245
+ledes_parser-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ledes_parser-1.0.1.dist-info/top_level.txt,sha256=4IggVJsWgF2AkkJGoHfPRN5aombPeLKSartmvK6sexI,19
+ledes_parser-1.0.1.dist-info/RECORD,,
