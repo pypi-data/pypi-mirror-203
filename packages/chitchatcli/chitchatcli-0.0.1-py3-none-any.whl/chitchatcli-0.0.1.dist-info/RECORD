@@ -1,0 +1,15 @@
+chitchatcli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chitchatcli/__main__.py,sha256=Ef4DdkaLRuHA1zItc8PVk0xnEBhR_xXIg1Kg9K9Cyq4,6639
+chitchatcli/globalvaribles.py,sha256=_bIqCfwPA7RNxFyJoNbSFCViZrv0jnL1PsIByeXW1tw,836
+chitchatcli/utilis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chitchatcli/utilis/apicalls.py,sha256=9R54pX7UuPoNlc8DwizHrWeaEtpduEMrv9cgK_9b3SM,7824
+chitchatcli/utilis/event.py,sha256=ukybVhUymSDpWyvCT0h6Tu_bLa2wS569FJ8dB3AqDH4,1017
+chitchatcli/utilis/helper_functions.py,sha256=twK936HPMoj5ub7PsSJJw2tnUEYa9dfvVpXh5sfSm6M,3457
+chitchatcli/utilis/process.py,sha256=GW_FhYROcwVCgNdhQ_thi2COT1pMGTtCi8T2_VVOxrU,2786
+chitchatcli/utilis/screen_functions.py,sha256=1aavjby9zolg2JIXYJtuQVJtqd5CuTy9c8cjm5uawbU,18393
+chitchatcli/utilis/storage.py,sha256=4-Tg6_9ov0S52lz2SMKSL_H6bRdmuAlY83tvjeQEE6E,1068
+chitchatcli-0.0.1.dist-info/LICENSE.txt,sha256=wbtx2rKPKjOc6BYYOHVeE4bI9n74alr2O_8WtYuzNEI,1064
+chitchatcli-0.0.1.dist-info/METADATA,sha256=SCW-QBhG1wtMYubnuFTGSQ6hp6RJnFVB8T7ewJRKrAY,2040
+chitchatcli-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+chitchatcli-0.0.1.dist-info/top_level.txt,sha256=vwFerAanSvlpMlZgj6hxWF1jbRlQmvMmvHxCtsQ54Q8,12
+chitchatcli-0.0.1.dist-info/RECORD,,
