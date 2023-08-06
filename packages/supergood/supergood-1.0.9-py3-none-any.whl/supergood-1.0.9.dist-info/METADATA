@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: supergood
+Version: 1.0.9
+Summary: The Python client for Supergood
+Author: Alex Klarfeld
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv (==1.0.0)
+Requires-Dist: jsonpickle
+Requires-Dist: urllib3 (==1.26.9)
+Requires-Dist: requests (==2.28.0)
+Requires-Dist: aiohttp (==3.8.4)
+Requires-Dist: pydash (==7.0.1)
+Provides-Extra: test
+Requires-Dist: requests (==2.28.0) ; extra == 'test'
+Requires-Dist: urllib3 (==1.26.9) ; extra == 'test'
+Requires-Dist: pytest (==7.2.1) ; extra == 'test'
+Requires-Dist: pytest-httpserver (==1.0.6) ; extra == 'test'
+Requires-Dist: python-dotenv (==1.0.0) ; extra == 'test'
+Requires-Dist: Werkzeug ; extra == 'test'
+Requires-Dist: jsonpickle (==3.0.1) ; extra == 'test'
+Requires-Dist: pytest-mock (==3.10.0) ; extra == 'test'
+
+# Supergood Python Client
+
+Monitor the usage, spend and performance of your external API's in 5 minutes flat.
+
+1. Sign-up for an account on supergood.ai
+2. Create your organization
+3. Head to the "API Keys" side panel, and generate your CLIENT_ID and CLIENT_SECRET
+4. In your codebase, run `pip -m install supergood`
+5. Add the above CLIENT_ID and CLIENT_SECRET as environment variables in your codebase as `SUPERGOOD_CLIENT_ID` and `SUPERGOOD_CLIENT_SECRET` respectively.
+6. At the top of any file you're making external API calls, add the following two lines:
+
+```
+from supergood import Client
+
+Client()
+```
+... and that's it!
+
+Head back to https://dashboard.supergood.ai to start monitoring your external API calls!
