@@ -1,0 +1,28 @@
+[tool.coverage.paths]
+source = ["basicnanoclient", "*/site-packages"]
+
+[tool.coverage.report]
+show_missing = true
+
+[project]
+name = "basicnanoclient"
+version = "0.0.4"
+description = "Nano RPC python client"
+urls = {'Bug Tracker' = 'https://github.com/nanoswap/basicnanoclient/issues'}
+classifiers = [
+    'Programming Language :: Python :: 3',
+    'License :: OSI Approved :: The Unlicense (Unlicense)'
+]
+authors = [{'name' = 'Nathaniel Schultz', 'email' = 'nate@nanoswap.finance'}]
+requires-python = '>=3.11'
+readme = 'README.md'
+license = {'file' = 'LICENSE'}
+dependencies = [
+    "requests",
+    "setuptools",
+    "jinja2==2.11",
+    "markupsafe==1.1.1",
+    "mkdocs",
+    "mkdocstrings>=0.16.1",
+    "mkdocstrings-python"
+]
