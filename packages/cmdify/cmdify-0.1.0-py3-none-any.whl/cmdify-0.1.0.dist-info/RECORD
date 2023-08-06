@@ -1,0 +1,12 @@
+cmdify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cmdify/core.py,sha256=v0GWswy776Z1llQfttdwarNrbBlqWM65hqtbpBS-qdk,3359
+cmdify/identifiers.py,sha256=X310PPjVst2ygPe4rBXRpUorhNO6YEwIDvZgJJVy5Ck,5884
+cmdify/interpreters.py,sha256=1OqPA8PlnFYAqUhzDM75JUqRCGy5R2f0l9KQDUZbM8M,2247
+cmdify/lexica.py,sha256=fVAdRSdZcrgp6whTt-swVUobnrpRnqqxyMM3ggYxuuk,3433
+cmdify/preprocessors.py,sha256=ZRlJ6rnBjAIMvMt2ss4HbyTtBfH4PG3p6Dj6hzCKge8,498
+cmdify/result.py,sha256=ii4MbLI6oWHIbBTXFcwzn7w2p0r_072xgMo-rRbHt5s,3833
+cmdify-0.1.0.dist-info/LICENSE.txt,sha256=GhAHrVHajNgaTYnFiiM5DVCrIMsgonuiZ5b0Eb2H6m0,1089
+cmdify-0.1.0.dist-info/METADATA,sha256=He9hkU3zCCtybdjN6ciFxbt4ro4hCcC7T0WLLq1dTnw,2503
+cmdify-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cmdify-0.1.0.dist-info/top_level.txt,sha256=3M1WIz7f_gDH14bXDTxdVAlggPP4Kjfpd7EVIsuoivM,7
+cmdify-0.1.0.dist-info/RECORD,,
