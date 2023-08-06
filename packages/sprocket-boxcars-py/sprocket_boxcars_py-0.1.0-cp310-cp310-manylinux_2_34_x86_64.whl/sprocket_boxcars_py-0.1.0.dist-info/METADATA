@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: sprocket-boxcars-py
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: Python bindings for the Rocket League replay parser boxcars.
+Author: Jake Bailey <asaxplayinghorse@gmail.com>
+Author-email: Jake Bailey <asaxplayinghorse@gmail.com>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/SprocketBot/boxcars-py
+
+# Boxcars-py
+
+Python bindings for the [Boxcars](https://github.com/nickbabcock/boxcars) Rocket
+League replay parser. This is a fork of [SaltieRL's
+package](https://github.com/SaltieRL/boxcars-py) which sadly seems to no longer
+be maintained. 
+
+## Installation
+
+Only tested on linux.
+You have to compile it yourself if you are using Windows.
+
+```
+pip install boxcars-py
+```
+
+## Usage
+
+```py
+from boxcars_py import parse_replay
+
+with open("your_replay.replay", "rb") as f:
+  buf = f.read()
+  f.close()
+
+replay = parse_replay(buf)
+# Use the parsed replay here
+```
+
+## Building from source
+
+__Requirements__
+  - Rust.
+  - [poetry](https://pypi.org/project/poetry/)
+
+```
+# Install dependencies
+poetry install
+# Build
+make
+```
+
