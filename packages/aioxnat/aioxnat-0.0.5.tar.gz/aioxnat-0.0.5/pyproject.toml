@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aioxnat"
+description = "Asyncronous XNAT RESTful Interface"
+authors = [
+    {name = "Keenan W. Wilkinson", email = "keenanwilkinson@outlook.com"}
+]
+license = { text = "MIT" }
+keywords = ["XNAT", "xnat", "async", "REST"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+requires-python = ">=3.10.0"
+dynamic = ["version", "dependencies"]
+
+[options]
+exclude = ["tests"]
+
+[tool.setuptools.dynamic]
+version = { attr = "aioxnat.__version__" }
+dependencies = { file = "requirements.txt" }
