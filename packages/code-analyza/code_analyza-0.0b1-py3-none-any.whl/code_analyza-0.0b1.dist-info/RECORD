@@ -1,0 +1,9 @@
+code_analyza/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+code_analyza/__main__.py,sha256=HpohtcaLqhDUKgHdEu3ZukcoaqSPANIllkeInnzjkbg,168
+code_analyza/linter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+code_analyza/linter/checks.py,sha256=ygNe3tooSVHALUEervZ6i3w5Mm6wzSMZmu0t10_CjOg,6114
+code_analyza/linter/utils.py,sha256=jbp_XdmPvUjVq6ldYSGJZ7OlUNSwk045E3NKz_FgS3w,1422
+code_analyza-0.0b1.dist-info/METADATA,sha256=agVnMnN7sMwr4R4q2FGB76XypNzfAG3bVOqy0PnpmHk,2923
+code_analyza-0.0b1.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+code_analyza-0.0b1.dist-info/licenses/LICENSE,sha256=bL81CyqqsQ4RWt61UiwNh8UUDjkY7TSeTn6k45avAbw,1090
+code_analyza-0.0b1.dist-info/RECORD,,
