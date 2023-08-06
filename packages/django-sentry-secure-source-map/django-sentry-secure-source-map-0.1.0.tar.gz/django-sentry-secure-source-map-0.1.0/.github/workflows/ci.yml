@@ -1,0 +1,39 @@
+name: CI
+
+on: [pull_request, push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.7", "3.8", "3.9", "3.10", "3.11"]
+        django-version: ["3.2", "4.0", "4.1", "4.2"]
+        exclude:
+          - django-version: "4.2"
+            python-version: "3.7"
+          - django-version: "4.1"
+            python-version: "3.7"
+          - django-version: "4.0"
+            python-version: "3.7"
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('pyproject.toml') }}-${{ matrix.python-version }}-${{ matrix.django-version }}
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -e .[lint,test]
+          pip install -U Django==${{ matrix.django-version }}
+      - name: Run tests
+        run: pytest --cov=sentry_secure_source_map
+      - name: Run linters
+        run: |
+          ruff check .
+          black --check .
