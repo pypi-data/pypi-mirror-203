@@ -1,0 +1,9 @@
+IoddComBase-1.6.6.dist-info/RECORD,,
+IoddComBase-1.6.6.dist-info/LICENSE.txt,sha256=mjUk_O3YPxAZeoS61zCys2pyShGDxR4ghwb55ItZ0lg,732
+IoddComBase-1.6.6.dist-info/WHEEL,sha256=Ny1YmoChLPdS0zjYjq7xRU64YhpYoVXmOWdTYaUKcKg,217
+IoddComBase-1.6.6.dist-info/METADATA,sha256=v8z6uUGOrofR1t1Irj6lJgLu_ujQrNxKbcA0KPe5-nw,4998
+IoddComBase-1.6.6.dist-info/top_level.txt,sha256=vIFg0bLkihbkHyuCZUdHmA-50LP8LvTwDknGWir0T5o,8
+siogeen/LICENSE.txt,sha256=mjUk_O3YPxAZeoS61zCys2pyShGDxR4ghwb55ItZ0lg,732
+siogeen/base/__init__.py,sha256=F_q7pOxl6Szl2o0uC84_tg32nlDpZm3Q2ubb3RTu85Y,416
+siogeen/base/_IoddDrv.cpython-311-i386-linux-gnu.so,sha256=WdtB8271oPkZb8jyo_fZa2WMgRFz6WAuRFfwWb9IRsI,5887388
+siogeen/base/IoddUtility.cpython-311-i386-linux-gnu.so,sha256=ENMtmFQq5TuBNFE2aHt9B7mdBxDZ99tscJ3jqLhllx8,998852
