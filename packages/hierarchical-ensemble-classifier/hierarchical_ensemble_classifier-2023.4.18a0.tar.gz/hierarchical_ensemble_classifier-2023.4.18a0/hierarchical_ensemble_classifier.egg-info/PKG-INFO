@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: hierarchical-ensemble-classifier
+Version: 2023.4.18a0
+Summary: Customizable Scikit-Learn compatible hierarchical ensemble of classifiers models
+Home-page: https://github.com/jolespin/hierarchical_ensemble_classifier
+Author: Josh L. Espinoza
+Author-email: jespinoz@jcvi.org
+License: BSD-3
+License-File: LICENSE.txt
