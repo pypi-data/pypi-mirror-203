@@ -1,0 +1,15 @@
+fast_depends/__about__.py,sha256=7bIKWYMQJBycdKRy3wlFfSpJQvNNfKpaKxh4kL57e9g,118
+fast_depends/__init__.py,sha256=FD492a0iRyrz65uz9-0ou41_PjR4xL7BwuGRYSkG4S4,172
+fast_depends/construct.py,sha256=1pCPadHZSGMPUttKCIySAhvPR4JFYhzRUtFLxOqB13w,7803
+fast_depends/injector.py,sha256=d6il_wCpfKinCR0KxWoUWvSGbQwuBX1z7wNOr37cVHA,7823
+fast_depends/model.py,sha256=rFqxKva0IHEdOpvpG3DVFQJeBfFcDo641ZMz4BRBBiE,1982
+fast_depends/provider.py,sha256=yJf3yBcdQPR6ciTL-KfVPZLbdS4vf3nmeyEytGoWljI,419
+fast_depends/types.py,sha256=2GaQe8Suq0nLt_uGiTPrPrN2RzLrgweSB553PUxgCZI,277
+fast_depends/usage.py,sha256=1IynGKHobTnrrDNdIUfsJDtqFikfeBW1Rq7onYQMM1M,3050
+fast_depends/utils.py,sha256=xtTpwNInbJQKaHSqirJ7_4AlxcpR-geAViOMqaxauqk,3022
+fast_depends/library/__init__.py,sha256=KOonjDunT1NedmY4cjB3i_cTEzVQYTrjI8a-ynH4_BA,85
+fast_depends/library/model.py,sha256=BtPC1KgMn4dLBihr0LukV8OP3K4arvNsPedguZ52waw,586
+fast_depends-1.1.2.dist-info/METADATA,sha256=QGQWQuhyFPgvN9DtvmhFbbKpdrp5hOPihWt4khA5TTQ,6761
+fast_depends-1.1.2.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+fast_depends-1.1.2.dist-info/licenses/LICENSE,sha256=E3Rlh9BlSSORriy7T6pY2uTFSRBtwgfg7qTD_1E1b0A,1082
+fast_depends-1.1.2.dist-info/RECORD,,
