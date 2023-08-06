@@ -1,0 +1,11 @@
+loopgpt/__init__.py,sha256=k09ZLSaRjGdibCMiHYD18mwnG3AazxL0tC__CsP5PtU,459
+loopgpt/agent.py,sha256=WHS3_Pg55xRfh_5-c-2BTStSGTZ_75JS7lA9e45aScE,16188
+loopgpt/constants.py,sha256=T4jWZT_-WWfUlNbTkiLHNj5WoccpQW1zOT90_Xa9lfw,3962
+loopgpt/logger.py,sha256=yXhAvmoSwbn21SZg9qAoygHtkXo-UcIH1KZsNn_CQF4,87
+loopgpt/summarizer.py,sha256=Xhhaaujbvuk1KYHZrab9myD4AjSutWXsHhQ-SE4yshY,1984
+loopgpt-0.0.1.dist-info/LICENSE,sha256=tmh0p7POwNhTr7Wo3pO3FjA2t58VQdsQ6lqN65WOtw0,1090
+loopgpt-0.0.1.dist-info/METADATA,sha256=w8Z5EPpiUAly6aLfmw-_BlgfSfQzZ3qcC2f0u8cIZLs,356
+loopgpt-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+loopgpt-0.0.1.dist-info/entry_points.txt,sha256=B8VMpsKpIij5fsnBzIbEU_H9iu9U0aAiUfPaQdM1DGE,51
+loopgpt-0.0.1.dist-info/top_level.txt,sha256=m6X1_qXohZOsweXRqrob3_aWfb5dwrXWN4uDPU4hC0s,8
+loopgpt-0.0.1.dist-info/RECORD,,
