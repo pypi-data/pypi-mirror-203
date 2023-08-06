@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: gluster-georep-tools
+Version: 0.5.0
+Summary: Gluster Geo-replication tools
+Home-page: https://github.com/aravindavk/gluster-georep-tools
+Author: Aravinda Vishwanathapura
+Author-email: mail@aravindavk.in
+License: MIT
+Keywords: gluster,tool,geo-replication
+Platform: linux
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+License-File: LICENSE
+
+
+    Gluster Geo-replication Tools
+    
