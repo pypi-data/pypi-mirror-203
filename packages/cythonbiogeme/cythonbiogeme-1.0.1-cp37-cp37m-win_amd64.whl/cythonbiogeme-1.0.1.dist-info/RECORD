@@ -1,0 +1,9 @@
+cythonbiogeme/__init__.py,sha256=8Voda4n6wGIeQF8ULrOjnvIfdJ2uegjXrKy_ZjQgbmk,184
+cythonbiogeme/cythonbiogeme.cp37-win_amd64.pyd,sha256=LMEjUmb3_8owQ4SUhOGVCBssM9BPay_PL-SqCsUL5zI,1634304
+cythonbiogeme/version.py,sha256=f2t3xN5ySVr1vlQfMQfbH9Ku3bSsivOGyu2P0XJuAzg,149
+cythonbiogeme/cpp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cythonbiogeme-1.0.1.dist-info/LICENSE,sha256=CR0iwlScjbEFhshv08lBL7ULOZGUkwTklRFJeEevgYU,1320
+cythonbiogeme-1.0.1.dist-info/METADATA,sha256=bMMx1-iULLSEq2TMw9kQBBD1KGYcAWlIScSKgeF-gd0,2073
+cythonbiogeme-1.0.1.dist-info/WHEEL,sha256=eaY3ejwL19QEEyHRYuTgC3FZQgNYBpzCION1l_gJUb8,101
+cythonbiogeme-1.0.1.dist-info/top_level.txt,sha256=qBzN4Hosu1F0xtgF7Dwn8EaHB4SILEnEG1m1edSBc34,14
+cythonbiogeme-1.0.1.dist-info/RECORD,,
