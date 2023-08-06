@@ -1,0 +1,2 @@
+[console_scripts]
+blinkpdf = blinkpdf.__main__:main
