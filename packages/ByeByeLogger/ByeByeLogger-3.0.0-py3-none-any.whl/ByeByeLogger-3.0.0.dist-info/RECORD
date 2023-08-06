@@ -1,0 +1,12 @@
+byebyelogger/__init__.py,sha256=OWf41H3QIE8oA9M2YJIHNhc3iYi5W4glT0MDT7a9XtQ,750
+byebyelogger/logger.py,sha256=1_w3IycowG6oGEungUCur9t84jkP8Fy2SZqmNmIzZsM,2584
+byebyelogger/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+byebyelogger/core/configuration.py,sha256=i_d06iXdIKY1ZkuEmj7kemTi5G_KUTAL2-lcNKyNsJM,2712
+byebyelogger/core/stack_info.py,sha256=V786WgHVlicqD1KWrkN2AB-Z1SC4GkY3laCFtHt039M,1304
+byebyelogger/style/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+byebyelogger/style/color.py,sha256=b-BOymneejKXYU_YcNJ-XUdR0hR261n4ggt0yaEQi-A,1080
+byebyelogger/style/format.py,sha256=bYlTdbe3CzpWOWix9Saht94ZiW_4Bkzrjpy3l6vj2a0,496
+ByeByeLogger-3.0.0.dist-info/METADATA,sha256=DNmaT0fUM4Uq0gmouZMR3_wEkBkEmM8NoXMe-jj1NzA,2749
+ByeByeLogger-3.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ByeByeLogger-3.0.0.dist-info/top_level.txt,sha256=LOEi6ZdHDnZZK03r-KnK5SqNU83a0wwaYB6H27cGFcU,13
+ByeByeLogger-3.0.0.dist-info/RECORD,,
