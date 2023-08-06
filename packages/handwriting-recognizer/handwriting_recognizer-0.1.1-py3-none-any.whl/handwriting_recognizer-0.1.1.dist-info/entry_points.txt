@@ -1,0 +1,3 @@
+[console_scripts]
+handwriting_recognizer=handwriting_recognizer.main:main
+
