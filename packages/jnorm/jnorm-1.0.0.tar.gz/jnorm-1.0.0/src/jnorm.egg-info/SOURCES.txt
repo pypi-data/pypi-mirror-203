@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/jnorm/__init__.py
+src/jnorm/main.py
+src/jnorm.egg-info/PKG-INFO
+src/jnorm.egg-info/SOURCES.txt
+src/jnorm.egg-info/dependency_links.txt
+src/jnorm.egg-info/entry_points.txt
+src/jnorm.egg-info/requires.txt
+src/jnorm.egg-info/top_level.txt

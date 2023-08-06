@@ -1,0 +1,6 @@
+ijson
+rich
+
+[dev]
+black
+ruff
