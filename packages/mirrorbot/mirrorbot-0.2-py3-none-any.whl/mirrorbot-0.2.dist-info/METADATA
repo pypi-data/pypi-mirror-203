@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: mirrorbot
+Version: 0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: anytree
+Requires-Dist: aria2p
+Requires-Dist: asgiref
+Requires-Dist: asyncio
+Requires-Dist: beautifulsoup4
+Requires-Dist: bencode.py
+Requires-Dist: bencoding
+Requires-Dist: cfscrape
+Requires-Dist: cloudscraper
+Requires-Dist: dnspython
+Requires-Dist: feedparser
+Requires-Dist: flask
+Requires-Dist: gc-python-utils
+Requires-Dist: cinemagoer
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-httplib2
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: gunicorn
+Requires-Dist: lk21
+Requires-Dist: lxml (>=4.9.1)
+Requires-Dist: markdown
+Requires-Dist: mediainfo
+Requires-Dist: pillow
+Requires-Dist: psutil
+Requires-Dist: pybase64
+Requires-Dist: pycountry
+Requires-Dist: pymongo
+Requires-Dist: pyrogram (==2.0.66)
+Requires-Dist: python-dotenv
+Requires-Dist: python-magic
+Requires-Dist: python-telegram-bot (==13.15)
+Requires-Dist: qbittorrent-api
+Requires-Dist: requests
+Requires-Dist: speedtest-cli
+Requires-Dist: telegraph
+Requires-Dist: tenacity
+Requires-Dist: tgCrypto
+Requires-Dist: urllib3
+Requires-Dist: waybackpy
+Requires-Dist: xattr
+Requires-Dist: yt-dlp
+
+UNKNOWN
+
