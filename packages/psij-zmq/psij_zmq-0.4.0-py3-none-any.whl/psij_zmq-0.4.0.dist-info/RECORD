@@ -1,0 +1,11 @@
+psij-descriptors/zmq_service_descriptor.py,sha256=nvsjKJcKDvdhcninoBx-GkGaIwUQTnFmnGhZLf_5pHI,259
+psij-zmq/__init__.py,sha256=vu0KLrPn2uaf9UDuZPbuiyFDwY_C3vfdGlsP0atGwHI,97
+psij-zmq/version.py,sha256=veA1ypjDTsWIcU3p0eBmQFaRf-SnCjYBL8Q8sATQEKg,137
+psij-zmq/executors/__init__.py,sha256=FYeDnXefYW6GTUU9KUDMPvuc7Q-gGgCbASbWslbLRbo,162
+psij-zmq/executors/zmq_service.py,sha256=Jir7pz8Wu7IwrY3Jrhlmg6yQprQjSrBl48D-2myeBmw,5262
+psij_zmq-0.4.0.data/scripts/zmq_service.py,sha256=Cj2nE6sACpPCHD98xbJ4W0Ko-AvgNBpqbpM6UkFPC2o,6634
+psij_zmq-0.4.0.dist-info/LICENSE,sha256=i7EgaJErCmpeV__c6FBYSBHd4rj-EZCZkYGAoXwgAVs,1065
+psij_zmq-0.4.0.dist-info/METADATA,sha256=hAb4p7mjKxRdhueMlep_yhzmUs5AaEGpjtmF9vg1Ol4,468
+psij_zmq-0.4.0.dist-info/WHEEL,sha256=Ni9JGQXk2T4q02tFVwTZ-iAb8m9R1cjnSLMaE4VH1rg,92
+psij_zmq-0.4.0.dist-info/top_level.txt,sha256=HBMhHSGYU4lNP-9rGkQ9-ok4-KybMYxU3rDg7OoWjd8,26
+psij_zmq-0.4.0.dist-info/RECORD,,
