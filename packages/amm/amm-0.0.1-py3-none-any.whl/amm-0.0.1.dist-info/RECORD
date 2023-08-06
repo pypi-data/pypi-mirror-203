@@ -1,0 +1,6 @@
+src/amm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/amm/main.py,sha256=M8hMxh2lKDmpTIWBBaJmgo66cH1av-6s-M29P0_klrM,4144
+amm-0.0.1.dist-info/METADATA,sha256=IuWO-56t1uGXj8SfUU0lXNMUhMo-wv4btOL0AbObROI,1115
+amm-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+amm-0.0.1.dist-info/top_level.txt,sha256=Jq7AuNQsC38mnWcnkT3oBL255nYN0sLWk4drWUOZWFQ,8
+amm-0.0.1.dist-info/RECORD,,
