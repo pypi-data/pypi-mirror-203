@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: storeify
+Version: 0.0.1
+Summary: Data storage made simple
+Author-email: Ben Brady <benbradybusiness@gmail.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 1 - Planning
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Classifier: Topic :: Database
+Classifier: Topic :: System :: Filesystems
+Project-URL: Source, https://github.com/Ben-Brady/storeify
+Provides-Extra: docs
+Provides-Extra: test
+
+
