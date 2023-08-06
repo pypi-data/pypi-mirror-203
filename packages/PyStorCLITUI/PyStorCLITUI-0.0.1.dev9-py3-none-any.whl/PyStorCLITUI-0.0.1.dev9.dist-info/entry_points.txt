@@ -1,0 +1,3 @@
+[console_scripts]
+pystorcliTUI = pystorclitui.bin.storcliTUI:main
+storcliTUI = pystorclitui.bin.storcliTUI:main
