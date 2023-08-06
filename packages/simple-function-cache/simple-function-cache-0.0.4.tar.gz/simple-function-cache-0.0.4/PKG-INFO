@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: simple-function-cache
+Version: 0.0.4
+Summary: function cache decorator with redis
+Home-page: https://github.com/byscut/simple-function-cache.git
+Author: byscut
+Author-email: byscut2010@foxmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENSE
+
+UNKNOWN
+
