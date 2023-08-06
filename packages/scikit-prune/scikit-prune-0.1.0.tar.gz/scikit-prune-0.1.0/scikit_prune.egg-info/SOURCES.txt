@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+scikit_prune.egg-info/PKG-INFO
+scikit_prune.egg-info/SOURCES.txt
+scikit_prune.egg-info/dependency_links.txt
+scikit_prune.egg-info/requires.txt
+scikit_prune.egg-info/top_level.txt
+skprune/__init__.py
