@@ -1,0 +1,3 @@
+[console_scripts]
+dockerhub-cli=dockerhub_cli.__init__:main
+

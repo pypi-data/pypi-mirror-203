@@ -1,0 +1,5 @@
+dockerhub_cli/__init__.py,sha256=s_yf4m4TCcQfvnNh8wRforRcLSSnNXEKHvSXD6pPudU,3488
+dockerhub_cli-0.1.0.dist-info/METADATA,sha256=6tBBQYLfpVhifpOxxtaVkUg_9ygqKDUOCp1xWoyN0IM,442
+dockerhub_cli-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+dockerhub_cli-0.1.0.dist-info/entry_points.txt,sha256=pOLfnDJFrF6sWafT7OAfieQZwmVrJL8YToA3SehZrb0,61
+dockerhub_cli-0.1.0.dist-info/RECORD,,
