@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: endurance-etl
+Version: 0.1.0
+Summary: Polars and duckdb based json configured simple ETL pipelines
+License: MIT
+Author: Benjamin Gutzmann
+Author-email: gutzemann@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: duckdb (>=0.7.1,<0.8.0)
+Requires-Dist: polars (>=0.17.3,<0.18.0)
+Description-Content-Type: text/markdown
+
+# endurance_etl
+Polars and duckdb based json configured simple ETL pipelines
+
+ <span style="color:red">WARNING: PLACEHOLDER FOR LATER DEVELOPMENT</span>
+
+# Introduction
+
+Use endurance_etl to execute some simple ETL pipelines:
+
+```python
+import json
+from endurance_etl import Tars
+
+CONFIG = "sample.json"
+
+with open(CONFIG) as f:
+    print(json.load(f))
+
+# Output:
+{
+    "SOURCES": [
+        {
+            "name": "csv_file_source",
+            "path": "csv_file_source.csv",
+            # ...other_kwargs
+        }
+    ],
+    "TARGETS": [
+        {
+            "name": "csv_file_target",
+            "source": "source/csv_file_source",
+            "target": "csv_file_target.csv",
+            "transforms": [
+                {
+                    "function": "lambda df: df + 1"
+                }
+            ]
+            # ...other_kwargs
+        }
+    ]
+}
+
+tars = Tars.from_json(CONFIG)
+tars.do()
+
+```
