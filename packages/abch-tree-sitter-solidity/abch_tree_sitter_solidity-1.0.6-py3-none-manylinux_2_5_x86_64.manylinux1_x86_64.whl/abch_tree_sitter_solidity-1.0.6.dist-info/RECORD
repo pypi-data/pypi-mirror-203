@@ -1,0 +1,8 @@
+tree_sitter_solidity/core.py,sha256=iuLLm1-ql41OHqdaPAM1d6x7guTUe0GmCBCYnYLMX1c,378
+tree_sitter_solidity/__init__.py,sha256=BDKAF4lW0daDV-ThsGJDGygMl0eVSpj6J3BpNQysUMg,43
+tree_sitter_solidity/solidity.so,sha256=VuDsNJF5jFRA570cihco9W_FwJX2RIZCCC9JOYQ9oEI,454272
+abch_tree_sitter_solidity-1.0.6.dist-info/LICENSE,sha256=iETwzJt2ucip0CUZBOt1Nra7mXbg7Fd-jyerltQlI-8,1054
+abch_tree_sitter_solidity-1.0.6.dist-info/WHEEL,sha256=Nnny4V15WZkJMXxm1tl7psBxIOeVJdc1VDO1YptTSWM,141
+abch_tree_sitter_solidity-1.0.6.dist-info/top_level.txt,sha256=ZDlLIOwRGN8Kb_Im4c8b9DybPg9ShmIDze61oVAmXaQ,21
+abch_tree_sitter_solidity-1.0.6.dist-info/RECORD,,
+abch_tree_sitter_solidity-1.0.6.dist-info/METADATA,sha256=3l9BVJNVQz-YyalTf7dQBSWB-1TEaWRK7zjDTrApaTc,1995
