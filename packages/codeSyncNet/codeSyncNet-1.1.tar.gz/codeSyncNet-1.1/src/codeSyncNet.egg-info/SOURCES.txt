@@ -1,0 +1,9 @@
+pyproject.toml
+src/CodeSync/__init__.py
+src/CodeSync/codeSyncNet.py
+src/CodeSync/model.py
+src/codeSyncNet.egg-info/PKG-INFO
+src/codeSyncNet.egg-info/SOURCES.txt
+src/codeSyncNet.egg-info/dependency_links.txt
+src/codeSyncNet.egg-info/requires.txt
+src/codeSyncNet.egg-info/top_level.txt

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codeSyncNet"
+version = "1.1"
+authors = [
+  { name="Anh Dau Thi Van", email="vananh09052000@gmail.com" },
+]
+description = "A package to detect the inconsistent between code and text"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+   "gdown==4.7.1",
+    "torch==1.10.1",
+    "transformers==4.18.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Fsoft-AIC/CodeSync"
+"Bug Tracker" = "https://github.com/Fsoft-AIC/CodeSync/issues"
