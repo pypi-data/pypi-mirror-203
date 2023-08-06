@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: asie-api
+Version: 0.0.1
+Author: yyxochen
+Requires-Dist: pyodbc
+Requires-Dist: requests
+Requires-Dist: pandas
+
