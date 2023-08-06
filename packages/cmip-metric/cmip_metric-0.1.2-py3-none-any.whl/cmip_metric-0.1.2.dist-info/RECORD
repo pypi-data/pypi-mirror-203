@@ -1,0 +1,9 @@
+cmip_metric/__init__.py,sha256=vMgMgN62BpN88iTvxs8KH8edcDi01r2NmnMdMsfhKJc,36
+cmip_metric/divergence.py,sha256=dDWtYEQNdZUytGpEUF2ZoBtafL7MHqZEkFu9j-ktxdc,2209
+cmip_metric/knn.py,sha256=TEUz9KUvhWkq9B-okdHQsnQ7L9f8KmxxxVCoJzBb5W4,1292
+cmip_metric/metric.py,sha256=u4E_8ZTmcn_t4K3XapSmP_pbwphWOVqRscUNx-HCwoE,2064
+cmip_metric/util.py,sha256=5Gvv-iRyNt55e68EDOVC2tjn4vewOvzuXap8i4d3Avw,966
+cmip_metric-0.1.2.dist-info/LICENSE,sha256=ti9jDw5MXinBJHdGyF84BGsRoMZKkVEcjrgXAiayz44,1090
+cmip_metric-0.1.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+cmip_metric-0.1.2.dist-info/METADATA,sha256=kTyllD5j_D7u6YTfxhK7rYtNVdqDbYu9ng233eJgrIM,2303
+cmip_metric-0.1.2.dist-info/RECORD,,
