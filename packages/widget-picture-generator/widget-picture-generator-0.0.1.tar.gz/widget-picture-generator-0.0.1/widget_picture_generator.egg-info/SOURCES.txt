@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/__init__.py
+src/main.py
+widget_picture_generator.egg-info/PKG-INFO
+widget_picture_generator.egg-info/SOURCES.txt
+widget_picture_generator.egg-info/dependency_links.txt
+widget_picture_generator.egg-info/top_level.txt
