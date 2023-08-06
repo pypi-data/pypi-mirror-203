@@ -1,0 +1,9 @@
+setup.py
+haki_crawler/__init__.py
+haki_crawler/appfigures.py
+haki_crawler/sensortower.py
+haki_crawler.egg-info/PKG-INFO
+haki_crawler.egg-info/SOURCES.txt
+haki_crawler.egg-info/dependency_links.txt
+haki_crawler.egg-info/requires.txt
+haki_crawler.egg-info/top_level.txt
