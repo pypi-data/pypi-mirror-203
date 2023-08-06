@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "headfuck"
+version = "2.0"
+description = "An esoteric programming language similar to Brainfuck"
+authors = ["JJPMaster <joshuaponce2008@gmail.com>"]
+readme = "README.md"
+packages = [{include = "headfuck"}]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: Public Domain",
+  "Operating System :: OS Independent"
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.scripts]
+headfuck = "headfuck.interpreter:interpret"
+hff = "headfuck.hff:read_from_file"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
