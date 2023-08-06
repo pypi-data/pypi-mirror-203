@@ -1,0 +1,8 @@
+README.md
+setup.py
+sphinx-embeddings-builder/__init__.py
+sphinx_embeddings_builder.egg-info/PKG-INFO
+sphinx_embeddings_builder.egg-info/SOURCES.txt
+sphinx_embeddings_builder.egg-info/dependency_links.txt
+sphinx_embeddings_builder.egg-info/requires.txt
+sphinx_embeddings_builder.egg-info/top_level.txt
