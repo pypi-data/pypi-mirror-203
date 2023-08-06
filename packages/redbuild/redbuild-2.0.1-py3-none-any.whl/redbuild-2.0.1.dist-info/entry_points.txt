@@ -1,0 +1,3 @@
+[console_scripts]
+build_native=script.build_native:main
+
