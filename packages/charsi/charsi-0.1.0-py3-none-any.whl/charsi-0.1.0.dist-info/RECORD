@@ -1,0 +1,13 @@
+charsi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+charsi/__main__.py,sha256=rXg7ysTOlXeek2bGWpMK5MHVpAIvCx6TU9ABx96rqaE,291
+charsi/commands/__init__.py,sha256=UW90htNFa9Booy6d5NSax-xzj9pPVW-sOWFw3x8fZBI,66
+charsi/commands/build.py,sha256=VDBHgKBdPTnQ6Sfk3QAIgAElbvPoBF0v_9bXj_jk-Tg,612
+charsi/instruction.py,sha256=tqBxTZ6BDD7q7aHfGzT-fdluYSBoZptcy0RA8PneUPg,1904
+charsi/recipe.py,sha256=7oHNP28ph8956CZHqLBWcs1IKDonh3GfGYkBe8F6m2k,684
+charsi/strings.py,sha256=5Fg6qRkEINr0VcxRTKOc8C_ncDdCMl1udu12g8JlTGU,1426
+charsi/utils.py,sha256=TfoDXLKQaljReVYom3i-eknRjawL49E4G6AkfIabX1k,206
+charsi-0.1.0.dist-info/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+charsi-0.1.0.dist-info/entry_points.txt,sha256=C73YEGMmROkYiHZkYJzaqRhsc69AybrQQHSjfild4Zo,46
+charsi-0.1.0.dist-info/METADATA,sha256=GR-aeeuWaStoRfNwwxghaj-NO_Tx67srFXdUEdnDpL8,2078
+charsi-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+charsi-0.1.0.dist-info/RECORD,,
