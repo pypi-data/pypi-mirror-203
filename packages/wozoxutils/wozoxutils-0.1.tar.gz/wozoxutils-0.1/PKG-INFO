@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: wozoxutils
+Version: 0.1
+Summary: general-purpose library for Python that contains various commonly used functional modules
+Home-page: https://github.com/illiten/wozoxutils
+Author: illiten
+Author-email: admin@leelib.com
+License-File: LICENSE
