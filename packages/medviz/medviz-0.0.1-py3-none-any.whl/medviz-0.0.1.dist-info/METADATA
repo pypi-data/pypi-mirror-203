@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: medviz
+Version: 0.0.1
+Summary: Medical Image Visualization Tool 🐍🚀🎉🦕
+Author-email: Mohsen Hariri <mohsen.hariri@case.eud>
+License: GPL-3.0 License
+Keywords: MRI,CT
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+
+MedViz
+
+
