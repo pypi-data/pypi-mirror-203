@@ -1,0 +1,4 @@
+marshy~=4.0
+pyaes~=1.6
+schemey~=6.0
+servey~=2.8
