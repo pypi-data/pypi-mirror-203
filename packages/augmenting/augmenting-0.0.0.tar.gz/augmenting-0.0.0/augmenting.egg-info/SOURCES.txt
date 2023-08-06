@@ -1,0 +1,8 @@
+README.md
+setup.py
+augmenting/__init__.py
+augmenting.egg-info/PKG-INFO
+augmenting.egg-info/SOURCES.txt
+augmenting.egg-info/dependency_links.txt
+augmenting.egg-info/requires.txt
+augmenting.egg-info/top_level.txt
