@@ -1,0 +1,8 @@
+llama_rs_python-0.0.1.dist-info/METADATA,sha256=BJtTA-kgqI3RA52a_wFrZ1bnl4ytEQLgPYCIB5qQ6tQ,1931
+llama_rs_python-0.0.1.dist-info/WHEEL,sha256=VvdY44iN3gVotPLSbm-bn6F9k45H_kxH9jQNBi2QPzw,96
+llama_rs_python-0.0.1.dist-info/license_files/LICENSE,sha256=BM5T9WMFIRjD7qoK_iLYKCH7zSLaYFR3hwttTdvLCzM,1092
+llama_rs_python/__init__.py,sha256=gfFbPmEnnLpm0Tj4wq_mB9F-h7dgdV6gagD3200erNg,143
+llama_rs_python/__init__.pyi,sha256=PYT0i7mv6SMIvJFWxDLR_AGjqZKVab8wwrX8ntMibwU,1415
+llama_rs_python/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llama_rs_python/llama_rs_python.cp38-win_amd64.pyd,sha256=KtkwXA_CwAQdy-dcn0G9zJLp5MOxU3HXmRq8Chdnr-U,567808
+llama_rs_python-0.0.1.dist-info/RECORD,,
