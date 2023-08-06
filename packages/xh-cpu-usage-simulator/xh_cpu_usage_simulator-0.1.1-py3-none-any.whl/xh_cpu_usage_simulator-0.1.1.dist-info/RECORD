@@ -1,0 +1,11 @@
+xh_cpu_usage_simulator/LinearRegressionPrediction.py,sha256=puAqmZijN1dUl2Pi0yAm-yzz5h95Swf06y6Z-4-DJvs,793
+xh_cpu_usage_simulator/MovingAvg.py,sha256=TxmunIhfsuT9bct1_G-BmSiynbAOM2Ss4XzXruekjOY,736
+xh_cpu_usage_simulator/PsMonitor.py,sha256=PUufty_wVD8GqMzF7Lm6kJoHQ7aNJPAaU0qz9bEe6p8,376
+xh_cpu_usage_simulator/TaskWorker.py,sha256=7Q4JNyfR1KprYPwNalGHxXrPk7DUOMhyynqB3kmQMVs,1546
+xh_cpu_usage_simulator/TestMovingAvg.py,sha256=PEuRHa8udnWU0Vf4JrBNJnj-CEzXu5uKHfM9t4uSKiE,827
+xh_cpu_usage_simulator/__main__.py,sha256=cmuIgJGrXQ8GkRC_7_3G3Xtel1Hd3K0zWwuJ7i7hzO0,4159
+xh_cpu_usage_simulator-0.1.1.dist-info/LICENSE.txt,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+xh_cpu_usage_simulator-0.1.1.dist-info/METADATA,sha256=YeSBM7tJ9yDwxTx_8WxoGG_XIjLal8gPTNBodtmqAeU,868
+xh_cpu_usage_simulator-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+xh_cpu_usage_simulator-0.1.1.dist-info/top_level.txt,sha256=UTYdCSzsLmUlBjNshyMqAZF3woDz-tcef9af-hVL0JA,23
+xh_cpu_usage_simulator-0.1.1.dist-info/RECORD,,
