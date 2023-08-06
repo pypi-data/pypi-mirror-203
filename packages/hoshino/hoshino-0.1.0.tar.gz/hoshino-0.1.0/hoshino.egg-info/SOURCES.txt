@@ -1,0 +1,8 @@
+README.md
+setup.py
+hoshino.egg-info/PKG-INFO
+hoshino.egg-info/SOURCES.txt
+hoshino.egg-info/dependency_links.txt
+hoshino.egg-info/entry_points.txt
+hoshino.egg-info/requires.txt
+hoshino.egg-info/top_level.txt

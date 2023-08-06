@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: hoshino
+Version: 0.1.0
+Summary: A personal Python app
+Author: sitomao
+Author-email: you@example.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
