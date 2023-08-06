@@ -1,0 +1,8 @@
+scaled_preconditioners/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scaled_preconditioners/approximation.py,sha256=9V5ostr-D_dJ7JQXVkchDNAnOsUuOqQ-vK-bhXmtBGw,2486
+scaled_preconditioners/preconditioner.py,sha256=83JsiY4myx-ygtmo-8bLbdIbYsvqoDAqY1qHhHazvgw,2361
+scaled_preconditioners/utils.py,sha256=0ZwSWNetuY9rOGkOa4kF827e6TdZwZKrRaWwvxGwdUE,184
+scaled_preconditioners-0.1.0.dist-info/LICENSE,sha256=y5sPd046kQu6CJNxEBzoTrJsucxIG8XCVjQ9ZKGtdGI,1088
+scaled_preconditioners-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+scaled_preconditioners-0.1.0.dist-info/METADATA,sha256=J66siwpcsNy0eX2FzESmQtbToIjxSQAEwrkcII_1B1k,2301
+scaled_preconditioners-0.1.0.dist-info/RECORD,,
