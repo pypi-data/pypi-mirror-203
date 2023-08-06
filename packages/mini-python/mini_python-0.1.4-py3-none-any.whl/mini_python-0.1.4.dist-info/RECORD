@@ -1,0 +1,13 @@
+mini_python/.DS_Store,sha256=1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM,6148
+mini_python/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+mini_python/app.py,sha256=Lh2cfOx1rlSPOGMCuPR8jW7k9LYXBbDR1IcM248q0sY,2311
+mini_python/static/css/style.css,sha256=zhGWG5b-wAuGlo-abJfWxb3KnQ-gYUG5kCEOOIPqmZg,96
+mini_python/templates/base.html,sha256=Ithbx--bZKboJy5-xptVUqVW6h1rpGhc0kqWmu_TxQk,2112
+mini_python/templates/create.html,sha256=tI32K6rDmTLuMTy7p_G20YsNPOfb1WroPQGEnMPcHTA,730
+mini_python/templates/edit.html,sha256=ngr1c1dN60bP0fPTemwz9PJXCeM15Cg-bVZhOXTk7kQ,1037
+mini_python/templates/index.html,sha256=rYZSgpIJZj46yGJczl8gUr6_RGQXzYIGCHS7kYtFtsE,500
+mini_python/templates/post.html,sha256=vfEYs8hTg4zs6zbPvPe8kWL8k16ds59WPcCVSvtcxgs,228
+mini_python-0.1.4.dist-info/LICENSE,sha256=EiREh8c_3VCUm2hYbx1M3fJUv1NuHfxdW38eR5ICX_E,1074
+mini_python-0.1.4.dist-info/METADATA,sha256=12bBk6UAYL4mq2qBH7FGMduJ26rjogmIbTToZAN3Me0,531
+mini_python-0.1.4.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+mini_python-0.1.4.dist-info/RECORD,,
