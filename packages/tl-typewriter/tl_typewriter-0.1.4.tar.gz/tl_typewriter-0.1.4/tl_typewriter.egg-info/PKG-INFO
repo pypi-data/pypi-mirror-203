@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tl-typewriter
+Version: 0.1.4
+Summary: pagination and bubble typewriter in translating manga
+Home-page: https://github.com/AbangTanYiHan/tl_typewriter
+Author: abangtan
+License: Apache License 2.0
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
