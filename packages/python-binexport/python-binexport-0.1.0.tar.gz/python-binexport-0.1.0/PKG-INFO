@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: python-binexport
+Version: 0.1.0
+Summary: Python wrapper to manipulate binexport files (protobuf)
+Home-page: https://github.com/quarkslab/python-binexport
+Author: Robin David
+Author-email: rdavid@quarkslab.com
+License: AGPL-3.0
+Project-URL: Documentation, https://quarkslab.github.io/diffing-portal/exporter/binexport.html#python-binexport
+Project-URL: Bug Tracker, https://github.com/quarkslab/python-binexport/issues
+Project-URL: Source, https://github.com/quarkslab/python-binexport
+Classifier: Topic :: Security
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python-Binexport
+
+``python-binexport`` is a python module aiming to give a friendly interface to load
+and manipulate binexport files.
+
+## What is binexport ?
+
+Binexport is a ``protobuf`` format used by Bindiff to extract IDA database and
+to process them outside. It gives a very optimizated (in size) representation
+of the program.
+
+## Dependencies
+
+As ``python-binexport`` entirely relies on `Binexport`, it **has to be installed first**.
+The project is available at: https://github.com/google/binexport
+
+Note that python-binexport **requires IDA 7.2** (as it calls the ``BinExportBinary` IDC function). 
+
+The Python binexport modules solely relies on:
+
+* protobuf
+* networkx *(to represent the call graph)*
+* click *(for ``binexporter``)*
+* python-magic *(for ``binexporter``)*
+
+
+Optionally it requires ``idascript`` (https://gitlab.qb/rdavid/idascript) to directly
+generating the binexport files.
+
+
+## Usage as a python module
+
+The main intended usage of ``python-binexport`` is as a python module.
+The main entry point is the class ``ProgramBinExport`` which triggers the
+loading of the whole file. Here is a snippet to iterate on every expression
+of every instruction in the program:
+
+```python
+from binexport import ProgramBinExport
+
+p = ProgramBinExport("myprogram.BinExport")
+for fun_addr, fun in p.items():
+    for bb_addr, bb in fun.items():
+        for inst_addr, inst in bb.items():
+            for operand in inst.operands:
+                for exp in operand.expressions:
+                    pass  # Do whatever at such deep level
+```
+
+Obviously ``ProgramBinExport``, ``FunctionBinExport``, ``InstructionBinExport`` and ``OperandBinExport``
+all provides various attributes and method to get their type, and multiple other infos.
+
+> If the module ``idascript`` is installed you can directly generate a BinExport
+> file using the ``Program.from_binary_file`` static method.
+
+## Usage as a command line
+
+The executable script ``binexporter`` provides a very basic utility
+to export a BinExport file straight from the command line *(without
+having to laucnh IDA etc..)*. This is basically a wrapper for ``Program.from_binary_file``.
