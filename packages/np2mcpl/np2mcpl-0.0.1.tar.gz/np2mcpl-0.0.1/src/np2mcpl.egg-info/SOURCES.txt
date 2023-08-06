@@ -1,0 +1,11 @@
+LICENSE
+README.md
+np2mcplmodule.c
+pyproject.toml
+setup.py
+src/np2mcpl.egg-info/PKG-INFO
+src/np2mcpl.egg-info/SOURCES.txt
+src/np2mcpl.egg-info/dependency_links.txt
+src/np2mcpl.egg-info/requires.txt
+src/np2mcpl.egg-info/top_level.txt
+test/test.py
