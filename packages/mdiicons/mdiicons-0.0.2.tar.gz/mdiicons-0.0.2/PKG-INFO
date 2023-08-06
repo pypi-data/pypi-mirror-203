@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: mdiicons
+Version: 0.0.2
+Summary: Material Design SVG strings for Python
+Home-page: https://github.com/Patrick762/mdiicons
+Author: Patrick762
+Author-email: <pip-mdi-icons@hosting-rt.de>
+Keywords: python,mdi,materialdesign,material design,materialdesignicons,material design icons,icons
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+[![PyPI version](https://badge.fury.io/py/mdiicons.svg)](https://badge.fury.io/py/mdiicons)
+
+# mdi-py
+Material Design SVG strings for Python
+
+This library uses the mdi font from [Pictogrammers.com](https://pictogrammers.com/docs/library/mdi/getting-started/webfont/) to generate a python compatible dict.
+
+## Examples
+
+```py
+from mdiicons import MDI
+
+svg = MDI.get_icon("account", "#f00")
+```
+
+# Dependencies
+
+- [opentypesvg](https://pypi.org/project/opentypesvg/) to get the svgs from the mdi font
