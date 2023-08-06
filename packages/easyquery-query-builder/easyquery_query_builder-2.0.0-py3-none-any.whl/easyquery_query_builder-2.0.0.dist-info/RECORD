@@ -1,0 +1,10 @@
+easyquery_query_builder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easyquery_query_builder/queries/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easyquery_query_builder/queries/query.py,sha256=hVxim_TY7HFzaEo0JiSemUW9vmXXX1qbNNW4G1evtVk,122
+easyquery_query_builder/queries/read_query.py,sha256=Y5eH-FA84SHBA8NcM0DR53Uyw0hV44lSR6bh3DaVc2M,2192
+easyquery_query_builder/queries/read_query_builder.py,sha256=tB1XfERSDn1b0MB_Zu96k0kC02CCeZXhHzNdEz__df4,3014
+easyquery_query_builder/queries/read_query_with_joins.py,sha256=EdonJqhZLxSmJZ72tzBYvp4ssKOtAYPDG9im8PGvpbw,2527
+easyquery_query_builder/queries/read_query_with_joins_builder.py,sha256=bZNtgIHXyGC7e4V39Elqz7Ie3QbsZoTl7_aj1U0SFwA,1396
+easyquery_query_builder-2.0.0.dist-info/METADATA,sha256=f4f9Wiv5tSKH1HweXejvjfAN6NzpbAzjAsPGc6sJzl8,13528
+easyquery_query_builder-2.0.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+easyquery_query_builder-2.0.0.dist-info/RECORD,,
