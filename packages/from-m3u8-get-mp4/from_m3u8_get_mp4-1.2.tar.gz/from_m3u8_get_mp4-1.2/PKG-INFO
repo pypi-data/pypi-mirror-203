@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: from_m3u8_get_mp4
+Version: 1.2
+Summary: Get vedio
+Home-page: https://github.com/wutljs/from_m3u8_get_mp4
+Author: WUT_ljs
+Author-email: 3480339804@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+download MP3 files from M3U8 files quickly and accurately
+
