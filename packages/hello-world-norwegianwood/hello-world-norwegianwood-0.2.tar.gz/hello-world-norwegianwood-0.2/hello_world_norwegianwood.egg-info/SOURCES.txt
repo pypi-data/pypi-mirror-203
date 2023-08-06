@@ -1,0 +1,7 @@
+hello.py
+setup.cfg
+setup.py
+hello_world_norwegianwood.egg-info/PKG-INFO
+hello_world_norwegianwood.egg-info/SOURCES.txt
+hello_world_norwegianwood.egg-info/dependency_links.txt
+hello_world_norwegianwood.egg-info/top_level.txt
