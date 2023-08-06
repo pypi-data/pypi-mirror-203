@@ -1,0 +1,3 @@
+[console_scripts]
+ssss=ssss:main
+
