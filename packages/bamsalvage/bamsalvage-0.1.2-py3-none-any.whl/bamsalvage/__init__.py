@@ -1,0 +1,14 @@
+"""bamsalvage, retrieving tool of (especially long) reads from BAM files."""
+
+print('BAMSALVAGE: Imported {}', __file__)
+
+from bamsalvage._bamsalvage import *
+
+# try:
+#     __version__ = version(__name__)
+# except Exception:
+#     __version__="0.1.2"
+#     pass
+
+# from _bamsalvage import *
+    
