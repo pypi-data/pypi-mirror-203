@@ -1,0 +1,8 @@
+README.md
+setup.py
+cloudmonitor/__init__.py
+cloudmonitor.egg-info/PKG-INFO
+cloudmonitor.egg-info/SOURCES.txt
+cloudmonitor.egg-info/dependency_links.txt
+cloudmonitor.egg-info/requires.txt
+cloudmonitor.egg-info/top_level.txt
