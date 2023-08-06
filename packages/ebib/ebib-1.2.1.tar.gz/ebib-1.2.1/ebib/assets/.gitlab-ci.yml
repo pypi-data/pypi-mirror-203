@@ -1,0 +1,11 @@
+image: python:3.10
+
+pages:
+  script:
+    - pip install ebib
+    - ebib webpage
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
