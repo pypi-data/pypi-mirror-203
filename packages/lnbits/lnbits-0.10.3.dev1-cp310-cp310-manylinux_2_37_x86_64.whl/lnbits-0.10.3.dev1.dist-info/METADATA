@@ -1,0 +1,127 @@
+Metadata-Version: 2.1
+Name: lnbits
+Version: 0.10.3.dev1
+Summary: LNbits, free and open-source Lightning wallet and accounts system.
+Home-page: https://lnbits.com
+Author: Alan Bits
+Author-email: alan@lnbits.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Cerberus (==1.3.4)
+Requires-Dist: async-timeout (==4.0.2)
+Requires-Dist: bech32 (==1.2.0)
+Requires-Dist: bitstring (==3.1.9)
+Requires-Dist: boltz-client (==0.1.3)
+Requires-Dist: cashu (==0.9.0)
+Requires-Dist: click (==8.0.4)
+Requires-Dist: ecdsa (==0.18.0)
+Requires-Dist: embit (==0.4.9)
+Requires-Dist: fastapi (==0.83.0)
+Requires-Dist: grpcio (==1.51.1)
+Requires-Dist: httpx (==0.23.0)
+Requires-Dist: jinja2 (==3.0.1)
+Requires-Dist: lnurl (==0.3.6)
+Requires-Dist: loguru (==0.6.0)
+Requires-Dist: protobuf (==4.21.12)
+Requires-Dist: psycopg2-binary (==2.9.1)
+Requires-Dist: pyScss (==1.4.0)
+Requires-Dist: pydantic (==1.10.4)
+Requires-Dist: pyln-client (==0.11.1)
+Requires-Dist: pyqrcode (==1.2.1)
+Requires-Dist: shortuuid (==1.0.11)
+Requires-Dist: sqlalchemy (==1.3.24)
+Requires-Dist: sqlalchemy-aio (==0.17.0)
+Requires-Dist: sse-starlette (==0.6.2)
+Requires-Dist: typing-extensions (==4.4.0)
+Requires-Dist: uvicorn (==0.18.3)
+Requires-Dist: uvloop (==0.16.0)
+Requires-Dist: websockets (==10.0)
+Project-URL: Repository, https://github.com/lnbits/lnbits
+Description-Content-Type: text/markdown
+
+LNbits
+======
+
+[![license-badge]](LICENSE)
+[![docs-badge]][docs]
+
+
+![Lightning network wallet](https://i.imgur.com/EHvK6Lq.png)
+
+# LNbits v0.10 BETA, free and open-source Lightning wallet accounts system
+
+(Join us on [https://t.me/lnbits](https://t.me/lnbits))
+
+LNbits is beta, for responsible disclosure of any concerns please contact lnbits@pm.me
+
+Use [legend.lnbits.com](https://legend.lnbits.com), or run your own LNbits server!
+
+LNbits is a Python server that sits on top of any funding source. It can be used as:
+
+* Accounts system to mitigate the risk of exposing applications to your full balance via unique API keys for each wallet
+* Extendable platform for exploring Lightning network functionality via the LNbits extension framework
+* Part of a development stack via LNbits API
+* Fallback wallet for the LNURL scheme
+* Instant wallet for LN demonstrations
+
+LNbits can run on top of any Lightning funding source. It supports LND, CLN, Eclair, Spark, LNpay, OpenNode, LightningTipBot, and with more being added regularly.
+
+See [LNbits Wiki](https://github.com/lnbits/lnbits/wiki/) for more detailed documentation.
+
+Checkout the LNbits [YouTube](https://www.youtube.com/playlist?list=PLPj3KCksGbSYG0ciIQUWJru1dWstPHshe) video series.
+
+LNbits is inspired by all the great work of [opennode.com](https://www.opennode.com/), and in particular [lnpay.co](https://lnpay.co/). Both work as funding sources for LNbits.
+
+## Running LNbits
+
+See the [install guide](https://github.com/lnbits/lnbits/wiki/LNbits-Documentation#install-options) for details on installation and setup.
+
+## LNbits as an account system
+
+LNbits is packaged with tools to help manage funds, such as a table of transactions, line chart of spending, export to csv + more to come..
+
+![Lightning network wallet](https://i.imgur.com/w8jdGpF.png)
+
+Each wallet also comes with its own API keys, to help partition the exposure of your funding source.
+
+(LNbits M5StackSats available here https://github.com/arcbtc/M5StackSats)
+
+![lnurl ATM](https://i.imgur.com/WfCg8wY.png)
+
+## LNbits as an LNURL-withdraw fallback
+
+LNURL has a fallback scheme, so if scanned by a regular QR code reader it can default to a URL. LNbits exploits this to generate an instant wallet using the [LNURL-withdraw](https://github.com/btcontract/lnurl-rfc/blob/master/lnurl-withdraw.md).
+
+![lnurl fallback](https://i.imgur.com/CPBKHIv.png)
+
+Using **lnbits.com/?lightning="LNURL-withdraw"** will trigger a withdraw that builds an LNbits wallet.
+Example use would be an ATM, which utilises LNURL, if the user scans the QR with a regular QR code scanner app, they will still be able to access the funds.
+
+![lnurl ATM](https://i.imgur.com/Gi6bn3L.jpg)
+
+## LNbits as an instant wallet
+
+Wallets can be easily generated and given out to people at events. "Go to this  website", has a lot less friction than "Download this app".
+
+![lnurl ATM](https://i.imgur.com/xFWDnwy.png)
+
+## Tip us
+
+If you like this project [send some tip love](https://legend.lnbits.com/paywall/GAqKguK5S8f6w5VNjS9DfK)!
+
+
+[docs]: https://github.com/lnbits/lnbits/wiki
+[docs-badge]: https://img.shields.io/badge/docs-lnbits.org-673ab7.svg
+[github-mypy]: https://github.com/lnbits/lnbits/actions?query=workflow%3Amypy
+[github-mypy-badge]: https://github.com/lnbits/lnbits/workflows/mypy/badge.svg
+[github-tests]: https://github.com/lnbits/lnbits/actions?query=workflow%3Atests
+[github-tests-badge]: https://github.com/lnbits/lnbits/workflows/tests/badge.svg
+[codecov]: https://codecov.io/gh/lnbits/lnbits
+[codecov-badge]: https://codecov.io/gh/lnbits/lnbits/branch/master/graph/badge.svg
+[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
+
