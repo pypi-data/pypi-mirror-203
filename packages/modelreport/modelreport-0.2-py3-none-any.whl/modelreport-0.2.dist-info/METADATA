@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: modelreport
+Version: 0.2
+Summary: A lightweight library to get the all classification metric scores.
+Author: SusmitPanda
+Author-email: susmit.vssut@gmail.com
+License: MIT
+Keywords: accuracy,confusion_matrix,precision_score,recall_score,f1_score,auc,matthews_corrcoef,cohen_kappa_score,classification report
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+
+
+Installation
+-------------
+
+
+    ```pip install -U modelreport```
+
+Example
+---------
+
+from modelreport.metric import result_summary
+
+print(result_summary(test data,predicted data))
+
+
+`More Updates Coming Soon...` 😄
+
+
+Contact
+---------
+
+I would like to get feedback from the community. If you have feature suggestions, support questions or general comments, please email me at susmit.vssut@gmail.com
+
