@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: fastpathplanning
+Version: 0.1.1
+Summary: An algorithm for path planning in sequences of safe boxes
+Home-page: https://github.com/cvxgrp/fpp.py
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# fastpathplanning
+
+[![Main Test](https://github.com/cvxgrp/fastpathplanning/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/cvxgrp/fastpathplanning/actions/workflows/test.yml)
+
+Library companion to the paper "Fast Path PlanningThrough Large Collections of
+Safe Boxes" by Tobia Marcucci, Parth Nobel, Russ Tedrake, and Stephen Boyd.
+
+
+- Depends on cvxpy, networkx, scipy, numpy
+  - Optional: matplotlib
+
+
