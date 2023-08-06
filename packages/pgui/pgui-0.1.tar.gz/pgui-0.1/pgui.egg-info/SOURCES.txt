@@ -1,0 +1,7 @@
+README.md
+setup.py
+pgui.egg-info/PKG-INFO
+pgui.egg-info/SOURCES.txt
+pgui.egg-info/dependency_links.txt
+pgui.egg-info/not-zip-safe
+pgui.egg-info/top_level.txt
