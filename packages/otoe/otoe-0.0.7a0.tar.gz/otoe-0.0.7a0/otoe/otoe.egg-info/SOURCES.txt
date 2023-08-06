@@ -1,0 +1,7 @@
+README.md
+setup.py
+otoe/otoe.egg-info/PKG-INFO
+otoe/otoe.egg-info/SOURCES.txt
+otoe/otoe.egg-info/dependency_links.txt
+otoe/otoe.egg-info/entry_points.txt
+otoe/otoe.egg-info/top_level.txt
