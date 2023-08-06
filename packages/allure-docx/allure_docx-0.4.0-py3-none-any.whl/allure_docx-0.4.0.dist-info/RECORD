@@ -1,0 +1,15 @@
+allure_docx/__init__.py,sha256=O-2NLi3KE-uDANVk18MSBQJWeKpxN_aA8alMWjsL1Ew,133
+allure_docx/commandline.py,sha256=wxA2CZvKzbxK4uz_3F3L5I41Ezl9_GIEd6e7sWyI1qc,3216
+allure_docx/config.py,sha256=vlz0SzIdEhC4iHVZAiJ5yH4sNg5jH4De5TiRY4Me4lw,3426
+allure_docx/report_builder.py,sha256=W7dvPZfkQlNTHOu2tMqN-w5k3Uxal7so27Ykzy1wODg,26205
+allure_docx/template.docx,sha256=c2K8brADcQW1FqTS1DWHZ6PsIQPvjOqcNfJaNoVy4Cc,2648831
+allure_docx/config/compact.ini,sha256=FtKxLSgG465Zp2zMpFhapZJWcfJ5hMrcEZnpO7kAa0Y,271
+allure_docx/config/no_trace.ini,sha256=XU89sc8IJv1eqoxWLLyAm7qGK-wrxGJMY3kgmht3JjA,281
+allure_docx/config/standard.ini,sha256=U7p7pPHpLnvf9LnPJ40Fo55XhnaeJF_EvKBigJBgDdQ,285
+allure_docx/config/standard_on_fail.ini,sha256=K89Bj13KLCZm2rdZMefSj5fHKH3hwBNd3WL-Gy5f2w8,277
+allure_docx-0.4.0.dist-info/LICENSE,sha256=j-sB2JLBKdKri0NzK_4LEJLu_DDfGW9P-dpB972seYA,1137
+allure_docx-0.4.0.dist-info/METADATA,sha256=GCfbdu_kN8gVktxapEqb0Tvp8yHtC4-DbKl9a7mLAa0,7188
+allure_docx-0.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+allure_docx-0.4.0.dist-info/entry_points.txt,sha256=PqecgmiIsob6U_SeZHVS3-jk_UnN3Eq4NHK6UMeeO-o,61
+allure_docx-0.4.0.dist-info/top_level.txt,sha256=MmPPwY2DQGHXAoE3lSBLn5jCAgE2boj2C3W5rhJ1mUI,12
+allure_docx-0.4.0.dist-info/RECORD,,
