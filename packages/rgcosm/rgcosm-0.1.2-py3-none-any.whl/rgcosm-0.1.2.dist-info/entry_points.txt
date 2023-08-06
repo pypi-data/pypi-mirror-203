@@ -1,0 +1,2 @@
+[console_scripts]
+rgcosm = rgcosm:__main__
