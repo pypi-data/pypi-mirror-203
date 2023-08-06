@@ -1,0 +1,1 @@
+from mlops_lessons.jobs.training.main import main

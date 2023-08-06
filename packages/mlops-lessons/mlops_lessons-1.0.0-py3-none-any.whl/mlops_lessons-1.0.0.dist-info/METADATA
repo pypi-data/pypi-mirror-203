@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: mlops-lessons
+Version: 1.0.0
+Summary: Lesons about mlops
+Home-page: https://github.com/vincentvic/MLOps
+Author: VINCENT Victor
+Author-email: vincent.victor206@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: tensorflow
+Requires-Dist: matplotlib
+
+# MLOps
+Lessons about MLOPS first part 
+
+#  Create env python = Packaging
+- python -m venv .venv
+- .venv\Script\activate
+- pip install -e .
+- pip freeze > requirements.txt
+
+# create setup.py
+
+
