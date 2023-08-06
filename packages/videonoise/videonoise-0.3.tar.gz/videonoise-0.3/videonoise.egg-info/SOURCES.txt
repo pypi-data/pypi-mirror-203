@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+videonoise/__init__.py
+videonoise/videonoise.py
+videonoise.egg-info/PKG-INFO
+videonoise.egg-info/SOURCES.txt
+videonoise.egg-info/dependency_links.txt
+videonoise.egg-info/entry_points.txt
+videonoise.egg-info/requires.txt
+videonoise.egg-info/top_level.txt
