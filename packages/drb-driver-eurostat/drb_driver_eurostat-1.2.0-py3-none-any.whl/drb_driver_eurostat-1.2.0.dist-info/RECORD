@@ -1,0 +1,11 @@
+drb/drivers/eurostat/__init__.py,sha256=I-XqyovDb8SWkXCaZBnf-3PtvmVsMyfqwMjDffBlz5E,446
+drb/drivers/eurostat/_version.py,sha256=ReBJDMGiwCOrAJVnpWNjB_0NA5CB_0YsKHOt_qeghhc,497
+drb/drivers/eurostat/eurostat.py,sha256=BOHi4ioq0OIaAj9eMrqg0r3tQhKY-KL1s4oL83g5nCI,11953
+drb/topics/eurostat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drb/topics/eurostat/cortex.yml,sha256=iIIzLVkyQJgkryfEp5nHmVMkl9EC3VfLoV-st-QU-tc,165
+drb_driver_eurostat-1.2.0.dist-info/LICENCE.txt,sha256=RzxtV7MG0zbF6dDvQsaZ1OKsHZ7CRyeILenjUIol5rs,7651
+drb_driver_eurostat-1.2.0.dist-info/METADATA,sha256=92fc6zcNfWbLrn-FiPw-V6XgKxAcxeRALkfmxpBN4Gg,4981
+drb_driver_eurostat-1.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+drb_driver_eurostat-1.2.0.dist-info/entry_points.txt,sha256=_OcFqLNSiPI1aL3kcfMKfZGpOmWxiNLjDT71UY5snbU,108
+drb_driver_eurostat-1.2.0.dist-info/top_level.txt,sha256=tp7x0jo6KHy7P4LzX36tRyB2qZR7OiCZCAQGzrq25E0,4
+drb_driver_eurostat-1.2.0.dist-info/RECORD,,
