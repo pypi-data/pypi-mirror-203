@@ -1,0 +1,5 @@
+Django<5,>=4.2
+
+[build]
+wheel
+build

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+Django_Subdomain_Middleware.egg-info/PKG-INFO
+Django_Subdomain_Middleware.egg-info/SOURCES.txt
+Django_Subdomain_Middleware.egg-info/dependency_links.txt
+Django_Subdomain_Middleware.egg-info/requires.txt
+Django_Subdomain_Middleware.egg-info/top_level.txt
+django_subdomain_middleware/__init__.py
+django_subdomain_middleware/subdomain.py
