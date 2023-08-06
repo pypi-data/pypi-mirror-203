@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+comid/__init__.py
+comid/scraper.py
+comid.egg-info/PKG-INFO
+comid.egg-info/SOURCES.txt
+comid.egg-info/dependency_links.txt
+comid.egg-info/requires.txt
+comid.egg-info/top_level.txt
