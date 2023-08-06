@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.py
+jaquar/__init__.py
+jaquar/cli.py
+jaquar.egg-info/PKG-INFO
+jaquar.egg-info/SOURCES.txt
+jaquar.egg-info/dependency_links.txt
+jaquar.egg-info/entry_points.txt
+jaquar.egg-info/requires.txt
+jaquar.egg-info/top_level.txt
+jaquar/templates/static/css/style.css
+jaquar/templates/static/js/scripts.js
