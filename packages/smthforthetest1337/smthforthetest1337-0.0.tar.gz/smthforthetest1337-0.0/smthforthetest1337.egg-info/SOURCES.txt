@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+smthforthetest1337/_init_.py
+smthforthetest1337.egg-info/PKG-INFO
+smthforthetest1337.egg-info/SOURCES.txt
+smthforthetest1337.egg-info/dependency_links.txt
+smthforthetest1337.egg-info/not-zip-safe
+smthforthetest1337.egg-info/top_level.txt
