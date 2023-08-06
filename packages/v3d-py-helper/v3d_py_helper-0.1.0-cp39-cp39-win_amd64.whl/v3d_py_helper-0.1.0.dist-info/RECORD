@@ -1,0 +1,11 @@
+v3dpy/__init__.py,sha256=QK05YejJvNPUEdS9lEM1O8emSSgewZs4M6g64Zgt2RY,212
+v3dpy/loaders/__init__.py,sha256=7NvmNBk6KMxEOfj2fJ8do065zf3pQA4aoN7ZmUzNkBY,265
+v3dpy/loaders/pbd.cp39-win_amd64.pyd,sha256=v0YHpGduazs8VACPdc3Kld_6w02-OiMJyobFExp6vFc,157696
+v3dpy/loaders/pbd.pyx,sha256=pcd-dlqokkm4H0kobUX4AFmhkRugdD-xFTpcDP70WC0,21496
+v3dpy/loaders/raw.cp39-win_amd64.pyd,sha256=PPAdQlYiQ7hkE_fXogm6yj-dGlWT9qbl5fFwPBsPfxo,71168
+v3dpy/loaders/raw.pyx,sha256=t2YYl6zJKUYba8KWq7nITmBR5A1WTHzagu1MC7LVmTs,5211
+v3d_py_helper-0.1.0.dist-info/LICENSE,sha256=cos5wXmjJImprAUW51NMS8r-PHc8t4lOxKzBSo37fIU,1075
+v3d_py_helper-0.1.0.dist-info/METADATA,sha256=bDzSGCUO4aN0K2M4OcK91xEppempcU0Cwf7wLyFLfN0,1402
+v3d_py_helper-0.1.0.dist-info/WHEEL,sha256=eep6QWEFiQfg2wcclssb_WY-D33AnLYLnEKGA9Rn-VU,100
+v3d_py_helper-0.1.0.dist-info/top_level.txt,sha256=26nf1BG5JRpHPSNrNOd-AXsRMZpPbzbNNETirA_nAJg,6
+v3d_py_helper-0.1.0.dist-info/RECORD,,

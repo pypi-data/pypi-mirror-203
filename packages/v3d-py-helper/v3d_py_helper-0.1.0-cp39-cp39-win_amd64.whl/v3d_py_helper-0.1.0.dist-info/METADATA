@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: v3d-py-helper
+Version: 0.1.0
+Summary: Make Vaa3D functions accessible for high-performance python computation.
+Author-email: Zuohan Zhao <zzhmark@126.com>, Yufeng Liu <yufeng_liu@seu.edu.cn>
+License: MIT License
+Project-URL: GitHub Project, https://github.com/SEU-ALLEN-codebase/vaa3d-python
+Keywords: vaa3d,neuron-morphology,image-processing
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Provides-Extra: docs
+Requires-Dist: pdoc ; extra == 'docs'
+
+# Vaa3D in Python Made Easy
+Python library for Vaa3D functions.
+
+## Installation
+
+```shell
+$ pip install v3d-py-helper
+```
+
+By cloning the repo and test the Cyhton usages:
+```shell
+$ python setup.py build_ext --inplace
+```
+
+## Usage
+
+### Loading Vaa3D format data
+
+```python
+from v3dpy.loaders import Raw, PBD
+
+raw = Raw()
+img = raw.load('path.v3draw')
+raw.save('path.v3draw', img)
+
+pbd = PBD()
+img = pbd.load('path.v3dpbd')
+pbd.save('path.v3dpbd', img)
+```
+
+## Useful Links
+
+Github project: https://github.com/SEU-ALLEN-codebase/v3d-py-helper
+
+Vaa3D source: https://github.com/Vaa3D/v3d_external
+
+Documentation: https://SEU-ALLEN-codebase.github.io/v3d-py-helper
