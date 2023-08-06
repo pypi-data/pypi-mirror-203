@@ -1,0 +1,5 @@
+pandas
+protobuf==3.6.1
+xlrd==1.1.0
+numpy
+sprocket-boxcars-py
