@@ -1,0 +1,10 @@
+LICENSE.rst
+setup.cfg
+setup.py
+src/ressyy/__init__.py
+src/ressyy/second.py
+src/ressyy.egg-info/PKG-INFO
+src/ressyy.egg-info/SOURCES.txt
+src/ressyy.egg-info/dependency_links.txt
+src/ressyy.egg-info/requires.txt
+src/ressyy.egg-info/top_level.txt
