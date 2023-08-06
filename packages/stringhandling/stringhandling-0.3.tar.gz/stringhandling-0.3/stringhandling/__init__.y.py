@@ -1,0 +1,1 @@
+from .strhandle import get_words_list, get_char_count
