@@ -1,0 +1,27 @@
+# Locality Sensitive Hashing (LSH)
+
+Locality Sensitive Hashing (LSH) is a technique used for finding approximate nearest neighbors in high-dimensional data. This technique is based on the idea that if two data points are similar, then they are likely to have similar hash values. By hashing the data points, we can group together similar points and reduce the search space for nearest neighbor search. LSH is particularly useful in scenarios where exact nearest neighbor search is computationally expensive or infeasible.
+
+## How LSH works
+
+LSH works by hashing data points into buckets based on their similarity. The idea is to use a hash function that maps similar points to the same bucket with high probability. This way, we can retrieve a small set of candidate points for a given query and only need to compute the exact distance for these candidates.
+
+In LSH, we use multiple hash tables to increase the recall of the algorithm. The recall is the proportion of true nearest neighbors that are retrieved by the algorithm. By using multiple hash tables, we increase the probability of finding the true nearest neighbors. Each hash table uses a different hash function to map the data points to buckets.
+
+## LSH versus conventional hash functions
+
+In conventional hash functions, small changes in the input data result in large changes in the output hash value. This property makes hash functions useful for data integrity checks, but not for finding similar data points. In contrast, LSH uses hash functions that preserve similarity. That is, similar data points are mapped to the same bucket with high probability, while dissimilar points are mapped to different buckets.
+
+## Levels of LSH
+
+There are two levels of LSH: hashing-based and projection-based.
+
+### Hashing-based LSH
+Hashing-based LSH uses a single hash function to map data points to buckets. This hash function is often a random projection matrix or a locality-sensitive hash function.
+
+### Projection-based LSH
+Projection-based LSH uses multiple hash functions to map data points to buckets. Each hash function corresponds to a different random projection of the data. Projection-based LSH is typically more accurate than hashing-based LSH.
+
+## Use case within Creative language model generation
+
+LSH can be used in Creative language model generation to efficiently retrieve similar words or phrases. Given a query word or phrase, LSH can retrieve a small set of candidate words or phrases that are likely to be similar. The similarity can be measured using a distance metric such as cosine similarity or Euclidean distance. This technique is particularly useful in scenarios where the vocabulary size is large and exact nearest neighbor search is computationally expensive or infeasible. By using LSH, we can reduce the search space and improve the efficiency of the algorithm.
