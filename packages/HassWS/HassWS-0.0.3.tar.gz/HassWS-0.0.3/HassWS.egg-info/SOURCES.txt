@@ -1,0 +1,11 @@
+pyproject.toml
+readme.md
+setup.cfg
+.github/workflows/python-publish.yml
+HassWS.egg-info/PKG-INFO
+HassWS.egg-info/SOURCES.txt
+HassWS.egg-info/dependency_links.txt
+HassWS.egg-info/requires.txt
+HassWS.egg-info/top_level.txt
+HassWS.egg-info/zip-safe
+src/HassWS/__init__.py
