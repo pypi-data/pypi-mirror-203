@@ -1,0 +1,13 @@
+drup-1.1.0.dist-info/,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drup/,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drup-1.1.0.dist-info/LICENSE,sha256=_HMX4A81r7IMRhApeaDEtZG528kFkAFQ17zTKrB9rN8,1072
+drup-1.1.0.dist-info/WHEEL,sha256=SWacRfMXLnEpqOa4F5_2e7w5U_vTmZDN6rr5dZ54wI8,119
+drup-1.1.0.dist-info/entry_points.txt,sha256=gVkb2ndRoXLh9jR85EddPHlJVMUeVLWrPQGXQBBf3tQ,39
+drup-1.1.0.dist-info/top_level.txt,sha256=Btpk2_nCsL85Zojo-0MY7jxGvS5JbK2wRU9o5qdy6kM,5
+drup-1.1.0.dist-info/METADATA,sha256=x8Jpnn7Coe-Ym1stvnu0CU2-7M3gjdgKouxZdy5nEOU,7194
+drup/wrappers.py,sha256=1fRKFXwvnyVvDHYGp3n3U5Tniqax6WvsnqPUuQ-0THE,3956
+drup/librupchecker.cpython-310-x86_64-linux-gnu.so,sha256=R5FwsU5BZQ2Kkd5qoJObCr-siMdypwsjXzNQ0bDxbfc,15032
+drup/librupchecker.so,sha256=KhDud8gXoQkymjoam7A7Cpq_KLP6J-eQyJZou0fGzZM,2098368
+drup/__init__.py,sha256=4s32qfl0uIlIy8Ix7VefpuYB0anggXaTa0eBlQfQlkc,456
+drup/cli.py,sha256=kw0TMdFknZkKAxxrvi9Gq51-wEGaIgFPLJl0H3h15jQ,1295
+drup-1.1.0.dist-info/RECORD,,
