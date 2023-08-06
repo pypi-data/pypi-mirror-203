@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+anoens/__init__.py
+anoens/crm.py
+anoens/methods.py
+anoens.egg-info/PKG-INFO
+anoens.egg-info/SOURCES.txt
+anoens.egg-info/dependency_links.txt
+anoens.egg-info/requires.txt
+anoens.egg-info/top_level.txt
