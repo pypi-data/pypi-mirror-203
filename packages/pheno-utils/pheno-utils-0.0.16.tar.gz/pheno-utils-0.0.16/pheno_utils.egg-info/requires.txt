@@ -1,0 +1,12 @@
+fastcore
+pandas==1.5.2
+numpy
+scipy
+fastparquet
+matplotlib
+seaborn
+scikit-learn
+pyCompare
+tsmoothie
+
+[dev]
