@@ -1,0 +1,11 @@
+mc_uuid_check/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mc_uuid_check/__main__.py,sha256=BIBSiEiZ9yCHOK95-XpDI51v3PXjm8UDPmQMcpwYRYw,1194
+mc_uuid_check/helperfunctions.py,sha256=-QQM-UFNd46SZGidgUt88gE4xn3a_uJDvQzwU8ZGnA4,207
+mc_uuid_check/mc_offline_uuid.py,sha256=MwZ6abJ-XmnNbq92iJZpxLqI7uykn71kUrCG8uUGn18,387
+mc_uuid_check/mc_online_uuid.py,sha256=KedXfa0eSIms-ILLQwDBjjQTIAJQ69f7Yn0UAEtggBg,645
+mc_uuid_check-0.0.3.dist-info/LICENSE,sha256=YxdZWh1EVRx5pAfgu9qzaT-E4vTb9Fdstlb9Xn7eE9A,692
+mc_uuid_check-0.0.3.dist-info/METADATA,sha256=yicME7LyIOoune1FAyJ_Ie5Qnc3UxbXkbnXjOarGG0w,912
+mc_uuid_check-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mc_uuid_check-0.0.3.dist-info/entry_points.txt,sha256=Anr3bg7gu0-v6bcRRlZ82XDmju-6PFk2vaeUdWJeG98,62
+mc_uuid_check-0.0.3.dist-info/top_level.txt,sha256=HkFVGA5ms4q9poCHXTmHXkQoCM85la89pgv3XTk7o-w,14
+mc_uuid_check-0.0.3.dist-info/RECORD,,
