@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: richtemplates
+Version: 0.0.1
+Summary: Package with consistent style guiders for different projects.
+Author: Daniel Vecera
+Author-email: daniel@therichview.com
+Requires: plotly
+Requires: matplotlib
+Requires: altair

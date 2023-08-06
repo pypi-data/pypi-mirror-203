@@ -1,0 +1,10 @@
+setup.py
+richtemplates/__init__.py
+richtemplates/altair_theme.py
+richtemplates/data.py
+richtemplates/plotly_theme.py
+richtemplates/tutorial.py
+richtemplates.egg-info/PKG-INFO
+richtemplates.egg-info/SOURCES.txt
+richtemplates.egg-info/dependency_links.txt
+richtemplates.egg-info/top_level.txt
