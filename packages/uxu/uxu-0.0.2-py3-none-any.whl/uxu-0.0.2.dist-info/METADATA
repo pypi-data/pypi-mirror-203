@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: uxu
+Version: 0.0.2
+Summary: Server-side interactive HTML engine.
+Project-URL: Documentation, https://github.com/EdAyers/sss/uxu
+Project-URL: Issues, https://github.com/EdAyers/sss/issues
+Project-URL: Source, https://github.com/EdAyers/sss/uxu
+Author-email: "E.W.Ayers" <contact@edayers.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Requires-Dist: dominate
+Requires-Dist: html5lib
+Requires-Dist: miniscutil
+Requires-Dist: pydantic
+Requires-Dist: pydantic[dotenv]
+Requires-Dist: python-jose
+Requires-Dist: starlette
+Requires-Dist: websockets
+Description-Content-Type: text/markdown
+
+# uxu
+
+[![PyPI - Version](https://img.shields.io/pypi/v/uxu.svg)](https://pypi.org/project/uxu)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/uxu.svg)](https://pypi.org/project/uxu)
+
+Make little user interfaces without fussing around with JavaScript.
+
+This library is very WIP.
+
+## Installation
+
+```console
+pip install uxu
+```
+
+## License
+
+`uxu` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+
+## Development
+
+To develop the javascript portion of the library, please do
+
+```sh
+cd web
+# to build
+node build.mjs
+
+# to build and watch and live-reload
+node server.mjs
+```
+
+## Todos
+
+- server: only connect websocket if interactivity is needed
+- server: have checksum on patches to make sure state doesn't get messed up.
+- server: timeouts on websocket connections
+- server: auth
+- server: live reloading
+- components: implement forms
+- components: spinners while waiting for patcher roundtrips
