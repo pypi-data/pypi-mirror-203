@@ -1,0 +1,8 @@
+aiopinecone/client.py,sha256=ap8yMxZoCveJcvrYuhKMByelXoQyuQjti_H2iOlBkoo,3703
+aiopinecone/schemas/__init__.py,sha256=CmH51NftKSj2PdCPXXMCqfy63JA7rnFLmqr1V8fyXsI,47
+aiopinecone/schemas/custom.py,sha256=CNMDgIpAlsLXCo1fHnIfn2hAkDXhQi-LRIH4eUUbPUM,167
+aiopinecone/schemas/generated.py,sha256=POnCGJTkAbh_NCnUCUZRl0REYi-VnInrROZ8ncKIogI,14280
+aiopinecone-0.1.0.dist-info/LICENSE,sha256=2VASjztnUMiMI8e-j2utH3Mx288xv_puTj3Guz3uMIg,1068
+aiopinecone-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+aiopinecone-0.1.0.dist-info/METADATA,sha256=yXowAGQJSTasSvF51EjS6rRggigXDwJhmeSHxO6kX2I,650
+aiopinecone-0.1.0.dist-info/RECORD,,
