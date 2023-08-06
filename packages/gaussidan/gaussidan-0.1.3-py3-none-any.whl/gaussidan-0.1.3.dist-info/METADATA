@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: gaussidan
+Version: 0.1.3
+Summary: 
+Author: Daniel Williams
+Author-email: daniel.mays.williams@gmail.com
+Requires-Python: >=3.6.8,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: lmfit (>=1.0.3,<2.0.0)
+Requires-Dist: numpy (>=1.19.0,<2.0.0)
