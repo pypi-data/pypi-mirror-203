@@ -1,0 +1,3 @@
+[console_scripts]
+rolv = rolv:version
+rolv.install = rolv:install

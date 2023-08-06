@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+rolv/__init__.py
+rolv/bashrc.py
+rolv.egg-info/PKG-INFO
+rolv.egg-info/SOURCES.txt
+rolv.egg-info/dependency_links.txt
+rolv.egg-info/entry_points.txt
+rolv.egg-info/top_level.txt
+rolv/src/build_local
