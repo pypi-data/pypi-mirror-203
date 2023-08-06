@@ -1,0 +1,9 @@
+pollev_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pollev_tools/reader.py,sha256=9A2DxRhbbfC4Dpg8dys2pyl_qtrGWFDiOXaUk7REY48,26266
+resources/config.ini,sha256=ABs44trJzODEzjYdUDRImDgZ5ZrabdkNK4rzib-wYMo,567
+resources/html-styles.css,sha256=76Rlai0G9I5KGaA6mVxRUIqeNmAeueNsyQYa0FnwYz4,424
+pollev_history_compiler-1.0.1.dist-info/METADATA,sha256=gQr5PHcusKI80Jph0pVqkfwia0vSfqBUltgooB6WbHM,1921
+pollev_history_compiler-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pollev_history_compiler-1.0.1.dist-info/entry_points.txt,sha256=yI7vC0LjqOJt6J0_T5gA-IjgsN1pg0h7TnDm6Thd6s0,61
+pollev_history_compiler-1.0.1.dist-info/top_level.txt,sha256=EfinTMKj_2VWLHClW-DqmPS-brJLEE86AHQATxAlbQs,13
+pollev_history_compiler-1.0.1.dist-info/RECORD,,
