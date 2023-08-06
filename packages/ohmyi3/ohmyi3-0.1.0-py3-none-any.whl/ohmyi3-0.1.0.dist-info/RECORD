@@ -1,0 +1,17 @@
+LICENSE,sha256=NUiuS3YadYW-37H3Vrnwt58T97JMNEXfxUYzSrqxEEU,1082
+ohmyi3/app.py,sha256=V07nhqV5hXeu5U2-dW4qbdBuCRoR7BNJdBsWm7Wk5h8,1980
+ohmyi3/commands/entrypoint.py,sha256=9BOkP1lkCT5KFJiWlEcAboK65s76G0hCE18kQIIIcdQ,1131
+ohmyi3/commands/generate.py,sha256=OIgemlZ0NNaHKL-MV91c_Tgvt0J9HLOjyPajkQv8lJ4,3058
+ohmyi3/commands/info.py,sha256=pN2dgv7Oj0u1CztzQynyJqIJM1iMvOHGRYvGza4nmFM,344
+ohmyi3/commands/init.py,sha256=n65tga2T8u8XJJ7oNkc_vF5gZULRvx8X7KuVWvPfrcE,1205
+ohmyi3/config/app.py,sha256=gj5ToDSzlGafcAUM6Nc9ZxEBbfBgPWrMzYZcTSKUdKg,591
+ohmyi3/config/package.py,sha256=kg9YKaw740KOwwluY5xZHsZmsJlMmT9dcTmPKq5PlyU,2384
+ohmyi3/services/bootstrap.py,sha256=Sno0hNIQ1LNohDZeQOfBad0MX9n6feiadQ89R43RPg0,814
+ohmyi3/services/ohmyi3.py,sha256=w2Hnwy7nmAFR-mckPV4Q8a4vejnn8wgHzk3z_Y6IS88,2372
+ohmyi3/stubs/config.d/00-header.conf,sha256=__eahpNxMWE7L9DWGQDXzat6ve2jCBKu5iqjL3-tUbk,810
+ohmyi3/stubs/settings.py,sha256=2bzq78QmJXw1cO0jm3zSdZ_zytZK_q-dzoO7O23P0qI,588
+ohmyi3-0.1.0.dist-info/entry_points.txt,sha256=DJLNj3iBvaPCKyhTFR_5eKBVqeTjhk0Q-BVl_4LR6C0,56
+ohmyi3-0.1.0.dist-info/LICENSE,sha256=NUiuS3YadYW-37H3Vrnwt58T97JMNEXfxUYzSrqxEEU,1082
+ohmyi3-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+ohmyi3-0.1.0.dist-info/METADATA,sha256=e-4CtCjl8FPWawXeNBwWk7sAEPdLbyhehIV28Tx55h0,666
+ohmyi3-0.1.0.dist-info/RECORD,,
