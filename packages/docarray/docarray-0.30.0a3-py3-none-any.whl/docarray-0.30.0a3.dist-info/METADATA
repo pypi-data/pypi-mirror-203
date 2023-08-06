@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: docarray
+Version: 0.30.0a3
+Summary: The data structure for unstructured data
+License: Apache 2.0
+Author: DocArray
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: audio
+Provides-Extra: aws
+Provides-Extra: elasticsearch
+Provides-Extra: full
+Provides-Extra: hnswlib
+Provides-Extra: image
+Provides-Extra: jac
+Provides-Extra: mesh
+Provides-Extra: pandas
+Provides-Extra: proto
+Provides-Extra: qdrant
+Provides-Extra: torch
+Provides-Extra: video
+Provides-Extra: weaviate
+Provides-Extra: web
+Requires-Dist: av (>=10.0.0) ; extra == "video" or extra == "full"
+Requires-Dist: elastic-transport (>=8.4.0,<9.0.0) ; extra == "elasticsearch"
+Requires-Dist: elasticsearch (>=7.10.1) ; extra == "elasticsearch"
+Requires-Dist: fastapi (>=0.87.0) ; extra == "web"
+Requires-Dist: hnswlib (>=0.6.2) ; extra == "hnswlib"
+Requires-Dist: jina-hubble-sdk (>=0.34.0) ; extra == "jac"
+Requires-Dist: lz4 (>=1.0.0) ; extra == "proto" or extra == "full"
+Requires-Dist: numpy (>=1.17.3)
+Requires-Dist: orjson (>=3.8.2)
+Requires-Dist: pandas (>=1.1.0) ; extra == "pandas" or extra == "full"
+Requires-Dist: pillow (>=9.3.0) ; extra == "image" or extra == "full"
+Requires-Dist: protobuf (>=3.19.0) ; extra == "proto" or extra == "full"
+Requires-Dist: pydantic (>=1.10.2)
+Requires-Dist: pydub (>=0.25.1,<0.26.0) ; extra == "audio" or extra == "full"
+Requires-Dist: qdrant-client (>=1.1.4) ; (python_version < "3.12") and (extra == "qdrant")
+Requires-Dist: rich (>=13.1.0)
+Requires-Dist: smart-open[s3] (>=6.3.0) ; extra == "aws"
+Requires-Dist: torch (>=1.0.0) ; extra == "torch"
+Requires-Dist: trimesh[easy] (>=3.17.1) ; extra == "mesh" or extra == "full"
+Requires-Dist: types-pillow (>=9.3.0.1) ; extra == "image" or extra == "full"
+Requires-Dist: types-requests (>=2.28.11.6)
+Requires-Dist: typing-inspect (>=0.8.0)
+Requires-Dist: weaviate-client (>=3.15) ; extra == "weaviate"
