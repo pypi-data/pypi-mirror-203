@@ -1,0 +1,17 @@
+clusterman/__init__.py,sha256=5yZWxq1Fty24asu4ac8XbD0XgDtkmqkr96twA3jmq8c,25
+clusterman/__main__.py,sha256=-ngmYDLpK95azApSDADaOHfGZ6kv8eCOdK9OoB9ryCQ,107
+clusterman/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clusterman/cli/app.py,sha256=NGFZgdgnjCSxD7pjeQe8XwmDXPm-v5iKD3qxEe2BVZc,1716
+clusterman/cli/cli.py,sha256=FRCUJWptiicxsBySW8YqFoyX6X0RVwbBQ3EcGmZv-IA,2363
+clusterman/main/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clusterman/main/ampq.py,sha256=BAdgG5RJOXnVTA7Xry5POBPnPtXSjULPU0aTN5drljM,6057
+clusterman/main/controller.py,sha256=2Ab4CahphxdLQm1NLIhJMoZhlDloiCqnG4lX5AheFN8,17516
+clusterman/main/mainline.py,sha256=hgLjrdjetGZigOiaXk5Toz5S3WwAu97s0U_zMqRu5Ts,3030
+clusterman/main/orm.py,sha256=hxgw05ZjVGB3JmW44sHzy3tWAA4zws3UJIwxdLxoVs0,6405
+clusterman/main/processing.py,sha256=xzDSGDwS9-GOcORfzHCAoky4GAIuK8EI-P2EV5QUblg,6650
+clusterman/main/runner.py,sha256=4Ygs22h5T1qMacpLcdCLyoQa0ChE3qxEm82Lf_JRpuQ,2584
+clusterfiles-0.1.5.dist-info/LICENSE,sha256=1HTRlJhmVKS-zZnD3GwN81Ch3o2aqCYgIcAsP0RBZDg,1065
+clusterfiles-0.1.5.dist-info/METADATA,sha256=TyyriW42SprOCHP_h6CU2QGP8XyE8gEO6PVkUvM9RsI,853
+clusterfiles-0.1.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+clusterfiles-0.1.5.dist-info/top_level.txt,sha256=tRvpT1J6D0HTu4TyF_Ojm7qpwEsfd7dxnyJApsyWOcY,11
+clusterfiles-0.1.5.dist-info/RECORD,,
