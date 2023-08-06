@@ -1,0 +1,3 @@
+[console_scripts]
+code-compass=code_compass.app:run
+
