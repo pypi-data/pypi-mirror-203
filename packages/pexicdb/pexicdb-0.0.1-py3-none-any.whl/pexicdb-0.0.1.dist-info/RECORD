@@ -1,0 +1,11 @@
+pexicdb/__about__.py,sha256=Hve5J0wck7LWiGTXVHtT2tR0SWv7SoDyBiSIEBC5E9M,145
+pexicdb/__init__.py,sha256=iNUgAeTtXJPzcYfIU57h05DmZdTfdfNooY2lBaLWeLs,949
+pexicdb/core.py,sha256=bgHlU-DoXXJfjBclTZYs_Qz-b_JyfamN2HBT5llJXWA,25262
+pexicdb/fields.py,sha256=g9EcY37ri6Z9fLxFdwFa4BmW1BnPuk9S6-DhSzBNPe4,9415
+pexicdb/functions.py,sha256=FcTgxShRJMAYw3x6CWjxDrl-rFZhQ6IWThy-7Bt6Ino,1628
+pexicdb/helpers.py,sha256=z0a3Kbv3hIZGwSK7seyPqKPVRfCDjlPO5ZsgWg5hYWc,2551
+pexicdb/lock.py,sha256=go44caFNyZiYMryfKtTZdc3znqW7IItdu4G9vvQjMGo,1014
+pexicdb-0.0.1.dist-info/METADATA,sha256=pteCp7da-_D0YdSUR5vgQo7fHrXd682Ctipk7ML388c,1391
+pexicdb-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pexicdb-0.0.1.dist-info/top_level.txt,sha256=Jp2HTFJ1HNLOhp-9OQb4ML2eBlsNp4P7NllRmf5feu4,8
+pexicdb-0.0.1.dist-info/RECORD,,

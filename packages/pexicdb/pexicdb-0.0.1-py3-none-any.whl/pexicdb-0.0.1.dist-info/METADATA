@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: pexicdb
+Version: 0.0.1
+Summary: Pexicdb is a simple model based file database
+Home-page: https://github.com/hakiKhuva/pexicdb
+Author: Harkishan Khuva
+Author-email: harkishankhuva02@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Pexicdb [![Downloads](https://pepy.tech/badge/pexicdb)](https://pepy.tech/project/pexicdb)
+
+pexicdb is a simple model based file database, pexicdb is a lightweight and stores
+data in the folders and files, basically a folder is called container.
+
+There are 2 types of files inside container
+
+1. container file(models stored in this)
+2. data file(contains all data about the container)
+
+pexicdb interact with the containers using model which is usually a list of fields.
+
+## Install
+
+```
+$ pip install pexicdb
+```
+
+## Simple program
+
+```python
+from pexicdb.fields import StringField, UUIDField
+from pexicdb import connect
+
+user_model = {
+    "id": UUIDField("id"),
+    "name": StringField("name")
+}
+
+users = connect("users", list(user_model.values()))
+
+users.insert({
+    "name" : "Harkishan Khuva"
+})
+```
+
+**NOTE :** The first field of any Model must be either `UUIDField` or an `IntegerField`.
+
