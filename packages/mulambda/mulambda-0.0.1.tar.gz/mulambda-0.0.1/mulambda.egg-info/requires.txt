@@ -1,0 +1,9 @@
+numpy
+typer
+openai
+
+[dev]
+pytest
+black
+ruff
+pre-commit
