@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+odbc2orm/__init__.py
+odbc2orm/__main__.py
+odbc2orm/config.py
+odbc2orm/convert.py
+odbc2orm/database.py
+odbc2orm/template.py
+odbc2orm/version.py
+odbc2orm.egg-info/PKG-INFO
+odbc2orm.egg-info/SOURCES.txt
+odbc2orm.egg-info/dependency_links.txt
+odbc2orm.egg-info/entry_points.txt
+odbc2orm.egg-info/requires.txt
+odbc2orm.egg-info/top_level.txt
