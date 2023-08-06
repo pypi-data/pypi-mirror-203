@@ -1,0 +1,5 @@
+setup.py
+libds.egg-info/PKG-INFO
+libds.egg-info/SOURCES.txt
+libds.egg-info/dependency_links.txt
+libds.egg-info/top_level.txt
