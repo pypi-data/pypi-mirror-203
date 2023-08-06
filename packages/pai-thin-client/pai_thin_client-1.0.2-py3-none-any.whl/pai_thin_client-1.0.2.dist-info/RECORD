@@ -1,0 +1,13 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/paiclient/__init__.py,sha256=az_EiamHyO36zoGKPT7w4PInWTM11AP0_E3zXn9hyOY,70
+src/paiclient/objects.py,sha256=qiigeBSiLZ0-U9bvuPnsaOoXGljmJJMgmXqZq-_Sk3g,677
+src/paiclient/pai_client.py,sha256=hRzZATkanKt8qd5viu-zc-Q_y9nc4QFEtr5wP4IhoQc,3375
+src/paiclient/components/__init__.py,sha256=5-_a4isW0brhtEXeAp_bBpsxBexxMZCIkRmrsmsXv38,246
+src/paiclient/components/pai_requests.py,sha256=knhNk0Ivtp0meSn260G71WkhG-KxLD-29dx6Kdne8H8,1664
+src/paiclient/components/pai_responses.py,sha256=MLPF1mxfgecJ0uB-bjs0tUh4tJ_tmwC8R30eMAK5C2k,3473
+src/paiclient/components/pai_uris.py,sha256=YyP_0w-Qe-EPrF0zckuV1cWLz3NY6_BSYt5c8WyCwW8,1427
+src/paiclient/components/request_objects.py,sha256=q_ip2AZNqsi8H0xn0Gz0tgqpAqw8VGqJFw26_7f3GUc,17874
+pai_thin_client-1.0.2.dist-info/METADATA,sha256=4N99WA3_69KaotyE0ErqV9bYXetBQMuDnh-y96Soz9Y,9418
+pai_thin_client-1.0.2.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+pai_thin_client-1.0.2.dist-info/licenses/LICENSE,sha256=tZqj_eBuLlLQ9-x8tqAyd0ky6I65WvTlMD_9aEgoY1g,1066
+pai_thin_client-1.0.2.dist-info/RECORD,,
