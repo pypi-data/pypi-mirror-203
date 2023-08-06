@@ -1,0 +1,12 @@
+CHANGELOG.md,sha256=a_6uyRqMxEJBswwFwj9eYnkh40yIUsm79ElC_wg6bNI,3286
+amarps/__init__.py,sha256=5im1FLD_I3r3KQBW97YfQ3l-6a2Esx-ck9LSm8RIkkA,79
+amarps/__main__.py,sha256=Ipm-KZJB7V1CFJ96iF1-pN8CBfK7qdsykjsmt4hl7LQ,32
+amarps/main.py,sha256=fIESNvY-BpOuYmopnM7GrGNJAvpe7Y45ej4c3r4OeB0,3466
+amarps/profile_page_selectors.yml,sha256=iwNwdr40r_6u2gQFp-5MiYwTF9E3_iqWRFoo3HGECAQ,1314
+amarps/review_page_selectors.yml,sha256=kSX_FV18uzimbz_gtdq7vbNYkWDTJxwHnPM9hxKw9jU,1044
+amarps/scraper.py,sha256=PzHxnDAPjWBXMigFbb2Bqo6inX7epRk0ixt2W5IO4iQ,10807
+amarps-0.18.0.dist-info/LICENSE,sha256=nvaX8UQS0ULjXRp-TEATcEu7Wc7Y95ZVD9mD5HfOPoA,1070
+amarps-0.18.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+amarps-0.18.0.dist-info/entry_points.txt,sha256=tU0zE8O-E_23bsThzpVLrVFnBzR7EeLw59ho2tRW2R4,43
+amarps-0.18.0.dist-info/METADATA,sha256=a7RKX5GjsmtSFST7snTo--G8EGm3kaNyeHuiafqMnmE,1975
+amarps-0.18.0.dist-info/RECORD,,
