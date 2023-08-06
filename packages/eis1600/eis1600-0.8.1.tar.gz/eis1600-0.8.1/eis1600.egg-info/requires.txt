@@ -1,0 +1,8 @@
+openiti
+pandas
+numpy
+tqdm
+p_tqdm
+
+[NER]
+camel-tools
