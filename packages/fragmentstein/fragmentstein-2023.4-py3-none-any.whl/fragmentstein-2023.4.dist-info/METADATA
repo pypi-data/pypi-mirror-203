@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: fragmentstein
+Version: 2023.4
+Summary: Resurrecting alignment files from non-sensitive fragment information for cell-free DNA analysis
+Author: Zsolt Balazs
+Author-email: zsolt.balazs@uzh.ch
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Awk
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Unix Shell
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Project-URL: repository, https://github.com/uzh-dqbm-cmi/fragmentstein
+Description-Content-Type: text/markdown
+
+# Fragmentstein
+Create a BAM file out of insensitive fragments data (i.e. FinaleDB frag.tsv.bgz file) including sequences extracted from a reference genome.
+
+
+### Requirements
+
+- **samtools** version 1.7 or higher;
+- **bedtools** version v2.30.0 or higher;
+- **awk** version 20200816 or higher;
+- **gunzip** (gzip) version 1.6 or higher;
+
