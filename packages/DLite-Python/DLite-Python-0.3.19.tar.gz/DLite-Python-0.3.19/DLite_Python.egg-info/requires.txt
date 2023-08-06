@@ -1,0 +1,8 @@
+numpy
+fortran-language-server
+PyYAML
+pandas
+pymongo
+rdflib
+tripper
+pint
