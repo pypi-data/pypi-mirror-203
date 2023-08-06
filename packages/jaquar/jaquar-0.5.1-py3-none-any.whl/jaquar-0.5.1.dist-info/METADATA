@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: jaquar
+Version: 0.5.1
+Summary: A web framework for python
+Home-page: http://skillfam.writermint.com
+Author: Kipono Japhet
+Author-email: UNKNOWN
+License: BSD
+Platform: UNKNOWN
+Requires-Dist: click
+Requires-Dist: Jinja2
+Requires-Dist: sqlalchemy
+Requires-Dist: werkzeug
+
+UNKNOWN
+
+
