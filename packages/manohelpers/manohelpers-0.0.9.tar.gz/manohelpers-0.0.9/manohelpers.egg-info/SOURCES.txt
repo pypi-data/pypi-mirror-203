@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+manohelpers.egg-info/PKG-INFO
+manohelpers.egg-info/SOURCES.txt
+manohelpers.egg-info/dependency_links.txt
+manohelpers.egg-info/top_level.txt
