@@ -1,0 +1,15 @@
+README.md
+setup.py
+./otoe/src/otoe_epicker/otoe.egg-info/PKG-INFO
+./otoe/src/otoe_epicker/otoe.egg-info/SOURCES.txt
+./otoe/src/otoe_epicker/otoe.egg-info/dependency_links.txt
+./otoe/src/otoe_epicker/otoe.egg-info/top_level.txt
+/Users/yakovvarnaev/dev/utilities/otoe/otoe/src/otoe_epicker/otoe.egg-info/PKG-INFO
+/Users/yakovvarnaev/dev/utilities/otoe/otoe/src/otoe_epicker/otoe.egg-info/SOURCES.txt
+/Users/yakovvarnaev/dev/utilities/otoe/otoe/src/otoe_epicker/otoe.egg-info/dependency_links.txt
+/Users/yakovvarnaev/dev/utilities/otoe/otoe/src/otoe_epicker/otoe.egg-info/top_level.txt
+otoe/src/otoe_epicker/otoe.egg-info/PKG-INFO
+otoe/src/otoe_epicker/otoe.egg-info/SOURCES.txt
+otoe/src/otoe_epicker/otoe.egg-info/dependency_links.txt
+otoe/src/otoe_epicker/otoe.egg-info/entry_points.txt
+otoe/src/otoe_epicker/otoe.egg-info/top_level.txt
