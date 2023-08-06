@@ -1,0 +1,4 @@
+bcftools
+xsamtools
+bowtie2
+mappy
