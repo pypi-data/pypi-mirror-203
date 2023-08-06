@@ -1,0 +1,16 @@
+sqlstrings/__init__.py,sha256=wowm6UfiQ1eZT-8lFroc06Om6O9nK6z3yN2ieapALG0,75
+sqlstrings/csv_handling.py,sha256=-SeJ8JID4BoYTaV2YnjGlN6puW5ZpSLQoaTcxCG_ERQ,3533
+sqlstrings/postgre.py,sha256=c2csw0bkbxuRGZkEjphH3aArHChPnLC0qJB0hsT433g,4543
+sqlstrings/transact.py,sha256=lnVr6_zBZKbsbeNs8a3CDfRArEnDh3WbZVu1EzqpvNw,4190
+sqlstrings/value_handling.py,sha256=JrP3Z1Jw1s--49EcbcGrAEEswIGbjdn73-fLJlqB4eA,2068
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_csv_handling.py,sha256=Obmc2LGaA8qoK8-rr5No4FK4lVa-S2HBAQkb0vAD2iQ,30
+tests/test_main.py,sha256=y2ExtVBK1H-X4pRMNvFhzJRIhv-AdIUuC4Pg85RvQts,162
+tests/test_postgre.py,sha256=3RKMU7PxkjTTrsVbLZIEeQLnBwKpZwo1T0SzT-uN1Xo,2472
+tests/test_transact.py,sha256=DO7-mNeN6dJ9EIzdwTdnFfzMo0KIJJk6PpS0VfpX19w,1984
+tests/test_value_handling.py,sha256=9K0fJHDi58CczArl5YFnkTCM1qVB1WimiyKWbIcAYQY,1632
+sqlstrings-0.0.3.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+sqlstrings-0.0.3.dist-info/METADATA,sha256=I5MegMMJTxLRi3HKWhfaGWvIuRQ7WCg-4dQSQQ4ANss,909
+sqlstrings-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sqlstrings-0.0.3.dist-info/top_level.txt,sha256=b5y2TZ2ZDwDmOkRYL9jZAgwVcGLCo1s6--vyES2O9xg,17
+sqlstrings-0.0.3.dist-info/RECORD,,
