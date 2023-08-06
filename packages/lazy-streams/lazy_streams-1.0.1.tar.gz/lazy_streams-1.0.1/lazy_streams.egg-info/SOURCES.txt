@@ -1,0 +1,12 @@
+LICENSE
+README.md
+lazy_streams.py
+pyproject.toml
+setup.cfg
+setup.py
+lazy_streams.egg-info/PKG-INFO
+lazy_streams.egg-info/SOURCES.txt
+lazy_streams.egg-info/dependency_links.txt
+lazy_streams.egg-info/requires.txt
+lazy_streams.egg-info/top_level.txt
+tests/test_lazy_streams.py
