@@ -1,0 +1,12 @@
+multiprocess
+
+[dev]
+pytest
+pre-commit
+
+[examples]
+geopandas
+pandas
+rasterio
+requests
+rasterstats
