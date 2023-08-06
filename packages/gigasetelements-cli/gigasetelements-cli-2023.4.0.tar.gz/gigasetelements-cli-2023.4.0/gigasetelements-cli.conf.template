@@ -1,0 +1,45 @@
+# Sample configuration file for gigasetelements-cli
+#
+# Note: command-line options override below values  
+#
+# The configuration file is automatically read from below locations:
+#
+# POSIX
+# ~/.gigasetelements-cli/gigasetelements-cli.conf
+# /etc/gigasetelements-cli.conf
+# /usr/etc/gigasetelements-cli.conf
+# /usr/local/etc/gigasetelements-cli.conf
+# /opt/etc/gigasetelements-cli.conf
+#
+# OS X
+# ~/Library/Application Support/gigasetelements-cli/gigasetelements-cli.conf
+#
+# WINDOWS
+# %APPDATA%\gigasetelements-cli\gigasetelements-cli.conf
+
+
+[accounts]
+
+# username (email) in use with my.gigaset-elements.com
+username=first.last@domain.com
+
+# password in use with my.gigaset-elements.com
+password=mybigsecret
+
+# access token to enable pushbullet notifications (optional)
+# notify=z9FaKeSCKQDi2cmPUSHB62aiXx5I57eiujTOKENfS34
+
+
+[options]
+
+# set modus {home,away,custom} (optional)
+# modus=home
+
+# disable SSL/TLS certificate verification {yes,no} (optional)
+# insecure=no
+
+# suppress urllib3 warnings {yes,no} (optional)
+# silent=no
+
+# Don't periodically check PyPI to determine whether a new version of gigasetelements-cli is available for download {yes,no} (optional)
+# noupdate=no

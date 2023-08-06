@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: gigasetelements-cli
+Version: 2023.4.0
+Summary: gigasetelements-cli allows you to control your     Gigaset Elements home security system from the command line.
+Home-page: https://github.com/dynasticorpheus/gigasetelements-cli
+Author: dynasticorpheus
+Author-email: dynasticorpheus@gmail.com
+License: GPL2
+Keywords: Home Automation,Home Security,Internet of Things (IoT)
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+
+gigasetelements-cli is a python based program which allows you to control your Gigaset Elements home security system. It comes with an easy to use CLI 
+(command-line interface) suitable for direct use or cron jobs.

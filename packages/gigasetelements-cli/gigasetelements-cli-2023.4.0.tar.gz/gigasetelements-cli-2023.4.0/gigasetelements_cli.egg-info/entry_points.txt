@@ -1,0 +1,2 @@
+[console_scripts]
+gigasetelements-cli = gigasetelements.gigasetelements:main
