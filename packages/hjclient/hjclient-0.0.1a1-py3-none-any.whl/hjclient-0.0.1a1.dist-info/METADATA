@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: hjclient
+Version: 0.0.1a1
+Summary: 
+Author: Nick Ouellet
+Author-email: nicholas.p.ouellet@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Headjack Client
+
+This is a client for interacting with a Headjack server.
+
+```py
+pip install hj
+```
+
