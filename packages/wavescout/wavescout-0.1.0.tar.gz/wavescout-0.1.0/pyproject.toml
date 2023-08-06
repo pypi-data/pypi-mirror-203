@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "wavescout"
+version = "0.1.0"
+description = "A lightweight module for easy beatmapping, key detection, and smart-slicing"
+authors = ["DJ Stomp <85457381+DJStompZone@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.3"
+pydub = "^0.25.1"
+essentia = "2.1b6.dev858"
+pytest = "^7.3.1"
+build = "^0.10.0"
+twine = "^4.0.2"
+aubio = "^0.4.9"
+
+[tool.poetry.scripts]
+wavescout = "wavescout.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
