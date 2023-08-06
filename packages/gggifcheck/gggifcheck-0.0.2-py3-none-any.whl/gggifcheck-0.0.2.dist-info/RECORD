@@ -1,0 +1,9 @@
+gggifcheck/__init__.py,sha256=x8PcuZN6nCqVNc1TXpJqdIr5gm05irKulvJz7b_5ZPw,86
+gggifcheck/fields.py,sha256=GAMjG0zQnkEO1dhzddKmWKnvoM-EJd33hUXEYUlC8YI,11500
+gggifcheck/items.py,sha256=x8rIaTfBL-MAWnNNhm7eWzMTRluiqGwr_0aGXCD9Lkk,6948
+gggifcheck/scrapy_ifcheck.py,sha256=kHiGW1dELWY8qLB5FqYQYfOuThsgvUvZ_AVK1LtZtKw,2838
+gggifcheck-0.0.2.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+gggifcheck-0.0.2.dist-info/METADATA,sha256=39yB6lhjkdhVby582s7-S6KIliTGn4prCJLGNU34ef8,4783
+gggifcheck-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gggifcheck-0.0.2.dist-info/top_level.txt,sha256=AwziKGRM3UqlA0Aa_bhcM_1TpLGYU4pYpXE6rKiMqgE,11
+gggifcheck-0.0.2.dist-info/RECORD,,
