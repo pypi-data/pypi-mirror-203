@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+NewTestPackage.egg-info/PKG-INFO
+NewTestPackage.egg-info/SOURCES.txt
+NewTestPackage.egg-info/dependency_links.txt
+NewTestPackage.egg-info/not-zip-safe
+NewTestPackage.egg-info/top_level.txt
+newtestpackage/__init__.py
+newtestpackage/newtestpackage.py
