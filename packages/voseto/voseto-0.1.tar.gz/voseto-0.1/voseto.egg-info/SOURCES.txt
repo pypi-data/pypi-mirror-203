@@ -1,0 +1,8 @@
+README.md
+setup.py
+voseto.egg-info/PKG-INFO
+voseto.egg-info/SOURCES.txt
+voseto.egg-info/dependency_links.txt
+voseto.egg-info/entry_points.txt
+voseto.egg-info/requires.txt
+voseto.egg-info/top_level.txt

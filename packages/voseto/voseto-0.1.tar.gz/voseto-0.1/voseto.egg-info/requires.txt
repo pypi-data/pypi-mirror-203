@@ -1,0 +1,10 @@
+PyPDF2
+cryptography
+keyring
+python-nmap
+python-owasp-zap-v2.4
+reportlab
+schedule
+tk
+tldextract
+whois
