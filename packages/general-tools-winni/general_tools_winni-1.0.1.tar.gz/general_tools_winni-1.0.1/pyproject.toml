@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "general_tools_winni"
+version = "1.0.1"
+authors = [
+  { name="Winfried Körting", email="wk@pmedien.com" },
+]
+description = "Useful scripts"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
