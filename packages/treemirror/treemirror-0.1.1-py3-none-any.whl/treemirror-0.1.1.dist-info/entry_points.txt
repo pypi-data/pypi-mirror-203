@@ -1,0 +1,3 @@
+[console_scripts]
+treemirror=treemirror.cli:main
+
