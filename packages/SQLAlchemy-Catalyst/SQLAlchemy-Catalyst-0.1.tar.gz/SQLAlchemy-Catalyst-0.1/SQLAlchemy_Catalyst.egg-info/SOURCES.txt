@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+SQLAlchemy_Catalyst/SQLAlchemy_Catalyst.py
+SQLAlchemy_Catalyst/__init__.py
+SQLAlchemy_Catalyst/version.py
+SQLAlchemy_Catalyst.egg-info/PKG-INFO
+SQLAlchemy_Catalyst.egg-info/SOURCES.txt
+SQLAlchemy_Catalyst.egg-info/dependency_links.txt
+SQLAlchemy_Catalyst.egg-info/requires.txt
+SQLAlchemy_Catalyst.egg-info/top_level.txt
