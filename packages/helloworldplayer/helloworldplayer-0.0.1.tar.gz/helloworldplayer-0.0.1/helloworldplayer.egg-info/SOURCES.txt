@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+helloworldplayer/__init__.py
+helloworldplayer/lala.py
+helloworldplayer/player.py
+helloworldplayer.egg-info/PKG-INFO
+helloworldplayer.egg-info/SOURCES.txt
+helloworldplayer.egg-info/dependency_links.txt
+helloworldplayer.egg-info/top_level.txt
