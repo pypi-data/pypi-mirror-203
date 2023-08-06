@@ -1,0 +1,11 @@
+poetry_git_version_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_git_version_plugin/commands.py,sha256=65x_wGVEajaAaiFFK-YlxFgxe56Toa8UJpmrs1LarYk,310
+poetry_git_version_plugin/config.py,sha256=ps4dJDe9mWtpnRAvgurhNEQ91Thh9VZ56BNfvNDyiH8,1250
+poetry_git_version_plugin/exceptions.py,sha256=BhEzP2O0PXIzfV8xZSUJZm-aYqiMQvQHhzSL741K4x8,758
+poetry_git_version_plugin/plugins.py,sha256=ywcjvZ7NvgMW9G9f7NaoCZSE_menALWZJO_ZuDgWPUQ,1461
+poetry_git_version_plugin/services.py,sha256=CIWm69fIRsWFuFmuiaEGvP4xW9RMV26EMMvkuJDd0jk,4506
+poetry_git_version_plugin-0.1.3.dist-info/LICENSE,sha256=4OO7K0PQR30iBATjvjAOLPOis5GBpd2FXQqCPdOBKBw,1055
+poetry_git_version_plugin-0.1.3.dist-info/METADATA,sha256=VZJCGQD5DhddaiVig5leDWRLOVzztHD0zLdEdSyGpsA,2844
+poetry_git_version_plugin-0.1.3.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+poetry_git_version_plugin-0.1.3.dist-info/entry_points.txt,sha256=3OBD6OKe7gXkGAnMj7X3fqWdSd3MdfzojA3RzVWx9kk,223
+poetry_git_version_plugin-0.1.3.dist-info/RECORD,,
