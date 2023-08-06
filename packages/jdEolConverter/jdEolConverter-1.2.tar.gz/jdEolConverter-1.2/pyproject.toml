@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "BuildBackend"
+backend-path = ["."]
+
+[project]
+name = "jdEolConverter"
+description = "Converts End of Line of all files in a directorys"
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["JakobDev", "PyQt6"]
+license = { text = "GPL-3" }
+authors = [
+    { name = "JakobDev", email = "jakobdev@gmx.de" }
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Environment :: Other Environment",
+    "Environment :: X11 Applications :: Qt",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: Implementation :: CPython"
+]
+dependencies = [
+  "PyQt6"
+]
+version = "1.2"
+
+[project.urls]
+Source = "https://codeberg.org/JakobDev/jdEolConverter"
+Issues = "https://codeberg.org/JakobDev/jdEolConverter/issues"
+Translate = "https://translate.codeberg.org/projects/jdEolConverter"
+Donation = "https://ko-fi.com/jakobdev"
+
+[project.gui-scripts]
+jdeolconverter = "jdEolConverter:main"
+
+[tool.setuptools.package-dir]
+jdEolConverter = "jdEolConverter"
