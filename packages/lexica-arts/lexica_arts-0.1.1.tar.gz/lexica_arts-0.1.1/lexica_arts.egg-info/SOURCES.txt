@@ -1,0 +1,7 @@
+README.md
+lexica_arts.py
+setup.py
+lexica_arts.egg-info/PKG-INFO
+lexica_arts.egg-info/SOURCES.txt
+lexica_arts.egg-info/dependency_links.txt
+lexica_arts.egg-info/top_level.txt
