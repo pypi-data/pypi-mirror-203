@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: telegram-bottools
+Version: 0.1.2
+Summary: Telegram Bot Tools
+Author: Ricardo Merces
+Author-email: ricardo.merces@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.28,<3.0)
+Requires-Dist: urllib3 (>=1.26,<2.0)
+Description-Content-Type: text/markdown
+
+# Create Telegram Bot
+Telegram -> BotFather -> Type `/newbot`
+https://core.telegram.org/bots/tutorial#creating-your-command
+
+# Get Chat ID
+https://api.telegram.org/bot<token>getUpdates
+
+# Install
+```
+pip install telegram-bottools
+```
+
+# Config
+```
+bot_config = (chatid, token)
+```
+
+# Quick Start
+```
+from telegram_bottools import telegram_bottools as bot
+
+
+bot_config = (-11111111, 'xxxxxx:yyyyyyyyyyy')
+message = 'Hello World!'
+
+bot.send_message(*bot_config, message)
+```
