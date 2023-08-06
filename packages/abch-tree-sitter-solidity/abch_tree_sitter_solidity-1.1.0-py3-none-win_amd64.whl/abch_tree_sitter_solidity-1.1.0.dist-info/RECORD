@@ -1,0 +1,10 @@
+abch_tree_sitter_solidity-1.1.0.data/data/src/parser.c,sha256=GL_z4O1UOQ2YDw4mjE7DfB8_FizfjAv0xeOW5C86lWE,2190806
+abch_tree_sitter_solidity-1.1.0.data/data/src/parser.h,sha256=hzNUw26LXs-YHgz0887lHJ4BtbFj-omjzhPkHwsJfOU,5602
+tree_sitter_solidity/__init__.py,sha256=dBy830gvSzEAaxSaIuSnit8rJ1h7R_0vl0qX5ivDwFY,44
+tree_sitter_solidity/core.py,sha256=mhyS4mR-Z_1BITJMpCfeU1u-oIe6YbsJlARjQ67ufSY,396
+tree_sitter_solidity/solidity.dll,sha256=N-QXif-RJkoWbDtqmy9FKGe8dECv0PAA7RB-EQLd5l0,438272
+abch_tree_sitter_solidity-1.1.0.dist-info/LICENSE,sha256=GPd7_hXjRWKN4WvgAGyM6Yd588MLzpuAQjjJRCwTq8w,1060
+abch_tree_sitter_solidity-1.1.0.dist-info/METADATA,sha256=9tzcWatnYFHp1iOD1LoOUO-LuGnlS6i74e3Y9D_wgQQ,2055
+abch_tree_sitter_solidity-1.1.0.dist-info/WHEEL,sha256=bC8mYJUOJCh5KnyEeT6W_BCQYi3v39D3z64Vy_sFvVg,98
+abch_tree_sitter_solidity-1.1.0.dist-info/top_level.txt,sha256=ZDlLIOwRGN8Kb_Im4c8b9DybPg9ShmIDze61oVAmXaQ,21
+abch_tree_sitter_solidity-1.1.0.dist-info/RECORD,,
