@@ -1,0 +1,5 @@
+DATE = "2023-03-30"
+VERSION = "7.0.0"
+MAJOR = 7
+MINOR = 0
+PATCH = 0

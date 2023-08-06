@@ -1,0 +1,3 @@
+[console_scripts]
+tease = scripttease.cli:main_command
+
