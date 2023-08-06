@@ -1,0 +1,10 @@
+flask_ms_oauth2/.version,sha256=p9weD2Ch-kacn8_G1d5-5aARgpoEeroo5-AoCoRqOGc,45
+flask_ms_oauth2/__init__.py,sha256=4xvqnB9rg1NhVnrepImpRluvN3CsNmo9p89UYbKU-p0,165
+flask_ms_oauth2/config.py,sha256=AjScxAWmE_PR_XajYXXUhFpDj1MYYme02wqQCpNgM2U,6067
+flask_ms_oauth2/decorators.py,sha256=LnmR6zR6NZXqQUoSMvQDrfcx3_pC_fRETk8hTE1xqcY,10605
+flask_ms_oauth2/ms_oauth2_manager.py,sha256=RL5Wl_yx2Bkok_EU9TThp34bNEiMtxUhJc8Gq4v6I88,1321
+flask_ms_oauth2-1.0.0.dist-info/LICENSE,sha256=i75-MFGH6OTTMrg3mJEznsF6TfdnDQ6EfhGlNlsig4E,1128
+flask_ms_oauth2-1.0.0.dist-info/METADATA,sha256=dXcOklCsKTItjqkSTkRJAinr-4MHTYPo2ER5LX9UkiA,5699
+flask_ms_oauth2-1.0.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+flask_ms_oauth2-1.0.0.dist-info/top_level.txt,sha256=kJznqzpYtfzhUGfF5wC5ihQ9EhaZgOXQvIo1hv7hyiw,16
+flask_ms_oauth2-1.0.0.dist-info/RECORD,,
