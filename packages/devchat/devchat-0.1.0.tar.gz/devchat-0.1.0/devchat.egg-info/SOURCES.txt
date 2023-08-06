@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+devchat/__init__.py
+devchat/_cli.py
+devchat.egg-info/PKG-INFO
+devchat.egg-info/SOURCES.txt
+devchat.egg-info/dependency_links.txt
+devchat.egg-info/entry_points.txt
+devchat.egg-info/top_level.txt
+tests/test_cli.py
