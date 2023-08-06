@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: colabtunnel
+Version: 0.0.4
+Summary: Run code-server on Google Colab with persistence of settings and code.
+Home-page: https://github.com/amitness/colab-tunnel
+Author: Amit Chaudhary
+Author-email: meamitkc@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
