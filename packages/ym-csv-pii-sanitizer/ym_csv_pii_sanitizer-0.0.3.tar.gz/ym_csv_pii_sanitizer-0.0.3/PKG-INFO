@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ym_csv_pii_sanitizer
+Version: 0.0.3
+Summary: Redact a PHI (personal health
+Author: Alex Ilin
+Author-email: alex.ilin@ymeadows.com
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+## Installation
+
+
+```pip install ym_csv_pii_sanitizer```
+
+
+```python -m spacy download en_core_web_lg```
+
+
+## Usage
+
+```ym_csv_pii_sanitizer PATH_TO_CSV_FILE```
