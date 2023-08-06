@@ -1,0 +1,12 @@
+odbc2orm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odbc2orm/__main__.py,sha256=fHzPwGo4Q3lx5_kjUqTR142JB1ZOn2BIloKN6pAoliM,5271
+odbc2orm/config.py,sha256=P0ecpe_uSqmHbVg_nfPtlBxu-nrhWvXcnDjy6M6oSPU,331
+odbc2orm/convert.py,sha256=mdxAbsI5xC_V2GnHkeU5M1n-1pSZOppEhZunEZKugKA,3316
+odbc2orm/database.py,sha256=k0O_a25xu-2TDVai2DxjGZvpMWYuZObUWw37eVleqJQ,3958
+odbc2orm/template.py,sha256=SgOO2wC5BSn2RATUbXMkFvhiUybvpxkdRF5j7ToOU8M,4789
+odbc2orm/version.py,sha256=rMOuzsKnyjE9cIHVHG_M1LbJI4CDhxEtJBRKk2qhsDM,1030
+odbc2orm-1.0.6.dist-info/METADATA,sha256=I2puMkKClXVuQEFVKSJ_XsXAAmIoQyvNz_6E8kS_4aI,9288
+odbc2orm-1.0.6.dist-info/WHEEL,sha256=eISolWHwNhb92gGPHWycatPqef50U4Y2t5AK5I8bfIY,96
+odbc2orm-1.0.6.dist-info/entry_points.txt,sha256=3ZuooKxZWOdWq242LbEvGWozZFwBgZJHI2RpEA--vVw,52
+odbc2orm-1.0.6.dist-info/top_level.txt,sha256=bWEM111AEj9b1NFznhyRsoHjobOOFu86d_A28BbyBbw,9
+odbc2orm-1.0.6.dist-info/RECORD,,
