@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README
+setup.py
+ListDash/__init__.py
+ListDash.egg-info/PKG-INFO
+ListDash.egg-info/SOURCES.txt
+ListDash.egg-info/dependency_links.txt
+ListDash.egg-info/top_level.txt

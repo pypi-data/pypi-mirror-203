@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ListDash
+Version: 0.0.1
+Summary: returns the dashes based on the length of the biggest length character
+Home-page: http://monilboy.liveblog365.com
+Author: Monil Darediya
+Author-email: monildarediya1@gmail.com
+License: MIT
+Keywords: dir-organise
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENCE.txt
+
+The Library That Returns The Dashes Based On The Length Of The Biggest Length Character
+
+Functions
+---------
+
+- dashByLength(list)
+  - Show Dashes Based On Length
+
+
+Change Log
+==========
+
+0.0.1 (16/04/2023)
+-------------------
+- New Release
+

@@ -1,0 +1,7 @@
+The Library That Returns The Dashes Based On The Length Of The Biggest Length Character
+
+Functions
+---------
+
+- dashByLength(list)
+  - Show Dashes Based On Length
