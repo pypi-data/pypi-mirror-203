@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: glacierestore
+Version: 0.1.2
+Summary: Easy to restore objects from AWS Glacier to AWS S3 in bulk
+Home-page: https://github.com/nwcd-samples/glacierestore.git
+Author: barry.xu
+Author-email: friendship-119@163.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+# The tool for restore objects from AWS Glacier to AWS S3
+There is no way to restre objects under one folder to AWS S3, this tool can help you do this
+
+## prerequisite
+1. take a look [here] to configure aws cli and ak, sk(https://docs.aws.amazon.com/zh_cn/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-config)
+
+## install
+```
+pip install galcierestore
+```
+
+## how to use it
+```
+galcierestore
+```
+please fellow the prompt to fill the required arguments
