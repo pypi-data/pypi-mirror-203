@@ -1,0 +1,8 @@
+/target
+.vscode
+/data
+*pycache**
+Cargo.lock
+*yaml
+/benches
+*.so

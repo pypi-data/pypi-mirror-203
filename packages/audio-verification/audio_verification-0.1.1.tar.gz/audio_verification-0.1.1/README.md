@@ -1,0 +1,1 @@
+A Python package, backed by Rust for verifying properties of audio files.
