@@ -1,0 +1,8 @@
+README.md
+setup.py
+fidor/__init__.py
+fidor/main.py
+fidor.py.egg-info/PKG-INFO
+fidor.py.egg-info/SOURCES.txt
+fidor.py.egg-info/dependency_links.txt
+fidor.py.egg-info/top_level.txt
