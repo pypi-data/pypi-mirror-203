@@ -1,0 +1,11 @@
+carmine-0.1.4.dist-info/METADATA,sha256=nhZ8vwRBtcV1XRAlF0FQRB2ltnQW4-jIB97bkjtR1UY,2692
+carmine-0.1.4.dist-info/WHEEL,sha256=7dGFtUmOf30dPBLpGD2z643cxg89joO7p3JHBAwDv6E,90
+carmine-0.1.4.dist-info/entry_points.txt,sha256=j2HFWaOXKJ7EQslG6IicdRJi_mOvJcoulsrcC89tnss,48
+carmine-0.1.4.dist-info/licenses/COPYING,sha256=B05uMshqTA74s-0ltyHKI6yoPfJ3zYgQbvcXfDVGFf8,10280
+carmine-0.1.4.dist-info/licenses/LICENSES/Apache-2.0.txt,sha256=B05uMshqTA74s-0ltyHKI6yoPfJ3zYgQbvcXfDVGFf8,10280
+carmine-0.1.4.dist-info/licenses/LICENSES/CC-BY-4.0.txt,sha256=1VdTnfaOdxzB7tzJHRP3D8qTDlCNEe7cr6SxXbSeN0Q,17023
+carmine-0.1.4.dist-info/licenses/LICENSES/CC-BY-SA-4.0.txt,sha256=zeeIO5BQoRBPSsGaFXKq_W5dcyO2g1Gq9R-_S-ulSWY,18375
+carmine-0.1.4.dist-info/licenses/LICENSES/LicenseRef-DCO-1.1-license.txt,sha256=hKvQ2ECgSMTdLe19mzM8ZVYgv2kdMhS1ym0zsc8xSPE,119
+carmine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+carmine/cli.py,sha256=Z66vsnem3_-_bbbLWq8K4gqBmsG5RtWL6GtZLrZpK2Y,737
+carmine-0.1.4.dist-info/RECORD,,
