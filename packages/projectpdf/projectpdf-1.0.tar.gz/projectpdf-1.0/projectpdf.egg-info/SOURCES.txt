@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+projectpdf/__init__.py
+projectpdf/pdf2image.py
+projectpdf/pdf2text.py
+projectpdf.egg-info/PKG-INFO
+projectpdf.egg-info/SOURCES.txt
+projectpdf.egg-info/dependency_links.txt
+projectpdf.egg-info/top_level.txt
