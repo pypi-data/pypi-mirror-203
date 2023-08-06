@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: gsf
+Version: 2.0.0.dev19
+Summary: GSF Py
+Home-page: https://github.com/geospatial-services-framework/gsfpy
+Author: Exelis Visual Information Solutions, Inc.
+Author-email: gsf@harris.com
+License: MIT
+Keywords: gsf envi idl
+Platform: UNKNOWN
+Requires-Dist: requests
+
+
+
+******
+GSF Py
+******
+
+Installation
+============
+
+Install GSF Py using pip::
+
+    pip install gsf
+
+Documentation
+=============
+
+For the full API documentation visit: http://gsf-py.readthedocs.io
+
+
