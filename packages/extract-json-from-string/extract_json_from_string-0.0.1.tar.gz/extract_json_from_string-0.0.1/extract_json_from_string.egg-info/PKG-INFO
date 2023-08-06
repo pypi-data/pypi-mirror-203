@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: extract-json-from-string
+Version: 0.0.1
+Summary: For extracting valid JSONs from string
+Home-page: https://github.com/at-75/extract_jsons_from_string
+Author: Kunti Patidar
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: <4,>=3.7
+Description-Content-Type: text/markdown
