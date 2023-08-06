@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+Internationalize.egg-info/PKG-INFO
+Internationalize.egg-info/SOURCES.txt
+Internationalize.egg-info/dependency_links.txt
+Internationalize.egg-info/top_level.txt
+internationalize/__init__.py
+internationalize/configure.py
+internationalize/provider.py
