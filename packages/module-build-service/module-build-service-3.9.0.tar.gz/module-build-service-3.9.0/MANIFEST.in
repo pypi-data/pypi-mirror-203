@@ -1,0 +1,16 @@
+include LICENSE
+include README.rst
+include requirements.txt
+include run-unittests.sh
+include test-requirements.txt
+include tox.ini
+recursive-include conf config.py cacert.pem *.conf *.cfg *.json *.service
+recursive-include docs *.txt *.rst *.md
+include module_build_service/migrations/README
+include module_build_service/migrations/alembic.ini
+include module_build_service/migrations/script.py.mako
+recursive-include fedmsg.d *
+recursive-include tests *.yaml *.json *.rst
+recursive-include tests/scm_data *
+recursive-include client *
+global-exclude *.pyc *.pyo *.db
