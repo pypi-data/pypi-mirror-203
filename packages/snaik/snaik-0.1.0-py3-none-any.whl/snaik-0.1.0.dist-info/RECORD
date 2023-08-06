@@ -1,0 +1,16 @@
+snaik/__init__.py,sha256=s5gRz410XtuxfmH_64kUI63m-Ohuz12FL7tNwsc2QtQ,819
+snaik/__main__.py,sha256=sImVzA4vPVfVesaclNcyiwpiog3JPuFFmQJPTRTw1SQ,1671
+snaik/brain.py,sha256=kGxi0FcyaKwPuyIjDPCI1xu2AhP8USy_FcWHro0G6Aw,12734
+snaik/food.py,sha256=v_apu7bott3faIGbgDZqaXK9AMu-1l4qVNZRSvMCTe4,2648
+snaik/game.py,sha256=MGcmc8qdICGb6fsDJqZZl_JieA_TXA7z-l38gqHgx8o,6306
+snaik/leaderboard.py,sha256=PmWKQJN1RXaDSYO1kAwb_nd82hh9JNmK2pu7jvYBVaA,2735
+snaik/snake.py,sha256=-gl3w_NCzU01gWI39fo0zPcpNtLxRPd5A4zjgLhGqpA,19786
+snaik/staterecorder.py,sha256=bj6Hqc52qI__GjZznloWaUDFvLCOtfuTBNFx8Cd-QQU,5604
+snaik/utils.py,sha256=fKlBTi9G8U8HhiNOoFh_fGOnosi1uTSwbulyARYwGog,4485
+snaik/window.py,sha256=CAVQZTcHplziX0XrqDYni8gou15wPhyPt97iJpS_BQc,5516
+snaik/resources/Roboto-Regular.ttf,sha256=eehRQEZX2sIQaz0irSVtR4JKmldlRY7bcskQKkWBbZU,171676
+snaik/resources/logo.svg,sha256=n-Oy5exOldLQFNzRl_PM9145-l-vPOdBx-vfCx_K0tY,8502
+snaik/resources/sample_external.cpp,sha256=DnuzXRMEcms_9D3qb9TXdd18pWmiKds4AvDyWzDNdY4,293
+snaik-0.1.0.dist-info/METADATA,sha256=_b23fvwMl09oACAKkGMwr4h3mgGYSejvuSAZMut9k4w,612
+snaik-0.1.0.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+snaik-0.1.0.dist-info/RECORD,,
