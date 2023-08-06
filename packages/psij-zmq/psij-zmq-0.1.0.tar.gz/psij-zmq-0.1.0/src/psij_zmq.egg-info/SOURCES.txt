@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/psij-descriptors/zmq_service_descriptor.py
+src/psij-zmq/__init__.py
+src/psij-zmq/version.py
+src/psij-zmq/executors/__init__.py
+src/psij-zmq/executors/zmq_service.py
+src/psij_zmq.egg-info/PKG-INFO
+src/psij_zmq.egg-info/SOURCES.txt
+src/psij_zmq.egg-info/dependency_links.txt
+src/psij_zmq.egg-info/requires.txt
+src/psij_zmq.egg-info/top_level.txt
