@@ -1,0 +1,3 @@
+[console_scripts]
+apple-reading-list-to-sqlite=apple_reading_list_to_sqlite.cli:app
+
