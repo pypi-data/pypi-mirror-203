@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: torchhacks
+Version: 0.0.1
+Summary: Hacks for PyTorch
+Home-page: https://lernappar.at/torchhacks
+Author: Thomas Viehmann, MathInf GmbH
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+
+# TorchHacks
+
+Making PyTorch nicer in ways that might not be entirely safe.
