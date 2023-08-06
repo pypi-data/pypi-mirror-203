@@ -1,0 +1,7 @@
+snapccess/__init__.py,sha256=FVHPBGkfhbQDi_z3v0PiKJrXXqXOx0vGW_1VaqNJi7U,22
+snapccess/model.py,sha256=359-xw-c5bPCcNS__e-Trh34MIeL5u4Cej_gAFKMqOU,3187
+snapccess/train.py,sha256=Ja0SSQGEDYTBfNb5GyYL0s40IOXWu8DP_bUaRiXCa1c,3302
+snapccess/util.py,sha256=IoUh_rNjRHeTsHOkvhXosOzWGkx99F9jTz9rFSV88KE,2993
+snapccess-0.2.1.dist-info/METADATA,sha256=_AHZwwbAHa43i0LA6Dn9KoiTpjBE9qfVA4boDmpD0z0,685
+snapccess-0.2.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+snapccess-0.2.1.dist-info/RECORD,,
