@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "uic"
+version = "0.0.1"
+authors = [
+  { name="Daniel Jung", email="proggy@mailbox.org" },
+]
+maintainers = [
+  { name="Daniel Jung", email="proggy@mailbox.org" },
+]
+description = "Self-check digit calculator for UIC wagon numbers"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Source" = "https://github.com/proggy/uic"
+"Homepage" = "https://github.com/proggy/uic"
+"Bug Tracker" = "https://github.com/proggy/uic/issues"
