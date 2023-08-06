@@ -1,0 +1,16 @@
+aiohttp
+async-lru
+datadog-api-client
+ddtrace
+fastapi
+httpx
+passlib[bcrypt]
+pydantic
+PyJWT
+python-dateutil
+python-json-logger
+pytz
+requests
+structlog
+supertokens-python
+uvicorn
