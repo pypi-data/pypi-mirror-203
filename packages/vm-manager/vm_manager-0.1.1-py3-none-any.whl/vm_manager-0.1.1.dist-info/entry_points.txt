@@ -1,0 +1,2 @@
+[console_scripts]
+vm-manager = vm_manager:main

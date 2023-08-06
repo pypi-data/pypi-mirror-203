@@ -1,0 +1,10 @@
+vm_manager/__init__.py,sha256=SWVak1EuYDm5WtR9_ocmpWjIHHDkn1pJq5DVIP1GHrE,243
+vm_manager/logger.py,sha256=-IDpgv98S3R-BLPpWhnB-BdDGvonh0fVPqMPZh2dk8M,2334
+vm_manager/manager.py,sha256=2Bq6QSomWGSm9_94R5L3LJEqbkHn78HpBMRgRgsrkxY,11173
+vm_manager/util.py,sha256=jJg17gGhZ5JWm_H2eMaRCSPmuLjYIuT1sMQ-bHFEM7I,734
+vm_manager/vm.py,sha256=6tsJF_vThunwv2b_d6NHurJotkNFWbLZiVJobLyJ884,14672
+vm_manager-0.1.1.dist-info/METADATA,sha256=1toSm_17-Z9sN0Y6q3WgvzY4h5UpnCUNUidlrL55fJM,2114
+vm_manager-0.1.1.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+vm_manager-0.1.1.dist-info/entry_points.txt,sha256=t8Cud-iJxj1TQtqWo-pHHWxRZvCttXz4zlYTsLv50Po,47
+vm_manager-0.1.1.dist-info/licenses/LICENSE,sha256=epiFRdfD5SnqqGvk1qdZ7nT6KiJ2lc6GdGy8iDM-7Tc,1089
+vm_manager-0.1.1.dist-info/RECORD,,
