@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: py_spacy_redact_message
+Version: 0.0.28
+Summary: Redact a PHI (personal health
+Author: Alex Ilin
+Author-email: ilin.alex.mail@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Installation
+
+
+```pip install ym_csv_pii_sanitizer```
+
+
+```python -m spacy download en_core_web_sm```
+
+
+## Usage
+
+```ym_csv_pii_sanitizer PATH_TO_CSV_FILE```

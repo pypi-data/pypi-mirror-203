@@ -1,0 +1,2 @@
+[console_scripts]
+py_spacy_redact_message = py_spacy_redact_message.main:run
