@@ -1,0 +1,11 @@
+sesg/__init__.py,sha256=iLH0HtcHTl1mHXrvHzx6fE6SVgXnw-8KCJbMStlNpTk,47
+sesg/graph.py,sha256=91lEq6sbupSIOQeFBF_zajWnTBqI2EAPPzZz21D5BxI,8118
+sesg/metrics.py,sha256=0vRnKzjDGE_j23_Ki0HaxMOxEuXkYX91EJPogFgTSuI,6744
+sesg/scopus_client.py,sha256=CYqYa-UKTxQ0oF2opPz4eKAiXVkpPMZ4QlJq_-66tDE,16870
+sesg/search_string.py,sha256=DWKevSumGve0c0nR1k3fIlaiyqQsYJ2Jy__PUs9eGF0,13843
+sesg/snowballing.py,sha256=rS2Lnea1zl8R6PYVDfdBOBHytcQVNYuIRVj-QFMjXxA,7659
+sesg/topic_extraction.py,sha256=ykEAj-ZJu55uKmOBwvMLVIgrwCuyimh7gIMFydEMb9g,5056
+sesg-0.0.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+sesg-0.0.1.dist-info/METADATA,sha256=xmvfa6fDlX8y4FCC2wkOlf5pxfqxL7TEBLJOXNGjeTw,1829
+sesg-0.0.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+sesg-0.0.1.dist-info/RECORD,,
