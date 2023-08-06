@@ -1,0 +1,7 @@
+README.md
+real48tofloat.c
+setup.py
+real48.egg-info/PKG-INFO
+real48.egg-info/SOURCES.txt
+real48.egg-info/dependency_links.txt
+real48.egg-info/top_level.txt
