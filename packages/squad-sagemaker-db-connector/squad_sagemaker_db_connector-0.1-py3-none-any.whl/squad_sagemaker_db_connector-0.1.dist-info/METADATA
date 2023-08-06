@@ -1,0 +1,218 @@
+Metadata-Version: 2.1
+Name: squad-sagemaker-db-connector
+Version: 0.1
+Summary: A pluggable connector that allows users (admins) to execute SQL, view, and export the results.
+Home-page: https://github.com/squadrun/auctm-database-connector
+Author: Ujjwal Gupta
+Author-email: ujjwal.gupta@squadstack.com
+License: MIT
+Keywords: Db connector
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Utilities
+Classifier: Framework :: Django :: 1.7
+Classifier: Framework :: Django :: 1.8
+Classifier: Framework :: Django :: 1.9
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Description-Content-Type: text/plain
+License-File: LICENSE
+Requires-Dist: boto3 (==1.14.60)
+Requires-Dist: psycopg2-binary (==2.8.6)
+Requires-Dist: SQLAlchemy (==1.3.19)
+
+========================
+Auctm Database Connector
+========================
+
+A python package that provides database connection to Bifrost database, Substrate database, and Decision Science database.
+
+Modules
+#########
+
+There are three modules - **bifrost**, **substrate** and **decision_science**.
+
+All the modules provide the ``engine`` for their respective database.
+
+bifrost
+********
+
+This module provides the database connection for the Bifrost database. It provides **read-only** access to the database.
+
+The schema for tables in this database can be seen on the `Bifrost Explorer <https://bifrost.squadplatform.com/explorer/play>`__
+
+substrate
+**********
+
+This module provides the database connection for the Substrate database. It provides **read-only** access to the database.
+
+decision_science
+*****************
+
+This module provides the database connection for the Decision Science database. It provides **read** and **write**
+access to the user's schema in the database.
+
+This module provides the database connection for the Decision Science database.
+
+SquadIQ
+*****************
+
+This module provides the database connection for the SquadIQ database. It provides **read-only** access to the database.
+
+Usage
+------
+
+.. code-block:: python
+
+    from auctm_database_connector import bifrost, substrate, decision_science, squadiq, sagemaker
+
+    bifrost_engine = bifrost.engine
+    substrate_engine = substrate.engine
+    ds_engine = decision_science.engine
+    iq_engine = squadiq.engine
+    ds_sagemaker_engine = sagemaker.engine
+
+    # Database connection is automatically closed when connection is used in a context manager i.e. inside "with"
+    with bifrost_engine.connect() as conn:
+        data = conn.execute("Select * from fub_customer")
+
+        # data is a dictionary with column name as key and row as value
+        for row in data:
+            print(row)
+            
+    # Database connection is automatically closed when connection is used in a context manager i.e. inside "with"
+    with substrate_engine.connect() as conn:
+        data = conn.execute("Select * from substrate_customer")
+
+        # data is a dictionary with column name as key and row as value
+        for row in data:
+            print(row)
+
+    # Database connection is automatically closed when connection is used in a context manager i.e. inside "with"
+    with iq_engine.connect() as conn:
+        data = conn.execute("Select * from voice_workflow_campaign")
+
+        # data is a dictionary with column name as key and row as value
+        for row in data:
+            print(row)
+
+    # Database connection is automatically closed when connection is used in a context manager i.e. inside "with"
+    with ds_sagemaker_engine.connect() as conn:
+        data = conn.execute("Select * from voice_workflow_campaign")
+
+        # data is a dictionary with column name as key and row as value
+        for row in data:
+            print(row)
+
+    # Database connection is automatically closed when connection is used in a context manager i.e. inside "with"
+    with ds_engine.connect() as conn:
+        data = conn.execute("Select * from vedvasu.customers")
+
+        # data is a dictionary with column name as key and row as value
+        for row in data:
+            print(row)
+
+        conn.execute("insert into vedvasu.customers (id, name) values (1, 'Robert-Slack')")
+
+
+How to install this module inside SageMaker Jobs started from JupyterHub
+--------------------------------------------------------------------------
+
+The following commands should be added in the DockerFile to install this module in the docker image. Preferably add these commands near the end before changing the working directory since all the steps these commands will be rebuild and cache won’t be used. Check the release `here <https://discourse.squadstack.com/t/sagemaker-update-launch-training-jobs-inside-vpc/56>`__.
+  
+.. code-block:: dockerfile
+
+    COPY auctm-database-connector-*.tar.gz /mnt/
+    RUN pip3 install /mnt/auctm-database-connector-*.tar.gz
+
+UI for the Decision Science Database
+-------------------------------------
+
+The UI is available at `Auctm PGAdmin <https://pgadmin.auctm.com/pgadmin4>`__. It provides a MySQL Workbench like interface for our PostgreSQL database.
+Users can login here to view and make changes to their tables via a UI. The credentials for this can be taken from the Admins (currently AGB and abkunal)
+
+How to Onboard a new user on Decision Science Database
+********************************************************
+
+- Login as the Admin Account at `Auctm PGAdmin <https://pgadmin.auctm.com/pgadmin4>`__.
+- Create a **User** account for a new user and share the credentials with the user.
+- Run the following SQL queries by replacing ``<role-name>``, ``<strong-password>``, and ``<schema-name>``.
+Note down the ``role-name`` and ``strong-password``.
+
+.. code-block:: sql
+
+    -- Create a new role and GRANT all_read_only role to this new role
+    CREATE ROLE <role-name> WITH
+        LOGIN
+        NOSUPERUSER
+        NOCREATEDB
+        NOCREATEROLE
+        INHERIT
+        NOREPLICATION
+        CONNECTION LIMIT -1
+        PASSWORD '<strong-password>';
+
+    GRANT all_read_only TO <role-name>;
+
+    -- Grant this role to the Admin user
+    GRANT <role-name> TO decision_science;
+
+    -- Create schema for the role and make this role owner of this schema
+    CREATE SCHEMA <schema-name> AUTHORIZATION <role-name>;
+
+    -- Grant all_read_only role READ access to this new schema
+    GRANT USAGE ON SCHEMA <schema-name> TO all_read_only;
+    GRANT SELECT ON ALL TABLES IN SCHEMA <schema-name> TO all_read_only;
+
+- On JupyterHub, navigate to the user's home directory and create
+the credentials file.
+
+.. code-block:: bash
+
+    sudo su
+    cd /home/<user>
+    nano decision_science_creds.csv
+
+    # Eg => cd /home/jupyter-kunal.yadav@squadr-319c0
+
+
+- Put the role name and password in the csv file as shown below.
+
+.. code-block:: bash
+
+    username,password
+    <role-name>,<strong-password>
+
+
+- Change the ownership permissions for this file.
+
+.. code-block:: bash
+
+    chown <user> decision_science_creds.csv
+    chgrp <user> decision_science_creds.csv
+
+    # Eg => chown jupyter-kunal.yadav@squadr-319c0 decision_science_creds.csv
+
+
+Documentation
+--------------
+
+We use SQL Alchemy as an ORM because it provides additional features than raw `psycopg2`.
+You can check out its documentation here - `SQL Alchemy docs <https://docs.sqlalchemy.org/en/13/core/connections.html>`__
+
+How to Modify this Package
+----------------------------
+
+1. This package works with Python 3
+2. After making the necessary changes run the following commands to build the project and install the package
+
+.. code-block:: bash
+
+    python setup.py sdist
+    sudo -E python -m pip install  dist/auctm-database-connector-0.1.tar.gz
+
+
+3. You can uninstall the package by running the following command - ``sudo -E pip uninstall auctm-database-connector``
