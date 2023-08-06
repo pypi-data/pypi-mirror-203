@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: network_scanner_kbk
+Version: 0.0.11
+Summary: Project to scan and gather connectivity information on small networks
+Home-page: https://github.com/kbriankulig/network-scanner
+Download-URL: 
+Author: Brian Kulig
+Author-email: kbriankulig@gmail.com
+License: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# joby-challenge-kbk
+Project to impliment Joby Aviation Challenge Problem Solution
+
+# Modifying readme - test
