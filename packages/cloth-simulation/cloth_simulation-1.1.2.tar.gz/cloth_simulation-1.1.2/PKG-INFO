@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: cloth_simulation
+Version: 1.1.2
+Summary: CSF: Ground Filtering based on Cloth Simulation
+Author: Jianbo Qi
+Maintainer: Romain Janvier
+Maintainer-email: romain.janvier@hotmail.fr
+License: Apache-2.0
+License-File: LICENSE.txt
