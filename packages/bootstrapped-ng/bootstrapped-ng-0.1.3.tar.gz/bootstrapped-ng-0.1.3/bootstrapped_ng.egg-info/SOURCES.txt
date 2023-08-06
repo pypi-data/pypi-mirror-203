@@ -1,0 +1,17 @@
+LICENSE
+LICENSE-examples
+README.rst
+pyproject.toml
+setup.py
+bootstrapped/__init__.py
+bootstrapped/bootstrap.py
+bootstrapped/compare_functions.py
+bootstrapped/permutation.py
+bootstrapped/power.py
+bootstrapped/stats_functions.py
+bootstrapped_ng.egg-info/PKG-INFO
+bootstrapped_ng.egg-info/SOURCES.txt
+bootstrapped_ng.egg-info/dependency_links.txt
+bootstrapped_ng.egg-info/requires.txt
+bootstrapped_ng.egg-info/top_level.txt
+tests/test_bootstrap.py
