@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: powergridsim
+Version: 1.0.0
+Summary: Optimization Model of Unit Commitment and Economic Dispatch with Calculation of LMP Prices
+Author: Junying (Alice) Fang
+Author-email: jf3187@columbia.edu
+Keywords: optimization,grid,electricity,energy,unit commitment,economic dispatch,lmp
+Requires-Dist: numpy (>1.21)
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: dill
+Requires-Dist: matplotlib
+Requires-Dist: gurobipy
+
