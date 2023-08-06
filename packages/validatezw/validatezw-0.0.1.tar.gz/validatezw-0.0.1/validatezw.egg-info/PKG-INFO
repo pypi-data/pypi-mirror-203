@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: validatezw
+Version: 0.0.1
+Summary: Validating zimbabwean number, ids, passport etc
+Author: Faraimunashe Manjeese
+Author-email: <faraimunashe.m11@gmail.com>
+Keywords: python,validate,zimbabwe,zim,zw
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown

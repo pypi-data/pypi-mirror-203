@@ -1,0 +1,7 @@
+setup.py
+validatezw/__init__.py
+validatezw/validate.py
+validatezw.egg-info/PKG-INFO
+validatezw.egg-info/SOURCES.txt
+validatezw.egg-info/dependency_links.txt
+validatezw.egg-info/top_level.txt
