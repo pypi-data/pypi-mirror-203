@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Whitechapel
+Version: 0.7
+Summary: MD5 hash cracker
+Project-URL: Homepage, https://gitlab.cylab.be/cylab/whitechapel
+Project-URL: Bug Tracker, https://gitlab.cylab.be/cylab/whitechapel/-/issues
+Author-email: Alexandre Croix <a.croix@cylab.be>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+Python module to brute-force MD5 hash
+
+Only for educationnal purposes
+
