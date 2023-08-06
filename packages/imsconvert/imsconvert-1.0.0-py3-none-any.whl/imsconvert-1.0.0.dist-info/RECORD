@@ -1,0 +1,10 @@
+imsconvert/__init__.py,sha256=J0ff39vEVYgB_0jzX1sEoBfK0TEXl7WeKyhfVrE36r8,23
+imsconvert/cliops.py,sha256=Hz0m9u3ApabDPz70GoG2csUvCyhu-aelwzazwFlSQ3w,477
+imsconvert/main.py,sha256=3e45k0QaGO7UuHY7wEODr17ksjvkhIpj0C_ZvzLw8EE,11714
+imsconvert/reader.py,sha256=DvcalQlOM3tu2Q7WPIH8Bk2bVe1gZNbPjPv7TBFjN2g,19762
+imsconvert/writer.py,sha256=EVcmud1jBUfpwat9XS_G6QH0Xegss7MLXhhSEWxF32M,15427
+imsconvert-1.0.0.dist-info/METADATA,sha256=cwZFJz0OKR_1Z5JwiQeaNVfNE8q91YV3oFw8co9oWdA,463
+imsconvert-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+imsconvert-1.0.0.dist-info/entry_points.txt,sha256=XsemhqcOlQHUNo9PzvY-cqyZ9HhDUf6a3pDZizzfq2s,52
+imsconvert-1.0.0.dist-info/top_level.txt,sha256=G_k2OI1j2tA_etKigOlt5k-CGMkXtRyzQVdkZW3a1MI,11
+imsconvert-1.0.0.dist-info/RECORD,,
