@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: bodo-platform-extensions
+Version: 1.2.0
+Summary: IPython magic extensions for the Bodo Cloud Platform
+Home-page: https://github.com/Bodo-inc/bodo-platform-extensions
+Author: Bodo, Inc.
+Author-email: noreply@bodo.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: dicttoxml (==1.7.4)
+Requires-Dist: IPython
+Requires-Dist: bodo-platform-utils
+
+# bodo-platform-extensions
+List of packages installations to extend the Bodo platform experience.
+
+
