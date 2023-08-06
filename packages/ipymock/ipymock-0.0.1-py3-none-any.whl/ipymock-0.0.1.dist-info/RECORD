@@ -1,0 +1,8 @@
+ipytest/__init__.py,sha256=lzzL1OfxW9fLvKRqHI8y1xsVoVWDr8mtKSufuppl1JM,1603
+ipytest/_nbdev.py,sha256=ME_sfalZtdG2VZVLPmWRlO5Lk-hl9ZtRbrWsvZTTy9w,1163
+ipytest/mock.py,sha256=eLVVlxiZG28XCPq0fVGH-4rjghvR6kUVJCCsnl6FJxs,8340
+ipymock-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ipymock-0.0.1.dist-info/METADATA,sha256=nmRuOQehIc1IMOeBgmbFcvkr7qlv2dvx3veaqpLbSzc,7676
+ipymock-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ipymock-0.0.1.dist-info/top_level.txt,sha256=dq2IoHtFCHx6TyaeV1rPR4bkKAEkjaoRungFL6Nsk1Y,8
+ipymock-0.0.1.dist-info/RECORD,,
