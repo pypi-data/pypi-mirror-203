@@ -1,0 +1,12 @@
+biopython
+datashader
+holoviews
+plotly
+logomaker
+seaborn
+matplotlib
+tqdm
+fastparquet
+pandas
+scipy
+numpy

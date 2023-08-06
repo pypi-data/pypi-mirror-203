@@ -1,0 +1,10 @@
+[console_scripts]
+calc_split_data_r2 = bin.calc_split_data_r2:main
+calc_tpt = bin.calc_tpt:main
+calc_visualization = bin.calc_visualization:main
+filter_genotypes = bin.filter_genotypes:main
+fit_SeqDEFT = bin.fit_seqdeft:main
+plot_decay_rates = bin.plot_decay_rates:main
+plot_visualization = bin.plot_visualization:main
+split_data = bin.split_data:main
+vc_regression = bin.vc_regression:main
