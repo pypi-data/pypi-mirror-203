@@ -1,0 +1,237 @@
+import re
+import traceback
+import functools
+from io import StringIO
+from itertools import count
+from datetime import datetime
+from time import perf_counter_ns
+from contextlib import redirect_stdout
+from inspect import iscoroutinefunction
+from .bug import Bug
+from ..utils.colors import colors
+from .exception import BugCreationException
+from ..utils.logger import test_rest_api_logger
+from ..global_variables.exception import GlobalVariablesException
+from ..reporting.report import report, ReportTestResult, TestStatus, ErrorType
+from ..rest_api.exception import RestApiCreationException, RestApiSendException
+
+# Iter for creating id for testcase name
+iter_test_name = count(start=1)
+
+
+def test(*, name="", desc="", enabled=True, tags=[], is_async=True, execution_order='zzzzz'):
+    def testcase_decorator(func):
+        @functools.wraps(func)
+        async def inner(*args, **kwargs):
+            # Get the test file path
+            testsuite: str = func.__module__ if func.__module__ else 'root file'
+            # Create the test name
+            testcase_name: str = f'{name} ({testsuite})' if name else f'{func.__name__} ({testsuite})'
+            # Add unique id to the name (Users can provide same name for multiple testcases)
+            testcase_name += f" [{next(iter_test_name)}]"
+            # Start the stopwatch / counter
+            timer_start = perf_counter_ns()
+            # Get the start date time of the test
+            start = datetime.now().strftime('%Y-%m-%d %H-%M-%S')
+            # Initialise test status, test details and test logs
+            status, details, logs = TestStatus.SKIP, 'Testcase is skipped', 'No data to display'
+            # Initialise bug priority and error type which will be used for reporting
+            bug_priority, error_type = '', ''
+            # Initialise skip as false
+            skip = False
+            # Get the runner test tags
+            from test_rest_api import runner
+            # If we have any runner test tags
+            if runner.test_tags:
+                # Check if the tag is #ALL (This will run for all tag cases, eg: login api)
+                if 'ALL' not in tags:
+                    # Check if any of the runner test tag is present in the current test else skip the test
+                    if not any(test_tag in tags for test_tag in runner.test_tags):
+                        skip = True
+            if not skip:
+                # Initialise test status and test details
+                status, details = TestStatus.DISABLE, 'Testcase is disabled'
+                # Only execute enabled testcases
+                if enabled:
+                    # In-memory file-like object
+                    string_io = StringIO()
+                    try:
+                        # Redirect standard output to string_io
+                        # In python, print() function prints values to standard out
+                        with redirect_stdout(string_io):
+                            # Call the async test function
+                            await func(*args, **kwargs)
+                        # Log the result
+                        test_rest_api_logger.info(
+                            f"{colors.LIGHT_GREEN}{'PASS' : <8}{colors.LIGHT_CYAN}{testcase_name}{colors.LIGHT_BLUE}")
+                        # Update the test status and details
+                        status, details = TestStatus.PASS, 'Success'
+                    except RestApiCreationException as exc:
+                        # Log the result
+                        test_rest_api_logger.info(
+                            f"{colors.YELLOW}{'ERROR' : <8}{colors.LIGHT_CYAN}{testcase_name}{colors.LIGHT_BLUE}")
+                        # Update the error type for reporting
+                        error_type = ErrorType.REST_API
+                        # Get the code traceback details
+                        traceback_data = traceback.format_exc()
+                        # Format the traceback (Remove unwanted info)
+                        start_res = re.search(r'test_rest_api/testing/decorator.py", line (.*?), in inner',
+                                              traceback_data)
+                        end_res = re.search(r'raise RestApiCreationException', traceback_data)
+                        traceback_data = traceback_data[start_res.start() + 89:end_res.end()]
+                        traceback_data = traceback_data[:traceback_data.rfind('File "') - 3]
+                        if re.search(r'test_rest_api/rest_api/rest_api.py", line (.*?), in __call__', traceback_data):
+                            traceback_data = traceback_data[:traceback_data.rfind('File "') - 3]
+                            traceback_data = traceback_data[:traceback_data.rfind('File "') - 3]
+                        # Update the test status and details
+                        status, details = TestStatus.ERROR, f'\nTRACEBACKS\n----------\n{traceback_data}\n{exc}'
+                    except RestApiSendException as exc:
+                        # Log the result
+                        test_rest_api_logger.info(
+                            f"{colors.YELLOW}{'ERROR' : <8}{colors.LIGHT_CYAN}{testcase_name}{colors.LIGHT_BLUE}")
+                        # Update the error type for reporting
+                        error_type = ErrorType.REST_API
+                        # Get the code traceback details
+                        traceback_data = traceback.format_exc()
+                        # Format the traceback (Remove unwanted info)
+                        start_res = re.search(r'test_rest_api/testing/decorator.py", line (.*?), in inner',
+                                              traceback_data)
+                        end_res = re.search(r'raise RestApiSendException', traceback_data)
+                        traceback_data = traceback_data[start_res.start() + 89:end_res.end()]
+                        traceback_data = traceback_data[:traceback_data.rfind('File "') - 3]
+                        traceback_data = traceback_data[:traceback_data.rfind('File "') - 3]
+                        # Update the test status and details
+                        status, details = TestStatus.ERROR, f'\nTRACEBACKS\n----------\n{traceback_data}\n{exc}'
+                    except BugCreationException as exc:
+                        # Log the result
+                        test_rest_api_logger.info(
+                            f"{colors.YELLOW}{'ERROR' : <8}{colors.LIGHT_CYAN}{testcase_name}{colors.LIGHT_BLUE}")
+                        # Update the error type for reporting
+                        error_type = ErrorType.BUG
+                        # Get the code traceback details
+                        traceback_data = traceback.format_exc()
+                        # Format the traceback (Remove unwanted info)
+                        start_res = re.search(r'test_rest_api/testing/decorator.py", line (.*?), in inner',
+                                              traceback_data)
+                        end_res = re.search(r'raise test_rest_api_exception', traceback_data)
+                        traceback_data = traceback_data[start_res.start() + 89:end_res.end()]
+                        traceback_data = traceback_data[:traceback_data.rfind('File "') - 3]
+                        # Update the test status and details
+                        status, details = TestStatus.ERROR, f'\nTRACEBACKS\n----------\n{traceback_data}\n{exc}'
+                    except GlobalVariablesException as exc:
+                        # Log the result
+                        test_rest_api_logger.info(
+                            f"{colors.YELLOW}{'ERROR' : <8}{colors.LIGHT_CYAN}{testcase_name}{colors.LIGHT_BLUE}")
+                        # Update the error type for reporting
+                        error_type = ErrorType.GLOBAL_VARIABLES
+                        # Get the code traceback details
+                        traceback_data = traceback.format_exc()
+                        # Format the traceback (Remove unwanted info)
+                        start_res = re.search(r'test_rest_api/testing/decorator.py", line (.*?), in inner',
+                                              traceback_data)
+                        end_res = re.search(r'raise test_rest_api_exception', traceback_data)
+                        traceback_data = traceback_data[start_res.start() + 89:end_res.end()]
+                        traceback_data = traceback_data[:traceback_data.rfind('File "') - 3]
+                        # Update the test status and details
+                        status, details = TestStatus.ERROR, f'\nTRACEBACKS\n----------\n{traceback_data}\n{exc}'
+                    except Bug as exc:
+                        # Log the result
+                        test_rest_api_logger.info(
+                            f"{colors.LIGHT_RED}{'FAIL' : <8}{colors.LIGHT_CYAN}{testcase_name}{colors.LIGHT_BLUE}")
+                        # Update the bug priority for reporting
+                        bug_priority = exc.priority
+                        # Get the code traceback details
+                        traceback_data = traceback.format_exc()
+                        # Format the traceback (Remove unwanted info)
+                        start_res = re.search(r'test_rest_api/testing/decorator.py", line (.*?), in inner',
+                                              traceback_data)
+                        end_res = re.search(r'raise Bug', traceback_data)
+                        traceback_data = traceback_data[start_res.start() + 89:end_res.end()]
+                        # Update the test status and details
+                        status, details = TestStatus.FAIL, f'\nTRACEBACKS\n----------\n{traceback_data}\n{exc}'
+                    except AssertionError as exc:
+                        # Log the result
+                        test_rest_api_logger.info(
+                            f"{colors.LIGHT_RED}{'FAIL' : <8}{colors.LIGHT_CYAN}{testcase_name}{colors.LIGHT_BLUE}")
+                        # Update the bug priority for reporting
+                        bug_priority = exc.args[0].priority if exc.args and isinstance(exc.args[0],
+                                                                                       Bug) else Bug.PRIORITY.LOW
+                        # Get the code traceback details
+                        traceback_data = traceback.format_exc()
+                        # Format the traceback (Remove unwanted info)
+                        start_res = re.search(r'test_rest_api/testing/decorator.py", line (.*?), in inner',
+                                              traceback_data)
+                        traceback_data = traceback_data[start_res.start() + 89:]
+                        # Update the test status and details
+                        status, details = TestStatus.FAIL, f'\nTRACEBACKS\n----------\n{traceback_data}'
+                    except AttributeError as exc:
+                        # Log the result
+                        test_rest_api_logger.info(
+                            f"{colors.YELLOW}{'ERROR' : <8}{colors.LIGHT_CYAN}{testcase_name}{colors.LIGHT_BLUE}")
+                        # Update the error type for reporting
+                        error_type = ErrorType.UNEXPECTED
+                        # Get the code traceback details
+                        traceback_data = traceback.format_exc()
+                        # Format the traceback (Remove unwanted info)
+                        start_res = re.search(r'test_rest_api/testing/decorator.py", line (.*?), in inner',
+                                              traceback_data)
+                        traceback_data = traceback_data[start_res.start() + 89:]
+                        # Update the test status and details
+                        status, details = TestStatus.ERROR, f'\nTRACEBACKS\n----------\n{traceback_data}\n{exc}\n\n{"Tip: This may be due to not using await keyword in function calls"}'
+                    except Exception as exc:
+                        # Log the result
+                        test_rest_api_logger.info(
+                            f"{colors.YELLOW}{'ERROR' : <8}{colors.LIGHT_CYAN}{testcase_name}{colors.LIGHT_BLUE}")
+                        # Update the error type for reporting
+                        error_type = ErrorType.UNEXPECTED
+                        # Get the code traceback details
+                        traceback_data = traceback.format_exc()
+                        # Format the traceback (Remove unwanted info)
+                        start_res = re.search(r'test_rest_api/testing/decorator.py", line (.*?), in inner',
+                                              traceback_data)
+                        traceback_data = traceback_data[start_res.start() + 89:]
+                        # Update the test status and details
+                        status, details = TestStatus.ERROR, f'\nTRACEBACKS\n----------\n{traceback_data}\n{exc}'
+                    finally:
+                        # Get standard out messages from all the print() statements
+                        stdout_data = string_io.getvalue()
+                        # Update the test logs
+                        logs = f'Started the test\n{stdout_data}'
+                        # Dynamic log msg for different test status
+                        if status == TestStatus.PASS:
+                            logs += 'Completed the test'
+                        elif status == TestStatus.FAIL:
+                            logs += 'Bug!\nTest exited without ending'
+                        elif status == TestStatus.ERROR:
+                            logs += 'Error in code\nTest exited without ending'
+            # Set the end time of the test
+            end = datetime.now().strftime('%Y-%m-%d %H-%M-%S')
+            # Stop the stopwatch / counter
+            timer_stop = perf_counter_ns()
+            # Calculate the time duration of the test in seconds (note: duration is in nanoseconds)
+            duration = f'{(timer_stop - timer_start) / 1000000000} seconds'
+            # Create Report test result object instance
+            test_result = ReportTestResult(name=testcase_name,
+                                           desc=desc,
+                                           is_async=is_async,
+                                           testsuite=testsuite,
+                                           status=status,
+                                           details=details,
+                                           logs=logs,
+                                           tags=tags,
+                                           start=start,
+                                           end=end,
+                                           duration=duration,
+                                           bug_priority=bug_priority,
+                                           error_type=error_type)
+            # Add the test result to the report
+            report.add_test_result(test_result)
+
+        # Only async functions can be decorated with @test
+        inner.is_testcase = True if iscoroutinefunction(func) else False
+        inner.is_async_testcase = is_async
+        # For ordering sequential testcases
+        inner.execution_order = execution_order
+        return inner
+
+    return testcase_decorator
