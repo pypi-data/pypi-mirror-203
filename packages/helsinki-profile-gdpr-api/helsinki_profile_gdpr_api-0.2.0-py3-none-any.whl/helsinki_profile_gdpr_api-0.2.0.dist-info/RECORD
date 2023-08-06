@@ -1,0 +1,10 @@
+helsinki_gdpr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+helsinki_gdpr/models.py,sha256=tTziY3rvDg1iUXTE0NvJrDN3SwnFMyK9wDQFh1Nv4cE,4355
+helsinki_gdpr/types.py,sha256=5x4kHxdacee7zn9K1yRJe7vLwh1FRLVdxAXbHAoDBiE,727
+helsinki_gdpr/urls.py,sha256=URVWU_JWcPt161lWoC1Qd2j8LS1YqolQlLajQN0EdEc,301
+helsinki_gdpr/views.py,sha256=Mdb_4uk4YwTNnY6nNQNkJ1h-QrZsxxXiXlz84pFmnwk,5514
+helsinki_profile_gdpr_api-0.2.0.dist-info/LICENSE,sha256=jxLu_FsoelxNh2w43d_x_BPLdKVKg9AWOjwJsRO9hf8,1073
+helsinki_profile_gdpr_api-0.2.0.dist-info/METADATA,sha256=C6362HxgOxM_1q1bJoJn7p9a46U435PhBk_-kHC42g4,7295
+helsinki_profile_gdpr_api-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+helsinki_profile_gdpr_api-0.2.0.dist-info/top_level.txt,sha256=IDTx04s_ps3FebdmyCP04AdDFwNzPCZ3-iwAiBZ0Yxs,14
+helsinki_profile_gdpr_api-0.2.0.dist-info/RECORD,,
