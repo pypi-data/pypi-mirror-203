@@ -1,0 +1,10 @@
+blossomai/__init__.py,sha256=xb0osa7XBq33RfcYcTSagwUMh6A6rz0KIWa8379apmg,91
+blossomai/__main__.py,sha256=DIZDj87h3SsJbndpXthu0YDSZthaWlKHUgLH0DTwSlk,72
+blossomai/blossomai.py,sha256=j_bbWcVrUs8NWevKlObnW5BTNTYWKQnROxVcZTRX2Rg,26
+blossomai/cli.py,sha256=onsL4ZiIWSqvGOKuvUSQbhF3go4Od61V7lZp_lJ2K9Y,1234
+blossomai-0.1.0.dist-info/LICENSE,sha256=GToBRVPkNCMilpLvyDC3Z428zY5W-xGc8PTMB43Dj5Y,1107
+blossomai-0.1.0.dist-info/METADATA,sha256=PQzBsDKBmW_uKs5wTkx7fMcdOXXIL5xdTC1l6gdyC6w,470
+blossomai-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+blossomai-0.1.0.dist-info/entry_points.txt,sha256=ZSrykKWJP8ZJL_izjuLe5ywyV9JGpTXklXbos_szfDw,56
+blossomai-0.1.0.dist-info/top_level.txt,sha256=PNpXIB6SfGxnhJ_krr4B9Frfn9OzkFwjGfQV5yT4Scc,10
+blossomai-0.1.0.dist-info/RECORD,,
