@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: segment-anything-py
+Version: 0.2
+Summary: A unofficial Python package for Meta AI's Segment Anything Model
+Author: Qiusheng Wu
+Author-email: giswqs@gmail.com
+License: MIT license
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Provides-Extra: all
+Provides-Extra: dev
+License-File: LICENSE
