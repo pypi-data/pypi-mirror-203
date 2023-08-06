@@ -1,0 +1,2 @@
+[console_scripts]
+taichu = taichu_serve.command:cli
