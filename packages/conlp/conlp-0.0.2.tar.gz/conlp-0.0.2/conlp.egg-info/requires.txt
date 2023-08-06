@@ -1,0 +1,7 @@
+torch
+transformers
+transformers[sentencepiece]
+scipy
+numpy
+re
+tqdm
