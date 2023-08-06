@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/PartehDB/__init__.py
+src/PartehDB/main.py
+src/PartehDB.egg-info/PKG-INFO
+src/PartehDB.egg-info/SOURCES.txt
+src/PartehDB.egg-info/dependency_links.txt
+src/PartehDB.egg-info/top_level.txt

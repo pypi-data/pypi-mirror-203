@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "PartehDB"
+version = "1.0.1"
+authors = [
+  { name="PartehPackages", email="parteh0754.coding.guy@gmail.com" },
+]
+description = "A python library that lets you create a custom database."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://www.youtube.com/watch?v=a3Z7zEc7AXQ"
+"Bug Tracker" = "https://www.youtube.com/watch?v=a3Z7zEc7AXQ"
