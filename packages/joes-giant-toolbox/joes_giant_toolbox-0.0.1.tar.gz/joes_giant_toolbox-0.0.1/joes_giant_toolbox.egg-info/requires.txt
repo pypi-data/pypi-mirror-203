@@ -1,0 +1,8 @@
+
+[all]
+black
+pytest
+
+[doc]
+m2r
+sphinx

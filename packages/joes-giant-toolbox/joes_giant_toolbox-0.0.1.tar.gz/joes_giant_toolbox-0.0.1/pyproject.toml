@@ -1,0 +1,26 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "joes_giant_toolbox"
+version = "0.0.1"
+description = "A large collection of general python functions and classes that I use in my daily work"
+readme = "README.md"
+authors = [{ name = "Joseph Bolton", email = "joseph.jazz.bolton@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["api", "web", "dataviz", "google cloud", "project management", "convenience", "statistics", "hypothesis testing", "machine learning", "NLP"]
+dependencies = []
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+all = ["black", "pytest"]
+doc = ["m2r","sphinx"]
+
+[project.urls]
+Homepage = "https://github.com/J-sephB-lt-n/joes_giant_toolbox"
