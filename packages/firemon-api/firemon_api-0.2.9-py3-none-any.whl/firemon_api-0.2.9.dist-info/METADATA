@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: firemon-api
+Version: 0.2.9
+Summary: Python Wrapper for Firemon APIs
+Author: Luke Johannsen
+Author-email: luke.johannsen@firemon.com
+License: MIT
+Keywords: firemon,api,development
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Requires-Dist: requests
+Requires-Dist: tenacity
+
