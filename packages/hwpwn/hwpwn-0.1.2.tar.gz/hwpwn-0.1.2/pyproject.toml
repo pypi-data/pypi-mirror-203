@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "hwpwn"
+version = "0.1.2"
+description = "Hardware security testing tool"
+authors = ["jemos <contact@jemos.net>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+typer = {version = "^0.7.0", extras = ["all"]}
+"ruamel.yaml" = ">=0.16.12"
+PyWavelets = "^1.4.0"
+scipy = "^1.10.1"
+pandas = "^2.0.0"
+matplotlib = "^3.7.1"
+python-dateutil = "^2.8.2"
+colorama = "^0.4.6"
+furo = "^2023.3.27"
+
+[tool.poetry.dev-dependencies]
+Sphinx = "^6.1.3"
+sphinx-toolbox = "^3.4.0"
+sphinx-paramlinks = "^0.5.4"
+sphinx-rtd-theme = "^1.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+hwpwn = "hwpwn.hwpwn:app"
