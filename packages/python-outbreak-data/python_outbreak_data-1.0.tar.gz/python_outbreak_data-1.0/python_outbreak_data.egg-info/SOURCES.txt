@@ -1,0 +1,9 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+python_outbreak_data.egg-info/PKG-INFO
+python_outbreak_data.egg-info/SOURCES.txt
+python_outbreak_data.egg-info/dependency_links.txt
+python_outbreak_data.egg-info/requires.txt
+python_outbreak_data.egg-info/top_level.txt
