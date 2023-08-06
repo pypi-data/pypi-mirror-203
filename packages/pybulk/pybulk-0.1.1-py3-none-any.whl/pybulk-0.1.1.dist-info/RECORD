@@ -1,0 +1,8 @@
+pybulk/__init__.py,sha256=64ABFMh01wcfNd1yjymFTFchS1dg6tUHN5LxSJvPfKU,910
+pybulk/base_db.py,sha256=fdcBhgwHz3zflrNRXzYYyQNLoJjLGrKa7MMWADzTUm4,8939
+pybulk/dbinterface.py,sha256=2xjzAMPK7TqZLMKOIZtdSbpnNL1nFUB9Kil_bvuVm84,7209
+pybulk-0.1.1.dist-info/LICENSE,sha256=ap6p7mVInPB7faKfFp4k3qpWMJugOwyjQI9J4RNTRF8,1083
+pybulk-0.1.1.dist-info/METADATA,sha256=c0CtU3Da8hBNMhgdSRweAou8QtkyydpMWNnpOpwK_P0,2603
+pybulk-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pybulk-0.1.1.dist-info/top_level.txt,sha256=mG6P-DbtQHVTYAXE4p2HjWsic2jxTYKtU1s6IJYwsig,7
+pybulk-0.1.1.dist-info/RECORD,,
