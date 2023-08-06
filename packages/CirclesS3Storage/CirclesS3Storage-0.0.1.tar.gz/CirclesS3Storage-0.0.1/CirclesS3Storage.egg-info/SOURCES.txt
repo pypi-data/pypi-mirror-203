@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+CirclesS3Storage.egg-info/PKG-INFO
+CirclesS3Storage.egg-info/SOURCES.txt
+CirclesS3Storage.egg-info/dependency_links.txt
+CirclesS3Storage.egg-info/top_level.txt
+src/AWSStorage.py
+src/StorageDB.py
+src/StorageInterface.py
+src/__init__.py
+tests/test_S3.py
