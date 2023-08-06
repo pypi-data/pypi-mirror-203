@@ -1,0 +1,5 @@
+dist
+docs
+hledger_lots
+tests
+venv
