@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-12 20:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "You pressed 'Ctrl+C', exiting..."
+msgstr ""
+
+msgid "Developed by Mariano Muñoz 2022-{}"
+msgstr ""
+
+msgid "(Without subject)"
+msgstr ""
+
+msgid "Error parsing subject"
+msgstr ""
+
+msgid "[Error detected. Won't be renamed]"
+msgstr ""
+
+msgid "[Error detected. Not Renamed]"
+msgstr ""
+
+msgid "[Will be renamed]"
+msgstr ""
+
+msgid "[Renamed]"
+msgstr ""
+
+msgid "[Format detected. Won't de renamed]"
+msgstr ""
+
+msgid "[Format detected. Not renamed]"
+msgstr ""
+
+msgid "Script renames all eml files in a directory using mail metadata "
+msgstr ""
+
+msgid "Forces subject update when 'YYYMMDD HHMM [from]' format is detected"
+msgstr ""
+
+#, python-brace-format
+msgid "Maximum length allowed to final name using 'YYYMMDD HHMM [from]'. Default: {0}"
+msgstr ""
+
+msgid "Without this parameter files won't be renamed. Script only pretend the result"
+msgstr ""
+
+msgid "Processing eml files"
+msgstr ""
+
+#, python-brace-format
+msgid "{0} files were renamed."
+msgstr ""
+
+#, python-brace-format
+msgid "Process was simulated, files weren't renamed. Use --save to rename {0} files."
+msgstr ""
+
+msgid "It took {}"
+msgstr ""

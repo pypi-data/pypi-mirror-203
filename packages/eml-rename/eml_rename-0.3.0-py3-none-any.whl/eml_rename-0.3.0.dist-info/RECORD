@@ -1,0 +1,12 @@
+eml_rename/__init__.py,sha256=m3-tlK6i0BEU0Gup7XJ3BvLLzdBbWodeEe7c9qX5WJY,145
+eml_rename/core.py,sha256=YODf7qrd9cJ7m6rMrUMAQX2mxp9M64-KY1RM1dBlr2A,10278
+eml_rename/locale/eml_rename.pot,sha256=2FS6iN-GPgYn3Dw8YKS73lWlLDb3TtPLP5CGO48liaY,1684
+eml_rename/locale/en/LC_MESSAGES/eml_rename.mo,sha256=-5Hgff2pmCFFbfqMcHAYXFXkXlPdLpoT0F_kuCmmPwM,424
+eml_rename/locale/en.po,sha256=iQd3zNctpjlvAm1LA1MxAq2imsN7GQKqcEPdk9gdXpY,738
+eml_rename/locale/es/LC_MESSAGES/eml_rename.mo,sha256=EKrcvTlnZGmBq9ILoMpm9U-jwckSjEwlVyTZ6YHubj4,2338
+eml_rename/locale/es.po,sha256=l17M3zilN1IsAdVyB73hFZXtwAX3SaxHLbIHp2cQw0A,2654
+eml_rename-0.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+eml_rename-0.3.0.dist-info/METADATA,sha256=QXYmfo4JX1NwPasu0x4jOH61q3v5p_0eWaASS034bWc,1883
+eml_rename-0.3.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+eml_rename-0.3.0.dist-info/entry_points.txt,sha256=AgsokDyAk9SdRLmjkCzA23k-ki2nj-UNaysgBMoxUto,51
+eml_rename-0.3.0.dist-info/RECORD,,
