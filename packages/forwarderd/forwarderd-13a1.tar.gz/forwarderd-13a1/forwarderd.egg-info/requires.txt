@@ -1,0 +1,9 @@
+
+[daemon]
+paramiko
+sshtunnel
+
+[test]
+pytest
+pytest-asyncio
+pytest-dotenv
