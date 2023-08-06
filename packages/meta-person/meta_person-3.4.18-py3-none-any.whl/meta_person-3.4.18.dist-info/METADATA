@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: meta-person
+Version: 3.4.18
+Summary: Meta Person Toolkit
+Home-page: https://github.com/CachCheng/cvtrack
+Author: CachCheng
+Author-email: tkggpdc2007@163.com
+License: Apache-2.0
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: setuptools
+Requires-Dist: tensorrt
+Requires-Dist: numpy
+Requires-Dist: pycuda
+Requires-Dist: scipy
+Requires-Dist: lap
+Requires-Dist: cython
+Requires-Dist: cython-bbox
+
+# cvtrack
+行人识别通用框架
