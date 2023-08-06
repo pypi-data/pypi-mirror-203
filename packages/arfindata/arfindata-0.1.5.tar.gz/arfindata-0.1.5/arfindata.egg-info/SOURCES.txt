@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+arfindata/ARdata.py
+arfindata/__init__.py
+arfindata/sh.py
+arfindata/sz.py
+arfindata.egg-info/PKG-INFO
+arfindata.egg-info/SOURCES.txt
+arfindata.egg-info/dependency_links.txt
+arfindata.egg-info/requires.txt
+arfindata.egg-info/top_level.txt
