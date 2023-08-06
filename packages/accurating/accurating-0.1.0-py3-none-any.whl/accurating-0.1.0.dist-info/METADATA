@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: accurating
+Version: 0.1.0
+Summary: 
+Author: Lukasz Lew
+Author-email: lukasz.lew@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: jax (>=0.4.8,<0.5.0)
+Requires-Dist: pytest (>=7.3.1,<8.0.0)
+Description-Content-Type: text/markdown
+
+# AccuRating
+
+## Development
+
+```shell
+git clone https://github.com/lukaszlew/accurating
+poetry install
+poetry run pytest
+```
+
