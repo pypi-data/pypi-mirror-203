@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pros-cli
+Version: 3.4.2
+Summary: Command Line Interface for managing PROS projects
+Home-page: https://github.com/purduesigbots/pros-cli
+Author: Purdue ACM SIGBots
+Author-email: pros_development@cs.purdue.edu
+License: MPL-2.0
+License-File: LICENSE
