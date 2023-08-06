@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Funciones-Generales
+Version: 0.0.1
+Summary: Librería que guarda algunas funciones esenciales que son faciles,pero pesadas.
+Home-page: https://github.com/01001010-01101111-01110100-01100001
+Author: Jorge del Rio López
+Author-email: jotarlvdg@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+
+Librería que recoge numerosas funciones de uso cotidiano para su implentación en programación.
+Son funciones sencillas que no necesitan una gran habilidad para su lectura, sin embargo se recogen aquí.
+
+Esta versión tiene poca información y la funciones son un poco probres, la siguiente versión incluira comentarios para comprenderlo mejor y mayor número de funciones conforme vaya aprendiendo.
