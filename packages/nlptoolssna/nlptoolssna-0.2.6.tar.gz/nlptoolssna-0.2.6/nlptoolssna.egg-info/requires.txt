@@ -1,0 +1,7 @@
+six
+farasapy
+tqdm
+requests
+regex
+json
+pathlib
