@@ -1,0 +1,8 @@
+LICENSE
+README.md
+obfuscator.py
+setup.py
+zescator.egg-info/PKG-INFO
+zescator.egg-info/SOURCES.txt
+zescator.egg-info/dependency_links.txt
+zescator.egg-info/top_level.txt

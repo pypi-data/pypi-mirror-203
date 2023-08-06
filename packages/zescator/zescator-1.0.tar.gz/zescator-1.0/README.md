@@ -1,0 +1,1 @@
+a simple python obfuscator that uses base64 and strings
