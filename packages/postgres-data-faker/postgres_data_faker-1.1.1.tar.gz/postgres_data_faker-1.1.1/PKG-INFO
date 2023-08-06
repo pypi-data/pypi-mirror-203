@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: postgres-data-faker
+Version: 1.1.1
+Summary: Dummy and simple faker sensitive data for postgres database
+Author: Borteq2
+Author-email: borteq2@yandex.ru
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: faker (>=18.4.0,<19.0.0)
+Requires-Dist: psycopg2 (>=2.9.6,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Postgres data faker
+
+---
+
+- install package with:
+  - pip: `pip install postgres-data-faker`
+  - poetry: `poetry add postgres-data-faker`
+- import module with `from postgres_data_faker import data_faker`
+- using func `data_faker.faking_table(enter name of your table here)`
+---
+- available table names:
+  - customer: will fake columns (**ordered!**):
+    - phone
+    - email
+    - firstname
+    - lastname
+  - recipient: similar to customer
+  - customer address: will fake columns (**also ordered!**):
+    - address_text
+    - postal_code
+---
+
+- connection data stored ad `.env` file, so you must create and fill it with your database parameters
