@@ -1,0 +1,5 @@
+setup.py
+Pygmenu.egg-info/PKG-INFO
+Pygmenu.egg-info/SOURCES.txt
+Pygmenu.egg-info/dependency_links.txt
+Pygmenu.egg-info/top_level.txt
