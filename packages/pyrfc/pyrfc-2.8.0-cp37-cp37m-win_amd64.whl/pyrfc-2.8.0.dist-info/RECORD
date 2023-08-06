@@ -1,0 +1,12 @@
+pyrfc/__init__.py,sha256=TEYdNKGAdZyjU_JBaNy-L-qKS4yj3PXsgcA_rEdRIv4,1599
+pyrfc/_cyrfc.cp310-win_amd64.pdb,sha256=IHEPyd-HKC1M8yCvuHSgOtvXCL1rtt28jAgihUqHmbI,2002944
+pyrfc/_cyrfc.cp310-win_amd64.pyd,sha256=Xd1969i7wp-dZv27J_e8i0ry4Snjy5BRQaAurS_-qvQ,418304
+pyrfc/_cyrfc.cp37-win_amd64.pdb,sha256=L2dzF4Ldvu-_lJI8jgdajf5hyNjZjrGfmaZ3xXhygCY,1830912
+pyrfc/_cyrfc.cp37-win_amd64.pyd,sha256=4XnoWm2YAYLbrXam35ZhdmNTPNYx7DDHw7fX6wlYzNY,436224
+pyrfc/_exception.py,sha256=T4fJcMnIcEGl3EhKpz9hGRPnjT3yTt1QPkkdwnMR3r0,4332
+pyrfc/version.py,sha256=TwEzC6jmpJ38raXAiPSqp8ILUqoXmA_PzhYA8j07u1g,88
+pyrfc-2.8.0.dist-info/LICENSE,sha256=9wcKmSv1eblH4TQdFYgWqkAd0fBjdIiee7fOaK-QK1o,10358
+pyrfc-2.8.0.dist-info/METADATA,sha256=yzHQ4sXULfWg8WzDmeUSMhYzm1gpWdsImfK24MkQpzw,12204
+pyrfc-2.8.0.dist-info/WHEEL,sha256=bipuClDp75Tl92wOCbNQvfy8uWiHgUDTfxkDCRx_slY,101
+pyrfc-2.8.0.dist-info/top_level.txt,sha256=BjOmNyKOMFQimaneNANnWEWivnjiFFp5kf_3BvrvU7E,6
+pyrfc-2.8.0.dist-info/RECORD,,
