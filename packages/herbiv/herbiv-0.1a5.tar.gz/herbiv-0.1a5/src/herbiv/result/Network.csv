@@ -1,0 +1,28 @@
+SourceNode,TargetNode
+wogonin,TMPRSS2
+rutin,TMPRSS2
+biphenyl,TMPRSS2
+linoleic acid,TMPRSS2
+eugenol,TMPRSS2
+capsaicin,TMPRSS2
+tryptophan,TMPRSS2
+phenol,TMPRSS2
+isoliquiritigenin,TMPRSS2
+glucose,ACE2
+柴胡,capsaicin
+柴胡,capsaicin
+柴胡,glucose
+柴胡,tryptophan
+柴胡,linoleic acid
+柴胡,eugenol
+柴胡,glucose
+柴胡,phenol
+柴胡,isoliquiritigenin
+柴胡,linoleic acid
+柴胡,phenol
+柴胡,biphenyl
+柴胡,rutin
+柴胡,tryptophan
+黄芩,linoleic acid
+黄芩,eugenol
+黄芩,wogonin
