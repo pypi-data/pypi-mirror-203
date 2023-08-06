@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+qtdark/__init__.py
+qtdark.egg-info/PKG-INFO
+qtdark.egg-info/SOURCES.txt
+qtdark.egg-info/dependency_links.txt
+qtdark.egg-info/requires.txt
+qtdark.egg-info/top_level.txt
