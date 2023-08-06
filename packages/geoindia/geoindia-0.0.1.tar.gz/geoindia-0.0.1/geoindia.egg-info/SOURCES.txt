@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+geoindia/__init__.py
+geoindia/geoindia.py
+geoindia.egg-info/PKG-INFO
+geoindia.egg-info/SOURCES.txt
+geoindia.egg-info/dependency_links.txt
+geoindia.egg-info/not-zip-safe
+geoindia.egg-info/top_level.txt

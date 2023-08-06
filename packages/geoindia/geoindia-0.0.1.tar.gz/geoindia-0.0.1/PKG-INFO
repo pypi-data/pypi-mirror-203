@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: geoindia
+Version: 0.0.1
+Summary: A python package for interactive mapping.
+Home-page: https://github.com/doke93/geoindia
+Author: Abhishek Doke
+Author-email: dokeabhishek3@gmail.com
+License: MIT license
+Keywords: geoindia
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# geoindia
+
+
+[![image](https://img.shields.io/pypi/v/geoindia.svg)](https://pypi.python.org/pypi/geoindia)
+[![image](https://img.shields.io/conda/vn/conda-forge/geoindia.svg)](https://anaconda.org/conda-forge/geoindia)
+
+
+**A python package for interactive mapping.**
+
+
+-   Free software: MIT license
+-   Documentation: https://doke93.github.io/geoindia
+    
+
+## Features
+
+-   TODO
+
+## Credits
+
+This package was created with [Cookiecutter](https://github.com/cookiecutter/cookiecutter) and the [giswqs/pypackage](https://github.com/giswqs/pypackage) project template.
