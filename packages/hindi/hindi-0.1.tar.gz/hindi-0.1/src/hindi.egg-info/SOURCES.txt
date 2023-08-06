@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/hindi/__init__.py
+src/hindi/hindi.py
+src/hindi.egg-info/PKG-INFO
+src/hindi.egg-info/SOURCES.txt
+src/hindi.egg-info/dependency_links.txt
+src/hindi.egg-info/top_level.txt
