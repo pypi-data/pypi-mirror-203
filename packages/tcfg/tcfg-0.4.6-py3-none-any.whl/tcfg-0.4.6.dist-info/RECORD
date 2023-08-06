@@ -1,0 +1,10 @@
+tcfg/__init__.py,sha256=hOIcMj8_w8cj_8ZIq-DO0gmlPP3HMFEHQIBd9IAhS-I,242
+tcfg/config.py,sha256=QnOiFXvEQXICTHoA-KYgKooub2rtWlK4ijyJMi2kJcc,13143
+tcfg/type_check/__init__.py,sha256=y2E7CiSltgmjySZTcbGcm2rnBv4hw-_Ek-0pjyR6GCk,8451
+tcfg/type_check/base.py,sha256=o52O4P2HKohT4m5HzLoFOumm33UutbGuuBMzlHjh0tI,931
+tcfg/type_check/custom_types.py,sha256=Y-eFu60OY9qkHG9ZboPhP9mvgE7PpbTt3Uj4rK7oybI,8106
+tcfg/type_check/exceptions.py,sha256=VwdIqpgocyBjOfcVWGrhl6Eew17-hz2IlQPWCWUNEwQ,2602
+tcfg-0.4.6.dist-info/METADATA,sha256=g93m4R1fG4FMpR90EZn_se2PNfIPgXZJdzSBwGv_fdE,2190
+tcfg-0.4.6.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+tcfg-0.4.6.dist-info/licenses/LICENSE,sha256=gsQx0f6kWeQ1OGI2Yx7PdSP8KSziusDda4J5SyiGyYQ,1085
+tcfg-0.4.6.dist-info/RECORD,,
