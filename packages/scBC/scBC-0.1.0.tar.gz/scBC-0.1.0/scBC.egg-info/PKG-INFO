@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: scBC
+Version: 0.1.0
+Summary: a single-cell transcriptome Bayesian biClustering framework
+Home-page: https://github.com/GYQ-form/scBC
+Author: Yuqiao Gong
+Author-email: gyq123@sjtu.edu.cn
+License: MIT
+Keywords: single cell transcriptomics,Biclustering,bioinformatics,variational inference(VI)
