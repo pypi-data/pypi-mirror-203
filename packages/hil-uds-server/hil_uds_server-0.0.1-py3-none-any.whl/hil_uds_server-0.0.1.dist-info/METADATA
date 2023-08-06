@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: hil-uds-server
+Version: 0.0.1
+Summary: uds-server
+Author: notmmao
+Author-email: notmmao@gmail.com
+License: Carota HIL License
+Platform: windows
+Requires-Python: >=3.7
+Requires-Dist: hil-core
+Requires-Dist: watchdog
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: pydantic
+Requires-Dist: pydantic-yaml
+
+UNKNOWN
+
