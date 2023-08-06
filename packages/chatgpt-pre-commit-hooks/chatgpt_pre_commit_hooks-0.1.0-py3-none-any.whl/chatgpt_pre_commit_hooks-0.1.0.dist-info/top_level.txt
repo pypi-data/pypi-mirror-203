@@ -1,0 +1,4 @@
+build
+chatgpt_pre_commit_hooks
+dist
+docs

@@ -1,0 +1,11 @@
+build/lib/chatgpt_pre_commit_hooks/__init__.py,sha256=m6UekKftTahNJ3W5K3mZSz4Y4ZZpHRxF_ZAxuaKYL7o,12
+build/lib/chatgpt_pre_commit_hooks/chatgpt_commit_message.py,sha256=oZLKHjteNkbHUfrg3zqkS9t4WimjD7ZSEiGUf88uL28,11483
+chatgpt_pre_commit_hooks/__init__.py,sha256=m6UekKftTahNJ3W5K3mZSz4Y4ZZpHRxF_ZAxuaKYL7o,12
+chatgpt_pre_commit_hooks/chatgpt_commit_message.py,sha256=oZLKHjteNkbHUfrg3zqkS9t4WimjD7ZSEiGUf88uL28,11483
+docs/chatgpt_commit_message.md,sha256=qqddsH8XGJ1hPk5rgN1SoNt1AN9VoIeKrCWOL45pDIg,3578
+chatgpt_pre_commit_hooks-0.1.0.dist-info/LICENSE,sha256=Y1yr22x2rPr8UiQmDhuqXBo42CAp2AdW0zoz-8SyAbk,1073
+chatgpt_pre_commit_hooks-0.1.0.dist-info/METADATA,sha256=jqpEn17DLYIoVTukJaB3gyxRetocTeE4bc1U7omIYxU,6302
+chatgpt_pre_commit_hooks-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+chatgpt_pre_commit_hooks-0.1.0.dist-info/entry_points.txt,sha256=z4xcqjUui6G7p1_OSS8q0eNNT_ww5fDcwS8IjT9K8bc,96
+chatgpt_pre_commit_hooks-0.1.0.dist-info/top_level.txt,sha256=ELHAO2AS4d2uH6EGOUraurKxD-7PmSEgtt_rUKdRWc8,41
+chatgpt_pre_commit_hooks-0.1.0.dist-info/RECORD,,
