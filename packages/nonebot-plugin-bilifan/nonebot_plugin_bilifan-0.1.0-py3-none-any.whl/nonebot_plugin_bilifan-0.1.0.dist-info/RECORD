@@ -1,0 +1,13 @@
+LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+nonebot_plugin_bilifan/__init__.py,sha256=9l2-EZowfen3atbhdvHRxbJh1OMqeHM090P1f79_3Xw,5980
+nonebot_plugin_bilifan/login/__init__.py,sha256=lNs3MnBaKFIg5Q-v-sqPs3D2XbTd-Fz41-456he-uAM,4993
+nonebot_plugin_bilifan/main.py,sha256=Vg-KPW2TBMfe0DfGTZED8TYc13QPpX3_XOfYgNrzwZA,4458
+nonebot_plugin_bilifan/src/__init__.py,sha256=4XWxZzc1fGX29lwinyv7lG8U8nd04Ov99wjk7vIetMI,54
+nonebot_plugin_bilifan/src/api.py,sha256=ox7Ap1fxhGDH0V3vVlRL4plx-RBaTqp03tkR7Em61H0,17462
+nonebot_plugin_bilifan/src/user.py,sha256=FjhzAHSJ5uL6I_xIMNQguT50mfawplgHQjBL7x1DvVU,17061
+nonebot_plugin_bilifan/users.yaml,sha256=ecicKxqXMurKVBrTgD2rwtfbicXzTjI9cq3rlBAfWQY,2217
+README.md,sha256=V5ndS5sFqA75NbKev-WkJoaZMucb0OAS8ZHpPxa3_fs,2043
+nonebot_plugin_bilifan-0.1.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+nonebot_plugin_bilifan-0.1.0.dist-info/METADATA,sha256=6pEXmpH4aPxexMDxSdeGi3ALRHppg_IwlUeAj6qN8w8,3332
+nonebot_plugin_bilifan-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+nonebot_plugin_bilifan-0.1.0.dist-info/RECORD,,
