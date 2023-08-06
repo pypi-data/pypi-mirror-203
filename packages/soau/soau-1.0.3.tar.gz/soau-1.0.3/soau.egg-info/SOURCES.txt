@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+soau/__init__.py
+soau/client.py
+soau.egg-info/PKG-INFO
+soau.egg-info/SOURCES.txt
+soau.egg-info/dependency_links.txt
+soau.egg-info/top_level.txt
