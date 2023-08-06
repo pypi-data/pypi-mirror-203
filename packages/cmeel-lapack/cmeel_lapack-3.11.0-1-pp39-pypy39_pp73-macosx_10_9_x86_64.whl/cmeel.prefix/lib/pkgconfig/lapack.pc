@@ -1,0 +1,9 @@
+libdir=/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/cmeel-l48gszy_/whl/cmeel.prefix/lib
+includedir=/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/cmeel-l48gszy_/whl/cmeel.prefix/include
+
+Name: LAPACK
+Description: FORTRAN reference implementation of LAPACK Linear Algebra PACKage
+Version: 3.11.0
+URL: http://www.netlib.org/lapack/
+Libs: -L${libdir} -llapack
+Requires.private: blas
