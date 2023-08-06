@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+mnest/Entities.py
+mnest/Environment.py
+mnest/Laws.py
+mnest/__init__.py
+mnest.egg-info/PKG-INFO
+mnest.egg-info/SOURCES.txt
+mnest.egg-info/dependency_links.txt
+mnest.egg-info/requires.txt
+mnest.egg-info/top_level.txt
+mnest/data/random_seed.txt
