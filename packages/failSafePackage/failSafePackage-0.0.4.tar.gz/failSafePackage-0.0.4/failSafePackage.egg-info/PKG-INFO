@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: failSafePackage
+Version: 0.0.4
+Summary: This class is written to handeled fail-safe conditions for all PMS.
+Author: Rahul Khose
+License-File: Licence.txt
