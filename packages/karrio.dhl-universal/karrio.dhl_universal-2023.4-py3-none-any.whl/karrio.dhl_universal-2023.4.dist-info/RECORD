@@ -1,0 +1,15 @@
+dhl_universal_lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dhl_universal_lib/tracking.py,sha256=kZ6e0cwFbOcQNZn7kbCg8_NX0J_Gx8rFLrzILIAAu6I,4243
+karrio/mappers/dhl_universal/__init__.py,sha256=IQ83K6Gqh9FNeuO7jqMoK96B6eCt61KPByqu51lpov8,365
+karrio/mappers/dhl_universal/mapper.py,sha256=1Vqs6mjOXRIMDjmmkABa32Ut4SkN1rdr2sf2twMQCEU,4099
+karrio/mappers/dhl_universal/proxy.py,sha256=SGN45uuBcpzNoQEflVCFmrwCHBPwMXEGbaP1iWLMBP8,1036
+karrio/mappers/dhl_universal/settings.py,sha256=tBCtAzWIgcQVxIeEHOTIKqdPIFMLTYrRTiGjU-15iiE,526
+karrio/providers/dhl_universal/__init__.py,sha256=-bmW0aBeorKR5xuZHhPGSDZWPaQmkzzhkKtXfhL7EKc,805
+karrio/providers/dhl_universal/error.py,sha256=KJJ-agWimCaEbKPL4Gj7EdUr3jF_3lshJ7Qwx0VIGyQ,703
+karrio/providers/dhl_universal/tracking.py,sha256=3AiUBpkjJgznC9EfnsT_I_WityHIBPkopJxjw297yzA,4587
+karrio/providers/dhl_universal/units.py,sha256=A6AsIfzcgrev3ICnO7VoZ8cnryp5M_sHkZFJbFw-u18,222
+karrio/providers/dhl_universal/utils.py,sha256=SbBM-RV54T3ll2tq0xZTP58A3YfH7jyLiCxdUVuj0Zg,794
+karrio.dhl_universal-2023.4.dist-info/METADATA,sha256=AhN-gyStOGGK0tqcuKh08DeRLHORS1gOMv4EdY5SgQk,1006
+karrio.dhl_universal-2023.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+karrio.dhl_universal-2023.4.dist-info/top_level.txt,sha256=iwaJXeJNWHTTYYxCNIC5PCDp3yedhWdxjnKmbBUWjvU,33
+karrio.dhl_universal-2023.4.dist-info/RECORD,,
