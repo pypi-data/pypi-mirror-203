@@ -1,0 +1,3 @@
+importlib-resources
+matplotlib
+numpy
