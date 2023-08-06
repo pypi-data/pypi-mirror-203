@@ -1,0 +1,7 @@
+README.md
+setup.py
+hexbot/__init__.py
+hexbot.egg-info/PKG-INFO
+hexbot.egg-info/SOURCES.txt
+hexbot.egg-info/dependency_links.txt
+hexbot.egg-info/top_level.txt
