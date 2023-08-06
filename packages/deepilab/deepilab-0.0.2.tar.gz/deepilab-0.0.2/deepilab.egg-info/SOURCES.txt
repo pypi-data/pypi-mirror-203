@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+deepilab/__init__.py
+deepilab/__version__.py
+deepilab/f_yolov8.py
+deepilab.egg-info/PKG-INFO
+deepilab.egg-info/SOURCES.txt
+deepilab.egg-info/dependency_links.txt
+deepilab.egg-info/top_level.txt

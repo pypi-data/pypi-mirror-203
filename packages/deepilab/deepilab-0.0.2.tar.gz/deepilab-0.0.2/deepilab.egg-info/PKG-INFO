@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: deepilab
+Version: 0.0.2
+Home-page: https://github.com/jskim1102/deepi-yolov8
+Download-URL: https://github.com/jskim1102/deepi-yolov8/archive/0.0.tar.gz
+Author: jskim1102
+Author-email: deepi.contact.us@gmail.com
+Requires-Python: >=3.8
+
+sample
