@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pyfobal
+Version: 0.1.2
+Summary: A Python SDK for the Fobal API
+Home-page: https://github.com/shonifari/pyfobal
+Author: Karis Omotosho
+Author-email: karomo.sm@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
