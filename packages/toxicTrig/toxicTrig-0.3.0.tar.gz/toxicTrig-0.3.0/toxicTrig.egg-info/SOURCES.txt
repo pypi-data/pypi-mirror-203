@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tests/test_analyze_text.py
+tests/test_get_words.py
+toxicTrig/__init__.py
+toxicTrig/toxic_triggers.py
+toxicTrig.egg-info/PKG-INFO
+toxicTrig.egg-info/SOURCES.txt
+toxicTrig.egg-info/dependency_links.txt
+toxicTrig.egg-info/requires.txt
+toxicTrig.egg-info/top_level.txt
+toxicTrig/data/word_based_bias_list.csv
