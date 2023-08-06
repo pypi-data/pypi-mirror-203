@@ -1,0 +1,8 @@
+LICENSE,sha256=UtPXp1hABP6HqOUhjWRr3A7M1cOvF2gcSbHom9s9rcM,1614
+README.rst,sha256=bz-gy-NcLubXZDqyWv3aTa7ADsvlA2YUvWuTmj9NEpg,4215
+readonly/__init__.py,sha256=WSeevu5OPqbog2M8W6m77wUwwE6fxd3TS119uwh31kM,195
+readonly/readonly.py,sha256=q3JJIB2vurDTWHUEO-12G2paRe6kNPC-W4TqOIJRink,588
+readonly-0.1.2.dist-info/LICENSE,sha256=UtPXp1hABP6HqOUhjWRr3A7M1cOvF2gcSbHom9s9rcM,1614
+readonly-0.1.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+readonly-0.1.2.dist-info/METADATA,sha256=ly7yWXHNEtM110CDUdfdiPv21Tnq91cQUA_3sLBmJDo,5149
+readonly-0.1.2.dist-info/RECORD,,
