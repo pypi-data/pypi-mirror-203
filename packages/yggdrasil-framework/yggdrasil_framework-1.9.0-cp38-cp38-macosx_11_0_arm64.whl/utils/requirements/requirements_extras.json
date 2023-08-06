@@ -1,0 +1,46 @@
+{
+  "mpi": [
+    "mpi4py"
+  ],
+  "rmq": [
+    "pika>=1.0.0"
+  ],
+  "sbml": [
+    "libroadrunner"
+  ],
+  "testing": [
+    "coverage",
+    "flake8",
+    "flaky",
+    "pytest",
+    "pytest-cov",
+    "pytest-drop-dup-tests",
+    "pytest-mpi",
+    "pytest-repeat",
+    "pytest-rerunfailures",
+    "pytest-timeout",
+    "pytest-xdist"
+  ],
+  "docs": [
+    "breathe",
+    "pypandoc",
+    "sphinx",
+    "sphinx-argparse",
+    "sphinx_rtd_theme"
+  ],
+  "dev": [
+    "PyGithub",
+    "black",
+    "ipython",
+    "pre-commit"
+  ],
+  "astropy": [
+    "astropy"
+  ],
+  "pygments": [
+    "pygments"
+  ],
+  "trimesh": [
+    "trimesh"
+  ]
+}
