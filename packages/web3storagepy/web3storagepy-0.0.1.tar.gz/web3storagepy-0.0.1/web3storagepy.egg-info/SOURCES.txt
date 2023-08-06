@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+web3storagepy/__init__.py
+web3storagepy.egg-info/PKG-INFO
+web3storagepy.egg-info/SOURCES.txt
+web3storagepy.egg-info/dependency_links.txt
+web3storagepy.egg-info/requires.txt
+web3storagepy.egg-info/top_level.txt
