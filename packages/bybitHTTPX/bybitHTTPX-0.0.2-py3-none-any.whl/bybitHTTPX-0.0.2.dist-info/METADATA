@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: bybitHTTPX
+Version: 0.0.2
+Summary: a httpx wrapper for bybit API
+Home-page: https://github.com/ShaharBrandman/bybitHTTPX
+Author: Shahar Brandman
+Author-email: shaharbrandman@gmail.com
+Project-URL: Bug Tracker, https://github.com/ShaharBrandman/bybitHTTPX/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx (==0.24.0)
+
+# bybitHTTPX
+bybitHTTPX is a simple lightweight HTTPX driven lib to send requests to the bybit API as easy as possible
