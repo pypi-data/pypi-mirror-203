@@ -1,0 +1,9 @@
+opencv-python
+setuptools
+tensorrt
+numpy
+pycuda
+scipy
+lap
+cython
+cython_bbox
