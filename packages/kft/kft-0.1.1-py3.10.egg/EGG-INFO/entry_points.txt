@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        kft=kft.cli:cli
+    
