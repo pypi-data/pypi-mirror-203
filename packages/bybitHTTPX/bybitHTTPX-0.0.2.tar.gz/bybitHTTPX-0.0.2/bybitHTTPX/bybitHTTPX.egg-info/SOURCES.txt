@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+bybitHTTPX/bybitHTTPX.egg-info/PKG-INFO
+bybitHTTPX/bybitHTTPX.egg-info/SOURCES.txt
+bybitHTTPX/bybitHTTPX.egg-info/dependency_links.txt
+bybitHTTPX/bybitHTTPX.egg-info/requires.txt
+bybitHTTPX/bybitHTTPX.egg-info/top_level.txt
