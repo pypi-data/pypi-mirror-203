@@ -1,0 +1,14 @@
+fooder_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fooder_cli/__main__.py,sha256=qs6kN4rXgXytzVlo9nDeC8tm5daCP8xPL2lhUABzuiM,63
+fooder_cli/client.py,sha256=IrXvYa2b0mEqArOaV1jBNMrYULq7r6qdQbOjtFOlNdk,9704
+fooder_cli/diary.py,sha256=qTjaweYStahIkEgbS5H2fNuU_RRfCfx6Ddq00-e0UMs,1626
+fooder_cli/entry.py,sha256=CwMHMZW6w6H-lg6R8GgVurXNmxGlnMLdzNR4Qrm3FnA,675
+fooder_cli/main.py,sha256=WHH6tMMRE353M2eurnZ_7-AUz7Mv1s5DKSEgVeZ-5QU,2992
+fooder_cli/meal.py,sha256=zJj6FVm3bs361XRNLFYDgwmONm81a2NzdSTtbMwbn4k,719
+fooder_cli/product.py,sha256=dUzxrS8F4oRCTwRf9f-Y9w7Nlay30N0E9Nuq5Y6H4pQ,2717
+fooder-0.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fooder-0.0.2.dist-info/METADATA,sha256=rXtBmD1Lf2dPj1EgGmEnnFKsWkXf_ZZpTuc5Jkp6650,2249
+fooder-0.0.2.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+fooder-0.0.2.dist-info/entry_points.txt,sha256=0PDDTP19Rpm8XTk4doEIOWHrpAfV02X0o5ctVYJtgnA,49
+fooder-0.0.2.dist-info/top_level.txt,sha256=VwIChH7H1dT3JRhBhy2XvEs-m4t1gVnnJGyJULCi_og,11
+fooder-0.0.2.dist-info/RECORD,,
