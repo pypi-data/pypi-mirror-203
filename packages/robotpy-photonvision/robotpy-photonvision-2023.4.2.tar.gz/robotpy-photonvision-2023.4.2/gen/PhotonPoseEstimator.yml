@@ -1,0 +1,40 @@
+---
+
+enums:
+  PoseStrategy:
+classes:
+  EstimatedRobotPose:
+    attributes:
+      estimatedPose:
+      timestamp:
+      targetsUsed:
+    methods:
+      EstimatedRobotPose:
+        param_override:
+          pose_:
+            name: estimatedPose
+          time_:
+            name: timestamp
+          targets:
+            name: targetsUsed
+  PhotonPoseEstimator:
+    methods:
+      PhotonPoseEstimator:
+        overloads:
+          frc::AprilTagFieldLayout, photonlib::PoseStrategy, PhotonCamera&&, frc::Transform3d:
+            ignore: true
+          frc::AprilTagFieldLayout, photonlib::PoseStrategy, std::unique_ptr<PhotonCamera>, frc::Transform3d:
+      GetFieldLayout:
+      GetPoseStrategy:
+      SetPoseStrategy:
+      SetMultiTagFallbackStrategy:
+      GetReferencePose:
+      SetReferencePose:
+      GetRobotToCameraTransform:
+      SetRobotToCameraTransform:
+      SetLastPose:
+      Update:
+        overloads:
+          "":
+          PhotonPipelineResult&:
+      GetCamera:
