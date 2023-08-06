@@ -1,0 +1,11 @@
+psij-descriptors/rest_service_descriptor.py,sha256=A8UUItwTk9KyMOipbFX3gz5SEYRMkQcceUk4eA57ZdQ,258
+psij-rest/__init__.py,sha256=vu0KLrPn2uaf9UDuZPbuiyFDwY_C3vfdGlsP0atGwHI,97
+psij-rest/version.py,sha256=7g7QnhbgKhNR0rQhUtaC_LgEvgf91PAtwPB4chsu6KE,137
+psij-rest/executors/__init__.py,sha256=OqEK2XS1ybwVQA5a651RasYRAOBlSvAX6ez0nk2mhrM,165
+psij-rest/executors/rest_service.py,sha256=29ZHBNEw_qmDd4TFJSL0ZeSeAGHDOCW7UIASLRTnBt4,5440
+psij_rest-0.5.0.data/scripts/psij_rest_service.py,sha256=ge5ZJmxD1Ho1qfqmC3-TbNIbpNcoS_e_q0c5szTaJHE,8876
+psij_rest-0.5.0.dist-info/LICENSE,sha256=i7EgaJErCmpeV__c6FBYSBHd4rj-EZCZkYGAoXwgAVs,1065
+psij_rest-0.5.0.dist-info/METADATA,sha256=4FPOwgk60UG-Vo_706eodTZ9dOa8iwN3epShmco3A0c,469
+psij_rest-0.5.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+psij_rest-0.5.0.dist-info/top_level.txt,sha256=nzWK8HmgH_v16i4L4gpmULkmlsun7Ei2kIZTVdbpFF0,27
+psij_rest-0.5.0.dist-info/RECORD,,
