@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+Mensajes_jdjj43.egg-info/PKG-INFO
+Mensajes_jdjj43.egg-info/SOURCES.txt
+Mensajes_jdjj43.egg-info/dependency_links.txt
+Mensajes_jdjj43.egg-info/requires.txt
+Mensajes_jdjj43.egg-info/top_level.txt
+mensajes/__init__.py
+mensajes/hola/__init__.py
+mensajes/hola/saludos.py
+tests/__init__.py
+tests/test_hola.py
