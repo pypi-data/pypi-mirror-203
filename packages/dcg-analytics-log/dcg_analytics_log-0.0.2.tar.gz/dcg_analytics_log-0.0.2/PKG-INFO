@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: dcg_analytics_log
+Version: 0.0.2
+Summary: A databricks library to build customners prediction reporting and monitor machine learning processes.
+Home-page: 
+Author: Bao Minh Doan Dang
+Author-email: s.derwisch@dymatrix.de
+Keywords: machine learning,monitoring
+Requires-Python: >=3.8
