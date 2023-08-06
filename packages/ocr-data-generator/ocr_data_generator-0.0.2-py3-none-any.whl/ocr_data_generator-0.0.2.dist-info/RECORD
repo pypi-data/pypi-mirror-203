@@ -1,0 +1,13 @@
+ocr_data_generator/__init__.py,sha256=o7PcBUpijlZHk2LDJf4V4DUA3zVGJTUtYG2UPpi7jhM,233
+ocr_data_generator/background_generator.py,sha256=G1p23GRXA4FDbRi_L-a8pI64-aIyJI5CXXN_vQAqtmQ,2305
+ocr_data_generator/drawer.py,sha256=Hua0SJVOHVfXPtjU-YRMr1DWnOC1Vqag6Jf3AUKzyOM,3848
+ocr_data_generator/font_generator.py,sha256=5ALz1XEWpH9jQo8U3AlPMNB7hiAi9QfMWWI1e1h4DpQ,1278
+ocr_data_generator/foreground_generator.py,sha256=wrTcveAkmItHM3pjI5qhuWSuGyqbBPGTptTVXtNcPw0,2386
+ocr_data_generator/painter.py,sha256=xw9mlRAKI9ulIru1uZswhgc9Kxu9CBgqJXfUq9o9w_g,1510
+ocr_data_generator/sample_generator.py,sha256=W4obuOcc9SErKjfia9gGKaZSnuUwwF53CP-JTN0eVpQ,918
+ocr_data_generator/word_generator.py,sha256=zLVKLW2UgF_2NElA2gmk0V0KYPwb7LM2XAGL-9Hn65w,305
+ocr_data_generator-0.0.2.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+ocr_data_generator-0.0.2.dist-info/METADATA,sha256=MHE6LIxrIVdqmp27uWyjClhD-_C16HiOZ4oxEnccVGI,727
+ocr_data_generator-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ocr_data_generator-0.0.2.dist-info/top_level.txt,sha256=vhrRoamEXRfLvOf7ma-deQllp0CFeCBFkxeqg6L0WRU,19
+ocr_data_generator-0.0.2.dist-info/RECORD,,
