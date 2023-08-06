@@ -1,0 +1,6 @@
+update_project/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+update_project/update_packages.py,sha256=FIA12iLlM4TdGcdY0xT17cqGUx-du_1bA4AP67UpSN0,5394
+update_pip_packages-0.1.2.dist-info/METADATA,sha256=cl6teTdeC-n8ZExCszpspjhcpvOQMQPaKVBSGT-ypGI,2560
+update_pip_packages-0.1.2.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+update_pip_packages-0.1.2.dist-info/entry_points.txt,sha256=ukGSfKnOnV1C4FjnWk5n9p_kuVxJuwc4u-uSpfksngM,75
+update_pip_packages-0.1.2.dist-info/RECORD,,
