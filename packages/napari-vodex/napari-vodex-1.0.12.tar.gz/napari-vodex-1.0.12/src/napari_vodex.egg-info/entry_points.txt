@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-vodex = napari_vodex:napari.yaml

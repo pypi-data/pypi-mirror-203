@@ -1,0 +1,10 @@
+name: napari-vodex
+display_name: VoDEx
+contributions:
+  commands:
+    - id: napari-vodex.vodex_qwidget
+      python_name: napari_vodex._widget:VodexWidget
+      title: Make vodex widget
+  widgets:
+    - command: napari-vodex.vodex_qwidget
+      display_name: Vodex Data Loader
