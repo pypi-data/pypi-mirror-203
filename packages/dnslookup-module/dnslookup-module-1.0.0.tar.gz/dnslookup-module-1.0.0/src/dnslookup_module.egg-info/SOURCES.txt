@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/dnslookup-module/__init__.py
+src/dnslookup-module/dnslookup.py
+src/dnslookup_module.egg-info/PKG-INFO
+src/dnslookup_module.egg-info/SOURCES.txt
+src/dnslookup_module.egg-info/dependency_links.txt
+src/dnslookup_module.egg-info/top_level.txt
