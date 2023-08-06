@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: yakui
+Version: 0.1.0
+Summary: Advanced Logging in Python
+License: Apache-2.0
+Author: mmlvgx
+Author-email: mmlvgx@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# yakui
+Advanced Logging in Python
+
