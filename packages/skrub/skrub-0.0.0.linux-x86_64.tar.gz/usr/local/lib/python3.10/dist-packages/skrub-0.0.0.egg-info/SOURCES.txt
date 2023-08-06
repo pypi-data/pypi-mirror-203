@@ -1,0 +1,6 @@
+setup.py
+skrub/__init__.py
+skrub.egg-info/PKG-INFO
+skrub.egg-info/SOURCES.txt
+skrub.egg-info/dependency_links.txt
+skrub.egg-info/top_level.txt
