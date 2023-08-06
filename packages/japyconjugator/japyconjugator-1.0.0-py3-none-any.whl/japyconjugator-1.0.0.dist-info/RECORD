@@ -1,0 +1,17 @@
+japyconjugator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+japyconjugator/defs.py,sha256=NpN0J_H8wW7b37nXKP83z-QBUNXfPKAut0uGd6MXiiI,103
+japyconjugator/adjectives/__init__.py,sha256=gbaCq_GFR2RoS2f2by9JLuPhNOJsg7IkgmKugsdrNio,24
+japyconjugator/adjectives/conjugate.py,sha256=oAIbQWqntdMn-V0Pz4TIF_Kiz9rfLKrRF7gz1p13Vio,625
+japyconjugator/adjectives/conjugation_helpers.py,sha256=IR-e8Cur62FU5r4-hICTmqfhcInfqRS_-Tiv076ftpI,911
+japyconjugator/adjectives/conjugators.py,sha256=p5j-bUDai6BYvMaQh4nBG7YHI6bnlUorcyJJBdk2Wpk,1239
+japyconjugator/adjectives/defs.py,sha256=nIkUQvpKIguUzEsYTFJw-XfqzNDxOE_EL4dyto88_kU,235
+japyconjugator/verbs/__init__.py,sha256=gbaCq_GFR2RoS2f2by9JLuPhNOJsg7IkgmKugsdrNio,24
+japyconjugator/verbs/conjugate.py,sha256=N1SoQiHPGI7WaBpUVvp_M1oMfEOkoS7bLhwiUXz_358,635
+japyconjugator/verbs/conjugation_helpers.py,sha256=VAtIRbQDTRmEku_oup78ZUYimO5pHBUYRkB3yd5LU_Y,2677
+japyconjugator/verbs/conjugators.py,sha256=9zZ6bZU5jOd29m6NR_zj3XaxEDm5YhjqNbkX1grFGZ0,1607
+japyconjugator/verbs/defs.py,sha256=FLcRdZ6vH96yqh3y_nRZ7bvdhZRck0A7Ex4-OFbR9Ys,227
+japyconjugator-1.0.0.dist-info/LICENSE,sha256=b58bLAGC7RkNjU609w0-H_V110Cq1pqVKCv8IBts_jE,1090
+japyconjugator-1.0.0.dist-info/METADATA,sha256=KFjLmS_rMS9p160wsLHMhal6nTeY-EHSyT_T-8uCQPw,1166
+japyconjugator-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+japyconjugator-1.0.0.dist-info/top_level.txt,sha256=c3VhQ__q9aJ3NpmrJlYEhZ7u06BQRaQjopL2bPGGYIY,15
+japyconjugator-1.0.0.dist-info/RECORD,,
