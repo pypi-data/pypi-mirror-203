@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: kondo_ml
+Version: 0.0.10
+Summary: Python package for instance selection algorithms
+Home-page: https://github.com/lurue101/instance-selection-for-regression
+Download-URL: https://github.com/lurue101/instance-selection-for-regression/archive/0.0.10.tar.gz
+Author: L.Rücker
+Author-email: Lukas Rücker <ruecker.lukas@gmail.com>
+Project-URL: Homepage, https://github.com/lurue101/instance-selection-for-regression
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# kondo-ML
+
+kondo-ML is a package containing various instance selection algorithms
+usable with regression models. The implementations are compatible with sklearn and follow
+its outlier detection interface.
+
+This is still a work in progress and some documentation is missing. Please refer to the source code
+for each algorithm in the instance_selection folder.
+## Install
+
+The package can be installed via pip <br>
+`pip install kondo_ml`
+
+## Overview of algorithms
+
+| Algorithm          | Goal                        |
+|--------------------|-----------------------------|
+| RegCNN             | Size reduction              |
+| RegENN             | Noise filter                |
+| RegENNTime         | Noise filter/drift handling |
+| DROP-RX            | Noise filter/size reduction |
+| Shapley            | Utility assignment          |
+| FISH               | Drift Handling              |
+| SELCON             | Size reduction              |
+| Mutual Information | Noise filter                |
+|                    |                             |
+
+## Algorithm sources
+RegCNN & RegENN: https://link.springer.com/chapter/10.1007/978-3-642-33266-1_33  <br>
+DROP-RX: https://www.sciencedirect.com/science/article/abs/pii/S0925231216301953 <br>
+Shapley: https://proceedings.mlr.press/v97/ghorbani19c/ghorbani19c.pdf  <br>
+FISH: http://eprints.bournemouth.ac.uk/18567/1/FISH_journal_preprint.pdf <br>
+SELCON: https://arxiv.org/abs/2106.12491 <br>
+Mutual Information: https://research.cs.aalto.fi//aml/Publications/Publication167.pdf <br>
+
+The SELCON implementation is taken from the author's github with minor changes: https://github.com/abir-de/SELCOn
+
+## Example
+
+```
+# import instance selection algorithm of your choice
+from kondo_ml.instace_selection import RegENNSelector
+# initialize selector 
+reg_enn = RegEnnSelector(alpha=1,nr_of_neighbors=3)
+# predict labels (1 to use that instance, -1 to ignore)
+labels = reg_enn.fit_predict(X,y)
+# transform -1/1 labels into boolean 0/1 labels
+from kondo_ml.utils import transform_selector_output_into_mask
+boolean_labels = transform_selector_output_into_mask(labels)
+# use selected instances for model training (any model, LR here as an example)
+from sklearn.linear_model import LinearRegression
+model = LinearRegression().fit(X[boolean_labels],y[boolean_labels])
+```
+
+More examples can be found in the notebooks of the examples folder
+
+## Contribution
+
+Please feel free to contribute documentation, tests or new algorithms to this package.
+And let me know if you find any mistakes in the implementations
