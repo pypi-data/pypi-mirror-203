@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ALSCMM
+Version: 0.0.1
+Summary: encapsulate logger
+Home-page: UNKNOWN
+Author: feiyang
+Author-email: feiyangxiao.xfy@alibaba-inc.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: ==3.6.5
+Requires-Dist: tensorflow (==1.14.0)
+
+UNKNOWN
+
