@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+gaianet/__init__.py
+gaianet.egg-info/PKG-INFO
+gaianet.egg-info/SOURCES.txt
+gaianet.egg-info/dependency_links.txt
+gaianet.egg-info/top_level.txt
+gaianet.egg-info/zip-safe
