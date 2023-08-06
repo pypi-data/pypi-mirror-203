@@ -1,0 +1,10 @@
+elliptic_sdk/__init__.py,sha256=5KsDjd4ZN-z8rfjwHWL3l0-yzKLwnPoCS8jPUu6JxTk,21
+elliptic_sdk/aml.py,sha256=OT9H5B_VPCubohUdXFKyEvqr1RiuoSeavTMbobSxfUQ,1853
+elliptic_sdk/enums.py,sha256=lXdXT6IoTVv1wmWmraH-jiZfx-zKCckdXUHSiaV4H1Q,165
+elliptic_sdk/schemas.py,sha256=x_kiD-0FUVj1eFMX67jKpEwgRHWDsvf3QIy4SbaADzo,1472
+elliptic_sdk/settings.py,sha256=ayjUCuXNdkqSo0G0pG-TppZiv_-rxHYkv0ywyDWrdAE,310
+elliptic_sdk/test_aml.py,sha256=prDsErSJXfnvNO-zvuekEcb56AowIJrq35uL7ckPrn4,615
+elliptic_sdk-0.0.1.dist-info/LICENSE,sha256=3Y2PD-tjGbI3MpaoD2UyqqOru-lwzT0IBMSaxtF00NA,1075
+elliptic_sdk-0.0.1.dist-info/METADATA,sha256=DzXee5JWxegRVuBFztGPYocbHXxMZ4ffxtrEhZUgSjo,579
+elliptic_sdk-0.0.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+elliptic_sdk-0.0.1.dist-info/RECORD,,
