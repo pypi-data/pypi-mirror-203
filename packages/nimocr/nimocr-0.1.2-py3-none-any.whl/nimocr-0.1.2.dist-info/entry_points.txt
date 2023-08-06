@@ -1,0 +1,2 @@
+[console_scripts]
+nimocr = nimocr.annotator:run
