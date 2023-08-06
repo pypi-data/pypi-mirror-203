@@ -1,0 +1,10 @@
+ovos_vad_plugin_precise/__init__.py,sha256=LomdzimUOU9cQyvW4EMG9cx2WmMNXqyjstEKg_5LPeY,763
+ovos_vad_plugin_precise/vad.tflite,sha256=MChiRMMQre2RfI3GIidqU_GyiFQXLcSSRJX23GMcdsU,16560
+ovos_vad_plugin_precise/version.py,sha256=RQUQPmSSpGFvMzBFjxHGeZbeIC--EWTSsSe__A3_--s,177
+ovos_vad_plugin_precise-0.0.2a1.dist-info/LICENSE.md,sha256=HP46TQN2uSd_OW1lJPi1TJ-SVSgLJXixGmY9C16CQJQ,11423
+ovos_vad_plugin_precise-0.0.2a1.dist-info/METADATA,sha256=RiHJ7lM19B8NGvA9YJc4xMySYQpt4BaLZp6bR7W9DeM,1119
+ovos_vad_plugin_precise-0.0.2a1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ovos_vad_plugin_precise-0.0.2a1.dist-info/entry_points.txt,sha256=4BLGjk2WlyJxPWFXXwIR9xQTE_uivmfQBy2FjsKCqd8,80
+ovos_vad_plugin_precise-0.0.2a1.dist-info/top_level.txt,sha256=fhTpNXjy-L-MSx-D_7glbWnlicFEqhVAJIO9KnG4ktg,24
+ovos_vad_plugin_precise-0.0.2a1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ovos_vad_plugin_precise-0.0.2a1.dist-info/RECORD,,
