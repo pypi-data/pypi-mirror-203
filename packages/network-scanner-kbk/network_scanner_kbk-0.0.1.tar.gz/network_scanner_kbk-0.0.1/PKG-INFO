@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: network_scanner_kbk
+Version: 0.0.1
+Summary: Project to scan and gather connectivity information on small networks
+Project-URL: Homepage, https://github.com/kbriankulig/network-scanner
+Project-URL: Bug Tracker, https://github.com/kbriankulig/network-scanner/issues
+Author-email: Brian Kulig <kbriankulig@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# joby-challenge-kbk
+Project to impliment Joby Aviation Challenge Problem Solution
+
+# Modifying readme - test

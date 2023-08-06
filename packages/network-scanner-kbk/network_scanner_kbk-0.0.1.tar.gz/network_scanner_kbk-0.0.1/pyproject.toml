@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "network_scanner_kbk"
+version = "0.0.1"
+authors = [
+  { name="Brian Kulig", email="kbriankulig@gmail.com" },
+]
+description = "Project to scan and gather connectivity information on small networks"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/kbriankulig/network-scanner"
+"Bug Tracker" = "https://github.com/kbriankulig/network-scanner/issues"
