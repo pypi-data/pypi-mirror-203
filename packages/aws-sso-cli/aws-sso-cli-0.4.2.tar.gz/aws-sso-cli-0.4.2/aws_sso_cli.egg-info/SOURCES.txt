@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aws_sso_cli/__init__.py
+aws_sso_cli.egg-info/PKG-INFO
+aws_sso_cli.egg-info/SOURCES.txt
+aws_sso_cli.egg-info/dependency_links.txt
+aws_sso_cli.egg-info/entry_points.txt
+aws_sso_cli.egg-info/requires.txt
+aws_sso_cli.egg-info/top_level.txt
+docs/man/aws-sso-cli.1
