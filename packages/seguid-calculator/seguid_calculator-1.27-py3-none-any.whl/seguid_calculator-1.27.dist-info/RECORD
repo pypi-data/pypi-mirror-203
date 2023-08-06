@@ -1,0 +1,11 @@
+seguid_calculator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seguid_calculator/_version.py,sha256=28OVXRuZWlqhh_H0x05W-opCPEVMUtnCSNhsew375p0,157
+seguid_calculator/calculator.py,sha256=Lntm59RJW5ZcxE6wpmoXUG2s6iZl4syPxskm5YGNiTY,35667
+seguid_calculator/functions.py,sha256=Xq8davBmL_tfUvnnXasd4xwrFzx21VPQ7VWMwE56gs0,1988
+seguid_calculator/seguid_flask.py,sha256=jZH3NwMQd3o7KBqDM7BEQspcCM_WFwH5zqLg8vVwGac,1674
+seguid_calculator-1.27.dist-info/LICENSE.txt,sha256=SSkvURalg9cxrV1EyrpmmKukr7eGiZl0h4Nls39W0pQ,1743
+seguid_calculator-1.27.dist-info/METADATA,sha256=o96JPGWwtKNzOxEziY9-03E3MKUzV7VM-s_-_2Mjp4Q,10676
+seguid_calculator-1.27.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+seguid_calculator-1.27.dist-info/entry_points.txt,sha256=2jZZIRNpnqvQTuS7dzOM2bNfVZeyUq0pSxcR0EBRlnU,68
+seguid_calculator-1.27.dist-info/top_level.txt,sha256=O5GWAxBWv_gKWVoxRW6XixiO4_p-yW5lL9QOTH5ZrQ4,18
+seguid_calculator-1.27.dist-info/RECORD,,

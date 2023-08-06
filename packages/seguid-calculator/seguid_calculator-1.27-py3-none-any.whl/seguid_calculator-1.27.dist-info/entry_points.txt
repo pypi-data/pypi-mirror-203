@@ -1,0 +1,2 @@
+[gui_scripts]
+seguid_calculator = seguid_calculator.calculator:main
