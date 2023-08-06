@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ml_botting_core
+Version: 0.0.9
+Summary: Making ML more accessible to botting apps
+Home-page: https://github.com/darkmatter2222/ml_botting_core
+Author: Ryan Susman
+Author-email: ryansusman@gmail.com
+Project-URL: Bug Tracker, https://github.com/darkmatter2222/ml_botting_core/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ml-botting-core
+![](https://img.shields.io/pypi/v/ml-botting-core?style=for-the-badge) ![](https://img.shields.io/github/actions/workflow/status/darkmatter2222/ml-botting-core/python-publish.yml?style=for-the-badge) ![](https://img.shields.io/pypi/l/ml-botting-core?style=for-the-badge) ![](https://img.shields.io/pypi/pyversions/ml-botting-core?style=for-the-badge) 
+ml-botting-core
