@@ -1,0 +1,14 @@
+.flake8
+.gitignore
+.pre-commit-config.yaml
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+squape/__init__.py
+squape/report.py
+squape/vps.py
+squape.egg-info/PKG-INFO
+squape.egg-info/SOURCES.txt
+squape.egg-info/dependency_links.txt
+squape.egg-info/top_level.txt
