@@ -1,0 +1,5 @@
+# IRTG unannotated corpus file, v1.0
+# interpretation ud: de.up.ling.irtg.algebra.TreeWithAritiesAlgebra
+
+ROOT(VERB(_NSUBJ(PRON(we)), VERB(_AUX(AUX(have)), VERB(_OBJ(NOUN(_DET(DET(the)), NOUN(spam))), VERB(_OBL(NOUN(_CASE(ADP(into)), NOUN(_DET(DET(the)), NOUN(_COMPOUND(NOUN(junk)), NOUN(folder))))), VERB(_PUNCT(PUNCT(PERIOD)), VERB(dump)))))))
+dummy(dummy)

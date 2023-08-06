@@ -1,0 +1,22 @@
+digraph finite_state_machine {
+	dpi=140;
+	node_0 [shape = circle, label = "B"];
+	node_1 [shape = circle, label = "now"];
+	node_2 [shape = circle, label = "time"];
+	node_3 [shape = circle, label = "speaker"];
+	node_4 [shape = circle, label = "person"];
+	node_5 [shape = circle, label = "dump"];
+	node_6 [shape = circle, label = "spam"];
+	node_7 [shape = circle, label = "junk_folder"];
+	node_0 -> node_2 [ label = "BOX" ];
+	node_0 -> node_4 [ label = "BOX" ];
+	node_0 -> node_5 [ label = "BOX" ];
+	node_0 -> node_6 [ label = "BOX" ];
+	node_0 -> node_7 [ label = "BOX" ];
+	node_2 -> node_1 [ label = "TPR" ];
+	node_4 -> node_3 [ label = "EQU" ];
+	node_5 -> node_2 [ label = "Time" ];
+	node_5 -> node_4 [ label = "Agent" ];
+	node_5 -> node_6 [ label = "Theme" ];
+	node_5 -> node_7 [ label = "Theme" ];
+}

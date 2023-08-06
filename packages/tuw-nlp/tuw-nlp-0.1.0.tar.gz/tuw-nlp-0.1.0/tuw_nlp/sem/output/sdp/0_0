@@ -1,0 +1,19 @@
+digraph finite_state_machine {
+	dpi=140;
+	1 [shape = circle, label = "We"];
+	3 [shape = circle, label = "dumped"];
+	4 [shape = circle, label = "the"];
+	5 [shape = circle, label = "spam"];
+	6 [shape = circle, label = "into"];
+	7 [shape = circle, label = "the"];
+	8 [shape = circle, label = "junk"];
+	9 [shape = circle, label = "folder"];
+	3 -> 1 [ label = "ARG1" ];
+	3 -> 5 [ label = "ARG2" ];
+	3 -> 6 [ label = "ARG3" ];
+	4 -> 5 [ label = "BV" ];
+	6 -> 5 [ label = "ARG1" ];
+	6 -> 9 [ label = "ARG2" ];
+	7 -> 9 [ label = "BV" ];
+	8 -> 9 [ label = "compound" ];
+}
