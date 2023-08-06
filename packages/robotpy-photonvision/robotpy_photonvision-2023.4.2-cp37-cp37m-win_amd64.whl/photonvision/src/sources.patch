@@ -1,0 +1,65 @@
+From 7b7e69a6b43bdbc21db7b72491cc0c2544864027 Mon Sep 17 00:00:00 2001
+From: David Vo <auscompgeek@users.noreply.github.com>
+Date: Sun, 16 Apr 2023 13:50:48 +1000
+Subject: [PATCH 1/2] PhotonPoseEstimator: Add constructor taking unique_ptr
+
+---
+ photonlib/PhotonPoseEstimator.cpp | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/photonlib/PhotonPoseEstimator.cpp b/photonlib/PhotonPoseEstimator.cpp
+index 5b7ff54853d2..f328e9aad874 100644
+--- a/photonlib/PhotonPoseEstimator.cpp
++++ b/photonlib/PhotonPoseEstimator.cpp
+@@ -67,10 +67,16 @@ PhotonPoseEstimator::PhotonPoseEstimator(frc::AprilTagFieldLayout tags,
+       m_robotToCamera(robotToCamera),
+       lastPose(frc::Pose3d()),
+       referencePose(frc::Pose3d()),
+       poseCacheTimestamp(-1_s) {}
+ 
++PhotonPoseEstimator::PhotonPoseEstimator(frc::AprilTagFieldLayout tags,
++                                         PoseStrategy strat,
++                                         std::unique_ptr<PhotonCamera> cam,
++                                         frc::Transform3d robotToCamera)
++    : PhotonPoseEstimator(tags, strat, std::move(*cam), robotToCamera) {}
++
+ void PhotonPoseEstimator::SetMultiTagFallbackStrategy(PoseStrategy strategy) {
+   if (strategy == MULTI_TAG_PNP) {
+     FRC_ReportError(
+         frc::warn::Warning,
+         "Fallback cannot be set to MULTI_TAG_PNP! Setting to lowest ambiguity",
+-- 
+2.39.1
+
+
+From b6b8fa2c19f0f8b3d0e67a45c01ee9f783dd42f4 Mon Sep 17 00:00:00 2001
+From: David Vo <auscompgeek@users.noreply.github.com>
+Date: Sun, 16 Apr 2023 15:13:29 +1000
+Subject: [PATCH 2/2] Add missing PhotonCamera::GetCameraName impl
+
+---
+ photonlib/PhotonCamera.cpp | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/photonlib/PhotonCamera.cpp b/photonlib/PhotonCamera.cpp
+index 82c079d0c95d..3e9498c65a68 100644
+--- a/photonlib/PhotonCamera.cpp
++++ b/photonlib/PhotonCamera.cpp
+@@ -138,10 +138,14 @@ std::optional<cv::Mat> PhotonCamera::GetCameraMatrix() {
+ 
+ void PhotonCamera::SetLEDMode(LEDMode mode) {
+   ledModePub.Set(static_cast<double>(static_cast<int>(mode)));
+ }
+ 
++const std::string_view PhotonCamera::GetCameraName() const {
++  return m_cameraName;
++}
++
+ std::optional<cv::Mat> PhotonCamera::GetDistCoeffs() {
+   auto distCoeffs = cameraDistortionSubscriber.Get();
+   if (distCoeffs.size() == 5) {
+     // clone should deal with ownership concerns? not sure
+     return cv::Mat(5, 1, CV_64FC1, distCoeffs.data()).clone();
+-- 
+2.39.1
+
