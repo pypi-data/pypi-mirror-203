@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: sprocket-boxcars-py
+Version: 0.1.15
+Summary: Python bindings for the Rocket League replay parser boxcars.
+Home-page: https://github.com/SprocketBot/boxcars-py
+License: MIT
+Author: Jake Bailey
+Author-email: asaxplayinghorse@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/SprocketBot/boxcars-py
+Description-Content-Type: text/markdown
+
+# Boxcars-py
+
+Python bindings for the [Boxcars](https://github.com/nickbabcock/boxcars) Rocket
+League replay parser. This is a fork of [SaltieRL's
+package](https://github.com/SaltieRL/boxcars-py) which sadly seems to no longer
+be maintained. 
+
+## Installation
+
+Only tested on linux.
+You have to compile it yourself if you are using Windows.
+
+```
+pip install boxcars-py
+```
+
+## Usage
+
+```py
+from boxcars_py import parse_replay
+
+with open("your_replay.replay", "rb") as f:
+  buf = f.read()
+  f.close()
+
+replay = parse_replay(buf)
+# Use the parsed replay here
+```
+
+## Building from source
+
+__Requirements__
+  - Rust.
+  - [poetry](https://pypi.org/project/poetry/)
+
+```
+# Install dependencies
+poetry install
+# Build
+make
+```
+

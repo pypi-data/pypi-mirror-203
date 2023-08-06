@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "sprocket_boxcars_py"
+version = "0.1.15"
+description = "Python bindings for the Rocket League replay parser boxcars."
+authors = ["Jake Bailey <asaxplayinghorse@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/SprocketBot/boxcars-py"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.5"
+wheel = "*"
+pytest-runner = "*"
+pytest-benchmark = "3.2.3"
+maturin = "0.7.7"
