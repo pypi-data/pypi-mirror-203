@@ -1,0 +1,12 @@
+pysparkler/__init__.py,sha256=DCqV-yupoXzqeCGxSoAA2i_ageJGreOoDz-mc1vmXNE,807
+pysparkler/api.py,sha256=KXUGSIziTHC6wK9twUko5-R3A7f8RvpNc6buzVHqVXs,4374
+pysparkler/base.py,sha256=EuETKlASCIOwj6ngstCX2uySQYU4bqmnvBK7R7GHCd8,6057
+pysparkler/cli.py,sha256=6sOG0dIdQ0vq8SaFaBnMgQEaObvaMZ4nuQgm1R_cyw0,5734
+pysparkler/pyspark_23_to_24.py,sha256=PYeDw312ACet2DqGRKIFGLQBizYrlz2jow3ViVRq6aQ,2204
+pysparkler/pyspark_24_to_30.py,sha256=h9G2amngtwUpHg5qpJ1xKxSKwzNlejjWip-T9mzCbMs,10438
+pysparkler/pyspark_31_to_32.py,sha256=w2E1luc9YCwqX3tD8g_N2xiDh3xrMtr3XecTFTm7NlQ,3967
+pysparkler/pyspark_32_to_33.py,sha256=-poh1VsR5kQsbzYU8Nf5HXKgg_GrZ9dBwEqOgGpIM3U,4263
+pysparkler-0.4.dev1681747316.dist-info/METADATA,sha256=ncfv2ByUcppBiT41yvemTPw0jMQltT-RXMQjQ-7ilj4,9990
+pysparkler-0.4.dev1681747316.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+pysparkler-0.4.dev1681747316.dist-info/entry_points.txt,sha256=xj9Y4C56Z6nnNucUyBZ6BDmPtmE6uzw_dSIgd7qa7r8,49
+pysparkler-0.4.dev1681747316.dist-info/RECORD,,
