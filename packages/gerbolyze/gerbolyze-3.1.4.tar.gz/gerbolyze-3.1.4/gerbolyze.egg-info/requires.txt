@@ -1,0 +1,6 @@
+gerbonara>=1.0.0
+numpy
+python-slugify
+lxml
+click
+svg-flatten-wasi
