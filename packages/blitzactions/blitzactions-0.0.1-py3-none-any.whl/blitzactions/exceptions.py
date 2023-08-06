@@ -1,0 +1,2 @@
+class NoFunctionFoundException(Exception):
+    pass
