@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: hasher_cnml
+Version: 0.0.1
+Summary: Command line interface to the hashlib library.
+Author-email: Michael Chen <mail@cnml.de>
+Project-URL: Homepage, https://github.com/cn-ml/hasher
+Project-URL: Bug Tracker, https://github.com/cn-ml/hasher/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Hasher
+
+![GitHub](https://img.shields.io/github/license/cn-ml/hasher?logoColor=%23&style=for-the-badge)
+
+Command line interface to the hashlib library.
+
+## Authors
+
+- [@cn-ml](https://www.github.com/cn-ml)
