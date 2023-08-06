@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "accurating"
+version = "0.1.1"
+description = ""
+authors = ["Lukasz Lew <lukasz.lew@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jax = "^0.4.8"
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+pythonpath = "accurating"
