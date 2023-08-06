@@ -1,0 +1,5 @@
+pygame
+moderngl
+python-dotenv
+numpy
+pyglm
