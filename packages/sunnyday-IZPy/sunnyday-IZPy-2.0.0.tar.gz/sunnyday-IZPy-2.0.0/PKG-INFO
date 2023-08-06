@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sunnyday-IZPy
+Version: 2.0.0
+Summary: Weather forecast data
+Home-page: https://github.com/DevIvo81/App-011-WeatherApp
+Author: Ivo Zelic
+Author-email: izpy81@gmail.com
+License: MIT
+Keywords: weather,forecast,openweather
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
