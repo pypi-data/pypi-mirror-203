@@ -1,0 +1,4 @@
+vm-manager.ini
+vm-manager.log
+.gitignore
+dist/
