@@ -1,0 +1,15 @@
+AnimeCrawler/__init__.py,sha256=kkXPAcH24o5mpnkibAxiMC6l_3mLilGpXfE-KXGpPRg,198
+AnimeCrawler/__main__.py,sha256=65Q6gL0vbQI4ASGX0-gnPxt_QvVQNQrEKDE6CKt7T-Y,115
+AnimeCrawler/command/__init__.py,sha256=3mkfVNQ45vF9vojJXVj15uYgsoSzpbRzTtEww8brOf4,87
+AnimeCrawler/command/run.py,sha256=Uqrn_TLo4h1NsPfk-KHzKr6aZJygPw2gehYprBL1XuY,1602
+AnimeCrawler/mhyyy/__init__.py,sha256=fhQCmDEQr_3f2DiB6uSZjSHx2mxmjeM6M3VTlXE8t9M,245
+AnimeCrawler/mhyyy/downloader.py,sha256=Ms2BLTxN0VI6wqCSvxt4RdDBEUCHnYnqsUf5cLonILk,2024
+AnimeCrawler/mhyyy/spider.py,sha256=xU2vPi1GRV1klbNEIu3NHUgX3Z_CSBO2JOhSlEa9-ag,3780
+AnimeCrawler/utils/__init__.py,sha256=68k4OfMGE2l6wLM8bsaPhS8GZgdT6ltphSDA9wrTZp8,113
+AnimeCrawler/utils/decode.py,sha256=ahj73shjdbP9bLjurqyvZGPKLsfdeR_2Ddj0nG3PLgE,804
+AnimeCrawler/utils/file.py,sha256=0LSaiSdod9TPv_SwdCPIATiUwRml_njg1x0ChdB1Mxk,2030
+AnimeCrawler-0.1.0.dist-info/LICENSE,sha256=QjCucYWZENK8rnbALbRYrhuZ4QkeAdYuB2BaBA5aX0Y,1083
+AnimeCrawler-0.1.0.dist-info/METADATA,sha256=tx-11voEWqS-8HgjS-6eQnFj9BKEMr0y1pQ9Vp_Tmt4,3505
+AnimeCrawler-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+AnimeCrawler-0.1.0.dist-info/top_level.txt,sha256=U1D8yKqclOR8b5QbL5Iz1zpR376fM2UVl-_RtLwhhO0,13
+AnimeCrawler-0.1.0.dist-info/RECORD,,
