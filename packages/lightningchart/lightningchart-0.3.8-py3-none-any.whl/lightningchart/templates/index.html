@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>LightningChart Python</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="#">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <script>
+        document.documentElement.style.setProperty('--random', Math.random());
+        const room = '{{room}}';
+    </script>
+    <script src="../static/lcjs.iife.js"></script>
+    <script src="../static/lcjs-themes.iife.js"></script>
+    <script src="../static/msgpack.min.js"></script>
+    <script src="../static/socket.io.min.js"></script>
+    <script defer src="../static/functions.js"></script>
+    <script defer src="../static/websocket.js"></script>
+    <style>
+        :root {
+            --hue: calc(360deg * var(--random));
+            --saturation: 25%;
+            --lightness1: 0%;
+            --lightness2: 25%;
+            --gradient-start: hsl(var(--hue), var(--saturation), var(--lightness1));
+            --gradient-end: hsl(calc(var(--hue) + 25deg), var(--saturation), var(--lightness2));
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            background-image: linear-gradient(0deg, var(--gradient-start), var(--gradient-end), var(--gradient-start));
+        }
+    </style>
+</head>
+
+<body>
+</body>
+
+</html>
