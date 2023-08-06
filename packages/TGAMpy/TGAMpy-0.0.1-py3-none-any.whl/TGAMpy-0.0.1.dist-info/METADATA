@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: TGAMpy
+Version: 0.0.1
+Summary: Simple python lib for NeuroSky TGAM1 module
+Home-page: https://github.com/forem1/TGAMpy
+Author: Andrei Driupin
+Author-email: mrforemar@gmail.com
+License: MIT
+Requires-Dist: numpy
+Requires-Dist: pyserial
+
+# TGAMpy
