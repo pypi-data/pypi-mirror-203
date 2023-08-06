@@ -1,0 +1,6 @@
+**/env/
+__pycache__/
+wechat_pork_analysis/message.csv
+wechat_pork_analysis/temp.csv
+~$*
+paddle_ocr/PaddleOCR/
