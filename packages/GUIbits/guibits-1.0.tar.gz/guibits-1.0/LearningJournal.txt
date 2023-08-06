@@ -1,0 +1,917 @@
+Learning Journal for GUIbits version 1.0
+----------------------------------------
+RNB
+25 Jul 2022
+14:00
+  This version will follow on from GUIbits 0.7.  I feel the software is now mature enough to warrant the 1.0 version number.
+  First job is to update GUIbits to run on Python 3.10 and PyQt6.  I've downloaded these.  Trying compiling GUIbits on Python 3.10.
+14:35
+  Set up Python 3.10.5 interpreter and documentation.
+14:48
+  Trying to interpret menuing_test.py, but get message:
+  
+    import PyQt5.QtWidgets
+    ModuleNotFoundError: No module named 'PyQt5'
+    
+  Well, it was there yesterday...
+14:52
+  I think downloading PyQt6 may have wiped it.
+14:56
+  No, it can't find PyQt6 either...
+15:18
+  And Emily no longer functions!  I think we need to return to PyQt5 and Python 3.8.
+15:41
+  This does not seem to be possible!  So using Python 3.10 and working through the GUIbits library, from the leaf nodes.  So far managed to compile callback_checking1_0_test.py.  It's a start.
+15:43
+  Backing up.
+15:47
+
+20:15
+  After hours of searching, Windows has found PyQt5 and PyQt6 in
+  
+    Users/User/AppData/Local/Programs/Python/Python38/Lib/site-packages
+  
+  So what has happened is that PyQt6 has been installed under Python 3.8, so when we ran Python 3.10, it couldn't find either PyQt5 or PyQt6, which was rather scary.
+  
+  What we need to do now is get back to square one, i.e. uninstall Python 3.10 and return to Python 3.8, then try PyQt6.
+20:42
+  Done, and we're picking up PyQt5 and PyQt6.  Emily is working again!
+20:43
+  So it looks like we must stick with Python 3.8 or possibly 3.9, if we want to use PyQt5 and 6.  We will have to upgrade eventually, though.  The important fact is that, every time we change Python versions, we have to re-install PyQt, so that it sits under the current Python version.  Not good practice: a dependency that could easily be removed.  Note that GUIbits and Emily are not so constrained.
+20:48
+  Backing up.
+20:55
+
+26 Jul 2022
+14:21
+  We don't actually know whether PyQt6 works under Python 3.10.  Perhaps we should try to find out.
+14:24
+  Yikes!  It seems people have had problems with PyQt6 on both 3.9 and 3.10.  I shall stick with 3.8 for now.  So continuing to check out all the modules in guibits1_0, starting at the leaves, updating them to PyQt6 and seeing what happens.
+14:27
+  Found CursorListener.py, an interface for callbacks.  Does anything actually use it?
+14:31
+  callback_checking1_0 checking out OK.
+14:34
+  type_checking2_0.py testing out OK.
+14:39
+  cursor_blinking.py testing out OK.
+14:41
+  font_size_checking.py testing out OK.
+14:44
+  font_styling.py testing out OK.
+14:52
+  fonting.py and latest_listing.py testing out OK.
+  Backing up.
+15:07
+
+17:43
+  Doing a few more.
+17:47
+  qapp_creating.py testing out OK.
+17:50
+  stacking.py testing out OK.
+17:53
+  unicoding3_0.py testing out OK.
+17:58
+  laying_out.py testing out OK, amazingly.  It uses a lot of PyQt6, too.
+  Backing up.
+18:04
+
+27 Jul 2022
+10:28
+  Continuing.
+10:34
+  Problem testing controlling.py because the test program uses windowing.py, which has not been updated.  We need to mark it as untested.
+10:37
+  Renamed the test program as controlling_test_not_tested.py, which should make this obvious.
+11:00
+  Same problem with font_sizing.py.
+11:03
+  coloring.py testing out OK.
+11:10
+  resolving.py testing out OK.
+  Backing up.
+11:18
+
+12:16
+  Now making a list of updated modules so that we can make the transitive closure on "comprehends" (backwards).
+  
+  Updated modules
+  ---------------
+  callback_checking1_0
+  coloring.py
+  command_listing.py
+  cursor_blinking.py
+  font_size_checking.py
+  font_styling.py
+  fonting.py
+  latest_listing.py
+  laying_out.py
+  printing.py
+  qapp_creating.py
+  resolving.py
+  stacking.py
+  type_checking2_0.py
+  unicoding3_0.py
+  
+12:23
+  Continuing.
+12:35
+  command_listing.py testing out OK.
+12:43
+  fonting.py testing out OK.
+12:45
+  latest_listing.py testing out OK.
+12:51
+  Interesting error in printing.py
+
+    C:\Bosware\GUIbits\GUIbitsPackage1_0\tests>python printing_test.py
+    Tests of set_page_dimensions Traceback (most recent call last):
+      File "printing_test.py", line 120, in <module>
+        _test()
+      File "printing_test.py", line 51, in _test
+        pj = printing.set_page_dimensions(595.0,842.0,72.0)
+      File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\printing.py", line 218, in set_page_dimensions
+        pj._printer.setPageMargins(ind,ind,ind,ind,PyQt6.QtPrintSupport.QPrinter.Unit.Point)
+    TypeError: setPageMargins(self, QMarginsF, units: QPageLayout.Unit = QPageLayout.Millimeter): argument 1 has unexpected type 'float'
+
+13:01
+  Because setPageMargins has been redefined in PyQt6 as  
+  
+    setPageMargins(QMarginsF, units: Unit = Millimeter) → bool
+    
+  as opposed to 
+  
+    setPageMargins(float, float, float, float, Unit)
+  
+  in PyQt5.
+  
+  So we need to change the call, but also note the return value and return None from printing.set_page_dimensions if the operation fails.
+13:10
+  Updated, now to test.
+13:27
+  Fun and games, but the new code is
+  
+    margins_ok = pj._printer.setPageMargins(qtm,units=PyQt6.QtGui.QPageLayout.Unit.Point)
+    if not margins_ok:
+      return None
+
+13:28
+  Break.
+13:34
+  So printing.py testing out OK.
+  Backing up.
+13:40
+
+28 Jul 2022
+12:56
+  Continuing.
+13:04
+  We have got to the situation where all the untested modules depend on other untested modules.  So what we have to do is convert all of the remaining modules to PyQt6, then start retesting them all and adding them to the list above.
+13:07
+  Backing up.
+13:11
+
+19:46
+  Realized we can convert the modules very easily with NotePad++.
+19:56
+  Updated 133 references in 10 mins.  Thankyou NotePad++.
+20:16
+  Also did the test programs.
+  Backing up.
+20:23
+
+29 Jul 22
+14:35
+  Just discovered I wrote a .bat file, test.bat, which tests all of GUIbits in the correct order allowing for dependencies.  Why did I not remember this?  Anyway, will now run it and see what happens under PyQt6.
+14:42
+  Found:
+  
+    File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\windowing.py", line 354, in show
+    _scroll_bar_always_on = PyQt6.QtCore.Qt.ScrollBarAlwaysOn
+    AttributeError: type object 'Qt' has no attribute 'ScrollBarAlwaysOn'
+15:04
+  Many errors in windowing.py, caused by enum definitions changing (the client now has to put in the enum type name, as is standard in Python), and the "exec_" call being changed to "exec".  Now functioning and showing a window.
+15:34
+  Problem in menuing.py, as QMouseEvent no longer has an x() attribute.  You need to use pos().x().
+15:44
+  More problems with enums which have been standardized, in menuing.py, now resolved.
+15:45
+  Backing up and having an ice-cream.
+16:08
+
+20 Jul 2022
+12:55
+  Trying test.bat again:
+  
+    File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\dialoging.py", line 146, in show_input_dialog
+    (None, PyQt6.QtCore.Qt.WindowSystemMenuHint | \
+    AttributeError: type object 'Qt' has no attribute 'WindowSystemMenuHint'
+    
+    File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\file_dialoging.py", line 189, in show_open_file_dialog
+    vl.setSizeConstraint(PyQt6.QtWidgets.QLayout.SetFixedSize)
+    AttributeError: type object 'QLayout' has no attribute 'SetFixedSize'
+
+  These appear to be the last two errors caused by "upgrading" to PyQt6.
+13:05
+  Backing up.
+13:07
+
+18:14
+  Fixing these.
+18:24
+  Another problem in dialoging.py
+ 
+    File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\dialoging.py", line 157, in show_input_dialog
+    qid.setInputMode(PyQt6.QtWidgets.QInputDialog.TextInput)
+    AttributeError: type object 'QInputDialog' has no attribute 'TextInput'
+    
+  and yet another:
+  
+    File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\dialoging.py", line 164, in show_input_dialog
+    if result == PyQt6.QtWidgets.QDialog.Accepted:
+    AttributeError: type object 'QDialog' has no attribute 'Accepted'
+18:30
+  dialoging.py now testing out OK.
+18:52
+  file_dialoging.py now testing out OK.  Phew!
+18:53
+  So, we now have an updated GUIbits which works with PyQt6.  We now need to add enhancements, first to the manual, and then to the code, but that's for another day.
+18:55
+  Backing up.
+18:59
+
+1 Aug 2022
+13:30
+  Discovered that the changes we need to make to GUIbits are trivial.  There is no need to link up the menus and shortcuts as PyQt does.  All that is needed is for the client (Emily in this case) to ensure that the menu for, say, Save and the shortcut ctrl-S both execute the save_file procedure.  Simple!  The client must also ensure that the label includes the shortcut name, but this is a convenience for the user, not a functional requirement.
+13:34
+  So all we need for guibits1_0 is to extend the ActionCode in controlling.py to include
+  
+    ctrl-S      Save
+    ctrl-X      Cut
+    ctrl-C      Copy
+    ctrl-V      Paste (where a pushdown list is shown)
+13:39
+  So copying the manual across.
+13:47
+  Done, and updated the manual title!
+  Backing up.
+13:53
+
+2 Aug 2022
+09:56
+  So updating the manual.
+10:39
+  Phew!  More work than expected.  Now all the enums in the manual are expressed as HTML lists.  Consistent, readable, and avoids the two different grammars for enums in Python.
+10:41
+  Backing up.
+10:48
+
+14:29
+  We also need ctrl-Z for undoing (implemented as a pushdown list of inverse functions with a string and cursor as parameters).  Undoing will be reset by a Save.
+14:37
+  OK sorted that.  Now time to actually do the implementation.
+14:43
+  controlling.py updated.
+15:00
+  Trying to update keyboarding.py.  Pressing the Ctrl key causes 
+  
+    ControlModifier 0x04000000  A Ctrl key on the keyboard is pressed.
+  
+  to be ORd into the Key() value.  I think we can trap this with a suitable value, but note that the Key values now need
+  
+    PyQt6.Qt.Key.Key_Up
+    
+  etc.  I think we should use these enums rather than the hex values of guibits0_7.  We can OR enum values together using |, I think.
+15:15
+  Well, it's a bit complicated, due the confusion in Python between ints and booleans.  However, I think we can OR enum values, so hopefully, if PyQt6 has used enums properly, this will work.  We can always check the values returned by the PyQt callback using 
+  
+    print(value{X})
+
+15:26
+  Backing up.
+15:30
+
+3 Aug 22
+08:22
+  Having second thoughts about this.  The point about Qt.Key values returned by QKeyEvent.key() is that they are designed to be unique for each key and each key combination.  In addition, QKeyEvent.text() returns the Unicode code point for the key, or the empty string if there is no Unicode code point.  It may be best to just trap the QT.Key values on the hex literal, as they are unique.
+08:30
+  Of course the values for Qt.Key are (nearly) all TODO in the PyQt6 docs - we would expect nothing less.  However, we do have values for the flags which indicate that the returned value is a key combination, in the Qt.KeyboardModifier enum.
+  
+    KeyboardModifier
+    
+      Member                Value       Description
+      NoModifier 	          0x00000000  No modifier key is pressed.
+      ShiftModifier 	      0x02000000  A Shift key on the keyboard is pressed.
+      ControlModifier 	    0x04000000  A Ctrl key on the keyboard is pressed.
+      AltModifier 	        0x08000000  An Alt key on the keyboard is pressed.
+      MetaModifier 	        0x10000000  A Meta key on the keyboard is pressed.
+      KeypadModifier 	      0x20000000  A keypad button is pressed.
+      GroupSwitchModifier 	0x40000000  X11 only (unless activated on Windows by a
+                                        command line argument). A Mode_switch key on the keyboard is pressed.
+      KeyboardModifierMask 	TODO        TODO (I assume this is something like 
+                                        0xFE000000)
+
+  We note that the Unicode printables are 
+  
+    0x20..0x7E and 0x80..0x10FFFF
+    
+  so the maximum Unicode code point plus the shift key would be
+  
+    0x0210FFFF
+    
+  The last six hex digits are reserved for the Unicode code point, and the flags occupy the first two hex digits, giving a maximum of eight flags, some of which are not used.
+    
+  In other words, we can trap the ctrl-* values as 8-digit hex literals.  This would seem to be the least confusing approach.
+08:54
+  Backing up.
+08:58
+
+10:40
+  So looking at modifying keyboarding.py.
+10:52
+  Found from the Qt6 documentation that the 0x01hhhhhh values are special codes for e.g.Esc, Backspace etc., some of which duplicate values in the Unicode set.  We prefer to use Unicode if available.  For the ctrl-* values, though, we have to use Qt.Key values, which will be of the form 0x04hhhhhh.
+11:02
+  So setting up the _keyPressEvent callback to print what it receives.
+11:31
+  Whoah, this is tricky.  The ctrl-a combination is treated as two QKeyPressEvents.  To extract the value, we have to look at the QKeyEvent.text(), which I think gives a value out of the Unicode normal range, so trappable.
+11:48
+  We have from the Qt6 docs:
+  
+    Qt::Key_Copy	0x010000cf	 
+    Qt::Key_Cut	  0x010000d0
+    Qt::Key_Paste	0x010000e2
+    Qt::Key_Save	0x010000ea
+    Qt::Key_Undo	0x01000123
+
+  the only problem being that these do not seem to be the values actually returned by PyQt6.
+11:54
+  For example, pressing Ctrl followed by C gives
+  
+    Start of keyboarding._keyPressEvent
+    qke.key()=0x1000021
+    qke.text()=''
+    Start of keyboarding._keyPressEvent
+    qke.key()=0x43
+    qke.text()='♥'
+      cp=0x3,'♥'
+   
+  This is an error and not according to spec.  It should give 0x010000cf, it actually gives 0x00000003, which is a fair way out.
+11:59
+  The other ctrl-* combinations give similar low values below the printable range of Unicode code points.  We could use these values, and it would work, but there are no guarantees it will continue to work.
+12:02
+  Backing up.
+12:08
+
+12:53
+  I see no alternative to using the values actually supplied, which I will now enumerate:
+  
+    ctrl_S   0x13
+    ctrl_Z   0x1a
+    ctrl_X   0x18
+    ctrl_C   0x03
+    ctrl_V   0x16
+    
+12:59
+  OK, it is now clear(!) that ctrl-A..ctrl-Z are mapped onto the Unicode code points 0x00..0x1f, which are the old ascii control characters.  This presents an ambiguity, as Backspace is 0x08, Enter is 0x0d, and Esc is 0x1b.  Nothing clashes at the moment, but this is very dangerous in the long term.
+13:11
+  On looking at the PyQt6 documentation it may be that QKeyEvent.keyCombination().toCombined() may have more sensible values.  They are:
+  
+    ctrl_S   0x04000053
+    ctrl_Z   0x0400005a
+    ctrl_X   0x04000058
+    ctrl_C   0x04000043
+    ctrl_V   0x04000056
+    
+  This is the Control modifier plus the upper case Unicode code point for the alphabetic key.  This appears to be what we want; it is not confusable with any other values.  What happens when the "key combination" is actually one key?
+13:31
+  For single key hits we get the upper case Unicode value, for shift + key we get the 0x02000000 Shift flag plus the upper case Unicode value.  In other words, we get the combination of actual keys pressed, with consistent values for each.  This may be the answer to our problems.  It looks as if we can always use
+  
+    QKeyEvent.keyCombination().toCombined()
+    
+  to give us an unambiguous value for the combination of one or more keys pressed.  Note that for non-printing keys such as Backspace and UpArrow we get the 0x010000hh keyboard code, which is also unambiguous, and which we use already.
+13:42
+  So it looks as if we can always use
+  
+    QKeyEvent.keyCombination().toCombined()
+    
+  whatever combination of keys the user presses, and ignore QKeyEvent.text().  We can then do range checks on the returned value and successfully prise out: single lower-case and upper-case characters, control characters like Backspace and Enter, and ctrl-a combinations.  Phew!
+13:45
+  Backing up.
+13:50
+
+4 Aug 2022
+08:38
+  So, first thoughts about the algorithm for keyboarding._keyPressEvent:
+  
+  There are five cases:
+  
+   1. no flags (lower case character):
+      call the character callback with the Unicode code point from qke.text(),
+        or if no text, construct the lower case code point from the combined event value
+
+   2. Special character flag 0x01000000 (arrows etc.):
+      filter out the relevant ones and call the controlling callback with the appropriate controlling.ActionCode
+      otherwise, call the superclass method
+      
+   3. Shift flag 0x02000000 (upper case character):
+      call the character callback with the Unicode code point from qke.text(),
+        or if no text, construct the upper case code point from the combined event value
+        
+   4. Control flag 0x04000000 (ctrl-a):
+      filter out the relevant ones and call the controlling callback with the appropriate controlling.ActionCode
+      otherwise, call the superclass method
+      
+   5. Any other values (windows key etc.):
+      call the superclass method.
+      
+  This looks doable.
+08:52
+  Backing up.
+08:57
+
+19:39
+  So starting this.
+20:13
+  Backing up.
+20:16
+
+08:04
+  Writing the sub-procedure _return_code_point.
+08:25
+  Testing.
+08:44
+  _return_code_point testing out OK, but needs extra checks in the test program.
+  _keyPressEvent working except for the ctrl-a combinations.
+08:45
+  Backing up.
+08:51
+
+14:05
+  Continuing.
+14:16
+  ctrl-C is being trapped as an alphanumeric, not a control character.
+14:32
+  ...because I was taking the wrong value for key_code, qke.key() instead of qke.keyCombination().toCombined().  Now working nicely, but I would still like to test _return_code_point with an empty text string.
+14:34
+  Backing up.
+14:36
+
+21:58
+  Had a good idea.  If we are prepared to accept that QKeyEvent will ALWAYS deliver the Unicode string corresponding to the key combination pressed (if it exists) (and it seems to, and the docs say it will) we can simplify _keyPressEvent and abandon _return_code_point.  This will make testing a lot easier.
+22:01
+  So trying this out.
+22:05
+  It works triumphantly well.  Cleaning up.
+22:09
+  Backing up.
+22:12
+
+11 Aug 22
+14:01
+  GUIbits needs to be updated again, to allow Emily to paint the background of a fat cursor.  I suggest a new contractor, painting.py which will allow the client to paint a rectangle of any size at any position in a pane (subject to reality checks).  So designing this in the manual.
+14:48
+  Made the spec.  It's quite straightforward (to specify, anyway).
+14:49
+  Backing up.
+14:52
+
+12 Aug 22
+16:55
+  Found that PyQt6.QPainter.fillRect is the method that does what we want.
+16:56
+  Backing up.
+16:58
+
+13 Aug 2022
+13:44
+  So starting the implementation.  We need painting.py and painting_test.py.
+14:27
+  Got very skeletal versions of both going.
+  Backing up.
+14:31
+
+16 Aug 2022
+13:40
+  Continuing.
+13:49
+  There is a slight problem - the pane gets resized according to the zoom factor, whereas the rectangle is specified in points.  There are two possible approaches:
+  
+    1. do everything in points, and zoom before painting.
+    
+    2. zoom everything, and do everything in pixels.
+    
+  I would prefer (1): this will also give more meaningful error messages to the client.
+14:06
+  Well, win._my_pane_width and win._my_pane_height give us the pane dimensions in points, so I think (1) is the way to go.
+14:46
+  Managed to perform the first few tests.
+14:37
+  Backing up.
+14:42
+
+17 Aug 2022
+13:08
+  Continuing.
+13:43
+  Making progress on the tests.  Haven't got to the actual painting bit yet.
+  Backing up.
+13:47
+
+21 Aug 2022
+17:29
+  Continuing.
+17:46
+  Tests running through nicely, but no rectangle being painted, as I haven't coded that bit yet.
+17:53
+  There are many many fillRect functions, but the one I think we want is:
+  
+    fillRect(x:int, y:int, w:int, h:int, qc:QColor)
+    
+  So first of all we have to convert our point position and dimensions to integer pixel position and dimensions (including zooming as necessary), and convert our Color value to a QColor value.
+18:27
+  Done all that, and created a QPainter on the pane, and tried a fillRect, but all we get is
+  
+    C:\Bosware\GUIbits\GUIbitsPackage1_0\tests>python painting_test.py
+    Test of paint_rectangle
+    QWidget::paintEngine: Should no longer be called
+    QPainter::begin: Paint device returned engine == 0, type: 1
+    QWidget::paintEngine: Should no longer be called
+    QPainter::begin: Paint device returned engine == 0, type: 1
+18:28
+  I think what is happening here is that the paintEngine is being called to paint the background, then destroyed(?) or somehow disabled, and when we then try to use it, the above error occurs.  However, writing.py manages to write text after the background has been painted, so it must be possible, folks!
+  Need to study writing.py and windowing.py and make painting.py consistent with their approach.
+18:33
+  Backing up.
+18:37
+
+22 Aug 22
+14:25
+  So investigating.
+14:32
+  It's quite interesting.  writing.py merely queues writing requests (commands) on the command list.  It is windowing's _PaneWidget.paintEvent method which does the actual painting of the text.  When it has exhausted the CommandList, it releases the QPainter using QPainter.end().  Then we try to set  up another QPainter, and the Qt system complains, from which I infer that the PyQt6 client is only supposed to use one painter, and that is supposed to be inside a paintEvent callback.  So what we need to do is:
+  
+    1. Upgrade the CommandList to allow paint_rectangle commands as well as text painting commands.
+    
+    2. Rewrite painting.py to queue paint_rectangle commands on the CommandList.
+    
+    3. Enhance windowing._PaneWidget.paintEvent to deal with both kinds of command.
+       (Note there is a wrinkle here: the rectangle must be painted BEFORE any text which appears on it.)
+14:45
+  So we need to implement these changes.
+14:46
+  Backing up.
+14:50
+
+23 Aug 2022
+09:05
+  Or even better, have TWO command lists, one for rectangle commands and one for text commands.  The rectangle command list will always be checked first by windowing._PaneWidget.paintEvent, so the invariant is satisfied.
+09:07
+  Backing up.
+09:09
+
+24 Aug 22
+15:35
+  This is a neato solution as it doesn't require any changes to writing.py.  All(!) we need to do is modify windowing.new_window to set up another command list, make painting.py queue its commands on this list, and extend windowing._PaneWidget.paintEvent to scan the rectangle command list first.
+15:38
+  However, first of all it would be a good idea to rename windowing._my_command_list to _my_text_command list.
+15:50
+  Done that, and changed both windowing.py and writing.py (one change).  Everything still working OK.
+15:51
+  Now adding the new command list.
+15:57
+  Done that, now updating command_listing.py to allow two types of command.
+16:04
+  Renamed command_listing.new_command to new_text_command.
+16:26
+  Wrote new_rectangle_command and started on tests.
+16:27
+  Backing up.
+16:36
+
+25 Aug 2022
+09:46
+  Continuing.
+09:49
+  Decided to standardize the dimensions of both text and rectangle commands to _x_offset, _y_offset, _width and _height.  Then _is_overpainted_by will work for both types of command.  We will keep all the projection functions for the two types of command.  If the client attempts to access an attribute which is not present, an exception will be raised, thus preserving diagnostic correctness.
+10:23
+  Also combining _text_color and _rectangle_color into _color.
+10:31
+  command_listing.py testing out OK, but I'm not convinced that it's diagnostically correct.  For example, a rectangle command could be queried for text_color, and it will work.  But do we care?  The real test will be if we access a rectangle command for, say, a text string.  Seeing what happens then.
+10:38
+  We get an error:
+  
+    AttributeError: 'PaintCommand' object has no attribute '_text_string'
+
+  This is not ideal, but it satisfies the definition of diagnostic correctness, i.e. an error message is given if the precondition is not satisfied.
+10:45
+  Improved the preconditions of the projection functions of command_listing.py.  Everything now running through correctly.
+10:47
+  Backing up.
+10:52
+
+15:30
+  So the command listing mechanism is working for both lists.  We now need to update painting.py to place its commands on the list instead of trying to execute them directly, and update windowing._PaneWidget.paintEvent to scan both lists (in the order rectangle list, text list) and execute the commands.
+15:43
+  Found error in writing.py; it was still calling new_command instead of new_text_command.  Fixed.
+15:51
+  painting.py updated.
+16:10
+  windowing.py updated.  Now need to update the tests to correspond to the new test schema of windowing._PaneWidget.paintEvent
+16:11
+  Backing up.
+16:15
+
+18:46
+  Continuing testing.  writing.py works well, indicating that the empty rectangle command list case is OK.  Slight problem with the non-empty case!
+18:59
+  Non-empty case now working nicely.  Excellent!
+19:04
+  Backing up.
+19:07
+
+20 Sep 22
+15:02
+  Changing the manual to reflect that writing.width_in_points_of is not linear on Python strings, but we're not committing ourselves as to whether it's greater or less than expected.
+15:08
+  Done. Backing up.
+15:13
+
+21 Sep 22
+11:03
+  Have discovered that it is impossible to clear rectangles from the page once queued.  Well, GUIbits was in Beta!  This is why we have beta testing.  What we need to do, I think, is make windowing.clear work as per spec, i.e. remove all the text, all the rectangles and any blinking cursor from the page.
+11:15
+  So implementing this.
+11:48
+  Updated windowing.clear and written tests.
+12:11
+  Fat cursor + text case not working.
+12:20
+  Because the queued repaint does not occur until the window gains the focus.  I think this is OK.  Why the thin cursor case works I do not know.  Anyway, this is a big improvement.
+12:31
+  Backing up.
+12:35
+
+22 Sep 22
+16:10
+  Another problem in GUIbits:
+  
+    C:\Bosware\Emily\EmilyVersion0_9\emily0_9>python emily.py
+    Traceback (most recent call last):
+      File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\windowing.py", line 795, in mousePressEvent
+        mousing._mousePressEvent(self,qme)
+      File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\mousing.py", line 264, in _mousePressEvent
+        self._last_mouse_press_x = qme.x()
+    AttributeError: 'QMouseEvent' object has no attribute 'x'
+
+  This should have been picked up in testing, but wasn't.
+16:16
+  Another error!
+  
+    C:\Bosware\GUIbits\GUIbitsPackage1_0\tests>python mousing_test.py
+    Tests of attach with window not shown
+    OK
+    Tests with live window
+    Traceback (most recent call last):
+      File "C:\Bosware\GUIbits\GUIbitsPackage1_0\guibits1_0\windowing.py", line 669, in closeEvent
+        _result = _wc(_window)
+      File "mousing_test.py", line 120, in _window_closing
+        assert _pc.xip == 4.8
+    AssertionError
+16:17
+  Clearly, mousing.py has not been tested properly, if at all.  Tut,tut!
+16:20
+  Actually, this is a problem of screen resolution.  The resolution of my new Acer Swift 3 laptop is finer than that of my old Acer Aspire S3 and the HP Pavilion desktop.
+16:25
+  Sorted that by just printing the values rather than checking them, which is hardware-dependent.  Now the first error has occurred.  I find that QMouseEvent has had its x() method removed (ouch!) - we now have to say 
+  
+    qme.pos().x()
+    
+  Oh well, I suppose it's more consistent.
+16:36
+  mousing.py now testing out OK.
+16:38
+  Backing up.
+16:41
+
+24 Sep 22
+12:49
+  I had so much difficulty attaching a mouse listener to Emily that I think the manual should be enhanced with an example.  It is more complex, for instance, than attaching a keyboard listener procedure.
+12:59
+  Also, we need to run test.bat to ensure EVERY module of GUIbits has been tested!
+13:16
+  Updated the manual, but noticed that the examples have a smaller font size than the main text.  Need to find out how to fix this using the dreaded style sheet.
+13:21
+  Backing up.
+13:24
+
+15:19
+  Looking into this.
+16:10
+  Updated the font size, and found a few other things that needed updating, too, especially the demo programs for menus.
+16:11
+  Now trying test.bat.
+16:21
+  Seems to be working OK.
+16:22
+  Backing up.
+16:27
+
+16 Nov 22
+11:00
+  Found some errors in the examples for unicoding3_0.
+11:09
+  Updated the manual.
+11:10
+  Backing up.
+11:14
+
+30 Dec 22
+12:22
+  After Windows 10 failed on our Desktop, I had to reload the Python and PyQt software.  The versions I loaded were Python 3.10 and PyQt6.4.0.  On trying to run Emily, I get an error:
+  
+	C:\Bosware\Emily\EmilyVersion0_9\emily0_9>python emily.py
+	Traceback (most recent call last):
+	  File "C:\Program Files\GUIbits\guibits1_0\windowing.py", line 870, in paintEvent
+		self._paint_text_scaled(pc,win._my_zoom_factor,painter)
+	  File "C:\Program Files\GUIbits\guibits1_0\windowing.py", line 963, in _paint_text_scaled
+		painter.drawText(x_pix,y_pix,command_listing.text_string_of(pc))
+	TypeError: arguments did not match any overloaded call:
+	  drawText(self, QPointF, str): argument 1 has unexpected type 'float'
+	  drawText(self, QRectF, int, str): argument 1 has unexpected type 'float'
+	  drawText(self, QRect, int, str): argument 1 has unexpected type 'float'
+	  drawText(self, QRectF, str, option: QTextOption = QTextOption()): argument 1 has unexpected type 'float'
+	  drawText(self, QPoint, str): argument 1 has unexpected type 'float'
+	  drawText(self, int, int, int, int, int, str): argument 1 has unexpected type 'float'
+	  drawText(self, int, int, str): argument 1 has unexpected type 'float'
+
+  I have checked and the version of GUIbits.windowing we are using is up to date.  ERGO, there must be an incompatibility between guibits1_0 and PyQt6.4.0 which is not present in the version we are using on the laptop, which I believe is 6.3 (it's hard to find out).  Anyway it needs fixing.
+12:34
+  Backing up.
+12:44
+
+15:13
+  Looking into this, as we need to get the system working on the latest version of Python and PyQt.
+15:18
+  The system works OK on Python 3.8.10 and PyQt6.3.1, the versions on the laptop.
+  Now trying a newer version of Python.
+15:35
+  No sign of PyQt under Python 3.10.  I need to re-download it.
+15:37
+  Hmmm!  It says PyQt6 already installed under Python 3.8.  I need to uninstall Python 3.8, I think - which may mean a non-viable system.  Courage!
+15:42
+  Deleted Python 3.8 completely, and I mean completely.
+15:43
+  Now "python" sends us to the Microsoft Store to download 3.10, while "py" starts up Python 3.10.  A little inconsistent.
+15:56
+  PyQt cannot be downloaded because the "pip" command is not recognized, even though pip.exe is present in the Python 3.10 folder.
+  I think we need to add its path in the PATH environment variable to get it to work.
+16:00
+  Backing up.
+16:04
+
+17:20
+  So trying this.
+17:36
+  No dice.  Enough for today.  Found that there is no pip.exe, in fact, so this may be the problem.
+17:43
+  Backing up.
+17:45
+
+31 Dec 22
+12:00
+  Decided the best idea is to load Python and PyQt from scratch, using the Python.org website.  Then we should get a working system.  After that we can fix guibits1_0.
+12:33
+  Removed all traces of Python from the system, and filled in my driving licence application at the same time.
+12:38
+  Downloaded Python 3.11.1.
+13:23
+  Finally got pip working by manually adding its path to PATH.  The path is
+  
+    %USERPROFILE%\AppData\Local\Programs\Python\Python311\Scripts
+    
+  which for some unaccountable reason was not added when I downloaded Python 3.11.  Thanks to the Internet and Google!
+13:26
+  Downloaded PyQt6 using pip.
+13:28
+  Tried Emily and got the same error as above.
+13:53
+  Fixed error and tried emily.py - OK.  Ran guibits1_0 test suite  - OK.  I think we've fixed it.
+13:55
+  Updated guibits1_0 in Program Files.
+13:56
+  Backing up.
+14:01
+
+10 Jan 23
+11:27
+  Discovered a flaw in GUIbits.  For Emily to implement the fat cursor properly, it must be possible to clear the rectangles in the pane, without clearing the text.  For symmetry, the client should also be able to clear the text strings without clearing the rectangles.  This requires the addition of two procedures to GUIbits 1.0:
+  
+    painting.clear_rectangles(win)
+    
+    writing.clear_text(win)
+   
+11:30
+  Breaking for drink.
+12:06
+  Continuing.
+  We can also retain windowing.clear(win), but implement it as
+  
+    painting.clear_rectangles(win)
+    writing.clear_text(win)
+    
+  So the first job is to update the manual.
+12:20
+  Break for chat with VAX re dead battery (2nd one in 6 months!).
+13:20
+  Backing up.
+13:24
+
+15:06
+  Continuing with manual update.
+15:14
+  Manual updated.
+  Backing up.
+15:22
+
+
+20:26
+  Starting on implementation of writing.clear_text(win).
+20:31
+  Well, that was easy!  Cut down version of windowing.clear.
+20:50
+  clear_text testing out OK.
+20:50
+  Backing up.
+20:54
+
+12 Jan 2023
+15:17
+  Starting on implementation of painting.clear_rectangles(win).
+15:28
+  Updated writing.clear_text so that it no longer clears the (thin) cursor.  This means that windowing.clear will have to do that explicitly.
+15:47
+  Strange error in clear_rectangles: the rectangles do not disappear, despite a f.update() being sent to PyQt.
+15:48
+  As soon as we modify the window by moving or resizing, the rectangles disappear.  Ergo, the update() at the end of clear_rectangles is not seen.
+16:02
+  Changed the update to repaint, but to no avail.
+16:07
+  OK, I think this is acceptable.  Almost anything we do to the window causes the rectangles to disappear.  I think this is just a quirk of PyQt6.
+16:12
+  Backing up.
+16:26
+
+18:30
+  Still not happy about this.  Trying updating the pane instead of the window.
+18:37
+  It works.  Need to test the "no pane" case.
+18:45
+  Working nicely.  Will now make the same correction to clear_text, as it's only the blinking cursor that is making it work, I think.
+18:56
+  Yep, that works too.  Very happy.
+18:57
+  Backing up.
+18:59
+
+15 Mar 23
+15:14
+  Found another error while testing emily0_9.  If we call
+  
+    printing.set_page_dimensions
+    
+  is called twice in succession, the PyQt6 message:
+  
+    QPaintDevice: Cannot destroy paint device that is being painted
+
+  appears.  It would be nice if set_page_dimensions gave a more meaningful message, such as 
+  
+    you have just called set_page_dimensions twice
+15:25
+  Looking into this.
+15:34
+  The bad message appears after the print job has been started (for the second time).
+16:07
+  This is quite a tricky problem.  Every time set_page_dimensions is called, a new PrintJob is set up in the global variable pj.  When set_page_dimensions fails, the print job must be terminated and pj must be set to None, otherwise calamity ensues.  Ensuring this happens.
+16:39
+  Got this working.  Needed to ensure continuity of pj, but fixed double-calling by using the _is_active flag of PrintJob.
+16:40
+  Breaking for tea.
+17:11
+  Continuing.
+17:17
+  printing.py testing out OK.
+17:22
+  Backing up.
+17:27
+
+16 Mar 23
+14:35
+  The global (module-local) variable pj needs to be called _pj to avoid exposure.
+14:38
+  Modifications made.
+14:47
+  printing.py testing out OK.
+14:48
+  Backing up.
+14:52

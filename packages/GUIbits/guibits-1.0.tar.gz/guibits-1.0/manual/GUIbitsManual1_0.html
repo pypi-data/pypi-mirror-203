@@ -1,0 +1,2523 @@
+<html>
+<head>
+<title>GUIbits Manual version 1.0</title>
+
+<style>
+  body {font-family: "Palatino Linotype",serif; font-size: 14pt; width: 600pt;}
+  body {background-color: #eeeeff}
+  h1 {text-align:center; color: #000088; font-size: 26pt}
+  h2 {color: #000088; font-size: 22pt}
+  h3 {color: #000088; font-size: 18pt}
+  h4 {color: #000088; font-size: 14pt}
+  h5 {color: #000088; font-size: 14pt}
+  p {font-family: "DejaVu Sans",sans-serif; font-size: 14pt}
+  dl {font-family: "DejaVu Sans",sans-serif; font-size: 14pt}
+  ol {font-family: "DejaVu Sans",sans-serif; font-size: 14pt}
+  ul {font-family: "DejaVu Sans",sans-serif; font-size: 14pt}
+  pre {font-size: 14pt}
+</style>
+
+
+</head>
+<body bgcolor="#eeeeff">
+
+<h1><b>GUI<i>bits</i></b> Manual version 1.0</font></h1>
+<hr>
+
+<h1><em>A simple contract-based Graphical User Interface package</em></h1>
+
+<!-------------------------------------------------------->
+<hr><!-------------------------------------------------------->
+
+<h2>Contents</h2>
+<ul type=none>
+  <li>1. <a href="#Introduction">Introduction</font></a>
+  <ul type=none>
+    <li>1.1 <a href="#How this document is organized">How this document is organized</a>
+  </ul>
+  <li>2. <a href="#Window">Window</a>
+  <ul type=none>
+    <li>2.1 <a href="#Window positioning">Window positioning</a>
+  </ul>
+  <li>3. <a href="#Font styles">Font styles</a>
+  <li>4. <a href="#Color">Color</a>
+  <li>5. <a href="#Writing">Writing</a>
+  <li>6. <a href="#Painting">Painting</a>
+  <li>7. <a href="#Cursor">Cursor</a>
+  <li>8. <a href="#Menus">Menus</a>
+  <li>9. <a href="#Dialogs">Dialogs</a>
+  <ul type=none>
+    <li>9.1 <a href="#show_message_dialog">show_message_dialog</a>
+    <li>9.2 <a href="#show_confirm_dialog">show_confirm_dialog</a>
+    <li>9.3 <a href="#show_input_dialog">show_input_dialog</a>
+    <li>9.4 <a href="#show_open_file_dialog">show_open_file_dialog</a>
+    <li>9.5 <a href="#show_save_file_dialog">show_save_file_dialog</a>
+    <li>9.6 <a href="#show_new_folder_dialog">show_new_folder_dialog</a>
+  </ul>
+  <li>10. <a href="#Keyboard (Character keys)">Keyboard (Character keys)</a>
+  <li>11. <a href="#Keyboard (Control keys)">Keyboard (Control keys)</a>
+  <li>12. <a href="#Mouse">Mouse</a>
+  <li>13. <a href="#Printing">Printing</a>
+  <li>14. <a href="#Other facilities">Other facilities</a>
+    <ul type="none">
+      <li>14.1 <a href="#latest_listing"> latest_listing</a>
+      <li>14.2 <a href="#stacking">stacking</a>
+      <li>14.3 <a href="#unicoding3_0">unicoding3_0</a>
+    </ul>
+  <li>15. <a href="#Precondition and postcondition">Precondition and postcondition</a>
+  <li>16. <a href="#Licence agreement">Licence agreement</a>
+  <li>17. <a href="#Acknowledgements">Acknowledgements</a>
+</ul>
+<hr><!-------------------------------------------------------->
+
+<h2><a name="Introduction">1. Introduction</font></a></h2>
+<p>
+<b>GUI<i>bits</i></b> is a Graphical User Interface package, consisting of independent <i>contractors</i>, which provides a simple and flexible Application Programmer Interface for applications involving a keyboard, mouse and screen.
+<p>
+Version 1.0 of <b>GUI<i>bits</i></b> is implemented in Python using PyQt and retains the platform-independence of this approach.
+<p>
+The overall design principles have been:
+<ol>
+<li>to avoid dependencies between different parts of the codebase, as far as this is possible.
+<li>to present as simple and straightforward an interface to the client as is possible.
+</ol>
+<p>
+To this end, all types are made completely opaque, that is, their internal structure is unknown to the client code, and they can only be manipulated using the supplied procedures.  Subtypes and supertypes are not used.  Each Python module of the package implements a <i>contractor</i>, a collection of types and procedures which covers an area of activity within the overall GUI.
+<p>
+Each procedure in a contractor is completely specified by its parameters and the <a href="#Precondition and postcondition">precondition</a> and <a href="#Precondition and postcondition">postcondition</a> relating to them.  Furthermore, each procedure is <i>diagnostically correct</i>: not only is it guaranteed that, if the precondition is satisfied, the procedure will terminate in a state satisfying the postcondition, but in addition, it is guaranteed that if the precondition is <em>not</em> satisified, the procedure will terminate with a (hopefully useful) diagnostic message.  In this way, the client can quickly amend their code, without having to delve into <b>GUI<i>bits</i></b>'s implementation details. 
+<p>
+To read more on contractors, minimizing dependencies and diagnostic correctness see my monograph <a href="https://sourceforge.net/projects/minimal-dependency-principle">"The Minimum Dependency Principle"</a>.
+<p>
+<b>GUI<i>bits</i></b> is incomplete.  It is hoped that clients will help to extend and improve the package, using the principles outlined above.  In part, <b>GUI<i>bits</i></b> is an experiment to see just how effective this approach is for producing flexible and robust software.
+
+<h3><a name="How this document is organized">1.1 How this document is organized</h3>
+<p>
+In the following sections, each contractor of <b>GUI<i>bits</i></b> is described in detail.  For each procedure, the <a href="#Precondition and postcondition">precondition</a> and <a href="#Precondition and postcondition">postcondition</a> are specified, and where appropriate, examples of use with screenshots are given.
+<hr><!-------------------------------------------------------->
+
+<h2><a name="Window">2. Window</a></h2>
+<p>
+An application communicates with the user through a <i>window</i> on the screen.  A window is a rectangular area of the screen, delimited by a coloured frame and having a title bar at the top.  The <i>contents</i> of a window appear inside this frame and consist of an optional menu bar at the top, a set of three zoom buttons on the left-hand side, and two scrollbars on the right-hand side and the bottom respectively.  The window contains a <i>viewport</i> through which the user can view the <i>pane</i> of the window.  The pane is transparent and the background of the window shows through it.  The user can manipulate the pane in three dimensions by the use of the scrollbars and zoom buttons.
+<p>
+When first displayed on the screen, the window is maximized.  The window can be manipulated by the user in the standard way (for example, it can be iconized or normalized, and when normalized its shape can be altered).
+<p>
+The client can perform initialization on the window by writing a <tt><b>window_opening</b></tt> callback procedure.  This procedure will be executed as soon as the window is shown on the screen by the <tt><b>show</b></tt> procedure.
+<p>
+If the user closes the window, the <tt><b>show</b></tt> procedure terminates the app. If you wish to change this default action, it is possible to specify a <tt><b>window_closing</b></tt> procedure. This procedure will be executed before the <tt><b>show</b></tt> procedure terminates.
+<p>
+All dimensions are in <em>points</em>, where a point is 1/72 inches, expressed as a Python <em>float</em>.
+
+<h3>Specification of <b><tt>windowing</tt></b></h3>
+
+<h4>Exposed types:</h4>
+
+<ul>
+  <li><a name="class Window">
+    <tt><b>class Window</b></tt></a>
+</ul>
+
+<h4>Specification of callback procedures:</h4>
+
+<ul>
+  <li><a name="window_closing(win)">
+    <tt><b>window_closing(win)</b></tt></a>
+    <ul type=none>
+      <li><b>pre:</b>
+      <ul>
+        <li>the user has pressed the Close button of the Window associated with this callback procedure
+        <li><tt><b>win</b> = </tt>Window on which the close event occurred
+      </ul>
+      <li><b>post: </b>        
+      <ul>
+        <li>returns True iff app is to close
+        <li>if True has been returned, clean-up has been done prior to shutdown
+      </ul>
+    </ul> 
+</ul>
+
+
+<ul>
+  <li><a name="window_opening(win)">
+    <tt><b>window_opening(win)</b></tt></a>
+    <ul type=none>
+      <li><b>pre:</b>
+      <ul>
+        <li>the Window has just appeared on the screen
+        <li><tt><b>win</b> = </tt>Window on which the opening event occurred
+      </ul>
+      <li><b>post: </b>        
+      <ul>
+        <li>client's initiation has been carried out
+      </ul>
+    </ul> 
+</ul>
+
+
+<h4>Exposed procedures:</h4>
+
+<ul>
+  <li><a name="clear(win)">
+    <tt><b>clear(win)</b></tt></a>
+    <ul type=none>
+      <li><b>pre:</b>
+      <ul>
+        <li><tt><b>win</b> = </tt>Window whose pane is to be cleared
+      </ul>
+      <li><b>post: </b>        
+      <ul>
+        <li><tt><b>win</b></tt>'s pane is, or shortly will be, clear of text and graphics 
+    </ul>
+  </ul>
+</ul>
+
+
+<ul>
+  <li><a name="new_window"><tt><b>new_window(fsize,t,w,h,zf)</b></tt>
+    <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>fsize</b> = </tt>point size of fonts used by this Window,
+              in range 6.0..24.0, as a float 
+      <li><tt><b>t</b> = </tt>title for this Window as Python string (may be empty)
+      <li><tt><b>w</b> = </tt>width of this Window's pane in points,
+          in range 10.0..1000.0, as a float
+      <li><tt><b>h</b> = </tt>height of this Window's pane in points,
+          in range 10.0..1000.0, as a float
+      <li><tt><b>zf</b> = </tt>zoom factor of this Window's pane in points,
+           as a float (0.10 ≤ zf ≤ 10.0)
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li>returns new Window variable with specified font size,
+        title, pane size and zoom factor
+    </ul>
+  </ul>
+</ul>
+
+<ul>
+  <li><a name="set_font_size"><tt><b>set_font_size(win,fsize)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>win</b> = </tt>Window whose font size is to be set
+      <li><tt><b>fsize</b> = </tt>new font size in points for <tt><b>win</b></tt>, as float in range 6.0..24.0
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li><tt><b>win</b></tt>'s font size is <tt><b>fsize</b></tt> points
+      <li>if present, <tt><b>win</b></tt>'s buttons have been set to the new font size
+    </ul>
+  </ul>
+</ul>
+
+
+<ul>
+  <li><a name="set_title"><tt><b>set_title(win,t)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>win</b> = </tt>Window whose title is to be set
+      <li><tt><b>t</b> = </tt>title for <tt><b>win</b></tt> as <tt><b>str</b></tt> (may be empty)
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li><tt><b>win</b></tt>'s title is <tt><b>t</b></tt>
+    </ul>
+  </ul>
+</ul>
+
+
+<ul>
+  <li><a name="set_zoom_factor"><tt><b>set_zoom_factor(win,d)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>win</b> = </tt>Window whose zoom factor is to be set
+      <li><tt><b>d</b> = </tt>zoom factor for <tt><b>win</b></tt> (0.10 &le; <tt><b>d</b></tt> &le; 10.0), as a float
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li><tt><b>win</b></tt>'s zoom factor is <tt><b>d</b></tt>
+    </ul>
+  </ul>
+</ul>
+
+
+<ul>
+  <li><a name="show"><tt><b>show(win,wo,wc)</b></tt>
+    <ul type=none>
+      <li><b>pre:</b>  
+      <ul>
+        <li><tt><b>win</b> = </tt>Window to be shown
+        <li><tt><b>wo</b> = </tt>window_opening callback procedure for <tt><b>win</b></tt>, or None
+        <li><tt><b>wc</b> = </tt>window_closing callback procedure for <tt><b>win</b></tt>, or None
+      </ul>
+      <li><b>post:</b>
+      <ul>
+        <li>Window <tt><b>win</b></tt> has been displayed maximized on the screen,
+            any <tt><b>window_opening</b></tt> procedure has been executed,
+            the user has interacted with the window,
+            the user has pressed the close button,
+            and any <tt><b>window_closing</b></tt> procedure has been executed
+        <li>The application has been terminated
+        <li>This method does not return to the client code
+      </ul>            
+    </ul>
+</ul>
+
+<h3>Example</font></h3>
+<p>
+The program fragment:
+<p>
+<table border align=center>
+<tr>
+<td>
+<pre>
+win = windowing.new_window(20.0,"Demo Window",600.0,450.0,1.0)
+windowing.show(win,None,None)
+</pre>
+</td>
+</tr>
+</table>
+<p>
+produces the following window on the screen:
+<center>
+<img src="demo_window.png" alt="Demo Window" width="800" height="400">
+</center>
+
+<ul>
+  <li><a name="zoom_factor_of"><tt><b>zoom_factor_of(win)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>win</b> = </tt>Window whose current zoom factor is required
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li><tt><b>win</b></tt>'s current zoom factor has been returned as a float (1.0 = no zoom)
+    </ul>
+  </ul>
+</ul>
+
+<hr><!-------------------------------------------------------->
+<h2><a name="Window positioning">2.1. Window positioning</font></a></h2>
+<p>
+This group of procedures allows a client to find the current normalized bounds of a window, save them externally and restore them.  
+The <i>bounds</i> of a window are the x- and y-offset of the top left-hand corner of its contents from the top left-hand corner of the screen, and the width and height of its contents.  All measurements are in points.
+The current bounds are those of the latest normalized window, i.e. intermediate in size between iconized and full-screen.
+<p>
+A memento variable of type <tt><b>WindowBounds</b></tt> is used to hold the window's bounds.
+
+<h3>Specification of <tt><b>window_bounding</b></tt></h3>
+
+<h4>Exposed types:</font></h4>
+
+<ul>
+  <li><a name="class WindowBounds">
+    <tt><b>class WindowBounds</b></tt></a>
+</ul>
+
+<h4>Exposed procedures:</font></h4>
+
+<ul>
+  <li><a name="get_bounds(win)"><tt><b>get_bounds(win)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>win</b> = </tt>Window whose current bounds are required
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li><tt><b>win</b></tt>'s current normalized window bounds have been returned, as a WindowBounds variable
+    </ul>
+  </ul>
+</ul>
+
+<ul>
+  <li><a name="get_height(wb)"><tt><b>get_height(wb)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>wb</b> = </tt>WindowBounds memento variable
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li><tt><b>wb</b></tt>'s height in points has been returned, as a float
+    </ul>
+  </ul>
+</ul>
+
+<ul>
+  <li><a name="get_width(wb)"><tt><b>get_width(wb)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>wb</b> = </tt>WindowBounds memento variable
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li><tt><b>wb</b></tt>'s width in points has been returned, as a float
+    </ul>
+  </ul>
+</ul>
+
+<ul>
+  <li><a name="get_x(wb)"><tt><b>get_x(wb)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>wb</b> = </tt>WindowBounds memento variable
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li><tt><b>wb</b></tt>'s x offset in points from the top left-hand corner of the screen has been returned, as a float
+    </ul>
+  </ul>
+</ul>
+
+<ul>
+  <li><a name="get_y(wb)"><tt><b>get_y(wb)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>wb</b> = </tt>WindowBounds memento variable
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li><tt><b>wb</b></tt>'s y offset in points from the top left-hand corner of the screen has been returned, as a float
+    </ul>
+  </ul>
+</ul>
+
+<ul>
+  <li><a name="new_bounds()"><tt><b>new_bounds()</b></tt></a>
+  <ul type=none>
+    <li><b>post:</b>
+    <ul>
+      <li>a new WindowBounds variable with default values has been returned
+    </ul>
+  </ul>
+</ul>
+
+<ul>
+  <li><a name="set_bounds(win,wb)"><tt><b>set_bounds(win,wb)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>win</b> = </tt>Window whose normalized bounds are to be modified
+      <li><tt><b>wb</b> = </tt>WindowBounds memento variable containing the required bounds
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li><tt><b>win</b></tt>'s normalized bounds have been updated as required
+    </ul>
+  </ul>
+</ul>
+
+<ul>
+  <li><a name="set_height(wb,h)"><tt><b>set_height(wb,h)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>wb</b> = </tt>WindowBounds memento variable
+      <li><tt><b>h</b> = </tt>required height in points, as a float
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li><tt><b>wb</b></tt>'s height has been updated as required
+    </ul>
+  </ul>
+</ul>
+
+<ul>
+  <li><a name="set_width(wb,w)"><tt><b>set_width(wb,w)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>wb</b> = </tt>WindowBounds memento variable
+      <li><tt><b>w</b> = </tt>required width in points, as a float
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li><tt><b>wb</b></tt>'s width has been updated as required
+    </ul>
+  </ul>
+</ul>
+
+<ul>
+  <li><a name="set_x(wb,x)"><tt><b>set_x(wb,x)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>wb</b> = </tt>WindowBounds memento variable
+      <li><tt><b>x</b> = </tt>required x offset in points from top left-hand corner of screen, as a float
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li><tt><b>wb</b></tt>'s x offset has been updated as required
+    </ul>
+  </ul>
+</ul>
+
+<ul>
+  <li><a name="set_y(wb,y)"><tt><b>set_y(wb,y)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>wb</b> = </tt>WindowBounds memento variable
+      <li><tt><b>y</b> = </tt>required y offset in points from top left-hand corner of screen, as a float
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li><tt><b>wb</b></tt>'s y offset has been updated as required
+    </ul>
+  </ul>
+</ul>
+
+
+<hr><!-------------------------------------------------------->
+<hr><!-------------------------------------------------------->
+<h2><a name="Font styles">3. Font styles</font></a></h2>
+<p>
+<b><tt>font_styling</tt></b> is a contractor that defines the font styles the client can use, and provides a container for storing a set of font styles.
+
+<h3>Specification of <b><tt>font_styling</tt></b></font></h3>
+
+<h4>Exposed types:</font></h4>
+
+<ul>
+  <li><a name="FontStyle">
+    <tt><b>enum FontStyle</b></tt></a>
+    <ul>
+      <li><tt><b>BOLD</b></tt>
+      <li><tt><b>ITALIC</b></tt>
+    </ul>
+</ul>
+
+<ul>
+  <li><a name="class FontStyles">
+    <tt><b>class FontStyles</b></tt></a>
+</ul>
+
+<h4>Exposed procedures:</font></h4>
+
+<ul>
+  <li><a name="contains(fss,fs)">
+    <tt><b>contains(fss,fs)</b></tt>
+    <ul type=none>
+      <li><b>pre:</b>
+      <ul>
+        <li><tt><b>fss</b> = </tt>font style set to be tested, as FontStyles
+        <li><tt><b>fs</b> = </tt> font style to be tested for membership of <tt><b>fss</b></tt>
+      </ul>
+      <li><b>post: </b>        
+      <ul>
+        <li>returns true iff <tt><b>fss</b></tt> contains <tt><b>fs</b></tt>
+    </ul>
+  </ul>
+</ul>
+
+<ul>
+  <li><a name="exclude(fss,fs)">
+    <tt><b>exclude(fss,fs)</b></tt>
+    <ul type=none>
+      <li><b>pre:</b>
+      <ul>
+        <li><tt><b>fss</b> = </tt>font style set from which <tt><b>fs</b></tt> is to be excluded, as FontStyles
+      </ul>
+      <li><b>post: </b>        
+      <ul>
+        <li><tt><b>fss</b></tt> does not contain <tt><b>fs</b></tt>
+    </ul>
+  </ul>
+</ul>
+
+<ul>
+  <li><a name="include(fs,fs)">
+    <tt><b>include(fss,fs)</b></tt>
+    <ul type=none>
+      <li><b>pre:</b>
+      <ul>
+        <li><tt><b>fss</b> = </tt>font style set in which <tt><b>fs</b></tt> is to be included, as FontStyles
+      </ul>
+      <li><b>post: </b>        
+      <ul>
+        <li><tt><b>fss</b></tt> contains <tt><b>fs</b></tt>
+    </ul>
+  </ul>
+</ul>
+
+<ul>
+  <li><a name="new_font_styles()">
+    <tt><b>new_font_styles()</b></tt>
+    <ul type=none>
+      <li><b>pre:</b>
+      <ul>
+        <li>none
+      </ul>
+      <li><b>post: </b>        
+      <ul>
+        <li>a new empty <tt><b>FontStyles</b></tt> set has been returned
+    </ul>
+  </ul>
+</ul>
+
+
+<hr><!-------------------------------------------------------->
+<hr><!-------------------------------------------------------->
+<h2><a name="Color">4. Color</font></a></h2>
+<p>
+<b><tt>coloring</tt></b> is a contractor that defines the colors used in <b>GUI<i>bits</i></b>.  Colors are represented as a triple (red,green,blue) where each color coordinate is a float between 0.0 and 1.0.  This format is consistent with the Python standard.  The standard library module <tt><b>colorsys.py</b></tt> defines bidirectional conversions of color values between colors expressed in the RGB (Red Green Blue) color space and other coordinate systems.
+
+<h3>Specification of <b><tt>coloring</tt></b></h3>
+
+<h4>Exposed constants</h4>
+<ul>
+  <li><a name="BLACK">
+    <tt><b>BLACK</b></tt></a>
+  <li><a name="WHITE">
+    <tt><b>WHITE</b></tt></a>
+</ul>
+
+<h4>Exposed types:</h4>
+
+<ul>
+  <li><a name="class Color">
+    <tt><b>class Color:</b></tt></a>
+</ul>
+
+<h4>Exposed procedures:</h4>
+
+<ul>
+  <li><a name="get_blue(c)">
+    <tt><b>get_blue(c)</b></tt>
+    <ul type=none>
+      <li><b>pre:</b>
+      <ul>
+        <li><tt><b>c</b> = </tt>Color value whose blue coordinate is to be found
+      </ul>
+      <li><b>post: </b>        
+      <ul>
+        <li>blue coordinate has been returned as a float in the range 0.0 to 1.0
+    </ul>
+  </ul>
+</ul>
+
+
+<ul>
+  <li><a name="get_green(c)">
+    <tt><b>get_green(c)</b></tt>
+    <ul type=none>
+      <li><b>pre:</b>
+      <ul>
+        <li><tt><b>c</b> = </tt>Color value whose green coordinate is to be found
+      </ul>
+      <li><b>post: </b>        
+      <ul>
+        <li>green coordinate has been returned as a float in the range 0.0 to 1.0
+    </ul>
+  </ul>
+</ul>
+
+
+<ul>
+  <li><a name="get_red(c)">
+    <tt><b>get_red(c)</b></tt>
+    <ul type=none>
+      <li><b>pre:</b>
+      <ul>
+        <li><tt><b>c</b> = </tt>Color value whose red coordinate is to be found
+      </ul>
+      <li><b>post: </b>        
+      <ul>
+        <li>red coordinate has been returned as a float in the range 0.0 to 1.0
+    </ul>
+  </ul>
+</ul>
+
+
+<ul>
+  <li><a name="new_color(r,g,b)">
+    <tt><b>new_color(r,g,b)</b></tt>
+    <ul type=none>
+      <li><b>pre:</b>
+      <ul>
+        <li><tt><b>r</b> = </tt>red coordinate of color, as a float between 0.0 and 1.0
+        <li><tt><b>g</b> = </tt>green coordinate of color, as a float between 0.0 and 1.0
+        <li><tt><b>b</b> = </tt>blue coordinate of color, as a float between 0.0 and 1.0
+      </ul>
+      <li><b>post: </b>        
+      <ul>
+        <li>a new Color value has been returned
+    </ul>
+  </ul>
+</ul>
+
+
+<hr><!-------------------------------------------------------->
+<hr><!-------------------------------------------------------->
+<h2><a name="Writing">5. Writing</a></h2>
+<p>
+This class permits the client to display text on the pane of a window by using the appropriate <i>write</i> method.  It is also possible to clear all text from the pane.
+
+<h3>Specification of <b><tt>writing</tt></b></h3>
+
+<h4>Exposed procedures:</h4>
+
+<ul>
+  <li><a name="clear_text">
+    <tt><b>clear_text(win)</b></tt></a>      
+    <ul type=none>
+      <li><b>pre:</b>
+      <ul>
+        <li><tt><b>win</b> = </tt>Window whose text is to be cleared
+        <li><tt><b>win</b></tt> must be present on the screen
+      </ul>
+      <li><b>post: </b>        
+      <ul>
+        <li><tt><b>win</b></tt> is clear of text
+      </ul>
+    </ul>
+  </ul>
+</ul>
+
+<ul>
+  <li><a name="width_in_points_of">
+    <tt><b>width_in_points_of(win,s,fn,fss,fsize)</b></tt></a>      
+    <ul type=none>
+      <li><b>pre:</b>
+      <ul>
+        <li><tt><b>win</b> = </tt>Window on which <tt><b>s</b></tt> is to be written
+        <li><tt><b>win</b></tt> must be present on the screen
+        <li><tt><b>s</b> = </tt>string to be measured, as a str
+        <li><tt><b>fn</b> = </tt>name of font for <tt><b>s</b></tt>, as a str
+        <li><tt><b>fss</b> = </tt>set of font_styling.FontStyles for <tt><b>s</b></tt> (empty set implies the string should be measured plain)
+        <li><tt><b>fsize</b> = </tt>point size of font for <tt><b>s</b></tt>, in range 6.0..72.0, as a float
+      </ul>
+      <li><b>post: </b>        
+      <ul>
+        <li>the width of <tt><b>s</b></tt> in points, for the given window, font name, font styles and font size, has been returned as a float
+      </ul>
+      <li><b>note:</b>
+      <ul>
+        <li>in general:        
+        <ul type=none>
+          <li>width_in_points_of(s1+s2) &ne; width_in_points_of(s1)+width_in_points_of(s2)
+        </ul>
+      </ul>
+    </ul>
+  </ul>
+</ul>
+
+<ul>
+  <li><a name="write_string">
+    <tt><b>write_string(win,s,fn,fss,fsize,x,y,c)</b></tt></a>
+    <ul type=none>
+      <li><b>pre:</b>
+      <ul>
+        <li><tt><b>win</b> = </tt>Window in which Unicode string <tt><b>s</b></tt> is to be written
+        <li><tt><b>win</b></tt> must be present on the screen
+        <li><tt><b>s</b> = </tt>string to be written on <tt><b>win</b></tt>'s pane, as a str
+        <li><tt><b>fn</b> = </tt>font name of required font for string <tt><b>s</b></tt>, as a string
+        <li><tt><b>fss</b> = </tt>set of FontStyles required for string <tt><b>s</b></tt> (empty set implies the string should be rendered plain)
+        <li><tt><b>fsize</b> = </tt>required point size of font for string <tt><b>s</b></tt>, in range 6.0..72.0, as a float
+        <li><tt><b>x</b> = </tt>horizontal offset in points of left-hand edge of <tt><b>s</b></tt> from left-hand edge of <tt><b>win</b></tt>'s pane, as a float
+        <li><tt><b>y</b> = </tt>vertical offset in points of top of <tt><b>s</b></tt> from top of <tt><b>win</b></tt>'s pane, as a float
+        <li><tt><b>c</b> = <b>coloring.Color</b></tt> in which <tt><b>s</b></tt> is to be written on <tt><b>win</b></tt>'s pane
+      </ul>
+      <li><b>post: </b>        
+      <ul>
+        <li>the string <tt><b>s</b></tt> has been, or will shortly be, written to <tt><b>win</b></tt>'s pane as specified
+        <li>the horizontal offset in points of the right-hand edge of the written string from the left-hand edge of <tt><b>win</b></tt>'s pane has been returned as a float
+      </ul>
+    </ul>
+  </ul>
+</ul>
+
+<h3>Example</h3>
+<p>
+Here is an example of a program that uses <tt><b>writing.write_string</b></tt>:
+<p>
+<table border align=center>
+<tr>
+<td>
+<pre>
+import coloring
+import font_styling
+import windowing
+import writing
+
+# author R.N.Bosworth
+
+# version 26 Jul 2021   16:12
+"""
+Demo of writing.write_string.
+
+Copyright (C) 2014,2015,2019,2020,2021  R.N.Bosworth
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License (gpl.txt) for more details.
+"""
+
+# private members
+# ---------------
+_PLAIN_STYLE = font_styling.new_font_styles()
+_BLACK = coloring.new_color(0.0,0.0,0.0)
+_FONT_SIZE = 20.0
+
+
+# test program
+# ------------
+
+def window_opening(win):
+  writing.write_string(win,"hello","Times New Roman",_PLAIN_STYLE,24.0,20.0,30.0,_BLACK)
+
+def _test():
+  print("Demo of writing.write_string")
+  # create a window
+  win = windowing.new_window(_FONT_SIZE,"Demo window 2",600.0,450.0,1.0)
+  windowing.show(win,window_opening,None)
+    
+
+if __name__ == "__main__":
+  import sys
+  _test()
+  print("All tests OK")
+</pre>
+</td>
+</tr>
+</table>
+
+<p>
+When run, the following window is shown on the screen:
+<center>
+<img src="demo_window2.png" alt="Demo Window 2" width="800" height="400">
+</center>
+
+<p>
+By manipulation of the scrollbars and zoom buttons the appearance of the pane can be modified to the following, for example:
+<center>
+<img src="demo_window2A.png"alt="Demo Window 2A" width="800" height="400">
+</center>
+<p>
+The demonstration program that produces this pane, <i>demo_window2.py</i>, is included with this manual.
+
+<hr><!-------------------------------------------------------->
+<hr><!-------------------------------------------------------->
+<h2><a name="Painting">6. Painting</a></h2>
+<p>
+The <b><tt>painting</tt></b> contractor allows the client to paint a rectangular section of the pane in any desired color, and also to erase all rectangles from the pane.
+
+<h3>Specification of <b><tt>painting</tt></b></h3>
+
+<h4>Exposed procedures:</h4>
+<ul>
+  <li><a name="clear_rectangles">
+    <tt><b>clear_rectangles(win)</b></tt></a>
+    <ul type=none>
+      <li><b>pre:</b>
+      <ul>
+        <li><tt><b>win</b> = </tt>Window in whose pane all rectangles are to be cleared
+        <li><tt><b>win</b></tt> must be showing on the screen
+      </ul>
+      <li><b>post: </b>        
+      <ul>
+        <li><tt><b>win</b></tt>'s pane is clear of rectangles
+      </ul>
+    </ul>
+  </ul>
+</ul>
+
+<ul>
+  <li><a name="paint_rectangle">
+    <tt><b>paint_rectangle(win,x,y,w,h,c)</b></tt></a>
+    <ul type=none>
+      <li><b>pre:</b>
+      <ul>
+        <li><tt><b>win</b> = </tt>Window in whose pane rectangle is to be painted
+        <li><tt><b>win</b></tt> must be showing on the screen
+        <li><tt><b>x</b> = </tt>horizontal offset in points of top left-hand corner of rectangle from left-hand edge of <tt><b>win</b></tt>'s pane
+        <li><tt><b>y</b> = </tt>vertical offset in points of top left-hand corner of rectangle from top of <tt><b>win</b></tt>'s pane
+        <li><tt><b>w</b> = </tt>width of rectangle in points
+        <li><tt><b>h</b> = </tt>height of rectangle in points
+        <li><tt><b>c</b> = <b>coloring.Color</b></tt> in which rectangle is to be drawn on <tt><b>win</b></tt>'s pane
+        <li><tt><b>(x,y,w,h)</b></tt> must be such that the rectangle lies entirely within <tt><b>win</b></tt>'s pane
+      </ul>
+      <li><b>post: </b>        
+      <ul>
+        <li>the rectangle has been drawn on <tt><b>win</b></tt>'s pane as specified
+        <li>the pane of <tt><b>win</b></tt> is positioned such that the rectangle is visible 
+      </ul>
+    </ul>
+  </ul>
+</ul>
+
+
+<hr><!-------------------------------------------------------->
+<hr><!-------------------------------------------------------->
+<h2><a name="Cursor">7. Cursor</a></h2>
+<p>
+This contractor allows the client to display a flashing cursor anywhere in the pane, ensuring the cursor is visible to the user, and also to remove it from the pane.
+
+<h3>Specification of <b><tt>cursoring</tt></b></h3>
+
+<h4>Exposed procedures:</h4>
+
+<ul>
+  <li><a name="draw_cursor">
+    <tt><b>draw_cursor(win,fsize,x,y,c)</b></tt></a>
+    <ul type=none>
+      <li><b>pre:</b>
+      <ul>
+        <li><tt><b>win</b> = </tt>Window in whose pane cursor is to be drawn
+        <li><tt><b>win</b></tt> must be showing on the screen
+        <li><tt><b>fsize</b> = </tt>required point size of cursor, in range 6.0..72.0, as float
+        <li><tt><b>x</b> = </tt>horizontal offset in points of center of cursor from left-hand edge of <tt><b>win</b></tt>'s pane
+        <li><tt><b>y</b> = </tt>vertical offset in points of top of cursor from top of <tt><b>win</b></tt>'s pane
+        <li><tt><b>c</b> = <b>coloring.Color</b></tt> in which cursor is to be drawn on <tt><b>win</b></tt>'s pane
+        <li><tt><b>(x,y)</b></tt> must be such that cursor lies entirely within <tt><b>win</b></tt>'s pane
+      </ul>
+      <li><b>post: </b>        
+      <ul>
+        <li>the cursor has been drawn on <tt><b>win</b></tt>'s pane as specified
+        <li>the pane of <tt><b>win</b></tt> is positioned such that the cursor is visible 
+      </ul>
+    </ul>
+  </ul>
+</ul>
+<ul>
+  <li><a name="wipe_cursor">
+    <tt><b>wipe_cursor(win)</b></tt></a>
+    <ul type=none>
+      <li><b>pre:</b>
+      <ul>
+        <li><tt><b>win</b> = </tt>Window in which any cursor is to be wiped
+      </ul>
+      <li><b>post: </b>        
+      <ul>
+        <li>the cursor does not appear in the pane of <tt><b>win</b></tt>
+      </ul>
+    </ul>
+  </ul>
+</ul>
+
+
+<hr><!-------------------------------------------------------->
+<hr><!-------------------------------------------------------->
+<h2><a name="Menus">8. Menus</a></h2>
+
+<p>
+These procedures allow you to display menus of any length on the menu bar of a window or as a pop-up in the window, and to nest menus to any depth.  All sizes and positions are in points.  Positions are measured relative the top-left-hand corner of the window contents, i.e. the point just below the left-hand end of the title bar.
+
+<h3>Specification of <b><tt>menuing</tt></b></h3>
+
+<h4>Exposed types:</h4>
+
+<ul>
+  <li><a name="class Menu">
+    <tt><b>class Menu</b></tt></a>
+</ul>
+
+<ul><a name="MenuReply">
+  <li><tt><b>enum MenuReply</b></tt></a>
+  <ul>
+    <li><tt><b>NORMAL</b></tt>
+    <li><tt><b>ABORT</b></tt>
+  </ul>
+</ul>
+
+<h4>Exposed callback procedures:</h4>
+
+<ul>
+  <li><a name="menu_item_hit(win,x,y,l)">
+    <tt><b>menu_item_hit(win,x,y,l)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li>menu item associated with this callback procedure has been hit by user
+      <li><b><tt>win</tt></b> = windowing.Window where mouse-hit occurred
+      <li><b><tt>x,y</tt></b> = x and y offsets of mouse hit from top left-hand corner of window's contents, in points as float
+      <li><b><tt>l</tt></b> = label of menu item hit by the user
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li>action required by user has been carried out
+    </ul>
+  </ul>
+</ul>
+
+
+<h4>Exposed procedures:</h4>
+
+<ul>
+  <li><a name="add_menu_bar_item(win,fsize,l,menu_item_hit)">
+    <tt><b>add_menu_bar_item(win,fsize,l,menu_item_hit)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>win</b> = </tt>window to which menu bar item is to be added
+      <li><tt><b>fsize</b> = </tt>font size in points for label of menu bar item, in range 6.0..24.0, as float
+      <li><tt><b>l</b> = </tt>label of menu bar item, as Python string of at least one character
+      <li><tt><b>menu_item_hit</b> = </tt>callback procedure for this menu bar item
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li>if <tt><b>win</b></tt> has no menu bar, one has been created
+      <li>the specified menu bar item has been appended to the menu bar of <tt><b>win</b></tt>
+    </ul>
+  </ul>
+</ul>
+
+<ul>
+  <li><a name="add_menu_item(m,fsize,l,menu_item_hit)">
+    <tt><b>add_menu_item(m,fsize,l,menu_item_hit)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>m</b> = </tt>menuing.Menu to which menu item is to be added
+      <li><tt><b>fsize</b> = </tt>font size in points of menu item to be added to <tt><b>m</b></tt>, in range 6.0..24.0, as float
+      <li><tt><b>l</b> = </tt>label of menu item to be added to <tt><b>m</b></tt>, as Python string
+      <li><tt><b>menu_item_hit</b> = </tt>callback procedure for menu item to be added to <tt><b>m</b></tt>, or <tt><b>None</b></tt> if none
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li>specified menu item has been appended to <tt><b>m</b></tt>
+      <li>if <tt><b>menu_item_hit</b></tt> was <tt><b>None</b></tt>, the menu item has been disabled,
+            otherwise, the user hitting the menu item will result in the callback procedure being activated
+    </ul>
+  </ul>
+</ul>
+
+<ul>
+  <li><a name="add_separator(m)">
+    <tt><b>add_separator(m)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>m</b> = </tt>menuing.Menu to which separator is to be added
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li>a horizontal separator bar has been appended to <tt><b>m</b></tt>
+    </ul>
+  </ul>
+</ul>
+
+<ul>
+  <li><a name="display(m,win,x,y)">
+    <tt><b>display(m,win,x,y)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>m</b> = </tt>menuing.Menu to be displayed
+      <li><tt><b>win</b> = </tt>windowing.Window within which menu is to be displayed
+      <li><tt><b>win</b></tt> is showing on screen
+      <li><tt><b>(x,y)</b> = </tt>position in points in <tt><b>win</b></tt> at which <tt><b>m</b></tt> is to be displayed, relative to the top left-hand corner of <tt><b>win</b></tt>'s contents, as floats
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li><tt><b>m</b></tt> has been displayed at <tt><b>(x,y)</b></tt> relative to the top left-hand corner of <tt><b>win</b></tt>'s contents
+      <li>the user has responded and any callbacks requested by the user have been executed
+      <li><tt><b>m</b></tt> has been hidden
+      <li>if the user aborted the menu (e.g. by pressing the window close button),
+        <ul style="list-style-type:none;">
+          <li><tt><b>MenuReply.ABORT</b></tt> has been returned
+        </ul>
+      <li>else
+        <ul style="list-style-type:none;">
+          <li><tt><b>MenuReply.NORMAL</b></tt> has been returned
+        </ul>
+    </ul>
+  <li><b>note:</b>
+    <ul>
+      <li>the <tt><b>ABORT</b></tt> signal is only relevant if the menuing.display is executed from the window-closing callback
+    </ul>
+  </ul>
+</ul>
+
+<ul>
+  <li><a name="new_menu(win)">
+    <tt><b>new_menu(win)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>win</b> = </tt>windowing.Window for which this menu is being created
+      <li>win has been created and shown on screen
+
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li>a new <tt><b>menuing.Menu</b></tt> has been returned
+    </ul>
+  </ul>
+</ul>
+
+<ul>
+  <li><a name="set_menu_bar_font_size"><tt><b>set_menu_bar_font_size(win,fsize)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>win</b> = </tt>windowing.Window whose menu bar's font size is to be set
+      <li><tt><b>fsize</b> = </tt>new font size in points for <tt><b>win</b></tt>'s menu bar, in range 6.0..24.0, as float
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li>the font size of all <tt><b>win</b></tt>'s menu bar's items has been set to <tt><b>fsize</b></tt> points
+    </ul>
+  </ul>
+</ul>
+<h3>Examples</h3>
+<p>
+The following program fragment displays a window with two menu buttons in its menu bar:
+<p>
+<table border align=center>
+<tr>
+<td>
+<pre>
+...
+def file_menu_item_hit(win,x,y,l):
+  print("File menu item hit at "+str(x)+","+str(y));
+  print("Label="+l)
+
+def font_menu_item_hit(win,x,y,l):
+  print("Font menu item hit at "+str(x)+","+str(y));
+  print("Label="+l)
+
+w = windowing.new_window(font_size,"Menu Example",800.0,600.0,1.0)
+menuing.add_menu_bar_item(w,font_size,"File",file_menu_item_hit)
+menuing.add_menu_bar_item(w,font_size,"Font",font_menu_item_hit)
+windowing.show(w,None,None)
+...
+</pre>
+</td>
+</tr>
+</table>
+<p>
+This produces the following window:
+<center>
+<img src="menu_example.png" alt="Menu Example" width="800" height="400">
+</center>
+
+<p>
+Note that when run, the program prints the position of the mouse-hit relative to the top left-hand corner of the menu bar.  For example:
+<p>
+<table border align=center>
+<tr>
+<td>
+<pre>
+File menu item hit at 29.25,25.5
+Label=File
+Font menu item hit at 70.5,23.25
+Label=Font
+</pre>
+</td>
+</tr>
+</table>
+<p>
+We can easily add menus to the menu buttons.  We need to modify the file_menu_item_hit callback function to set up and display a popup menu, for example:
+<p>
+<table border align=center>
+<tr>
+<td>
+<pre>
+def file_menu_item_hit(win,x,y,l):
+  """
+  pre:
+    menu item associated with this callback procedure has been hit by user
+    win = windowing.Window where mouse-hit occurred
+    x,y = x and y offsets of mouse hit from top left-hand corner of window's contents, in points as float
+    
+  post:
+    file menu has been displayed and user has responded
+    
+  test:
+    once thru
+  """
+  print("File menu item hit at "+str(x)+","+str(y));
+  m = menuing.new_menu(win)
+  menuing.add_menu_item(m,font_size,"Open",file_open_menu_item_listener)
+  menuing.add_separator(m)
+  menuing.add_menu_item(m,font_size,"Save",None)
+  menuing.add_menu_item(m,font_size,"Save As",file_save_as_menu_item_listener)
+  menuing.add_separator(m)
+  menuing.add_menu_item(m,font_size,"Close",file_close_menu_item_listener)
+  menuing.display(m,win,x,y)
+</pre>
+</td>
+</tr>
+</table>
+<p>
+As the labels on the Font menu need to be tagged to show which value is current, we need a couple of small procedures:
+<p>
+<table border align=center>
+<tr>
+<td>
+<pre>
+def tag_of(b):
+  """
+  pre:
+    b = true, if bullet point is to be returned
+        else blank string is returned
+
+  post:
+    appropriate string has been returned
+
+  test:
+    b = True
+    b = False
+  """
+  tag = ""
+  if b:
+    tag += '\u2022'  # unicode bullet point
+    tag += ' '
+  else:
+    tag += "  "
+  return tag
+  
+  
+def tagged_label_of(l,sv):
+  """
+  pre:
+    l = label to be tagged, as string
+    sv = value of label which is currently selected. as string
+  
+  post:
+    tagged version of label has been returned, as string
+    
+  test:
+    l is selected
+    l is not selected
+  """
+  return tag_of(l == sv) + l
+</pre>
+</td>
+</tr>
+</table>
+
+<p>
+Then we can modify the font_menu_item_hit callback function as follows:
+<p>
+<table border align=center>
+<tr>
+<td>
+<pre>
+def font_menu_item_hit(win,x,y,l):
+  """
+  pre:
+    menu item associated with this callback procedure has been hit by user
+    win = windowing.Window where mouse-hit occurred
+    x,y = x and y offsets of mouse hit from top left-hand corner of window's contents, 
+            in points as float 
+  post:
+    font menu has been displayed and user has responded
+  """
+  print("Font menu item hit at "+str(x)+","+str(y))
+  print("  font_name="+font_name)
+  m = menuing.new_menu(win)
+  menuing.add_menu_item(m,font_size,tagged_label_of("Courier New",font_name), \
+                        font_courier_menu_item_listener)
+  menuing.add_menu_item(m,font_size,tagged_label_of("Times New Roman",font_name), \
+                        font_times_menu_item_listener)
+  menuing.display(m,win,x,y)
+</pre>
+</td>
+</tr>
+</table>
+<p>
+The following picture shows the result when the Font menu button is hit, and "Courier New" is the current font.
+<center>
+<img src="menu_example2.png" alt="Menu Example 2" width="800" height="400">
+</center>
+<p>
+We can also easily make a drop-down menu appear wherever the user performs a right mouse-click. We need to create a MouseListener which is derived from <a href="#mousing.MouseListener">mousing.MouseListener</a>:
+<p>
+<table border align=center>
+<tr>
+<td>
+<pre>
+class MyMouseListener(mousing.MouseListener):
+  ...
+
+  def mouse_popup(self,x,y,win,window_x,window_y):
+    """
+    pre:
+      the user has gestured that a popup menu should be displayed. 
+        On some platforms, this is done by clicking the right mouse button.
+      self = pane for this mouse event
+      (x,y) = position in points at which the mouse pointer was clicked, 
+                relative to the top left-hand corner of the window's pane
+      win = window in which the gesture was made
+      (window_x,window_y) = position in points required for popup menu, 
+                              relative to the top left-hand corner 
+                                of the window's contents
+        
+    post:
+      the action (if any) required by the user has been carried out
+    """
+    print("mouse_popup hit")
+    print("window_x=" + str(window_x))
+    print("window_y=" + str(window_y))
+    _m = menuing.new_menu(win)
+    menuing.add_menu_item(_m,12.0,"Action 1",None)
+    menuing.add_menu_item(_m,12.0,"Action 2",None)
+    menuing.display(_m,win,window_x,window_y)
+</pre>
+</td>
+</tr>
+</table>
+<p>
+and then attach this callback procedure to our window, in the window_opening callback:
+<p>
+<table border align=center>
+<tr>
+<td>
+<pre>
+def window_opening(win):
+  """
+  pre:
+    win = Window on which the opening event occurred 
+    win has just appeared on the screen
+    
+  post:
+    client's initiation has been carried out 
+  """
+  mousing.attach(MyMouseListener(),win)
+</pre>
+</td>
+</tr>
+</table>
+<p>
+We can then display the window with this window_opening callback:
+<p>
+<table border align=center>
+<tr>
+<td>
+<pre>
+  win = windowing.new_window(font_size,"Menu Example 3",800.0,600.0,1.0)
+  windowing.show(win,window_opening,None)
+</pre>
+</td>
+</tr>
+</table>
+
+<p>
+The following picture shows what happens when the user right-clicks at (155.4,72.0) on the window:
+<center>
+<img src="menu_example3.png" alt="Menu Example 3" width="800" height="400">
+</center>
+
+<hr><!-------------------------------------------------------->
+<hr><!-------------------------------------------------------->
+<h2><a name="Dialogs">9. Dialogs</a></h2>
+<p>
+Each <b>GUI<i>bits</i></b> dialog is exposed by the <tt><b>dialoging</b></tt> interface as a single procedure.  When the client calls this procedure, a dialog box is displayed in the centre of the screen, blocking all other currently displayed windows.  Each dialog thus demands a response from the user, which is transmitted to the client via the return type of the dialog procedure.
+<p>
+There are three general dialog procedures:
+<ul>
+  <p><li><b>show_message_dialog</b> - gives a message to the user
+  <p><li><b>show_confirm_dialog</b> - asks the user a yes/no question
+  <p><li><b>show_input_dialog</b> - asks the user for an input string
+</ul>
+<p>
+and three special-purpose file dialogs:
+<ul>
+  <p><li><b>show_open_file_dialog</b> - opens a file for the user
+  <p><li><b>show_save_file_dialog</b> - saves a file for the user
+  <p><li><b>show_new_folder_dialog</b> - allows the user to create a new folder
+</ul>
+
+<hr><!-------------------------------------------------------->
+<h3>Specification of <b><tt>dialoging</tt></b></h3>
+
+<h4>Exposed procedures:</h4>
+
+<h5><a name="show_message_dialog">9.1 show_message_dialog</a></h5>
+<p>
+This is the simplest possible dialog.  Use it when you want to output a message to the user, and give them time to read it.
+
+<ul>
+  <li><tt><b>show_message_dialog(fsize,t,m)</b></tt>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>fsize</b> = </tt>point size of text for dialog message, as float in range 6.0..24.0
+      <li><tt><b>t</b> = </tt>title of this dialog, as Python string
+      <li><tt><b>m</b> = </tt>message to be displayed inside dialog, as Python string
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li>dialog has been displayed at centre of screen, 
+          and acknowledged by the user
+    </ul>
+  </ul>
+</ul>
+
+<h5>Example of use</h5>
+<p>
+The following program fragment:
+<p>
+<table border align=center>
+<tr>
+<td>
+<pre>
+  
+  filename = "my_program.py"
+  dialoging.show_message_dialog(16.0,"File Save","File \"" + \
+    filename + "\" was saved successfully")
+  )
+</pre>
+</td>
+</tr>
+</table>
+<p>
+will produce the following dialog on the screen:
+<p>
+<center>
+<img src="message_dialog_example.png" alt="Message Dialog Example" width="400" height="160">
+</center>
+
+<hr><!-------------------------------------------------------->
+<h5><a name="show_confirm_dialog">9.2 show_confirm_dialog</a></h5>
+<p>
+Use this dialog to ask the user a question with a Yes or No answer.
+
+<ul>
+  <li><tt><b>show_confirm_dialog(fsize,t,m)</b></tt>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>fsize</b> = </tt>point size of text for dialog message, as float in range 6.0..24.0
+      <li><tt><b>t </b> = </tt>title of this dialog, as Python string
+      <li><tt><b>m </b> = </tt>message to be displayed inside dialog, as Python string
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li>dialog has been displayed at centre of screen, and user has 
+          pressed either the Yes button, the No button, the Close button, or the Esc key.
+      <li>Returns <tt><b>True</b></tt> iff the user pressed the Yes button,
+            otherwise returns <tt><b>False</b></tt>.
+    </ul>
+  </ul>
+</ul>
+
+<h5>Example of use</h5>
+<p>
+The following program fragment:
+<p>
+<table border align=center>
+<tr>
+<td>
+<pre>
+  userReply = \
+    dialoging.show_confirm_dialog(16.0,"Global delete", \
+      "Delete entire contents of hard drive?")
+</pre>
+</td>
+</tr>
+</table>
+<p>
+will produce the following dialog on the screen:
+<p>
+<center>
+<img src="confirm_dialog_example.png" alt="Confirm Dialog Example" width="400" height="160">
+</center>
+<p>
+If the user presses the Yes button (inadvisable in this case), the variable <tt><b>userReply</b></tt> will be set to the value <tt><b>True</b></tt>.
+<p>
+If the user presses the No button or the Close button, or hits the Esc key, the variable <tt><b>userReply</b></tt> will be set to the value <tt><b>False</b></tt>.
+
+
+<hr><!-------------------------------------------------------->
+<h5><a name="show_input_dialog">9.3 show_input_dialog</a></h5>
+<p>
+Use this dialog when you want to prompt the user for some information.
+
+<ul>
+  <li><tt><b>show_input_dialog(fsize,t,up)</b></tt>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>fsize</b> = </tt>point size of text for dialog message, as float in range 6.0..24.0
+      <li><tt><b>t</b>  = </tt>title of this dialog, as Python string
+      <li><tt><b>up</b> = </tt>user prompt to be displayed inside dialog, as Python string
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li>dialog has been displayed at centre of screen, and user has 
+          entered a text to their satisfaction,
+          and then pressed the OK button or the Close button,
+          or hit the Esc key
+      <li>Returns text (possibly empty) as Python string,
+          or <tt><b>None</b></tt> if user closed the dialog or hit the Esc key
+    </ul>
+  </ul>
+</ul>
+
+<h5>Example of use</h5>
+<p>
+The following program fragment:
+<p>
+<table border align=center>
+<tr>
+<td>
+<pre>
+  user_reply = \
+    dialoging.show_input_dialog(16.0,"Address query","Please enter your postcode:")
+</pre>
+</td>
+</tr>
+</table>
+<p>
+will produce the following dialog on the screen:
+<p>
+<center>
+<img src="input_dialog_example.png" alt="Input Dialog Example" width="300" height="160">
+</center>
+<p>
+If the user replies as shown and presses the OK button, the variable <tt><b>user_reply</b></tt> will be set to the value <tt><b>"BN99 9ZZ"</b></tt>.
+<p>
+If the user replies as shown and presses the Cancel button or the Close button or hits the Esc key, the variable <tt><b>user_reply</b></tt> will be set to the value <tt><b>None</b></tt>.
+
+<hr><!-------------------------------------------------------->
+<h3>Specification of <b><tt>file_dialoging</tt></b></h3>
+<p>
+This contractor exposes procedures to display the special-purpose file dialogs.
+<h4>Exposed types:</h4>
+<ul>
+  <li><a name="enum SortMode">
+    <tt><b>enum SortMode</b></tt></a>
+    <ul>
+      <li><tt><b>ALPHABETIC</b></tt>
+      <li><tt><b>EARLIEST_FIRST</b></tt>
+      <li><tt><b>LATEST_FIRST</b></tt>
+    </ul>
+</ul>
+
+<h4>Exposed procedures:</h4>
+
+<h5><a name="show_open_file_dialog">9.4 show_open_file_dialog</a></h5>
+<p>
+Use this dialog to ask the user to select a file to be opened.
+
+<ul>
+  <li><tt><b>show_open_file_dialog(fsize,t,f,sm)</b></tt>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>fsize</b> = </tt>point size of text for dialog message, as float in range 6.0..24.0
+      <li><tt><b>t </b> = </tt>title of this dialog, as Python string
+      <li><tt><b>f </b> = </tt>
+      <ul>
+        <li>pathname of default file to be opened as Python string,
+        <li>or the empty string for the root directory and no file      
+        <li>or <tt><b>None</b></tt> for the user's default directory and no file
+      </ul>
+      <li><tt><b>sm</b> = </tt>SortMode for displaying the directory
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li>dialog has been displayed at centre of screen, and user has 
+          pressed one of the buttons.
+      <li>returns:
+      <ul>
+        <li>pathname of selected file if the Open button was hit,
+        <li><tt><b>None</b></tt> if the Cancel button or Close button or Esc key was hit
+      </ul>
+    </ul>
+  </ul>
+</ul>
+
+<h5><a name="Example 1">Example 1</a></h5>
+<p>
+The following program fragment:
+<p>
+<table border align=center>
+<tr>
+<td>
+<pre>
+user_reply = \
+file_dialoging.show_open_file_dialog(16.0,"Open","C:\\Users\\",file_dialoging.SortMode.ALPHABETIC)
+</pre>
+</td>
+</tr>
+</table>
+<p>
+could produce the following dialog on the screen:
+<p>
+<center>
+<img src="open_file_dialog_example.png" alt="Open File Dialog Example" width="800" height="400">
+</center>
+<p>
+The user can navigate around the file system for a suitable file, and click on it to enter it into the "File name" box.  Alternatively, the user can enter a name manually.
+<p>
+If the user then presses the Open button, the variable <tt><b>userReply</b></tt> will be set to the selected file.  (If the "File name" box is empty, the Open button is ineffective).
+<p>
+If the user presses the Cancel button or the Close button or the Esc key, the variable <tt><b>userReply</b></tt> will be set to the value <tt><b>None</b></tt>.
+
+<hr><!-------------------------------------------------------->
+<h5><a name="show_save_file_dialog">9.5 show_save_file_dialog</a></h5>
+<p>
+Use this dialog to ask the user to select a filename under which a file is to be saved.  The user is warned if they are about to overwrite a file of the same name which already exists.
+
+<ul>
+  <li><tt><b>show_save_file_dialog(fsize,t,f,exs,sm)</b></tt>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>fsize</b> = </tt>point size of text for dialog message, as float in range 6.0..24.0
+      <li><tt><b>t </b> = </tt>title of this dialog, as Python string
+      <li><tt><b>f </b> = </tt>
+      <ul>
+        <li>pathname of default file to be saved as Python string,
+        <li>or <tt><b>None</b></tt> for the user's default directory and no file
+      </ul>
+<li><tt><b>exs</b> = </tt>list of file extensions (not including the dot) to be applied to the pathname (if not already extended), as Python strings, or the empty list if none
+      <li><tt><b>sm</b> = </tt>SortMode for displaying the directory in which the file is to be saved
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li>dialog has been displayed at centre of screen, and user has 
+          pressed one of the buttons.
+      <li>returns:
+      <ul>
+        <li>pathname of selected file if the Save button was hit, as Python string
+        <li><tt><b>None</b></tt> if the Cancel button or the Close button or the Esc key was hit
+      </ul>
+    </ul>
+  </ul>
+</ul>
+
+
+<h5>Example</h5>
+<p>
+The following program fragment:
+<p>
+<table border align=center>
+<tr>
+<td>
+<pre>
+exs = ["txt","py"]
+
+sm = file_dialoging.SortMode.ALPHABETIC
+
+user_reply = \
+file_dialoging.show_save_file_dialog(16.0,"Save","C:\\Users\\User\\Documents\\hello.mle",exs,sm)
+</pre>
+</td>
+</tr>
+</table>
+<p>
+could produce the following dialog on the screen:
+<p>
+<center>
+<img src="save_file_dialog_example.png" alt="Save File Dialog Example" width="800" height="350">
+</center>
+<p>
+The user can accept the default filename, or navigate around the file system for a suitable file, and click on it to enter it into the "File name" box.  The user can also create a new directory, and enter the filename manually.
+<p>
+If the user then presses the Save button, the variable <tt><b>userReply</b></tt> will be set to the selected file.  (If the "File name" box is empty, the Save button is ineffective).
+<p>
+If the user presses the Cancel button or the Close button or the Esc key, the variable <tt><b>userReply</b></tt> will be set to the value <tt><b>None</b></tt>.
+
+<hr><!-------------------------------------------------------->
+<h5><a name="show_new_folder_dialog">9.6 show_new_folder_dialog</a></h5>
+<p>
+Use this dialog to give the user an opportunity to create a new folder (directory).  The user is not allowed to create a folder with an invalid name, or a folder that already exists.
+
+<ul>
+  <li><tt><b>show_new_folder_dialog(fsize,t,dir)</b></tt>
+  <ul type=none>
+    <li><b>pre:</b>  
+    <ul>
+      <li><tt><b>fsize  </b> = </tt>point size of text for dialog message, as float in range 6.0..24.0
+      <li><tt><b>t   </b> = </tt>title of this dialog, as Python string
+      <li><tt><b>dir </b> = </tt>pathname of current directory, as Python string
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li>dialog has been displayed at centre of screen, and user has 
+          entered the new folder name and pressed the OK button,
+          or has pressed the Cancel button, the Close button or Esc key
+      <li>if the user pressed the OK button,
+      <ul>
+        <li>a new folder has been created in the directory <tt><b>dir</b></tt>, with the name given by the user
+        <li>the simple name of the folder has been returned, as a Python string
+      </ul>
+      <li>if the user pressed the Cancel button, the Close button or the Esc key,
+      <ul>
+        <li>no new folder has been created
+        <li><tt><b>None</b></tt> has been returned
+      </ul>
+    </ul>
+  </ul>
+</ul>
+<h5>Example</h5>
+<p>
+The following program fragment:
+<p>
+<table border align=center>
+<tr>
+<td>
+<pre>
+  user_reply = \
+  file_dialoging.show_new_folder_dialog(16.0,"Create New Folder","C:\\Users\\User")
+</pre>
+</td>
+</tr>
+</table>
+<p>
+could produce the following dialog on the screen:
+<p>
+<center>
+<img src="new_folder_dialog_example.png" alt="New Folder Dialog Example" width="300" height="200">
+</center>
+<p>
+If the user now enters a valid name and presses the OK button, the folder will be created in the current directory, and the variable <tt><b>userReply</b></tt> will be set to the name of the created folder.
+<p>
+If the user presses the Cancel button, the Close button or the Esc key, the variable <tt><b>userReply</b></tt> will be set to the value <tt><b>None</b></tt>.
+
+
+<hr><!-------------------------------------------------------->
+<hr><!-------------------------------------------------------->
+
+<h2><a name="Keyboard (Character keys)">10. Keyboard (Character keys)</a></h2>
+
+<h3>Specification of <tt><b>keyboarding</b></tt></h3>
+
+<h4>Specification of callback function:</h4>
+<ul>
+  <li><a name="character_key_hit"><tt><b>character_key_hit(cp)</b></tt>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>cp</b></tt> = Unicode code point of key (combination) hit by user, as int
+    </ul>
+    <li><b>post: </b>        
+    <ul>
+      <li>action required by this key-hit has been carried out</li>
+    </ul>
+  </ul>
+</ul>
+
+<h4>Exposed procedures:</h4>  
+<ul>
+  <p><li><a name="attach"><tt><b>attach(w,ckh)</b></tt>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>w</b> = </tt>windowing.Window to which <tt><b>ckh</b></tt> is to be attached</li>
+      <li><tt><b>ckh</b> = </tt>character_key_hit callback which is to be attached to <tt><b>w</b></tt></li>
+    </ul>
+    </li>
+    <li><b>post:</b>
+    <ul>
+      <li><tt><b>ckh</b></tt> has been attached to <tt><b>w</b></tt>, making <tt><b>w</b></tt> responsive to character key input
+    </ul>
+    </li>
+  </ul>
+  </li>
+</ul>
+
+
+<hr><!-------------------------------------------------------->
+<hr><!-------------------------------------------------------->
+<h2><a name="Keyboard (Control keys)">11. Keyboard (Control keys)</a></h2>
+
+<h3>Specification of <tt><b>controlling</b></tt></h3>
+
+<h4>Exposed constants:</h4>
+<ul>
+  <li><a name="ActionCode">
+    <tt><b>enum ActionCode</b></tt></a>
+    <ul>
+      <li><tt><b>BACKSPACE</b></tt>
+      <li><tt><b>DELETE</b></tt>
+      <li><tt><b>ENTER</b></tt>
+      <li><tt><b>UP_ARROW</b></tt>
+      <li><tt><b>DOWN_ARROW</b></tt>
+      <li><tt><b>LEFT_ARROW</b></tt>
+      <li><tt><b>RIGHT_ARROW</b></tt>
+      <li><tt><b>CTRL_S</b></tt>
+      <li><tt><b>CTRL_X</b></tt>
+      <li><tt><b>CTRL_C</b></tt>
+      <li><tt><b>CTRL_V</b></tt>
+      <li><tt><b>CTRL_Z</b></tt>
+    </ul>
+</ul>
+
+<h4>Specification of callback procedure:</h4>
+<ul>
+  <li><a name="action_key_hit"><tt><b>action_key_hit(ac)</b></tt>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>ac</b></tt> = ActionCode of key (combination) hit by user
+    </ul>
+    <li><b>post:</b>        
+    <ul>
+      <li>action required by this key-hit has been carried out</li>
+    </ul>
+  </ul>
+</ul>
+
+<h4>Exposed procedures:</h4>  
+<ul>
+  <p><li><a name="attach"><tt><b>attach(w,akh)</b></tt>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>w</b> = </tt>windowing.Window to which <tt><b>akh</b></tt> is to be attached</li>
+      <li><tt><b>akh</b> = </tt>action_key_hit callback which is to be attached to <tt><b>w</b></tt></li>
+    </ul>
+    </li>
+    <li><b>post:</b>
+    <ul>
+      <li><tt><b>akh</b></tt> has been attached to <tt><b>w</b></tt>, making <tt><b>w</b></tt> responsive to control key input
+    </ul>
+    </li>
+  </ul>
+  </li>
+</ul>
+
+
+<hr><!-------------------------------------------------------->
+<hr><!-------------------------------------------------------->
+<h2><a name="Mouse">12. Mouse</a></h2>
+<p>
+
+<h3>Specification of <tt><b>mousing</b></tt></h3>
+<p>
+This is an adapter which constructs composite mouse gestures from the atomic mouse gestures performed by the user.  The composite mouse gestures are:
+<ol>
+  <li>mouse_click
+ 
+  <li>double_click
+ 
+  <li>mouse_popup
+ 
+  <li>mouse_pressed mouse_dragged* mouse_released (mouse drag)
+</ol>
+<p>
+The position of the mouse is returned in points relative to the top left hand
+corner of the window's pane.  For convenience, the mouse_popup gesture also returns the position in points relative to the window's contents, i.e. just below the left-hand end of the title bar of the window.
+
+<h4>Exposed types:</h4>
+<ul>
+  <li><a name="mousing.MouseListener"><tt><b>class mousing.MouseListener</b></tt></li>
+  <ul type=none>
+    <li><b>methods:</b>  
+    <ul>
+
+      <li><tt><b>double_clicked(x,y)</b></tt>
+      <ul type=none>
+        <li><b>pre:</b>
+        <ul>
+          <li>the primary mouse button has been clicked (pressed and released) twice in quick succession (&lt; 0.5 sec) by the user
+          <li><tt><b>(x,y)</b></tt> = position in points at which the mouse pointer was double-clicked, relative to the top left-hand corner of the window's pane, as floats
+        </ul>
+        <li><b>post: </b>        
+        <ul>
+          <li>the action required by the user has been carried out</li>
+        </ul>
+      </ul>
+    
+      <p>
+      <li><tt><b>mouse_clicked(x,y)</b></tt>
+      <ul type=none>
+        <li><b>pre:</b>
+        <ul>
+          <li>the primary mouse button has been clicked (pressed and released) once by the user
+          <li><tt><b>(x,y)</b></tt> = position in points at which the mouse pointer was clicked, relative to the top left-hand corner of the window's pane, as floats
+        </ul>
+        <li><b>post: </b>        
+        <ul>
+          <li>the action required by the user has been carried out</li>
+        </ul>
+      </ul>
+    
+      <p>
+      <li><tt><b>mouse_dragged(x,y)</b></tt>
+      <ul type=none>
+        <li><b>pre:</b>
+        <ul>
+          <li>the mouse has been dragged (moved with the primary mouse-button pressed) at least 5 points by the user from its previous position
+          <li><tt><b>(x,y)</b></tt> = position in points to which the mouse pointer was dragged, relative to the top left-hand corner of the window's pane, as floats
+        </ul>
+        <li><b>post: </b>        
+        <ul>
+          <li>the action (if any) required by the user has been carried out</li>
+        </ul>
+      </ul>
+    
+       <p>
+      <li><tt><b>mouse_popup(x,y,win,windowX,windowY)</b></tt>
+      <ul type=none>
+        <li><b>pre:</b>
+        <ul>
+          <li>the user has gestured that a popup menu should be displayed.  On some platforms, this is done by clicking the right mouse button.
+          <li><tt><b>(x,y)</b></tt> = position in points at which the mouse pointer was clicked, relative to the top left-hand corner of the window's pane, as floats
+          <li><tt><b>win</b></tt> = windowing.Window in which the gesture was made
+          <li><tt><b>(windowX,windowY)</b></tt> = position in points required for popup menu, relative to the top left-hand corner of the window's contents, as floats
+        </ul>
+        <li><b>post: </b>        
+        <ul>
+          <li>the action (if any) required by the user has been carried out</li>
+        </ul>
+      </ul>
+      
+      <p>
+      <li><tt><b>mouse_pressed(x,y)</b></tt>
+      <ul type=none>
+        <li><b>pre:</b>
+        <ul>
+          <li>the user has pressed the primary mouse-button, signifying the start of a mouse-drag operation
+          <li><tt><b>(x,y)</b></tt> = position in points of the mouse pointer when the mouse button was pressed, relative to the top left-hand corner of the window's pane, as floats
+        </ul>
+        <li><b>post: </b>        
+        <ul>
+          <li>the action (if any) required by the user has been carried out</li>
+        </ul>
+      </ul>
+      
+      <p>
+      <li><tt><b>mouse_released(x,y)</b></tt>
+      <ul type=none>
+        <li><b>pre:</b>
+        <ul>
+          <li>the user has released the primary mouse-button, signifying the end of a mouse-drag operation
+          <li><tt><b>(x,y)</b></tt> = position in points of the mouse pointer when the mouse button was released, relative to the top left-hand corner of the window's pane, as floats
+        </ul>
+        <li><b>post: </b>        
+        <ul>
+          <li>the action (if any) required by the user has been carried out</li>
+        </ul>
+      </ul>
+           
+    </ul>
+  </ul>
+</ul>
+
+<h4>Exposed procedures:</h4>  
+<ul>
+  <p><li><a name="attach"><tt><b>attach(ml,win)</b></tt>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>ml</b> = </tt>mousing.MouseListener which is to be attached to windowing.Window <tt><b>win</b></tt></li>
+      <li><tt><b>win</b> = </tt>windowing.Window to which <tt><b>ml</b></tt> is to be attached</li>
+    </ul>
+    </li>
+    <li><b>post:</b>
+    <ul>
+      <li><tt><b>ml</b></tt> has been attached to <tt><b>win</b></tt>, making <tt><b>win</b></tt>'s pane responsive to mouse events
+    </ul>
+    </li>
+  </ul>
+  </li>
+</ul>
+
+<h3>Example of use</h3>
+<p>
+To make your app responsive to mouse events, first declare a class which derives from mousing.MouseListener, and fill the methods with the code required for your app's response:
+<p>
+<table border align=center>
+<tr>
+<td>
+<pre>
+class MyMouseListener(mousing.MouseListener):
+  def double_clicked(self,x,y):
+  """
+  your app's response to mouse double-clicked here
+  """
+  ...
+</pre>
+</td>
+</tr>
+</table>
+<p>
+Then attach an instance of the MouseListener to the main window of the app.  This is conveniently done in the window_opening procedure of the main window:
+<p>
+<table border align=center>
+<tr>
+<td>
+<pre>
+def window_opening(win):
+  ...
+  mml = MyMouseListener()
+  mousing.attach(mml,win)
+  ...
+</pre>
+</td>
+</tr>
+</table>
+
+<hr><!-------------------------------------------------------->
+<hr><!-------------------------------------------------------->
+<h2><a name="Printing">13. Printing</a></h2>
+<p>
+The <tt><b>printing</b></tt> contractor allows the client to print text on the currently selected printer.
+<p>
+A print job is started by the client invoking <tt><b>printing.set_page_dimensions</b></tt>.  Thereafter, zero or more <tt><b>printing.print_string</b></tt> calls are made, interspersed as necessary with calls of <tt><b>printing.throw_page</b></tt>.  The print job is terminated (and the printer released for other apps) by a call of <tt><b>printing.end_printing</b></tt>.
+
+<h3>Specification of <tt><b>printing</b></tt></h3>
+
+<h4>Exposed types:</h4>
+<ul>
+  <li><tt><b>class PrintJob</b></tt>
+</ul>
+
+<h4>Exposed procedures:</h4>
+
+<ul>
+  <p><li><a name="end_printing"><tt><b>end_printing(p)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li> <tt><b>p</b> = </tt>PrintJob which is to be ended
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li>the printer will be released for the use of other apps when this app's current print job has finished
+    </ul>
+  </ul>
+
+  <p><li><a name="print_string"><tt><b>print_string(p,s,fn,fss,fsize,x,y)
+</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li> <tt><b>p</b> = </tt>PrintJob object for which <tt><b>s</b></tt> is to be printed
+      <li><tt><b>s</b> = </tt>text which is to be printed, as Python string
+      <li><tt><b>fn</b> = </tt>name of font to be used to print <tt><b>s</b></tt>, as Python string
+      <li><tt><b>fss</b> = </tt>set of fontstyles to be used to print <tt><b>s</b></tt> (empty set implies that <tt><b>s</b></tt> should be printed plain)
+      <li><tt><b>fsize</b> = </tt>size of font used to print <tt><b>s</b></tt>, as a float
+      <li><tt><b>x</b> = </tt>x-offset in points, from the specified page x-indent, of the top left-hand corner of rectangle in which <tt><b>s</b></tt> is to be printed, as a float
+      <li><tt><b>y</b> = </tt>y-offset in points, from the specified page y-indent, of the top left-hand corner of rectangle in which <tt><b>s</b></tt> is to be printed, as a float
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li>either:
+      <ul>
+        <li><tt><b>s</b></tt> has or will be been printed as required
+      </ul>
+      <li>or:
+      <ul>
+        <li><tt><b>s</b></tt> cannot be printed for some reason, and an Exception has been thrown
+      </ul>
+    </ul>
+  </ul>
+
+  <p><li><a name="set_page_dimensions"><tt><b>set_page_dimensions(w,h,ind)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+        <li><tt><b>w</b> = </tt>required width in points of printed page (50 &le; <tt><b>w</b></tt> &le; 1000), as a float
+        <li><tt><b>h</b> = </tt>required height in points of printed page (50 &le; <tt><b>h</b></tt> &le; 1000), as a float
+        <li><tt><b>ind</b> = </tt>required indent in points at top, bottom, lhs and rhs of printed page 
+            (10 &le; <tt><b>ind</b></tt> &le; 200), as a float
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li>either:
+      <ul>
+        <li>the required page dimensions have been set up and the print job has been started
+        <li>a PrintJob object has been returned
+      </ul>
+      <li>or:
+      <ul>
+        <li>the actual printer page is not large enough to accept the specified page
+        <li><tt><b>None</b></tt> has been returned
+      </ul>
+    </ul>
+  </ul>
+
+  <p><li><a name="throw_page"><tt><b>throw_page(p)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li> <tt><b>p</b> = </tt>PrintJob object whose current page is to be thrown
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li>The current page has been or will be thrown from <tt><b>p</b></tt>
+    </ul>
+  </ul>
+</ul>
+
+
+<hr><!-------------------------------------------------------->
+<hr><!-------------------------------------------------------->
+<h2><a name="Other facilities">14. Other facilities</a></h2>
+<p>
+A miscellaneous collection of contractors that have proved useful in graphical user interfaces.
+
+<hr><!-------------------------------------------------------->
+<h3><a name="latest_listing">14.1 Specification of <tt><b>latest_listing</b></tt></a></h3>
+<h4></h4>
+<p>
+The <tt><b>latest_listing</b></tt> contractor exposes a ListOfLatest type and procedures to manipulate the list.  A ListOfLatest is a limited-size list containing no duplicate elements.  If a element is pushed onto the list which duplicates one already there, the duplicated element is removed.  When the list reaches its maximum size, pushing a new element onto the list causes one element to be lost from the bottom.
+<p>
+A ListOfLatest resembles the arrivals board at an airport (back-to-front!).
+<p>
+A ListOfLatest is useful for "remembering" the most recent values of combo boxes. 
+
+
+<h4>Exposed type:</h4>
+
+<p><tt><b>class ListOfLatest</b></tt>
+
+<h4>Exposed procedures</h4>
+<ul>
+  <p><li><a name="latest_listing.get"><tt><b>get(lol,i)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>lol</b> = </tt>ListofLatest to be accessed
+      <li><tt><b>i</b> = </tt>offset in list of required element (counting from the top)
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li>required element of this list has been returned
+    </ul>
+  </ul>
+</ul>
+  
+<ul>
+  <p><li><tt><b>new_list_of_latest(n)</b></tt>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>n</b> = </tt>maximum number of entries required in list
+      <li><tt><b>n</b></tt> &gt; 0
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li>a new ListOfLatest object of size <tt><b>n</b></tt> has been returned
+    </ul>
+    <p><li><b>note:</b> this procedure takes time O(<tt><b>n</b></tt>).
+  </ul>
+</ul>
+
+
+<ul>
+  <p><li><a name="latest_listing.push"><tt><b>push(lol,e)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>lol</b> = </tt>ListOfLatest which is to have an element pushed onto it
+      <li><tt><b>e</b> = </tt>element to be pushed onto <tt><b>lol</b></tt>
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li><tt><b>e</b></tt> is first element (offset 0) of list
+      <li>Any duplicates of <tt><b>e</b></tt> have been removed from the list.
+        (An element <tt><b>x</b></tt> is a duplicate of element <tt><b>e</b></tt> iff <tt><b>e</b> == <b>x</b></tt>)
+      <li>The size of the list is &le; <tt><b>s</b></tt>
+      <li>An element may have been lost from the bottom of the list
+    </ul>
+    <p><li><b>note:</b> this operation takes time O(number of elements in <tt><b>lol</b></tt>).
+  </ul>
+</ul>
+
+<ul>
+  <p><li><a name="latest_listing.size"><tt><b>size(lol)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>lol</b> = </tt>ListOfLatest whose size is required
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li>number of elements in <tt><b>lol</b></tt> has been returned
+    </ul>
+  </ul>
+</ul>
+
+
+<hr><!-------------------------------------------------------->
+<h3><a name="stacking">14.2 Specification of stacking</a></h3>
+<p>
+The <tt><b>stacking</b></tt> contractor exposes a StackTop type and procedures to manipulate the stack.
+A StackTop is a bounded structure representing the top n elements of a generic stack.
+When the stack reaches its maximum size, pushing a new element onto the stack causes one element to be lost from the bottom.  The stack may contain duplicates.
+<p>
+stacking exposes the normal stack manipulation procedures: <em>size</em>, <em>clear</em>, <em>pop</em> and <em>push</em>.
+
+<h4>Exposed type:</h4>
+
+<p><tt><b>class StackTop</b></tt>
+
+<h4>Exposed procedures:</h4>
+
+<ul>  
+  <p><li><a name="stacking.clear"><tt><b>clear(st)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>st</b> = </tt>StackTop which is to be cleared
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li><tt><b>st</b></tt> has been cleared of elements
+    </ul>
+  </ul>
+
+  <ul>
+    <p><li><tt><b>new_stack_top(int n)</b></tt>
+    <ul type=none>
+      <li><b>pre:</b>
+      <ul>
+        <li><tt><b>n</b> = </tt>maximum number of entries required in stack
+        <li><tt><b>n</b> > </tt>0
+      </ul>
+      <li><b>post:</b>
+      <ul>
+        <li>StackTop object of size <tt><b>n</b></tt> has been returned
+      </ul>
+    </ul>
+  </ul>
+
+  <p><li><a name="stacking.pop"><tt><b>pop(st)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>st</b> = </tt>StackTop from which item is to be popped
+      <li><tt><b>st</b></tt> must have at least one element
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li>top element of <tt><b>st</b></tt> has been removed and returned
+    </ul>
+  </ul>
+  
+  <p><li><a name="stacking.push"><tt><b>push(st,e)</b></tt></a>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>st</b> = </tt>StackTop onto which item is to be pushed
+      <li><tt><b>e</b> = </tt>item to be pushed onto top of stack
+    </ul>
+    <li><b>post:</b>
+    <ul>
+      <li><tt><b>e</b></tt> is the top item of the stack
+      <li>The size of the list is &le; <tt><b>n</b></tt><br>
+      <li>An item may have been lost from the bottom of the stack
+    </ul>
+    <p><li><b>note:</b> this operation takes time O(number of elements in stack).
+  </ul>
+</ul>
+
+  <ul>
+    <p><li><a name="stacking.size"><tt><b>size(st)</b></tt></a>
+    <ul type=none>
+      <li><b>pre:</b>
+      <ul>
+        <li><tt><b>st</b> = </tt>StackTop whose size is required
+
+      </ul>
+      <li><b>post:</b>
+      <ul>
+        <li>number of items in <tt><b>st</b></tt> has been returned
+      </ul>
+    </ul>
+  </ul>
+</ul>
+
+
+<hr><!-------------------------------------------------------->
+<h3><a name="unicoding3_0">14.3 Specification of unicoding3_0</a></h3>
+<p>
+The <tt><b>unicoding3_0</b></tt> contractor supports mutable UTF-32 strings, which complement the non-mutable Python <tt><b>str</b></tt> type.
+<p>
+The main advantage of UTF-32 is that the Unicode code points are directly indexable. Finding the n<sup>th</sup> code point in a sequence of code points is a constant time operation. (In contrast, a variable-length code such as UTF-16 or UTF-8 requires sequential access to find the n<sup>th</sup> code point in a sequence.)  This property allows algorithms which use non-sequential access (e.g. efficient search algorithms) to be employed.  It is guaranteed that the result of an indexed access is a valid Unicode code point.
+<p>
+The main disadvantage of UTF-32 is that it is space-inefficient, using four bytes per code point.  But this can be mitigated to some extent by translating to a variable-length format (e.g. UTF-8) when non-sequential access is not required, for instance when storing Unicode text as a file.
+<p>
+A code point is represented in the <tt><b>unicoding3_0</b></tt> contractor as a 32-bit integer, using the Python <tt><b>int</b></tt> type.  This means that the standard Python character-literal conventions can be used, and also that code points can be compared using the standard Python integer comparison operators (<tt><b>==,!=,&lt;=,&gt;=</b></tt>). 
+<p>
+Code points can be strung together to make a <tt><b>unicode3_0.String</b></tt>, which is an indexed sequence of code points.  The indexing starts at zero, as for Python <tt><b>str</b></tt>.
+<p>
+Facilities are provided to convert between a <tt><b>unicoding3_0.String</b></tt> and a <tt><b>str</b></tt>.  The Python API provides facilities for converting between a <tt><b>str</b></tt> and the Unicode UTF-8 format for external media.
+<p>
+Unlike a <tt><b>str</b></tt>, a <tt><b>unicoding3_0.String</b></tt> is dynamic and can be modified at any time, either by appending code points or by inserting or deleting code points.
+<p>
+The <tt><b>append_a_copy(s1,s2)</b></tt> procedure can be used to append a copy of <tt><b>s2</b></tt> to <tt><b>s1</b></tt>, making a new version of <tt><b>s1</b></tt>.
+<p>
+If you want to create a completely new String which is the concatenation of <tt><b>s1</b></tt> and <tt><b>s2</b></tt>, while leaving <tt><b>s1</b></tt> and <tt><b>s2</b></tt> intact, use the sequence
+<pre>
+  s3 = unicoding3_0.new_string()
+  unicoding3_0.append_a_copy(s3,s1)
+  unicoding3_0.append_a_copy(s3,s2)
+</pre>
+<p>
+If you want to make a copy (clone) <tt><b>s2</b></tt> of a String <tt><b>s1</b></tt>, use the sequence
+<pre>
+  s2 = unicoding3_0.new_string()
+  unicoding3_0.append_a_copy(s2,s1)
+</pre>
+
+
+<h3>Exposed types:</h3>
+<ul>
+  <li><tt><b>class String</b></tt>
+</ul>
+
+<h3>Exposed procedures:</h3>
+
+<ul>  
+  <p><li><a name="append"><tt><b>append(s,cp)</b></tt>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>s</b> = </tt>String to which <tt><b>cp</b></tt> is to be appended</li>
+      <li><tt><b>cp</b> = </tt>Unicode code point to be appended to <tt><b>s</b></tt>, as an int
+    </ul>
+    </li>
+    <li><b>post:</b>
+    <ul>
+      <li><tt><b>cp</b></tt> has been appended to <tt><b>s</b></tt>
+    </ul>
+    </li>
+  </ul>
+  </li>
+
+  <p><li><a name="append_a_copy"><tt><b>append_a_copy(s1,s2)</b></tt>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>s1</b> = </tt>String to which <tt><b>s2</b></tt> is to be appended</li>
+      <li><tt><b>s2</b> = </tt>String to be appended to <tt><b>s1</b></tt></li>
+    </ul>
+    </li>
+    <li><b>post:</b>
+    <ul>
+      <li>a copy of <tt><b>s2</b></tt> has been appended to <tt><b>s1</b></tt>
+    </ul>
+    </li>
+    <li><b>note:</b>
+    <ul>
+      <li>this procedure takes time O(length of <tt><b>s2</b></tt>)
+    </ul>
+    </li>
+  </ul>
+  </li>
+  
+  <p><li><a name="code_point_at"><tt><b>code_point_at(s,i)</b></tt>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>s</b> = </tt>String whose constituent code point is to be found</li>
+      <li><tt><b>i</b> = </tt>offset within <tt><b>s</b></tt> of required code point, as an int</li>
+    </ul>
+    </li>
+    <li><b>post:</b>
+    <ul>
+      <li>required code point has been returned, as an int</li>
+    </ul>
+    </li>
+  </ul>
+  </li>
+  
+  <p><li><a name="equals"><tt><b>equals(s1,s2)</b></tt>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>s1, s2</b> = </tt>Strings to be compared</li>
+    </ul>
+    </li>
+    <li><b>post:</b>
+    <ul>
+      <li>returns true iff <tt><b>s1</b></tt> and <tt><b>s2</b></tt> have the same Unicode code points in the same order</li>
+    </ul>
+    </li>
+    <li><b>note:</b>
+    <ul>
+      <li>this procedure takes time O(length of <tt><b>s1</b></tt>)
+    </ul>
+    </li>
+  </ul>
+  </li>
+  
+  <p><li><a name="insert"><tt><b>insert(s,i,cp)</b></tt>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>s</b> = </tt>Unicode string to be inserted into</li>
+      <li><tt><b>i</b> = </tt>offset in <tt><b>s</b></tt> where the code point <tt><b>cp</b></tt> is to be inserted, as an int</li>
+      <li><tt><b>cp</b> = </tt>code point to be inserted into <tt><b>s</b></tt>, as an int</li>
+    </ul>
+    </li>
+    <li><b>post:</b>
+    <ul>
+      <li>cp has been inserted into <tt><b>s</b></tt> at offset <tt><b>i</b></tt></li>
+    </ul>
+    </li>
+    <li><b>note:</b>
+    <ul>
+      <li>this procedure takes time O(length of <tt><b>s</b></tt>)
+    </ul>
+    </li>
+  </ul>
+  </li>
+  
+  <p><li><a name="is_valid_code_point"><tt><b>is_valid_code_point(cp)</b></tt>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>cp</b> = </tt>putative Unicode UTF-32 code point, as an int</li>
+    </ul>
+    </li>
+    <li><b>post:</b>
+    <ul>
+      <li>either:
+      <ul>
+        <li><tt><b>true</b></tt> has been returned iff <tt><b>cp</b></tt> is a valid Unicode UTF-32 code point
+      </ul>
+      <li>or:
+        <ul>
+          <li><tt><b>false</b></tt> has been returned</li>
+        </ul>
+    </ul>
+  </ul>
+  
+  <p><li><a name="length_of"><tt><b>length_of(s)</b></tt>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>s</b> = </tt>String whose length is to be determined</li>
+    </ul>
+    </li>
+    <li><b>post:</b>
+    <ul>
+      <li>length (number of code points) of <tt><b>s</b></tt> has been returned, as an int</li>
+    </ul>
+    </li>
+  </ul>
+  </li>
+  
+  <p><li><a name="new_string"><tt><b>new_string()</b></tt>
+  <ul type=none>
+    <li><b>post:</b>
+    <ul>
+      <li>new empty String has been returned</li>
+    </ul>
+    </li>
+  </ul>
+  </li>
+  
+  <p><li><a name="python_string_of"><tt><b>python_string_of(s)</b></tt>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>s</b> = </tt>String to be converted to a Python <tt><b>str</b></tt></li>
+    </ul>
+    </li>
+    <li><b>post:</b>
+    <ul>
+      <li>returns Python <tt><b>str</b></tt> version of <tt><b>s</b></tt></li>
+    </ul>
+    </li>
+    <li><b>note:</b>
+    <ul>
+      <li>this procedure takes time O(length of <tt><b>s</b></tt>)
+    </ul>
+    </li>
+  </ul>
+  </li>
+  
+  <p><li><a name="remove"><tt><b>remove(s,i)</b></tt>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>s</b> = </tt>String to be removed from</li>
+      <li><tt><b>i</b> = </tt>offset in <tt><b>s</b></tt> at which a code point is to be removed, as an int</li>
+    </ul>
+    </li>
+    <li><b>post:</b>
+    <ul>
+      <li>the code point at offset <tt><b>i</b></tt> has been removed from <tt><b>s</b></tt></li>
+    </ul>
+    </li>
+    <li><b>note:</b>
+    <ul>
+      <li>this procedure takes time O(length of <tt><b>s</b></tt>)
+    </ul>
+    </li>
+  </ul>
+  </li>
+  
+  <p><li><a name="string_of"><tt><b>string_of(ps)</b></tt>
+  <ul type=none>
+    <li><b>pre:</b>
+    <ul>
+      <li><tt><b>ps</b> = </tt>Python str to be converted to String</li>
+    </ul>
+    </li>
+    <li><b>post:</b>
+    <ul>
+      <li>String equivalent to <tt><b>ps</b></tt> has been returned</li>
+    </ul>
+    </li>
+    <li><b>note:</b>
+    <ul>
+      <li>this procedure takes time O(length of <tt><b>ps</b></tt>)
+    </ul>
+    </li>
+  </ul>
+  </li>
+</ul>
+
+<hr><!-------------------------------------------------------->
+<h2><a name="Precondition and postcondition"><font color="#0000cc">15. Precondition and postcondition</font></a></h2>
+<p>
+Wikipedia gives the following definitions:
+<dl>
+  <dt><b>precondition</b><dd>a condition or predicate that must always be true just prior to the execution of some section of code or before an operation in a formal specification.</dd>
+  <dt><b>postcondition</b><dd>a condition or predicate that must always be true just after the execution of some section of code or after an operation in a formal specification.
+</dl>
+<p>
+In the above procedure definitions, <em>if</em> the client ensures that the precondition is true, the postcondition is guaranteed.  If the client does not ensure that the precondition holds, the procedure will raise a diagnostic exception to indicate this failure in the client's code.
+<p>
+Preconditions and postconditions are written in a rigorous but informal notation.  Postconditions should be written in terms of the changes that have occurred since the procedure was invoked, but to reduce the number of "has beens" they are often written in the present tense, e.g.
+<ul>
+  <li>returns border width in pixels for component containing text of size <tt><b>si</b></tt>
+</ul>
+<p>
+rather than
+<ul>
+  <li>border width in pixels for component containing text of size <tt><b>si</b></tt> has been returned
+</ul>
+<p>
+Variables that have not changed their value since the procedure was invoked  are not mentioned in the postcondition (except to emphasize that their value has not changed).
+<p>
+See the <a href="https://en.wikipedia.org/wiki/Precondition">Wikipedia Precondition article</a> and the <a href="https://en.wikipedia.org/wiki/Postcondition">Wikipedia Postcondition article</a> for more details.
+<hr><!-------------------------------------------------------->
+<hr><!-------------------------------------------------------->
+
+<h2><a name="Licence agreement">16. Licence agreement</a></h2>
+<p>
+<img src="gplv3-with-text-136x68.png" align=left>
+<p>
+<b>GUI<i>bits</i></b> version 1.0 is licenced under version 3 of the GNU General Public License (GPL).  The documentation, including this document, is licenced under the GNU Free Documentation License (FDL).  This download package contains a copy of the <a href="gpl.txt">General Public License (GPL)</a> and the <a href="fdl.txt">FDL</a>.  For more details of these licences, see <a href="http://www.gnu.org/licences/">www.gnu.org/licences/</a>.
+
+<hr><!-------------------------------------------------------->
+<hr><!-------------------------------------------------------->
+<h2><a name="Acknowledgements">17. Acknowledgements</a></h2>
+<p>
+<b>Don Ho</b>, for the superb Notepad++ editor.  <b>James Gosling</b>, for inventing Java, in which the original version of <b>GUI<i>bits</i></b> was written.  The <b>anonymous designers</b> of Swing, on which the original version of <b>GUI<i>bits</i></b> was implemented. <b>John English</b>, whose JEWL system demonstrated that Swing could be simplified.  <b>Richard Mitchell</b>, for introducing me to Design-by-Contract and the work of <b>Bertrand Meyer</b>.  <b>Aidan Delaney</b>, for helping me to understand the true meaning of free and open source software.  <b>Peter Naur</b>, for giving me the courage to think outside the box.  <b>Nassim Taleb</b>, for identifying the concept of antifragility.  <b>Guido van Rossum</b>, for inventing Python.  <b>The Python Community</b>, for the amazing supporting software and documentation provided for the language, including of course <b>PyQt</b>.  And the "usual suspects": <b>Edsger Dijkstra</b>, <b>Tony Hoare</b> and <b>Niklaus Wirth</b>.
+
+<hr><!-------------------------------------------------------->
+<hr><!-------------------------------------------------------->
+
+
+<p>
+<i>Version: RNB 10<sup>th</sup> January 2023  15:08</i>
+</body>
+</html>

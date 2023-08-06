@@ -1,0 +1,12 @@
+Diffs GUIbits 0.7 to GUIbits 1.0
+--------------------------------
+RNB 17 Apr 23  12:34
+
+ 1. The underlying GUI package is now PyQt6.
+ 
+ 2. New CTRL Action codes have been added to "controlling":
+      CTRL_S, CTRL_X, CTRL_C, CTRL_V, CTRL_Z 
+
+ 3. A "painting" contractor has been added.  At the moment, only rectangles can be painted.
+ 
+ 4. writing.clear_text and painting.clear_rectangles have been added.
