@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        startapp=scripts.startapp:cli
+    
