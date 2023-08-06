@@ -1,0 +1,44 @@
+# Physics equations of motion solver
+
+This is a package for physics motion calculations.
+
+#Installation
+```pip install agnmol```
+
+#Usage
+###Displacement
+Displacement is calculated using formula: 
+```math
+x = (vi-vf)/2*t 
+```
+```python
+from agnmol.motion import displacement
+
+displacement(1, 2.3, 3) #output: 2.65
+# or use named variables
+displacement(vf=2.3, t=1, vi=3) #output: 2.65
+```
+###Change in position
+Change in position is calculated using formula: 
+```math
+x = vi*t+1/2*a*t^2
+```
+```python
+from agnmol.motion import change_in_position
+
+change_in_position(1, 3, 2) #output: 12.0
+# or use named variables
+change_in_position(a=2, t=3, vi=1) #output: 12.0
+```
+###Final velocity
+Final velocity is calculated using formula: 
+```math
+x = vi*t+1/2*a*t^2
+```
+```python
+from agnmol.motion import change_in_position
+
+change_in_position(1, 3, 2) #output: 12.0
+# or use named variables
+change_in_position(a=2, t=3, vi=1) #output: 12.0
+```
