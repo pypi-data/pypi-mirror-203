@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dreamix
+Version: 0.0.1.dev0
+Summary: dreamix
+Author: MLDev2000
+Keywords: dreamix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+
