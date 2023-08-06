@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ml_botting_core/__init__.py
+src/ml_botting_core.egg-info/PKG-INFO
+src/ml_botting_core.egg-info/SOURCES.txt
+src/ml_botting_core.egg-info/dependency_links.txt
+src/ml_botting_core.egg-info/top_level.txt
+tests/test_universal_predictor.py
