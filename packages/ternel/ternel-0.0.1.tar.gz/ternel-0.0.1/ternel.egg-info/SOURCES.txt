@@ -1,0 +1,5 @@
+setup.py
+ternel.egg-info/PKG-INFO
+ternel.egg-info/SOURCES.txt
+ternel.egg-info/dependency_links.txt
+ternel.egg-info/top_level.txt
