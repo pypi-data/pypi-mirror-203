@@ -1,0 +1,5 @@
+typing-extensions>=4
+
+[grpc]
+grpc-interceptor>=0.15
+grpcio>=1.44
