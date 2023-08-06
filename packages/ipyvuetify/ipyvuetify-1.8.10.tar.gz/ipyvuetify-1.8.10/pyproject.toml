@@ -1,0 +1,19 @@
+[build-system]
+requires = ["jupyter_packaging~=0.7.9", "jupyterlab~=3.0", "setuptools>=40.8.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+exclude = [
+    '.git',
+    'dist',
+    '.eggs',
+    '**/node_modules',
+    '**/generated',
+]
+ignore = [
+    "E501", # line too long | Black take care of it
+    #"W503", # line break before binary operator | Black takes care of it
+    #"E203", # whitespace before ':' | Black take care of it
+]
+line-length = 100
+select = ["E", "W", "F", "Q", "I"]
