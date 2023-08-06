@@ -1,0 +1,4 @@
+[console_scripts]
+cligpt = oai_tools.cligpt:main
+cligpt_completion = oai_tools.cligpt_completion:main
+
