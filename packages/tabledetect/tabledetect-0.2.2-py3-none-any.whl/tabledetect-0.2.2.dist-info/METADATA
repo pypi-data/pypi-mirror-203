@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: tabledetect
+Version: 0.2.2
+Summary: Detects tables in images using a custom yolo-v7 model. Very much work in progress
+Author-email: Jesse Wursten <jessaius+tabledetect@hotmail.com>
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: matplotlib>=3.2.2
+Requires-Dist: numpy>=1.18.5,<1.24.0
+Requires-Dist: opencv-python>=4.1.1
+Requires-Dist: Pillow>=7.1.2
+Requires-Dist: PyYAML>=5.3.1
+Requires-Dist: requests>=2.23.0
+Requires-Dist: scipy>=1.4.1
+Requires-Dist: tqdm>=4.41.0
+Requires-Dist: protobuf<4.21.3
+Requires-Dist: flit ; extra == "dev"
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: keyring ; extra == "dev"
+Project-URL: Source, https://github.com/Danferno/table-detect
+Provides-Extra: dev
+
+# Codamo Table Detect
+Detects tables in images using a finetuned YOLOv7 model.
