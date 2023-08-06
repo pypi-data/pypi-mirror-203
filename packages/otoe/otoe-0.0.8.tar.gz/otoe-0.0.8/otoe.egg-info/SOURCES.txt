@@ -1,0 +1,15 @@
+README.md
+setup.py
+otoe/__init__.py
+otoe/config.py
+otoe/exceptions.py
+otoe/obsidian.py
+otoe.egg-info/PKG-INFO
+otoe.egg-info/SOURCES.txt
+otoe.egg-info/dependency_links.txt
+otoe.egg-info/entry_points.txt
+otoe.egg-info/requires.txt
+otoe.egg-info/top_level.txt
+tests/__init__.py
+tests/test_md.py
+tests/test_otoe.py
