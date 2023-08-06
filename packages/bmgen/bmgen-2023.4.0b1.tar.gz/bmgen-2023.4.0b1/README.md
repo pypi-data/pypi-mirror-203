@@ -1,0 +1,54 @@
+# bmgen - Broken Mouse Studios' build solution
+
+## DISCLAIMER
+This project is currently in it's beta phase!
+
+It needs to be cleaned up and does not yet have it's full set of features. You may quickly hit it's limits.
+
+You should expect API changes and are welcome to give feedback via https://git.brokenmouse.studio/bms/bmgen/issues
+
+## Features
+- build scripts written in Python
+- incremental builds
+- temporary build directories
+- colorful and easy to read output
+- simple build commands
+
+## Installation
+- Install bmgen via `pip install bmgen` or `python3 -m pip install bmgen`
+
+## Building a simple C project
+This example shows a script which builds two files named `main.c` and `game.c` into a binary named `mygame` with `SDL2`.
+
+The following is a breakdown of the script.
+
+1. First import the `clang` command:
+```python
+from bmgen.commands.clang import clang
+```
+2. Then set the output directory -- which will also instantly get created -- and tell the `clang` command to create it's object directory inside the output directory:
+```python
+inst.set_output_dir('bin')
+clang.update_object_dir()
+```
+3. Build the program via `clang`:
+```python
+clang('mygame', ['main.c', 'game.c'], ['sdl2'])
+```
+
+The final `bmgen.py` looks like this:
+```python
+from bmgen.commands.clang import clang
+
+inst.set_output_dir('bin')
+clang.update_object_dir()
+
+clang('mygame', ['main.c', 'game.c'], ['sdl2'])
+```
+
+Building the program is now as easy as running `bmgen` in your terminal!
+
+## License
+This software and it's accompanying files are licensed under the *Mozilla Public License Version 2.0*.
+
+For the license's contents, see [LICENSE](LICENSE) or go to https://mozilla.org/MPL/2.0/.
