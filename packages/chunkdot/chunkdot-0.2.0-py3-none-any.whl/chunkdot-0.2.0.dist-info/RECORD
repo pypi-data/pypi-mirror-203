@@ -1,0 +1,9 @@
+chunkdot/__init__.py,sha256=RHaYAWtAC91KSOcS6Zw5xItwYkGDH1TKnhDVPgGKsGs,131
+chunkdot/chunkdot.py,sha256=XGuR3KXB6X7idTSt-eGNnK8SQZtiVdXtB0gyVbMJbrs,2364
+chunkdot/chunkdot_sparse.py,sha256=uIaNb1hYZwSAzE57KaZ3rB7Y9X-5fxYH3sE3HzIpLF8,7094
+chunkdot/cosine_similarity_top_k.py,sha256=AgUOPAScECjbs9Z4BlXfInCFPDz2SYyCyZpU5uFI5rE,3693
+chunkdot/numba_argpartition.py,sha256=xe67C3tDx5BgzuPRJjREGft-VjZsWS62mYT64kb8QbI,4094
+chunkdot/utils.py,sha256=Alr2MfEXUIjVo0InJMbIt18kte3mrGgGc1LLBkdebbg,4700
+chunkdot-0.2.0.dist-info/METADATA,sha256=hDSsRQ3QuiyfZboBFe7KpzDCxd1Fijmo2ab5qUqIV0Y,2940
+chunkdot-0.2.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+chunkdot-0.2.0.dist-info/RECORD,,
