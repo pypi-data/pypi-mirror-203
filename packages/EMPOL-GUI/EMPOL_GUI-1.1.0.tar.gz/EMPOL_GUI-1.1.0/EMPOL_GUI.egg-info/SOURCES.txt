@@ -1,0 +1,7 @@
+LICENCE
+README.md
+setup.py
+EMPOL_GUI.egg-info/PKG-INFO
+EMPOL_GUI.egg-info/SOURCES.txt
+EMPOL_GUI.egg-info/dependency_links.txt
+EMPOL_GUI.egg-info/top_level.txt
