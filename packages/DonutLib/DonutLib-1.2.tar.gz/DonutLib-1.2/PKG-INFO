@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: DonutLib
+Version: 1.2
+Summary: DonutLib is a library that allows you to spin donut using Python
+Home-page: https://github.com/xKotelek/DonutLib
+Author: xKotelek
+Author-email: kontakt@kotelek.tk
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+If you have problems with module try visiting my github and issuses tab :)
