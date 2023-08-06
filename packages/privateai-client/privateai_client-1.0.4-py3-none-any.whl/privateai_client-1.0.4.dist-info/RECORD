@@ -1,0 +1,12 @@
+privateai_client/__init__.py,sha256=az_EiamHyO36zoGKPT7w4PInWTM11AP0_E3zXn9hyOY,70
+privateai_client/objects.py,sha256=qiigeBSiLZ0-U9bvuPnsaOoXGljmJJMgmXqZq-_Sk3g,677
+privateai_client/pai_client.py,sha256=hRzZATkanKt8qd5viu-zc-Q_y9nc4QFEtr5wP4IhoQc,3375
+privateai_client/components/__init__.py,sha256=5-_a4isW0brhtEXeAp_bBpsxBexxMZCIkRmrsmsXv38,246
+privateai_client/components/pai_requests.py,sha256=knhNk0Ivtp0meSn260G71WkhG-KxLD-29dx6Kdne8H8,1664
+privateai_client/components/pai_responses.py,sha256=MLPF1mxfgecJ0uB-bjs0tUh4tJ_tmwC8R30eMAK5C2k,3473
+privateai_client/components/pai_uris.py,sha256=YyP_0w-Qe-EPrF0zckuV1cWLz3NY6_BSYt5c8WyCwW8,1427
+privateai_client/components/request_objects.py,sha256=q_ip2AZNqsi8H0xn0Gz0tgqpAqw8VGqJFw26_7f3GUc,17874
+privateai_client-1.0.4.dist-info/METADATA,sha256=NYmjaBTQ3pfJsi67NzfvnnunbcE6Sv8Mk6Ec4rLvsEI,9413
+privateai_client-1.0.4.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+privateai_client-1.0.4.dist-info/licenses/LICENSE,sha256=tZqj_eBuLlLQ9-x8tqAyd0ky6I65WvTlMD_9aEgoY1g,1066
+privateai_client-1.0.4.dist-info/RECORD,,
