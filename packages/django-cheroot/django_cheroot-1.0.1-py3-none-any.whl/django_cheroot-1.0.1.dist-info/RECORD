@@ -1,0 +1,11 @@
+django_cheroot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_cheroot/admin.py,sha256=p6xop1PuuDG2Uwv3G_aRfldxOfBzTRfMaoZmORVkqyU,66
+django_cheroot/apps.py,sha256=FChODqMo_bi3xzVVoaK7ADPwE08Dzse9w-ZvS4Iikvs,165
+django_cheroot/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_cheroot/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_cheroot/management/commands/cheroot.py,sha256=pmcNnS3MTJa26iJgCYjEHOCKa2Ny2X8YUng-I0ZeApQ,1812
+django_cheroot-1.0.1.dist-info/LICENSE,sha256=dfyicimwe2CZcbGs7iRFvbSYcKSbI8SOsnDd0OkdPy8,1544
+django_cheroot-1.0.1.dist-info/METADATA,sha256=czYdbh3LmAyN4nbx8zl1p5ixv0ej9NUSUfCyhwqWsjM,2155
+django_cheroot-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+django_cheroot-1.0.1.dist-info/top_level.txt,sha256=obbeitduZ8sahynV_cXqnhUPxB19dhcM2EKfe3zKJdo,15
+django_cheroot-1.0.1.dist-info/RECORD,,
