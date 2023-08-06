@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+py_spacy_redact_message/__init__.py
+py_spacy_redact_message/main.py
+py_spacy_redact_message.egg-info/PKG-INFO
+py_spacy_redact_message.egg-info/SOURCES.txt
+py_spacy_redact_message.egg-info/dependency_links.txt
+py_spacy_redact_message.egg-info/entry_points.txt
+py_spacy_redact_message.egg-info/requires.txt
+py_spacy_redact_message.egg-info/top_level.txt
