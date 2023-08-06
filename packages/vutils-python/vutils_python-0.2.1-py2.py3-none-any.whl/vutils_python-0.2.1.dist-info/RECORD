@@ -1,0 +1,10 @@
+vutils/python/__init__.py,sha256=1Tt3DS3e_D9sureRqoKzXOVlElK_PsbGsU6pWIEFySQ,250
+vutils/python/__init__.pyi,sha256=q1fEhAvuaP9iSYFesb7k3w5vvoeLhDETEN02q-TU0XM,215
+vutils/python/objects.py,sha256=jm8Ql-xPy5qHp0QfnbI8b2ztuuReEU_1DJp9fR6zpGI,2861
+vutils/python/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vutils/python/version.py,sha256=0wJyNEB4Q8caYUjq3a5FcEU1rgwbLrl9Mle9KYMI8g8,326
+vutils_python-0.2.1.dist-info/LICENSE,sha256=VwzopkR11YUbxRVi3Kx-LS-r_xts9a2rNx59iqwk7BI,1054
+vutils_python-0.2.1.dist-info/METADATA,sha256=pgeB7G8ylk-xzdesCxjsyPFmGrYwowQw8mob2iVWQAc,2717
+vutils_python-0.2.1.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+vutils_python-0.2.1.dist-info/top_level.txt,sha256=R6HiHeF2i7aEIIQPVLHvxyXbeQgqNw9v5Xa7AxuDTHA,7
+vutils_python-0.2.1.dist-info/RECORD,,
