@@ -1,0 +1,3 @@
+[ovos.plugin.VAD]
+ovos-vad-plugin-precise = ovos_vad_plugin_precise:PreciseVAD
+
