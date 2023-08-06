@@ -1,0 +1,6 @@
+README.md
+setup.py
+dcg_analytics_log.egg-info/PKG-INFO
+dcg_analytics_log.egg-info/SOURCES.txt
+dcg_analytics_log.egg-info/dependency_links.txt
+dcg_analytics_log.egg-info/top_level.txt
