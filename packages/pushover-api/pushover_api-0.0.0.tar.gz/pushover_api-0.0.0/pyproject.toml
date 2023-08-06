@@ -1,0 +1,18 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
+
+[tool.poetry]
+authors = ["Elvir Muslic <elvirmuslic.dev@gmail.com>"]
+description = ""
+name = "pushover-api"
+packages = [
+  {include = "pushover"}
+]
+readme = "README.md"
+version = "1.0.0"
+
+[tool.poetry.dependencies]
+pre-commit = "^3.2.2"
+pytest = "^7.3.1"
+python = "^3.10"
