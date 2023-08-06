@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.cfg
+quantumcomputingsim.egg-info/PKG-INFO
+quantumcomputingsim.egg-info/SOURCES.txt
+quantumcomputingsim.egg-info/dependency_links.txt
+quantumcomputingsim.egg-info/top_level.txt
