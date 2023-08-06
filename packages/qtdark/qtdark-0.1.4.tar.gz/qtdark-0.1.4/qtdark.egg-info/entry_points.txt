@@ -1,0 +1,3 @@
+[console_scripts]
+qtdark = qtdark.__main__:main
+
