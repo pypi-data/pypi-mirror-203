@@ -1,0 +1,11 @@
+dbxconfig/__init__.py,sha256=MFFiRPxfvk5TLOubKq-f5oW9nR-oRcjEpruiguziHAk,404
+dbxconfig/_config.py,sha256=ughO79ybtFOI20Cr1YvuE2Sgd7CD0_DlU169OW1awAo,3356
+dbxconfig/_deltalake.py,sha256=R9Z1JO74d1FOFU3N4EEwYQBNI9tDC2noTIkuezTOzs0,2021
+dbxconfig/_source.py,sha256=DL5Amp81x_S1Aub9EiUkbsBKHYzHbkFIFWJdl46iaAw,4752
+dbxconfig/_table_index.py,sha256=PBOv8zOxoHvRYoNXTnVf2Q40WqkfEEKxOrvDSPJ0rVA,3428
+dbxconfig/_timeslice.py,sha256=qEUjF8m6C86lh2akg930O0Rsfv8j2PLLTVD4Dukje3Y,5706
+dbxconfig/_utils.py,sha256=d6K8hNwXbzdETW-NoI6dJsFo1gHsWVokM4sLjIuQEcY,1811
+dbxconfig-0.1.0.dist-info/METADATA,sha256=T-HHgBww-zhgvQDIBu6FQQEd8n-MYB_SCmZfu6eMhiQ,1783
+dbxconfig-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dbxconfig-0.1.0.dist-info/top_level.txt,sha256=ru3s7iVuV0JC05lYSehAmDaLDOokv1CxDIni_NtUcYs,10
+dbxconfig-0.1.0.dist-info/RECORD,,
