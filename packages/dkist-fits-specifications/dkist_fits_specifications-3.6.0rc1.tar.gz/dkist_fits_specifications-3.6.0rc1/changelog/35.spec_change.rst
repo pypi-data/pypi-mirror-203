@@ -1,0 +1,1 @@
+Add `VBINMOSK` and `VBICMOSK` keys that encode the total number of and current mosaic repeat in VBI data.
