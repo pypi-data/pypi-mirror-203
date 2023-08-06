@@ -1,0 +1,1 @@
+SELECT 'Value1' AS col1, 'Value2' as col2
