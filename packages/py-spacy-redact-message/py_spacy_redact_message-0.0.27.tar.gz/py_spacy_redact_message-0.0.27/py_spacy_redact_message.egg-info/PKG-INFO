@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: py-spacy-redact-message
+Version: 0.0.27
+Summary: Redact message using spacy NER
+Author: Alex Ilin
+Author-email: ilin.alex.mail@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Redact message using spacy NER
