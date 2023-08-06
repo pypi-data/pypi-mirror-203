@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: wapp
+Version: 0.1
+Summary: An Whatsapp api,used to send message from google colab cell
+Author: V KALYAN RAM
+Author-email: kv4289@srmist.edu.in
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+
