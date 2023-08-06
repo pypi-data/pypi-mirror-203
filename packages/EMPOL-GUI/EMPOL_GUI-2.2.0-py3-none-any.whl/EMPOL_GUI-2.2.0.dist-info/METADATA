@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: EMPOL-GUI
+Version: 2.2.0
+Summary: Astronomial Large Data Reduction GUI - EMPOL
+Home-page: https://github.com/aasthagupta128/EMPOL_GUI
+Author: Aastha Gupta
+Author-email: aastha.gupta1208@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+Note: The file is only for Linux - Ubuntu Users
+
+Pre-requisites:
+
+1. SAODS9 – software to open fits file
+2. Sextractor – Source Extractor
+3. Python & python libraries
+
+*** Steps to install ds9 ***
+
+1. Open Terminal in your ubuntu system.
+2. Type the following Terminal Command -
+	sudo apt-get install saods9
+
+*** Follow this link to install Sextractor ***
+http://wiki.ipb.ac.rs/index.php/SExtractor_installation
+
+*** Steps to Install python and python libraries ***
+
+Important – Make sure you are connected to internet to avoid any unwanted errors.
+
+1. In the downloaded zip/tar folder, right click on the modules.sh file and select properties. Go to the permissions tab in the properties dialog box and tick the “ Allow executing file as a program” option.
+2. Open terminal in the same directory and type the following command -
+	./modules.sh
+
+
+Steps to be followed to run the EMPOL Polarization GUI :
+
+1. From the extracted contents from the downloaded ZIP file, copy "GUI.desktop" to the desktop.
+2. Right click on the “GUI.desktop” file and open it with text editor. It should show the following: 
+
+[Desktop Entry]
+Name=EMPOL_GUI
+Version=1.0
+Icon=icon.png
+X-Icon-Path=/home/ubuntu/Desktop/Merged_Code/icon.png
+Exec=python /home/ubuntu/Desktop/Merged_Code/GUI_merge.py
+Terminal=false
+Type=Application
+
+Change X-Icon-path as the path to the icon.png and Exec as the path to th GUI_merge.py file in your system. 
+Save the changes made in the text file and close.
+
+3. Right click on the “GUI.desktop“ file & go to properties. Select – “Allow executing file as a program.”
+4. Again, Right click on the “GUI.desktop” file and select “Allow Launching”
+5. Double click on the file
