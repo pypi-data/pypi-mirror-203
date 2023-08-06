@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hugging_py_face
+Version: 0.0.1
+Summary: Hugging-Py-face, the Python client for the Hugging Face Inference API.
+Home-page: https://github.com/MinuraPunchihewa/mindsdb-text-to-sql
+Author: Minura Punchihewa
+Author-email: minurapunchihewa17@gmail.com
+License: UNKNOWN
+Description: # Hugging-Py-Face
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
