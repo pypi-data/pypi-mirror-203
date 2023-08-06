@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: nipreps
+Version: 1.0
+Summary: Namespace package for nipreps utilities
+Author-email: The Nipreps developers <nipreps@gmail.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: Apache Software License
+Project-URL: Home, https://nipreps.org
+Project-URL: Source Code, https://github.com/nipreps/nipreps
+
+## NiPreps Python module
+
+This repository was created to reserve the top-level `nipreps` module.
+This opens the door for various submodules to exist under the `nipreps` name.
+
