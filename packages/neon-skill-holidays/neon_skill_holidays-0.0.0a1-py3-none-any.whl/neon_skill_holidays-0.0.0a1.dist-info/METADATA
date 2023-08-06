@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: neon-skill-holidays
+Version: 0.0.0a1
+Home-page: https://github.com/NeonGeckoCom/skill-holidays
+Author: Neongecko
+Author-email: developers@neon.ai
+License: BSD-3-Clause
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: ovos-workshop (>=0.0.12a4,~=0.0.11)
+Requires-Dist: ovos-lingua-franca (>=0.4.6,~=0.4)
+Requires-Dist: requests (~=2.0)
+
+# <img src='./logo.svg' card_color="#FF8600" width="50" style="vertical-align:bottom">Holidays
+## Summary
+Skill to provide local holidays
+
+## Description
+Queries a database of known holidays for different locales. This skill can provide
+dates for requested holidays and return holidays on a requested date.
+
+## Examples
+- When is Valentine's Day?
+- Tell me when April Fool's Day is.
+- Is June nineteenth a holiday?
+
+## Contact Support
+Use the [link](https://neongecko.com/ContactUs) or [submit an issue on GitHub](https://help.github.com/en/articles/creating-an-issue)
+
+## Credits
+
+[NeonGeckoCom](https://github.com/NeonGeckoCom)
+[NeonDaniel](https://github.com/NeonDaniel)
+
+## Category
+**Information**
+Daily
+
+## Tags
+#NeonGecko Original
+#Neon AI
+#Holiday
+#Dates

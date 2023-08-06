@@ -1,0 +1,2 @@
+[ovos.plugin.skill]
+skill-holidays.neongeckocom = skill_holidays:HolidaySkill
