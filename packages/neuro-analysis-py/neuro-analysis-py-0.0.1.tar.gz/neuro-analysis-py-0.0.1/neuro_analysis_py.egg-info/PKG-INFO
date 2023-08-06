@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: neuro-analysis-py
+Version: 0.0.1
+Summary: Analysis of neuroelectrophysiology data in Python.
+Home-page: https://github.com/ryanharvey1/neuro_py/
+Author: Ryan Harvey
+Author-email: ryanh412@gmail.com
+License: MIT License
+Keywords: electrophysiology neuroscience data analysis
+Platform: any
