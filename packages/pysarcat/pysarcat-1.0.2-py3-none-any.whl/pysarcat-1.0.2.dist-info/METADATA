@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pysarcat
+Version: 1.0.2
+Summary: Sientific papers  categorization.
+Home-page: https://github.com/opscidia/scita-classification.git
+Maintainer: Opscidia
+Maintainer-email: frejus.laleye@opscidia.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/opscidia/scita-classification/issues
+Project-URL: Source Code, https://github.com/opscidia/scita-classification/
+Keywords: Opscidia NLP deep learning scientific paper categorization field topic study
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: torch (==1.7.1)
+Requires-Dist: torchtext (==0.8.1)
+Requires-Dist: scikit-learn (==1.0.2)
+Requires-Dist: flask-restful
+
+UNKNOWN
+
