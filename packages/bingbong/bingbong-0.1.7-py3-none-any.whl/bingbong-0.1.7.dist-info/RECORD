@@ -1,0 +1,15 @@
+pingpong/__init__.py,sha256=bqXv93dQwN97gVcKA93Gg5dZ4nWBtg7yx8nTyRCQXrg,53
+pingpong/alpaca.py,sha256=ahlbjhzrosNq6nIbDi2VAR4cC2s-GL1S2ItziNnPc1A,1547
+pingpong/dolly.py,sha256=vMbHiwgeewzRAsruuMVnQc2w3KEKhWJUdOmaBbyazQo,1287
+pingpong/gradio.py,sha256=IchvS_gOuPk3TCATVKDWMaLEaIRqjPpi3MFnYwa0JwU,987
+pingpong/pingpong.py,sha256=XfCYe-OdNkyrKOhAEaL4Q-HhZx829_i-ohDlY2GF7gM,1212
+pingpong/context/__init__.py,sha256=ksYP7nq8inYK7SHDwpd7Hs_h87gPKdP9Ac6E5w0X6zM,173
+pingpong/context/auto_summary_strategy.py,sha256=s2lrlGKzLFNBGdLMAkaC6d2VY8aJSdgtrwa_Rvmt3Fc,589
+pingpong/context/last_window_strategy.py,sha256=JN7pFDD2C8nGMUx-H3aHNQrXCT0E0S-FlBunOrQGX-w,789
+pingpong/context/search_window_strategy.py,sha256=OPd2xxiI9FrzU4w2R5luaDEKiNEj4KYr_EF53Qi6l_Q,840
+pingpong/context/strategy.py,sha256=xGoy7T92gYubrwekz0Kz2Vxv10njgXG44K48bC9BqAU,119
+bingbong-0.1.7.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+bingbong-0.1.7.dist-info/METADATA,sha256=rBg_oUA3-x1uuHkOznDbB7_Zbix4F16HKrnPWMqNK00,3346
+bingbong-0.1.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bingbong-0.1.7.dist-info/top_level.txt,sha256=gEn53k5ARNLZodzDYx4bPsQ-F69t7ln5s4vJGgc3dgo,9
+bingbong-0.1.7.dist-info/RECORD,,
