@@ -1,0 +1,10 @@
+cdk_webapp_skeleton/__init__.py,sha256=WuHyFk_Ns1aB0oVY6yFYTu0MZoQpguQnTgaSxH4ywfg,357
+cdk_webapp_skeleton/auth_stack.py,sha256=VzSZOkEp4ufC413m0kpevm9rl_4JGUlpx4TIhnMmO88,3546
+cdk_webapp_skeleton/branch_cicd_pipeline.py,sha256=Dx6ojpBLhkZXU1MiUMaoAmcaxRhY1IZIN26j-6S7Y40,1498
+cdk_webapp_skeleton/branch_config.py,sha256=KzhtLc_XgYWsZ92topzxwvrRwh-iAUDBOK0FiIEF9AM,1909
+cdk_webapp_skeleton/react_website.py,sha256=YTbIYaMsyKkAKGfWyMnEZB7fw97gwMt86-MLe1A0g6Y,4717
+cdk_webapp_skeleton/test_utils.py,sha256=pdie9fbIPCvQAUyhVRV7aiFu44AjVHjOiE2FlqGcirY,344
+cdk_webapp_skeleton/webapp_lambda.py,sha256=oUXRey9smQ9Z7NFK-0k05TRlrql5V1E-OS-PqSUeRG4,3504
+cdk_webapp_skeleton-0.3.dev4.dist-info/METADATA,sha256=f4Dgmh0sHSwO-l80MTh_-sTwYrZvH-VHTwua50IBOP8,561
+cdk_webapp_skeleton-0.3.dev4.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+cdk_webapp_skeleton-0.3.dev4.dist-info/RECORD,,
