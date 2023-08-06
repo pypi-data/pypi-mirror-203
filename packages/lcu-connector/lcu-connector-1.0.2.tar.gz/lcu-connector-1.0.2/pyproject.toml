@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "lcu-connector"
+version = "1.0.0"
+description = "Another python interface for the League Client"
+authors = ["Gabriel Viana <53864824+bielviana@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/pySiriusDev/LCU-Connector"
+packages = [{include = "lcu_connector"}, {include = "tests"}]
+keywords = ['league of legends', 'api client', 'lcu', 'league driver', 'lcu connector', 'lcu driver', 'league client']
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.28.2"
+psutil = "^5.9.4"
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.2"
+flake8 = "^6.0.0"
+isort = "^5.12.0"
+twine = "^4.0.2"
+markdown-refdocs = "^1.4.1"
+wheel = "^0.40.0"
+setuptools = "^67.6.1"
+
+[tool.poetry.scripts]
+tests = "scripts:run_tests"
+docs = "scripts:build_docs"
+build = "scripts:build"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
