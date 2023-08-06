@@ -1,0 +1,11 @@
+tiny_ai_helper/Model.py,sha256=HLE0VOPO8udfsFGWywHaF1ycoEdVXM9hm5bIfiBYSis,14092
+tiny_ai_helper/Trainer.py,sha256=ryj8npT3lLekSWuCyhlXGyzkRSEkdQ6p5b_eYQbgWuc,10280
+tiny_ai_helper/__init__.py,sha256=3BpcIO6pF3mYedDZD1LYZPGsItjA3QpsM2HyDB_ATus,367
+tiny_ai_helper/layers.py,sha256=QEGr92PtUYwMZ3wDUJsE5lr7_sn_LldO4IZnHt0l2kg,6232
+tiny_ai_helper/mp.py,sha256=DJMmNePVlFW3Ev1yIEuCWEsgvGwSGwe0-8mBgwywP1g,9071
+tiny_ai_helper/utils.py,sha256=P1CsBEcTupsNd-mT8Wb6sWQ0-jHNgUXISuyeU1JE1PA,14216
+tiny_ai_helper-0.1.6.dist-info/LICENSE,sha256=jxczRat4Mq00h9lf6Vph3yKJDgXV3o87FKLh6nhrCQg,1103
+tiny_ai_helper-0.1.6.dist-info/METADATA,sha256=QxZxUisl6p15N7LqyCY5YqE-9NUel_Ae_eqdsV4VuW4,784
+tiny_ai_helper-0.1.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tiny_ai_helper-0.1.6.dist-info/top_level.txt,sha256=ru_N5dkGScNZuD7MuNQVJu9OUPTysZFnyFsWhQUdd2k,15
+tiny_ai_helper-0.1.6.dist-info/RECORD,,
