@@ -1,0 +1,3 @@
+[console_scripts]
+vau=vau.__main__:main
+
