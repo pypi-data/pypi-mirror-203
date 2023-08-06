@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reddit_etl_abd"
+version = "0.0.6"
+authors = [
+  { name="Abdullah Durrani" }
+]
+description = "Reddit ETL Scripts"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+
+[tool.setuptools]
+packages = ["reddit_etl_abd","reddit_etl_abd.extract","reddit_etl_abd.load","reddit_etl_abd.transform","reddit_etl_abd.includes"]
