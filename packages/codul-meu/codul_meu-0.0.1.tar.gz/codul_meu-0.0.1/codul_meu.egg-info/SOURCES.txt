@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+codul_meu/__init__.py
+codul_meu/object_one.py
+codul_meu/object_two.py
+codul_meu.egg-info/PKG-INFO
+codul_meu.egg-info/SOURCES.txt
+codul_meu.egg-info/dependency_links.txt
+codul_meu.egg-info/top_level.txt
