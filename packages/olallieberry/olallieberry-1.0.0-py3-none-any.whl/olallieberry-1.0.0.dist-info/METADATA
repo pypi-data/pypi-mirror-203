@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: olallieberry
+Version: 1.0.0
+Summary: olallieberry — Python Lexer
+License: Apache-2.0
+Author: mmlvgx
+Author-email: mmlvgx@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Olallieberry
+olallieberry — Python Lexer
+# Installation
+`pip install olallieberry`
