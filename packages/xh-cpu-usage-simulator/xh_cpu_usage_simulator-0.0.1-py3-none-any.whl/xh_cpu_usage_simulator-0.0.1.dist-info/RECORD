@@ -1,0 +1,10 @@
+xh_cpu_usage_simulator/MovingAvg.py,sha256=TQUiBKg9QGcmCc_m_eWHNEkvpYvsBBaTrXBFOK9YSz8,545
+xh_cpu_usage_simulator/PsMonitor.py,sha256=_acKQhHYdaOO_qn2mxjlXKmQ98ofqI2eWdyN-yrLabY,404
+xh_cpu_usage_simulator/TaskWorker.py,sha256=xWnL82JoyACWtwaiZMDw11tz6NV5u9PURnQLRQmdfb0,858
+xh_cpu_usage_simulator/TestMovingAvg.py,sha256=1JLC882tCYmYEB3a-_2xdp5F6fVs61c1_MCotp_DPLk,854
+xh_cpu_usage_simulator/__main__.py,sha256=Na7YsGj9laSLmXsDE05BkmGOmh1ZjmoFL2nrA23nVrs,1848
+xh_cpu_usage_simulator-0.0.1.dist-info/LICENSE.txt,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+xh_cpu_usage_simulator-0.0.1.dist-info/METADATA,sha256=aBCr5QwTtwQpZiigaZf1jZB8pGzEecP1SRUjQeNxglU,790
+xh_cpu_usage_simulator-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+xh_cpu_usage_simulator-0.0.1.dist-info/top_level.txt,sha256=UTYdCSzsLmUlBjNshyMqAZF3woDz-tcef9af-hVL0JA,23
+xh_cpu_usage_simulator-0.0.1.dist-info/RECORD,,
