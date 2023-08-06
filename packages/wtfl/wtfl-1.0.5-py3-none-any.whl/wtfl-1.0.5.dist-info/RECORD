@@ -1,0 +1,10 @@
+wtfl/__init__.py,sha256=R_XgCgDWV5LbvHlc_Sys0ETWIoVNGfECwmUp8j8j-r0,98
+wtfl/grammar.py,sha256=64MyDWC2Y-DZvp10H5JmHKrzo0-EbjdvYtV3jqNJops,4606
+wtfl/internal_types.py,sha256=Gp8DWiZgYhdVRp1rhDBPjMyuqNxwyktaNyUCiqG8jOI,2720
+wtfl/parser.py,sha256=ng7yUQSikuqIQWD7ns4-P22J8rZvLi3Rc7cS_09WjLM,4519
+wtfl/reader.py,sha256=6duVCN7LoB_4FEzNm2n1uUwfAhaZCV0ykJLP5I3MlqY,6099
+wtfl/writer.py,sha256=iIr4CNqqQ-zt-mMOSODtdglaIBHNEke_WBu1oY58JX8,1798
+wtfl-1.0.5.dist-info/LICENSE,sha256=7EA4hL2RBru9tzz8_Ko3UTpwdrvgrOZmJRwf7AR7vpY,1073
+wtfl-1.0.5.dist-info/METADATA,sha256=5RuHuPq-1zH0qiJHbP8_SzVhbC7VofJ7W1HFHERsEew,9563
+wtfl-1.0.5.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+wtfl-1.0.5.dist-info/RECORD,,
