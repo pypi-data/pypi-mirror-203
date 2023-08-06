@@ -1,0 +1,3 @@
+[console_scripts]
+k4=cli.main:cli
+
