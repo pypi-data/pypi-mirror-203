@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: webssh_embedded
+Version: 1.0.4
+Summary: Interactive embedded web terminal
+Home-page: https://github.com/TXH2020/webssh_embedded
+Author: Tejas Hegde
+Author-email: 1001.tejas@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
+
+webssh_embedded
+-----------------
+
+Release 1.0.4
+~~~~~~~~~~~~~~~
+
+This release overcomes the deprecation of the windows.navigation API and hence enables the extraction of the status and time for such pending commands.
+
+
