@@ -1,0 +1,12 @@
+clara/chat.py,sha256=ZqWPe7Ums6Q1C1gsFd1v1fPBzAB9SEbax1siKsOpDR8,3942
+clara/cli.py,sha256=tofs27Qv3bJ2tLrUbbPiJesKo02cad1IEcOPCNHr2i8,6098
+clara/config.py,sha256=ChiP9ehmh3wANtYEaFJCkVFSgYKTot7_kV3DKYM1-bk,518
+clara/console.py,sha256=UpMqeJ0C8i0pkue1AHnnyyX0bFJ9zZeJ7HBR6yhuA8A,54
+clara/consts.py,sha256=91rJ9GBHx3nhgb7rN1rWhg2F7wUtD-ArPCwZubfVfw4,3593
+clara/index.py,sha256=7GkPoktCGzHacf-yYlKULalQUifb96wfmpVLK_D8FhQ,3195
+clara/utils.py,sha256=gvcUppJOuzQ4IVyPr_Zg79vrz5rUZC0BHewhus25sa0,197
+clara_ai-0.0.8.dist-info/LICENSE,sha256=XST8k2MgzWSaucRjMfH1e5YLDDhUURBlR9AEDkahg5o,1534
+clara_ai-0.0.8.dist-info/METADATA,sha256=3zGsAQ0xhddctdv4zVv2aNsTP7Euo68t03LNKkXn3Hc,4315
+clara_ai-0.0.8.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+clara_ai-0.0.8.dist-info/entry_points.txt,sha256=aaQFHXvfHmyRWQJ_Nro_8rtEGGMZZ8ViRlpGJU19n74,40
+clara_ai-0.0.8.dist-info/RECORD,,
