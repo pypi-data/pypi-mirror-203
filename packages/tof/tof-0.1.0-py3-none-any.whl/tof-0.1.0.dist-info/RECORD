@@ -1,0 +1,12 @@
+tof/__init__.py,sha256=OrNQaDH9kWG6NFg0z4WJGtZgKvFLC9ZsgSsqVTjmdoo,110
+tof/chopper.py,sha256=jyIWxFObgHGhiOfysx-oHEVnSEQdkXeBl9bDOr-ZLfk,9214
+tof/detector.py,sha256=1pVFIope_sBj5rq-UTrmtSxawv027lrDvlYh049_hlA,765
+tof/model.py,sha256=QL6fQAyQ_yDT-ZSAufK-jnSjKv1FFzSRqIl1Lbq_xEc,2832
+tof/pulse.py,sha256=eHSOJK7AOMFFCsrJvGm-vLtBtYqQrfun7dUOjy4Dm3s,978
+tof/tools.py,sha256=tsl86fJxwd85rFEeW7FbAY7DcjKIcLgk2hpCCputot0,131
+tof/units.py,sha256=o3IGawvtrFwsOmjKR_6DHRKNt8E4TueFqB9fAz9V2QM,600
+tof-0.1.0.dist-info/LICENSE,sha256=JRzWrOfjgkw3AjOfolQo6jEwJN0tRESp9_4_6sKo5F4,1492
+tof-0.1.0.dist-info/METADATA,sha256=TP7N6jaWZBQYHe_Cc3Go9TMBJoQaV-bV9RQD6521CEo,590
+tof-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tof-0.1.0.dist-info/top_level.txt,sha256=upC1MXnvAXCRxDTFs6kb8_Gfc-3IajmdcTWTosPJdBY,4
+tof-0.1.0.dist-info/RECORD,,
