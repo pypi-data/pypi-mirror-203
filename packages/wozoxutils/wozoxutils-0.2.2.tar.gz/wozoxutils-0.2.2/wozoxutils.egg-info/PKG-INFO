@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: wozoxutils
+Version: 0.2.2
+Summary: general-purpose library for Python that contains various commonly used functional modules
+Home-page: https://github.com/wozox/wozoxutils-py
+Author: illiten
+Author-email: admin@leelib.com
+Keywords: wozox utils
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# wozoxutils [![PyPI](https://img.shields.io/pypi/v/wozoxutils.svg)](https://pypi.org/project/wozoxutils/) [![PyPI - Format](https://img.shields.io/pypi/format/wozoxutils.svg)](https://pypi.org/project/wozoxutils/) [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/wozoxutils.svg)](https://pypi.org/project/wozoxutils/)
+general-purpose library for Python that contains various commonly used functional modules.
+
+## Installation
+
+```sh
+pip install wozoxutils
+```
+
