@@ -1,0 +1,12 @@
+karrio/mappers/yanwen/__init__.py,sha256=E9XohMWP7kTQjbL-KfbuChC-T6n9c_f5E9PKX4_BTkI,545
+karrio/mappers/yanwen/mapper.py,sha256=lW7ZHAblSzZwjcihsjiKjOKrfbVPueUkTEdih_Mkoao,4085
+karrio/mappers/yanwen/proxy.py,sha256=CL1BZW7HuHEP5XywS-0c7qrQEUnKeYA3O7HyCHIiAH0,832
+karrio/mappers/yanwen/settings.py,sha256=Apvv_nN0P4EITHI8oB-sDQAOFhq08YQjhCQ27RiE7sw,472
+karrio/providers/yanwen/__init__.py,sha256=dFmeS3qxGanTcbbWutZ00A4z5lnggwZnV_PUIeER-zY,763
+karrio/providers/yanwen/tracking.py,sha256=6Wj9lOn2yJnEGMMODk3uosSEZ0o_iDjOouqd7MnyXkQ,2068
+karrio/providers/yanwen/units.py,sha256=_7La-8t9z406UuvM4S7JqtWdQz1fFfzJMPjf-WqNRKk,1332
+karrio/providers/yanwen/utils.py,sha256=SppoRVtENwHles_AFr7Ukt276O9qCW609jM3zetSs-k,429
+karrio.yanwen-2023.4.dist-info/METADATA,sha256=xeFfMrsruTF8_5R7wh2ZmxG0Dv1LOU2U_ozuLfneiBw,980
+karrio.yanwen-2023.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+karrio.yanwen-2023.4.dist-info/top_level.txt,sha256=mfkVZXzNuVRmA7NRlck_Ub-C8Zgtqxbx3gX1Rq_W-i0,7
+karrio.yanwen-2023.4.dist-info/RECORD,,
