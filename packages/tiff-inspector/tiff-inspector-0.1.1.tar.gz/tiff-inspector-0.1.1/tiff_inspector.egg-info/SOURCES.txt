@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+tiff_inspector.egg-info/PKG-INFO
+tiff_inspector.egg-info/SOURCES.txt
+tiff_inspector.egg-info/dependency_links.txt
+tiff_inspector.egg-info/requires.txt
+tiff_inspector.egg-info/top_level.txt
+tiffinspector/__init__.py
+tiffinspector/_version.py
+tiffinspector/../schemas/frame_schema.json
+tiffinspector/../schemas/level_schema.json
+tiffinspector/../schemas/page_schema.json
+tiffinspector/../schemas/series_schema.json
+tiffinspector/../schemas/tiff_schema.json
