@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: videonoise
+Version: 0.3
+Summary: Videonoise - util for generate a white noise video with audio.
+Home-page: https://github.com/ph20/videonoise
+Author: Alexander Grynchuk
+Author-email: agrynchuk@gmail.com
+Project-URL: Bug Reports, https://github.com/ph20/videonoise/issues
+Project-URL: Source, https://github.com/ph20/videonoise/
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pydub
+Requires-Dist: moviepy
+
+# Videonoise
+
+Videonise is a simple Python script to generate a white noise video with audio.
+
+## Build package
+
+To build the package, run:
+
+```bash
+make build
+```
+
+## Installation
+
+To install, run:
+
+```bash
+pip install videonoise
+```
+## Usage
+To generate a white noise video, run:
+```bash
+videonoise output.mp4 -w 640 -t 480 -f 30 -d 10
+```
