@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "accurating"
+version = "0.4.0"
+description = ""
+authors = ["Lukasz Lew <lukasz.lew@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jax = "^0.4.8"
+pytest = "^6.2.5"
+jaxlib = "^0.4.7"
+
+[tool.poetry.group.dev.dependencies]
+pdoc = "^13.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/lukaszlew/accurating"
