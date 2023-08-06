@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ZenithCore
+Version: 0.0.0.dev1
+Summary: A package for Zenith Core Libraries
+Home-page: https://github.com/ZenithResearch/ZenithCore
+Author: Maaz Waraich
+Author-email: waraichmaaz@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: pandas
+Requires-Dist: sqlalchemy
+Requires-Dist: psycopg2-binary
+
+UNKNOWN
+
+
