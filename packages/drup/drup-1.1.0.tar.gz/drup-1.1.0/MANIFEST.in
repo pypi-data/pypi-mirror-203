@@ -1,0 +1,3 @@
+include src/drup/librupchecker.so
+prune src/librupchecker
+prune tests
