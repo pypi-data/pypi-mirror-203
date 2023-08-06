@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: odoo12-addon-crm-rest-api
+Version: 12.0.0.0.1
+Summary: Expose CRM Lead on the Rest API
+Home-page: 
+Author: Coopdevs Treball SCCL
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 12.0
+Requires-Python: >=3.5
+Requires-Dist: odoo12-addon-base-rest
+Requires-Dist: odoo12-addon-base-rest-base-structure
+Requires-Dist: odoo12-addon-component
+Requires-Dist: odoo (<12.1dev,>=12.0a)
+
+========================
+CRM rest api
+========================
+
+Expose crm lead on the rest api
