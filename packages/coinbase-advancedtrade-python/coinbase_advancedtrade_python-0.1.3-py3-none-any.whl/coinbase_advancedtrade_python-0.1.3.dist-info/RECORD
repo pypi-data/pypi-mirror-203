@@ -1,0 +1,11 @@
+coinbase_advanced_trader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coinbase_advanced_trader/cb_auth.py,sha256=wnIHqnJaLQBx854EWTuUqYKHWqOrCtpq3KZz6QaxbHk,1699
+coinbase_advanced_trader/coinbase_client.py,sha256=F14JgpRS7CE1XOS5jViCWFE44g3wmEyBMZGO95Ngbwk,2742
+coinbase_advanced_trader/config.py,sha256=WsC6aSyTpBy46sHXruiuSkA06yFmFn4_KHG-ZP8kopc,173
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_coinbase_client.py,sha256=SThG5Buwv9NbRH9DV9rvPDcitFhxE7oK7u0tSxTyxDo,24638
+coinbase_advancedtrade_python-0.1.3.dist-info/LICENSE,sha256=u0AhI_FuM7QfA_YXONfTnEXJF-v0tV0gyVnIAVIq3nU,1080
+coinbase_advancedtrade_python-0.1.3.dist-info/METADATA,sha256=QBIuWQfepMTY3ttXhJjz2A5PPvytjwU-V9OG6211aTI,3313
+coinbase_advancedtrade_python-0.1.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+coinbase_advancedtrade_python-0.1.3.dist-info/top_level.txt,sha256=ICHa5U5YlsHoBnniTchNXv3VrHObbFs6EpG1ktQiFWU,31
+coinbase_advancedtrade_python-0.1.3.dist-info/RECORD,,
