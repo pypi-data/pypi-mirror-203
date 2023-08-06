@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<script src="socket.io.js"></script> 
+<script src="vue.global.js"></script> 
+
+<title>starDevice</title>
+<link rel="icon" href="favicon.ico">
+<style type="text/css">
+    body{
+        font-size:22px;
+    }
+
+    .btn{
+        background-color: rgba(33,37,41,1.00);
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        vertical-align: middle;
+        color:white;
+        border-radius: 50%;
+        display: inline-block;
+        padding: 2px 8px;
+        margin:0px 3px; 
+        font-weight: bolder;
+    }
+    .btn:hover{
+        pointer-events: painted;
+    }
+</style>
+</head>
+
+<body style="font-size: 22px">
+<div id="starbdz"> 
+	<div id = "screen"
+		 v-html="screen" 
+		 style="height: 120px;
+				width: 100%;
+				background-color: black;
+				color:white;
+				white-space: pre-wrap"
+		 >
+	</div>
+	<div style="margin-top: 10px;font-size: 16px;">
+		<!--<div class="btn btn-dark btn-sm" @click="send('hello')">HELLO</div>-->
+        <button class="btn" @click="send('A')">A</button>
+        <button class="btn" @click="send('L')">←</button>
+        <button class="btn" @click="send('D')">↓</button>
+        <button class="btn" @click="send('U')">↑</button>
+        <button class="btn" @click="send('R')">→</button>
+        <button class="btn" @click="send('B')">B</button>
+	</div>
+</div>
+</body>
+<script>
+        // JavaScript Document
+
+    function loadpy(url, postInfo, callback, syn) {
+        "use strict";
+        if (!arguments[3]) syn = true; 
+        var fdata = new FormData();
+        for (var key in postInfo) {
+            fdata.append(key, postInfo[key]);
+        }
+        var xmlhttp = new XMLHttpRequest(); //暂时先不添加对ie6及以下的支持了
+        //url = encodeURI(url);
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+                if (callback) { //没有callback函数的话，就相当于只发送命令而不接收返回值
+
+                    callback(decodeURIComponent(xmlhttp.responseText));
+                }
+            }
+        };
+        xmlhttp.open("POST", "" + url, syn);
+        xmlhttp.send(fdata);
+    }
+
+    var cli;//websocketsclient
+    const starbdz = Vue.createApp({
+        name: "starbdz",
+        data() {
+            return {
+                screen:"载入中...",
+                working:false
+            }
+        },
+        methods: {
+            setScreen(str) {
+                this.screen = str;
+            },
+            res(resp){
+                if(resp.type == "screen"){
+                    this.setScreen(resp.msg);
+                }
+                else if(resp.type == "completed"){
+                    this.working = false;
+                }
+            },
+            send(msg,type="key"){
+                cli.send(JSON.stringify({
+                    type:type,
+                    msg:msg
+                }));
+            },
+        },
+        mounted() {
+            window.SS = this.setScreen;
+            window.handleResponse = this.res;
+        }
+    });
+    var SS;
+    var handleResponse;
+
+    cli = new WebSocket('ws://' + window.location.hostname + ':8525/');
+    starbdz.mount("#starbdz");
+    cli.onopen = function () {
+        //document.getElementById("screen").innerHTML="欢迎来到星尘测试系统!";
+
+    };
+
+    cli.onmessage = function (msg) {
+        handleResponse(JSON.parse(msg.data));
+    }
+
+    cli.onerror = function () {
+        SS("Link Error!\nTry Again!");
+    }
+
+</script>
+</html>
