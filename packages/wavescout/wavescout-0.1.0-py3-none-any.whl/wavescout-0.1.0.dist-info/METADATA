@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: wavescout
+Version: 0.1.0
+Summary: A lightweight module for easy beatmapping, key detection, and smart-slicing
+License: MIT
+Author: DJ Stomp
+Author-email: 85457381+DJStompZone@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aubio (>=0.4.9,<0.5.0)
+Requires-Dist: build (>=0.10.0,<0.11.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: essentia (==2.1b6.dev858)
+Requires-Dist: pydub (>=0.25.1,<0.26.0)
+Requires-Dist: pytest (>=7.3.1,<8.0.0)
+Requires-Dist: twine (>=4.0.2,<5.0.0)
+Description-Content-Type: text/markdown
+
+
+# WaveScout
+
+WaveScout is a lightweight Python library for quickly analyzing the tempo and key of audio files and slicing them into smaller segments based on measures.
+
+## Features
+
+- Analyzes tempo (BPM) and key of audio files
+- Generates beat maps for audio files
+- Slices audio files into smaller segments based on measures
+- Exports plaintext beat map files and audio slices as a zip file
+- Supports processing multiple audio files in a directory
+
+## Installation
+
+You can install WaveScout using pip:
+
+```bash
+pip install wavescout
+```
+
+## Dependencies
+
+- numpy
+- aubio
+- pydub
+
+## Usage
+
+Here's a simple example of using WaveScout:
+
+```python
+from wavescout import WaveScout
+
+# Analyze the audio file
+scout = WaveScout("path/to/your/audio_file.mp3")
+
+# Export the beat map to a plaintext file
+scout.export("beat_map.txt")
+
+# Export the audio slices to a zip file
+scout.export("slices.zip", export_slices=True)
+```
+
+You can also use WaveScout to analyze and process multiple audio files in a directory:
+
+```python
+from wavescout import WaveScoutFactory
+
+factory = WaveScoutFactory("path/to/your/audio_files_directory")
+maps = factory.create_maps()
+
+for map in maps:
+    map.export(f"{map.input_file_basename}_beat_map.txt")
+    map.export(f"{map.input_file_basename}_slices.zip", export_slices=True)
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
