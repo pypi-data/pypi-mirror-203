@@ -1,0 +1,13 @@
+--find-links=requirements
+
+flake9
+flit
+pylint
+pytest
+pytest-cov
+tox
+
+pybrownies
+
+-r prod.txt
+-e .

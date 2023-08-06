@@ -1,0 +1,65 @@
+
+# This file defines an alternative style of changelog.
+
+[tool.chlog]
+break-marker = "[Breaking]"
+chlog-filename = "CHANGELOG.md"
+date-mask = "(%DATE%)"
+version-mask = "[%VERSION%]"
+
+[[tool.chlog.commands]]
+command = "added"
+heading = "New features"
+
+[[tool.chlog.commands]]
+command = "improved"
+heading = "Improvements"
+insert-before = 1
+help = "add an improvement note to the changelog"
+description='''
+    Records improvements in the Unreleased section of the changelog.
+'''
+
+[[tool.chlog.commands]]
+command = "fixed"
+heading = "Bug fixes"
+
+[[tool.chlog.commands]]
+command = "broken"
+heading = "Breaking changes"
+insert-before = 3
+help = "record a breaking change in the changelog"
+description='''
+    Records breaking changes in the Unreleased section of the changelog.
+'''
+
+[[tool.chlog.commands]]
+command = "changed"
+heading = "Changes"
+
+[[tool.chlog.commands]]
+command = "deprecated"
+heading = "Deprecations"
+
+[[tool.chlog.commands]]
+command = "removed"
+aliases = ['rm']
+heading = "Removed features"
+
+[[tool.chlog.commands]]
+command = "security"
+heading = "Security"
+help = "add a note about a security issue to the changelog"
+description = '''
+    Records change notes regarding software security in the Unreleased
+    section of the changelog.
+'''
+
+[[tool.chlog.commands]]
+command = "documentation"
+aliases = ["doc"]
+heading = "Documentation"
+help = "add a note about a documentation change to the changelog"
+description = '''
+    Records change notes regarding the documentation.
+'''

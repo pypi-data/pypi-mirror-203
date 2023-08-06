@@ -1,0 +1,6 @@
+--find-links=requirements
+
+pybrownies
+pytest
+
+-r prod.txt

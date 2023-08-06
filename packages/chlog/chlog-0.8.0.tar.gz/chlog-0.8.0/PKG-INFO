@@ -1,0 +1,133 @@
+Metadata-Version: 2.1
+Name: chlog
+Version: 0.8.0
+Summary: Keep changelogs the easy way
+Keywords: cli,console,changelog
+Author-email: Ralf Luetkemeier <foss@rlue.de>
+Requires-Python: >=3.9,<4
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Dist: cozyconsole >=0.3.0a2
+Requires-Dist: inquirerpy >=0.3.0
+Requires-Dist: rich >=13.0.0
+Requires-Dist: semver >= 2.13.0
+Requires-Dist: tomli >= 2.0.0; python_version < '3.11'
+Requires-Dist: flake8 ; extra == "dev"
+Requires-Dist: flit ; extra == "dev"
+Requires-Dist: pybrownies ; extra == "dev"
+Requires-Dist: pylint ; extra == "dev"
+Requires-Dist: pytest >=7.2.0 ; extra == "dev"
+Requires-Dist: pytest-cov ; extra == "dev"
+Requires-Dist: tox ; extra == "dev"
+Provides-Extra: dev
+
+# chlog
+
+## TL;DR
+
+1. Maintains changelog files in Markdown format.
+1. Does not overwrite your manual edits.
+1. Helps you comply with
+   [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+1. Adheres to [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
+   by default.
+1. Can be configured to support other changelog templates.
+
+## Usage
+
+When you commit a (set of) software modification(s) that users of the project should know about, add a corresponding change note, phrased to be meaningful to the users of the project, to your CHANGELOG.md file. Examples:
+
+```sh
+% chlog added "Export to PDF."
+% chlog fixed "File -> Save As no longer overwrites files without a warning."
+% chlog changed "Improved the error handling during imports."
+% chlog changed --breaking "Configuration files now use the TOML format."
+% chlog deprecated "The foobar feature will be removed in v2.0.0."
+% chlog removed "INI files are no longer supported."
+% chlog security "In certain conditions an attacker might discover user data."
+```
+
+`chlog freeze` replaces "## [Unreleased]" with a version number and the current date. It suggests the new version number based on the content of the Unreleased section and the rules of [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can accept or reject that number.
+
+`chlog freeze 2.0.0` applies the version number provided.
+
+`chlog print` renders the Markdown in the changelog file to the terminal. It's beautiful.
+
+Instead of "added", "fixed", "removed", and "freeze", you can say "new", "fix", "rm", and "tag".
+
+## Using chlog versus maintaining the changelog in an editor
+
+There is no conflict here. Round trips between command line use and manual modifications in a text editor are safe. `chlog` only ever changes the Unreleased section of the changelog. It does not even look at what comes before and after it. It is also safe to add, remove, reorder, or rephrase change notes which were added to the Unreleased section via the command line. In rare cases, `chlog` might change white space but it will not otherwise overwrite or reformat your work.
+
+## chlog and changelogs not created by itself
+
+If your existing changelog already conforms to the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) template, `chlog` will simply load it and add change notes to it. If your existing changelog uses a different template, `chlog` will be unable to recognize the types of changes that are recorded in it. If, for instance, the changelog says "### New Features" instead of "### Added", change notes created with `chlog added` will appear under "### Added". The imported "### New Features" section will be appended to the end of the Unreleased section. However, you can customize chlog to support your project's changelog template.
+
+## Customization
+
+`chlog` can be adapted to support a variety of projects. This is done via `[tool.chlog]` tables in TOML files. For example:
+
+```toml
+[tool.chlog]
+chlog-filename = "CHANGELOG.md"
+```
+
+determines the file name to use for the changelog. The table array `[[tool.chlog.commands]]` can be used to redefine existing commands and change note types. For example, projects which use "### New Features" instead of "### Added" include the statement
+
+```toml
+[[tool.chlog.commands]]
+command = "added"
+heading = "New Features"
+```
+
+To define an entirely new command and change note type, include something like
+
+```toml
+[[tool.chlog.commands]]
+command = "breaking"
+heading = "Breaking Changes"
+insert-before = 3
+help = "record a breaking change in the changelog"
+description='''
+    Records breaking changes in the Unreleased section of the changelog.
+'''
+```
+
+in the TOML configuration file. That will allow to issue `chlog breaking "A change note."` commands and insert a "### Breaking Changes" section into the changelog.
+
+To customize `chlog` in this way, a Python project would add the tool.chlog tables to its `pyproject.toml`. Other projects use `chlog.toml` or `.chlog`.
+
+TODO: Document this in more detail.
+
+## Planned for the next version
+
+Expand issue numbers in new change notes. For example
+`chlog fixed "Fixed the line-too-long bug issue#1234."`
+adds
+`- Fixed the line-too-long bug [#1234](<issues-url>/1234).`
+to the changelog. For this to work, the TOML config must specify the issues URL e.g.
+
+  ```toml
+  [project.urls]
+  Issues = "https://github.com/myaccount/myproject/issues/"
+  ```
+
+or
+
+  ```toml
+  [tool.chlog.urls]
+  issues = "https://github.com/myaccount/myproject/issues/"
+  ```
+
