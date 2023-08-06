@@ -1,0 +1,13 @@
+README.md
+setup.py
+pexicdb/__about__.py
+pexicdb/__init__.py
+pexicdb/core.py
+pexicdb/fields.py
+pexicdb/functions.py
+pexicdb/helpers.py
+pexicdb/lock.py
+pexicdb.egg-info/PKG-INFO
+pexicdb.egg-info/SOURCES.txt
+pexicdb.egg-info/dependency_links.txt
+pexicdb.egg-info/top_level.txt
