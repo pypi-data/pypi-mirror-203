@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: icat-iml
+Version: 0.1.0
+Summary: Interactive Corpus Analysis Tool
+Home-page: https://github.com/ORNL/icat
+Author: Nathan Martindale, Scott L. Stewart
+Author-email: icat-help@ornl.gov
+Project-URL: Documentation, https://ornl.github.io/icat/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Interactive Corpus Analysis Tool
+
+The Interactive Corpus Analysis Tool (ICAT) is a program that can be used to explore textual corpora and train intelligent filters to identify specific documents of interest.
