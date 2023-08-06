@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: hpr-scratcher
+Version: 0.1.0
+Summary: A scratchpad manager for hyprland
+License: MIT
+Author: fdev31
+Author-email: fdev31@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Usage
+
+In your `hyprland.conf` add something like this:
+
+```ini
+
+exec-once = hpr-scratcher
+
+# Repeat this for each scratchpad you need
+bind = $mainMod,V,exec,$HOME/utils/hpr-scratcher toggle volume
+windowrule = float,^(pavucontrol)$
+windowrule = workspace special silent,^(pavucontrol)$
+```
+
+Then in $HOME/.config/hypr/scratchpads.json add:
+
+```json
+{
+  "term": {
+    "command": "kitty --class kitty-dropterm",
+    "class": "kitty-dropterm",
+    "offset": 800
+  },
+  "volume": {
+    "command": "pavucontrol",
+    "class": "pavucontrol",
+    "offset": 1200,
+    "unfocus": "TODO: hide"
+  }
+}
+```
+
+And you'll be able to toggle pavucontrol with MOD + V.
+
