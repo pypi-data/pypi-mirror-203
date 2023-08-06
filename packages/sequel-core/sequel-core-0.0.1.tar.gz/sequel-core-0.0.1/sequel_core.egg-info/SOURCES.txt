@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+sequel/__init__.py
+sequel_core.egg-info/PKG-INFO
+sequel_core.egg-info/SOURCES.txt
+sequel_core.egg-info/dependency_links.txt
+sequel_core.egg-info/requires.txt
+sequel_core.egg-info/top_level.txt
+tests/test_assertions.py
+tests/test_backbone_jax.py
+tests/test_backbone_pytorch.py
+tests/test_benchmarks.py
