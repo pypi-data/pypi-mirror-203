@@ -1,0 +1,2 @@
+[console_scripts]
+popcorn = run_popcorn:main
