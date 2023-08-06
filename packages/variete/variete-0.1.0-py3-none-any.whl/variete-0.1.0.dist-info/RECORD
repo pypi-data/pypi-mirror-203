@@ -1,0 +1,13 @@
+variete/__init__.py,sha256=MP21lb0w9U6bZdWj4-jfv-OKhHHb2FzUMB1tdj5685M,35
+variete/misc.py,sha256=UZ1ks_pbedcd0MNuqpT9icrYG_zyRkZ9HUVrE1Igp00,2483
+variete/vraster.py,sha256=CGQsx0_Uv2yjiKwc57SdB1X4SI7VDwRdZt1YdIYHnq4,27109
+variete/vrt/__init__.py,sha256=E91eqcUIVtR55Kxz2KU6cJMyTrgYzKpb-TJ_i9W67eo,55
+variete/vrt/pixel_functions.py,sha256=UeHN6_YmmqifY7fNcT45vGP18OUuGPlubY621UzLc0Q,4771
+variete/vrt/raster_bands.py,sha256=2l3CCk18a4cW4fMuyKvfmFFHX1ARV5SptN_vsl3vvGE,7023
+variete/vrt/sources.py,sha256=fT6FHw81mFLtxhEN7jRjGW2zlTY027jTos0Y90RpMzQ,8392
+variete/vrt/vrt.py,sha256=s3STynczEJGnYsiGkqF7AY05hgPYG16Hb4ryBaye8TA,22842
+variete-0.1.0.dist-info/LICENSE,sha256=eienFuG_gEhD4yd-0uV4hqFG7BmTMGAKQ7iw2DQQa24,1528
+variete-0.1.0.dist-info/METADATA,sha256=ZHWpuXpSi3pfWdtliS-8yR2gERYaU6QstFEGbY2d4vc,11388
+variete-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+variete-0.1.0.dist-info/top_level.txt,sha256=aUStTiH4RpVCnhZSUfVCy24X0dkyvpwERyPL-UKH2JE,8
+variete-0.1.0.dist-info/RECORD,,
