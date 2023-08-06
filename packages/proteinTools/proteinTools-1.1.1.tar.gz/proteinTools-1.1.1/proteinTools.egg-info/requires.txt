@@ -1,0 +1,6 @@
+pandas
+urllib3
+chembl-webresource-client
+mygene
+openbabel
+pubchempy
