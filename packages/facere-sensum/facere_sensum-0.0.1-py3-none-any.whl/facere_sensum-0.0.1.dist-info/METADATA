@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: facere-sensum
+Version: 0.0.1
+Summary: facere-sensum: make sense of the turmoil
+Project-URL: Homepage, https://github.com/lunarserge/facere-sensum
+Project-URL: Bug Tracker, https://github.com/lunarserge/facere-sensum/issues
+Author: Serge Lunev
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# facere-sensum
+Make sense of the turmoil
