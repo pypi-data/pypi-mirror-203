@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "handwriting-recognizer"
+version = "0.1.2"
+description = "handwriting project recognizer using paint"
+authors = ["Aditya Unnikrishnan <adiunni@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "handwriting_recognizer"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pyscreenshot = "^3.1"
+opencv-python = "^4.7.0.72"
+pillow = "^9.5.0"
+scikit-learn = "^1.2.2"
+tk = "^0.1.0"
+
+[tool.poetry.scripts]
+handwriting_recognizer = "handwriting_recognizer.main:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
