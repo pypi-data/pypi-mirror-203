@@ -1,0 +1,17 @@
+xj_recycle/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xj_recycle/admin.py,sha256=_nYABRFlyT4N3EXytBHkHrPnWJDeRyv-4EJR10_soF8,595
+xj_recycle/apps.py,sha256=OQU_kxohd8dP9KLUTHNr1s62jfJV0oEUKb21u9bZIDI,238
+xj_recycle/models.py,sha256=XHcIHkANIpfRoa4ioofYKTOoWHh-7L4Liw5IyQ6qYW4,1831
+xj_recycle/tool.py,sha256=ufy3GhwcgZeh3fyaIs2RHCgXXt-HXak1GJ4iCpZOP9Y,2814
+xj_recycle/urls.py,sha256=qrTeouDIrlVM7IkikNQ4L3KHXW_Ci4NSz1HbkqEPHq8,559
+xj_recycle/apis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xj_recycle/apis/recycle_bin_add.py,sha256=4qqQis4V5Minfwr9diNBaDTX37chOAGkiopsrs3s6pQ,635
+xj_recycle/apis/recycle_bin_list.py,sha256=tiCdjcPdPtjg0HIkWAGvydUjgb9VRriVbyb8DSB17pk,2405
+xj_recycle/apis/recycle_bin_restore.py,sha256=-lUkh2v-dW5211gQOUOqXf57M-ZAA8VbPlxWtVF8jzg,1211
+xj_recycle/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xj_recycle/services/recycle_service.py,sha256=UgT-bmMjCh2XYOVwV9DVxDF6d2KzvMJGgiE4Q2kFmvI,6967
+xj_recycle-1.0.5.dist-info/METADATA,sha256=ahXLSrg_Et9AEqQA8EvKRRPcWck8k_c8ZjB_bx2p254,1594
+xj_recycle-1.0.5.dist-info/PKG-INFO~12c86d998be384ef2e8ad65713880f88b1070905,sha256=28o8VcpRQrRbm0g4zscYs_4mhf_F5FsQw6S1CjtyrYc,1969
+xj_recycle-1.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+xj_recycle-1.0.5.dist-info/top_level.txt,sha256=jj0BZP9ruXzaRHjFxsqDZeEJBUvFjKtCq04MYYgqhZM,11
+xj_recycle-1.0.5.dist-info/RECORD,,
