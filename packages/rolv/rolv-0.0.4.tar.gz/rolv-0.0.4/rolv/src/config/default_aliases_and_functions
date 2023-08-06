@@ -1,0 +1,84 @@
+
+# -- Default (hardcoded) aliases and functions
+# (src/config/default_aliases_and_functions)
+export CURRENT_SHELL="$(ps -o comm= -p $$)"
+
+# add $HOME/.local/bin if not in PATH
+if [[ ! "$PATH" == *$HOME/.local/bin* ]]; then
+  PATH="${PATH:+${PATH}:}$HOME/.local/bin"
+fi
+
+# Direnv
+if command -v direnv &> /dev/null; then
+    eval "$(direnv hook bash)"
+else
+    if command -v apt-get &> /dev/null; then
+        echo "Tip: install direnv with: sudo apt-get install direnv"
+    else
+        echo "Tip: install direnv with: sudo pacman -Sy direnv"
+    fi
+fi
+
+# shortcuts/defaults
+alias ls="ls --color=auto -l" 
+alias prun="php -S 0.0.0.0:8080"
+alias gc="git clone"
+alias rmf="rm -rf"
+alias nano="nano -w"
+alias tf="terraform"
+alias da="direnv allow"
+alias ssh-add="ssh-keygen -t ed25519 -a 100"
+
+# venvs
+function enter() { 
+    source ~/venvs/"${1}"/bin/activate 
+}
+function newvenv() { 
+    python -m venv ~/venvs/"$1" 
+}
+alias leave="deactivate"
+
+# git
+alias glog="git log --graph --pretty=oneline"
+alias setmerge="git config pull.rebase false"
+
+# k8s
+alias kn="kubens"
+alias kx="kubectx"
+alias k="kubectl"
+
+# autocompletion
+if [[ "$CURRENT_SHELL" == "bash" ]]; then
+  # ubuntu path
+  if  [ -f /etc/bash_completion ]; then
+    if ! shopt -oq posix; then
+      . /etc/bash_completion
+    fi
+  # arch path
+  elif  [ -f /usr/share/bash-completion/bash_completion ]; then
+    if ! shopt -oq posix; then
+      . /usr/share/bash-completion/bash_completion
+    fi
+  # both not found
+  else
+    if command -v apt-get &> /dev/null; then
+        echo "Tip: install bash-completion with: sudo apt-get install bash-completion"
+    else
+        echo "Tip: install bash-completion with: sudo pacman -Sy bash-completion"
+    fi
+  fi
+fi
+
+if command -v kubectl &> /dev/null; then
+    source <(kubectl completion $CURRENT_SHELL)
+fi
+
+function kssh() {
+  local cmd="${2:-/bin/bash}"
+  echo -e "\e[0;1;38;5;39mkubectl exec --stdin --tty $1 -- $cmd\e[0m"
+  kubectl exec --stdin --tty $1 -- $cmd
+}
+function ksa() {
+  # Show the annotations of Kubernetes objects, like, pods, services, etc.
+  kubectl get ${@} -o 'go-template={{range .items}}{{println "-------------------------------------"}}{{.metadata.name}}:{{"\n"}}{{range $key,$value := .metadata.annotations}}{{$key}}: {{$value}}{{"\n"}}{{end}}{{"\n"}}{{end}}'
+}

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+git_root="$(git rev-parse --show-toplevel)"
+cat "${git_root}/.git/config"
