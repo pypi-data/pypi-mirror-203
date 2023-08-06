@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: griptape-core
+Version: 0.9.3
+Summary: Python framework for LLM middleware tools. Build once, run anywhere.
+Home-page: https://github.com/griptape-ai/griptape-core
+License: Apache 2.0
+Author: Griptape
+Author-email: hello@griptape.ai
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: attrs (>=22)
+Requires-Dist: docker (>=6)
+Requires-Dist: fastapi (>=0.80)
+Requires-Dist: jinja2 (>=3.1)
+Requires-Dist: langchain (>=0.0.120)
+Requires-Dist: openai (>=0.27)
+Requires-Dist: python-decouple (>=3)
+Requires-Dist: pyyaml (>=6)
+Requires-Dist: schema (>=0.7)
+Requires-Dist: stringcase (>=1)
+Requires-Dist: uvicorn (>=0.20)
+Project-URL: Repository, https://github.com/griptape-ai/griptape-core
+Description-Content-Type: text/markdown
+
+# griptape-core
+
+[![Tests](https://github.com/griptape-ai/griptape-core/actions/workflows/tests.yml/badge.svg)](https://github.com/griptape-ai/griptape-core/actions/workflows/tests.yml)
+[![PyPI Version](https://img.shields.io/pypi/v/griptape-core.svg)](https://pypi.python.org/pypi/griptape-core)
+[![Docs](https://readthedocs.org/projects/griptape/badge/)](https://griptape.readthedocs.io/en/latest/griptape-core/)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/gitbucket/gitbucket/blob/master/LICENSE)
+
+**griptape-core** is a Python framework that enables developers to write tools for generative AI middleware once and use it anywhere.
+
+**griptape-core** is part of [griptape](https://github.com/griptape-ai/griptape), a modular Python framework for integrating data, APIs, tools, memory, and chain of thought reasoning into LLMs.
+
+**griptape-core** has three core components:
+
+- **Tools**: call external APIs, access databases, and run arbitrary code or CLI commands.
+- **Executors**: run your tools safely in any environment: local, containerized, or serverless in the cloud.
+- **Adapters**: convert tools into underlying middleware abstractions, such as ChatGPT Plugins, LangChain tools, and Fixie.ai agents.
+
+## Documentation
+
+Please refer to [Griptape Docs](https://griptape.readthedocs.io) for:
+
+- Getting started guides. 
+- Core concepts and design overviews.
+- Examples.
+- Contribution guidelines.
+
+## License
+
+griptape-core is available under the Apache 2.0 License.
+
