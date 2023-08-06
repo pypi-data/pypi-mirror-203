@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+botpunk/__init__.py
+botpunk/bot.py
+botpunk_jed.egg-info/PKG-INFO
+botpunk_jed.egg-info/SOURCES.txt
+botpunk_jed.egg-info/dependency_links.txt
+botpunk_jed.egg-info/requires.txt
+botpunk_jed.egg-info/top_level.txt
