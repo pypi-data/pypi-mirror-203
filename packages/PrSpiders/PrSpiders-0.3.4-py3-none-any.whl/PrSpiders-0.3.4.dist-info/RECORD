@@ -1,0 +1,17 @@
+PrSpider/PrSpiders.py,sha256=9TcQCB_2Uf51bV2_IkGqHN03QaUKp2_rv9Ob0Q3XNfM,9065
+PrSpider/__init__.py,sha256=edGaufcMx7CgTStZsROoZYqjZBXi46r718bB4acWrv0,44
+PrSpider/pxpath.py,sha256=QSHkwhpw_sLCKLMEBFL7y4oJD5yxUL1lEIqxKOypLxw,11191
+PrSpider/requestXpath.py,sha256=a-q7yW1QMENAgLRRxL9E8oD9OZRhGJm8h7QcXA91aJs,4073
+PrSpider/useragent.py,sha256=Jm4sQPiqkDALhCQmQlezqKL7BqUmt4Ip_AesXlenGsg,11789
+pkg/__init.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkg/__init__.py,sha256=Vn9FYBzaSWT5xMQ2YrDrrY-7w4qSRVFQLccnNDtF1JY,33
+pkg/prspider/PrSpider_CMD.py,sha256=fHUbMdyhVQSAS_5zHIUsaXV-8vLdx_4qWTC5iPilDHI,1175
+pkg/prspider/PrSpider_run.py,sha256=0tmcb1wL4XY-9MDZapFywWLFlyHVOD6qUPAhlCtwSuc,257
+pkg/prspider/__init__.py,sha256=G6-Nuehx9xWtq8kSntrQZdwvPqq4KUtfv6_VSeT7RjU,73
+pkg/prspider/start.py,sha256=dBVtVLBaxKMsJCARRb9UTYb8ifL40Z9t_KNB-QF3UTk,494
+PrSpiders-0.3.4.dist-info/LICENSE.txt,sha256=eTAMrQxkyw6ApSsWH9vJdyVXchbASCr9kEPFfwQzv-c,1091
+PrSpiders-0.3.4.dist-info/METADATA,sha256=DAlksmfNelOfDFF3dRqcwPxLBD6-LqMuf5VLKSH5R3I,4703
+PrSpiders-0.3.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+PrSpiders-0.3.4.dist-info/entry_points.txt,sha256=38Q7dFG8O7bxQr7DwpuuSO-cOpeEMv9aRxtBJRVI-kc,61
+PrSpiders-0.3.4.dist-info/top_level.txt,sha256=hh7cprfTQV5NTkdoJxbiV8sfeJu3xJgyBYlxEKd1NlA,13
+PrSpiders-0.3.4.dist-info/RECORD,,
