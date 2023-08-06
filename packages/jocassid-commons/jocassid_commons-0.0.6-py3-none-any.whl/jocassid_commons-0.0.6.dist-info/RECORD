@@ -1,0 +1,9 @@
+jocassid_commons/__init__.py,sha256=_uyGC5p6WcBu0vTY6nPlyhllAzwcbcFnDR9vCwg4HgE,40
+jocassid_commons/accumulator_dict.py,sha256=TgWpWgp9yHyvFviyhuIogrgQsf7ZRj0GGWjQQsbNQHQ,2578
+jocassid_commons/data_structures.py,sha256=MtPdB72f-yKqqAXKc-1nMwkG_qR2p2-Em7FiXSM-5gY,4070
+jocassid_commons/dirf.py,sha256=JtYYFsHxqu0ax-zGGKQCuyYY1km9DQllQMunltKIQsw,852
+jocassid_commons/json.py,sha256=C0QeZpFGYB3uGyykTmCCH6y00G2bnQstYYswnlviVps,525
+jocassid_commons-0.0.6.dist-info/METADATA,sha256=9-MZnFlRPwiXCXwP6R5aplyrggs7cV-cTf16OtzGsUE,1287
+jocassid_commons-0.0.6.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+jocassid_commons-0.0.6.dist-info/licenses/LICENSE,sha256=_lCZDPnVcyQuTxDkl2gIvVQCLvF68iBo4dJTJ18n8v4,1069
+jocassid_commons-0.0.6.dist-info/RECORD,,
