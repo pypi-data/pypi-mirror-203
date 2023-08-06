@@ -1,0 +1,16 @@
+begemot/__init__.py,sha256=WGorvp6Ik-VjfcoZvbIH1cxq9zJMKR07ntFrSNcKcgg,591
+begemot/__main__.py,sha256=CBH8FZDE-JxqXX9F56v9MT8n3HT_IHa-YoHYhiAgC9U,605
+begemot/analysers/lexer.py,sha256=ZlckLufuMKwX1OnDxOpwifHk5z-YBVmkX4wOSSe0Lmw,821
+begemot/analysers/parser.py,sha256=4I0Rm512SdHbst-fKtOARV23zrKXasgCXHUMoqq1WDw,2319
+begemot/boxes/integer.py,sha256=DekZjgDKiivnNdsjJStuwodaJEs-Rj_PUuGM380EtUQ,765
+begemot/components/math.c,sha256=FIz8MSv4RfDHP0N4iMGNDC8RYsxlqV8gqDmxPQDuMfw,374
+begemot/components/math.h,sha256=JF3laMpJHpLJD5Xj1XGQ97Y7WtjCwS2MpB53Ya0Qk2Q,154
+begemot/console.py,sha256=PVwjrt4hZrJ7V6wf8FE1i1liPD3fR2k6l3_jyEjoX4I,1026
+begemot/constants.py,sha256=10iGVaI-ojU0vCwppSChqxPxPFdKPpsUvOKsv7IgajA,609
+begemot/modules/math.py,sha256=Sd1GLcJyuKuVMhHIDtsbuRRc9iz3BSzmRsciZJ-VuSg,1379
+begemot/tokens.py,sha256=kqEsNap7ZZBFWRV5eiL66sooiNO2M2rFmoMd0ZzceVA,909
+begemot-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+begemot-0.1.0.dist-info/METADATA,sha256=Pwowo15JEryLPBW1rC0k04HG65rkUnPerwru_pRp_-w,528
+begemot-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+begemot-0.1.0.dist-info/entry_points.txt,sha256=QOeQTW5cWTkTKDapxKhuKj65-NkalFUcDkDpHDrAHUc,52
+begemot-0.1.0.dist-info/RECORD,,
