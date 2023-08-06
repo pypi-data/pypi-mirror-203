@@ -1,0 +1,6 @@
+README.md
+setup.py
+loganmatic.egg-info/PKG-INFO
+loganmatic.egg-info/SOURCES.txt
+loganmatic.egg-info/dependency_links.txt
+loganmatic.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: loganmatic
+Version: 0.0.2
+Summary: Biblioteca de matematica com algumas funções para facilitar calculos
+Home-page: https://github.com/gabriel-logan/Math_Lib_Js
+Author: Gabriel Logan
+Keywords: matemática,cálculo,funções
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
