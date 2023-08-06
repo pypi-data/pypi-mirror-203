@@ -1,0 +1,15 @@
+rolv/__init__.py,sha256=ut00geKajDNHZZHBhYqr10Smx_1GoS0KLfGAhjXH0dY,2153
+rolv/config.py,sha256=X6cxC0lxAQ702tdhiEHaoiCMCBHEexWxZWtpaPhWqQ8,831
+rolv/executables.py,sha256=RuJX2EvCS3FQCgnX7uKx69yuhnLuPlaiNiIQwoYeeL8,1837
+rolv/lib.py,sha256=OvKoBbCAqSlrFZh0qtGmlBIPkzJU_BqvN2D4kHQZ4qU,1511
+rolv/package.py,sha256=5cPcGfPkusmzWKDfP-V928FV1F2iwXFdD6MWo7YTO3k,840
+rolv/rc.py,sha256=XWCVuKT9d9k-zWV8fo6baGNu7X8SJs9_crAeK9xoKnM,3950
+rolv/src/version,sha256=TKwna27F1Mcc2Wyi57di6xJUOa28hyHeVhMQbRNF_i0,6
+rolv/src/config/default_aliases_and_functions,sha256=vbCyjaAxsJ5Jyd6uOz9eqxdYFcITluzOMPkVeSOWdpY,371
+rolv/src/executables/gitc,sha256=9nrLp9vTeiYDQCUHwLxE1oMnQE9XBr0oKZCekWffoEE,93
+rolv/src/executables/readme.md,sha256=s9JaQfQx0PIEfOyrfoD7-AWYmcZuKgyCao0WdAaQtVQ,633
+rolv-0.0.3.dist-info/METADATA,sha256=pjoBEFzHGxOUurCYzzghXKwsH015TLnlZhBhtsg-IZs,313
+rolv-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+rolv-0.0.3.dist-info/entry_points.txt,sha256=XFTJXe3TpRr4IJKNIpDSswZAkwM0Ph4XUYIHG64Tk6w,130
+rolv-0.0.3.dist-info/top_level.txt,sha256=nHjoKEtZWOy_FGXTbVlz8rgUcw0VdA5wOOZNqWennuI,5
+rolv-0.0.3.dist-info/RECORD,,
