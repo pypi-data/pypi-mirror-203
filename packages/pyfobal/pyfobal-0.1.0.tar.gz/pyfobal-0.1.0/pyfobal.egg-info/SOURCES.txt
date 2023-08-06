@@ -1,0 +1,9 @@
+README.md
+setup.py
+fobal_types/League.py
+fobal_types/__init__.py
+pyfobal.egg-info/PKG-INFO
+pyfobal.egg-info/SOURCES.txt
+pyfobal.egg-info/dependency_links.txt
+pyfobal.egg-info/requires.txt
+pyfobal.egg-info/top_level.txt
