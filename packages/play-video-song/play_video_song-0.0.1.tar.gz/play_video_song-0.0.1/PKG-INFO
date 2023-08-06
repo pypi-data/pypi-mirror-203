@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: play_video_song
+Version: 0.0.1
+Summary: A simple video play program
+Project-URL: Homepage, https://github.com/pypa/videosong
+Project-URL: Bug Tracker, https://github.com/pypa/videosong/issues
+Author-email: Ramachandran <rama5864@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >3.7
+Description-Content-Type: text/markdown
+
+A simple video song play program using decorator
