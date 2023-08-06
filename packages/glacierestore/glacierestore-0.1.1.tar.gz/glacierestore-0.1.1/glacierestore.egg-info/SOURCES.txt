@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+glacierestore.egg-info/PKG-INFO
+glacierestore.egg-info/SOURCES.txt
+glacierestore.egg-info/dependency_links.txt
+glacierestore.egg-info/top_level.txt
