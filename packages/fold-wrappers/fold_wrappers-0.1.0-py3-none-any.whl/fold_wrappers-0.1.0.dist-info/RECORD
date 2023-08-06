@@ -1,0 +1,13 @@
+fold_wrappers/__init__.py,sha256=qqThdYNqoCQmzDi9v6JWa3pBL4Ku2TRNK4xzMdcskeg,257
+fold_wrappers/convenience.py,sha256=D-icxDghD_gNy6YVbq_KCfVb-ngNKGLstZ-PdrWBrE0,2279
+fold_wrappers/lightgbm.py,sha256=YLPlSKEy8hpj-wLU79VxZfA50SV_jFwl96RzYVZFpmk,1943
+fold_wrappers/neuralforecast.py,sha256=bk8oiF0C2Jksg99YeBBIChLoVKhWk6jnGN74tE-rYqE,2990
+fold_wrappers/prophet.py,sha256=3vkHw26NrkR2qcElpZ_50Oq-jYgQ2fHKesz8nWTisC8,3221
+fold_wrappers/sktime.py,sha256=QrbGjENxSuO8S2HXMQQQkTkVSC7UoOke1HTn_kp97Xg,3178
+fold_wrappers/statsforecast.py,sha256=m9oF2XRBA64IS-uvSnvTYph-OrjuM82kowziwHCbmr4,3135
+fold_wrappers/statsmodels.py,sha256=cynpxpL70kqenKcX_gz7ul6KyiAA87BCzlAL9GCTVzM,2788
+fold_wrappers/xgboost.py,sha256=-Z9-YBAncR1inDjO8Xll6q2r_sD-1WDiinXBYxuRH2s,2154
+fold_wrappers-0.1.0.dist-info/METADATA,sha256=dmrknRWjrsSWfXxWAh8T7Pyd0quAy5D6JMCmPgRPq54,13270
+fold_wrappers-0.1.0.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+fold_wrappers-0.1.0.dist-info/licenses/LICENSE,sha256=y5ANeJD5jII-Gu8MMjPyXYlmQJb8E6NCNY4YsE5V2j8,1156
+fold_wrappers-0.1.0.dist-info/RECORD,,
