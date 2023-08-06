@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+TelegramNotificator.egg-info/PKG-INFO
+TelegramNotificator.egg-info/SOURCES.txt
+TelegramNotificator.egg-info/dependency_links.txt
+TelegramNotificator.egg-info/requires.txt
+TelegramNotificator.egg-info/top_level.txt
+telegram_notificator/__init__.py
+telegram_notificator/telegram_notificator.py
