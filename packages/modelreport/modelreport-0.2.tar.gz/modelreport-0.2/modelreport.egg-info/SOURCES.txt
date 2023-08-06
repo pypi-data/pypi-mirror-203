@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+modelreport/_init_.py
+modelreport/metric.py
+modelreport.egg-info/PKG-INFO
+modelreport.egg-info/SOURCES.txt
+modelreport.egg-info/dependency_links.txt
+modelreport.egg-info/requires.txt
+modelreport.egg-info/top_level.txt
