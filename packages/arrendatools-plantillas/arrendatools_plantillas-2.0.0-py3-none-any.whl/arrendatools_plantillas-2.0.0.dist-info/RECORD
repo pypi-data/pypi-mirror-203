@@ -1,0 +1,10 @@
+arrendatools_plantillas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arrendatools_plantillas/plantilla.py,sha256=yKqUXGk_uAJJwaoUQTEJJ7cmiu9mkNRhOec9xpV8F4c,538
+arrendatools_plantillas/filters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arrendatools_plantillas/filters/formato_fecha.py,sha256=o8zfGYnXkiAvtxu3k_OpDPOJ8ZqB1Y8vh4BKWrBX8Hs,634
+arrendatools_plantillas/filters/numero_a_palabras.py,sha256=6y0pPEMpO9TQKaIeUcbJjo7Yx2-inB__LlwYTxh-zOo,753
+arrendatools_plantillas-2.0.0.dist-info/LICENSE,sha256=R5xzJCQj8mfv0qnRxP77IgwUbOoNGSNZhNni6Gx0ISY,1062
+arrendatools_plantillas-2.0.0.dist-info/METADATA,sha256=CyiUJJnrD20qUyL5OXZXb2drMKCjvq7Xyx2w-A-xLwA,861
+arrendatools_plantillas-2.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+arrendatools_plantillas-2.0.0.dist-info/top_level.txt,sha256=6t2QvA3CIxdfmERSMuwnT2dWwMs9G7EA0odQ4qkbVf8,24
+arrendatools_plantillas-2.0.0.dist-info/RECORD,,
