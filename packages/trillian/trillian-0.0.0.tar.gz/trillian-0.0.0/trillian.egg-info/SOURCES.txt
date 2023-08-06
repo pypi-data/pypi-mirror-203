@@ -1,0 +1,8 @@
+README.md
+setup.py
+trillian/__init__.py
+trillian.egg-info/PKG-INFO
+trillian.egg-info/SOURCES.txt
+trillian.egg-info/dependency_links.txt
+trillian.egg-info/not-zip-safe
+trillian.egg-info/top_level.txt
