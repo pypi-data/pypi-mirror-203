@@ -1,0 +1,10 @@
+sqlstrings/__init__.py,sha256=PZ8QpZcaEILv01NVoEkI_megVjD_nCH58bN2IshsL4k,67
+sqlstrings/csv_handling.py,sha256=13kZgG7bzn5V8K6-iMoEQ2ku3BQq_-4CepTL_fyp4w4,3583
+sqlstrings/postgre.py,sha256=c2csw0bkbxuRGZkEjphH3aArHChPnLC0qJB0hsT433g,4543
+sqlstrings/transact.py,sha256=lnVr6_zBZKbsbeNs8a3CDfRArEnDh3WbZVu1EzqpvNw,4190
+sqlstrings/value_handling.py,sha256=JrP3Z1Jw1s--49EcbcGrAEEswIGbjdn73-fLJlqB4eA,2068
+sqlstrings-0.0.6.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+sqlstrings-0.0.6.dist-info/METADATA,sha256=FBm4ig7_hl7D9yNRqh9sbSXwHyBJ1_KWRyH8jeAUqTo,874
+sqlstrings-0.0.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sqlstrings-0.0.6.dist-info/top_level.txt,sha256=CPoIIo6hS_5XhUF6utHOuHCH4G0cL8JcUORjCpX2Ca0,11
+sqlstrings-0.0.6.dist-info/RECORD,,
