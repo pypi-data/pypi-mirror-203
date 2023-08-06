@@ -1,0 +1,77 @@
+# Package Overview
+package_name: classification_model
+
+# Data Files
+training_data_file: train.csv
+test_data_file: test.csv
+
+# Variables
+# The variable we are attempting to predict (survival)
+target: Survived
+
+pipeline_name: classification_model
+pipeline_save_file: classification_model_output_v
+
+
+features:
+  - Pclass
+  - Sex
+  - Age
+  - SibSp
+  - Parch
+  - Fare
+  - Cabin
+  - Embarked
+
+
+# set train/test split
+test_size: 0.2
+
+# to set the random seed
+random_state: 42
+
+xgb_params: 
+  subsample: 1.0
+  reg_lambda: 1.0
+  reg_alpha: 1.0
+  min_child_weight: 5
+  max_depth: 9
+  learning_rate: 0.2
+  gamma: 0.3
+  colsample_bytree: 0.7
+
+
+# categorical variables with NA in train set
+categorical_vars_with_na_frequent:
+  - Embarked
+
+categorical_vars_with_na_missing:
+  - Cabin_Level
+  - Cabin
+
+cabin_vars:
+  - Cabin
+
+numerical_vars_with_na:
+  - Age
+  - Fare
+
+drop_features: 
+  - Cabin
+
+
+categorical_vars:
+  - Sex
+  - Cabin_Level
+  - Embarked
+
+
+cabin_groups:
+  T: Upper
+  A: Upper
+  B: Upper
+  C: Middle
+  D: Middle
+  E: Middle
+  F: Lower
+  G: Lower
