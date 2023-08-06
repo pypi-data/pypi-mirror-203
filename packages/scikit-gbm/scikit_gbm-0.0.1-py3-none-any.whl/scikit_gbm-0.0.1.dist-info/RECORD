@@ -1,0 +1,8 @@
+skgbm/__init__.py,sha256=oNKJCELFiX0Cxrf_UjTYmqd5iZgmF_X5P-hZJo0NjyY,112
+skgbm/base.py,sha256=w3yRvSx6TnMOiVlDvCOcXLax4OmhCGH-zXCclNldqlc,2104
+skgbm/preprocessing.py,sha256=03E5gS2wRdPImKTezE5JvQNBDx3qUabtuon6Qm7gHhc,1851
+scikit_gbm-0.0.1.dist-info/LICENSE,sha256=uWu-NYkl1BCXhxVS9qQGneHPyaApCUrp7eoRNudJUl4,1077
+scikit_gbm-0.0.1.dist-info/METADATA,sha256=k2xLtiN0QHq7nglVxRo4QFaMR57U8TTJQ2TRVmEU2VM,1546
+scikit_gbm-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+scikit_gbm-0.0.1.dist-info/top_level.txt,sha256=PeIKR4t0uPKlNpkdT9RhPenoL9Xe3cWvh3sDcnu6Bzk,6
+scikit_gbm-0.0.1.dist-info/RECORD,,
