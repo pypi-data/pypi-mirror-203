@@ -1,0 +1,9 @@
+fractal_roles/__init__.py,sha256=wAezAj7t2MHIOI-EWYtDlVMcZ_qFMG2C0u8BqR9Uy3w,149
+fractal_roles/exceptions.py,sha256=jzjTghP8vvCymAM429wNV_JYDfzCTe_-hVhLFjnX04M,46
+fractal_roles/models.py,sha256=vYU3Tct_JkU4PgYCZT5cb8I7nwsTxkitT2VPABDFhrA,1140
+fractal_roles/py.typed,sha256=Ff4rT7jezJ8ArHd5cHGotCZNPK7CRzs3wQxjywTtmmY,77
+fractal_roles/services.py,sha256=0tGcs_3PE1U-WBOUrKrrG2XQzMk7TWgBnVfI9wdFRsM,1503
+fractal_roles-1.0.6.dist-info/LICENSE,sha256=XtS6XCgZbT5nhFSsV8XPM1GP38TK-1GltmkPLBDOUZE,1075
+fractal_roles-1.0.6.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+fractal_roles-1.0.6.dist-info/METADATA,sha256=8FTcvyOP8EdcyD0xaV7csspx6aXjgTj6kKr6tSNAf6w,10228
+fractal_roles-1.0.6.dist-info/RECORD,,
