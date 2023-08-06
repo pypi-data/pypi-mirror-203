@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+subgpt/__init__.py
+subgpt/subgpt.py
+subgpt.egg-info/PKG-INFO
+subgpt.egg-info/SOURCES.txt
+subgpt.egg-info/dependency_links.txt
+subgpt.egg-info/entry_points.txt
+subgpt.egg-info/requires.txt
+subgpt.egg-info/top_level.txt
