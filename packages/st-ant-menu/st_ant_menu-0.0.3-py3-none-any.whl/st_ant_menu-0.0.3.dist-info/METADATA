@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: st-ant-menu
+Version: 0.0.3
+Summary: Streamlit Component for ANT Menu
+Home-page: https://github.com/flucas96/st_ant_menu
+Author: 
+Author-email: 
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: streamlit (>=0.63)
+
