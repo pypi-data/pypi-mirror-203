@@ -1,0 +1,31 @@
+<odoo>
+  <data>
+
+    <record id="view_carsharing_user_request_form_inherit" model="ir.ui.view">
+      <field name="name">sm_partago_user.carsharing_user_request.form.inherit</field>
+      <field name="model">sm_partago_user.carsharing_user_request</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="sm_partago_user.view_carsharing_user_request_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='cs_registration_request_ids']"  position="before">
+          <field name="tariffs_ids" widget="many2many_list">
+            <tree string="Tariffs" create="false" edit="false" delete="false" open="true">
+              <field name="id"/>
+              <field name="name"/>
+              <field name="reason"/>
+              <field name="tariff_type"/>
+              <field name="date_valid"/>
+              <field name="related_member_id"/>
+              <field name="tariff_model_id"/>
+              <field name="description"/>
+              <field name="abouttoexpire"/>
+              <field name="closed"/>
+              <field name="abouttoexpire_member_notified"/>
+            </tree>
+          </field>
+        </xpath>
+      </field>
+    </record>
+
+  </data>
+</odoo>
