@@ -1,0 +1,2 @@
+[console_scripts]
+bmgen = bmgen.__main__:main
