@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/_init_.py
+src/airgiant.egg-info/PKG-INFO
+src/airgiant.egg-info/SOURCES.txt
+src/airgiant.egg-info/dependency_links.txt
+src/airgiant.egg-info/top_level.txt
