@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "finometerdl"
+version = "0.1.2"
+description = "A data logger for the Finometer Medical Device"
+authors = ["Alex <adrysdale@protonmail.com>"]
+license = "GPL-3.0-or-later"
+repository = "https://github.com/abdrysdale/finometer-data-logger"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyserial = "^3.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
