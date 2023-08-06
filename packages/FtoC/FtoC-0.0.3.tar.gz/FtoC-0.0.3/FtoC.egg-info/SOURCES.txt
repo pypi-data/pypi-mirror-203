@@ -1,0 +1,8 @@
+README.md
+setup.py
+FtoC/__init__.py
+FtoC/main.py
+FtoC.egg-info/PKG-INFO
+FtoC.egg-info/SOURCES.txt
+FtoC.egg-info/dependency_links.txt
+FtoC.egg-info/top_level.txt
