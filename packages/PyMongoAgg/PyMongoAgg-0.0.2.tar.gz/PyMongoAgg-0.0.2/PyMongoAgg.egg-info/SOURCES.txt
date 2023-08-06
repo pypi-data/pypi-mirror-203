@@ -1,0 +1,8 @@
+README.md
+pymongoagg.py
+pyproject.toml
+PyMongoAgg.egg-info/PKG-INFO
+PyMongoAgg.egg-info/SOURCES.txt
+PyMongoAgg.egg-info/dependency_links.txt
+PyMongoAgg.egg-info/top_level.txt
+test/test_transpile.py
