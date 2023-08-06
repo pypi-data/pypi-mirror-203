@@ -1,0 +1,11 @@
+datasets
+eliot
+eliot-tree
+faiss-cpu
+google-search-results
+gradio
+jinja2
+jinja2-highlight
+manifest-ml
+openai
+trio
