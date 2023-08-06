@@ -1,0 +1,3 @@
+[console_scripts]
+exsource-make = exsource_tools.tools:make
+
