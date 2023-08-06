@@ -1,0 +1,15 @@
+dhooks_lite/__init__.py,sha256=QuGBv1mxSQ1hqIVMTqXk6Wm6zMDTD7Ns1euZkaOBUAY,148
+dhooks_lite/client.py,sha256=oDYoAwqv2VXZFDeejmWCk5FB8s0vVlIU5pEpBITlL-w,8414
+dhooks_lite/constants.py,sha256=kfiboeJgIRUGw1Pk2ZOISshiJYBA_QgrL4mRIYybkPg,110
+dhooks_lite/embed.py,sha256=ZM0w3XyKfEbOjyCL5pRE9Uh1z9d6EKSB3YvBVDCRXII,10914
+dhooks_lite/serializers.py,sha256=9neUufsYsxm8kKwV-lF8CmejqZogA40-qiqurb6aYW8,326
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_client.py,sha256=ePmE9tRkVDAbQ0EE1DgSc4YQTWe8BFcUm8REpFBdB9M,16250
+tests/test_embed.py,sha256=T23swj8HA7amyFin1JGhdw-9jWdkVizpIibtIeYM4i4,11678
+tests/test_serializers.py,sha256=iDFX_HJ2xwr0ePT_fklNee0W1AGfiaJA09Dd4Fnlds4,593
+tests/utils.py,sha256=GgehCXmekwSdSm4Uf_YENJEVlvBrn-UtbjKSIx2Cdck,730
+dhooks_lite-1.0.0a1.dist-info/LICENSE,sha256=XZiwB_S_40_HhnvLg5xvtBb3g1oGjPrk0rpFwk8iInE,1070
+dhooks_lite-1.0.0a1.dist-info/METADATA,sha256=XjQLw1G1u0UJtUdgHHD_crJtWI5QHV3ZFljv7nzzlPg,6384
+dhooks_lite-1.0.0a1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dhooks_lite-1.0.0a1.dist-info/top_level.txt,sha256=t09tHosi9i_ekjC8XnMXwMKV-0gvPCuFvbfYdrb5GqI,18
+dhooks_lite-1.0.0a1.dist-info/RECORD,,
