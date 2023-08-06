@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: asie-api
+Version: 0.0.2
+Author: yyxochen
+Requires-Dist: requests
+Requires-Dist: pandas
+
