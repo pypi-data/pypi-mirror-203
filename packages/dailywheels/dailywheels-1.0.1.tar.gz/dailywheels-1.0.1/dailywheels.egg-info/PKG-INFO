@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dailywheels
+Version: 1.0.1
+Summary: Common Audio Tools including TTS, Encrypt, Log, Audio Exception
+Home-page: UNKNOWN
+Author: K2_AI_lab Niuhongfei
+Author-email: niuhongfei1@gmail.com
+License: UNKNOWN
+Keywords: tts,encrypt,logger,audio exception
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.TXT
+
+UNKNOWN
+

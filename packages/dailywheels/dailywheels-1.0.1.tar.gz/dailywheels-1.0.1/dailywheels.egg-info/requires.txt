@@ -1,0 +1,6 @@
+chardet
+gmssl
+eyed3
+baidu-aip
+wave
+AudioSegment
