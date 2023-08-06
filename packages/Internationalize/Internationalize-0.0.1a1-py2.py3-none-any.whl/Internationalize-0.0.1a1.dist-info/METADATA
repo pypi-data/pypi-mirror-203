@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: Internationalize
+Version: 0.0.1a1
+Summary: Helps to internationalize your application
+Home-page: https://github.com/smok-serwis/internationalize
+Author: Piotr Maślanka
+Author-email: pmaslanka@smok.co
+License: MIT License
+Keywords: i18n,internationalize
+Platform: posix
+Platform: win32
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: !=2.*,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*
+Description-Content-Type: text/markdown; charset=UTF-8
+
+internationalize
+========
+[![PyPI version](https://badge.fury.io/py/internationalize.svg)](https://badge.fury.io/py/internationalize)
+[![PyPI](https://img.shields.io/pypi/pyversions/internationalize.svg)]()
+[![PyPI](https://img.shields.io/pypi/implementation/internationalize.svg)]()
+[![PyPI](https://img.shields.io/pypi/wheel/internationalize.svg)]()
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
+
+A library to help you with internationalizing your application
+
+
