@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/tamil/__init__.py
+src/tamil/tamil.py
+src/tamil/thirukural.py
+src/tamil.egg-info/PKG-INFO
+src/tamil.egg-info/SOURCES.txt
+src/tamil.egg-info/dependency_links.txt
+src/tamil.egg-info/top_level.txt
