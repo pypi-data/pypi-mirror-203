@@ -1,0 +1,3 @@
+[console_scripts]
+neet-cli=neet_cli.main:app
+
