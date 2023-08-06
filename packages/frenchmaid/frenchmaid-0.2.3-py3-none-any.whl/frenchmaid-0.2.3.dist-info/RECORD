@@ -1,0 +1,16 @@
+frenchmaid/__init__.py,sha256=vw3zpwOSS5psegFHYMSw9kEY28MLSSGtrmZmb4EB4IQ,225
+frenchmaid/__main__.py,sha256=FqsKU6ov8g6RPo9u6xw1GAMIPr8oflZDtEQ2My2zv9M,138
+frenchmaid/cli.py,sha256=-1IIbxL8-Lndw9FGO4rKmjHfxxprGeWoUoIO70NvVeg,1227
+frenchmaid/delcache.py,sha256=ccWlooiKZNboceB4HvFWBrbLDP1tGNb7Wymdmuke3Ec,2564
+frenchmaid/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frenchmaid/modules/clean.py,sha256=PnJMW4z_MXbiLJmypYSFBNZl5iJmE-AY2991ovz-thQ,4421
+frenchmaid/modules/ignore.py,sha256=d4EvIGrZ4azfESaoKbu0zB1P3oD5yvV80xfOQGC2lZQ,3012
+frenchmaid/switches/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frenchmaid/switches/cleanSwitch.py,sha256=6iOLjPF0AF-YskX7r_-zPRL3YOisSgPiW0dDDZlVQl0,631
+frenchmaid/switches/ignoreSwitch.py,sha256=DebHnTpTkLb_vke-WU4b_pMwVOUJ90_0Be0HkT6cSOE,777
+frenchmaid-0.2.3.dist-info/LICENSE,sha256=iFsiNr-AM8jrtQdl-fTaHW4Tf-8CfEw1JfH0AZ9wI0E,593
+frenchmaid-0.2.3.dist-info/METADATA,sha256=PDLLLioVNzmUWrDGJ_jh3dJ6kVuenRaildEajgBn1_k,8670
+frenchmaid-0.2.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+frenchmaid-0.2.3.dist-info/entry_points.txt,sha256=4Nqr4jjOdFbB56Ji9UfynaQ3JsIZsvt2n146V5fcsoc,56
+frenchmaid-0.2.3.dist-info/top_level.txt,sha256=Aw0jSMFam0lOROa4bd-K-nC9d_syiqRhDAoSH8eaVI8,11
+frenchmaid-0.2.3.dist-info/RECORD,,
