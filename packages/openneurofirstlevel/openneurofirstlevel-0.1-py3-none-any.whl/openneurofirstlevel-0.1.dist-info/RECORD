@@ -1,0 +1,10 @@
+openneuro_firstlevel/__init__.py,sha256=NvSiMgUMLdQbOvV2d7FNM1lfZpkv1M7Z15iYUxNcluA,134
+openneuro_firstlevel/dataset_designs.py,sha256=E_LVQSidFGnLtqcPoXjA4IF_7Ih5yHR9B5Ib_dAPNCM,1460
+openneuro_firstlevel/diagnostics.py,sha256=L4iOdLUtN3B8r4tXmUTdOBLyqdI49xN0ccpjytkUwK4,3313
+openneuro_firstlevel/first_level.py,sha256=sUsjnI9_6gpNsY184yeOdI-9jZ29Mz-a1Gr4tNejhXQ,11725
+openneuro_firstlevel/second_level.py,sha256=c7u9Y43iw_fR-OWwZKqel6iiYibrcqFdlIjhJ6NZNWk,2236
+openneuro_firstlevel/utils.py,sha256=IMDiKyYLBCiASNb3iogTOHqk4PS-SHJGigM1b3aK6VY,3911
+openneurofirstlevel-0.1.dist-info/METADATA,sha256=sDbxGrdkYWNOcTAyFHYVuVFMFFy9CXAxMdn5ax-TBfY,358
+openneurofirstlevel-0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+openneurofirstlevel-0.1.dist-info/top_level.txt,sha256=Qg6llvwJOMT4RUrNwI89NQ4dYjjQ38PnQ-AEJU2fPh4,21
+openneurofirstlevel-0.1.dist-info/RECORD,,
