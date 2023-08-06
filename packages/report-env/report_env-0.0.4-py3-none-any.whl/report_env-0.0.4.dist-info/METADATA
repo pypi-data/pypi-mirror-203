@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: report-env
+Version: 0.0.4
+Summary: A small example package
+Author-email: swyx <swyx@dontemailme.com>
+Project-URL: Homepage, https://github.com/sw-yx/report-env
+Project-URL: Bug Tracker, https://github.com/sw-yx/report-env/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
+## Distributing
+
+- `python3 -m build`
+- `python3 -m twine upload dist/*`
+
+
+## thanks
+
+- https://packaging.python.org/en/latest/tutorials/packaging-projects/
+- https://github.com/cs01/pycowsay
