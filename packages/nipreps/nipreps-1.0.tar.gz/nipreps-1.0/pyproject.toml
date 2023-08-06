@@ -1,0 +1,16 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "nipreps"
+version = "1.0"
+description = "Namespace package for nipreps utilities"
+readme = "README.md"
+authors = [{name = "The Nipreps developers", email = "nipreps@gmail.com"}]
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: Apache Software License"]
+
+[project.urls]
+Home = "https://nipreps.org"
+"Source Code" = "https://github.com/nipreps/nipreps"
