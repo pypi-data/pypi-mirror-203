@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mhlabs_sentiment"
+version = "0.0.1"
+authors = [
+  { name="MusaddiqueHussain Labs", email="musaddiquehussainlabs@gmail.com" },
+]
+description = "In this introductory sample, we'll try to predict a sentiment (positive or negative) for customer reviews. In the world of machine learning, this type of prediction is known as binary classification."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pandas",
+    "tensorflow",
+    "nltk",
+    "scikit-learn",
+    "seaborn",
+    "pyodbc"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/MusaddiqueHussainLabs/sentimentdl_glove_imdb_en"
+"Bug Tracker" = "https://github.com/MusaddiqueHussainLabs/sentimentdl_glove_imdb_en/issues"
+
+[tool.setuptools.packages]
+find = {}  # Scan the project directory with the default parameters
+
+[tool.setuptools]
+# ...
+# By default, include-package-data is true in pyproject.toml, so you do
+# NOT have to specify this line.
+include-package-data = true
+
+[tool.setuptools.package-data]
+"models" = ["*.h5"]
+"data.raw" = ["*.csv", "*.txt"]
+
+# [tool.setuptools.exclude-package-data]
+# "data.raw" = ["*.txt"]

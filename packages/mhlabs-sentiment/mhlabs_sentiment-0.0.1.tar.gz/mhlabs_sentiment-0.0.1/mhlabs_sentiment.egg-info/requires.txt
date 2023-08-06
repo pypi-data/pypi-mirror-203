@@ -1,0 +1,6 @@
+pandas
+tensorflow
+nltk
+scikit-learn
+seaborn
+pyodbc
