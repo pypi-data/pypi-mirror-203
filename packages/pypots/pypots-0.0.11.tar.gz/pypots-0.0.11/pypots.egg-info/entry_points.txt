@@ -1,0 +1,2 @@
+[console_scripts]
+pypots-cli = pypots.utils.commands.pypots_cli:main
