@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+skeraton/__init__.py
+skeraton/skeraton.py
+skeraton.egg-info/PKG-INFO
+skeraton.egg-info/SOURCES.txt
+skeraton.egg-info/dependency_links.txt
+skeraton.egg-info/requires.txt
+skeraton.egg-info/top_level.txt
