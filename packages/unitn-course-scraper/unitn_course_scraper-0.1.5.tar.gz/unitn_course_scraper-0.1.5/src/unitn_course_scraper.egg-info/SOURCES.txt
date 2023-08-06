@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/main.py
+src/cli/__init__.py
+src/cli/cli.py
+src/login/__init__.py
+src/login/login.py
+src/scraping/__init__.py
+src/scraping/scraper.py
+src/unitn_course_scraper.egg-info/PKG-INFO
+src/unitn_course_scraper.egg-info/SOURCES.txt
+src/unitn_course_scraper.egg-info/dependency_links.txt
+src/unitn_course_scraper.egg-info/entry_points.txt
+src/unitn_course_scraper.egg-info/requires.txt
+src/unitn_course_scraper.egg-info/top_level.txt
