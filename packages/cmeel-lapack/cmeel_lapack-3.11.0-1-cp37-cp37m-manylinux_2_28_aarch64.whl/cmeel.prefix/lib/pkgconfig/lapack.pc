@@ -1,0 +1,9 @@
+libdir=/tmp/cmeel-bchud4_u/whl/cmeel.prefix/lib
+includedir=/tmp/cmeel-bchud4_u/whl/cmeel.prefix/include
+
+Name: LAPACK
+Description: FORTRAN reference implementation of LAPACK Linear Algebra PACKage
+Version: 3.11.0
+URL: http://www.netlib.org/lapack/
+Libs: -L${libdir} -llapack
+Requires.private: blas
