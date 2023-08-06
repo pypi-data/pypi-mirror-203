@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pycentroid
+Version: 1.0.2
+Summary: @themost-framework for python
+Home-page: https://github.com/centroid-py/centroid/
+Author: Kyriakos Barbounakis
+Author-email: Kyriakos Barbounakis <k.barbounakis@gmail.com>
+License: BSD-3-Clause
+Project-URL: Homepage, https://github.com/centroid-py/centroid
+Project-URL: Bug Tracker, https://github.com/centroid-py/centroid/issues
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+License-File: LICENSE.txt
