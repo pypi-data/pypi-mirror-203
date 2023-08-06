@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+network_scanner_pkg.egg-info/PKG-INFO
+network_scanner_pkg.egg-info/SOURCES.txt
+network_scanner_pkg.egg-info/dependency_links.txt
+network_scanner_pkg.egg-info/top_level.txt
+test/test_network_scanner.py
