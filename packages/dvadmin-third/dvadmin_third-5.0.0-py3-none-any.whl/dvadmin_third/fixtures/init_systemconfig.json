@@ -1,0 +1,316 @@
+[
+  {
+    "title": "第三方登录配置",
+    "key": "third",
+    "value": null,
+    "sort": 2,
+    "status": true,
+    "data_options": null,
+    "form_item_type": 0,
+    "rule": null,
+    "placeholder": null,
+    "setting": null,
+    "children": [
+      {
+        "title": "登录方式",
+        "key": "login_type",
+        "value": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "sort": 0,
+        "status": true,
+        "data_options": null,
+        "form_item_type": 5,
+        "rule": [
+          {
+            "message": "必填项不能为空",
+            "required": true
+          }
+        ],
+        "placeholder": "请选择登录方式",
+        "setting": "login_type",
+        "children": []
+      },
+      {
+        "title": "允许自动注册并登录",
+        "key": "direct_register_login",
+        "value": true,
+        "sort": 1,
+        "status": false,
+        "data_options": null,
+        "form_item_type": 9,
+        "rule": [
+          {
+            "message": "必填项不能为空",
+            "required": true
+          }
+        ],
+        "placeholder": null,
+        "setting": null,
+        "children": []
+      },
+      {
+        "title": "微信校验文件",
+        "key": "wx_check_file",
+        "value": [
+          {
+            "key": "oeKstaTGZv23",
+            "sort": 0,
+            "title": "微信小程序校验",
+            "value": "xxxx",
+            "status": true,
+            "form_item_type": 0,
+            "form_item_type_label": "text"
+          },
+          {
+            "key": "oeKstaTGZv",
+            "sort": 0,
+            "title": "微信小程序校验",
+            "value": "xxxx",
+            "status": true,
+            "form_item_type": 0,
+            "form_item_type_label": "text"
+          }
+        ],
+        "sort": 3,
+        "status": false,
+        "data_options": null,
+        "form_item_type": 11,
+        "rule": [
+          {
+            "message": "必填项不能为空",
+            "required": true
+          }
+        ],
+        "placeholder": "请输入微信校验文件",
+        "setting": null,
+        "children": [
+          {
+            "title": "微信小程序校验",
+            "key": "oeKstaTGZv23",
+            "value": "xxxx",
+            "sort": 0,
+            "status": true,
+            "data_options": null,
+            "form_item_type": 0,
+            "rule": null,
+            "placeholder": null,
+            "setting": null,
+            "children": []
+          },
+          {
+            "title": "微信小程序校验",
+            "key": "oeKstaTGZv",
+            "value": "xxxx",
+            "sort": 0,
+            "status": true,
+            "data_options": null,
+            "form_item_type": 0,
+            "rule": null,
+            "placeholder": null,
+            "setting": null,
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "开发模式",
+        "key": "dev",
+        "value": false,
+        "sort": 2,
+        "status": false,
+        "data_options": null,
+        "form_item_type": 9,
+        "rule": [
+          {
+            "message": "必填项不能为空",
+            "required": true
+          }
+        ],
+        "placeholder": "请选择是否是开发模式",
+        "setting": null,
+        "children": []
+      },
+      {
+        "title": "微信公众号扫码",
+        "key": "wechat_scan",
+        "value": [
+          {
+            "key": "app_id",
+            "sort": 0,
+            "title": "APP_ID",
+            "value": "xxx",
+            "status": true,
+            "form_item_type": 0,
+            "form_item_type_label": "text"
+          },
+          {
+            "key": "app_secret",
+            "sort": 0,
+            "title": "APP_Secret",
+            "value": "yyy",
+            "status": true,
+            "form_item_type": 0,
+            "form_item_type_label": "text"
+          }
+        ],
+        "sort": 4,
+        "status": false,
+        "data_options": null,
+        "form_item_type": 11,
+        "rule": [],
+        "placeholder": null,
+        "setting": null,
+        "children": [
+          {
+            "title": "APP_ID",
+            "key": "app_id",
+            "value": "xxx",
+            "sort": 0,
+            "status": true,
+            "data_options": null,
+            "form_item_type": 0,
+            "rule": null,
+            "placeholder": null,
+            "setting": null,
+            "children": []
+          },
+          {
+            "title": "APP_Secret",
+            "key": "app_secret",
+            "value": "yyy",
+            "sort": 0,
+            "status": true,
+            "data_options": null,
+            "form_item_type": 0,
+            "rule": null,
+            "placeholder": null,
+            "setting": null,
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "飞书扫码",
+        "key": "feishu_scan",
+        "value": [
+          {
+            "key": "app_id",
+            "sort": 0,
+            "title": "APP_ID",
+            "value": "xxx",
+            "status": true,
+            "form_item_type": 0,
+            "form_item_type_label": "text"
+          },
+          {
+            "key": "app_secret",
+            "sort": 0,
+            "title": "APP_Secret",
+            "value": "yyy",
+            "status": true,
+            "form_item_type": 0,
+            "form_item_type_label": "text"
+          }
+        ],
+        "sort": 5,
+        "status": false,
+        "data_options": null,
+        "form_item_type": 11,
+        "rule": [],
+        "placeholder": "请配置飞书扫码信息",
+        "setting": null,
+        "children": [
+          {
+            "title": "APP_ID",
+            "key": "app_id",
+            "value": "xxx",
+            "sort": 0,
+            "status": true,
+            "data_options": null,
+            "form_item_type": 0,
+            "rule": null,
+            "placeholder": null,
+            "setting": null,
+            "children": []
+          },
+          {
+            "title": "APP_Secret",
+            "key": "app_secret",
+            "value": "yyy",
+            "sort": 0,
+            "status": true,
+            "data_options": null,
+            "form_item_type": 0,
+            "rule": null,
+            "placeholder": null,
+            "setting": null,
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "钉钉扫码",
+        "key": "dingtalk_scan",
+        "value": [
+          {
+            "key": "app_id",
+            "sort": 0,
+            "title": "APP_ID",
+            "value": "xxx",
+            "status": true,
+            "form_item_type": 0,
+            "form_item_type_label": "text"
+          },
+          {
+            "key": "app_secret",
+            "sort": 0,
+            "title": "APP_Secret",
+            "value": "yyy",
+            "status": true,
+            "form_item_type": 0,
+            "form_item_type_label": "text"
+          }
+        ],
+        "sort": 6,
+        "status": false,
+        "data_options": null,
+        "form_item_type": 11,
+        "rule": [],
+        "placeholder": "请配置钉钉扫码信息",
+        "setting": null,
+        "children": [
+          {
+            "title": "APP_ID",
+            "key": "app_id",
+            "value": "xxx",
+            "sort": 0,
+            "status": true,
+            "data_options": null,
+            "form_item_type": 0,
+            "rule": null,
+            "placeholder": null,
+            "setting": null,
+            "children": []
+          },
+          {
+            "title": "APP_Secret",
+            "key": "app_secret",
+            "value": "yyy",
+            "sort": 0,
+            "status": true,
+            "data_options": null,
+            "form_item_type": 0,
+            "rule": null,
+            "placeholder": null,
+            "setting": null,
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]
