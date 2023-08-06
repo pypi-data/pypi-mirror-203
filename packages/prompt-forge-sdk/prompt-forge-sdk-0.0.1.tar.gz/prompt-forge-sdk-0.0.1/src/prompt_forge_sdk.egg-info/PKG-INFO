@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: prompt-forge-sdk
+Version: 0.0.1
+Summary: The PromptForge Python SDK
+Author-email: Allen N <allen.n.apps@gmail.com>
+Project-URL: Homepage, https://promptforge.dev
+Project-URL: Bug Tracker, https://promptforge.dev
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE.md
+
+# Prompt Forge python-sdk
+
+The Prompt Forge Python SDK
+
+Details Coming soon...

@@ -1,0 +1,27 @@
+[build-system]
+requires = ['setuptools>=61.0']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'prompt-forge-sdk'
+version = '0.0.1'
+authors = [{ name = 'Allen N', email = 'allen.n.apps@gmail.com' }]
+description = 'The PromptForge Python SDK'
+readme = 'README.md'
+requires-python = '>=3.7'
+classifiers = [
+  'Programming Language :: Python :: 3',
+  'License :: OSI Approved :: MIT License',
+  'Operating System :: OS Independent',
+]
+
+# NOTE: This must be in sync with 'requirements.txt'.
+dependencies = [
+  'pydantic>=1.10.7',
+  'requests>=2.28.2',
+  'python-dateutil>=2.8.2',
+]
+
+[project.urls]
+'Homepage' = 'https://promptforge.dev'
+'Bug Tracker' = 'https://promptforge.dev'
