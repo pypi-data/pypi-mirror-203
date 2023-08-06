@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-17 17:39+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: core/validators/file_validators.py:14
+#, python-format
+msgid "File max size must less than %(value)s."
+msgstr "文件大小必须小于 %(value)s"
+
+#: core/validators/file_validators.py:31
+msgid "It is not a valid image."
+msgstr "不是合法的图片"
+
+#: errors/client_errors.py:8
+msgid "Client error."
+msgstr "客户端错误"
+
+#: errors/client_errors.py:12
+msgid "The requested data structure is not in the correct format."
+msgstr "请求的数据结构格式不正确"
+
+#: errors/server_errors.py:8
+msgid "Server error."
+msgstr "服务端错误"
+
+#: errors/server_errors.py:12
+msgid "This is a unknown logic error, please contact customer service."
+msgstr "这是未知的错误逻辑，需要联系客服专员才能解决"
+
+#: errors/server_errors.py:16
+msgid "It is a known server error, please contact customer service."
+msgstr "这是已知的错误逻辑，请联系客服专员解决"
+
+#: structs/fields/list_field.py:77
+#, python-format
+msgid "“%(value)s“ already exists."
+msgstr "“%(value)s“ 已经存在"
+
+#: structs/fields/list_field.py:78
+#, python-format
+msgid "This field's type must be a correct list, not “%(value)s”."
+msgstr "这个字段的类型必须是一个正确的list，不是 “%(value)s”"
+
+#: structs/fields/model_instance_field.py:14
+#: structs/fields/model_multiple_instance_field.py:15
+#, python-format
+msgid "Model instance “%(value)s“ does not exist"
+msgstr "Model实例 “%(value)s“ 不存在"
+
+#: structs/fields/object_field.py:56
+#, python-format
+msgid "This field's type must be a correct object or a dict, not “%(value)s”."
+msgstr "这个字段的类型必须是一个正确的object或dict，不是 “%(value)s”"
+
+#: structs/mockers/list_mocker.py:11
+#, python-format
+msgid ""
+"Can not fake enough items, min length is %(min_length)s, current list "
+"%(str_list)s."
+msgstr ""
+"无法生成足够的成员，目标最小的长度是 %(min_length)s， 现在列表为 %(str_list)s"
