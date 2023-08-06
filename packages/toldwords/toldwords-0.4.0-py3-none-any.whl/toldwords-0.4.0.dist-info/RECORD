@@ -1,0 +1,12 @@
+toldwords/__init__.py,sha256=Jiv8flsdH_RpYMkhEEGfKo0phxhxUii9Am6KufgtEFM,579
+toldwords/__init__.pyi,sha256=f8vLYLdGqVoL_nJd5q-6uUNqkRqaZMQRD0RY3lgVN10,365
+toldwords/openai.py,sha256=L0ej5DHp3Qx0iYdWWKjo784E56SOgJZxpp0PDDiTd0g,1788
+toldwords/openai.pyi,sha256=gjQ_oTSBN0grZZQLIar489ZNgH_t9kg0ymJwxCDwK0c,883
+toldwords/pretalx.py,sha256=9SEtLWyQXYFEy5s4ok1dHg-cc4EA5B4TYg_7RpK4jmY,771
+toldwords/pretalx.pyi,sha256=mEhmiGsi2BwSCN8zWEVVdO5GyuvxMhTKxRk23pJCVoc,508
+toldwords/utils.py,sha256=axcHGaM6nAyZ9TgDhO6vIoTjy_EFMvIIr22vcvVavdc,243
+toldwords/utils.pyi,sha256=vcXVJMpttL6u7AbrXfY5XONT2EsAA9cU1c_6rizqZAo,76
+toldwords-0.4.0.dist-info/LICENSE.txt,sha256=XhHqeZDJaMXAroulQjizMbfbqWq7BmtwvU9HiQa4M-o,1132
+toldwords-0.4.0.dist-info/METADATA,sha256=zPWDgiG7NQSETPOLJS7kKSuX8rywAcH7e4nk-_pc3js,1319
+toldwords-0.4.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+toldwords-0.4.0.dist-info/RECORD,,
