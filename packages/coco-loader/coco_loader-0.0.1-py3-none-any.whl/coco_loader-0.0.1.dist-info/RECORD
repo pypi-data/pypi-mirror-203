@@ -1,0 +1,11 @@
+coco_loader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coco_loader/bases.py,sha256=NPScX3eNJfj0tVFCg2tOwD4Ic5uy0VwJ1yWXIyfL338,638
+coco_loader/common.py,sha256=8sPRqE8DlGJdY0lMyYPD8ZAdWzBFt6_BHMayT91ys4c,1118
+coco_loader/imagecaptioning.py,sha256=ZAKY0ZnN6wafQA9biJwg4bRCXPyft1cWrvUw1BmLyM4,391
+coco_loader/keypointdetection.py,sha256=o_2hK7x07utcysgpdJo9-lUd_iygSZ7ogZQmM9NQsD8,698
+coco_loader/objectdetection.py,sha256=yRv6vveAkbh3qx_QSkE4l_uEqtnl9CBBbwiyVGEK2c4,691
+coco_loader/panopticsegmentation.py,sha256=pgqF7z9zlySkcmRaKl02hVb1BZBrucRe7-Vy3lad8vQ,832
+coco_loader-0.0.1.dist-info/LICENSE,sha256=oIZ7P1KKC5TZIsGH4koWLHIzR7aw2HC1rvFwKFjXWRw,1069
+coco_loader-0.0.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+coco_loader-0.0.1.dist-info/METADATA,sha256=r-kU-wpAKREWOORaPAlK8D06Ppc1mCW5IsRSUQGvCZM,3340
+coco_loader-0.0.1.dist-info/RECORD,,
