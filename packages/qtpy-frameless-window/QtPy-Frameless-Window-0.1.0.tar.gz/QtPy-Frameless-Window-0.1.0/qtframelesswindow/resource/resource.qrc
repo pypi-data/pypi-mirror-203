@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="qtframelesswindow">
+    <file>images/black/close.svg</file>
+    <file>images/black/maximize.svg</file>
+    <file>images/black/minimize.svg</file>
+    <file>images/black/normalize.svg</file>
+    <file>images/white/close.svg</file>
+    <file>images/white/maximize.svg</file>
+    <file>images/white/minimize.svg</file>
+    <file>images/white/normalize.svg</file>
+    <file>qss/button.qss</file>
+    <file>qss/button_close.qss</file>
+  </qresource>
+</RCC>
