@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: snapmlweb
+Version: 0.0.1
+Summary: ML Helper Webapp
+Home-page: https://github.com/Parth162/snapmlweb
+Author: Anish Adnani, Parth Goel
+Author-email: anishadnani00@gmail.com
+License: MIT
+Keywords: python,coding,ml,algorithms
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+## snapmlweb : snapmlweb is a web application that uses snapmlengine to help you with Machine Learning Tasks
+
+- **Website:** https://github.com/Parth162/snapmlweb
+- **Source Code:** https://github.com/Parth162/snapmlweb
+- **Bug Reports:** https://github.com/Parth162/snapmlweb/issues
+
+## What is it?
+
+**snapmlengine** is a Python package that provides fast and flexible solution to Machine Learning Tasks
+
+## snapmlweb provides
+- Functions to perform ML Tasks using a web application
+
+## Where to get it
+
+The source code is currently hosted on GitHub at:
+https://github.com/Parth162/snapmlweb
+
+```sh
+# conda
+conda install snapmlweb
+```
+
+```sh
+# or PyPI
+pip install snapmlweb
+```
+
+## Background
+
+Work on ``snapmlweb`` started in 2023 and has been under active development since then.
+

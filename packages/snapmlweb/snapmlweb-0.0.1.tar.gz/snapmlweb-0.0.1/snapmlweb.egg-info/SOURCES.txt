@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+snapmlweb/app.py
+snapmlweb.egg-info/PKG-INFO
+snapmlweb.egg-info/SOURCES.txt
+snapmlweb.egg-info/dependency_links.txt
+snapmlweb.egg-info/requires.txt
+snapmlweb.egg-info/top_level.txt
