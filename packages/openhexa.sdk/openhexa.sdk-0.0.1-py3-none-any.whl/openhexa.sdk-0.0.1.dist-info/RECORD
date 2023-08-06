@@ -1,0 +1,15 @@
+openhexa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openhexa/sdk/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+openhexa/sdk/pipelines/__init__.py,sha256=xXmemTdyTJVGlh9AElkoCgp2Xx5-liVeOoQfPaSgcr8,101
+openhexa/sdk/pipelines/parameter.py,sha256=jLGcQ7_oL-l0mvY32kq3JF7zrt8TtuYqAJ-2SICz5uc,9944
+openhexa/sdk/pipelines/pipeline.py,sha256=yG13uI920pu5m6o37-T4vg24G66mTTLcbMtifkEdTbc,5824
+openhexa/sdk/pipelines/task.py,sha256=GA3NSYh8lWl2-zQeGoaaQZPEbZ8BiW6TqUXvOAkwc6I,3654
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_parameter.py,sha256=CuMo7abkaL2V7JCNjcT7ghocpTLSI0Zml9g-V0KiafY,7394
+tests/test_pipeline.py,sha256=XNWvU2DjlNlZ2uMuYzkxeDOamPk2xnawLrgq5aWahLE,2098
+openhexa.sdk-0.0.1.dist-info/LICENCE,sha256=GaEYnbyo8e_gVXAbt5p_gmaxfiiyP3xrNH-fsRD-Y-c,1057
+openhexa.sdk-0.0.1.dist-info/METADATA,sha256=SN_d6TUwUVgS7uzWs7HyQY25woRvySALRaH8CcH5lL0,1472
+openhexa.sdk-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+openhexa.sdk-0.0.1.dist-info/top_level.txt,sha256=ekUJcTRVwoz3bCSlFOsJdNhiELwAHdRaBYPZD8PD0jA,15
+openhexa.sdk-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+openhexa.sdk-0.0.1.dist-info/RECORD,,
