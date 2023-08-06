@@ -1,0 +1,14 @@
+stashapi/classes.py,sha256=Ni4OgkFjwAtcNt1YBULfVDKPNc7wn7eZqpuF1MRwsz8,8034
+stashapi/log.py,sha256=wGkmSt37g1DLuuCMxZQBPV8tvx24ZIkOimIYILAyWxg,1911
+stashapi/marker_parse.py,sha256=gZHJUtyKAp8r_L7G2lwcfUlJAh4DMynAWueAaEAuicg,5449
+stashapi/scrape_parser.py,sha256=x3axa_1NL2s-FvBtsCDAer854zKfKNpWafod99j6_Os,10212
+stashapi/stash_types.py,sha256=mIwk0w_G2rhfxF-Ls9XDNeImlKbTjCEeZcp-gpC9tL0,823
+stashapi/stashapp.py,sha256=72_flAwnxHP9P-eq8KwqyHbUpv00WxuKUdGaZz4SR-s,46788
+stashapi/stashbox.py,sha256=OofnQsHSiAdf7feLVAEHvN9MvUi0d7uglCTY_3_aYyg,8777
+stashapi/stashbox_gql_fragments.py,sha256=YBXsUnCfdRPVhpdnXlAlUX49oQV16mxd7xcQ80gOMKQ,1775
+stashapi/tools.py,sha256=Z7QwUib_i-ap4KtwovvaKXAbxrtQZOpsEhykQ7davnk,1494
+stashapp_tools-0.2.20.dist-info/LICENSE,sha256=oaiLn00UW406Az6eknFbM9sE_xZuZO3ghv8QXu9vwU4,1066
+stashapp_tools-0.2.20.dist-info/METADATA,sha256=Jm_YFICYh3eO5ER7TI7B4Drl8VHEG6Zn7gH-nXlIN2g,1395
+stashapp_tools-0.2.20.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+stashapp_tools-0.2.20.dist-info/top_level.txt,sha256=IKHk6nGwLP1SfP_0A60mPXNWhHR8myJ_V_gAFztN7vg,9
+stashapp_tools-0.2.20.dist-info/RECORD,,
