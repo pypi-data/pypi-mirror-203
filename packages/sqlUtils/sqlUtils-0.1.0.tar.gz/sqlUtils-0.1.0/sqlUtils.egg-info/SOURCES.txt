@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+sqlUtils.egg-info/PKG-INFO
+sqlUtils.egg-info/SOURCES.txt
+sqlUtils.egg-info/dependency_links.txt
+sqlUtils.egg-info/entry_points.txt
+sqlUtils.egg-info/requires.txt
+sqlUtils.egg-info/top_level.txt
