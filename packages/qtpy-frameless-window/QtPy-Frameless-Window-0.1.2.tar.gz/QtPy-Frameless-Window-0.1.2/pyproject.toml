@@ -1,0 +1,43 @@
+[tool.pdm.scripts.rcc]
+shell = "pyside6-rcc resource/resource.qrc -o qtframelesswindow/resource.py & sed -i \"s/PySide6/qtpy/g\" qtframelesswindow/resource.py"
+
+[project]
+authors = [
+    { name = "TaoChenyue", email = "3038816978@qq.com" },
+]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "qtpy",
+]
+description = "A cross-platform frameless window based on QtPy."
+keywords = [
+    "pyqt frameless",
+]
+name = "QtPy-Frameless-Window"
+readme = "README.md"
+requires-python = ">=3.7,<3.10"
+version = "0.1.2"
+
+[project.license]
+text = "GPLv3"
+
+[project.urls]
+Homepage = "https://github.com/TaoChenyue/QtPy-Frameless-Window.git"
+
+[project.optional-dependencies]
+pyqt = [
+    "pyside2",
+    "pyside6",
+    "pyqt5",
+    "pyqt6",
+]
+
+[build-system]
+build-backend = "pdm.pep517.api"
+requires = [
+    "pdm-pep517>=1.0.0",
+]
