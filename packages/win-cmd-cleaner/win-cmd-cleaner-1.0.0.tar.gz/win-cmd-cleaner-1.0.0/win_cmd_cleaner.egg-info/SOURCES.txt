@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+win-cmd-cleaner/__main__.py
+win_cmd_cleaner.egg-info/PKG-INFO
+win_cmd_cleaner.egg-info/SOURCES.txt
+win_cmd_cleaner.egg-info/dependency_links.txt
+win_cmd_cleaner.egg-info/top_level.txt
