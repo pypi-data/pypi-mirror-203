@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: brain-lang
+Version: 0.1.0
+Summary: AI Programming Language
+License: MIT
+Author: Hashem
+Author-email: PersonalHashem@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+
