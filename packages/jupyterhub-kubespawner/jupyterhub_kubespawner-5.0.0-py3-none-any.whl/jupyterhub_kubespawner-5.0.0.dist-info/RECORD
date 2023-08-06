@@ -1,0 +1,14 @@
+jupyterhub_config.py,sha256=LEByWN8RPYgn_xkNaw7BLqp1Cou6yd-dCNdyY4THLa8,4305
+docs/source/conf.py,sha256=waRJZV9ihcofR8Dc5IznWm88I9M5Sq-ctRjGLDuWk6M,3310
+kubespawner/__init__.py,sha256=NtaKhitJt4f6ZS8s87_wPLjDNXEPYcgUcwVwBWpFXjw,511
+kubespawner/_version.py,sha256=oalOcAbUMH0migsk44ggn2sJXXHuBwX5QXxsP03u98Q,154
+kubespawner/clients.py,sha256=41ztdOxOHO7hy-A99C9QlW3u531PJ6GGcxuHnQIXBCg,3733
+kubespawner/objects.py,sha256=GH3n3FVoGC5JaO7IIOrQlMpuVoZTP6JrLGBFvn04e4U,37969
+kubespawner/proxy.py,sha256=pBds7VDJ8G4KW6zR0SEtO5QYkyeljO4oFxfNp5JTMTY,22353
+kubespawner/reflector.py,sha256=l4dQw50q0AC22PLi82eSg3ibYFR7bYw4W8SZjzrsDwQ,16100
+kubespawner/spawner.py,sha256=yY87OUPwBpa0YbBa0kMNXo3LntxeB9AQQvJW2gbxAEQ,125371
+kubespawner/utils.py,sha256=FrGV11bG_-RPEy_MkVWvPXyn5C-Sw2-ubvGut_Mwuqg,8415
+jupyterhub_kubespawner-5.0.0.dist-info/METADATA,sha256=8NLkZcOOVbzivNOJDqoTES0h_CSBGfCf3e4tpLclEDI,8208
+jupyterhub_kubespawner-5.0.0.dist-info/WHEEL,sha256=EI2JsGydwUL5GP9t6kzZv7G3HDPi7FuZDDf9In6amRM,87
+jupyterhub_kubespawner-5.0.0.dist-info/licenses/LICENSE,sha256=iHnKwx1qJa6IAYBWnqTYDKmyTqnnOnO1YEqXEfF0Sik,1528
+jupyterhub_kubespawner-5.0.0.dist-info/RECORD,,
