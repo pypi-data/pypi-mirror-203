@@ -1,0 +1,15 @@
+LICENSE.md
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+ovos_vad_plugin_precise/__init__.py
+ovos_vad_plugin_precise/vad.tflite
+ovos_vad_plugin_precise/version.py
+ovos_vad_plugin_precise.egg-info/PKG-INFO
+ovos_vad_plugin_precise.egg-info/SOURCES.txt
+ovos_vad_plugin_precise.egg-info/dependency_links.txt
+ovos_vad_plugin_precise.egg-info/entry_points.txt
+ovos_vad_plugin_precise.egg-info/requires.txt
+ovos_vad_plugin_precise.egg-info/top_level.txt
+ovos_vad_plugin_precise.egg-info/zip-safe
