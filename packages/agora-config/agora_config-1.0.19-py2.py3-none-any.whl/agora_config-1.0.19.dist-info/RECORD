@@ -1,0 +1,13 @@
+agora_config/__init__.py,sha256=Ql_wTaqiaUcVVQA9spK6UtMpH0BPH6_DvA9Q7pgGvtI,105
+agora_config/agora_config.py,sha256=ufvXlkADeZJaEy_aELbarm74wL5cux-Lp86WsEJZunU,5819
+agora_config/command_line_provider.py,sha256=TivZe91P_K6FbGbRtZpl9es_cNi2EmTeZBvp4cwW37I,540
+agora_config/dict_of_dict.py,sha256=-oz_j84NWr09j5MkodH8YkQ_reZ_V6LIotL1xWdqpcU,2742
+agora_config/environment_variable_provider.py,sha256=K-zWy9radHQK2zR2paPWE9pA-yAZkgCmCaHx7AyKRbY,410
+agora_config/file_key_provider.py,sha256=NJH4M9sF3zhxZiMbaWQGP2HpSQxps2S0_eoFrHXTdqg,3164
+agora_config/file_provider.py,sha256=tc91DFNzAVRfJJ-5KWzqo10aiLgoOd8BWDZEHulTRq4,1978
+agora_config/last_value_callbacks.py,sha256=3linM0LqWB92D0gFn0_YX0m1B7otSQ22sMv49uiBABw,550
+agora_config/version.py,sha256=8qMCnRurZ4MpAk9HGKBpwXcKOugsdBm62ie1IUy-weg,25
+agora_config-1.0.19.dist-info/LICENSE,sha256=0FV-B2w7SRxv5WB_RriZppfctNE6t4pLFm_BUw2Ajcw,139
+agora_config-1.0.19.dist-info/WHEEL,sha256=kdeDBNPvBI0w3meLKPoGgAnEr54n1jzrZWUoaLmGzVY,99
+agora_config-1.0.19.dist-info/METADATA,sha256=kzOKG9PUZ9DUxlPbFyevd9-Uzw0XDCdHRigmfaC72iM,1098
+agora_config-1.0.19.dist-info/RECORD,,
