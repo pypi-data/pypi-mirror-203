@@ -1,0 +1,12 @@
+tinyusdz-0.8.0rc1.data/data/tinyusdz/ctinyusdz.cpython-310-x86_64-linux-gnu.so,sha256=uctNA46pY8bc3XncElwbH2alD2K7v-FDhILj_dUNgjU,5573585
+blender/sandbox/meshbuild.py,sha256=gBLxVyMeBs84chkFyI4e22Hc_5EBBKbM6IuFwMIKzSc,2417
+external/pybind11/tools/make_changelog.py,sha256=nvL4LRhLsDMe7y2U9tvN0s8qCidXVoliW6yd5zAzDB8,1282
+external/pybind11/tools/libsize.py,sha256=3MBZDCi0-kdKei_6RcTbmVJgtmT4udB-WIF-mOPLBD4,1031
+external/nanobind/src/nanobind/__init__.py,sha256=PQ1_EkV8vFMPdrC4HFS1XlDoMv0Vfl4nfkEF9Qtfm48,536
+tinyusdz-0.8.0rc1.dist-info/LICENSE,sha256=DpwDoE3-yEvAaCD9iUkFtL-dXfkEs9wcWukMo1bJ4rE,1077
+tinyusdz-0.8.0rc1.dist-info/WHEEL,sha256=obWxOqV0S3reDKkxdKueekHyt728o_OY3sRwCadJztY,107
+tinyusdz-0.8.0rc1.dist-info/top_level.txt,sha256=yONGtbffyS-aQ30gIaoYRCBaBJZuWVrzu2YOXhEXNU4,44
+tinyusdz-0.8.0rc1.dist-info/RECORD,,
+tinyusdz-0.8.0rc1.dist-info/METADATA,sha256=TP4w1xFl6Djpb2iMJwVtMZAaQO1jv0vIS_pm2fTGKl8,2236
+tinyusdz.libs/libgcc_s-a04fdf82.so.1,sha256=YxqJNaesQMhDswHEQpXsiLnVvMBBbYO6KYMDZFPWKSM,81257
+tinyusdz.libs/libstdc++-a9383cce.so.6.0.28,sha256=Wy9UCdwS1rwI9GU5e7qE61S0AkRqqwti1q_adWSs-Rk,2447393
