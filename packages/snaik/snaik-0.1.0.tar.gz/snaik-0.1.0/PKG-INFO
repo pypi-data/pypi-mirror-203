@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: snaik
+Version: 0.1.0
+Project-URL: Source, https://gitlab.com/ntjess/snaik
+Author-email: Nathan Jessurun <ntjessu@gmail.com>
+License-Expression: MIT
+Requires-Python: >=3.8
+Requires-Dist: click>=7.1.2
+Requires-Dist: numpy
+Requires-Dist: pyqtdarktheme>=2.0
+Requires-Dist: pyqtgraph>=0.13.1
+Requires-Dist: qtextras>=0.6.6
+Requires-Dist: qtpy>=1.11.0
+Provides-Extra: dev
+Requires-Dist: qtconsole<0.5.4.2,>=5.4.0; extra == 'dev'
+Provides-Extra: full
+Requires-Dist: imageio>=2.9.0; extra == 'full'
+Requires-Dist: pillow>=8.3.1; extra == 'full'
+Requires-Dist: pyside6~=6.4.0; extra == 'full'
