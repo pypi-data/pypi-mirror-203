@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: probabilistic-word-embeddings
+Version: 1.1.1
+Summary: Probabilistic Word Embeddings for Python
+Home-page: https://github.com/ninpnin/probabilistic-word-embeddings
+License: MIT
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: networkx
+Requires-Dist: pandas
+Requires-Dist: progressbar2
+Requires-Dist: scikit-learn
+Requires-Dist: tensorflow (>=2.2,<3.0)
+Requires-Dist: tensorflow-probability (>=0.11,<0.12)
+Project-URL: Repository, https://github.com/ninpnin/probabilistic-word-embeddings
+Description-Content-Type: text/markdown
+
+# probabilistic-word-embeddings v0.15.1
+
+Probabilistic Word Embedding module for Python. Built with TensorFlow 2.x and TensorFlow probability.
+
+[Documentation is available here.](https://ninpnin.github.io/probabilistic-word-embeddings/)
+
+## Colab demo
+
+A demo of the project can be run on [Google Colab](https://colab.research.google.com/drive/1dGqWn7SMqg-fGzVUGzXSOUmsX8m9k5k2).
+
