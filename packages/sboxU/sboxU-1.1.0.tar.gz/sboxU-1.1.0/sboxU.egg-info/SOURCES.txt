@@ -1,0 +1,6 @@
+README.md
+setup.py
+sboxU.egg-info/PKG-INFO
+sboxU.egg-info/SOURCES.txt
+sboxU.egg-info/dependency_links.txt
+sboxU.egg-info/top_level.txt
