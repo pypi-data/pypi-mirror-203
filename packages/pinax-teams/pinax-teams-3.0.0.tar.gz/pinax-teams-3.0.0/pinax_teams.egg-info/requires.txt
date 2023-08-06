@@ -1,0 +1,6 @@
+django>=3.2
+django-reversion>=5.0.4
+pinax-invitations>=8.0.0
+python-slugify>=7.0.0
+Pillow>=9.3.0
+django-user-accounts>=3.2.0
