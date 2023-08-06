@@ -1,0 +1,9 @@
+funcx_endpoint/__init__.py,sha256=8MwPX9CpOcfHnOowUL8dzNc76m_ToaWB_Odt-H_64fM,122
+funcx_endpoint/version.py,sha256=XX9x8OFFBqQ8gKfSCBtahdCXU_5DOX9KtmALfqTfLwM,245
+funcx_endpoint/executors/__init__.py,sha256=lJrELv7G255Udtsf4wko0P5avosMXFgo-WDd4yUsxBE,107
+funcx_endpoint-2.0.1a3.dist-info/LICENSE,sha256=fzj6t0nVMzo0GXio09toiJClvU90PizV6ZErI9lKkxU,11330
+funcx_endpoint-2.0.1a3.dist-info/METADATA,sha256=XSRW_Dc2WE34MHaq25VpEc_7kcf2ZEfTMKX_igMQB8U,2093
+funcx_endpoint-2.0.1a3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+funcx_endpoint-2.0.1a3.dist-info/entry_points.txt,sha256=mMCfA0spBNHdZVrKCYWEu6hFXzXXg3le5MbDZckLbY8,329
+funcx_endpoint-2.0.1a3.dist-info/top_level.txt,sha256=D6KCQQJfDeZRPhOtiyaKD3YRa1iXXMY3pFVJ_7Ik-BQ,15
+funcx_endpoint-2.0.1a3.dist-info/RECORD,,
