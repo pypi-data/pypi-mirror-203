@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: range-coder
+Version: 1.1
+Summary: A fast implementation of a range coder
+License: BSD
+
