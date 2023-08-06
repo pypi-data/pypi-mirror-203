@@ -1,0 +1,17 @@
+TapisCLICICLE/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TapisCLICICLE/__main__.py,sha256=wlXHCw27Z7r4JvIHQ3SaFKpVDy0vTVKq95mg_N_2W3M,132
+TapisCLICICLE/args.py,sha256=x98fSJkmhUYkCtMJUsVaDPSXrwihOEFcCfdTl2wS_Is,1474
+TapisCLICICLE/cli.py,sha256=qScF4clIpgJ6hOJSlSCcUuxtf11FV1QbqpBGEo62GrE,10959
+TapisCLICICLE/decorators.py,sha256=4Nhd8cmAhFUTxDhRfFy2HTIqpKQwJfNvAXLqLZJpcbo,9161
+TapisCLICICLE/exceptions.py,sha256=_RGvMB3_Aj2Jp19zberueFYDZEZ48_1wotSGYBHyRss,1772
+TapisCLICICLE/helpers.py,sha256=uv2D2mFf_M-8MkpfxUtlRaq3bCYj8JMtJIS3Tt7MVaY,5592
+TapisCLICICLE/schemas.py,sha256=RdgwUeTrFfkm3pTvuJtKuw6Xpvv8dan3QqJ5XQq4X3c,2023
+TapisCLICICLE/server.py,sha256=WFlPBG2pP3Zk_uttZrc7iv8cvDl8VABvwOU2iwjfGos,10424
+TapisCLICICLE/socketOpts.py,sha256=ylioMQtAEsqNobfRz0BikqyyWBNRRcfZa7LzTVNGlDs,1645
+TapisCLICICLE/tapisObjectWrappers.py,sha256=G8rsk0bH65zLWZjnKVPOXaoG_b5CkpnaKe79Bq7sTwo,19567
+TapisCL_ICICLE-0.0.29.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+TapisCL_ICICLE-0.0.29.dist-info/METADATA,sha256=OAC8Rb0agKEfqkw84b0EXb49McV-zz18R_nmBqZUcQo,44336
+TapisCL_ICICLE-0.0.29.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+TapisCL_ICICLE-0.0.29.dist-info/entry_points.txt,sha256=3YmiEayGASle5fgEjO44rq0YzqdbfOdeTJsDngqmJ_M,59
+TapisCL_ICICLE-0.0.29.dist-info/top_level.txt,sha256=vRqKayFs9hsx79AAf6_8CPMD1I4c9yDxI-9O5Z7WmVs,14
+TapisCL_ICICLE-0.0.29.dist-info/RECORD,,
