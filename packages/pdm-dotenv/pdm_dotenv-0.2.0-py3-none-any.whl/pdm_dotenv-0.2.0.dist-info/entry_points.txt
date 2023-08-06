@@ -1,0 +1,3 @@
+[pdm]
+dotenv = pdm_dotenv:plugin
+
