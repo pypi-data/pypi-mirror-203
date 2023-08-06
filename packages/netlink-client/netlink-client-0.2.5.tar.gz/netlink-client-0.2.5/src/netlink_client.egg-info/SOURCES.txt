@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/netlink_Boaz_Tene/main.c
+src/netlink_Boaz_Tene/netlink.c
+src/netlink_Boaz_Tene/netlink.h
+src/netlink_Boaz_Tene/netlink_class.c
+src/netlink_Boaz_Tene/netlink_class.h
+src/netlink_client.egg-info/PKG-INFO
+src/netlink_client.egg-info/SOURCES.txt
+src/netlink_client.egg-info/dependency_links.txt
+src/netlink_client.egg-info/top_level.txt
