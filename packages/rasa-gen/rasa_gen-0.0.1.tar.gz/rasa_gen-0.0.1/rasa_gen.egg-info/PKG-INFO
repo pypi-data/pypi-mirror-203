@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: rasa-gen
+Version: 0.0.1
+Summary: Rasa train data generator
+Home-page: https://github.com/Adenialzz/SongUtils
+Author: Charles Gao
+Author-email: charlesgao2101024@gmail.com
+License: MIT Licence
+Keywords: pip,rasa_gen
+Platform: any
+
+Rasa train data generator version 0.0.1

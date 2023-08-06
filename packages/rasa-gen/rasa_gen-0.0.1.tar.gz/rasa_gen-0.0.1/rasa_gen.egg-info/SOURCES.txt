@@ -1,0 +1,8 @@
+README.md
+setup.py
+rasa_gen/__init__.py
+rasa_gen/generator.py
+rasa_gen.egg-info/PKG-INFO
+rasa_gen.egg-info/SOURCES.txt
+rasa_gen.egg-info/dependency_links.txt
+rasa_gen.egg-info/top_level.txt
