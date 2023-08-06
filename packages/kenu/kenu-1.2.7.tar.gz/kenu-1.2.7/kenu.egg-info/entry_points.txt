@@ -1,0 +1,3 @@
+[console_scripts]
+connect = kenu.connect:main
+kenu = kenu.__main__:main
