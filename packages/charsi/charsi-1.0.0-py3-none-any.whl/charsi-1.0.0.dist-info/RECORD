@@ -1,0 +1,15 @@
+charsi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+charsi/__main__.py,sha256=rXg7ysTOlXeek2bGWpMK5MHVpAIvCx6TU9ABx96rqaE,291
+charsi/commands/__init__.py,sha256=dJAM5twovTtqiRnlReOAV_VOzSGD3S3VdgjCeuLtT_o,141
+charsi/commands/build.py,sha256=VDBHgKBdPTnQ6Sfk3QAIgAElbvPoBF0v_9bXj_jk-Tg,612
+charsi/commands/build_manifest.py,sha256=KGAGuRQjBuodtJJaeKezHy3a3TfBj-0i8X7bTj_qMDo,400
+charsi/instruction.py,sha256=JxI4_hGm5yLItbblkJzc4numagZN987mMHNMhr8FaiU,2029
+charsi/manifest.py,sha256=XxQbzSSoQ_YKU_gyMIfbC5-6iR-H6K9qu2CSJLp1GFU,1278
+charsi/recipe.py,sha256=JpQYfk-qPnFHOstf72FTuGGne4gWRMLn4-DxOE2MZkg,762
+charsi/strings.py,sha256=BDiWNgWfr6CUovARg_r3IBjmEKSBodNGU7mO9DMWAQM,2132
+charsi/utils.py,sha256=TfoDXLKQaljReVYom3i-eknRjawL49E4G6AkfIabX1k,206
+charsi-1.0.0.dist-info/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+charsi-1.0.0.dist-info/entry_points.txt,sha256=C73YEGMmROkYiHZkYJzaqRhsc69AybrQQHSjfild4Zo,46
+charsi-1.0.0.dist-info/METADATA,sha256=zWtX7QPacmXjAbJvxg8ZGXVBzdV0NEwTraoqeG-OUG8,3478
+charsi-1.0.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+charsi-1.0.0.dist-info/RECORD,,
