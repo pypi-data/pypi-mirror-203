@@ -1,0 +1,5 @@
+lazy
+selenium<4,>=2
+
+[visual_diff]
+needle

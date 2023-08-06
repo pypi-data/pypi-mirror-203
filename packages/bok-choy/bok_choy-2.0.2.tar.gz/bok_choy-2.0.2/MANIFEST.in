@@ -1,0 +1,7 @@
+include LICENSE
+include AUTHORS
+include README.rst
+include requirements/base.in
+
+recursive-include bok_choy/vendor *
+include requirements/constraints.txt
