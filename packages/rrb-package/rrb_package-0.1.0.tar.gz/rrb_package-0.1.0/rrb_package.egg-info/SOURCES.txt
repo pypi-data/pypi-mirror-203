@@ -1,0 +1,8 @@
+README.md
+setup.py
+rrb_package/__init__.py
+rrb_package/my_module.py
+rrb_package.egg-info/PKG-INFO
+rrb_package.egg-info/SOURCES.txt
+rrb_package.egg-info/dependency_links.txt
+rrb_package.egg-info/top_level.txt
