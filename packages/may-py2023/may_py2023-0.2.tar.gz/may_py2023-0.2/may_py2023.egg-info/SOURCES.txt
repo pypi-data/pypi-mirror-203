@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+may_py2023/_init_.py
+may_py2023/may_py2023.py
+may_py2023.egg-info/PKG-INFO
+may_py2023.egg-info/SOURCES.txt
+may_py2023.egg-info/dependency_links.txt
+may_py2023.egg-info/not-zip-safe
+may_py2023.egg-info/top_level.txt
