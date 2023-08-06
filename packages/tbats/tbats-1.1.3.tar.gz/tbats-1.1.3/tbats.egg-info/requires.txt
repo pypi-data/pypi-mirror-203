@@ -1,0 +1,9 @@
+numpy
+scipy
+pmdarima
+scikit-learn
+
+[dev]
+pip-tools
+pytest
+rpy2
