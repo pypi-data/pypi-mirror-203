@@ -1,0 +1,10 @@
+README.md
+setup.py
+gitfluencer/__init__.py
+gitfluencer/app.py
+gitfluencer.egg-info/PKG-INFO
+gitfluencer.egg-info/SOURCES.txt
+gitfluencer.egg-info/dependency_links.txt
+gitfluencer.egg-info/entry_points.txt
+gitfluencer.egg-info/requires.txt
+gitfluencer.egg-info/top_level.txt
