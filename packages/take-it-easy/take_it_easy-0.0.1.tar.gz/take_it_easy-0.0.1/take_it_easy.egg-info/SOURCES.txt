@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+take_it_easy/__init__.py
+take_it_easy/_modidx.py
+take_it_easy/board.py
+take_it_easy/play.py
+take_it_easy/tiles.py
+take_it_easy.egg-info/PKG-INFO
+take_it_easy.egg-info/SOURCES.txt
+take_it_easy.egg-info/dependency_links.txt
+take_it_easy.egg-info/entry_points.txt
+take_it_easy.egg-info/not-zip-safe
+take_it_easy.egg-info/requires.txt
+take_it_easy.egg-info/top_level.txt
