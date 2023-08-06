@@ -1,0 +1,8 @@
+varname
+rich
+trimesh
+numpy
+torch
+tqdm
+matplotlib
+opencv-python
