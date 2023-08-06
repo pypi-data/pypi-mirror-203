@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: skeletorch
+Version: 0.1.0
+Summary: Punycode Converter Library for Python
+Home-page: https://github.com/Yutsuro/skeleton-transformer-Pytorch
+Author: Yutsuro
+Author-email: Yuki@utsu.ro
+License: MIT
+Keywords: Skeleton-Transformer Python Pytorch Action-Recognition Skeleton Pose-Estimation
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# skeleton-transformer-Pytorch
+Pytorch implementation of skeleton transformer module
