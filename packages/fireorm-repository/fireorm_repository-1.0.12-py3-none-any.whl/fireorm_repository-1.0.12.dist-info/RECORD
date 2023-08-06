@@ -1,0 +1,12 @@
+LICENSE,sha256=QTQKCUN0mrOuD6uZwOf9dVJ26X6AJ9Lk1fVZSdL7rbU,1072
+README.md,sha256=frCxhXCJCIeD4QnzmEoXSmUDyYH0NKovnU9d3v5gELI,198
+fireorm_repository/__init__.py,sha256=FX1uB9A8GQrSIKdyM4MfRyU174ifD40UlsZkjgGR5OM,23
+fireorm_repository/repositories/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+fireorm_repository/repositories/base.py,sha256=kZfdpXYY9nwJjrAmty5pCMC67_v-BCSQdBFvnmMD0VQ,1916
+fireorm_repository/repositories/interface.py,sha256=ZaT8KXZw6d-tbQ9NcC5FSqh4zbgQPUHMSDSS6BbhY2M,745
+fireorm_repository/types/__init__.py,sha256=WdF5dg6QoJfz99P6e1xrX1PEO5aNBKCPkF2kFkr6dLo,45
+fireorm_repository/types/types.py,sha256=331Cf1MVV3kEnoSASCNXsrZSfXWdQ4bGFoKNUzdEZEk,45
+fireorm_repository-1.0.12.dist-info/LICENSE,sha256=QTQKCUN0mrOuD6uZwOf9dVJ26X6AJ9Lk1fVZSdL7rbU,1072
+fireorm_repository-1.0.12.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+fireorm_repository-1.0.12.dist-info/METADATA,sha256=TFHXfo88n2xVEyRaDZC8U0oKCXdZQY1c9VEW9W5r-uE,1234
+fireorm_repository-1.0.12.dist-info/RECORD,,
