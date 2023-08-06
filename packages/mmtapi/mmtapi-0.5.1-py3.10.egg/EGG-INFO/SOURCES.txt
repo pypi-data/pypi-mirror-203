@@ -1,0 +1,17 @@
+README.md
+setup.py
+MMTAPI.egg-info/PKG-INFO
+MMTAPI.egg-info/SOURCES.txt
+MMTAPI.egg-info/dependency_links.txt
+MMTAPI.egg-info/top_level.txt
+mmtapi/__init__.py
+mmtapi/download_test.py
+mmtapi/mmtapi.py
+mmtapi/test.py
+mmtapi.egg-info/PKG-INFO
+mmtapi.egg-info/SOURCES.txt
+mmtapi.egg-info/dependency_links.txt
+mmtapi.egg-info/top_level.txt
+mmtapi/instruments/__init__.py
+mmtapi/instruments/binospec.py
+mmtapi/instruments/mmirs.py
