@@ -1,0 +1,6 @@
+pyproject.toml
+src/rust_proj.exe
+src/david_rust_bin_pypi_test.egg-info/PKG-INFO
+src/david_rust_bin_pypi_test.egg-info/SOURCES.txt
+src/david_rust_bin_pypi_test.egg-info/dependency_links.txt
+src/david_rust_bin_pypi_test.egg-info/top_level.txt
