@@ -1,0 +1,41 @@
+.TH AWS\-SSO\-CLI "1" "2023\-04\-17" "aws\-sso\-cli" "Generated Python Manual"
+.SH NAME
+aws\-sso\-cli
+.SH SYNOPSIS
+.B aws\-sso\-cli
+[-h] [-p PROFILE] [-v] [-f] [--docker-force]
+.SH DESCRIPTION
+A program to log into AWS SSO if not already logged in.
+
+It also sets the appropriate values in the shared credentials file
+after login and logs into any ecr repos if docker is running.
+
+.SH OPTIONS
+.TP
+\fB\-p\fR \fI\,PROFILE\/\fR, \fB\-\-profile\fR \fI\,PROFILE\/\fR
+The profile to use
+
+.TP
+\fB\-v\fR, \fB\-\-version\fR
+Print the version
+
+.TP
+\fB\-f\fR, \fB\-\-force\fR
+Log in even if already logged in.
+
+.TP
+\fB\-\-docker\-force\fR
+Log into docker using ECR credentials even if already authenticated with AWS.
+
+.SH AUTHOR
+.nf
+Peter Debelak
+.fi
+.nf
+pdebelak@gmail.com
+.fi
+
+.SH DISTRIBUTION
+The latest version of aws\-sso\-cli may be downloaded from
+.UR https://gitlab.com/pdebelak/aws\-sso\-cli
+.UE

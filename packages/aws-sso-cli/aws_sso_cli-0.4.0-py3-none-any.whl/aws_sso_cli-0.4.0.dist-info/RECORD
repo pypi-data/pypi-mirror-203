@@ -1,0 +1,9 @@
+aws_sso_cli/__init__.py,sha256=3ex4x_yQ15OF2ATs2zOV6sDPwRex9JaSUob54anTdRs,6378
+aws_sso_cli-0.4.0.data/data/share/man/man1/aws-sso-cli.1,sha256=YbUtWnZdGWc9M7JYNmqZrpZ6BP1GRsz9wfvO26TIIE8,893
+aws_sso_login/__init__.py,sha256=1VAUMzDU9T7_7CoYw1UoLdCnNfp65l4B2yYQox4V7ks,6378
+aws_sso_cli-0.4.0.dist-info/LICENSE,sha256=dAaYB1yBjJOVhzdGLzRB5qtWrJ4AyVPbwiJ5AJkGh6Q,1070
+aws_sso_cli-0.4.0.dist-info/METADATA,sha256=1aQ6sgI9UYmzJZur5EyitzAeqmKQgzVNqxpkM3DnMVA,1453
+aws_sso_cli-0.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aws_sso_cli-0.4.0.dist-info/entry_points.txt,sha256=bZ57xmsfDKVZ1fl_Qv32FZJZGfRw3fVNjaPlr6q5X4U,49
+aws_sso_cli-0.4.0.dist-info/top_level.txt,sha256=BsjUUAJckbXTjoCOBwg560gRrjCi_3r2L5ukqrBgL0k,12
+aws_sso_cli-0.4.0.dist-info/RECORD,,
