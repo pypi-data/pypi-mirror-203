@@ -1,0 +1,16 @@
+backupr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backupr/cli.py,sha256=4E-GOhvbqo6pNmVclWh_oTFnerNCTDcNPGa5RlIC-vA,1077
+backupr/config.py,sha256=pIwShBWxw8kWXOaU0SAOAPllvschKzMXdgIIbOiBfik,5971
+backupr/di.py,sha256=TLVg1Tyi-eWil-ks5yjXoF8Uir7bsl_zabK5bfe1GTQ,687
+backupr/encrypter.py,sha256=tC9S4cTw11I8ws_ruIL_xNp0n-SRJbTcZMioHWS6htc,2652
+backupr/engine.py,sha256=MSTvRlYUZDSBl2wnXJ3lPUGuAoXEp3S5TFLOgmO2tBQ,6363
+backupr/storage_provider/__init__.py,sha256=q2huWscFXZDSca9pnSUdwdd64Xt86KtHRdQzWXTUuHk,1830
+backupr/storage_provider/b2_provider.py,sha256=uCHUJMA2JW-qJJg_XjT6sXXBNhYeyleCufblt3Nu2Cg,2815
+backupr/storage_provider/local_provider.py,sha256=mslNC_n8YMJWwyGvOcSRg3OszI-DfliJ4dCf37B-zhg,1028
+backupr/tar_builder.py,sha256=uPgFmI_qabx7PJKHQg-7LNhGdQPgLaRn2AjVsKFNxk4,2265
+backupr/util.py,sha256=qbs4f-1LTGCVHwtwFEFXmkB-3NH2yp4DcEJP7NVviXk,358
+nsk_backupr-0.2.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nsk_backupr-0.2.1.dist-info/METADATA,sha256=0UfuoTrs2O6L8Uw2yf8M_OcD909qde_6oj-4Xpnkjow,1334
+nsk_backupr-0.2.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+nsk_backupr-0.2.1.dist-info/entry_points.txt,sha256=z9b8tR7Upynvr6e_cBnif5IwfFdtttSxib3cgu7rqeA,44
+nsk_backupr-0.2.1.dist-info/RECORD,,

@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: nsk-backupr
+Version: 0.2.1
+Summary: A backup runner designed to tar up a root directory, optionally encrypt it, and upload to remote storage.
+Author: Erik Nelson
+Author-email: erik@nsk.io
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: b2sdk (>=1.18.0,<2.0.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: kink (>=0.6.5,<0.7.0)
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
+Requires-Dist: munch (>=2.5.0,<3.0.0)
+Requires-Dist: pydantic (>=1.10.7,<2.0.0)
+Requires-Dist: pydantic-yaml (>=0.11.2,<0.12.0)
+Requires-Dist: python-gnupg (>=0.5.0,<0.6.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Project-URL: Bug Tracker, https://github.com/eriknelson/backupr/issues
+Project-URL: Homepage, https://github.com/eriknelson/backupr
+Project-URL: Repository, https://github.com/eriknelson/backupr
+Description-Content-Type: text/markdown
+
+# backupr
+[![codecov](https://codecov.io/gh/eriknelson/backupr/branch/main/graph/badge.svg?token=9794C1TWTD)](https://codecov.io/gh/eriknelson/backupr)
+
+A backup runner designed to tar up a root directory, optionally encrypt it,
+and upload to offsite backup.
+
+Currently supported providers:
+* https://www.backblaze.com/b2/cloud-storage.html
+
