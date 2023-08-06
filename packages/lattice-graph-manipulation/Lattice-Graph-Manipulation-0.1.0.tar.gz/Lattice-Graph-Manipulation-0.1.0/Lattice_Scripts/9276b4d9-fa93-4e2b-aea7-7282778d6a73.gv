@@ -1,0 +1,5 @@
+digraph "9276b4d9-fa93-4e2b-aea7-7282778d6a73" {
+	<lattice.node.node.Node object at 0x7fb639087e80> [label=d]
+	<lattice.node.node.Node object at 0x7fb639087e20> [label=c]
+	<lattice.node.node.Node object at 0x7fb639087e20> -> <lattice.node.node.Node object at 0x7fb639087e80> [label=5]
+}

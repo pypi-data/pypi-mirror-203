@@ -1,0 +1,9 @@
+digraph {
+	<lattice.node.node.Node object at 0x7f72f056d180> [label=c]
+	<lattice.node.node.Node object at 0x7f72f056ca30> [label=b]
+	<lattice.node.node.Node object at 0x7f72f056ca30> -> <lattice.node.node.Node object at 0x7f72f056d180> [label=5]
+	<lattice.node.node.Node object at 0x7f72f1f3ebc0> [label=mynode]
+	<lattice.node.node.Node object at 0x7f72f1f3ebc0> -> <lattice.node.node.Node object at 0x7f72f1f3f3d0> [label=5]
+	<lattice.node.node.Node object at 0x7f72f1f3f3d0> [label=a]
+	<lattice.node.node.Node object at 0x7f72f1f3f3d0> -> <lattice.node.node.Node object at 0x7f72f056ca30> [label=5]
+}
