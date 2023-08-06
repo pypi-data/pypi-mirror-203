@@ -1,0 +1,4 @@
+scvi-tools
+biomart
+requests
+scipy
