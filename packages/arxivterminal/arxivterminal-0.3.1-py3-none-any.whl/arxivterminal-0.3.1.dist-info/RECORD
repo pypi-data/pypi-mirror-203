@@ -1,0 +1,14 @@
+arxivterminal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arxivterminal/cli.py,sha256=SxPPZqoHE5q835JG_I_VUyIa1uqd-E3O7nTkXMCNALY,3255
+arxivterminal/constants.py,sha256=sMxpYdECD7JDDgSQlmBLH60dYEkJJaLqFroind7hEOs,349
+arxivterminal/db.py,sha256=57xa3jGbrCQUAMb-tHvGJ3BoW-zW5Rl8EPn2iM84SzI,10279
+arxivterminal/download.py,sha256=dREtEOA3jIFejqPagdCrdlgCfqGzackPHBH2uktm5eM,1049
+arxivterminal/fetch.py,sha256=-GaLebHgemX__sJoAcEVQeAMeYte3aWhHn3NQ5c9dzc,2197
+arxivterminal/ml.py,sha256=686E0Eg58F4652Hrl0U8LgW6fNaXo38dYb-2fgEDAG8,5222
+arxivterminal/models.py,sha256=IjTZH12LqRuaFiwRz1sJnoQx08fGlNG1Rqvj1qAht9Y,339
+arxivterminal/output.py,sha256=bkNGhVlRSuCqyB0Kq7NXlCv68Andx10xZbmBjHDF5MY,4656
+arxivterminal-0.3.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+arxivterminal-0.3.1.dist-info/METADATA,sha256=UZJLJWTE5Srn5VflWwO9U0Cpv2R0NDBVbgC3htri9oQ,4552
+arxivterminal-0.3.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+arxivterminal-0.3.1.dist-info/entry_points.txt,sha256=4-z88IivQK0U93CARXwzSznVLTJGxm7f_cY9hS8tpY0,47
+arxivterminal-0.3.1.dist-info/RECORD,,
