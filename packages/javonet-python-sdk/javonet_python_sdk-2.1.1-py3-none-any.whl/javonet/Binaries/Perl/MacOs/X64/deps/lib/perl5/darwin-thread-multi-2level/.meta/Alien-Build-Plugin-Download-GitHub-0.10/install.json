@@ -1,0 +1,1 @@
+{"version":"0.10","pathname":"P/PL/PLICEASE/Alien-Build-Plugin-Download-GitHub-0.10.tar.gz","dist":"Alien-Build-Plugin-Download-GitHub-0.10","name":"Alien::Build::Plugin::Download::GitHub","target":"Alien::Build::Plugin::Download::GitHub","provides":{"Alien::Build::Plugin::Download::GitHub":{"version":"0.10","file":"lib/Alien/Build/Plugin/Download/GitHub.pm"}}}
