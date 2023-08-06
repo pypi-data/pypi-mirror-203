@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: wadi
+Version: 0.1.0
+Summary: Generic importer for water quality data of the (Dutch) water laboratory
+Home-page: https://github.com/KWR-Water/wadi
+Author: KWR Water Research Institute
+Author-email: martin.korevaar@kwrwater.nl, martin.van.der.schans@kwrwater.nl
+License: MIT
+Project-URL: Source, https://github.com/KWR-Water/wadi
+Project-URL: Documentation, http://wadi.readthedocs.io/en/latest/
+Project-URL: Tracker, https://github.com/KWR-Water/wadi/issues
+Project-URL: Help, https://github.com/KWR-Water/wadi/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Hydrology
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+# wadi
+Generic importer for water quality data of the (Dutch) water laboratory
