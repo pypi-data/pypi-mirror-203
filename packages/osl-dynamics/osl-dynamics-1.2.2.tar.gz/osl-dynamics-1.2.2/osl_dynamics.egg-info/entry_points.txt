@@ -1,0 +1,2 @@
+[console_scripts]
+osld-pipeline = osl_dynamics.config_api.cli:pipeline
