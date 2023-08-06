@@ -1,0 +1,2 @@
+[console_scripts]
+easyocr = nocv2easyocr.cli:main

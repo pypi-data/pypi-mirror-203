@@ -1,0 +1,9 @@
+include requirements.txt
+include LICENSE.txt
+include README.md
+
+include nocv2easyocr/model/*
+include nocv2easyocr/character/*
+include nocv2easyocr/dict/*
+include nocv2easyocr/scripts/compile_dbnet_dcn.py
+recursive-include nocv2easyocr/DBNet *
