@@ -1,0 +1,8 @@
+lxml
+DataModelDict
+IPython
+numpy
+pandas
+cdcs>=0.2.1
+pymongo
+tqdm
