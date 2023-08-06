@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: st-text-annotator
+Version: 0.1.7
+Summary: Component for annotating text for NLP resolution
+License: MIT
+Keywords: streamlit,text,annotation,nlp
+Author: Robin Marquet
+Author-email: robin.marquet@epitech.eu
+Requires-Python: >=3.8,<3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: streamlit (>=1.21.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+<h1> streamlit-annotation </h1>
+
+- [Install](#install)
+- [Quick Use](#quick-use)
+- [Development](#development)
+  - [Install](#install-1)
+  - [Run](#run)
+- [License](#license)
+- [Author](#author)
+- [Contributors](#contributors)
+
+
+# Install
+
+```
+pip install streamlit-annotation
+```
+
+# Quick Use
+
+Create an example.py file
+
+```python
+from st_text_annotator import StTextAnnotator
+
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et hendrerit orci. Praesent auctor malesuada lobortis. Suspendisse ac elit bibendum, congue tellus vel, ornare ipsum. Mauris at tellus in turpis aliquet cursus."
+
+StTextAnnotator(text)
+```
+
+Run:
+
+```
+streamlit run example.py
+```
+
+# Development
+
+## Install
+
+```
+git clone git@github.com:rmarquet21/streamlit-text-annotator.git
+cd streamlit-text-annotator
+pip install -e .
+```
+
+## Run
+
+```
+streamlit run example.py
+```
+
+# License
+
+MIT
+
+# Author
+
+Robin Marquet
+
+# Contributors
+
+- [Robin Marquet](robin.marquet3@gmail.com)
+
+
