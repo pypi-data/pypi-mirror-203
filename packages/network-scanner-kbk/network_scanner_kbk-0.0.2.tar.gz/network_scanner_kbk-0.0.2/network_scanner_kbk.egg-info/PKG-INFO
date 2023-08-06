@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: network-scanner-kbk
+Version: 0.0.2
+Summary: Project to scan and gather connectivity information on small networks
+Home-page: https://github.com/kbriankulig/network-scanner
+Author: Brian Kulig
+Author-email: kbriankuig@gmail.com
+License-File: LICENSE
