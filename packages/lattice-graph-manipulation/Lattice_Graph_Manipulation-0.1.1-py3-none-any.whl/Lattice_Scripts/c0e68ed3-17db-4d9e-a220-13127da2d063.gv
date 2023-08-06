@@ -1,0 +1,9 @@
+digraph "c0e68ed3-17db-4d9e-a220-13127da2d063" {
+	<lattice.node.node.Node object at 0x7fbdc0b2bb20> [label=a]
+	<lattice.node.node.Node object at 0x7fbdc0b2bb20> -> <lattice.node.node.Node object at 0x7fbdc0982770> [label=5]
+	<lattice.node.node.Node object at 0x7fbdc0b2b5b0> [label=mynode]
+	<lattice.node.node.Node object at 0x7fbdc0b2b5b0> -> <lattice.node.node.Node object at 0x7fbdc0b2bb20> [label=5]
+	<lattice.node.node.Node object at 0x7fbdc09827d0> [label=c]
+	<lattice.node.node.Node object at 0x7fbdc0982770> [label=b]
+	<lattice.node.node.Node object at 0x7fbdc0982770> -> <lattice.node.node.Node object at 0x7fbdc09827d0> [label=5]
+}
