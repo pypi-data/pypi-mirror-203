@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: deepi-yolo
+Version: 0.0.1
+Summary: deepi-yolo
+Home-page: https://github.com/jskim1102/deepi-yolo
+Download-URL: https://github.com/jskim1102/deepi-yolo/archive/0.0.tar.gz
+Author: jinsoo
+Author-email: deepi.contact.us@gmail.com
+Keywords: deepi-yolo
+Requires-Python: >=3.8
+
