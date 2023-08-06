@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: axisCalculator
+Version: 0.0.1
+Summary: Robotic kinematics calculator
+Home-page: 
+Author: Barış Çeliker
+Author-email: td21brs14@hotmail.com
+License: MIT
+Keywords: kinematics
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+Requires-Dist: matplotlib (>=3.7.1)
+Requires-Dist: numpy (>=1.24.2)
+
+Robot-Kinematics
+This library contains functions that will help you about robotics kinematics
+
+Jacobian Matrix
+The Jacobian matrix is a matrix that composes the first-order partial derivatives of a multivariable function. The joints of the robot move with certain velocities then we might want to know with what velocity the endeffector would move. Here is where Jacobian comes to our help.
+
+Robotic ManipÃ¼latÃ¶r with 2 axis
+This function help to calculate Velocity Kinematics of 2 axis robots.
+
+
+Homogenous Matrix
+A system of linear equations having matrix form AX = O, where O represents a zero column matrix, is called a homogeneous system.In this project, rotation of homogeneous matrices was performed.
+
+
+
+Change Log
+==========
+
+0.0.1 (19/04/2023)
+-------------------
+- First Release
