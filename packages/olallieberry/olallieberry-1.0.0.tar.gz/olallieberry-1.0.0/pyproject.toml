@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "olallieberry"
+version = "1.0.0"
+description = "olallieberry — Python Lexer"
+authors = ["mmlvgx <mmlvgx@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{include = "olallieberry", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
