@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ovos-config
+Version: 0.0.8
+Summary: mycroft-core configuration module
+Home-page: https://github.com/OpenVoiceOS/ovos-config
+License: Apache-2.0
+Platform: UNKNOWN
+Requires-Dist: PyYAML (~=5.4)
+Requires-Dist: combo-lock
+Requires-Dist: ovos-utils (<0.1.0)
+Requires-Dist: python-dateutil (~=2.6)
+Requires-Dist: rich-click
+Requires-Dist: watchdog
+Provides-Extra: extras
+Requires-Dist: ovos-backend-client (<0.1.0) ; extra == 'extras'
+
+UNKNOWN
+
