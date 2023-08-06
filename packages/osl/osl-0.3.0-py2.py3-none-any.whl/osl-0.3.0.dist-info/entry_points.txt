@@ -1,0 +1,4 @@
+[console_scripts]
+osl_maxfilter = osl.maxfilter.maxfilter:main
+osl_preproc = osl.preprocessing.batch:main
+
