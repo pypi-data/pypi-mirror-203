@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Lezargus
+Version: 0.0.1.dev3
+Summary: The accompanying data software package to the IRTF SPECTRE Spectrograph.
+Project-URL: Documentation, https://github.com/psmd-iberutaru/Lezargus#readme
+Project-URL: Issues, https://github.com/psmd-iberutaru/Lezargus/issues
+Project-URL: Source, https://github.com/psmd-iberutaru/Lezargus/
+Author-email: Sparrow <psmd.iberutaru@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# Lezargus
+The accompanying data software package to the IRTF SPECTRE Spectrograph.
