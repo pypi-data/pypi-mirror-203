@@ -1,0 +1,17 @@
+myelectricaldatapy/__init__.py,sha256=WoD32pxc8UOq5sTv8tOFyiTBj6bFw_171ptu3SiKmbY,384
+myelectricaldatapy/analytics.py,sha256=ETZwdwE9tyfx9OHYLTfOQ8QYlXCEA5BMqOn9LKQMsOM,5726
+myelectricaldatapy/auth.py,sha256=XMzJeRIlA7UKnd-Pn_IutDphT404oCOujyDS_3qt9zk,2691
+myelectricaldatapy/const.py,sha256=SW_-LuFNI09IcHscVXJUql8xm4SSvIi0bVGAwLIVii4,491
+myelectricaldatapy/exceptions.py,sha256=FxD0PIvGR4Qe4MkQWbo8rcJW6Ajs6r8oxF43IJGz70E,316
+myelectricaldatapy/myelectricaldata.py,sha256=q-hnh1Esg00U5A-c6N7-ViPdDlH0QK_NG4q-ELlH2Bo,6968
+myelectricaldatapy/mypdl.py,sha256=2IdfQWWHYS-4U6eFJGVlNLhNB1eEaXjXEfJ1KODmITU,10714
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=uDrOLAURLHQs_kTvTkW6BoWREmGSJH7PgYBqsBdf84Y,1288
+tests/consts.py,sha256=6IOZE1SJK8myCKHLyZZr7_5nyQbC9LijFRRVxTxt3jo,51244
+tests/test_analytics.py,sha256=KzjDTQMbMQ8w3uiS1-OQqxi42yxCJw_pYd0FEdoIVdo,9984
+tests/test_load_data.py,sha256=16N5udxTgDKN7NTOHyPuUo0chD7iazU1b4DemCmhmNg,4289
+myelectricaldatapy-1.9.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+myelectricaldatapy-1.9.7.dist-info/METADATA,sha256=OBIisCkPC3h9b6mRLSAF9Df_VQHhrcmWOXUkKOyG-Do,3993
+myelectricaldatapy-1.9.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+myelectricaldatapy-1.9.7.dist-info/top_level.txt,sha256=YBa1xg9F93GRQX3DTvYz8e-zHoWNlK5I4uEa4omQCZc,25
+myelectricaldatapy-1.9.7.dist-info/RECORD,,
