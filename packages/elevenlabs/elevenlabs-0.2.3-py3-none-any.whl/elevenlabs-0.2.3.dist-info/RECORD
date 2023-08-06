@@ -1,0 +1,12 @@
+elevenlabs/__init__.py,sha256=gXVhqgRuNUZuP4WydOz3So8i2sPGDduNYS6mjg8xzvc,3135
+elevenlabs/utils.py,sha256=ptrDq4l8bu6U3e_HiDnzHxI3oUW1omcAUvaouHk-VYU,1858
+elevenlabs/api/__init__.py,sha256=KQd6eYTvR_IBeiocyzZD0o6XGK-O2t5d_3adlwb6qpg,168
+elevenlabs/api/base.py,sha256=FhpBgUhdSE5he25kzoXTr1K1nI8AOpf5aHlwacSkmgI,1440
+elevenlabs/api/history.py,sha256=Y7vGEkv5jSWQLIUdAftch0E3teOtCZO--pIyIL89qqo,1338
+elevenlabs/api/tts.py,sha256=14t7R13vbTAddNeDkdnGe5W3A8yF2hWQ02NGsrvwSMU,927
+elevenlabs/api/user.py,sha256=nCPwIud-cbJlZdEOo74opofWEoXkrY9KSZXdm00nm4Y,498
+elevenlabs/api/voice.py,sha256=-RKONBNBcWoByIhnaaBxBZ-Txq__quJCQIL6buPFHwY,2803
+elevenlabs-0.2.3.dist-info/METADATA,sha256=aUufYG0tLhHonXy1TPLbbSOT9EcVZeIwj8vxyHte6nM,593
+elevenlabs-0.2.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+elevenlabs-0.2.3.dist-info/top_level.txt,sha256=64gCsTLCeQiIT2O_W8ibqwk12XmvKEwSJdB1Gfj1Jnc,11
+elevenlabs-0.2.3.dist-info/RECORD,,
