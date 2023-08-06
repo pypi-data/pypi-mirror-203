@@ -1,0 +1,12 @@
+dbxconfig/__init__.py,sha256=usrkGWpfmjPtp8DqZGzdcMYxFL4HgIxaB4onMNocBPw,428
+dbxconfig/_config.py,sha256=eZRh2luHRLwUq7Uz3-7rMuOfdT2W397u6q7V9qDTRn0,3482
+dbxconfig/_deltalake.py,sha256=Jb5NnPkAvHaVG3e95WnnwL06Q8xZc67uSOxcXTnM_6M,2840
+dbxconfig/_source.py,sha256=7XxyVoC1LpBu-eiKblquG68oo-0UYcsHFrIMxXuSac8,4821
+dbxconfig/_stage_type.py,sha256=-C3QXZWAIP6U_qhcK-XmBkQmUMVG4kEAkciXpoIeAAE,110
+dbxconfig/_table_index.py,sha256=96HLYrpnEMIKvumGKYiqjxPhlFck8vsElyHLJmp5bF8,4187
+dbxconfig/_timeslice.py,sha256=qEUjF8m6C86lh2akg930O0Rsfv8j2PLLTVD4Dukje3Y,5706
+dbxconfig/_utils.py,sha256=1QzrFLTZahz-P8s9D83nI-hoBjJ7HTFB7BdG14FcZaM,1836
+dbxconfig-1.0.4.dist-info/METADATA,sha256=aLcEaYPOdVWwEH2DoMRVeTFUKQ02MNGZZfrQaV6kZVU,3599
+dbxconfig-1.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dbxconfig-1.0.4.dist-info/top_level.txt,sha256=ru3s7iVuV0JC05lYSehAmDaLDOokv1CxDIni_NtUcYs,10
+dbxconfig-1.0.4.dist-info/RECORD,,
