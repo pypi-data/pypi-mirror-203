@@ -1,0 +1,9 @@
+README.md
+setup.py
+tinote/__init__.py
+tinote/main.py
+tinote.egg-info/PKG-INFO
+tinote.egg-info/SOURCES.txt
+tinote.egg-info/dependency_links.txt
+tinote.egg-info/entry_points.txt
+tinote.egg-info/top_level.txt
