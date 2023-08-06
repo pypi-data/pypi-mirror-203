@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+xpip/__init__.py
+xpip/xpip_command.py
+xpip/xpip_config.py
+xpip/xpip_mirror.py
+xpip/xpip_util.py
+xpip/config/__init__.py
+xpip/config/mirrors.toml
+xpip_python.egg-info/PKG-INFO
+xpip_python.egg-info/SOURCES.txt
+xpip_python.egg-info/dependency_links.txt
+xpip_python.egg-info/entry_points.txt
+xpip_python.egg-info/requires.txt
+xpip_python.egg-info/top_level.txt
+xpip_python.egg-info/zip-safe
