@@ -1,0 +1,8 @@
+chdb-0.6.0.dist-info/WHEEL,sha256=E0CkEo6W7NC93sVo8jj5Y2C0iOJBJ79Iyun5srY2VI0,150
+chdb-0.6.0.dist-info/LICENSE.txt,sha256=7TvMonpTOtII1KxhyrlaF5p6xUeeGQfie7Egiwe5LhY,582
+chdb-0.6.0.dist-info/RECORD,,
+chdb-0.6.0.dist-info/METADATA,sha256=21WXjCoE3z9k6hy7qmncLV-QeqH7RYELUsNM7NlM7NA,4037
+chdb-0.6.0.dist-info/top_level.txt,sha256=se0Jj0A2-ijfMW51hIjiuNyDJPqy5xJU1G8a_IEdllI,11
+chdb/__init__.py,sha256=P00H1Kzjm8kgQWXLsJDC1bdydrdbb3HcGmipoLSsVGE,1887
+chdb/_chdb.cpython-37m-x86_64-linux-gnu.so,sha256=ONBO_9_ESmFiVEch_R-kE-NQRRpOkXZ72v_gEKUwQno,526394600
+chdb/__main__.py,sha256=LUw_JzoQX4lH5pS1wnJTpqyb1v31C-ApeSqW7YskxQw,1085
