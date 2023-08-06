@@ -1,0 +1,8 @@
+README.md
+setup.py
+vedirect.py
+vedirect.egg-info/PKG-INFO
+vedirect.egg-info/SOURCES.txt
+vedirect.egg-info/dependency_links.txt
+vedirect.egg-info/requires.txt
+vedirect.egg-info/top_level.txt
