@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/report-env/__init__.py
+src/report-env/__main__.py
+src/report-env/main.py
+src/report_env.egg-info/PKG-INFO
+src/report_env.egg-info/SOURCES.txt
+src/report_env.egg-info/dependency_links.txt
+src/report_env.egg-info/entry_points.txt
+src/report_env.egg-info/top_level.txt
