@@ -1,0 +1,16 @@
+karrio/mappers/laposte/__init__.py,sha256=vsWcoXxN6v4jR6SR81XYDZZhTOLJtmZ9pDSFciTH40k,417
+karrio/mappers/laposte/mapper.py,sha256=TFfFyez_qeX94yxlFMydzNp2B7NvynTHY_8o0irGiMk,735
+karrio/mappers/laposte/proxy.py,sha256=NQyWL0rc-ky80o1NF2eNOpLTq9q6k6RQHosSjDrwgsQ,745
+karrio/mappers/laposte/settings.py,sha256=79yhTg2rG_dw6j8DrTFMbjXAMpDp7BpGctHtLSXMDjY,489
+karrio/providers/laposte/__init__.py,sha256=UmsiUvmZL8zOhAcoZMippZ6okpCPa8BcnWCfNEkSYWw,154
+karrio/providers/laposte/error.py,sha256=3YnFR8J5-A0nrLReaduwyfLelemK0S2TTE7of4IRnhg,937
+karrio/providers/laposte/tracking.py,sha256=dZhc7IwIESloScBsjE3C2wCNDqosFuCL6bdq59d-Lus,2741
+karrio/providers/laposte/units.py,sha256=RAjV60wVB1CjGLcqBdMUo-aRPRmEJPEQGHiCE5e0eOk,1326
+karrio/providers/laposte/utils.py,sha256=WuPZ-V3_WhsMuPjBzbponHNfHD9BmlRBzVOfIf5sEJA,416
+laposte_lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+laposte_lib/error.py,sha256=XyJLO5KdGzehGc8W4vPzefayu-fvpi7l29TW0sDB2Zk,322
+laposte_lib/tracking_response.py,sha256=U3W2TbdT5ld_ZlZIMXRY62ScCEZ2nsFdcQPTFFNudl0,1525
+karrio.laposte-2023.4.dist-info/METADATA,sha256=dSJ7-_X9Las5z5C0Xy8TZY2Myuv0LfuQUmsgFidgvMQ,957
+karrio.laposte-2023.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+karrio.laposte-2023.4.dist-info/top_level.txt,sha256=x3q44PXKOO4hS4wBz0i69Xow4Lz68P1YyVyN2dsF224,27
+karrio.laposte-2023.4.dist-info/RECORD,,
