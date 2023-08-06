@@ -1,0 +1,11 @@
+langtool/__init__.py,sha256=cgpnfhFJnZr5VGZPoD7YZJ6VJmJFqTpHhAAgHFNLfWI,219
+langtool/core.py,sha256=J1US0YD0nCaEq9G5jLNxRNIKZfheOZcIZfTafGkwa60,1582
+langtool/prompts.py,sha256=SyUyh2Tq_Hhtz8EroZ_aCbqDZmY5quVreVhGm27K6yA,644
+langtool/utils.py,sha256=1pAJnTEUiz02QZpRMri897ylYryACYR_4ejlVyKugGA,3190
+langtool/llms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+langtool/llms/base.py,sha256=SGt1VhmeQu5j4OqzjrVtIdhQXzqaSX7Tg6MSvnxxaR4,144
+langtool/llms/openai.py,sha256=Dq-QBzd2NBZaCaW7sZD3LUyPMDCkCp9Jo_ATtRjfWyc,1193
+langtool-0.1.0.dist-info/METADATA,sha256=4-XEVoHHULlMPHxzL29BDeKvi0ZjcDDtpwUMrSGQLnI,53
+langtool-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+langtool-0.1.0.dist-info/top_level.txt,sha256=2MCS_q7iMokJiGZrs0OZth8Vbu6C4mH9Yn0p0On7OqI,9
+langtool-0.1.0.dist-info/RECORD,,
