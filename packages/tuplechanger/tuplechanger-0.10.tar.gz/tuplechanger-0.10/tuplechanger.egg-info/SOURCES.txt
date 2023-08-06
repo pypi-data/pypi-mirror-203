@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tuplechanger/LICENSE
+tuplechanger/README.md
+tuplechanger/__init__.py
+tuplechanger/requirements.txt
+tuplechanger/thirdparty.json
+tuplechanger.egg-info/PKG-INFO
+tuplechanger.egg-info/SOURCES.txt
+tuplechanger.egg-info/dependency_links.txt
+tuplechanger.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+include tuplechanger/requirements.txt
+include tuplechanger/thirdparty.json
+include tuplechanger/README.md
+include tuplechanger/LICENSE
