@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nimocr
+Version: 0.1
+Summary: OCR Annotator Tool
+Home-page: https://github.com/what-in-the-nim/ocr-annotator
+Author: Chatcharin Sangbutsarakum
+Author-email: chatcharinsang@gmail.com
+Requires-Dist: numpy (==1.24.2)
+Requires-Dist: opencv-python (==4.7.0.72)
+Requires-Dist: pandas (==2.0.0)
+Requires-Dist: Pillow (==9.5.0)
+Requires-Dist: PyQt6 (==6.5.0)
+Requires-Dist: setuptools (==67.6.1)
+
