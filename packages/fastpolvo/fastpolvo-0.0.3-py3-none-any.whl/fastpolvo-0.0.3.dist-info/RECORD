@@ -1,0 +1,17 @@
+fastpolvo/__init__.py,sha256=byfkv5qfxxVCuM0UWvaYq-Ww7CvT8-AelrIjBLRrkw4,90
+fastpolvo/_modidx.py,sha256=ZdsjexRhJeRdYaYys27AZxCGYwM9x3vB37_JrkmheLs,7138
+fastpolvo/core.py,sha256=85XWYYyh5L19EksgHxdZXvVATbe77A3P0POwHW09D3o,1850
+fastpolvo/classification/__init__.py,sha256=jzZ_8Z44fGcIEIOPyyEpONCqqEb1p6cMNOYkKoUDXrY,89
+fastpolvo/classification/explorer.py,sha256=Gnpe_Iai--2qXsp4fMq4vmmtcvEXkOeZyZShsfP3CK8,774
+fastpolvo/classification/baseline/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastpolvo/classification/baseline/baseline.py,sha256=M4-3zwaxuNS8XEAVQm0MOyBLxWYZXly1nCSDdmpYTjM,1842
+fastpolvo/data/__init__.py,sha256=UjvFG5fMR5Grr0VRHqnk_iJ1QGfaMaCILCPvA0d_rvs,25
+fastpolvo/data/transforms.py,sha256=604GTIaoCKcpQbiX7c0reSGxSvm-OTBsaAbggmAT2Ts,1244
+fastpolvo/segmentation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastpolvo/segmentation/core.py,sha256=G_p7bxlbMZ8CGpnNYeShcHF12OrFyTFHZrEd_AcZ5VE,2221
+fastpolvo-0.0.3.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+fastpolvo-0.0.3.dist-info/METADATA,sha256=qQyZuLfkFbcXRtyAmKOP9vlEauYCPClyPy8OXsfsmzM,1055
+fastpolvo-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fastpolvo-0.0.3.dist-info/entry_points.txt,sha256=e8BExY9U9mSHn36x2Ksy9Iy-EVTWMSbhoOAH5SBXLt0,40
+fastpolvo-0.0.3.dist-info/top_level.txt,sha256=KpYG6OMeeOcAPNA9yBgfn9iLsMOzj4kP1uKsE_EDqa4,10
+fastpolvo-0.0.3.dist-info/RECORD,,
