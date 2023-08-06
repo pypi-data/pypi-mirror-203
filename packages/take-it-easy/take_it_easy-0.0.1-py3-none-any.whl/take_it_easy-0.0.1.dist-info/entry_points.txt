@@ -1,0 +1,2 @@
+[nbdev]
+take_it_easy = take_it_easy._modidx:d
