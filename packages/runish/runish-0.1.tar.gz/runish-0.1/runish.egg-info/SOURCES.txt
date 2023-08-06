@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+runish/runish.py
+runish.egg-info/PKG-INFO
+runish.egg-info/SOURCES.txt
+runish.egg-info/dependency_links.txt
+runish.egg-info/entry_points.txt
+runish.egg-info/top_level.txt
