@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: tpl.py
+Version: 1.4.2
+License-File: LICENSE
+Requires-Dist: jinja2
+Requires-Dist: cryptography
+

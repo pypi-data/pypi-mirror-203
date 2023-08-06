@@ -1,0 +1,3 @@
+[console_scripts]
+template.py = template_py:main
+tpl.py = template_py:main
