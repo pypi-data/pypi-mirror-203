@@ -1,0 +1,15 @@
+README.md
+setup.py
+src/ByeByeLogger.egg-info/PKG-INFO
+src/ByeByeLogger.egg-info/SOURCES.txt
+src/ByeByeLogger.egg-info/dependency_links.txt
+src/ByeByeLogger.egg-info/requires.txt
+src/ByeByeLogger.egg-info/top_level.txt
+src/byebyelogger/__init__.py
+src/byebyelogger/logger.py
+src/byebyelogger/core/__init__.py
+src/byebyelogger/core/configuration.py
+src/byebyelogger/core/stack_info.py
+src/byebyelogger/style/__init__.py
+src/byebyelogger/style/color.py
+src/byebyelogger/style/format.py
