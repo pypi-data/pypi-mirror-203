@@ -1,0 +1,2 @@
+[console_scripts]
+i9everywhere = i9_everywhere_client.cli:cli

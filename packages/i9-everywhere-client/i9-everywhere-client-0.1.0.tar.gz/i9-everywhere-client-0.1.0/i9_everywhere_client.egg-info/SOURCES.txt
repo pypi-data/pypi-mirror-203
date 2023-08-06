@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+i9_everywhere_client/__init__.py
+i9_everywhere_client/cli.py
+i9_everywhere_client/i9_everywhere.py
+i9_everywhere_client.egg-info/PKG-INFO
+i9_everywhere_client.egg-info/SOURCES.txt
+i9_everywhere_client.egg-info/dependency_links.txt
+i9_everywhere_client.egg-info/entry_points.txt
+i9_everywhere_client.egg-info/requires.txt
+i9_everywhere_client.egg-info/top_level.txt
