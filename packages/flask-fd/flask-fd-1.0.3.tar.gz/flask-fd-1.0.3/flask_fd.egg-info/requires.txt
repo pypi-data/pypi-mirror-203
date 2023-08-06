@@ -1,0 +1,3 @@
+flamewok>=1.0.8
+flask-migrate
+flask-sqlalchemy
