@@ -1,0 +1,11 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_csv_handling.py,sha256=Obmc2LGaA8qoK8-rr5No4FK4lVa-S2HBAQkb0vAD2iQ,30
+tests/test_main.py,sha256=y2ExtVBK1H-X4pRMNvFhzJRIhv-AdIUuC4Pg85RvQts,162
+tests/test_postgre.py,sha256=3RKMU7PxkjTTrsVbLZIEeQLnBwKpZwo1T0SzT-uN1Xo,2472
+tests/test_transact.py,sha256=DO7-mNeN6dJ9EIzdwTdnFfzMo0KIJJk6PpS0VfpX19w,1984
+tests/test_value_handling.py,sha256=9K0fJHDi58CczArl5YFnkTCM1qVB1WimiyKWbIcAYQY,1632
+sqlstrings-0.0.2.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+sqlstrings-0.0.2.dist-info/METADATA,sha256=gO7PFNSYPW83OqYhUoBihsZpMBLw5XyggMa1gXFd2A4,856
+sqlstrings-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sqlstrings-0.0.2.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+sqlstrings-0.0.2.dist-info/RECORD,,
