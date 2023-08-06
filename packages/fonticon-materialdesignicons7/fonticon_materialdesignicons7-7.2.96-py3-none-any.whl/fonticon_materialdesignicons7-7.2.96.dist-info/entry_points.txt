@@ -1,0 +1,2 @@
+[superqt.fonticon]
+mdi7 = fonticon_mdi7:MDI7
