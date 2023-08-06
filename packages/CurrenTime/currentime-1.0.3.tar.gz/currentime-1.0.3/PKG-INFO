@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: CurrenTime
+Version: 1.0.3
+Summary: A small and simple package to get current Date and Time
+Project-URL: GitHub, https://github.com/NotScottt/CurrenTime
+Author-email: Scott Zachariae <scott.zachariae@outlook.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+## About
+
+Very simple Python script to display the current Time. <br />
+Simply install it via pip.
+
+
+## Pip
+```python
+  pip install CurrenTime
+ ```
+  
+
+or <br />
+[Link to my project on PyIp](https://pypi.org/project/CurrenTime/)
+
+## How to import
+
+Just type
+```python
+from CurrenTime import CurrenTime
+```
+after you imported the lib
+
+## Commands
+
+```python
+.getTime()
+```
+Returns the current time always in right format (e.g. 09:32)
+```python
+.getFullDate()
+```
+Returns the current date always in right format (e.g. 17.04.2023)
+
+```python
+.printTime()
+```
+Prints the current time always in right format
+
+```python
+.printFullDate()
+```
+Prints the current date always in right format
+
+
+## Note
+this is a very simple library, i may upgrade it later 
+(e.g. correct timeformat for other Countries).
