@@ -1,0 +1,15 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+outbreak_tools/__init__.py
+outbreak_tools/outbreak_tools.py
+python_outbreak_info.egg-info/PKG-INFO
+python_outbreak_info.egg-info/SOURCES.txt
+python_outbreak_info.egg-info/dependency_links.txt
+python_outbreak_info.egg-info/requires.txt
+python_outbreak_info.egg-info/top_level.txt
+tests/__init__.py
+tests/replace_test_data.py
+tests/test_outbreak_data.py
+tests/test_outbreak_tools.py
