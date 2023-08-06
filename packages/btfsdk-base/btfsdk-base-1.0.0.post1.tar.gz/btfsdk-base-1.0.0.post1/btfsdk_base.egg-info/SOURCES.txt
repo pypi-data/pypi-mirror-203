@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+btfsdk/__init__.py
+btfsdk_base.egg-info/PKG-INFO
+btfsdk_base.egg-info/SOURCES.txt
+btfsdk_base.egg-info/dependency_links.txt
+btfsdk_base.egg-info/top_level.txt

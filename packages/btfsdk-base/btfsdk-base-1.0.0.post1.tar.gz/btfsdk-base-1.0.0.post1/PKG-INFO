@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: btfsdk-base
+Version: 1.0.0.post1
+Summary: BTFSDK base module needed by every other module.
+Author: Henry Knopsmeier
+Author-email: hkn@boreus.de
+License: Boreus GmbH. All rights reserved.
+Requires-Python: >=3.8
