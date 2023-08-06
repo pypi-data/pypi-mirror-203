@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: arrendatools_plantillas
+Version: 2.0.0
+Summary: Módulo de Python que aplica plantillas usando jinja 2. Además incluye algunos filtros adicionales como el convertir un número a palabras.
+Home-page: https://github.com/hokus15/ArrendaToolsPlantillas
+Author: hokus15
+Author-email: hokus@hotmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
