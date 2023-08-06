@@ -1,0 +1,17 @@
+geopandas
+pyarrow
+python-igraph
+rasterio
+shapely
+
+[dev]
+affine
+black
+nbstripout
+numpy
+pytest-cov
+pytest
+
+[docs]
+sphinx
+m2r2
