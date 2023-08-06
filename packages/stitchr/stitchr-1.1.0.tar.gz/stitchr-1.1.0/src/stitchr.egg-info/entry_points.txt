@@ -1,0 +1,5 @@
+[console_scripts]
+gui_stitchr = Scripts.gui_stitchr:main
+stitchr = Scripts.stitchr:main
+stitchrdl = Scripts.stitchrdl:main
+thimble = Scripts.thimble:main
