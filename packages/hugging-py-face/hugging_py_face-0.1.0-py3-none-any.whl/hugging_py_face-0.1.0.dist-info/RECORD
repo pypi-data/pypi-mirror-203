@@ -1,0 +1,11 @@
+hugging_py_face/__about__.py,sha256=jaKwum9KegAu-KlHHXUhpL3QyQB4lr2ib8Nm8DWCoTU,422
+hugging_py_face/__init__.py,sha256=Xy3YLLRkS8gNXRTLLhxw4nRmoYQU8vhqjeG5dmIXgio,112
+hugging_py_face/audio_processing.py,sha256=6zAsxAO4K_Cr3_ladIKkDZSFKuVACJFdrvmZwDgQbOg,3877
+hugging_py_face/computer_vision.py,sha256=jUEOFnxbyxGG6uBSb6mxb9b8TBkHaw9bFN5V9fb-h30,2844
+hugging_py_face/config_parser.py,sha256=WgS9vAIgu9z6t5V7eMfVJCIp6Wz5bOld1MRHzxKZsF8,320
+hugging_py_face/multimedia_processing.py,sha256=J5nOFoK9SU50C34sOizcmmPdZsp56mTlNwCZ_ZaCIac,1479
+hugging_py_face/nlp.py,sha256=jqOuOZLsyPkjCuNa_GrnXAq3H6kZ_GnsYMwcLOW3iqI,17241
+hugging_py_face-0.1.0.dist-info/METADATA,sha256=04e_-dw3dyS50OjkveJbNpC9mjKJES6vo3C5mgshBy4,5191
+hugging_py_face-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hugging_py_face-0.1.0.dist-info/top_level.txt,sha256=sYsvv0H857hVBFvJPNUVqd5Lh67H7DAeG1oXFBdG_B8,16
+hugging_py_face-0.1.0.dist-info/RECORD,,
