@@ -1,0 +1,13 @@
+README.md
+setup.py
+openneuro_firstlevel/__init__.py
+openneuro_firstlevel/dataset_designs.py
+openneuro_firstlevel/diagnostics.py
+openneuro_firstlevel/first_level.py
+openneuro_firstlevel/second_level.py
+openneuro_firstlevel/utils.py
+openneurofirstlevel.egg-info/PKG-INFO
+openneurofirstlevel.egg-info/SOURCES.txt
+openneurofirstlevel.egg-info/dependency_links.txt
+openneurofirstlevel.egg-info/requires.txt
+openneurofirstlevel.egg-info/top_level.txt
