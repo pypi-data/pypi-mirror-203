@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: aioxnat
+Version: 0.0.5
+Summary: Asyncronous XNAT RESTful Interface
+Author-email: "Keenan W. Wilkinson" <keenanwilkinson@outlook.com>
+License: MIT
+Keywords: XNAT,xnat,async,REST
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10.0
+License-File: LICENSE.txt
+Requires-Dist: httpx (==0.23.3)
+
