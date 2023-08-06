@@ -1,0 +1,13 @@
+molbeam_fp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+molbeam_fp/app.py,sha256=GfgQ1JzreOre-BcVFH05UzTE9rsRm25gG8AtwYLqmoM,3581
+molbeam_fp/large_csv_to_parquet_chunks.py,sha256=h0Pn4JF6apviGKg-bke9h27XlDSxvpAXCpoVOVInhrE,3037
+molbeam_fp/molbeam.py,sha256=BYXPsZjze1H-B_r0RSE9rL1I_ix-Wdaetn5wM8yJNfE,376
+molbeam_fp/mole.py,sha256=eI0eVg5JgF6Dna-Htkb8l0mCoCUrT3fJ72NzAY3Vfus,611
+molbeam_fp/process_smiles_to_fp_pq.py,sha256=Wjc3MTcmD3XBZ-I9SuIIKeDtWzmZNtHmih8atFxtzZo,4217
+molbeam_fp/similarity.py,sha256=tzdrix0yn4GZJ9088nXFkiKLSku6gOvk2c9z4tkD0JE,2678
+molbeam_fp-0.1.1.dist-info/LICENSE,sha256=98I-4G2zG86H4icuVpam6um1Rog0zYvtqKjcL3DQSTY,1070
+molbeam_fp-0.1.1.dist-info/METADATA,sha256=ksUpufMNpn7-jz8VnHeWHt_3v4kcbS3jj8ihIrMS5yY,531
+molbeam_fp-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+molbeam_fp-0.1.1.dist-info/entry_points.txt,sha256=rA761yfVPYdSxOM3x_7u6tD9nrXxW1KRHGLl-4kAIxA,193
+molbeam_fp-0.1.1.dist-info/top_level.txt,sha256=RD1sB4-KrVuvQzZ5t0hV06ZZHzXDfHOIAdai2vqrD3A,11
+molbeam_fp-0.1.1.dist-info/RECORD,,
