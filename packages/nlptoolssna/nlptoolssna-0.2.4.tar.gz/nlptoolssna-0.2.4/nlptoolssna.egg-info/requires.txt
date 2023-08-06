@@ -1,0 +1,9 @@
+six
+farasapy
+tqdm
+requests
+regex
+json
+urllib
+pathlib
+zipfile
