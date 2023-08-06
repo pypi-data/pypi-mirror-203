@@ -1,0 +1,4 @@
+pandas
+JayDeBeApi
+requests
+tqdm
