@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: py-spacy-redact-message
+Version: 0.0.21
+Summary: A small example package
+Author-email: Alex Ilin <ilin.alex.mail@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+License-File: LICENSE

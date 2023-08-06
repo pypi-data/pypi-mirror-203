@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py_spacy_redact_message"
+version = "0.0.21"
+authors = [
+  { name="Alex Ilin", email="ilin.alex.mail@gmail.com" },
+]
+description = "A small example package"
+readme = "Redact message using spacy NER"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3"
+]
+dependencies = [
+    "typer",
+    "spacy"
+]
+[project.scripts]
+py_spacy_redact_message = "py_spacy_redact_message.main:run"
