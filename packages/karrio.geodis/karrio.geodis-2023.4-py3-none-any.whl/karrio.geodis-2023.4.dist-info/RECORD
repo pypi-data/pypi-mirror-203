@@ -1,0 +1,16 @@
+geodis_lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geodis_lib/error.py,sha256=K61ESYdkAYB63Rvr-OMWrwdk-r81JzYHcvDlj1z6NXc,189
+geodis_lib/tracking_response.py,sha256=sS9JbbCYOZ6o5xTSLcnETxInzbbWrdPju-1pV6enTqU,15150
+karrio/mappers/geodis/__init__.py,sha256=-dzXVl8yAXym8reCQAhXTAJ7oS3-pxbZ8ALUGwfkSZc,410
+karrio/mappers/geodis/mapper.py,sha256=zh5Dy0Xx7NAUxiqPUsBYrt1DXHr2KbRrm-GDBjmhuxE,731
+karrio/mappers/geodis/proxy.py,sha256=pr-dRwgPIBKrm5E910jqpw6sa2qMUgvdLUc-D-pSw_I,1149
+karrio/mappers/geodis/settings.py,sha256=3imNmpkLW6JbUehgDTdKzq9KQ_MiOyM6upjrhkGalvE,506
+karrio/providers/geodis/__init__.py,sha256=ashMHaze4c2ZS6dpMh1G0nBvsNc2vfRHe3St4dIa8kE,152
+karrio/providers/geodis/error.py,sha256=fQkIgcsRfmqTJrlmtUDX3nEflTP9sp8jTfGlsVVghAI,752
+karrio/providers/geodis/tracking.py,sha256=YNMW8wVuCXsXIPx4hbdZALsnXbZJ4r1REIWJYC15MBI,3285
+karrio/providers/geodis/units.py,sha256=8NiYK77bDEWY-V9PzWNe5QblhZ9RmJTD8kHn5bEEhPk,1207
+karrio/providers/geodis/utils.py,sha256=e-gq-RNGNug_z-HDpbsLowDQQN4NCVkusJ3Ol3XKNsc,1072
+karrio.geodis-2023.4.dist-info/METADATA,sha256=vft_1aNfOhTEnNfvweIrUkG7k4iLen8zxUL-X6b0ji8,947
+karrio.geodis-2023.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+karrio.geodis-2023.4.dist-info/top_level.txt,sha256=-36kyuo9uEelVWkDm1RxmKruRcoP-ELi7jIyzFvdqVU,26
+karrio.geodis-2023.4.dist-info/RECORD,,
