@@ -1,0 +1,5 @@
+# toml document
+# windows setuptools setup
+[build-system]
+build-backend = "setuptools.build_meta"
+requires =["setuptools>=67.0.0"]
