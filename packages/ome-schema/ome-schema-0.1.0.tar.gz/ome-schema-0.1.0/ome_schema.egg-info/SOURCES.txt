@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+ome_schema.egg-info/PKG-INFO
+ome_schema.egg-info/SOURCES.txt
+ome_schema.egg-info/dependency_links.txt
+ome_schema.egg-info/top_level.txt
+omeschema/__init__.py
+omeschema/schemas/2016-06/ome.xsd
