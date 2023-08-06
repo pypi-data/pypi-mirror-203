@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: keqing-sword
+Version: 1.0.0
+Summary: DEPRECATED
+Home-page: https://github.com/OSMChina/Keqing
+License: MIT
+Author: 快乐的老鼠宝宝
+Author-email: keaitianxinmail@qq.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: keqing (>=1.0.0,<2.0.0)
+Project-URL: Repository, https://github.com/OSMChina/Keqing
+Description-Content-Type: text/markdown
+
+# Keqing_Sword
+
+** THIS PACKAGE HAD BEEN DEPRECATED! PLEASE INSTALL [KEQING](https://pypi.org/project/keqing/) INSTEAD! **
+
+```commandline
+pip install Keqing
+```
+
