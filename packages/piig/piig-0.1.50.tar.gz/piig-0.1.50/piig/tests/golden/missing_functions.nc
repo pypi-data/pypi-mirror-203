@@ -1,0 +1,6 @@
+  #100= -#100                 ( T.var = -T.var                )
+  #100= #100 XOR 0.           ( T.var = ~T.var                )
+  #100= #100 NE 0.            ( T.var = not T.var             )
+  #100= -7.                   ( T.var = -7                    )
+  #100= -8.                   ( T.var = ~7                    )
+  #100= 0.                    ( T.var = not 7                 )
