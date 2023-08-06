@@ -1,0 +1,7 @@
+torchzap/__init__.py,sha256=VVTGaOD6N_Fmv-IAF37eNvul_WdSq8dAGvz4muAVwXE,83
+torchzap/preprocessing.py,sha256=ilBkfv_5sIDBGYlMhVPdBM4DjxoOqi2YfEoYgh_GpW4,688
+torchzap/trainer.py,sha256=rVB4g14CLXQo3oABY7qUselw_eC_Ma-ha_WkhbGuqa4,6222
+torchzap-23.4.18.19.dist-info/METADATA,sha256=7ogRlTzO_xSUT1Y4wxFxtQ-mFc_fbQf-2JHXjHVl-_o,528
+torchzap-23.4.18.19.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+torchzap-23.4.18.19.dist-info/top_level.txt,sha256=zRKzZa6_KsfnpHGBht7UL6bg-5Pn4QySyeO0fb-9uW8,9
+torchzap-23.4.18.19.dist-info/RECORD,,
