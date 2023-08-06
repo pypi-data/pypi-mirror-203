@@ -1,0 +1,10 @@
+chardet>=4.0.0
+backrefs>=5.2,<6.0
+bracex>=2.2
+wcmatch>=8.3,<9.0
+wxpython>=4.1.0
+filelock
+send2trash
+markdown>=3.3.4
+pymdown-extensions>=9.0
+pygments
