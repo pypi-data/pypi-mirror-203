@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+exclude = ["notebooks"]  # empty by default
+
+[project]
+name = "sleepeeg"
+version = "0.0.1"
+authors = [
+    {name = "Gennadiy Belonosov", email = "gennadiyb@mail.tau.ac.il"},
+]
+description = "Sleep EEG preprocessing and analysis"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+dependencies = [
+    "attrs",
+    "mne",
+    "mne-qt-browser",
+    "pyqt5",
+    "yasa==0.6.3",
+    "lspopt",
+    "ipympl",
+    "numpy",
+    "pandas",
+    "scipy",
+    "fooof",
+]
