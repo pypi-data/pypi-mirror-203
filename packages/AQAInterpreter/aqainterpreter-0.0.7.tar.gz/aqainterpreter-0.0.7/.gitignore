@@ -1,0 +1,9 @@
+*.yaml
+*.pdf
+token.txt
+report/mermaid
+dist/
+__pycache__/
+.pytest_cache/
+AQAInterpreter/__pycache__/
+AQAInterpreter/.pytest_cache/

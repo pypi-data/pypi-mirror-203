@@ -1,0 +1,9 @@
+linerad = 10px
+linewid *= 0.5
+$h = 0.21
+
+circle rad 10%
+arrow
+box "logic or" fit
+arrow
+circle rad 10%

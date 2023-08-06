@@ -1,0 +1,39 @@
+{
+    // "[markdown]": {
+    //     "editor.fontFamily": "calibri, Carlito"
+    // },
+    "cSpell.enabled": true,
+    "cSpell.words": [
+        "AQA's",
+        "aqainterpreter",
+        "BIDMAS",
+        "colours",
+        "ENDFOR",
+        "endrecord",
+        "endsub",
+        "ENDSUBROUTINE",
+        "ENDWHILE",
+        "ENDWWHILE",
+        "ENFOR",
+        "GCSE",
+        "infp",
+        "inotify",
+        "Naur",
+        "Nystrom",
+        "pagebreak",
+        "pandoc",
+        "PAREN",
+        "pyproject",
+        "pytest",
+        "Reece",
+        "startswith",
+        "texlive",
+        "Todos",
+        "transpiling",
+        "unterminated",
+        "xelatex"
+    ],
+    "python.defaultInterpreterPath": "~/.local/share/hatch/env/virtual/aqainterpreter/HIL0LsBw/aqainterpreter/bin/python",
+    "cSpell.enableFiletypes": ["!yaml"],
+    "cSpell.language": "en-GB"
+}

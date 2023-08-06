@@ -1,0 +1,30 @@
+<svg xmlns='http://www.w3.org/2000/svg' class="pikchr" viewBox="0 0 580.032 238.32">
+<path d="M20,110L92,110L92,23L70,2L20,2Z"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M70,2L70,23L92,23"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="56" y="56" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">src</text>
+<polygon points="218,56 207,60 207,51" style="fill:rgb(0,0,0)"/>
+<path d="M92,56L212,56"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="155" y="24" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">tokenization /</text>
+<text x="155" y="44" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">lexical analysis</text>
+<path d="M218,92L326,92L326,20L218,20Z"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="272" y="56" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">tokens</text>
+<polygon points="452,56 441,60 441,51" style="fill:rgb(0,0,0)"/>
+<path d="M326,56L446,56"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="389" y="24" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">parsing /</text>
+<text x="389" y="44" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">syntactic analysis</text>
+<path d="M452,92L560,92L560,20L452,20Z"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="506" y="46" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">abstract syntax</text>
+<text x="506" y="66" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">tree</text>
+<path d="M2,236L110,236L110,164L2,164Z"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="56" y="190" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">intermediary</text>
+<text x="56" y="210" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">code</text>
+<polygon points="236,200 225,204 225,195" style="fill:rgb(0,0,0)"/>
+<path d="M110,200L230,200"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="173" y="188" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">optimized</text>
+<path d="M236,236L344,236L344,164L236,164Z"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="290" y="190" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">machine</text>
+<text x="290" y="210" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">code</text>
+<polygon points="56,164 52,152 60,152" style="fill:rgb(0,0,0)"/>
+<path d="M560,56L577,56L577,137L56,137L56,158"  style="fill:none;stroke-width:2.16;stroke-linejoin:round;stroke:rgb(0,0,0);" />
+<text x="317" y="121" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">traversed</text>
+</svg>

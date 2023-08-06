@@ -1,0 +1,34 @@
+linerad = 10px
+linewid *= 0.5
+$h = 0.21
+
+C1: circle rad 10%
+arrow
+oval "(" fit
+arrow
+EXP: box "expression" fit
+arrow
+oval ")" fit
+arrow
+C2: circle rad 10%
+
+oval "INTEGER" fit at (EXP, 1.25*$h below EXP)
+oval "STRING" fit at (previous, 1.25*$h below previous)
+oval "FALSE" fit at (previous, 1.25*$h below previous)
+oval "NONE" fit at (previous, 1.25*$h below previous)
+oval "TRUE" fit at (previous, 1.25*$h below previous)
+oval "REAL" fit at (previous, 1.25*$h below previous)
+
+arrow from C1.end right linerad then down even with 3rd oval then to 3rd oval.start
+arrow from C1.end right linerad then down even with 4th oval then to 4th oval.start
+arrow from C1.end right linerad then down even with 5th oval then to 5th oval.start
+arrow from C1.end right linerad then down even with 6th oval then to 6th oval.start
+arrow from C1.end right linerad then down even with 7th oval then to 7th oval.start
+arrow from C1.end right linerad then down even with 8th oval then to 8th oval.start
+
+line from 3rd oval.end right even with linerad+arrowwid left of C2.start then up even with C2 then right linerad
+line from 4th oval.end right even with linerad+arrowwid left of C2.start then up even with C2 then right linerad
+line from 5th oval.end right even with linerad+arrowwid left of C2.start then up even with C2 then right linerad
+line from 6th oval.end right even with linerad+arrowwid left of C2.start then up even with C2 then right linerad
+line from 7th oval.end right even with linerad+arrowwid left of C2.start then up even with C2 then right linerad
+line from 8th oval.end right even with linerad+arrowwid left of C2.start then up even with C2 then right linerad

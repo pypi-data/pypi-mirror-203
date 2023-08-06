@@ -1,0 +1,28 @@
+linerad = 10px
+linewid *= 0.5
+$h = 0.21
+
+down
+C1: circle radius 10%
+arrow linewid
+FOR: oval "FOR" fit
+right
+arrow
+V: box "variable declaration" fit
+arrow
+oval "TO" fit
+arrow
+EXP1: box "expression" fit
+STEP: oval "STEP" fit with .w at (linewid right of EXP1.end, 1.25*$h below EXP1)
+EXP2: box "expression" fit with .w at (linewid right of STEP.end, 1.25*$h below EXP1)
+DEC: box "delarations" fit at (V, 1.25*$h below STEP)
+
+arrow from EXP1.end right even with linerad right of EXP2.end then down even with DEC then to DEC.end
+arrow from EXP1.end right linerad then down even with STEP then to STEP.start
+arrow from STEP.end to EXP2.start
+line from EXP2.end right linerad then down linerad
+
+END: box "END" fit at (FOR, 1.25*$h below DEC)
+arrow from DEC.start left even with END then to END.n
+C2: circle width 10% with .n at (C1, linewid below END.s)
+arrow from END.s to C2.n

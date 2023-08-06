@@ -1,0 +1,6 @@
+linewid *= 0.5
+
+circle radius 10%; arrow
+box "declarations" fit; arrow
+oval "EOF" fit; arrow
+circle radius 10%

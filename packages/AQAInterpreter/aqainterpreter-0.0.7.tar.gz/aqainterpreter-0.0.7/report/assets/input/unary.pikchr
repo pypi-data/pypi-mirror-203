@@ -1,0 +1,21 @@
+linerad = 10px
+linewid *= 0.5
+$h = 0.21
+
+C1: circle rad 10%
+arrow
+
+NOT: oval "NOT" fit
+MIN: oval "-" fit at 1.25*$h above NOT
+arrow from C1.end right linerad then up even with MIN then to MIN.start
+UNA: box "UNARY" fit with .w at (linewid right of NOT.end, NOT)
+PRI: box "PRIMARY" fit at (UNA.w, 1.25*$h below UNA)
+
+arrow from NOT.end to UNA.w
+line from MIN.end right even with linerad+arrowwid left of UNA.w then down even with NOT then right linerad
+
+arrow from UNA.e
+C2: circle rad 10%
+
+arrow from C1.end right linerad then down even with PRI then to PRI.w
+line from PRI.e right even with linerad+arrowwid left of C2 then up even with C2 then to C2.start

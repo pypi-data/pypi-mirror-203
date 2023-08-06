@@ -1,0 +1,8 @@
+linerad = 10px
+linewid *= 0.5 
+
+circle radius 10%; arrow
+oval "identifier" fit; arrow
+oval "←" fit; arrow
+box "expression" fit; arrow
+circle radius 10%

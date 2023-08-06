@@ -1,0 +1,13 @@
+linerad = 10px
+linewid *= 0.5
+$h = 0.21
+
+circle rad 10%
+arrow linewid+arrowwid
+B: box "declaration" fit
+arrow linewid+arrowwid
+circle rad 10%
+
+arrow from B.end right linerad then down 1.25*$h then left even with arrowwid left of B
+line left even with linerad+arrowwid left of B.start then up even with B then to B.start
+

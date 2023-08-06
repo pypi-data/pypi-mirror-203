@@ -1,0 +1,22 @@
+linerad = 10px
+linewid *= 0.5
+$h = 0.21
+
+C1: circle radius 10%
+arrow
+O: oval "ENDWHILE" fit
+arrow
+C2: circle radius 10%
+
+A: oval "ENFOR" fit at (previous oval, 1.25*$h below previous oval)
+B: oval "ENDIF" fit at (previous oval, 1.25*$h below previous oval)
+C: oval "END" fit at (previous oval, 1.25*$h below previous oval)
+
+arrow from C1.end right linerad then down even with 2nd oval then to 2nd oval.start
+line from 2nd oval.end right even with linerad+arrowwid left of C2 then up even with C2 then right linerad
+
+arrow from C1.end right linerad then down even with 3rd oval then to 3rd oval.start
+line from 3rd oval.end right even with linerad+arrowwid left of C2 then up even with C2 then right linerad
+
+arrow from C1.end right linerad then down even with 4th oval then to 4th oval.start
+line from 4th oval.end right even with linerad+arrowwid left of C2 then up even with C2 then right linerad

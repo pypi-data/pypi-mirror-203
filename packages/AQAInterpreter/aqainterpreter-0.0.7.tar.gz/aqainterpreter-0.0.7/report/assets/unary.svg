@@ -1,0 +1,24 @@
+<svg xmlns='http://www.w3.org/2000/svg' class="pikchr" viewBox="0 0 251.366 110.16">
+<circle cx="5" cy="55" r="3.6"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<polygon points="45,55 33,59 33,50" style="fill:rgb(0,0,0)"/>
+<path d="M9,55L39,55"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M60,70L80,70A15 15 0 0 0 95 55A15 15 0 0 0 80 39L60,39A15 15 0 0 0 45 55A15 15 0 0 0 60 70Z"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="70" y="55" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">NOT</text>
+<path d="M70,32A15 15 0 0 0 85 17L85,17A15 15 0 0 0 70 2A15 15 0 0 0 55 17L55,17A15 15 0 0 0 70 32Z"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="70" y="17" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">-</text>
+<polygon points="55,17 43,21 43,12" style="fill:rgb(0,0,0)"/>
+<path d="M9,55 L 16,55 Q 24,55 24,40 L 24,32 Q 24,17 37,17 L 49,17"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M131,70L206,70L206,39L131,39Z"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="168" y="55" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">UNARY</text>
+<path d="M85,108L178,108L178,77L85,77Z"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="131" y="92" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">PRIMARY</text>
+<polygon points="131,55 120,59 120,50" style="fill:rgb(0,0,0)"/>
+<path d="M95,55L125,55"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M85,17 L 96,17 Q 108,17 108,32 L 108,40 Q 108,55 115,55 L 123,55"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<polygon points="242,55 230,59 230,50" style="fill:rgb(0,0,0)"/>
+<path d="M206,55L236,55"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<circle cx="245" cy="55" r="3.6"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<polygon points="85,92 73,97 73,88" style="fill:rgb(0,0,0)"/>
+<path d="M9,55 L 16,55 Q 24,55 24,70 L 24,77 Q 24,92 39,92 L 64,92 L 79,92"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M178,92 L 206,92 Q 221,92 221,77 L 221,70 Q 221,55 231,55 L 242,55"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+</svg>

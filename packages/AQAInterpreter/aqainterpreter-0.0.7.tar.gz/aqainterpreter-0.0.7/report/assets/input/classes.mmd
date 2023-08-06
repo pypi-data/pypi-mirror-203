@@ -1,0 +1,110 @@
+classDiagram
+  class AQAParseError {
+    message : str
+    token
+  }
+  class AQARuntimeError {
+    message : str
+    token
+  }
+  class Binary {
+    left
+    operator
+    right
+    interpret() object
+  }
+  class Expr {
+    interpret() object
+  }
+  class Grouping {
+    expression
+    interpret()
+  }
+  class If {
+    condition
+    else_branch : list[Stmt]
+    then_branch : list[Stmt]
+    interpret(output: list[str])
+  }
+  class Literal {
+    value : object
+    interpret()
+  }
+  class Logical {
+    left
+    operator
+    right
+    interpret()
+  }
+%%   class Parser {
+%%     tokens : list[Token]
+%%     parse()
+%%   }
+  class Print {
+    expression
+    interpret(output: list[str])
+  }
+%%   class Scanner {
+%%     source : str
+%%     scan_tokens() list[Token]
+%%   }
+  class Stmt {
+    interpret(output: list[str]) object
+  }
+%%   class SymbolTable {
+%%     values : dict[str, object]
+%%     define(name: str, value: object) None
+%%     get(name: Token) object
+%%   }
+  class Token {
+    lexeme : str
+    line : int
+    literal : str
+    type : str
+  }
+  class Unary {
+    operator
+    right
+    interpret() object
+  }
+  class Var {
+    initialiser
+    name
+    interpret(output: list[str])
+  }
+  class Variable {
+    name
+    interpret() object
+  }
+  class While {
+    body : list[Stmt]
+    condition
+    interpret(output: list[str]) object
+  }
+  Binary --|> Expr
+  Grouping --|> Expr
+  If --|> Stmt
+  Literal --|> Expr
+  Logical --|> Expr
+  Print --|> Stmt
+  Unary --|> Expr
+  Var --|> Stmt
+  Variable --|> Expr
+  While --|> Stmt
+  Expr --* Binary : left
+  Expr --* Binary : right
+  Expr --* Grouping : expression
+  Expr --* If : condition
+  Expr --* Logical : left
+  Expr --* Logical : right
+  Expr --* Print : expression
+  Expr --* Unary : right
+  Expr --* Var : initialiser
+  Expr --* While : condition
+  Token --* AQAParseError : token
+  Token --* AQARuntimeError : token
+  Token --* Binary : operator
+  Token --* Logical : operator
+  Token --* Unary : operator
+  Token --* Var : name
+  Token --* Variable : name

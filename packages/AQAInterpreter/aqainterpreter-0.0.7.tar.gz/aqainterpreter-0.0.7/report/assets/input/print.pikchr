@@ -1,0 +1,16 @@
+linerad = 10px
+linewid *= 0.5
+$h = 0.21
+
+circle radius 10%
+arrow
+O: oval "OUTPUT" fit
+line
+EXP: box "expression" fit
+arrow
+circle radius 10%
+
+P: oval "PRINT" fit at (O, 1.25*$h below O)
+
+arrow from 1st circle.end right linerad then down even with P then to P.start
+line from P.end right even with linerad left of EXP.w then up even with O then right linerad

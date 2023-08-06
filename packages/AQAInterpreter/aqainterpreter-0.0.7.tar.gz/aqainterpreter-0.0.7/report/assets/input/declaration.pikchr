@@ -1,0 +1,20 @@
+linerad = 10px
+linewid *= 0.5
+$h = 0.21
+
+B1: box "statement" fit
+B2: box "variable declaration" fit at (B1, 1.25*$h below B1)
+C1: circle radius 10% at (circlerad + linerad left of B2.w, 0.8*$h above B1)
+
+line from C1.end right even with B2
+arrow linerad
+line right even with B2.end
+line circlerad
+L1: line linerad
+C2: circle radius 10%
+
+arrow from C1.end right linerad then down even with B1 then right even with B1.start
+line from B1.end right even with L1 then up even with L1 then right even with C2.w
+
+arrow from C1.end right linerad then down even with B2 then right even with B2.start
+line from B2.end right even with L1 then up even with L1 then right even with C2.start

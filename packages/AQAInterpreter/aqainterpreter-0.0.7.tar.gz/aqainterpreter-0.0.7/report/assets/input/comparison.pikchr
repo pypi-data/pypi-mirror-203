@@ -1,0 +1,34 @@
+linerad = 10px
+linewid *= 0.5
+$h = 0.21
+
+circle radius 10%
+arrow
+B1: box "term" fit
+B2: box "term" fit with .w at (linewid+linerad right of B1.e, 0.625*$h below B1)
+LT: oval "<" fit with .w at (linewid+arrowwid right of B2.e, 0.625*$h below B1)
+LTE: oval "≤" fit at (LT, 1.25*$h below LT)
+GT: oval ">" fit at (LTE, 1.25*$h below LTE)
+GTE: oval "≥" fit at (GT, 1.25*$h below GT)
+
+C2: circle radius 10% with .w at (linewid+linerad right of LT.e, LT)
+
+L1: arrow from B1.end
+arrow up 0.625*$h then right even with 2*arrowwid right of B2.end
+L2: line right even with linewid left of C2.start then down linerad
+
+
+line down even with LT then to LT.end
+arrow from LT.start to B2.end
+
+line from L2.end down even with LTE then to LTE.end
+line from LTE.start left linerad then up even with B2 then to B2.end
+
+line from L2.end down even with GT then up to GT.end
+line from GT.start left linerad then up even with B2.s
+
+line from L2.end down even with GTE then up to GTE.end
+line from GTE.start left linerad then up even with B2.s
+
+line from B2.start left even with L1.end then up 0.625*$h
+arrow from L2.end down even with C2 then to C2.start
