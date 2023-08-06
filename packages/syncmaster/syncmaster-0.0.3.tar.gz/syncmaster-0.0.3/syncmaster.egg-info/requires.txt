@@ -1,0 +1,7 @@
+numpy
+pyserial
+matplotlib
+seaborn
+time
+
+[dev]
