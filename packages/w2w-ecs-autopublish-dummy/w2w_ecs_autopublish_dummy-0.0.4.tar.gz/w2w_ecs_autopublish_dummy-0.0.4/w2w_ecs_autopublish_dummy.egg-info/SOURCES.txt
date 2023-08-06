@@ -1,0 +1,9 @@
+pyproject.toml
+tests/test_main.py
+w2w_ecs_autopublish_dummy/__init__.py
+w2w_ecs_autopublish_dummy/main.py
+w2w_ecs_autopublish_dummy.egg-info/PKG-INFO
+w2w_ecs_autopublish_dummy.egg-info/SOURCES.txt
+w2w_ecs_autopublish_dummy.egg-info/dependency_links.txt
+w2w_ecs_autopublish_dummy.egg-info/entry_points.txt
+w2w_ecs_autopublish_dummy.egg-info/top_level.txt
