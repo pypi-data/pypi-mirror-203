@@ -1,0 +1,12 @@
+satorici/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+satorici/classes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+satorici/classes/api.py,sha256=Y70NPTkN0604vX8yE9QJQXCpiyopd6gS3oXGStC2L_A,3779
+satorici/classes/bundler.py,sha256=uZyLamjqnqFJ7Yp0ZVpVOaTVFxLF0MW7BQaUkQFiy3I,1830
+satorici/classes/satori.py,sha256=ObFZbCIHknXAGaURVmbFJioZgFxH3a6FG1HBpAVRUyU,17343
+satorici/classes/utils.py,sha256=MNrqTm7YPn4_9t2Dxyv_G_xNRy368bPsk1z8ZfXcX1U,5865
+satorici/satori_module.py,sha256=rc5m2yTU49AriHyIaIo3wQs6qaxseZ3Q7Y83Qsoey4E,6028
+satori_ci-1.1.12.dist-info/entry_points.txt,sha256=Yecr0zxk4-PyyURzLutnOqHmJ1Vlna5EdHXqIMFq5VE,58
+satori_ci-1.1.12.dist-info/WHEEL,sha256=B19PGBCYhWaz2p_UjAoRVh767nYQfk14Sn4TpIZ-nfU,87
+satori_ci-1.1.12.dist-info/METADATA,sha256=dAOM61f4iYkBIcE_jIZIEixUW24XytWy1qz9cEMPF2k,5376
+satori_ci-1.1.12.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+satori_ci-1.1.12.dist-info/RECORD,,
