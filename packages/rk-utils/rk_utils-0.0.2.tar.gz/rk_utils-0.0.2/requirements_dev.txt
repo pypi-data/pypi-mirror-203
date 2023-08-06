@@ -1,0 +1,4 @@
+docutils
+esbonio
+pre-commit
+tox
