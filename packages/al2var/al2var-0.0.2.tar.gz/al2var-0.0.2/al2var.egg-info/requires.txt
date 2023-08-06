@@ -1,0 +1,4 @@
+bcftools
+samtools
+bowtie2
+minimap2==2.21
