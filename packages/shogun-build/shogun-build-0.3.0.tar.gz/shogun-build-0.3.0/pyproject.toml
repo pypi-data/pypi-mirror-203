@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools >= 61.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shogun-build"
+version = "0.3.0"
+authors = [
+    { name = "Brandon Alba", email = "brandonealba@protonmail.com" }
+]
+license = { file = "LICENSE"}
+dependencies = [
+    "Click"
+]
+
