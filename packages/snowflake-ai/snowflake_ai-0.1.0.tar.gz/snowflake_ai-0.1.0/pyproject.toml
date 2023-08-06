@@ -1,0 +1,30 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "snowflake-ai"
+version = "0.1.0"
+description = "A Snowflake centic Enterprise AI/ML framework with tight integration of popular data science libraries"
+authors = ["Tony Liu <tony.liu@yahoo.com>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+homepage = "https://github.com/tonyxliu/snowflake-ai#readme"
+keywords = ["AI", "ML", "Snowflake", "Enterprise", "AI/ML"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.dependencies]
+python = "~3.8.15"
+numpy = "~1.24.2"
+pandas = "~1.5.2"
+toml = "~0.10.2"
+importlib-resources = "~5.12.0"
+snowflake-connector-python = "~3.0.2"
+snowflake-snowpark-python = "~1.2.0"
+cryptography = "~40.0.1"
+matplotlib = "~3.7.1"
+scikit-learn = "~1.2.2"
