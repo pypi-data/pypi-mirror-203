@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+cf_wesgrh/_init_.py
+cf_wesgrh.egg-info/PKG-INFO
+cf_wesgrh.egg-info/SOURCES.txt
+cf_wesgrh.egg-info/dependency_links.txt
+cf_wesgrh.egg-info/not-zip-safe
+cf_wesgrh.egg-info/top_level.txt
