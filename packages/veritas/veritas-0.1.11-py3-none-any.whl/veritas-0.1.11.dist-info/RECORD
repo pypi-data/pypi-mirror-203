@@ -1,0 +1,8 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_veritas.py,sha256=FeBFTTYZQ2JOJ0nNlk1yJiWE13tyBP5hRra_CBpMSj0,4461
+veritas/__init__.py,sha256=CA7hEXm1zmhtLRk7gAqTP0TIlDL93ABic_VYXwDSzQc,2921
+veritas-0.1.11.dist-info/LICENSE,sha256=QpossKeK3qFHkJg8L1IONRWqb71cQ7-BGzw_zdxdOy0,1488
+veritas-0.1.11.dist-info/METADATA,sha256=QhVtTjv-S2d5VNPr5e0d9dQC9c7OIFWowJzYHHiBTV0,2070
+veritas-0.1.11.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+veritas-0.1.11.dist-info/top_level.txt,sha256=r_B5iOEeH7Xw2Jx7_ucdn1IQPacVZsVeHQhl-l8-_9c,14
+veritas-0.1.11.dist-info/RECORD,,
