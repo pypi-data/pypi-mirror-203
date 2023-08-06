@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: ekumenlabs-config
+Version: 0.1.0
+Summary: 
+Home-page: https://github.com/Ekumen-OS/ekumenlabs_config
+License: MIT
+Keywords: configuration
+Author: Guillermo Manzato
+Author-email: manzato@ekumenlabs.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: tortoise-orm (>=0.19.2,<0.20.0)
+Project-URL: Documentation, https://github.com/Ekumen-OS/ekumenlabs_config
+Project-URL: Repository, https://github.com/Ekumen-OS/ekumenlabs_config
+Description-Content-Type: text/markdown
+
+# ekumenlabs_config
+
+[![tests](https://github.com/Ekumen-OS/ekumenlabs_config/actions/workflows/tests.yaml/badge.svg)](https://github.com/Ekumen-OS/ekumenlabs_config/actions/workflows/tests.yaml)
+[![codecov](https://codecov.io/gh/Ekumen-OS/ekumenlabs_config/branch/main/graph/badge.svg?token=mRGjPkrBjt)](https://codecov.io/gh/Ekumen-OS/ekumenlabs_config)
+[![black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![poetry-managed](https://img.shields.io/badge/poetry-managed-blueviolet)](https://python-poetry.org)
+
+## Installation
+
+### Pip
+
+`pip install ekumenlabs_config`
+
+### Pipenv
+
+`pipenv install ekumenlabs_config`
+
+### Poetry
+
+`poetry add ekumenlabs_config`
+
+### PDM
+
+`pdm add ekumenlabs_config`
+
+## Notes for maintainers
+
+### Release
+
+To create a new release, create a github release and a github action will take care of building and publishing. After
+that, there will be a PR automatically created to bump the version in `main`.
+
