@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "begemot"
+version = "0.1.0"
+description = "begemot — Compiled programming language in Mongolian"
+authors = ["mmlvgx <mmlvgx@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.scripts]
+begemot = "src.begemot.console:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
