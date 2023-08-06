@@ -1,0 +1,10 @@
+README.md
+setup.py
+nepali_g2p/__init__.py
+nepali_g2p/nepali_g2p.py
+nepali_g2p.egg-info/PKG-INFO
+nepali_g2p.egg-info/SOURCES.txt
+nepali_g2p.egg-info/dependency_links.txt
+nepali_g2p.egg-info/top_level.txt
+tests/__init__.py
+tests/test_nepali_g2p.py
