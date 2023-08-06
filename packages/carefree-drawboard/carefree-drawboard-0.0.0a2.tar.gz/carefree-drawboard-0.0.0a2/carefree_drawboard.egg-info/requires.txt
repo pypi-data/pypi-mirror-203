@@ -1,0 +1,13 @@
+rich
+typer
+fastapi
+gunicorn
+pydantic
+uvicorn
+websockets
+watchdog
+python-multipart
+carefree-toolkit>=0.3.4
+pillow
+aiohttp
+charset-normalizer==2.1.0
