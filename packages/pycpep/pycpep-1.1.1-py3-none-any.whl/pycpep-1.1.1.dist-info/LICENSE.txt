@@ -1,0 +1,4 @@
+This package 'PyCpep' is open source and part of the research work to predict the deviation in the heat capacity measurement by microDSC.
+
+Author: Nirmal Parmar
+email: nirmalparmarphd@gmail.com

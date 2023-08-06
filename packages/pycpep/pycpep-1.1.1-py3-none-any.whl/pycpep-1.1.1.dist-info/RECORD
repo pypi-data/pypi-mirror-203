@@ -1,0 +1,10 @@
+PyCpep/__init__.py,sha256=thUyGYyFStAy415lDPhQj0LB3G0P3_0Oy3KxB4Wxp-0,38
+PyCpep/pycpep.py,sha256=x62o_7wYXPm26QzQkDTU6TLLzpWsIKnUaLpzONkACTs,5994
+PyCpep/mdl/model.h5,sha256=fuhEHsPKaCTMnf13kWpSJYvYykH5k9XVMsc0NuatZ0w,54392
+PyCpep/mdl/model.hdf5,sha256=fuhEHsPKaCTMnf13kWpSJYvYykH5k9XVMsc0NuatZ0w,54392
+PyCpep/mdl/scaler.pkl,sha256=xEf-n9QO6n5n20dNiGKyd_4zA_sjMRfBzBIEx4vWlqI,630
+pycpep-1.1.1.dist-info/LICENSE.txt,sha256=xe51msFdV9s9pbHvrY5o1iOPnni3C3uD77bPdo1EEhU,193
+pycpep-1.1.1.dist-info/METADATA,sha256=GMONPhojyJesqLPpJSKw9fQZsGt9hV1s6nieQkB1NNw,438
+pycpep-1.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pycpep-1.1.1.dist-info/top_level.txt,sha256=a9ycJjzZsZKVUN2VU9UeqgCP90bfPvsWkUFR9LrwypE,7
+pycpep-1.1.1.dist-info/RECORD,,
