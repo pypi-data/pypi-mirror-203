@@ -1,0 +1,8 @@
+README.md
+setup.py
+cressida/__init__.py
+cressida.egg-info/PKG-INFO
+cressida.egg-info/SOURCES.txt
+cressida.egg-info/dependency_links.txt
+cressida.egg-info/not-zip-safe
+cressida.egg-info/top_level.txt
