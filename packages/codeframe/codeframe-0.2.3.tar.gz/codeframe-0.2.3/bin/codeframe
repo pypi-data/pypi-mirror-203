@@ -1,0 +1,1461 @@
+#!/usr/bin/env python3
+
+# to override print <= can be a big problem with exceptions
+from __future__ import print_function # must be 1st
+import builtins
+
+import sys
+
+from fire import Fire
+
+from codeframe.version import __version__
+from codeframe import config
+
+
+
+"""
+# New way to create PY project files... better than from bash
+
+## Should
+ - modules/units be executable locally
+ - not the bin/proj
+       - only with "pip3 install -e ."
+       - revert with "pip3 uninstall proj"
+ - NO bump2version and GIT be prepared
+ - bumpversion back? crash else...
+ - be installable with twine to PyPI
+ - pytest prepared
+ -
+
+## NEW setup.py
+ - read version
+ - add packages and scripts
+NEW call to version.py
+------------------------------------
+# HOWTO TEST ME:
+# 1 - restart jupyter kernel AND
+#from reactmock import ruther
+#ruther.func()
+#ruther.__version__
+#
+# 2- cd reactmock ;  pip3 install -e .
+#  AND ELSEWHERE RUN:
+#       - reactmock
+#       - python3 -c "import reactmock"
+# 3- bumpversion patch ; cat version.py
+# 4- pytest
+# 5- correct version.py testing (from version import __version__ )
+#    1- run ./bin/reactmock before and after patch
+#    2- cd bin and ./reactmock
+#    3- pip3 install -e and run reactmock from elsewhere
+#                (pip3install-e. is not neccessary anymore)
+#    4- jupyter: ONLY  REkernel works. Not %%reload_ext neither importlib
+"""
+
+#==============================================================
+
+import subprocess as s
+from fire import Fire
+import os
+from pathlib import Path
+import stat
+import sys
+
+from contextlib import contextmanager
+
+@contextmanager
+def cd(newdir):
+    prevdir = os.getcwd()
+    os.chdir(os.path.expanduser(newdir))
+    try:
+        yield
+    finally:
+        os.chdir(prevdir)
+
+
+
+def check_pip(module):
+    CMD="pip3 freeze"
+    res=s.check_output(CMD.split()).decode("utf8").split("\n")
+    res = [i for i in res if i.split("==")[0] == module]
+    if len(res)==0:
+        ok = False
+    else:
+        ok = True
+    print("i... checking  {:20s}                   [{}]".format(module, ok))
+    return res
+
+
+def check_env(var):
+    if not var in os.environ:
+        ok = False
+    ok = True
+    print("i... checking ${:20s}                   [{}]".format(var, ok))
+    #print("i... ",os.environ[var] )
+    return ok
+
+#==========================================================
+
+
+
+def create_init(proj):
+    result=f"""import sys
+sys.path.append(".")         # can find version in . by pytest
+sys.path.append("./{proj}")  # can find version from Jupyter
+#from version import __version__
+# try:
+#     from {proj}.version import __version__
+# except:
+#    print("")
+"""
+
+    print("i...    creating  __init__", end="")
+    NAME = "__init__.py"
+    FIPY = proj + "/" + proj+"/"+ NAME
+    with open(FIPY, "w") as f:
+        f.write(result)
+    os.chmod(FIPY, 0o775)
+    print("             [OK]")
+
+
+
+# need to be the same  "0.0.0-dev0" as in .bumpversion config
+def create_version(proj):
+    result=f"""__version__="0.0.0-dev0"
+"""
+    print("i...    creating version.py", end="")
+    NAME = "version.py"
+    FIPY = proj+"/"+ NAME
+    with open(FIPY, "w") as f:
+        f.write(result)
+    os.chmod(FIPY, 0o775)
+    with cd(proj):
+        with cd(proj):
+            os.symlink("../"+NAME, NAME)
+    print("             [OK]")
+
+
+
+def create_unit_topbar(proj):
+    result = """#!/usr/bin/env python3
+
+# from {proj}.version import __version__
+from fire import Fire
+import time
+
+import pytermgui
+from pytermgui import print_to, report_cursor, bold, inverse, underline, italic, save_cursor, restore_cursor, terminal, cursor_up, move_cursor
+
+import threading # for key input
+
+from console import fg, bg, fx
+import datetime as dt
+
+theight= terminal.height
+twidth= terminal.width
+
+global_mode = " "
+
+
+class Topbar:
+    def __init__(self, pos=1, bgcolor=bg.blue ):
+        self.pos = pos
+        self.positions = {}
+        self.t2 = None
+        if pos==1:
+            self.BCOL = bgcolor #bg.blue
+        elif pos==2:
+            self.BCOL = bgcolor # bg.white
+        #self.t = threading.currentThread()
+
+        try:
+            #print("report_cursor to appear")
+            print( "i... topbar: pos/cursor",pos, report_cursor() )
+            #print("report done")
+        except:
+            print("X... problem with report_cursor")
+
+        #print("i... topbar bar started")
+
+
+    def add(self,two=2, bgcolor=bg.blue ):
+        if two==2:
+            self.t2 = Topbar(two ,bgcolor = bgcolor)
+        else:
+            print("X... nobody wanted more than two......  NOT OK")
+        return self.t2
+
+
+    def print_to(self, tup, s):
+        if type(tup) is tuple:
+            x,y = tup[0],tup[1]
+            print("X.......... TUPLE in the TOPBAR  IS SUPRESSED")
+        elif type(tup) is int:
+            x=tup
+            y=1
+        else:
+            print("X... NOBODY WANTED something else than tuple or int in the TOPBAR  position")
+        self.positions[ x ] = s
+
+
+    def place(self):
+        '''
+        Place he BAR on screen
+        '''
+        curs =(-1,-1)
+        if self.pos==1:
+            save_cursor()
+        print_to( (1,self.pos),  f"{self.BCOL}"+" "*twidth+bg.default )
+        print_to( (1,self.pos+1), " "*twidth )
+
+        ###### self.positions[ twidth] = f"{fx.default}{fg.default}{bg.default}"
+
+        for k in self.positions.keys():
+            print_to( (k,self.pos), f"{self.BCOL}{self.positions[k]}{bg.default}{fx.default}{fg.default}" )
+
+
+
+        if self.t2 is not None:
+            self.t2.place()
+
+        if self.pos==1:
+            restore_cursor()
+            print("", end="\\r") # this make GOOD thing in printing
+
+
+
+def main():
+    #print()
+    t = Topbar(1)
+    for i in range(100):
+        #
+        # DO whatever stuff and PLACE PRINTTO SLEEP
+        #
+        t.place()
+        t.print_to( (1,1), f"{fg.white} {str(dt.datetime.now())[:-4]} {fg.default}" )
+        time.sleep(0.1)
+
+if __name__=="__main__":
+    Fire(main)
+"""
+    unit = "topbar"
+    print(f"i...    creating  {unit}", end="")
+    NAME = f"{unit}.py"
+    UNIT1 = proj + "/" + NAME
+    with open(UNIT1, "w") as f:
+        f.write(result)
+    os.chmod(UNIT1, 0o775)
+    with cd(proj):
+        with cd(proj):
+            os.symlink("../"+NAME, NAME)
+    # --- link to test_unit.py
+    with cd(proj):
+        os.symlink(NAME, "test_"+NAME)
+    print("             [OK]")
+
+
+
+
+
+def create_unit_keyb(proj):
+    result="""#!/usr/bin/env python3
+
+# from {proj}.version import __version__
+from fire import Fire
+import threading
+import time
+from console import fg,bg,fx
+
+#import readchar
+from sshkeyboard import listen_keyboard, stop_listening
+
+global_key = ""
+
+def get_global_key():
+    global global_key
+    a = global_key
+    #global_key = ""
+    return a
+
+# https://sshkeyboard.readthedocs.io/en/latest/reference.html#sshkeyboard.listen_keyboard_manual
+# https://github.com/ollipal/sshkeyboard
+
+
+class KeyboardThreadSsh(threading.Thread):
+    def __init__(self,  name='keyboard-input-thread', ending=None):
+        '''
+        Restart itself as thread
+        '''
+        self.block = False
+        self.ending = ending
+        self.cursor = 0
+        super(KeyboardThreadSsh, self).__init__(name=name)
+        self.start()
+
+
+    def text_split(self):
+        '''
+        operates on global_key and cursor, returns 3 parts
+        0 is before 1.st letter
+        '''
+        global global_key
+        a,b,c="","",""
+        lel = len(global_key)
+
+        cursor = self.cursor
+
+        if  cursor>lel:
+            cursor=lel
+        if cursor<0:
+            cursor=0
+
+        if lel==0:
+            return a,b
+
+        #  a b c
+        # 0 1 2 3
+        if cursor==lel:
+            a=global_key
+            return a,b
+
+        if cursor == 0:
+            b = global_key
+            return a,b
+
+        if cursor == 1:
+            a = global_key[0]
+            b = global_key[1:]
+            return a,b
+        else:
+            a=global_key[:cursor]
+            b=global_key[cursor:]
+        return a,b
+
+
+    def press(self,key):
+        '''
+        the callback - uses the global_key to remember
+        '''
+        global global_key
+        #print("D...", f"'{key}' pressed")
+        #print("D...", f"{global_key} , cu=={self.cursor} :", self.text_split() )
+
+
+        # the tricks: space up down
+        if key=="space":
+            key=" "
+            self.cursor+=1
+        elif key=="delete":
+            if self.cursor<=len(global_key):
+                global_key =  global_key[:self.cursor]+global_key[self.cursor+1:]
+            key=""
+        elif key=="backspace":
+            global_key =  global_key[:self.cursor-1]+global_key[self.cursor:]
+            self.cursor-=1
+            key=""
+        elif key=="end":
+            self.cursor = len(global_key)
+            key=""
+        elif key=="home":
+            self.cursor = 0
+            key=""
+        elif key=="left":
+            self.cursor-=1
+            key=""
+        elif key=="right":
+            self.cursor+=1
+            key=""
+        elif key=="enter":
+            key="\\n"
+            self.cursor=len(global_key)
+        elif key=="up":
+            key=""
+        elif key=="down":
+            key=""
+        elif key=="tab":
+            key=""
+        #else:
+        #    self.cursor+=1
+
+        # print("D...  ..........",self.cursor, "after press /    limit",len(global_key)+1)
+
+        #### global_key = f"{global_key[:self.cursor+1]}{key}{global_key[self.cursor+1:]}" # KEEP IT GLOBAL !!!!!
+        a,b = self.text_split()
+        # print(f"i... joining {a} {key} {b}")
+        global_key = f"{a}{key}{b}" # KEEP IT GLOBAL !!!!!
+        if len(key)>0:
+            self.cursor+=1
+
+        # correct cursor if  it went too far
+        if self.cursor>len(global_key)+1:self.cursor=len(global_key)+1
+        if self.cursor<0:self.cursor=0
+
+        #print("D...",f"RESULT: '{global_key}' , cu=={self.cursor} :", self.text_split() )
+        #print("D...")
+        #self.cursor+=1
+
+        if key=="\\n":
+            stop_listening()
+
+
+
+    def get_global_key(self):
+        '''
+        use to read the situation and reset on enter from the main program, True when ENTER
+        '''
+        global global_key
+        if global_key.find("\\n")>=0:
+            a = global_key
+            global_key = ""
+            return a, True, self.text_split()
+        return global_key, False, self.text_split()
+
+
+    def run(self):
+        '''
+        this is a mandatory for Thread child
+        '''
+        global global_key
+        self.t = threading.current_thread()
+        while True:
+            #print("!...  ........................keyboard listen START")
+            listen_keyboard(on_press=self.press,
+                             # debug = True,
+                            delay_second_char=0.1,
+                            delay_other_chars=0.05,
+                            lower = False, # IT WAS DEFAULT
+                            sequential=True) # syncio
+            #print("!...  ........................keyboard listen STOP")
+            #print("D...",f"/{global_key}/")
+            if global_key.strip() == self.ending:
+                #print("!...  ........................keyboard listen BREAK")
+                break
+        print("!...  ........................keyboard THREAD  ENDED")
+
+
+
+
+#--------https://stackoverflow.com/questions/2408560/python-nonblocking-console-input
+# ON ENTER
+# CALL WITH CALLBACK FUNCTION AS A PARAMETER
+#class KeyboardThread(threading.Thread):
+
+
+
+
+def main():
+    print()
+
+if __name__=="__main__":
+    Fire(main)
+
+"""
+
+    unit = "key_enter"
+    print(f"i...    creating  {unit}", end="")
+    NAME = f"{unit}.py"
+    UNIT1 = proj + "/" + NAME
+    with open(UNIT1, "w") as f:
+        f.write(result)
+    os.chmod(UNIT1, 0o775)
+    with cd(proj):
+        with cd(proj):
+            os.symlink("../"+NAME, NAME)
+    # --- link to test_unit.py
+    with cd(proj):
+        os.symlink(NAME, "test_"+NAME)
+    print("             [OK]")
+
+
+
+
+def create_unit(proj, unit):
+    result=f"""#!/usr/bin/env python3
+'''
+We create a unit, that will be the test_ unit by ln -s simoultaneously. Runs with 'pytest'
+'''
+from {proj}.version import __version__
+from fire import Fire
+from {proj} import config
+
+# print("v... unit '{unit}' loaded, version:",__version__)
+
+def func(debug = False):
+
+    print("D... in unit {unit} function func DEBUG may be filtered")
+    print("i... in unit {unit} function func - info")
+    print("X... in unit {unit} function func - ALERT")
+    return True
+
+def test_config_save():
+    config.CONFIG['filename'] = "~/.config/{proj}/cfg.json"
+    config.show_config()
+    print( config.get_config_file() )
+    return config.save_config()
+
+def test_config_read():
+    config.CONFIG['filename'] = "~/.config/{proj}/cfg.json"
+    config.load_config()
+    config.show_config()
+    print( config.get_config_file() )
+    assert config.save_config() == True
+
+def test_func():
+    print("i... TESTING function func")
+    assert func() == True
+
+if __name__ == "__main__":
+    print("i... in the __main__ of {unit} of {proj}")
+    Fire()
+
+    """
+    print(f"i...    creating  {unit}", end="")
+    NAME = f"{unit}.py"
+    UNIT1 = proj + "/" + NAME
+    with open(UNIT1, "w") as f:
+        f.write(result)
+    os.chmod(UNIT1, 0o775)
+    with cd(proj):
+        with cd(proj):
+            os.symlink("../"+NAME, NAME)
+    # --- link to test_unit.py
+    with cd(proj):
+        os.symlink(NAME, "test_"+NAME)
+    print("             [OK]")
+
+#    f = Path(UNIT1)
+#    f.chmod(f.stat().st_mode | stat.S_IEXEC)
+
+#===========================================================
+
+
+
+
+
+
+
+def create_config(proj, unit="config"):
+
+    result=f"""#!/usr/bin/env python3
+from {proj}.version import __version__
+from fire import Fire
+
+import json
+import os
+import sys
+# ----- port here. 5000 is flask; is moved to 8000 by gunicorn; to 80 by nginx
+CONFIG={{'x':640,
+        'y':480 ,
+        'interpolation':'None',
+        'mintime':0.1,       # normal picture rate
+        'videodev':0,
+        'filename':'~/.config/test/cfg.json',
+        'user':'aaa',
+        'password':'aaa',
+        'port':5000,
+        'change':None,
+        'autoiris':True,
+        'riris':1000,
+        'pantilt':False,
+        'pan':0,
+        'tilt':0,
+        'gamma_adjust':False,
+        'rgain':0,
+        'use_v4l':True,      # zdenek84 had a problem with. I try again
+        'quit':False         # this is howto quit
+}}
+
+#CFG_DEBUG = True
+#CFG_DEBUG = False
+
+
+#===========================================================
+#===========================================================
+#===========================================================
+
+def verify_config(filename = ""):
+    '''used inside, verification of bak json version'''
+    global CONFIG
+    if filename != "":
+        CONFIG['filename'] = filename
+    cfg = CONFIG['filename']
+    #if CFG_DEBUG:print("D... verifying config from",cfg)
+    ok = False
+    try:
+        if os.path.isfile( os.path.expanduser(cfg)):
+            with open(os.path.expanduser(cfg), "r") as f:
+                dicti = json.load(f)
+        ok = True
+        #if CFG_DEBUG:print("D... config verified")
+    except:
+        #if CFG_DEBUG:
+        print("D... verification config FAILED")
+    return ok
+
+def get_config_file():
+    ''' returns the filename where config is stored'''
+    global CONFIG
+    return CONFIG['filename']
+def show_config( cdict=None , filename = ""):
+    '''used inside, shows current config dictionary OR other dict'''
+    global CONFIG
+    if filename != "":
+        CONFIG['filename'] = filename
+    if cdict==None:
+        print( json.dumps(CONFIG, indent=1) )
+    else:
+        print( json.dumps(cdict, indent=1) )
+
+
+def cfg_to_bak(filenamebk="", filename = ""):
+    '''used inside, rename config (before save)'''
+    global CONFIG
+    if filename != "":
+        CONFIG['filename'] = filename
+
+    if filenamebk=="":
+        cfg = CONFIG['filename']
+    else:
+        cfg = filenamebk
+
+    cfgbak = cfg + ".bak"
+    #print("D... cfg:",cfg)
+    #print("D... cfgbak:",cfgbak)
+    #if CFG_DEBUG:
+    print("D... creating a backup config:", cfgbak )
+    if not os.path.isfile( os.path.expanduser(cfg)):
+        print(f"X... config {{cfg}} doesnt exist (yet?, OK)")
+        return True
+
+    ### rozXXXX
+    try:
+        os.rename(os.path.expanduser(cfg),
+                  os.path.expanduser(cfgbak))
+        result = True
+    except:
+        print("X... couldnt rename old:", cfg,"no bak file created")
+        result = False
+    return result
+
+
+def bak_to_cfg(filenamebk="", filename = ""):
+    '''used inside, rename back the bak version'''
+    global CONFIG
+    if filename != "":
+        CONFIG['filename'] = filename
+
+    if filenamebk=="":
+        cfg = CONFIG['filename']
+    else:
+        cfg = filenamebk
+
+    cfgbak = cfg + ".bak"
+    #if CFG_DEBUG:
+    print("D... testing if backup config exists:", cfgbak)
+    if os.path.isfile( os.path.expanduser(cfgbak)):
+        #if CFG_DEBUG:
+        print("D... BACUP config exists:",cfgbak, "... renaming to:", cfg)
+        os.rename(os.path.expanduser(cfgbak),
+                  os.path.expanduser(cfg))
+        #if CFG_DEBUG:print("D... config is recovered from:", cfgbak)
+    else:
+        #if CFG_DEBUG:
+        print("D... bak config did not exist:", cfgbak,"no bak file recovery")
+
+
+def save_config(filenamesv="", filename = ""): # duplicit... filename overrides
+    '''FRONT function, save config to filename'''
+    global CONFIG
+    if filename != "":
+        CONFIG['filename'] = filename
+
+    if filenamesv=="":
+        cfg = CONFIG['filename']
+    else:
+        cfg = filenamesv
+
+    print("D... calling cfg_to_bak:", cfg)
+    if not cfg_to_bak(cfg):
+        sys.exit(1)
+
+    print("D... writing config:", cfg)
+
+    ### rozxxx
+    dir2create = os.path.dirname( cfg )
+    #print("D...",dir2create)
+    if not os.path.isdir( os.path.expanduser(dir2create )):
+        print(f"D... trying to create directory {{dir2create}} if needed")
+        result = False
+        os.mkdir( os.path.expanduser(dir2create ))
+
+    with open(os.path.expanduser(cfg), "w+") as f:
+        f.write(json.dumps(CONFIG, indent=1))
+        #if CFG_DEBUG:print("D... config was written:", cfg)
+
+    if verify_config(filename):
+        #if CFG_DEBUG:
+        print("D... verified by verify_config ... ok ... ending here")
+        return True
+    #====ELSE RECOVER BAK
+    return bak_to_cfg()
+
+
+
+def load_config(filename=""):
+    '''FRONT function, load config file'''
+    global CONFIG
+    if filename != "":
+        CONFIG['filename'] = filename
+    cfg = CONFIG['filename']
+    cfg = cfg+".from_memory"
+    #if CFG_DEBUG:
+    print("D... calling save_config:")
+    save_config( cfg )
+
+    cfg = CONFIG['filename']
+    #if CFG_DEBUG:print("D... loading config from",cfg)
+
+    if not verify_config(filename):
+        print("X... FAILED on verifications")
+        return False
+
+    #if CFG_DEBUG:
+    print("D... passed verification of:",cfg)
+    dicti = CONFIG
+
+    #if CFG_DEBUG:
+    print("D... directly loading json:",cfg)
+    if os.path.isfile( os.path.expanduser(cfg)):
+        with open(os.path.expanduser(cfg), "r") as f:
+            dicti = json.load(f)
+
+    # rewriting in memory
+    if sorted(dicti.keys()) == sorted(CONFIG.keys()):
+        #if CFG_DEBUG:
+        print("D... memory and disk identical:")
+    else:
+        #if CFG_DEBUG:
+        print("X... memory and disk differ:")
+        # show_config(CONFIG)
+        # there may be more lines in the CODE after upgrade.
+        for k in CONFIG.keys(): # search CODE version
+            if not (k in dicti.keys()):
+                print("D... key not on DISK:", k )
+                dicti[k] = CONFIG[k]
+
+
+    CONFIG = dicti
+    #if CFG_DEBUG:
+    print("D... final CONFIG:")
+    #show_config(filename)
+    #if CFG_DEBUG:
+    print("D... end load")
+
+
+def loadsave(filename = ""):
+    '''FRONT function, if DISK is earlier version than CODE, this may update DISK'''
+    if filename != "":
+        CONFIG['filename'] = filename
+
+    load_config(filename)
+    save_config() #?
+
+
+
+#==========================================================
+
+
+
+def func(debug = False):
+
+    print("D... in unit config function func DEBUG may be filtered")
+    print("i... in unit config function func - info")
+    print("X... in unit config function func - ALERT")
+    return True
+
+def test_func():
+    print("i... TESTING function func")
+    assert func() == True
+
+if __name__ == "__main__":
+    print("i... in the __main__ of config of codeframe")
+    Fire()
+
+
+    """
+    print(f"i...    creating  {unit}", end="")
+    NAME = f"{unit}.py"
+    UNIT1 = proj + "/" + NAME
+    with open(UNIT1, "w") as f:
+        f.write(result)
+    os.chmod(UNIT1, 0o775)
+    with cd(proj):
+        with cd(proj):
+            os.symlink("../"+NAME, NAME)
+    # --- link to test_unit.py
+#    with cd(proj):
+#        os.symlink(NAME, "test_"+NAME)
+#    print("             [OK]")
+
+#    f = Path(UNIT1)
+#    f.chmod(f.stat().st_mode | stat.S_IEXEC)
+
+#===========================================================
+
+
+
+
+#============= I dont use anymore =================
+def create_prj_utils(proj):
+    # \033 -> \\033 to keep \033
+    # {} is not possible to have unless some \{\}
+    result=f'''#!/usr/bin/env python3
+"""
+This is a package to: #***now I try to do globally and better#
+ -  systematically load data that are localy here.
+ -  replace print function to
+     - remove debug  D...
+     - print i... stuff to stderr
+     - ...
+"""
+
+import pkg_resources  # to be able to read data in package
+from fire import Fire
+import sys
+import builtins as __builtin__
+
+
+def fail(t):
+    print("")
+    print(t)
+    sys.exit()
+
+def get_file_path(filename):
+
+    """returns full path to data stored in {proj}/data"""
+
+    ret = pkg_resources.resource_filename('{proj}',
+                                        'data/'+filename )
+    return ret
+
+
+
+if __name__=="__main__":
+    Fire(get_file_path)
+'''
+
+    print("i...    running  prj_utils.py - helper unit creation", end="")
+    NAME = "prj_utils.py"
+
+
+    UNIT1 = proj + "/" + NAME
+    with open(UNIT1, "w") as f:
+        f.write(result)
+    os.chmod(UNIT1, 0o775)
+    with cd(proj):
+        with cd(proj):
+            os.symlink("../"+NAME, NAME)
+    # --- link to test_unit.py
+    #with cd(proj):
+    #    os.symlink(NAME, "test_"+NAME)
+    print("             [OK]")
+#============= I dont use anymore =================
+
+
+
+
+
+
+
+
+
+#==============================================
+def create_readme(proj, unit):
+    md=f"""# Project {proj}
+
+this MD file will be overwritten after ./distcheck !!
+
+Use .org file
+
+** generated automatically **
+
+## Module {unit}.py
+** generated automatically
+
+"""
+
+
+
+    org=f"""* Project {proj}
+~generated automatically~
+
+=this ORG file will be used to generate the content of MD file=
+
+** Module {unit}.py
+~generated automatically~
+
+"""
+    print("i...    creating  readme", end="")
+    NAME = "README.org"
+    FIPY = proj+"/"+ NAME
+    with open(FIPY, "w") as f:
+        f.write(org)
+    NAME = "README.md"
+    FIPY = proj+"/"+ NAME
+    with open(FIPY, "w") as f:
+        f.write(md)
+    print("             [OK]")
+
+
+
+#==============================================
+
+def create_distcheck(proj):
+    result=f"""#/bin/bash
+
+rm dist/*
+
+pip3 freeze  | grep twine
+if [ "$0" != "0" ]; then
+  echo X... pip3 install twine
+  exit 1
+fi
+
+pip3 freeze  | grep -e "bumpversion="
+if [ "$0" != "0" ]; then
+  echo X... pip3 install bumpversion
+  exit 1
+fi
+
+
+python3 setup.py sdist
+twine check dist/*
+echo "                                 ok? passed?  ENTER then"
+echo "                                 ok? passed?  ENTER then"
+echo " - check  correctness of download/url and email"
+echo " - AND        !!!  I WILL CONVERT README.org to README.md"
+echo "                                 ok? passed?  ENTER then"
+
+echo "D...  convert ORG to MARKDOWN automatically"
+if [ -e README.org ]; then
+    pandoc README.org -o README.md
+fi
+
+echo diff bin_{proj}.py bin/{proj}
+diff  bin_{proj}.py bin/{proj}
+if [ "$?" != "0" ]; then
+
+  echo X... difference bin and bin
+  exit 1
+fi
+
+echo " - i will run"
+echo "        - git commit"
+echo "        - bumpversion patch"
+echo "        - bumpversion release"
+echo "        - twine upload !!!!!"
+echo "                                 ok?          ENTER then"
+read a
+
+git commit -a -m "automatic commit from distcheck"
+bumpversion patch
+bumpversion release
+rm dist/*
+python3 setup.py sdist
+twine check dist/*
+echo " "
+echo " "
+echo SUGGESTIONS:=======================================================
+#
+echo "twine upload --repository-url https://test.pypi.org/legacy/ dist/*"
+echo "pip3 install --index-url https://test.pypi.org/simple/ notifator"
+echo "pip3 install --index-url https://test.pypi.org/simple/ notifator --upgrade"
+#
+echo " "
+echo "          real PyPI UPLOAD (after bumpversion release):"
+echo "          real PyPI UPLOAD (after bumpversion release):"
+echo "twine upload dist/*"
+echo " ... "
+twine upload  dist/*
+
+echo "i... pushing newly created tags to GITREPO"
+git push origin main --tags
+"""
+    print("i...    creating  distcheck", end="")
+    NAME = "distcheck"
+    FIPY = proj+"/"+ NAME
+    with open(FIPY, "w") as f:
+        f.write(result)
+    os.chmod(FIPY, 0o775)
+    print("             [OK]")
+
+
+
+#==============================================
+
+def create_installme(proj):
+    result=f"""#/bin/bash
+echo i... no install now
+"""
+    print("i...    creating  installme", end="")
+    NAME = "install.me"
+    FIPY = proj+"/"+ NAME
+    with open(FIPY, "w") as f:
+        f.write(result)
+    os.chmod(FIPY, 0o775)
+    print("             [OK]")
+
+
+
+
+#bump2version==1.0.1
+#==============================================
+
+def create_requirements(proj):
+    result=f"""bleach==3.1.0
+certifi==2020.6.20
+chardet==3.0.4
+docutils==0.14
+idna==2.8
+pkginfo==1.5.0.1
+Pygments==2.3.1
+readme-renderer==24.0
+requests==2.21.0
+requests-toolbelt==0.9.1
+six==1.12.0
+tqdm==4.31.1
+twine==1.13.0
+urllib3==1.24.1
+webencodings==0.5.1
+fire==0.2.1
+pytest==5.3.4
+console
+sshkeyboard
+"""
+    print("i...    creating  requirements", end="")
+    NAME = "requirements.txt"
+    FIPY = proj+"/"+ NAME
+    with open(FIPY, "w") as f:
+        f.write(result)
+    print("             [OK]")
+
+
+
+
+
+
+#==============================================
+
+def create_binary(proj, unit):
+    result1=f"""#!/usr/bin/env python3
+
+# to override print <= can be a big problem with exceptions
+from __future__ import print_function # must be 1st
+import builtins
+
+import sys
+
+from fire import Fire
+
+from {proj}.version import __version__
+from {proj} import {unit}
+from {proj} import config
+
+
+from {proj}  import topbar
+from {proj}  import key_enter
+import time
+import datetime as dt
+from console import fg,bg,fx
+
+def main(cmd = "usage", debug=False):
+    ''' Main function of the project
+    '''
+
+    #======== DEFINE THE CONFIG FILE HERE ========
+
+    config.CONFIG['filename'] = "~/.config/{proj}/cfg.json"
+    # config.load_config()
+    # config.save_config()
+
+    if cmd == "usage":
+        print(''' ... usage:
+        	 _
+        ''')
+        #sys.exit(0)
+    else:
+        {unit}.func()
+"""
+    result2="""
+    # ===================== top bar and keyboard ==========
+
+    top = topbar.Topbar( bgcolor = bg.blue)
+    top2 = top.add( bgcolor = bg.black)
+    kthread = key_enter.KeyboardThreadSsh(ending="q")
+
+
+
+    while True: # ================================= LOOP
+        time.sleep(0.05)
+        top.print_to(  10, f" {fg.white}{fx.bold}{dt.datetime.now()}{fx.default}{fg.default} ")
+
+        key,enter,abc = kthread.get_global_key()
+        (a,b) = abc # unpack tuple
+
+        if enter:
+            #print("--------------------------------------ENTER")
+            if key.strip()=="q":
+                break
+            cmd = key.strip()
+            print(f"----------------------- {cmd} --------------------- ***")
+        else:
+            cmd = ""
+        arg = ""
+
+        if len(key)==0:
+            top2.print_to( 0, f"{fg.cyan}{bg.black}{' '*80}{bg.black}")
+        else:
+            top2.print_to( 0, f"{fg.white}{bg.red} > {fx.bold}{a}{fg.yellow}_{fg.white}{b}{fx.default}{fg.default}{bg.default} ")
+        top.place()
+
+#====================================================================
+
+if __name__=="__main__":
+    Fire(main)
+
+
+"""
+    print("i...    creating  bin script", end="")
+    NAME = proj
+    FIPY = proj+"/bin/"+ NAME
+    with open(FIPY, "w") as f:
+        f.write(result1)
+        f.write("\n")
+        f.write(result2)
+    os.chmod(FIPY, 0o775)
+    print("             [OK]")
+    print("i...    creating hardlink", end="")
+    NAME = proj
+    FIPY = proj+"/bin/"+ NAME
+    os.link(FIPY, proj+"/bin_"+proj+".py")
+    print("             [OK]")
+
+
+#==============================================
+
+def create_bumpversion(proj):
+    result="""[bumpversion]
+current_version = 0.0.0-dev0
+commit = True
+tag = True
+parse = (?P<major>\d+)\.(?P<minor>\d+)\.(?P<patch>\d+)(\-(?P<release>[a-z]+)(?P<build>\d+))?
+serialize =
+	{major}.{minor}.{patch}-{release}{build}
+	{major}.{minor}.{patch}
+
+[bumpversion:part:release]
+optional_value = prod
+first_value = dev
+values =
+	dev
+	prod
+
+[bumpversion:part:build]
+
+[bumpversion:file:version.py]
+search = __version__="{current_version}"
+replace = __version__="{new_version}"
+
+"""
+    print("i...    creating  .bumpversion.cfg", end="")
+    NAME = ".bumpversion.cfg"
+    FIPY = proj+"/"+ NAME
+    with open(FIPY, "w") as f:
+        f.write(result)
+    #os.chmod(FIPY, 0o775)
+    print("             [OK]")
+
+
+
+#==============================================
+
+def create_setup(proj):
+    result=f"""#!/usr/bin/env python3
+import os
+from setuptools import setup, find_packages
+
+#-----------problematic------
+def read(fname):
+    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+
+import os.path
+
+def readver(rel_path):
+    here = os.path.abspath(os.path.dirname(__file__))
+    with open(os.path.join(here, rel_path), 'r') as fp:
+        return fp.read()
+
+def get_version(rel_path):
+    for line in readver(rel_path).splitlines():
+        if line.startswith('__version__'):
+            delim = '"' if '"' in line else "'"
+            return line.split(delim)[1]
+    else:
+        raise RuntimeError("Unable to find version string.")
+
+setup(
+    name="{proj}",
+    description="Automatically created environment for python package",
+    author="me",
+    url="http://gitlab.com/me/{proj}",
+    author_email="mail@gmail.com",
+    license="GPL2",
+    version=get_version("{proj}/version.py"),
+    packages=['{proj}'],
+    package_data={{'{proj}': ['data/*']}},
+    long_description=read('README.md'),
+    long_description_content_type='text/markdown',
+    scripts = ['bin/{proj}'],
+    install_requires = ['fire','console','sshkeyboard'],
+)
+"""
+    print("i...    creating  setup", end="")
+    NAME = "setup.py"
+    FIPY = proj+"/"+ NAME
+    with open(FIPY, "w") as f:
+        f.write(result)
+    os.chmod(FIPY, 0o775)
+    print("             [OK]")
+
+
+
+#==============================================
+
+def install_requirements(proj):
+    print("i...    creating  requirements", end="")
+    CMD = "pip3 install -r "+proj+"/requirements.txt"
+    res=s.check_output(CMD.split()).decode("utf8").split("\n")
+    print("             [OK]")
+
+
+#==============================================
+
+def usage_bumpversion(proj):
+    result="""
+# DONT use bumpversion.....
+# use bump2version .... check .bumpversion.cfg for search string
+# NONONO NO!... bumpversion again.....
+git commit -a
+gca # in zsh
+bumpversion patch
+bumpversion minor
+bumpversion release
+gpoat  # in zsh
+"""
+    print("i...    creating  usage_bump", end="")
+    NAME = "usage_bumpversion.md"
+    FIPY = proj+"/"+ NAME
+    with open(FIPY, "w") as f:
+        f.write(result)
+    print("             [OK]")
+
+
+
+#==============================================
+
+def usage_developmentcycle(proj):
+    result=f"""
+## Development line:
+
+ * install the package in development mode in your environment with all requirements:
+     - `pip3 install -e .`
+     - remove with `pip3 uninstall project`
+
+ * standard procedure to commit and eventually tag versions
+  ```
+  git commit -a
+  bumpversion patch
+  # bumpversion minor
+  # bumpversion release
+  ```
+
+ * prepare distribution and upload to PyPI
+  ```
+   ./distcheck
+   #SUGGESTIONS:
+   # TEST
+   # twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+   # install back from PyPI
+   # pip3 install --index-url https://test.pypi.org/simple/ nuphy
+   # pip3 install --index-url https://test.pypi.org/simple/ nuphy  --upgrade
+   # ======= REAL CASE =============
+   #     bumpversion release
+   # twine upload --repository-url https://pypi.org/ dist/*
+   # pip3 install {proj}
+   # pip3 install  {proj}  --upgrade
+"""
+    print("i...    creating  usage_developmentcycle", end="")
+    NAME = "usage_developmentcycle.md"
+    FIPY = proj+"/"+ NAME
+    with open(FIPY, "w") as f:
+        f.write(result)
+
+    print("             [OK]")
+
+
+#==============================================
+
+def create_gitignore(proj):
+    result=f"""*.egg-info
+usage_tox.md
+__pycache__
+__init__.pyc
+dist
+*~
+"""
+    print("i...    creating  .gitignore", end="")
+    NAME = ".gitignore"
+    FIPY = proj+"/"+ NAME
+    with open(FIPY, "w") as f:
+        f.write(result)
+    print("             [OK]")
+
+
+#==============================================
+
+def init_git(proj):
+    print("D... INITGIT")
+    print("i...    running  init git", end="")
+
+    with cd(proj):
+        CMD="git init ."
+        s.check_output(CMD.split())
+        print("------------------add")
+        CMD="git add ."
+        s.check_output(CMD.split())
+        CMD='git commit -a -m "First_Automatic_Commit"'
+        s.check_output(CMD.split())
+        CMD='bumpversion patch'
+        s.check_output(CMD.split())
+    print("             [OK]")
+
+
+#==============================================
+
+def init_test(proj):
+    print("i...    running  pytest", end="")
+    with cd(proj):
+        CMD="pytest"
+        res=s.check_call(CMD.split())
+        print(res, end="")
+    print("             [OK]")
+
+
+
+
+
+
+#=======================================================================================
+class Bcolors:
+    HEADER = '[95m'
+    OKBLUE = '[94m'
+    OKGREEN = '[92m'
+    WARNING = '[93m'
+    FAIL = '[91m'
+    ENDC = '[0m'
+    BOLD = '[1m'
+    UNDERLINE = '[4m'
+
+
+def main(proj, unit="unitname", create_only=False, oneunit=False, debug = False):
+    """ codeframe  projname [unitname]  OR codeframe -h
+
+    codeframe projname [unitname]
+    codeframe projname [unitname] -c (no git no test)
+    codeframe foo -o  (print a module)
+"""
+
+    if not debug:
+        _print = print # keep a local copy of the original print
+        builtins.print =lambda *args, **kwargs:  None  if (isinstance(args[0], str)) and (args[0].find("D...")==0) else  _print( *args, **kwargs) if ('file' in kwargs) else _print( "{}".format(Bcolors.FAIL   if ((isinstance(args[0], str)) and (args[0].find("X...")>=0)) else Bcolors.ENDC) , *args, Bcolors.ENDC, **kwargs, file=sys.stderr)
+    else:
+        # debug - show all + colors
+        _print = print # keep a local copy of the original print
+        builtins.print =lambda *args, **kwargs:   _print( *args, **kwargs) if ('file' in kwargs) else _print( "{}".format(Bcolors.FAIL   if ((isinstance(args[0], str)) and (args[0].find("X...")>=0)) else Bcolors.OKGREEN if  ((isinstance(args[0], str)) and (args[0].find("i...")>=0)) else Bcolors.ENDC  ), *args, Bcolors.ENDC, **kwargs, file=sys.stderr)
+
+
+
+    if oneunit:
+        print(f"D.. .printing one unit only ... {proj}.py\n")
+        fs = """#!/usr/bin/env python3
+from fire import Fire
+
+def main(cmd):
+    print("D... ahoj")
+
+if __name__ == "__main__":
+    Fire(main)
+"""
+        print(fs)
+        sys.exit(0)
+    if check_env("VIRTUAL_ENV"):
+        print("i... You are in VIRT ENVironment")
+    else:
+        print("x... You are NOT in VIRT ENVironment")
+
+    if not check_pip("pytest"):
+        print("X... install pytest please")
+        sys.exit(1)
+    if not check_pip("fire"):
+        print("X... install fire please")
+        sys.exit(1)
+
+
+    exdir = os.path.isdir(proj)
+    print("i... checking directory {:20s}          [{}]".format(proj, exdir) )
+    if exdir:
+        print("X... project directory already exists                 [quit]")
+        sys.exit(1)
+    os.mkdir(proj)
+    os.mkdir(proj+"/bin")
+    os.mkdir(proj+"/data")
+    os.mkdir(proj+"/"+proj)
+    #os.mkdir(proj+"")
+    #os.mkdir(proj+"")
+    #--- version; unit; __init__ ==> ./unit1.py should work=====
+    create_version(proj)
+    create_unit(proj, unit)
+    create_unit_keyb(proj)
+    create_unit_topbar(proj)
+
+    create_config(proj )
+    #create_prj_utils(proj) # I dont use anymore
+    create_init(proj)
+    create_binary(proj, unit)
+    #--- now - it should be possible to run ./unit1.py==========
+    # AUXILIARY FILES.....
+    create_readme(proj, unit)
+    create_distcheck(proj)
+    create_requirements(proj)
+    create_bumpversion(proj)
+    #---------------------------------SETUP
+    create_setup(proj)
+    #==============================
+    #install_requirements(proj)
+    usage_bumpversion(proj)
+    usage_developmentcycle(proj)
+    create_gitignore(proj)
+    if not create_only:
+        init_git(proj)
+        init_test(proj)
+        print(f"i... HIGHLY PROBABLY I CREATED ~/.config/{proj}/cfg.conf - during pytest")
+
+
+    print("______________________________")
+    print(f"cd {proj}; ./bin_{proj}.py test; echo __; ./bin_{proj}.py test -d; cd ..")
+    print("______________________________")
+
+
+
+if __name__=="__main__":
+    Fire(main)
