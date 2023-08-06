@@ -1,0 +1,10 @@
+# https://www.fabfile.org/
+fabric
+# https://github.com/salabim/ycecream
+ycecream
+# https://www.pyinvoke.org/
+invoke
+# yaml
+pyyaml
+
+tabulate
