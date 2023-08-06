@@ -1,0 +1,8 @@
+[project]
+name = "david-rust-bin-pypi-test"
+version = "2020.0.3"
+
+[tool.setuptools]
+# If there are data files included in your packages that need to be
+# installed, specify them here.
+package-data = {"macos" = ["*.exe"]}
