@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+executor_http.egg-info/PKG-INFO
+executor_http.egg-info/SOURCES.txt
+executor_http.egg-info/dependency_links.txt
+executor_http.egg-info/not-zip-safe
+executor_http.egg-info/requires.txt
+executor_http.egg-info/top_level.txt

@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: executor-http
+Version: 0.1.0
+Summary: HTTP Server and Client for executor.
+Home-page: https://github.com/Nanguage/executor-http
+Author: Weize Xu
+Author-email: vet.xwz@gmail.com
+License: MIT
+Keywords: Job Management,Web,HTTP
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.7, <4
+Provides-Extra: dev
+Provides-Extra: dask
+License-File: LICENSE
+
+See https://github.com/Nanguage/executor-http
