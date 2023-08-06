@@ -1,0 +1,8 @@
+README.md
+setup.py
+hydrotrack/__init__.py
+hydrotrack/__main__.py
+hydrotrack.egg-info/PKG-INFO
+hydrotrack.egg-info/SOURCES.txt
+hydrotrack.egg-info/dependency_links.txt
+hydrotrack.egg-info/top_level.txt
