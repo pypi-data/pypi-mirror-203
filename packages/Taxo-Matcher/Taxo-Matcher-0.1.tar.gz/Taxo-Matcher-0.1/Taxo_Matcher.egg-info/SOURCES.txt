@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Taxo_Matcher.egg-info/PKG-INFO
+Taxo_Matcher.egg-info/SOURCES.txt
+Taxo_Matcher.egg-info/dependency_links.txt
+Taxo_Matcher.egg-info/entry_points.txt
+Taxo_Matcher.egg-info/requires.txt
+Taxo_Matcher.egg-info/top_level.txt
+taxomatcher/__init__.py
+taxomatcher/__main__.py
+taxomatcher/entrez_matcher.py
+taxomatcher/gbif_matcher.py
+taxomatcher/taxomatcher.py
