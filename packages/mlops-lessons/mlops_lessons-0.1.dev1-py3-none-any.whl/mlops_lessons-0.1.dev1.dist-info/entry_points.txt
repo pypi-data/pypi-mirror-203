@@ -1,0 +1,3 @@
+[console_scripts]
+training = mlops_lessons.jobs.training:main
+
