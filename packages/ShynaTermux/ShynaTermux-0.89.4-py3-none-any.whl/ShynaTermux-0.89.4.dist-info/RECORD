@@ -1,0 +1,11 @@
+ShynaTermux/ShynaTermuxSetup.py,sha256=M87RcdAIWywCIRe0gY6b4-q8VTN5HWCBH3LATCkg8wk,2229
+ShynaTermux/Shyna_check_charge.py,sha256=oV8B1X30f-SB6VYgnoH-c5gnHJwjjgyVEzCHhsMmIpY,859
+ShynaTermux/Shyna_get_connection.py,sha256=PZFwEck8Sq0GHYVzKVxPBkq1Ry8osc6jzUodKpHNZ2Q,1677
+ShynaTermux/Shyna_get_location.py,sha256=gdZggd5C_yLFQjktIhbdX9VkS8weZQOAXhzvmeJCTYU,2451
+ShynaTermux/Shyna_setup_test.py,sha256=ZoKEXdsvQxCe1s4e7hWQHhAVeYQ3WNnbXvz1wuYYRQs,431
+ShynaTermux/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ShynaTermux-0.89.4.dist-info/LICENSE,sha256=CaIPV_TRrt-AaAWAkNKLQOlscJkLeTgFSuyqQArSsP4,1070
+ShynaTermux-0.89.4.dist-info/METADATA,sha256=obqA0VNRmdlTJvjFBjJjLK0mQbnD-l3FpxSh2RclOaU,385
+ShynaTermux-0.89.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ShynaTermux-0.89.4.dist-info/top_level.txt,sha256=ApErBE8YcEC0_2BRoLmXJcu0eKCKhTMd0lpL-D-jp1E,12
+ShynaTermux-0.89.4.dist-info/RECORD,,
