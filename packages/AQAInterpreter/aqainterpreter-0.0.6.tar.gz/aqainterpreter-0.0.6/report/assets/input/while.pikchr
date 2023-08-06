@@ -1,0 +1,27 @@
+linerad = 10px
+linewid *= 0.5
+$h = 0.21
+
+C1: circle rad 10%
+down
+arrow linewid
+IF: oval "WHILE" fit
+right
+arrow
+
+EXPR: box "expression" fit
+THEN: oval "THEN" fit with .w at (2*linerad+arrowwid right of EXPR.end, 0.8*$h above EXPR)
+COLON: oval ":" fit at (THEN.c, 0.8*$h below EXPR)
+DECL: box "declarations" fit at (EXPR, 1.25*$h below COLON)
+END: box "END" fit at (IF, 2.1*$h below DECL)
+
+arrow from EXPR.end right even with linerad right of THEN.end then down even with DECL then to DECL.end
+arrow from EXPR.end right linerad then up even with THEN then to THEN.start
+arrow from EXPR.end right linerad then down even with COLON then to COLON.start
+line from THEN.end right linerad then down even with DECL.n
+line from COLON.end right even with linerad right of THEN.end then down linerad
+
+arrow from DECL.start left even with END then down to END.n
+
+circle with .w at linewid right of END.end radius 10%
+arrow from END.end to last circle.w

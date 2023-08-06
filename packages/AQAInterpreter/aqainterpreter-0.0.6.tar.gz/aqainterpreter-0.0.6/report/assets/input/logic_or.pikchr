@@ -1,0 +1,18 @@
+linerad = 10px
+linewid *= 0.5
+$h = 0.21
+
+circle radius 10%
+arrow
+B1: box "logic and" fit
+B2: box "logic and" fit with .w at (linewid+linerad right of B1.e, 0.625*$h below B1)
+OR: oval "OR" fit with .w at (linewid right of B2.e, 0.625*$h below B1)
+C2: circle radius 10% with .w at (linewid+linerad right of OR.e, first circle)
+
+arrow from B1.end
+arrow up 0.625*$h then right even with B2.end
+line right even with linewid left of C2.start then down even with OR then to OR.end
+arrow from C2.start left linewid <-
+
+arrow from OR.start to B2.end
+line from B2.start left even with linewid right of B1.end then up 2*linerad

@@ -1,0 +1,10 @@
+<svg xmlns='http://www.w3.org/2000/svg' class="pikchr" viewBox="0 0 165.946 34.56">
+<circle cx="5" cy="17" r="3.6"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<polygon points="45,17 33,21 33,12" style="fill:rgb(0,0,0)"/>
+<path d="M9,17L39,17"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M45,32L120,32L120,2L45,2Z"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="82" y="17" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">logic or</text>
+<polygon points="156,17 145,21 145,12" style="fill:rgb(0,0,0)"/>
+<path d="M120,17L150,17"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<circle cx="160" cy="17" r="3.6"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns='http://www.w3.org/2000/svg' class="pikchr" viewBox="0 0 290.534 34.56">
+<circle cx="5" cy="17" r="3.6"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<polygon points="45,17 33,21 33,12" style="fill:rgb(0,0,0)"/>
+<path d="M9,17L39,17"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M45,32L161,32L161,2L45,2Z"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="103" y="17" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">declarations</text>
+<polygon points="197,17 185,21 185,12" style="fill:rgb(0,0,0)"/>
+<path d="M161,17L191,17"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M212,32L230,32A15 15 0 0 0 245 17A15 15 0 0 0 230 2L212,2A15 15 0 0 0 197 17A15 15 0 0 0 212 32Z"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="221" y="17" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">EOF</text>
+<polygon points="281,17 269,21 269,12" style="fill:rgb(0,0,0)"/>
+<path d="M245,17L275,17"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<circle cx="284" cy="17" r="3.6"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+</svg>

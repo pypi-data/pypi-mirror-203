@@ -1,0 +1,20 @@
+<svg xmlns='http://www.w3.org/2000/svg' class="pikchr" viewBox="0 0 297.638 85.752">
+<path d="M99,45L194,45L194,15L99,15Z"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="147" y="30" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">statement</text>
+<path d="M56,83L237,83L237,53L56,53Z"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="147" y="68" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">variable declaration</text>
+<circle cx="5" cy="6" r="3.6"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M9,6L147,6"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<polygon points="162,6 150,10 150,2" style="fill:rgb(0,0,0)"/>
+<path d="M147,6L156,6"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M162,6L237,6"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M237,6L273,6"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M273,6L288,6"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<circle cx="291" cy="6" r="3.6"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<polygon points="99,30 87,34 87,26" style="fill:rgb(0,0,0)"/>
+<path d="M9,6 L 16,6 Q 24,6 24,18 Q 24,30 39,30 L 78,30 L 93,30"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M194,30 L 265,30 Q 280,30 280,18 Q 280,6 284,6 L 288,6"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<polygon points="56,68 45,72 45,64" style="fill:rgb(0,0,0)"/>
+<path d="M9,6 L 16,6 Q 24,6 24,21 L 24,53 Q 24,68 37,68 L 50,68"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M237,68 L 265,68 Q 280,68 280,53 L 280,21 Q 280,6 284,6 L 288,6"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+</svg>

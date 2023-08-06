@@ -1,0 +1,13 @@
+<svg xmlns='http://www.w3.org/2000/svg' class="pikchr" viewBox="0 0 215.021 61.56">
+<circle cx="5" cy="17" r="3.6"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<polygon points="54,17 42,21 42,12" style="fill:rgb(0,0,0)"/>
+<path d="M9,17L48,17"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M54,32L161,32L161,2L54,2Z"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="107" y="17" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">declaration</text>
+<polygon points="205,17 194,21 194,12" style="fill:rgb(0,0,0)"/>
+<path d="M161,17L199,17"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<circle cx="209" cy="17" r="3.6"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<polygon points="98,55 110,50 110,59" style="fill:rgb(0,0,0)"/>
+<path d="M161,17 L 168,17 Q 176,17 176,32 L 176,40 Q 176,55 161,55 L 119,55 L 104,55"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M98,55 L 45,55 Q 30,55 30,40 L 30,32 Q 30,17 42,17 L 54,17"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+</svg>

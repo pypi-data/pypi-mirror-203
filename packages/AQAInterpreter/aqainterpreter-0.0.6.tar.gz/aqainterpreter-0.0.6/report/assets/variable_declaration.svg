@@ -1,0 +1,18 @@
+<svg xmlns='http://www.w3.org/2000/svg' class="pikchr" viewBox="0 0 384.307 34.56">
+<circle cx="5" cy="17" r="3.6"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<polygon points="45,17 33,21 33,12" style="fill:rgb(0,0,0)"/>
+<path d="M9,17L39,17"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M60,32L119,32A15 15 0 0 0 134 17A15 15 0 0 0 119 2L60,2A15 15 0 0 0 45 17A15 15 0 0 0 60 32Z"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="89" y="17" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">identifier</text>
+<polygon points="170,17 159,21 159,12" style="fill:rgb(0,0,0)"/>
+<path d="M134,17L164,17"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M185,32A15 15 0 0 0 200 17A15 15 0 0 0 185 2A15 15 0 0 0 170 17A15 15 0 0 0 185 32Z"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="185" y="17" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">←</text>
+<polygon points="236,17 225,21 225,12" style="fill:rgb(0,0,0)"/>
+<path d="M200,17L231,17"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M236,32L338,32L338,2L236,2Z"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="287" y="17" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">expression</text>
+<polygon points="374,17 363,21 363,12" style="fill:rgb(0,0,0)"/>
+<path d="M338,17L369,17"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<circle cx="378" cy="17" r="3.6"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns='http://www.w3.org/2000/svg' class="pikchr" viewBox="0 0 203.386 147.96">
+<circle cx="5" cy="17" r="3.6"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<polygon points="45,17 33,21 33,12" style="fill:rgb(0,0,0)"/>
+<path d="M9,17L39,17"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M60,32L142,32A15 15 0 0 0 158 17A15 15 0 0 0 142 2L60,2A15 15 0 0 0 45 17A15 15 0 0 0 60 32Z"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="101" y="17" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">ENDWHILE</text>
+<polygon points="194,17 182,21 182,12" style="fill:rgb(0,0,0)"/>
+<path d="M158,17L188,17"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<circle cx="197" cy="17" r="3.6"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M79,70L124,70A15 15 0 0 0 139 55L139,55A15 15 0 0 0 124 39L79,39A15 15 0 0 0 64 55L64,55A15 15 0 0 0 79 70Z"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="101" y="55" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">ENFOR</text>
+<path d="M82,108L121,108A15 15 0 0 0 136 92A15 15 0 0 0 121 77L82,77A15 15 0 0 0 67 92A15 15 0 0 0 82 108Z"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="101" y="92" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">ENDIF</text>
+<path d="M91,145L112,145A15 15 0 0 0 127 130A15 15 0 0 0 112 115L91,115A15 15 0 0 0 76 130A15 15 0 0 0 91 145Z"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<text x="101" y="130" text-anchor="middle" fill="rgb(0,0,0)" dominant-baseline="central">END</text>
+<polygon points="64,55 52,59 52,50" style="fill:rgb(0,0,0)"/>
+<path d="M9,17 L 16,17 Q 24,17 24,32 L 24,40 Q 24,55 39,55 L 43,55 L 58,55"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M139,55 L 158,55 Q 173,55 173,40 L 173,32 Q 173,17 181,17 L 188,17"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<polygon points="67,92 55,97 55,88" style="fill:rgb(0,0,0)"/>
+<path d="M9,17 L 16,17 Q 24,17 24,32 L 24,77 Q 24,92 39,92 L 46,92 L 61,92"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M136,92 L 158,92 Q 173,92 173,77 L 173,32 Q 173,17 181,17 L 188,17"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<polygon points="76,130 64,135 64,126" style="fill:rgb(0,0,0)"/>
+<path d="M9,17 L 16,17 Q 24,17 24,32 L 24,115 Q 24,130 39,130 L 55,130 L 70,130"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+<path d="M127,130 L 158,130 Q 173,130 173,115 L 173,32 Q 173,17 181,17 L 188,17"  style="fill:none;stroke-width:2.16;stroke:rgb(0,0,0);" />
+</svg>

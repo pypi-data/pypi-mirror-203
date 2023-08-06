@@ -1,0 +1,12 @@
+linewid *= 1.75
+
+F: file "src"
+arrow "tokenization /" above "lexical analysis" above
+box "tokens"
+arrow "parsing /" above "syntactic analysis" above
+AST: box "abstract syntax" "tree"
+IR: box "intermediary" "code" at (F, 2 * boxht below  F)
+arrow "optimized" above
+box "machine" "code"
+arrow from AST.end right 2*arrowwid then down even with 1.125*boxht below F then left even with IR then to IR.top "traversed" below
+#arrow right arrowwid then down then left even with
