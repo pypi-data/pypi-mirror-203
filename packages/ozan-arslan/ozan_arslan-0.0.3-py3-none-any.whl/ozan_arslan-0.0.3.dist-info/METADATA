@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: ozan-arslan
+Version: 0.0.3
+Summary: A small example package
+Author-email: Example Author <author@example.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# OzanArslan
+
+This code implements a OzanArslan class that displays a scrolling text on the console screen. The text moves continuously to the right, and when it reaches the end of the screen, it wraps back to the beginning.
+
+## Requirements
+
+- Python 3.x
+
+## Usage
+To use the OzanArslan class, simply create an instance of the class and call its run() method:
+
+```sh
+from ozan.ozan import OzanArslan
+
+ozan = OzanArslan()
+ozan.run()
+```
+
+
