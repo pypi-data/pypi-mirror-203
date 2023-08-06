@@ -1,0 +1,1 @@
+This package provides a CLI for converting IMS tracing data objects to XML.

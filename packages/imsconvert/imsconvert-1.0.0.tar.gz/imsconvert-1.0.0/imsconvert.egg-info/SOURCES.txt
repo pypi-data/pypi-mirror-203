@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+imsconvert/__init__.py
+imsconvert/cliops.py
+imsconvert/main.py
+imsconvert/reader.py
+imsconvert/writer.py
+imsconvert.egg-info/PKG-INFO
+imsconvert.egg-info/SOURCES.txt
+imsconvert.egg-info/dependency_links.txt
+imsconvert.egg-info/entry_points.txt
+imsconvert.egg-info/requires.txt
+imsconvert.egg-info/top_level.txt
