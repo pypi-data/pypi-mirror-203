@@ -1,0 +1,8 @@
+cubicweb>=3.26
+cubicweb-eac>=0.8.4
+cubicweb-skos>=2.0.0
+cubicweb-compound>=0.7
+cubicweb-relationwidget>=0.4
+cubicweb-squareui
+pyxst>=0.3.2
+rdflib<6.0.0,>=4.1
