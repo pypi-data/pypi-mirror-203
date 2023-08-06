@@ -1,0 +1,14 @@
+prov>=2.0.0
+git-python
+python-gitlab
+jsonschema
+ruamel.yaml
+pydot>=1.2.0
+click
+
+[dev]
+pytest
+pytest-mock
+black
+isort
+bump2version
