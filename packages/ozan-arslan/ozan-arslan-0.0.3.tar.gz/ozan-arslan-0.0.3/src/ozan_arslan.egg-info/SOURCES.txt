@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/ozan/__init__.py
+src/ozan/ozan.py
+src/ozan_arslan.egg-info/PKG-INFO
+src/ozan_arslan.egg-info/SOURCES.txt
+src/ozan_arslan.egg-info/dependency_links.txt
+src/ozan_arslan.egg-info/top_level.txt
