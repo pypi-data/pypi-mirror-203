@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+clusterfiles.egg-info/PKG-INFO
+clusterfiles.egg-info/SOURCES.txt
+clusterfiles.egg-info/dependency_links.txt
+clusterfiles.egg-info/requires.txt
+clusterfiles.egg-info/top_level.txt
