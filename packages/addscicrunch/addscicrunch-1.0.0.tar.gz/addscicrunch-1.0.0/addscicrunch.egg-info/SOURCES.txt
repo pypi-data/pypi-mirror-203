@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+addscicrunch/AgeSelector.py
+addscicrunch/__init__.py
+addscicrunch/gui_output.py
+addscicrunch/main.py
+addscicrunch/static.py
+addscicrunch/tacchkdlg.py
+addscicrunch.egg-info/PKG-INFO
+addscicrunch.egg-info/SOURCES.txt
+addscicrunch.egg-info/dependency_links.txt
+addscicrunch.egg-info/entry_points.txt
+addscicrunch.egg-info/requires.txt
+addscicrunch.egg-info/top_level.txt

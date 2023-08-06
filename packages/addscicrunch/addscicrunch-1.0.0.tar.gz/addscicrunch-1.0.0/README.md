@@ -1,0 +1,1 @@
+This package provides a tool for adding SciCrunch terms to XML data.

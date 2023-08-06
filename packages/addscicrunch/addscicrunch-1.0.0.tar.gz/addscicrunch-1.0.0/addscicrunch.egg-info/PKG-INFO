@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: addscicrunch
+Version: 1.0.0
+Summary: For adding SciCrunch terms to XML data
+Home-page: https://pypi.org/project/addscicrunch/
+Author: Jean Fecteau
+Author-email: jfecteau@mbfbioscience.com
+Keywords: sparc,mbf,bioscience,xml,scicrunch
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+This package provides a tool for adding SciCrunch terms to XML data.
