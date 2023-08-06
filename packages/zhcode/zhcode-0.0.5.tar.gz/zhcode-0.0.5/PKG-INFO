@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: zhcode
+Version: 0.0.5
+Summary: Programming languages in Chinese.
+Home-page: https://github.com/Injng/zhcode
+Author: lnjng
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# zhcode
+`zhcode` is a Python library designed to facilitate coding in Chinese. It's main purpose is to create **esoteric forms of programming languages using the Chinese language**.
+
+You can install `zhcode` by running `pip3 install zhcode` in your environment.
+
+## Python
+Currently, basic Python 3 functions are supported. The project is still in the process of translating library keywords, names, and functions into Chinese equivalents. In general, the syntax for coding in 
+中文Python is the same as that of normal Python, simply with variables switched. However, several syntactic additions have been made: the dot delimeter `.` in standard Python has been changed to `·`, and 
+variables should be enclosed with `「」` to facilitate easier differentiation.
+
+Furthermore, Chinese keyboard characters often have a tendency to include extra space as part of the character—-thus oftentimes reducing the need for extra whitespace after the character. In particular,
+variable delimeters. Thus, there is no need to add an extra space after a closing variable delimeter (`」`)--the translator will add one automatically.
