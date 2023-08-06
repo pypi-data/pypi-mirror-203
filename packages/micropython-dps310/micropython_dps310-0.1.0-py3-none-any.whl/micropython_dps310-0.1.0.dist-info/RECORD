@@ -1,0 +1,7 @@
+micropython_dps310/dps310.py,sha256=Ke48IqkvBf7ofNfxdRQD_jUYIDuB1BD_dSkORsRQH6o,21936
+micropython_dps310/i2c_helpers.py,sha256=4QgfJhdHHDXOGmngZgU581W_S89wypQ-9m7hExql1dc,3974
+micropython_dps310-0.1.0.dist-info/LICENSE,sha256=RzDRQUi8478TRF8tEO9TZzAIdMZDxwpMRik2l1mwdog,1082
+micropython_dps310-0.1.0.dist-info/METADATA,sha256=_h-Cdi-MrR32lIX7hm_GbK2igjBR6EPEizdNWeovVbA,1723
+micropython_dps310-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+micropython_dps310-0.1.0.dist-info/top_level.txt,sha256=HhA-0UtYVd3o2oZet-av2l9jsR0IkvzhG6vuivM-XJI,19
+micropython_dps310-0.1.0.dist-info/RECORD,,
