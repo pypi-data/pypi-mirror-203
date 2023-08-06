@@ -1,0 +1,8 @@
+setup.py
+FPfits.egg-info/PKG-INFO
+FPfits.egg-info/SOURCES.txt
+FPfits.egg-info/dependency_links.txt
+FPfits.egg-info/requires.txt
+FPfits.egg-info/top_level.txt
+fitting/__init__.py
+fitting/plotting.py
