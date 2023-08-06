@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: lovematch
+Version: 1.6.0
+Summary: Love Match Calculator
+Home-page: https://github.com/Devparihar5/lovematch
+Author: Devendra Parihar
+Author-email: devendraparihar340@gmail.com
+Keywords: python,love,match,percentage,calculator,lovematch
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A Python package to calculate love match percentage between two names.

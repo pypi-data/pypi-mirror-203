@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+lovematch/__init__.py
+lovematch/friendship.py
+lovematch/love.py
+lovematch.egg-info/PKG-INFO
+lovematch.egg-info/SOURCES.txt
+lovematch.egg-info/dependency_links.txt
+lovematch.egg-info/top_level.txt
