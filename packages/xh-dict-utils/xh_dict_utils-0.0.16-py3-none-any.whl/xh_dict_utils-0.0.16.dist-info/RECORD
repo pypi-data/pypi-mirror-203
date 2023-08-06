@@ -1,0 +1,14 @@
+xh_dict_utils/ExtractFromFile.py,sha256=bFEb2lzKllDZXBoDhrFHaIZiIh98QuAPhFR4WiLIYvM,1025
+xh_dict_utils/Layer1AppEngine.py,sha256=PgZwwXkDkbxj9oBfQsEJq2_Tb0UlPj8OKYnSWjLsHrQ,2208
+xh_dict_utils/__init__.py,sha256=-wn9SX72wBzX8M9mSIQs49RBWhL3uRqrokfR-W5Gf08,117
+xh_dict_utils/__main__.py,sha256=WO7s3p9N8fI2m6sT-KnU5qpD0JH6ZZ-W878aAX8ypx4,91
+xh_dict_utils/app.py,sha256=OZ3MmJ-gi-cR8lmUpDUwM7EyUDDSSFY79oZ7iB7u15s,12348
+xh_dict_utils/dict_utils.py,sha256=n8g2csMM4_rYy99IZej2A5sa4j49hmy8a8J66OzGCRQ,7927
+xh_dict_utils/test_dict_utils.py,sha256=o4s8_bCsnZ13wde4j4OdZptVGFRbXM5GToboTB9RnlI,3421
+xh_dict_utils/command/CommandTemplate.py,sha256=PJoLAwCijjkdU9J-GdMvk6m_AyJQIXfi1jD3s31a0Jk,358
+xh_dict_utils/command/ToArray.py,sha256=yXfgPbA0WEKoSzNFDLFVn-nJjcyMP4v1kJqT-8hShas,1176
+xh_dict_utils-0.0.16.dist-info/LICENSE.txt,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+xh_dict_utils-0.0.16.dist-info/METADATA,sha256=4VjpY9UvnGvb7EQ88Gtj3Qqmz6uhgj6ClufbEtKtXbU,771
+xh_dict_utils-0.0.16.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+xh_dict_utils-0.0.16.dist-info/top_level.txt,sha256=R6Qor5957n5m01HhnMCTyGBZFzZz8lNMufsRlxzhn4I,14
+xh_dict_utils-0.0.16.dist-info/RECORD,,
