@@ -1,0 +1,12 @@
+diskcache/__init__.py,sha256=_bJN01jc8F28jtE6dtThgFmKXTz9lKoDXWG6iqqjB4U,1262
+diskcache/cli.py,sha256=RVv6Fyn7h_0E5BoAVJzbbjOWPDHXO0ZjNgh9g5CBRP8,44
+diskcache/core.py,sha256=T8IbjYVou8COkFZZmnxTY94EubgFEVLrnIiYxTbcR_0,81934
+diskcache/djangocache.py,sha256=SX8jl2d-vfOMG7hXZuuh2VCnZEUP-mHGjYLpM2RdMaQ,16110
+diskcache/fanout.py,sha256=3uGQGvLtz2_0vPlT5AK6UjpEDl2OMQ1Im9-ngDld6Os,22690
+diskcache/persistent.py,sha256=Cir3CPetAfACHlCEzY1P5B_YrZPPeWqsoKrkuBBxcCo,34681
+diskcache/recipes.py,sha256=dr6CtZ67nRe3XMUBj2J6D_uftquMi_rNpZBg8i6lfRM,14922
+diskcache-5.6.0.dist-info/LICENSE,sha256=WDVGuqP9k2B9hFEmVwZ3pAH1COIotQRP77w5Sa8XlnI,559
+diskcache-5.6.0.dist-info/METADATA,sha256=BLTQsFOie8f1U-gbujj_N0Ug7y4TH-V1_eD02wQWMcs,20458
+diskcache-5.6.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+diskcache-5.6.0.dist-info/top_level.txt,sha256=A5fqg_AHgOQc_0o1NZ-Uo5Bsb7CV3fR99J-p1-F4yuA,10
+diskcache-5.6.0.dist-info/RECORD,,
