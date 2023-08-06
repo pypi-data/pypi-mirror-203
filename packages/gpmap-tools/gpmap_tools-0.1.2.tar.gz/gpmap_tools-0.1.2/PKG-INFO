@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gpmap_tools
+Version: 0.1.2
+Summary: Tools for inference and visualization of complex genotype-phenotype maps
+Home-page: https://bitbucket.org/cmartiga/gpmap_tools
+Author: Carlos Martí-Gómez
+Author-email: martigo@cshl.edu
+License: MIT
+Keywords: genotype-phenotype maps,fitness landscape,exact gaussian process regression
+Platform: ALL
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+License-File: LICENSE
