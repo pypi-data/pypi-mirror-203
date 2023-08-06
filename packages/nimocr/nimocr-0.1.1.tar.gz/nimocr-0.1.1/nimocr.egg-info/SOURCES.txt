@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.py
+model/__init__.py
+model/image_list.py
+nimocr.egg-info/PKG-INFO
+nimocr.egg-info/SOURCES.txt
+nimocr.egg-info/dependency_links.txt
+nimocr.egg-info/entry_points.txt
+nimocr.egg-info/requires.txt
+nimocr.egg-info/top_level.txt
+presenter/__init__.py
+presenter/presenter.py
+view/__init__.py
+view/dialog.py
+view/main_window.py
+view/widget.py
