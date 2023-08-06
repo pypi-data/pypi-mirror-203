@@ -1,0 +1,13 @@
+codeprompt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codeprompt/chatgpt_models.py,sha256=qpnjO4i4oyXbYqMM-9lEw7iarESVduQ30cVY6QLkjWw,1480
+codeprompt/cli.py,sha256=yiplQuLlQxAXZqXM7FTaYtWTqUGRoHtmC2On7hLRHoM,2075
+codeprompt/codeprompt.py,sha256=ekKPQtKYb682PC61_t4HrBf6TYG5xBGS5HEe4vkX6OA,5407
+codeprompt/promptstr.py,sha256=erIkvFBWOznnycrEo8Z0puBSxp6KSu46ViCKYS8V4-w,287
+codeprompt/techniques/chunk.py,sha256=wecr13wOHvPjI3kfSXcXDdt4LAhPsCDQNgi9MMCS6Gs,1032
+codeprompt/techniques/count_token.py,sha256=G7D6a5211YuYzcUqiQE-6NrvTiC52W0MwNC315BoQkI,415
+codeprompt/template.py,sha256=IhAAcBcq-TGPZIGcBdFZyVmnsYlzsGDmzkcyqN41uVw,4877
+codeprompt-0.1.0.dist-info/entry_points.txt,sha256=L5Ftpi9vVBpQ1RIUkba-UMDVJBemrbVj-nyrthY3OAs,57
+codeprompt-0.1.0.dist-info/LICENSE,sha256=xJmRWaThwoYlmZ7bRV2yRbEaoJYeFPyAq4VWORfij1U,1096
+codeprompt-0.1.0.dist-info/METADATA,sha256=Hj2PAjfmOoXVRPDUjDqgq-_xZ9cmQLZxq4-hZazbnF0,2892
+codeprompt-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+codeprompt-0.1.0.dist-info/RECORD,,
