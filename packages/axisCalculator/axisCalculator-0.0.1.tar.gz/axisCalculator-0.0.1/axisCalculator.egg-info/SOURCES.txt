@@ -1,0 +1,8 @@
+LICENCE.txt
+README.txt
+setup.py
+axisCalculator.egg-info/PKG-INFO
+axisCalculator.egg-info/SOURCES.txt
+axisCalculator.egg-info/dependency_links.txt
+axisCalculator.egg-info/requires.txt
+axisCalculator.egg-info/top_level.txt
