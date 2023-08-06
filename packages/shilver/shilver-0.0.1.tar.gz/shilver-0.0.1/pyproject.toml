@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "shilver"
+version = "0.0.1"
+authors = [
+    { name="Jorge Gabín", email="jorgegabinbrenlla@gmail.com"},
+    { name="Brais Muñiz", email="mc.brais@gmail.com" },
+]
+maintainers = [
+    { name="Jorge Gabín", email="jorgegabinbrenlla@gmail.com"},
+    { name="Brais Muñiz", email="mc.brais@gmail.com" },
+]
+description = "An outstandingly fast Shingoki solver."
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords=[
+    "shingoki",
+    "puzzles",
+    "answer set programming",
+]
+
+requires-python = ">=3.9"
+dependencies = [
+    "clingo",
+    "clingraph",
+]
+
+[project.urls]
+homepage = "https://github.com/bramucas/shilver"
+repository = "https://github.com/bramucas/shilver"

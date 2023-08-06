@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: shilver
+Version: 0.0.1
+Summary: An outstandingly fast Shingoki solver.
+Project-URL: homepage, https://github.com/bramucas/shilver
+Project-URL: repository, https://github.com/bramucas/shilver
+Author-email: Jorge Gabín <jorgegabinbrenlla@gmail.com>, Brais Muñiz <mc.brais@gmail.com>
+Maintainer-email: Jorge Gabín <jorgegabinbrenlla@gmail.com>, Brais Muñiz <mc.brais@gmail.com>
+License-File: LICENSE
+Keywords: answer set programming,puzzles,shingoki
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: clingo
+Requires-Dist: clingraph
+Description-Content-Type: text/markdown
+
+# Shingoki solver
+
+Práctica RCRA 2022-2023
+
+## Setup
+
+```sh
+python -m install clingo clingraph
+```
+
+## Usage
+
+```sh
+# Solve example: clingo 0 solver.lp <examplefile>
+clingo 0 solver.lp tests/6x6easy.lp
+
+# Solve and draw solution:
+clingo 0 tests/8x8normal.lp solver.lp --outf=2 | clingraph --viz-encoding=viz.lp --engine=neato --out=render --view
+
+# Remove 'solver.lp' for drawing initial state
+clingo 0 tests/8x8normal.lp --outf=2 | clingraph --viz-encoding=viz.lp --engine=neato --out=render --view
+```
