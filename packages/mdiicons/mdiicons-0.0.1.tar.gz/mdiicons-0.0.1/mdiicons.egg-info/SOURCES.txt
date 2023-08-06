@@ -1,0 +1,8 @@
+README.md
+setup.py
+mdiicons/__init__.py
+mdiicons/mdiicons.py
+mdiicons.egg-info/PKG-INFO
+mdiicons.egg-info/SOURCES.txt
+mdiicons.egg-info/dependency_links.txt
+mdiicons.egg-info/top_level.txt
