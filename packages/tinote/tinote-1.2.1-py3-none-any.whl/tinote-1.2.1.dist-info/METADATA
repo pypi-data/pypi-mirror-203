@@ -1,0 +1,121 @@
+Metadata-Version: 2.1
+Name: tinote
+Version: 1.2.1
+Summary: A command-line note-taking tool
+Home-page: https://github.com/aPeter1/tinote
+Author: Alec Petersen
+Author-email: k.alecpetersen@gmail.com
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Terminals
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+![Logo](https://raw.githubusercontent.com/aPeter1/tinote/main/assets/color-logo-no-background.png)
+
+## No Thought Left Behind.
+
+#### Huh, that's a pretty good idea. I should write that down. 
+
+###### [proceeds to lose the paper]
+
+#### Wow, I should write down that task for later in Notepad!
+
+###### [proceeds not to save the file before computer restarts that night]
+
+#### Ugh.
+
+Tinote is light-weight command-line note-taking tool, designed for quick and easy note management. Keep track of your thoughts, ideas, or reminders directly from the terminal.
+
+###### (made entirely for myself, but feel free to use it and contribute!)
+
+## Installation
+
+Install Tinote using pip:
+
+```bash
+pip install tinote
+```
+
+## Usage
+
+Create a new note (if no category is provided, the last category will be used):
+
+```bash
+ti add "a note to remember" <optional category> <optional importance>
+```
+
+List all notes (verbose list will include importance and timestamp):
+
+```bash
+ti list
+```
+
+```output
+IDEAS---------------------------------------------------------------------------
+[ ] 55 A dating app, but for hamster-owners ONLY
+[✔] 58 A sushi company that sell BEEF sushi! :O
+
+VAN-STUFF-----------------------------------------------------------------------
+[✔] 55 Fix the latch for the fridge
+[ ] 58 Install Solar
+    [ ] 60 Install roof-rack, hopefully easy
+        * How hard could it be
+        * Hahaha
+    [ ] 61 Attach panels
+    [ ] 62 Run wiring
+```
+As you can see, using * in a message (no newline necessary) will cause that to be indented on the next line down.
+
+List notes with filters (category or importance or marked) or higher verbosity:
+
+```bash
+ti list -c <category> -i <importance> -m -u -v
+```
+
+Add a sub-note to a note (can be as recursive as you can dream)
+
+```bash
+ti sub <parent_id> "Text of your sub-note" -i <importance>
+```
+
+Mark a note as checked/unchecked (-u indicates to unmark):
+
+```bash
+ti mark <note_id> -u 
+```
+
+Delete a note (deletes all children notes):
+
+```bash
+ti delete <note_id>
+```
+
+Clear all notes or notes within a specified category:
+
+```bash
+ti clear
+ti clear -c <category>
+```
+
+## Features
+
+- Create and manage notes with optional categories and importance levels
+- List notes, with optional filters for categories and importance
+- Easily mark notes as checked/unchecked
+- Delete notes using their ID
+- Clear all notes or notes within a specified category
+- Automatically saves notes to a local JSON file for persistence
+
+## License
+
+MIT License
