@@ -1,0 +1,19 @@
+[package]
+name = "json-depth-checker"
+description = "A library that indicates if a JSON must be flattened"
+publish = false
+
+version= "1.1.1"
+authors= ["Quentin de Quelen <quentin@dequelen.me>", "Clément Renault <clement@meilisearch.com>"]
+# description.workspace = true
+homepage= "https://meilisearch.com"
+readme= "README.md"
+edition= "2021"
+license= "MIT"
+
+[dependencies]
+serde_json = "1.0"
+
+[[bench]]
+name = "depth"
+harness = false

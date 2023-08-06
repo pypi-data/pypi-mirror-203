@@ -1,0 +1,20 @@
+[package]
+name = "flatten-serde-json"
+description = "Flatten serde-json objects like elastic search"
+readme = "README.md"
+publish = false
+
+version= "1.1.1"
+authors= ["Quentin de Quelen <quentin@dequelen.me>", "Clément Renault <clement@meilisearch.com>"]
+# description.workspace = true
+homepage= "https://meilisearch.com"
+# readme.workspace = true
+edition= "2021"
+license= "MIT"
+
+[dependencies]
+serde_json = "1.0"
+
+[[bench]]
+name = "benchmarks"
+harness = false

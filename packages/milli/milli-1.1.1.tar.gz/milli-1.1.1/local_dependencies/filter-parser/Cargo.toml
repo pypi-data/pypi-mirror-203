@@ -1,0 +1,16 @@
+[package]
+name = "filter-parser"
+description = "The parser for the Meilisearch filter syntax"
+publish = false
+
+version= "1.1.1"
+authors= ["Quentin de Quelen <quentin@dequelen.me>", "Clément Renault <clement@meilisearch.com>"]
+# description.workspace = true
+homepage= "https://meilisearch.com"
+readme= "README.md"
+edition= "2021"
+license= "MIT"
+
+[dependencies]
+nom = "7.1.1"
+nom_locate = "4.0.0"
