@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+arithmetic_vr.egg-info/PKG-INFO
+arithmetic_vr.egg-info/SOURCES.txt
+arithmetic_vr.egg-info/dependency_links.txt
+arithmetic_vr.egg-info/top_level.txt
