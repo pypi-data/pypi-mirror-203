@@ -1,0 +1,8 @@
+srf_weather/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+srf_weather/main.py,sha256=gqX03JXOLd9GczuXzFruZ-XUqORCHMaKj-mOYUnFo8s,409
+srf_weather/weather.py,sha256=_1GdqjZFYdgFK5csXisKUR-36ugLH-p0UfqpiPfLYjU,4140
+srf_weather-0.1.0.dist-info/LICENSE,sha256=lGZr0kqcPsOzG8AYgq0IwiPqmxmFziI4M3LbyciB6mc,1070
+srf_weather-0.1.0.dist-info/METADATA,sha256=x5d4iFE4BIHnCaE-VbP_VCoduxTiXzq0QCuVvAwi1fY,1721
+srf_weather-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+srf_weather-0.1.0.dist-info/entry_points.txt,sha256=w3RX6zwLltWFW2TLvKbVe03d_agP4j3sm7FiiRtkY00,52
+srf_weather-0.1.0.dist-info/RECORD,,

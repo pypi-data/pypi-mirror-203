@@ -1,0 +1,3 @@
+[console_scripts]
+srf-weather=srf_weater.main:main
+
