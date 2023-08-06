@@ -1,0 +1,12 @@
+drb/drivers/webdav/__init__.py,sha256=xkz4ia_hLNT6WgBmtl6D5m_QGq9rm8ehqq0mWIDikKE,263
+drb/drivers/webdav/_version.py,sha256=TJkV-Ec36AMBbtg2SZZMcz_-BdLjq73_wEpHKl2gCCU,497
+drb/drivers/webdav/utility_auth.py,sha256=FcRt1SKokBuU7pc6HjiLjIOQAe6OyBSWo0Fz3KrNgyU,445
+drb/drivers/webdav/webdav.py,sha256=4CUibyzCALhmPNF80qOywKXzAZbPZ6sbrSTi1pfs48c,8222
+drb/topics/webdav/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drb/topics/webdav/cortex.yml,sha256=yhcysxDxO43qvYl5Yml_3LsVEr7m0D61qXWQLpAVJpI,227
+drb_driver_webdav-1.2.0.dist-info/LICENCE.txt,sha256=RzxtV7MG0zbF6dDvQsaZ1OKsHZ7CRyeILenjUIol5rs,7651
+drb_driver_webdav-1.2.0.dist-info/METADATA,sha256=4uIw41WLMwEAtuZkHa_gJn1QVwyOibP6Mvx9tfwp4Ds,3182
+drb_driver_webdav-1.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+drb_driver_webdav-1.2.0.dist-info/entry_points.txt,sha256=Xz7_cXa_4Ieh9WFjJLxAI7dvkkGkHAOWuR6EqJ4p0qs,98
+drb_driver_webdav-1.2.0.dist-info/top_level.txt,sha256=tp7x0jo6KHy7P4LzX36tRyB2qZR7OiCZCAQGzrq25E0,4
+drb_driver_webdav-1.2.0.dist-info/RECORD,,
