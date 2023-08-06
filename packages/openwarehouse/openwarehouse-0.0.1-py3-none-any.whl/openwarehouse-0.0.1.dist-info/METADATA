@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: openwarehouse
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/marcelblijleven/openwarehouse#readme
+Project-URL: Issues, https://github.com/marcelblijleven/openwarehouse/issues
+Project-URL: Source, https://github.com/marcelblijleven/openwarehouse
+Author-email: Marcel Blijleven <marcelblijleven@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# openwarehouse
+
+[![PyPI - Version](https://img.shields.io/pypi/v/openwarehouse.svg)](https://pypi.org/project/openwarehouse)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/openwarehouse.svg)](https://pypi.org/project/openwarehouse)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install openwarehouse
+```
+
+## License
+
+`openwarehouse` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
