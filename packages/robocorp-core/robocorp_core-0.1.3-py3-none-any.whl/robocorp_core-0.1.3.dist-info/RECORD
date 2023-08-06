@@ -1,0 +1,16 @@
+robo/__init__.py,sha256=SByIZ-SfGCygT7TTka-3hguypk-1MUxriY3Zg7VuljI,29
+robo/__main__.py,sha256=uZmByI6HiTZ1vTxY7MP-OK_BAlTpXjrcHUHyLsObjD8,69
+robo/_argdispatch.py,sha256=e-EqlrK4AzWRKI8a4HUN8kOCuBwEljiOOlir-oULReU,3462
+robo/_callback.py,sha256=j14QbnNxUyTwCLo2Q_LQBA3LfBhpKeiTbb939cUKHZM,1327
+robo/_collect_tasks.py,sha256=ZYdHp93lckpI8pAh13wxtQPn0ch1O1ei9yTTp9Sxv4o,4961
+robo/_exceptions.py,sha256=XBwWBXcLITD2nFCcq_OdIDN1_f7rMpOtvo0qB6soyQI,160
+robo/_hooks.py,sha256=tYvUz7IEyN2NKqzvrUUt4fNOJG2MDq2E4M04zdaW1LA,607
+robo/_log_auto_setup.py,sha256=b3IslwH7x9B8ugPQn3adpyhfTNySB6IqxKp5M_gGk8E,5051
+robo/_log_output_setup.py,sha256=DcBnwNT0iZPZ5NYtLjiomBeFKs98lYsEZdkiuCfjzoI,2323
+robo/_protocols.py,sha256=1CHJQrqJOveAIk3N_ZtCCbpqyt2iXoohyZcFmCWuXeE,1699
+robo/_task.py,sha256=TRJD_5jAhRi_soQJ_VUD-pzO0dD-kZ1zqDUyi3lCCvc,903
+robo/cli.py,sha256=EXPyHv9-qLt5kaRKOIgs8r8HsXAiHmu5RJCIkSu6ndI,5474
+robo/decorators.py,sha256=wG9bDB06AQzakhjqLiigYACpms8N_QOxi-7BbGyfM1Y,578
+robocorp_core-0.1.3.dist-info/METADATA,sha256=_k9GuTkUZNw_otANZmmeulFEaId_bZfeslu--yAuLEE,865
+robocorp_core-0.1.3.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+robocorp_core-0.1.3.dist-info/RECORD,,
