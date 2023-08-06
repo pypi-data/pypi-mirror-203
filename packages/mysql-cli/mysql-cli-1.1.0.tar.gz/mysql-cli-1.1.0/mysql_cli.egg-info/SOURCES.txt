@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+mysql_cli/__init__.py
+mysql_cli/client.py
+mysql_cli/query.py
+mysql_cli/utils.py
+mysql_cli.egg-info/PKG-INFO
+mysql_cli.egg-info/SOURCES.txt
+mysql_cli.egg-info/dependency_links.txt
+mysql_cli.egg-info/requires.txt
+mysql_cli.egg-info/top_level.txt
+tests/test_client.py
+tests/test_query.py
