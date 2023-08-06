@@ -1,0 +1,16 @@
+pyEngine2D_ddd/__init__.py,sha256=N7vX4vVy9BLvWlXsNHsGd1ewZLww9VwgTCEp6fXNIl8,237
+pyEngine2D_ddd/exceptions.py,sha256=qWg8D_NCSZ8lVnO4TRnfxmskdUfqGAhxdCPd0i_GvCw,1141
+pyEngine2D_ddd/game_loop.py,sha256=sMUAKiujtTYITaWahj5vF2vmAm6HWHHbx47s8MwFZ08,3620
+pyEngine2D_ddd/game_object.py,sha256=Qj0hSH3yZNEPesrKfCTux9cLDy9NcJDdk4lRVxQn6PQ,6265
+pyEngine2D_ddd/screen_init.py,sha256=c4pNyfWJF0PG8YgOcT_Jyg5cdRwhJEWK9imcSpuMcSg,1460
+pyEngine2D_ddd/data/null.png,sha256=oO6wtB77vePpCFMcAWurMtcKY_bCuqiS6lCKaiXtXsI,120
+pyEngine2D_ddd/scripts/Collider2D.py,sha256=s3Kwey_qDiLfEXnknXOw3TAK5kMaB6zIDIg44hi9eiA,10023
+pyEngine2D_ddd/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyEngine2D_ddd/scripts/transform.py,sha256=35ICyowqvg4cYWBdZqopluqHXES5z4KjNbzTJlVHAgk,2871
+user/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+user/player_movement.py,sha256=0mqclv4KRGFS4_lpfB00aTzTaqpGFoghrsUoPkWkEw8,601
+pyEngine2D_ddd-1.0.1.dist-info/License.txt,sha256=RvuPPpi3Ga7odOI9-5HKeO6obY46MkfEu971H58RXl8,1093
+pyEngine2D_ddd-1.0.1.dist-info/METADATA,sha256=DFlBgcbLpLTgWW5WEPNWMpC0NECCZfibDT0rhe847V4,3172
+pyEngine2D_ddd-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyEngine2D_ddd-1.0.1.dist-info/top_level.txt,sha256=BCkS2-KUes18aE-MFxhiH_DMMyGDBwsfVOoYvZhfyd4,20
+pyEngine2D_ddd-1.0.1.dist-info/RECORD,,
