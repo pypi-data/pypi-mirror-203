@@ -1,0 +1,11 @@
+accera_gpu.libs/libvulkan-fa0e646a.so.1.3.243,sha256=gSzIRSmJwPZx2wGRWSnYAglckFt2akwIeDld6r8VUGw,576080
+accera_gpu.libs/libXau-00ec42fe.so.6.0.0,sha256=d75mSMNgdE9Ubbyh6DWZcVKSq3R4m8pD6eltRC2w49o,17048
+accera_gpu.libs/libxcb-65da195c.so.1.1.0,sha256=qQmeo3my0JkYW6nE3s5T7Otva0HNiCR3v6gwf_INWWA,210464
+accera_gpu-1.2.29.dist-info/LICENSE,sha256=ws_MuBL-SCEBqPBFl9_FqZkaaydIJmxHrJG2parhU4M,1141
+accera_gpu-1.2.29.dist-info/WHEEL,sha256=FGGRUrvefXOiAJfyJCZAiu4TpTMkXB_CzdEp3x2T96E,150
+accera_gpu-1.2.29.dist-info/top_level.txt,sha256=wAgqaT9xQVdA55vI2c6FWAwuWFCD1Z4KsEF1ZzrZbOg,13
+accera_gpu-1.2.29.dist-info/RECORD,,
+accera_gpu-1.2.29.dist-info/METADATA,sha256=OAEOEXHQ9fsjDCgG5O0QsUtEUWTHnOVAqngr9mKQA4w,2430
+accera/libacc-vulkan-runtime-wrappers.so,sha256=frzqeU6WXr2YmEerDmRK1xJtFaFFfw2Dpoa8gHuNc54,99264
+accera/bin/acc-translate,sha256=P8DX9Ag8hJT6VuRRGdp1nHOM2nyMbORQ_1nbEXeFLhQ,109716376
+accera/gpu/__init__.py,sha256=L9vKwJFoibSQxScUm5FqykqbAsv_CJpTsSHL2rkq2u4,486
