@@ -1,0 +1,13 @@
+ifm3dpy.cp39-win_amd64.pyd,sha256=i3SOoVUAGGW8wG2EHeywGQWeFyPK_c9FLYPKXxQHFq4,2487296
+ifm3dpy/__init__.pyi,sha256=EwITVUf27bnj9tMLxD7jZQkrurwNQrGANqhe6djuJ4I,6026
+ifm3dpy/deserialize/__init__.pyi,sha256=CMpvkusUa28RMYHoiOVKMJhrNi9iqLH8TdDwiiBeaOc,10185
+ifm3dpy/device/__init__.pyi,sha256=x_yXcWmXRe4NkT-GtpgnmdihDZVUZhusp6gw-sUtC1k,35499
+ifm3dpy/framegrabber/__init__.pyi,sha256=2FH50YBVy5_DduBzGr-SrI5O3mSCjFMsMkC9W19GShw,12338
+ifm3dpy/swupdater/__init__.pyi,sha256=jvQykKYV5L3XxnzKUgmu5_taajY-peDuTQvBUFH9Pj4,2323
+ifm3dpy-1.2.6.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+ifm3dpy-1.2.6.dist-info/LICENSE-thirdparty,sha256=7ZrsjFbOgiDKdtVUEt0YwEhDocS-0ffpHldTyTYYm_I,46704
+ifm3dpy-1.2.6.dist-info/METADATA,sha256=BmV2GWYTRub78OJm7O7NYRNhe2Bp6DIFBaGcicLMIOs,364
+ifm3dpy-1.2.6.dist-info/WHEEL,sha256=J_4V_gB-O6Y7Pn6lk91K27JaIhI-q07YM5J8Ufzqla4,100
+ifm3dpy-1.2.6.dist-info/entry_points.txt,sha256=6N_ceszicWFCLIZZcB20prZIUnf0ghQaNjHWea7lTQY,50
+ifm3dpy-1.2.6.dist-info/top_level.txt,sha256=14HBGAbWOrqlPHpP6qJsqIy1QTcnxt44R8E5pQ6wIMA,15
+ifm3dpy-1.2.6.dist-info/RECORD,,
