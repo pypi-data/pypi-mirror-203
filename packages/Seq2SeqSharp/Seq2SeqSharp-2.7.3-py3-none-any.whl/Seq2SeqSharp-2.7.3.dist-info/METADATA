@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Seq2SeqSharp
+Version: 2.7.3
+Summary: Seq2SeqSharp is a tensor based fast & flexible encoder-decoder deep neural network framework written by .NET (C#). It has many highlighted features, such as automatic differentiation, many different types of encoders/decoders(Transformer, LSTM, BiLSTM and so on), multi-GPUs supported, cross-platforms (Windows, Linux, x86, x64, ARM) and so on.
+Home-page: https://github.com/zhongkaifu/Seq2SeqSharp
+Author: Zhongkai Fu
+Author-email: fuzhongkai@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: pythonnet (>=3.0.1)
+
