@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: TimeHandle
+Version: 0.0.1
+Summary: cahy Test
+Home-page: UNKNOWN
+Author: cahy-jjw
+Author-email: jjwjiawang@163.com
+License: UNKNOWN
+Description: # TimeHandle
+        
+        Cahy测试:获取环比、获取前某天时间
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
