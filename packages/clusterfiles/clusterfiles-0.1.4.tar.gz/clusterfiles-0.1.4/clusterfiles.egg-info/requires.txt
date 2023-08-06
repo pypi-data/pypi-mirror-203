@@ -1,0 +1,9 @@
+zirconium
+autoinject
+universalio>=0.0.13
+pika
+flask
+flask_sqlalchemy
+itsdangerous
+toml
+zrlog

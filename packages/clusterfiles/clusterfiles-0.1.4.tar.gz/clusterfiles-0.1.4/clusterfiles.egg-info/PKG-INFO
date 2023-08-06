@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: clusterfiles
+Version: 0.1.4
+Summary: Cluster file management for Python
+Home-page: https://github.com/dfo-meds/clusterman
+Author: Erin Turnbull
+Author-email: erin.a.turnbull@gmail.com
+Project-URL: Bug Tracker, https://github.com/dfo-meds/clusterman/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Experimental project to manage copying files between cloud storage and a server.
