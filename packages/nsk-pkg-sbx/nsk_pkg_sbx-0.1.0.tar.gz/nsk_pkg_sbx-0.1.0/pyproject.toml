@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "nsk-pkg-sbx"
+version = "0.1.0"
+description = "Packaging POC"
+authors = ["Erik Nelson <erik@nsk.io>"]
+license = "Apache 2.0"
+readme = "README.md"
+packages = [{include = "sbx"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.3"
+docker = "^6.0.1"
+loguru = "^0.7.0"
+
+[tool.poetry.scripts]
+sbx = "sbx.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
