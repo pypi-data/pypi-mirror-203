@@ -1,0 +1,9 @@
+mangareader_api/__init__.py,sha256=dZ7cPCej2t5bC-M_3k_f--2jgWe8cagr8tRAOLlz6Vg,163
+mangareader_api/chapter.py,sha256=vUJNSFnifmqZ_ew9KXm3Wo89Cnx2EZJbjvN7Vu-5XJ0,1133
+mangareader_api/constants.py,sha256=AWYQ4gHEit0Zv0vQW6fH_1MMyc0IO3zrT3ngo0xPptg,19
+mangareader_api/manga.py,sha256=j0mJnZphNuvUpvPN6AWD6Ogb4ta8B-Hojom4E_1a6Gw,1088
+mangareader_api-1.0.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+mangareader_api-1.0.0.dist-info/METADATA,sha256=KtgQFINQA0PB4QYpMrcbQVhE4ZY7qkkoWRKEh-onaIg,1250
+mangareader_api-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mangareader_api-1.0.0.dist-info/top_level.txt,sha256=mw-oBKMObbP3aRIECIKn-QoqfKYKl8nJEWSbpu1DQh0,16
+mangareader_api-1.0.0.dist-info/RECORD,,
