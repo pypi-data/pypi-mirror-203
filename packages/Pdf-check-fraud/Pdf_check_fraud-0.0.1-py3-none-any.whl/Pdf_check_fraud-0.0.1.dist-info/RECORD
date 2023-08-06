@@ -1,0 +1,13 @@
+Package_1/Compare_Txt_Class.py,sha256=SFLH4Ty58V0HYBtVIK0mQKe7swbu3_CcsMh0XasADcg,701
+Package_1/Convert_File_Extension_Class.py,sha256=X7U8IZuoJz0Dy6lBX7EdRbfvVtrQVDCKeRDIVnXiKew,1138
+Package_1/Convert_Pdf_Class.py,sha256=j6XF5AZ4qZ5k_mhZAXICIPIkqMfQaxE_vaDJwWBDNyU,948
+Package_1/File_Handler_Class.py,sha256=FNIOhD0wS6SaQWebt_XQFc5pKMKGizOYRmfqSjMntNk,1718
+Package_1/Read_Filenames_Dir_Class.py,sha256=-MpNhLQoAdhhroR3TT-sYYLlkADzuCYDoVaMJWQZXDQ,961
+Package_1/__init__.py,sha256=fENdBXSgyJ2PSCQTlt3nHvsa2rQZnjAfXOms1WZ-g6E,236
+Package_2/Create_Windows_Class.py,sha256=gcj60FAfNFZUv2rqaFTNBNw4CDWGMrTgnAlChZykYsk,6738
+Package_2/__init__.py,sha256=VsUXHrHWw1DqERQhrPimdEk2tUiZZHVc0Foknq7ITEQ,84
+Pdf_check_fraud-0.0.1.dist-info/METADATA,sha256=UNIgpq2ynVJ0Y6-o0U30JcR-IOgIMxe4IOAkoFgHw0A,2666
+Pdf_check_fraud-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+Pdf_check_fraud-0.0.1.dist-info/license.txt,sha256=7FeBuIlWRWVhUCUsYV29PTjR-L_eQFttQwwZ5Y3roUA,24918
+Pdf_check_fraud-0.0.1.dist-info/top_level.txt,sha256=hKgfdaCScX7WyddIMt4btvYnK7KhuM0V35H6ZsNqZ_0,20
+Pdf_check_fraud-0.0.1.dist-info/RECORD,,
