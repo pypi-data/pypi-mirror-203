@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: pollev-history-compiler
+Version: 1.0.2
+Summary: A script for the compilation of PollEverywhere history CSV files into more usable forms.
+Home-page: https://github.com/tony-zeidan/PollEvHistoryCompiler
+Author: Tony Abou Zeidan
+Author-email: tony.azp25@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# PollEvHistoryCompiler
+Have you ever wanted to compile your Poll Everywhere history into a more usable form?
+This project allows you to use a script to load it into almost any form you want!
+You can filter by presenter, and use different types of encodings so that you can load polls with almost any data in them.
+Right now most of the support is for `Multiple choice` type polls.
+
+## Installation
+There are two approaches to the installation of this package/script.
+Clone the repository, and within the root folder run:
+
+```
+pip install .
+```
+
+Install the package from PyPI:
+
+```
+pip install pollev-history-compiler
+```
+
+## Usage
+It works as follows as a command-line script.
+```
+pollev-compiler <INPUT CSV> <TRANSFORM (json, yaml, toml, etc.)> --output-file <OUTPUT PATH (dir)> <OPTIONS>
+```
+
+If no output path is supplied, the script will use the 
+
+Good options include presenter name:
+```
+pollev-compiler <INPUT CSV> <TRANSFORM (json, yaml, toml, etc.)>  --output-file <OUTPUT PATH (dir)> --presenter <NAME> <OPTIONS>
+```
+
+Remove hidden questions from the result:
+```
+pollev-compiler <INPUT CSV> <TRANSFORM (json, yaml, toml, etc.)>  --output-file <OUTPUT PATH (dir)> --rhidden
+```
+
+## Documentation
