@@ -1,0 +1,15 @@
+pandoc/__init__.py,sha256=GGg_Pt0eQ5tfR-_DlzKn2rTQt3qjCVtHxtvTfNOQDpA,25133
+pandoc/__main__.py,sha256=aXrqdY0u4iDdT8r331zg2ITSOdSFpzO9A7t3BAsssnI,55
+pandoc/about.py,sha256=beXGEmlhhNde6GO-jfqFiecHpd9xo_lb5XdCCI04FCA,408
+pandoc/labs.py,sha256=9Jt993QbUJ21gXzhB5SXrN7EOZVW5uGebjVYq6O3Wl0,13401
+pandoc/pandoc-types.js,sha256=2QMYZjnmkNSPPkNgxjJRsyjH2Fsm36-ldUVeodO7ov8,131925
+pandoc/tests.md,sha256=SFuJ8PlvPHSLSUHZR7ak1hcYCsJBPz2sdzsJy06WsUM,57128
+pandoc/tests.py,sha256=0fDvSnD8O3tg3kN973Asf2nszQsin7hvUK5XE2FVrVU,429
+pandoc/types.py,sha256=UBpr_oNxoMjmMJjDFI3kk4tj8Op-3djvrAQ5WeI9anE,5159
+pandoc/utils.py,sha256=1loNXtq04ngWnQQHo0ulf0yAlKiDIO46JSoaNzRIxNQ,8540
+pandoc/doctest/__init__.py,sha256=8GxdYS80kPm5k3byPBoEQrnnMIJl9NhODEnK46d1iwE,5120
+pandoc-2.4b0.dist-info/LICENSE,sha256=xkG93aOpdpPcBxixZuPK4sFDpswnwJLr5IygjPT6Sjg,1115
+pandoc-2.4b0.dist-info/METADATA,sha256=XYr5Uw9ZQBygSeKDO4BuZx0AK-QdputceyaRseJNsEs,3339
+pandoc-2.4b0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pandoc-2.4b0.dist-info/top_level.txt,sha256=T0TviV6XizOJbJBiLJadh_Shn_5SzGE4IXFAO6mlXqs,7
+pandoc-2.4b0.dist-info/RECORD,,
