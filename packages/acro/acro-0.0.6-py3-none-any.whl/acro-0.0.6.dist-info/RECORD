@@ -1,0 +1,11 @@
+acro/__init__.py,sha256=wZ8x0vsOFsxhNE7JTG8NJnqhUhh6MYk6-XhMMkd2Xao,32
+acro/acro.py,sha256=_YlHooumCZC22LEzM4dUj9WDKvBOh8RaNQhn2ktDo-w,28833
+acro/default.yaml,sha256=jaTBZ-q88rZYver0V-GxRbjlNv7f4rAPn1R8PbM-wzk,1006
+acro/utils.py,sha256=BjEMsJJnLvaaUPEEEkZHIWxMBnI1vkyEaOLapOpGUaQ,11264
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_initial.py,sha256=buFhOZIlYOTye_7TkKIypzWddp5Q94RzXbPzYsm9RZ8,9669
+acro-0.0.6.dist-info/LICENSE,sha256=znwtAul7UvAyF_Qw2DgbOuF5oBpOpn6-3V2fWmRbews,1063
+acro-0.0.6.dist-info/METADATA,sha256=z5U_Uk_-1tZgHEOXSsWvYh3Huq2QJmxskyhQfGLlspE,3285
+acro-0.0.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+acro-0.0.6.dist-info/top_level.txt,sha256=8uz4Hc-_h6GpzhZ7FnBl_cuvWYeLRhtn8VZGdEiRfwY,10
+acro-0.0.6.dist-info/RECORD,,
