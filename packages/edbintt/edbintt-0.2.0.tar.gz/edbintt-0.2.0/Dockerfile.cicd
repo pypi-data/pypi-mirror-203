@@ -1,0 +1,12 @@
+FROM python:3.10.6
+
+USER root
+
+COPY pyproject.toml .
+
+RUN apt-get update -y && \
+    apt-get upgrade -y && \
+    apt-get clean -y && \
+    pip install -e . && \
+    pip install -e .[dev] && \
+    pip cache purge

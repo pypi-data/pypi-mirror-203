@@ -1,0 +1,34 @@
+{
+  "editor.fontSize": 16,
+  "window.zoomLevel": 1.0,
+  "editor.formatOnSave": true,
+  "isort.args": ["--profile", "black"],
+  "python.formatting.provider": "black",
+  "python.linting.enabled": true,
+  "python.linting.mypyEnabled": true,
+  "sqltools.highlightQuery": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  },
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
+  "[yaml]": {
+    "editor.formatOnSave": false
+  }
+}

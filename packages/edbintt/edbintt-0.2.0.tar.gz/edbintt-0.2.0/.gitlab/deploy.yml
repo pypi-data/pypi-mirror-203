@@ -1,0 +1,8 @@
+deploy:
+  extends:
+    - .base
+  rules:
+    - if: $CI_COMMIT_BRANCH == 'main'
+  stage: deploy
+  script:
+    - make deploy_prod

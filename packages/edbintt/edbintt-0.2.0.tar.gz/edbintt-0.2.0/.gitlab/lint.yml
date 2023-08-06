@@ -1,0 +1,6 @@
+lint:
+  extends:
+    - .base
+    - .test_base
+  script:
+    - make lint

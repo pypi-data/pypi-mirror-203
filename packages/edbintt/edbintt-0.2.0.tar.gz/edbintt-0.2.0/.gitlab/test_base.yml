@@ -1,0 +1,6 @@
+.test_base:
+  extends:
+    - .base
+  rules:
+    - if: $CI_COMMIT_BRANCH != 'cicd_image'
+  stage: test

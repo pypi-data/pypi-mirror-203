@@ -1,0 +1,3 @@
+.base:
+  image: $CI_REGISTRY_IMAGE:cicd_20230418124340
+  

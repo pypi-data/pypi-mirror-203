@@ -1,0 +1,8 @@
+rule_settings:
+  enable:
+    - default
+    - gpsg
+  disable:
+    - docstrings-for-modules
+    - docstrings-for-functions
+    - docstrings-for-classes
