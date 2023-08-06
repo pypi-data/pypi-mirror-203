@@ -1,0 +1,11 @@
+asyncio==3.4.3
+uvloop==0.17.0
+ciso8601>=2.2.0
+navconfig[default]>=1.1.0
+asyncdb[default]>=2.2.0
+cloudpickle==2.2.1
+jsonpickle==3.0.1
+aiofile==3.8.1
+beautifulsoup4==4.12.2
+async-timeout==4.0.2
+msgpack==1.0.5
