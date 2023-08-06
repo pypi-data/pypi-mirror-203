@@ -1,0 +1,2 @@
+[console_scripts]
+chatgpt-commit-message = chatgpt_pre_commit_hooks.chatgpt_commit_message:main
