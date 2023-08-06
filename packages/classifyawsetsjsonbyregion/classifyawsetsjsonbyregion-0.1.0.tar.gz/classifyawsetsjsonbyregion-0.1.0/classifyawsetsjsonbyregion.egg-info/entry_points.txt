@@ -1,0 +1,2 @@
+[console_scripts]
+classify-awsets-json-by-region = classifyawsetsjsonbyregion.cli:main
