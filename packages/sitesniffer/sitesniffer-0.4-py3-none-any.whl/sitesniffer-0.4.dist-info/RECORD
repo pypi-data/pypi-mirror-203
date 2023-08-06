@@ -1,0 +1,15 @@
+sitesniffer/__init__.py,sha256=zUb8TeIgQmeXsuJzXNEI8BLqlir8RNU7oygS03qN8Cs,722
+sitesniffer/_sitesniffer.py,sha256=XbeIbLNEbHGMF0EHtqc_J3PosaMxYVVDEkAEW5PHjJM,12167
+sitesniffer/data.py,sha256=FFW2Ipe53Nnhvtx6j14P8Vhe7ZSfnbpEiao9Kwy29Go,4143
+sitesniffer/exceptions.py,sha256=dOmV-G3fgb99OUiATKODeUGFlH5-qOPZlxN283sW1ik,347
+sitesniffer/src/__init__.py,sha256=e_MR1gE0kPXljndoFlzZnv79DV512wJHx9SEnEE3X5E,796
+sitesniffer/src/_sitesniffer.py,sha256=MrJ2uSAB-K147Bm5H6LDIQ0QhJtshfcHNN_a4w85wbU,9073
+sitesniffer/src/data.py,sha256=sMZulKLX8t3wH3RxdPGiUG2aavWedgo1MlwkPMZoIck,740
+sitesniffer/src/exceptions.py,sha256=aZ1vjEZ7smH6eIGR1buJA4h5fPFcwglULpQ19KAYNos,324
+sitesniffer/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sitesniffer/tests/test_sitesniffer.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sitesniffer-0.4.dist-info/LICENCE,sha256=GFEHO1KyNqpEGlLnNoB57un4ceIrkmR8HE1CL0aUiqU,1069
+sitesniffer-0.4.dist-info/METADATA,sha256=852p9UhGKSroEKTIpWnLMrLoNE3Ow8bY62PDyFNS03M,4583
+sitesniffer-0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sitesniffer-0.4.dist-info/top_level.txt,sha256=21-pz_Q4iQF3guYBwTJ5Balm5n-ZRo_1s5RzsUS-FK0,28
+sitesniffer-0.4.dist-info/RECORD,,
